@@ -12,3 +12,4 @@ Thumbs.db
 # Keep the repository focused unless explicitly added later.
 Untitled*.canvas
 Untitled.base
+node_modules/

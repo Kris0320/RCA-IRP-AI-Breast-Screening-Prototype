@@ -19,8 +19,9 @@
     --text-bright: #f2f2f2;
     --accent: #365f9f;
     --accent-dim: #294d82;
-    --amber: #d6b06a;
-    --amber-dim: #5a4324;
+    --amber: #d07830;
+    --amber-dim: #5c3214;
+    --human-ann: #c83c3c;
     --green: #8aaa7b;
     --green-dim: #3f5238;
     --red: #c77878;
@@ -30,7 +31,7 @@
     --purple: #a798b8;
     --thumbnail-w: 110px;
     --panel-w: 390px;
-    --toolbar-h: 44px;
+    --toolbar-h: 60px;
     --status-h: 28px;
   }
 
@@ -53,34 +54,38 @@
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
-    padding: 0 12px;
-    gap: 14px;
+    padding: 0 10px;
+    gap: 8px;
     flex-shrink: 0;
     z-index: 10;
   }
   .tool-group {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 1px;
     border-right: 1px solid var(--border);
-    padding-right: 12px;
+    padding-right: 8px;
   }
   .tool-group:last-of-type { border-right: none; }
   .tool-btn {
-    width: 30px; height: 30px;
+    width: 44px; height: 50px;
     background: none;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 6px;
     color: var(--text-dim);
     cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 4px;
     font-size: 14px;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
     flex-shrink: 0;
+    padding: 0;
   }
+  .tool-btn svg { width: 20px; height: 20px; stroke-width: 2; flex-shrink: 0; }
+  .tool-label { font-size: 9px; line-height: 1; letter-spacing: 0.02em; color: inherit; user-select: none; }
   .tool-btn:hover { background: var(--surface3); color: var(--text-bright); border-color: var(--border-light); }
   .tool-btn.active { background: var(--surface3); color: var(--accent); border-color: var(--accent); }
-  .tool-sep { width: 1px; height: 18px; background: var(--border); margin: 0 2px; }
+  .tool-sep { width: 1px; height: 26px; background: var(--border); margin: 0 2px; }
   .icon {
     width: 13px;
     height: 13px;
@@ -115,6 +120,21 @@
     transition: background 0.15s;
   }
   .btn-sm:hover { background: var(--surface3); }
+  .btn-submit-toolbar {
+    padding: 6px 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(91,122,154,0.6);
+    background: rgba(54,95,159,0.18);
+    color: #a8c4e8;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 0.01em;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .btn-submit-toolbar:hover { background: rgba(54,95,159,0.3); border-color: rgba(91,122,154,0.9); color: #c8daf4; }
+  .btn-submit-toolbar:disabled { opacity: 0.35; cursor: not-allowed; }
 
   /* ── MAIN LAYOUT ── */
   #main {
@@ -281,28 +301,30 @@
   }
   .finding-marker.visible { display: block; }
   .finding-ring {
-    width: 58px; height: 58px;
-    border: 1.5px dashed var(--amber);
+    width: 82px; height: 82px;
+    border: 2.5px dashed var(--amber);
     border-radius: 50%;
+    background: rgba(208,120,48,0.07);
     animation: pulse-ring 2.5s ease-in-out infinite;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   .second-look-focus .finding-ring {
     animation: pulse-ring 1s ease-in-out infinite;
-    border-width: 2.2px;
+    border-width: 3px;
     opacity: 1;
-    box-shadow: 0 0 0 8px rgba(214,176,106,0.06);
+    box-shadow: 0 0 0 12px rgba(208,120,48,0.08);
   }
   .finding-ring-label {
     position: absolute;
-    top: -20px; left: 50%;
+    top: -22px; left: 50%;
     transform: translateX(-50%);
     font-size: 12px;
+    font-weight: 600;
     color: var(--amber);
     white-space: nowrap;
-    letter-spacing: 0.04em;
-    background: rgba(0,0,0,0.6);
-    padding: 1px 6px;
+    letter-spacing: 0.02em;
+    background: rgba(0,0,0,0.72);
+    padding: 2px 7px;
     border-radius: 3px;
   }
   @keyframes pulse-ring {
@@ -448,12 +470,12 @@
   .panel-collapsed-label {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--text-dim);
-    opacity: 0.65;
+    opacity: 0.75;
     white-space: nowrap;
   }
   #panel-scroll {
@@ -585,7 +607,6 @@
     opacity: 0.6;
     cursor: default;
   }
-  #btn-second-look.used,
   #btn-peer-pause.used,
   #btn-override.used {
     background: #252526;
@@ -594,10 +615,8 @@
     opacity: 1;
     cursor: pointer;
   }
-  #btn-second-look.used .action-meta,
   #btn-peer-pause.used .action-meta,
   #btn-override.used .action-meta { color: var(--text-dim); }
-  #btn-second-look.used:hover,
   #btn-peer-pause.used:hover,
   #btn-override.used:hover {
     background: #2d2d30;
@@ -638,7 +657,8 @@
     font-weight: 500;
   }
   .chip-blue { background: var(--surface3); color: var(--text-dim); }
-  .chip-amber { background: rgba(214,176,106,0.15); color: var(--amber); }
+  .chip-amber { background: rgba(208,120,48,0.15); color: var(--amber); }
+  .chip-red   { background: rgba(200,60,60,0.12);  color: var(--human-ann); }
   .chip-green { background: rgba(138,170,123,0.13); color: #a7c39d; }
   .chip-teal { background: rgba(54,95,159,0.12); color: var(--text); }
   .chip-purple { background: var(--surface3); color: var(--text-dim); }
@@ -1298,7 +1318,7 @@
 
   /* ── READABILITY REFINEMENTS: right service layer + modals ── */
   #right-panel {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.55;
   }
   #right-panel * {
@@ -1308,10 +1328,10 @@
   #right-panel .ai-result-header,
   #right-panel .care-loop-title,
   #right-panel .disagreement-title {
-    font-size: 13px;
+    font-size: 14px;
   }
   #right-panel .status-chip {
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 1.2;
   }
   #right-panel .panel-note,
@@ -1327,15 +1347,15 @@
   #right-panel .override-select,
   #right-panel .override-textarea,
   #right-panel .btn-record {
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
   #right-panel .locked-judgement strong,
   #right-panel .cell-value {
-    font-size: 15px;
+    font-size: 16px;
   }
   #right-panel .ai-result-body > div:first-child,
   #section-locked-judgement .panel-section-body > div {
-    font-size: 15px !important;
+    font-size: 16px !important;
     font-weight: 600 !important;
   }
   #right-panel .ai-result-body > div:not(:first-child) {
@@ -1455,84 +1475,129 @@
     pointer-events: none;
   }
   .human-ring-circle {
-    width: 40px; height: 40px;
-    border: 1.5px solid rgba(110,145,180,0.6);
+    width: 64px; height: 64px;
+    border: 2.5px solid rgba(200,60,60,0.9);
     border-radius: 50%;
-  }
-  .human-mark-ring.no-recall .human-ring-circle {
-    border-style: dashed;
-    opacity: 0.45;
+    background: rgba(200,60,60,0.10);
   }
   .human-ring-label {
     position: absolute;
-    bottom: -20px; left: 50%;
+    top: -22px; left: 50%;
     transform: translateX(-50%);
     font-size: 12px;
-    color: rgba(110,145,180,0.85);
+    font-weight: 600;
+    color: rgba(210,70,70,1);
     white-space: nowrap;
-    background: rgba(0,0,0,0.58);
-    padding: 1px 6px;
+    background: rgba(0,0,0,0.72);
+    padding: 2px 7px;
     border-radius: 3px;
     display: none;
+    letter-spacing: 0.02em;
   }
   .human-mark-ring.labelled .human-ring-label { display: block; }
+  .human-mark-ring.labelled { pointer-events: auto; cursor: pointer; }
+  .human-mark-ring.labelled:hover .human-ring-circle { border-color: rgba(220,80,80,1); background: rgba(200,60,60,0.18); }
 
   /* ── MARK FORM (floating fixed overlay) ── */
   .mark-form-overlay {
     position: fixed;
     z-index: 150;
-    background: #1e1e1e;
+    background: #141414;
     border: 1px solid #383838;
     border-radius: 9px;
     padding: 14px 15px;
-    width: 222px;
-    box-shadow: 0 14px 40px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,255,255,0.025);
+    width: 250px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.82), 0 0 0 1px rgba(255,255,255,0.03);
   }
   .mark-form-title {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── BI-RADS radio grid ── */
+  .mf-birads-row {
+    display: flex;
+    gap: 0;
     margin-bottom: 12px;
   }
+  .mf-birads-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .mf-birads-col + .mf-birads-col {
+    border-left: 1px solid #2e2e2e;
+    padding-left: 12px;
+  }
+  .mf-cat-label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .mf-cat-label.benign { color: #52a852; }
+  .mf-cat-label.assess { color: #c84040; }
+  .mf-radios { display: flex; gap: 10px; align-items: center; }
+  .mf-radio {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .mf-radio input[type="radio"] { display: none; }
+  .mf-radio-dot {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.1s;
+  }
+  .mf-radio-dot::after {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+  .mf-radio input:checked + .mf-radio-dot::after { opacity: 1; }
+  .mf-radio-num {
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit;
+    line-height: 1;
+  }
+  .mf-radio.benign { color: #52a852; }
+  .mf-radio.assess { color: #c84040; }
+
+  .mf-sep { border: none; border-top: 1px solid #2e2e2e; margin: 0 0 11px; }
+
   .mark-form-field { margin-bottom: 9px; }
   .mark-form-label {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-dim);
     display: block;
     margin-bottom: 4px;
   }
   .mark-form-select {
     width: 100%;
-    background: #252526;
+    background: #1a1a1a;
     border: 1px solid #383838;
     border-radius: 5px;
     color: var(--text);
-    font-size: 13px;
-    padding: 6px 8px;
+    font-size: 14px;
+    padding: 7px 8px;
     cursor: pointer;
     appearance: none;
     outline: none;
     font-family: inherit;
   }
   .mark-form-select:focus { border-color: #5b7a9a; }
-  .mf-radio-group { display: flex; gap: 6px; }
-  .mf-radio-btn {
-    flex: 1;
-    padding: 7px 6px;
-    border: 1px solid #383838;
-    background: #252526;
-    color: var(--text-dim);
-    font-size: 13px;
-    font-family: inherit;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    transition: border-color 0.12s, background 0.12s, color 0.12s;
-  }
-  .mf-radio-btn:hover { border-color: #565656; color: var(--text); }
-  .mf-radio-btn.selected { border-color: #5b7a9a; background: rgba(91,122,154,0.12); color: var(--text-bright); }
 
   /* ── STATUS LINE (replaces step dots) ── */
   #status-line {
@@ -1554,7 +1619,7 @@
     border: 1px solid rgba(91,122,154,0.55);
     background: rgba(91,122,154,0.1);
     color: var(--text-bright);
-    font-size: 13px;
+    font-size: 14px;
     font-family: inherit;
     border-radius: 5px;
     cursor: pointer;
@@ -1567,7 +1632,7 @@
     border: 1px solid #383838;
     background: transparent;
     color: var(--text-dim);
-    font-size: 13px;
+    font-size: 14px;
     font-family: inherit;
     border-radius: 5px;
     cursor: pointer;
@@ -1590,8 +1655,9 @@
   }
   .saved-mark-dot {
     width: 9px; height: 9px;
-    border: 1.5px solid rgba(110,145,180,0.7);
+    border: 1.5px solid var(--human-ann);
     border-radius: 50%;
+    background: rgba(200,60,60,0.1);
     flex-shrink: 0;
   }
 
@@ -1616,7 +1682,146 @@
     margin-bottom: 8px;
     margin-top: 14px;
   }
+
+  /* ── Similar case reference card ── */
+  .sim-case-card {
+    margin-top: 18px;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .sim-case-head {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 10px;
+  }
+  .sim-case-body {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .sim-case-row {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-dim);
+    padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: baseline;
+  }
+  .sim-case-row:last-of-type { border-bottom: none; padding-bottom: 0; }
+  .sim-case-key {
+    flex-shrink: 0;
+    width: 90px;
+    color: var(--text-dim);
+    opacity: 0.75;
+  }
+  .sim-case-val { color: var(--text); line-height: 1.5; }
+  .sim-case-ref-id {
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .btn-ref-link {
+    font-size: 11px;
+    color: #6ea8e0;
+    background: none;
+    border: none;
+    padding: 2px 0;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    font-family: inherit;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: color 0.12s;
+  }
+  .btn-ref-link:hover { color: #92c0f0; text-decoration: underline; }
+
+  /* ── Cases library modal ── */
+  .lib-case-list { display: flex; flex-direction: column; gap: 10px; }
+  .lib-case-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 11px 14px;
+  }
+  .lib-case-id { font-size: 11px; color: var(--text-dim); letter-spacing: 0.05em; margin-bottom: 3px; }
+  .lib-case-pattern {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 4px;
+  }
+  .lib-case-detail { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+  .lib-case-outcome {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid var(--border-light);
+    color: var(--text);
+  }
+  .lib-case-outcome.recalled { border-color: rgba(200,60,60,0.4); color: var(--human-ann); background: rgba(200,60,60,0.06); }
+  .lib-case-outcome.confirmed { border-color: rgba(91,122,154,0.4); color: var(--accent); background: rgba(91,122,154,0.06); }
+  .lib-case-outcome.pending { border-color: rgba(208,120,48,0.4); color: var(--amber); background: rgba(208,120,48,0.06); }
+  .lib-intro {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Reading outcome modal ── */
+  .outcome-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+  .outcome-option {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--surface2);
+    cursor: pointer;
+    transition: border-color 0.12s, background 0.12s;
+    user-select: none;
+  }
+  .outcome-option:hover { border-color: var(--border-light); background: var(--surface3); }
+  .outcome-option.selected { border-color: rgba(91,122,154,0.7); background: rgba(54,95,159,0.09); }
+  .outcome-option input[type="radio"] { display: none; }
+  .outcome-radio-dot {
+    width: 18px; height: 18px; flex-shrink: 0;
+    border-radius: 50%; border: 2px solid var(--border-light);
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.12s;
+  }
+  .outcome-option.selected .outcome-radio-dot { border-color: #5b7a9a; }
+  .outcome-radio-dot::after {
+    content: ''; width: 8px; height: 8px;
+    border-radius: 50%; background: #5b7a9a;
+    opacity: 0; transition: opacity 0.1s;
+  }
+  .outcome-option.selected .outcome-radio-dot::after { opacity: 1; }
+  .outcome-label { font-size: 14px; color: var(--text-bright); font-weight: 500; }
+  .outcome-desc { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .outcome-note {
+    font-size: 12px; color: var(--text-dim); line-height: 1.6;
+    padding: 9px 12px; background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border); border-radius: 5px; margin-bottom: 16px;
+  }
+  #btn-confirm-outcome { width: 100%; }
+  #btn-confirm-outcome:disabled { opacity: 0.35; cursor: not-allowed; }
 </style>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1690,32 +1895,19 @@
 <!-- ── TOOLBAR ── -->
 <div id="toolbar">
   <div class="tool-group">
-    <button class="tool-btn active" title="Pan">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v5M7 8v5M1 7h5M8 7h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </button>
-    <button class="tool-btn" title="Zoom">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M9 9l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M4 5.5h3M5.5 4v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-    </button>
-    <button class="tool-btn" title="Magnify">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="5.5" cy="5.5" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M9 9l3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="5.5" cy="5.5" rx="1.5" ry="1.5" fill="currentColor" fill-opacity="0.5"/></svg>
-    </button>
+    <button class="tool-btn active" title="Pan"><i data-lucide="move"></i><span class="tool-label">Pan</span></button>
+    <button class="tool-btn" title="Zoom"><i data-lucide="zoom-in"></i><span class="tool-label">Zoom</span></button>
+    <button class="tool-btn" title="Magnify"><i data-lucide="scan-search"></i><span class="tool-label">Magnify</span></button>
     <div class="tool-sep"></div>
-    <button class="tool-btn" title="Window / Level">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="1.5" width="11" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M1.5 7h5M8 7h4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><circle cx="7" cy="7" r="1.2" fill="currentColor"/></svg>
-    </button>
-    <button class="tool-btn" title="Mark finding">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2.5 2"/></svg>
-    </button>
+    <button class="tool-btn" title="Window / Level"><i data-lucide="sliders-horizontal"></i><span class="tool-label">Window</span></button>
+    <button class="tool-btn" title="Measure length"><i data-lucide="ruler"></i><span class="tool-label">Length</span></button>
+    <button class="tool-btn" title="Erase mark"><i data-lucide="eraser"></i><span class="tool-label">Erase</span></button>
+    <button class="tool-btn" title="Mark finding"><i data-lucide="circle-dashed"></i><span class="tool-label">Mark</span></button>
+    <button class="tool-btn" title="Freehand draw"><i data-lucide="pen-line"></i><span class="tool-label">Freehand</span></button>
     <div class="tool-sep"></div>
-    <button class="tool-btn" title="Reset">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7a5 5 0 1 1 1.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M2 11V7h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
-    <button class="tool-btn" title="2×2 Grid">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="1.5" width="4.5" height="4.5" rx="0.5" stroke="currentColor" stroke-width="1.3"/><rect x="8" y="1.5" width="4.5" height="4.5" rx="0.5" stroke="currentColor" stroke-width="1.3"/><rect x="1.5" y="8" width="4.5" height="4.5" rx="0.5" stroke="currentColor" stroke-width="1.3"/><rect x="8" y="8" width="4.5" height="4.5" rx="0.5" stroke="currentColor" stroke-width="1.3"/></svg>
-    </button>
-    <button class="tool-btn" title="Sync panes">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 2l4 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 9l4 3 4-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><line x1="7" y1="2" x2="7" y2="12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-    </button>
+    <button class="tool-btn" title="Reset view"><i data-lucide="rotate-ccw"></i><span class="tool-label">Reset</span></button>
+    <button class="tool-btn" title="2×2 Grid"><i data-lucide="grid-3x3"></i><span class="tool-label">Grid</span></button>
+    <button class="tool-btn" title="Sync panes"><i data-lucide="link-2"></i><span class="tool-label">Sync</span></button>
   </div>
 
   <div class="case-id-chip"><span>Case </span>BSV000254<span> · Session 1 of 10 · Age 72</span></div>
@@ -1723,6 +1915,7 @@
   <div class="toolbar-right">
     <button class="btn-sm">Instructions</button>
     <button class="btn-sm">Home</button>
+    <button class="btn-submit-toolbar" id="btn-submit-reading">Submit reading</button>
   </div>
 </div>
 
@@ -1769,11 +1962,7 @@
   <!-- Viewer -->
   <div id="viewer">
 
-    <!-- Human mark ring (placed on click; absolute within viewer) -->
-    <div class="human-mark-ring" id="human-mark-dot" style="display:none;">
-      <div id="human-ring-label" class="human-ring-label"></div>
-      <div class="human-ring-circle"></div>
-    </div>
+    <!-- Human mark rings are created dynamically by JS -->
 
     <!-- L-CC -->
     <div class="mamo-pane" id="pane-lcc">
@@ -1802,6 +1991,11 @@
       <div class="pane-label">L-MLO</div>
       <div class="pane-age">Age: 72</div>
       <img class="mamo-img" src="./assets/mammogram-l-mlo.webp" alt="L-MLO" draggable="false">
+      <!-- AI finding marker: corresponding MLO view of the same focal asymmetry -->
+      <div class="finding-marker" id="marker-lmlo" style="top:36%; left:52%;">
+        <div class="finding-ring-label">Focal asymmetry · L-MLO</div>
+        <div class="finding-ring"></div>
+      </div>
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
     </div>
 
@@ -1816,12 +2010,12 @@
   </div><!-- /viewer -->
 
   <!-- Right panel -->
-  <div id="right-panel">
+  <div id="right-panel" class="collapsed">
 
     <!-- Fixed header: service identity + step progress -->
     <div id="panel-header">
       <div id="panel-title-bar">
-        <span id="panel-title-label">Disagreement Support</span>
+        <span id="panel-title-label">Reading Support</span>
         <button id="panel-collapse-btn" onclick="togglePanel()" title="Close sidebar" aria-label="Close sidebar" data-tooltip="Close sidebar">
           <svg class="icon" aria-hidden="true"><use href="#icon-sidebar"/></svg>
         </button>
@@ -1836,49 +2030,15 @@
     <div id="panel-scroll">
 
     <!-- STATE 1a: Findings (marking tool) -->
-    <div class="panel-section" id="section-human-judgement">
-      <div class="panel-section-header">
-        <svg class="icon"><use href="#icon-crosshair"/></svg>
-        Findings
-      </div>
-      <div class="panel-section-body">
-        <div class="panel-note">Click on the mammogram to mark any findings.</div>
-        <div id="saved-marks-list"></div>
-      </div>
-    </div>
-
-    <!-- STATE 1b: Initial case judgement -->
-    <div class="panel-section" id="section-case-judgement">
-      <div class="panel-section-header">
-        <svg class="icon"><use href="#icon-user"/></svg>
-        Initial case judgement
-      </div>
-      <div class="panel-section-body">
-        <div class="judgement-options">
-          <label class="radio-option" id="opt-recall">
-            <div class="radio-dot"></div>
-            <span class="radio-text">Recall</span>
-            <input type="radio" name="judgement" value="recall" style="display:none">
-          </label>
-          <label class="radio-option" id="opt-norecall">
-            <div class="radio-dot"></div>
-            <span class="radio-text">No recall</span>
-            <input type="radio" name="judgement" value="norecall" style="display:none">
-          </label>
-        </div>
-        <button class="btn-primary" id="btn-submit" disabled>Submit initial judgement</button>
-      </div>
-    </div>
-
-    <!-- STATE 2+: Locked judgement -->
+    <!-- STATE 2+: Locked reading -->
     <div class="panel-section hidden" id="section-locked-judgement">
       <div class="panel-section-header">
         <svg class="icon"><use href="#icon-user"/></svg>
-        Human
-        <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Recorded</span>
+        Human reading
+        <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Submitted</span>
       </div>
       <div class="panel-section-body" style="padding:8px 12px;">
-        <div id="locked-judgement-value" style="font-size:14px;font-weight:700;color:var(--text-bright);">No recall</div>
+        <div id="locked-judgement-value" style="font-size:14px;font-weight:700;color:var(--human-ann);">—</div>
         <div id="locked-judgement-detail" style="font-size:12px;color:var(--text-dim);margin-top:3px;"></div>
       </div>
     </div>
@@ -1905,19 +2065,13 @@
       </div>
       <div class="disagreement-body">
 
-        <!-- Compact comparison -->
+        <!-- Compact comparison summary -->
         <div style="font-size:12px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-          <span style="color:var(--text-dim);">Human:</span><span style="color:var(--text-bright);font-weight:600;">No recall</span>
+          <span style="color:var(--text-dim);">Human:</span><span id="disag-human-val" style="color:var(--human-ann);font-weight:600;">—</span>
           <span style="color:var(--border-light);">·</span>
-          <span style="color:var(--text-dim);">AI:</span><span style="color:var(--amber);font-weight:600;">Recall</span>
+          <span style="color:var(--text-dim);">AI:</span><span style="color:var(--amber);font-weight:600;">Recall suggested</span>
         </div>
         <span class="status-chip chip-amber" style="font-size:12px;padding:3px 8px;width:fit-content;">AI-positive / human-negative</span>
-
-        <!-- View comparison -->
-        <button class="btn-secondary" onclick="openModal('modal-comparison')" style="gap:8px;margin-top:2px;">
-          <svg class="icon"><use href="#icon-compare"/></svg>
-          <span class="action-main">View comparison</span>
-        </button>
 
         <!-- PRIMARY: Suggested next step -->
         <div class="suggested-step-wrap">
@@ -1925,7 +2079,7 @@
             <svg class="icon"><use href="#icon-arrow-down"/></svg>
             Suggested next step
           </div>
-          <button class="btn-teal" id="btn-handover">Prepare handover</button>
+          <button class="btn-teal" id="btn-handover">Handover prepared</button>
         </div>
 
         <!-- Divider -->
@@ -1941,11 +2095,11 @@
         <!-- SECONDARY actions -->
         <div class="secondary-actions">
 
-          <!-- Second look -->
+          <!-- View comparison -->
           <div class="secondary-action-wrap">
-            <button class="btn-secondary" id="btn-second-look" onclick="doSecondLook(this)">
-              <svg class="icon"><use href="#icon-eye"/></svg>
-              <span class="action-main">Second look</span>
+            <button class="btn-secondary" onclick="openModal('modal-comparison')">
+              <svg class="icon"><use href="#icon-compare"/></svg>
+              <span class="action-main">View comparison</span>
             </button>
           </div>
 
@@ -2002,7 +2156,7 @@
       <button class="panel-expand-btn" aria-label="Open sidebar" type="button">
         <svg class="icon" aria-hidden="true"><use href="#icon-sidebar-open"/></svg>
       </button>
-      <span class="panel-collapsed-label">Support</span>
+      <span class="panel-collapsed-label">Case Support</span>
     </div>
 
   </div><!-- /right-panel -->
@@ -2040,7 +2194,7 @@
         </div>
         <div class="modal-row">
           <div class="modal-row-label">Human judgement</div>
-          <div class="modal-row-value strong">No recall</div>
+          <div class="modal-row-value strong" id="handover-human-val" style="color:var(--human-ann);">—</div>
         </div>
         <div class="modal-row">
           <div class="modal-row-label">AI output</div>
@@ -2077,7 +2231,7 @@
           <div class="pathway-step-num">1</div>
           <div class="pathway-step-content">
             <div class="pathway-step-label">Human judgement recorded</div>
-            <div class="pathway-step-val" style="color:var(--text-bright);">No recall</div>
+            <div class="pathway-step-val" id="pathway-human-val" style="color:var(--human-ann);">—</div>
           </div>
         </div>
         <div class="pathway-connector"></div>
@@ -2141,15 +2295,15 @@
     <div class="modal-body">
       <div class="modal-row">
         <div class="modal-row-label">Human judgement</div>
-        <div class="modal-row-value strong" id="comp-human-decision">—</div>
+        <div class="modal-row-value strong" id="comp-human-decision" style="color:var(--human-ann);">—</div>
       </div>
       <div class="modal-row">
         <div class="modal-row-label">Human mark</div>
-        <div class="modal-row-value" id="comp-human-mark">—</div>
+        <div class="modal-row-value" id="comp-human-mark" style="color:var(--human-ann);">—</div>
       </div>
       <div class="modal-row">
         <div class="modal-row-label">Human confidence</div>
-        <div class="modal-row-value" id="comp-human-conf">—</div>
+        <div class="modal-row-value" id="comp-human-conf" style="color:var(--human-ann);">—</div>
       </div>
       <div class="modal-row">
         <div class="modal-row-label">AI judgement</div>
@@ -2171,35 +2325,221 @@
       <div class="evidence-block">
         Focal asymmetry detected in left upper outer quadrant. Density pattern and asymmetry relative to the contralateral view exceed the high-confidence threshold. No corresponding finding flagged at this location in the prior screen.
       </div>
+
+      <!-- Similar case reference card -->
+      <div class="sim-case-card">
+        <div class="sim-case-head">Similar case reference</div>
+        <div class="sim-case-body">
+          <div class="sim-case-ref-id">
+            <span>REF-014 · Prior disagreement case</span>
+            <button class="btn-ref-link" onclick="closeModal('modal-comparison'); openModal('modal-ref-014');">View reference case →</button>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Pattern</span>
+            <span class="sim-case-val">AI-positive / human-negative</span>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Prior outcome</span>
+            <span class="sim-case-val">Recalled after review</span>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Learning note</span>
+            <span class="sim-case-val">Similar disagreement patterns have previously required review.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── READING OUTCOME MODAL ── -->
+<div class="modal-overlay hidden" id="modal-reading-outcome">
+  <div class="modal-card" style="max-width:420px;">
+    <div class="modal-header">
+      <span class="modal-title">Initial reading outcome</span>
+      <button class="modal-close" onclick="closeModal('modal-reading-outcome')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="outcome-options">
+        <label class="outcome-option" onclick="selectOutcome(this, 'No further assessment')">
+          <input type="radio" name="reading-outcome" value="no-further">
+          <span class="outcome-radio-dot"></span>
+          <div>
+            <div class="outcome-label">No further assessment</div>
+            <div class="outcome-desc">No significant finding requiring recall</div>
+          </div>
+        </label>
+        <label class="outcome-option" onclick="selectOutcome(this, 'Further assessment needed')">
+          <input type="radio" name="reading-outcome" value="further">
+          <span class="outcome-radio-dot"></span>
+          <div>
+            <div class="outcome-label">Further assessment needed</div>
+            <div class="outcome-desc">Finding warrants recall or additional imaging</div>
+          </div>
+        </label>
+      </div>
+      <div class="outcome-note">
+        This is your case-level reading outcome. It is separate from individual finding annotations.
+      </div>
+      <button class="btn-teal" id="btn-confirm-outcome" disabled onclick="doSubmitReading()">Submit reading</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── REF-014 DETAIL MODAL ── -->
+<div class="modal-overlay hidden" id="modal-ref-014">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">REF-014</span>
+      <button class="modal-close" onclick="closeModal('modal-ref-014')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-row">
+        <div class="modal-row-label">Case ID</div>
+        <div class="modal-row-value">BSV000191</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Date reviewed</div>
+        <div class="modal-row-value">March 2024</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Pattern</div>
+        <div class="modal-row-value amber">AI-positive / human-negative</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Finding type</div>
+        <div class="modal-row-value">Focal asymmetry · Left MLO</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI confidence</div>
+        <div class="modal-row-value">High</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Human concern</div>
+        <div class="modal-row-value">Low</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Final outcome</div>
+        <div class="modal-row-value" style="color:var(--human-ann);font-weight:600;">Recalled after review</div>
+      </div>
+      <div class="evidence-head">Arbitration note</div>
+      <div class="evidence-block" style="border-left-color: rgba(200,60,60,0.35);">
+        Second reader review confirmed the AI finding. The focal asymmetry was assessed as clinically significant on closer inspection. Case was recalled and further imaging arranged. Learning outcome: asymmetry in this density category warrants second look even when human concern is low.
+      </div>
+      <div class="evidence-head" style="margin-top:16px;">Learning note</div>
+      <div class="evidence-block" style="border-left-color:var(--border-light);">
+        Similar disagreement patterns in this finding category have a higher-than-average rate of recall following arbitration review. This reference is provided to support the review process — it does not determine the outcome of the current case.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DISAGREEMENT CASES LIBRARY MODAL ── -->
+<div class="modal-overlay hidden" id="modal-case-library">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">Disagreement Cases Library</span>
+      <button class="modal-close" onclick="closeModal('modal-case-library')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="lib-intro">
+        Cases where AI and human reading disagreed. Each case shows the disagreement pattern, finding type, and final outcome after review. This library supports arbitration and team calibration — it does not prescribe outcomes for new cases.
+      </div>
+      <div class="lib-case-list">
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000191 · March 2024</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Focal asymmetry · Left MLO · Age 68<br>AI confidence: High · Human concern: Low</div>
+          <div class="lib-case-outcome recalled">Recalled after review</div>
+        </div>
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000127 · November 2023</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Mass · Right CC · Age 74<br>AI confidence: High · Human concern: Low</div>
+          <div class="lib-case-outcome confirmed">No recall confirmed</div>
+        </div>
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000089 · July 2023</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Calcification cluster · Left CC · Age 61<br>AI confidence: Medium · Human concern: Low</div>
+          <div class="lib-case-outcome recalled">Recalled after review</div>
+        </div>
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000312 · August 2024</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Architectural distortion · Right MLO · Age 70<br>AI confidence: High · Human concern: Medium</div>
+          <div class="lib-case-outcome pending">Pending arbitration review</div>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
 
 <!-- ── MARK FORM (floating, fixed position) ── -->
 <div class="mark-form-overlay hidden" id="mark-form">
-  <div class="mark-form-title">Finding mark</div>
-  <div class="mark-form-field">
-    <label class="mark-form-label">Finding type</label>
-    <select class="mark-form-select" id="mf-type" onchange="checkMarkFormReady()">
-      <option value="">Select type</option>
-      <option>Focal asymmetry</option>
-      <option>Mass</option>
-      <option>Calcification</option>
-      <option>Other</option>
-    </select>
+  <div class="mark-form-title">BI-RADS</div>
+
+  <div class="mf-birads-row">
+    <!-- Benign column -->
+    <div class="mf-birads-col">
+      <div class="mf-cat-label benign">Benign</div>
+      <div class="mf-radios">
+        <label class="mf-radio benign">
+          <input type="radio" name="birads" value="2" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">2</span>
+        </label>
+      </div>
+    </div>
+    <!-- Assess column -->
+    <div class="mf-birads-col">
+      <div class="mf-cat-label assess">Assess</div>
+      <div class="mf-radios">
+        <label class="mf-radio assess">
+          <input type="radio" name="birads" value="3" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">3</span>
+        </label>
+        <label class="mf-radio assess">
+          <input type="radio" name="birads" value="4" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">4</span>
+        </label>
+        <label class="mf-radio assess">
+          <input type="radio" name="birads" value="5" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">5</span>
+        </label>
+      </div>
+    </div>
   </div>
-  <div class="mark-form-field">
-    <label class="mark-form-label" style="display:flex;align-items:baseline;gap:5px;">
-      Confidence
-      <span style="font-size:12px;color:var(--text-dim);font-weight:400;">(optional)</span>
-    </label>
-    <select class="mark-form-select" id="mf-confidence">
-      <option value="">—</option>
-      <option>Low</option>
-      <option>Medium</option>
-      <option>High</option>
-    </select>
+
+  <div id="mf-lesion-section" class="hidden">
+    <hr class="mf-sep">
+    <div class="mark-form-field">
+      <label class="mark-form-label">Lesion</label>
+      <select class="mark-form-select" id="mf-type" onchange="onLesionChange()">
+        <option value="">Select lesion type</option>
+        <option>Mass</option>
+        <option>Asymmetry</option>
+        <option>Architectural Distortion</option>
+        <option>Calcification</option>
+        <option>Other findings</option>
+      </select>
+    </div>
+    <div class="mark-form-field hidden" id="mf-sub1-wrap">
+      <select class="mark-form-select" id="mf-sub1" onchange="onSub1Change()"></select>
+    </div>
+    <div class="mark-form-field hidden" id="mf-sub2-wrap">
+      <select class="mark-form-select" id="mf-sub2" onchange="checkMarkFormReady()"></select>
+    </div>
   </div>
+
   <div class="mf-action-row">
     <button class="btn-save-mark" id="mf-save" type="button" onclick="saveMark()" disabled>Save mark</button>
     <button class="btn-delete-mark" id="mf-delete" type="button" onclick="deleteMark()">Delete</button>
@@ -2208,12 +2548,11 @@
 
 <script>
   let currentState = 1;
-  let selectedJudgement = null;
-  let humanMarkPlaced = false;
-  let humanMarkPaneId = null;
-  let markSaved = false;
-  let savedMarkType = null;
-  let savedMarkConf = null;
+  let humanMarks = [];       // {id, el, paneId, type, sub1, sub2, birads, concern, labelText}
+  let pendingMarkEl = null;  // unsaved mark currently on screen
+  let pendingMarkPaneId = null;
+  let markIdCounter = 0;
+  let editingMarkId = null;  // id of saved mark being edited
 
   const statusLabels = [
     'Independent reading',
@@ -2236,6 +2575,9 @@
     valueEl.textContent = label;
     valueEl.className = (state === 4) ? 'disagreement' : '';
     document.getElementById('status-state').textContent = 'State: ' + label;
+    if (state === 4) {
+      document.getElementById('panel-title-label').textContent = 'Disagreement Support';
+    }
   }
 
   function show(id) {
@@ -2252,132 +2594,308 @@
     document.getElementById(id).classList.add('hidden');
   }
 
-  // ── Mark mode: click viewer to place human mark ──
+  // ── Mark mode: click viewer to place human marks (multiple) ──
   document.getElementById('viewer').classList.add('mark-mode');
 
   document.getElementById('viewer').addEventListener('click', function(e) {
     if (currentState !== 1) return;
+
+    // Click on a saved mark ring → open edit mode
+    const savedRing = e.target.closest('.human-mark-ring.labelled');
+    if (savedRing) {
+      openEditMark(savedRing.id, e.clientX, e.clientY);
+      return;
+    }
+
     const pane = e.target.closest('.mamo-pane');
     if (!pane) return;
 
-    const viewerRect = this.getBoundingClientRect();
-    const x = e.clientX - viewerRect.left;
-    const y = e.clientY - viewerRect.top;
+    // Cancel any unsaved pending mark
+    if (pendingMarkEl) {
+      pendingMarkEl.remove();
+      pendingMarkEl = null;
+    }
+    // Close edit mode if open
+    editingMarkId = null;
+    document.getElementById('mf-save').textContent = 'Save mark';
 
-    humanMarkPaneId = pane.id;
-    humanMarkPlaced = true;
+    const paneRect = pane.getBoundingClientRect();
+    const xPct = ((e.clientX - paneRect.left) / paneRect.width * 100).toFixed(2);
+    const yPct = ((e.clientY - paneRect.top)  / paneRect.height * 100).toFixed(2);
+    pendingMarkPaneId = pane.id;
 
-    const marker = document.getElementById('human-mark-dot');
-    marker.style.left = x + 'px';
-    marker.style.top = y + 'px';
-    marker.style.display = 'block';
+    // Create mark ring and append to the pane so it moves with the image
+    const markEl = document.createElement('div');
+    markEl.className = 'human-mark-ring';
+    markEl.id = 'human-mark-' + (++markIdCounter);
+    markEl.style.cssText = 'position:absolute;z-index:6;transform:translate(-50%,-50%);left:' + xPct + '%;top:' + yPct + '%;';
+    markEl.innerHTML = '<div class="human-ring-label"></div><div class="human-ring-circle"></div>';
+    pane.appendChild(markEl);
+    pendingMarkEl = markEl;
 
-    // Position mark form near click, clamped to viewport
+    openMarkForm(e.clientX, e.clientY);
+    resetMarkForm();
+    checkMarkFormReady();
+  });
+
+  function openMarkForm(cx, cy) {
     const form = document.getElementById('mark-form');
     form.classList.remove('hidden');
-    let fl = e.clientX + 18;
-    let ft = e.clientY - 30;
-    if (fl + 232 > window.innerWidth - 12) fl = e.clientX - 244;
-    if (ft + 240 > window.innerHeight - 12) ft = window.innerHeight - 252;
+    let fl = cx + 18;
+    let ft = cy - 30;
+    if (fl + 262 > window.innerWidth - 12) fl = cx - 270;
+    if (ft + 340 > window.innerHeight - 12) ft = window.innerHeight - 352;
     if (fl < 8) fl = 8;
     if (ft < 8) ft = 8;
     form.style.left = fl + 'px';
     form.style.top = ft + 'px';
+  }
 
+  function openEditMark(markId, cx, cy) {
+    const mark = humanMarks.find(m => m.id === markId);
+    if (!mark) return;
+    editingMarkId = markId;
+    pendingMarkEl = null;
+
+    // Repopulate form with saved values
+    document.querySelectorAll('input[name="birads"]').forEach(r => {
+      r.checked = r.value === mark.birads;
+    });
+    const lesionSection = document.getElementById('mf-lesion-section');
+    if (mark.birads === '2') {
+      lesionSection.classList.add('hidden');
+    } else {
+      lesionSection.classList.remove('hidden');
+      document.getElementById('mf-type').value = mark.type;
+      onLesionChange();
+      if (mark.sub1) {
+        document.getElementById('mf-sub1').value = mark.sub1;
+        onSub1Change();
+        if (mark.sub2) document.getElementById('mf-sub2').value = mark.sub2;
+      }
+    }
+
+    document.getElementById('mf-save').textContent = 'Update mark';
+    openMarkForm(cx, cy);
     checkMarkFormReady();
-  });
+  }
+
+  // ── Lesion cascade data ──
+  const MF_SUB1 = {
+    'Mass':                    { ph: 'Select Shape',        opts: ['Oval', 'Round', 'Irregular'] },
+    'Asymmetry':               { ph: 'Select Lesion',       opts: ['Global', 'Focal'] },
+    'Calcification':           { ph: 'Select Appearance',   opts: ['Amorphous', 'Coarse Heterogenous', 'Fine Pleomorphic', 'Fine Linear / Linear branching'] },
+    'Other findings':          { ph: 'Select Sub-type',     opts: ['Node', 'Skin', 'Nipple'] }
+  };
+  const MF_SUB2_CALC = { ph: 'Select Distribution', opts: ['Diffuse', 'Regional', 'Grouped', 'Linear', 'Segmental'] };
+
+  function mfPopulateSelect(el, ph, opts) {
+    el.innerHTML = '<option value="">' + ph + '</option>' +
+      opts.map(o => '<option>' + o + '</option>').join('');
+    el.value = '';
+  }
+
+  function onBiradsChange() {
+    const biradsEl = document.querySelector('input[name="birads"]:checked');
+    const lesionSection = document.getElementById('mf-lesion-section');
+    if (biradsEl && biradsEl.value === '2') {
+      lesionSection.classList.add('hidden');
+      document.getElementById('mf-type').value = '';
+      document.getElementById('mf-sub1-wrap').classList.add('hidden');
+      document.getElementById('mf-sub2-wrap').classList.add('hidden');
+    } else if (biradsEl) {
+      lesionSection.classList.remove('hidden');
+    }
+    checkMarkFormReady();
+  }
+
+  function onLesionChange() {
+    const type = document.getElementById('mf-type').value;
+    const sub1Wrap = document.getElementById('mf-sub1-wrap');
+    const sub2Wrap = document.getElementById('mf-sub2-wrap');
+    const sub1 = document.getElementById('mf-sub1');
+    const sub2 = document.getElementById('mf-sub2');
+    sub2Wrap.classList.add('hidden'); sub2.innerHTML = '';
+    const cfg = MF_SUB1[type];
+    if (cfg) {
+      mfPopulateSelect(sub1, cfg.ph, cfg.opts);
+      sub1Wrap.classList.remove('hidden');
+    } else {
+      sub1Wrap.classList.add('hidden'); sub1.innerHTML = '';
+    }
+    checkMarkFormReady();
+  }
+
+  function onSub1Change() {
+    const type = document.getElementById('mf-type').value;
+    const sub1Val = document.getElementById('mf-sub1').value;
+    const sub2Wrap = document.getElementById('mf-sub2-wrap');
+    const sub2 = document.getElementById('mf-sub2');
+    if (type === 'Calcification' && sub1Val) {
+      mfPopulateSelect(sub2, MF_SUB2_CALC.ph, MF_SUB2_CALC.opts);
+      sub2Wrap.classList.remove('hidden');
+    } else {
+      sub2Wrap.classList.add('hidden'); sub2.innerHTML = '';
+    }
+    checkMarkFormReady();
+  }
 
   function checkMarkFormReady() {
-    document.getElementById('mf-save').disabled = !document.getElementById('mf-type').value;
+    const biradsEl = document.querySelector('input[name="birads"]:checked');
+    if (!biradsEl) { document.getElementById('mf-save').disabled = true; return; }
+    if (biradsEl.value === '2') { document.getElementById('mf-save').disabled = false; return; }
+    const type = document.getElementById('mf-type').value;
+    const sub1Ok = document.getElementById('mf-sub1-wrap').classList.contains('hidden') || document.getElementById('mf-sub1').value;
+    const sub2Ok = document.getElementById('mf-sub2-wrap').classList.contains('hidden') || document.getElementById('mf-sub2').value;
+    document.getElementById('mf-save').disabled = !(type && sub1Ok && sub2Ok);
   }
 
   function saveMark() {
-    const type = document.getElementById('mf-type').value;
-    if (!type) return;
-    const conf = document.getElementById('mf-confidence').value;
+    const biradsEl = document.querySelector('input[name="birads"]:checked');
+    if (!biradsEl) return;
+    const birads = biradsEl.value;
+    let type = '', sub1Val = '', sub2Val = '', labelText;
+    if (birads === '2') {
+      labelText = 'Benign · BI-RADS 2';
+    } else {
+      type = document.getElementById('mf-type').value;
+      if (!type) return;
+      sub1Val = document.getElementById('mf-sub1').value;
+      sub2Val = document.getElementById('mf-sub2').value;
+      const parts = [type];
+      if (sub1Val) parts.push(sub1Val);
+      if (sub2Val) parts.push(sub2Val);
+      labelText = parts.join(' · ') + ' · BI-RADS ' + birads;
+    }
 
     document.getElementById('mark-form').classList.add('hidden');
 
-    markSaved = true;
-    savedMarkType = type;
-    savedMarkConf = conf;
+    if (editingMarkId) {
+      // Update existing saved mark
+      const mark = humanMarks.find(m => m.id === editingMarkId);
+      if (mark) {
+        Object.assign(mark, { type, sub1: sub1Val, sub2: sub2Val, birads, concern: 'BI-RADS ' + birads, labelText });
+        mark.el.querySelector('.human-ring-label').textContent = labelText;
+      }
+      editingMarkId = null;
+    } else {
+      if (!pendingMarkEl) return;
+      pendingMarkEl.querySelector('.human-ring-label').textContent = labelText;
+      pendingMarkEl.classList.add('labelled');
+      humanMarks.push({
+        id: pendingMarkEl.id, el: pendingMarkEl, paneId: pendingMarkPaneId,
+        type, sub1: sub1Val, sub2: sub2Val, birads,
+        concern: 'BI-RADS ' + birads, labelText
+      });
+      pendingMarkEl = null;
+      pendingMarkPaneId = null;
+    }
 
-    // Label the ring with finding type
-    const labelText = type + (conf ? ' · ' + conf.toLowerCase() : '');
-    document.getElementById('human-ring-label').textContent = labelText;
-    document.getElementById('human-mark-dot').classList.add('labelled');
-
-    // Show saved mark chip in Findings panel
-    document.getElementById('saved-marks-list').innerHTML =
-      '<div class="saved-mark-item"><span class="saved-mark-dot"></span><span class="saved-mark-text">' + labelText + '</span></div>';
-
-    // Reset form
-    document.getElementById('mf-type').value = '';
-    document.getElementById('mf-confidence').value = '';
-    checkMarkFormReady();
+    updateMarksPanel();
+    resetMarkForm();
+    document.getElementById('mf-save').textContent = 'Save mark';
   }
 
   function deleteMark() {
     document.getElementById('mark-form').classList.add('hidden');
-    const marker = document.getElementById('human-mark-dot');
-    marker.style.display = 'none';
-    marker.classList.remove('labelled', 'no-recall');
-    humanMarkPlaced = false;
-    markSaved = false;
-    savedMarkType = null;
-    savedMarkConf = null;
-    document.getElementById('saved-marks-list').innerHTML = '';
+    if (editingMarkId) {
+      // Delete a saved mark
+      const idx = humanMarks.findIndex(m => m.id === editingMarkId);
+      if (idx !== -1) {
+        humanMarks[idx].el.remove();
+        humanMarks.splice(idx, 1);
+      }
+      editingMarkId = null;
+      updateMarksPanel();
+    } else if (pendingMarkEl) {
+      pendingMarkEl.remove();
+      pendingMarkEl = null;
+      pendingMarkPaneId = null;
+    }
+    resetMarkForm();
+    document.getElementById('mf-save').textContent = 'Save mark';
+  }
+
+  function resetMarkForm() {
     document.getElementById('mf-type').value = '';
-    document.getElementById('mf-confidence').value = '';
+    document.getElementById('mf-lesion-section').classList.add('hidden');
+    document.getElementById('mf-sub1-wrap').classList.add('hidden');
+    document.getElementById('mf-sub2-wrap').classList.add('hidden');
+    document.getElementById('mf-sub1').innerHTML = '';
+    document.getElementById('mf-sub2').innerHTML = '';
+    document.querySelectorAll('input[name="birads"]').forEach(r => r.checked = false);
     checkMarkFormReady();
   }
 
-  // ── Case judgement radio selection ──
-  document.getElementById('opt-recall').addEventListener('click', function() {
-    this.classList.add('selected');
-    document.getElementById('opt-norecall').classList.remove('selected');
-    selectedJudgement = 'recall';
-    document.getElementById('btn-submit').disabled = false;
+  function updateMarksPanel() {
+    const n = humanMarks.length;
+    const btn = document.getElementById('btn-submit-reading');
+    btn.textContent = n > 0 ? 'Submit reading (' + n + ')' : 'Submit reading';
+  }
+
+  // ── Submit reading → open outcome modal ──
+  let chosenOutcome = null;
+
+  document.getElementById('btn-submit-reading').addEventListener('click', function() {
+    // Reset outcome modal
+    chosenOutcome = null;
+    document.querySelectorAll('.outcome-option').forEach(o => o.classList.remove('selected'));
+    document.querySelectorAll('input[name="reading-outcome"]').forEach(r => r.checked = false);
+    document.getElementById('btn-confirm-outcome').disabled = true;
+    openModal('modal-reading-outcome');
   });
-  document.getElementById('opt-norecall').addEventListener('click', function() {
-    this.classList.add('selected');
-    document.getElementById('opt-recall').classList.remove('selected');
-    selectedJudgement = 'norecall';
-    document.getElementById('btn-submit').disabled = false;
-  });
 
-  // ── Submit initial judgement → lock → reveal AI → disagreement ──
-  document.getElementById('btn-submit').addEventListener('click', function() {
-    if (!selectedJudgement) return;
+  function selectOutcome(labelEl, outcomeText) {
+    document.querySelectorAll('.outcome-option').forEach(o => o.classList.remove('selected'));
+    labelEl.classList.add('selected');
+    chosenOutcome = outcomeText;
+    document.getElementById('btn-confirm-outcome').disabled = false;
+  }
 
-    const decisionText = selectedJudgement === 'recall' ? 'Recall' : 'No recall';
+  function doSubmitReading() {
+    if (!chosenOutcome) return;
+    closeModal('modal-reading-outcome');
 
-    // Populate locked judgement
-    document.getElementById('locked-judgement-value').textContent = decisionText;
-    if (markSaved && savedMarkType) {
-      document.getElementById('locked-judgement-detail').textContent =
-        (savedMarkConf ? savedMarkConf + ' confidence · ' : '') + savedMarkType;
+    // Cancel any unsaved pending mark
+    if (pendingMarkEl) { pendingMarkEl.remove(); pendingMarkEl = null; }
+
+    // Build mark detail string
+    let markDetail = '';
+    if (humanMarks.length > 0) {
+      const first = humanMarks[0];
+      markDetail = first.type + (first.concern ? ' · ' + first.concern : '') +
+        (humanMarks.length > 1 ? ' (+' + (humanMarks.length - 1) + ' more)' : '');
     }
+
+    // Populate locked reading in panel
+    document.getElementById('locked-judgement-value').textContent = chosenOutcome;
+    if (markDetail) document.getElementById('locked-judgement-detail').textContent = markDetail;
+
+    // Populate dynamic outcome placeholders
+    document.getElementById('disag-human-val').textContent = chosenOutcome;
+    const handoverHuman = document.getElementById('handover-human-val');
+    if (handoverHuman) handoverHuman.textContent = chosenOutcome;
+    const pathwayHuman = document.getElementById('pathway-human-val');
+    if (pathwayHuman) pathwayHuman.textContent = chosenOutcome;
 
     // Pre-fill comparison modal
-    document.getElementById('comp-human-decision').textContent = decisionText;
-    document.getElementById('comp-human-conf').textContent = savedMarkConf || '—';
-    if (markSaved && humanMarkPaneId) {
-      const paneName = paneNames[humanMarkPaneId] || 'Image';
-      document.getElementById('comp-human-mark').textContent = paneName + ' · ' + (savedMarkType || 'marked');
-    }
-
-    // Apply no-recall styling to human ring if applicable
-    if (selectedJudgement === 'norecall' && markSaved) {
-      document.getElementById('human-mark-dot').classList.add('no-recall');
+    document.getElementById('comp-human-decision').textContent = chosenOutcome;
+    if (humanMarks.length > 0) {
+      const first = humanMarks[0];
+      document.getElementById('comp-human-conf').textContent = first.concern || '—';
+      const paneName = paneNames[first.paneId] || 'Image';
+      document.getElementById('comp-human-mark').textContent =
+        paneName + ' · ' + first.type + (humanMarks.length > 1 ? ' +' + (humanMarks.length - 1) : '');
+    } else {
+      document.getElementById('comp-human-conf').textContent = '—';
+      document.getElementById('comp-human-mark').textContent = 'No finding marked';
     }
 
     document.getElementById('viewer').classList.remove('mark-mode');
+    document.getElementById('btn-submit-reading').disabled = true;
 
     currentState = 2;
     updateSteps(currentState);
-    hide('section-human-judgement');
-    hide('section-case-judgement');
     show('section-locked-judgement');
 
     setTimeout(() => {
@@ -2385,27 +2903,15 @@
       updateSteps(currentState);
       show('section-ai-result');
       document.getElementById('marker-lcc').classList.add('visible');
+      document.getElementById('marker-lmlo').classList.add('visible');
 
       setTimeout(() => {
         currentState = 4;
         updateSteps(currentState);
         show('section-disagreement');
+        document.getElementById('right-panel').classList.remove('collapsed');
       }, 900);
     }, 650);
-  });
-
-  // ── Second look ──
-  function doSecondLook(btn) {
-    const isOpen = btn.classList.contains('used');
-    if (isOpen) {
-      document.getElementById('pane-lcc').classList.remove('second-look-focus');
-      btn.classList.remove('used');
-      btn.innerHTML = '<svg class="icon"><use href="#icon-eye"/></svg><span class="action-main">Second look</span>';
-    } else {
-      document.getElementById('pane-lcc').classList.add('second-look-focus');
-      btn.classList.add('used');
-      btn.innerHTML = '<svg class="icon"><use href="#icon-eye"/></svg><span class="action-main">Second look enabled</span><span class="action-meta">AI finding highlighted.</span>';
-    }
   }
 
   // ── Peer pause ──
@@ -2469,10 +2975,6 @@
     ['feedback-override'].forEach(id => {
       document.getElementById(id).classList.remove('visible');
     });
-    document.getElementById('pane-lcc').classList.remove('second-look-focus');
-    const secondLookBtn = document.getElementById('btn-second-look');
-    secondLookBtn.classList.remove('used');
-    secondLookBtn.innerHTML = '<svg class="icon"><use href="#icon-eye"/></svg><span class="action-main">Second look</span>';
     const peerPauseBtn = document.getElementById('btn-peer-pause');
     peerPauseBtn.classList.remove('used');
     peerPauseBtn.innerHTML = '<svg class="icon"><use href="#icon-pause"/></svg><span class="action-main">Peer pause</span>';
@@ -2524,6 +3026,9 @@
   function togglePanel() {
     document.getElementById('right-panel').classList.toggle('collapsed');
   }
+
+  // ── Lucide icons ──
+  lucide.createIcons();
 </script>
 </body>
 </html>
