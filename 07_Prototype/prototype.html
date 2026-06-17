@@ -261,6 +261,9 @@
     display: block;
     position: absolute;
     top: 0; left: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
   }
   /* Keep paired views oriented so chest-wall edges meet at the centre of each pair. */
   #pane-rcc .mamo-img,
@@ -1732,7 +1735,7 @@
 
     <div class="thumb active" onclick="selectThumb(this)">
       <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
-        <img src="./assets/mammogram-l-cc.png" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
+        <img src="./assets/mammogram-l-cc.webp" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
       </div>
       <div class="thumb-tag">L-CC</div>
       <div class="thumb-label">L-CC</div>
@@ -1740,7 +1743,7 @@
 
     <div class="thumb" onclick="selectThumb(this)">
       <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
-        <img src="./assets/mammogram-r-cc.png" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
+        <img src="./assets/mammogram-r-cc.webp" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
       </div>
       <div class="thumb-tag">R-CC</div>
       <div class="thumb-label">R-CC</div>
@@ -1748,7 +1751,7 @@
 
     <div class="thumb" onclick="selectThumb(this)">
       <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
-        <img src="./assets/mammogram-l-mlo.png" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
+        <img src="./assets/mammogram-l-mlo.webp" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
       </div>
       <div class="thumb-tag">L-MLO</div>
       <div class="thumb-label">L-MLO</div>
@@ -1756,7 +1759,7 @@
 
     <div class="thumb" onclick="selectThumb(this)">
       <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
-        <img src="./assets/mammogram-r-mlo.png" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
+        <img src="./assets/mammogram-r-mlo.webp" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
       </div>
       <div class="thumb-tag">R-MLO</div>
       <div class="thumb-label">R-MLO</div>
@@ -1776,7 +1779,7 @@
     <div class="mamo-pane" id="pane-lcc">
       <div class="pane-label">L-CC</div>
       <div class="pane-age">Age: 72</div>
-      <img class="mamo-img" src="./assets/mammogram-l-cc.png" alt="L-CC">
+      <img class="mamo-img" src="./assets/mammogram-l-cc.webp" alt="L-CC" draggable="false">
       <div class="image-focus-frame" aria-hidden="true"></div>
       <!-- AI finding marker: positioned relative to the non-mirrored L-CC image. -->
       <div class="finding-marker" id="marker-lcc" style="top:43%; left:37%;">
@@ -1790,7 +1793,7 @@
     <div class="mamo-pane" id="pane-rcc">
       <div class="pane-label">R-CC</div>
       <div class="pane-age">Age: 72</div>
-      <img class="mamo-img" src="./assets/mammogram-r-cc.png" alt="R-CC">
+      <img class="mamo-img" src="./assets/mammogram-r-cc.webp" alt="R-CC" draggable="false">
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2314 / -3</div>
     </div>
 
@@ -1798,7 +1801,7 @@
     <div class="mamo-pane" id="pane-lmlo">
       <div class="pane-label">L-MLO</div>
       <div class="pane-age">Age: 72</div>
-      <img class="mamo-img" src="./assets/mammogram-l-mlo.png" alt="L-MLO">
+      <img class="mamo-img" src="./assets/mammogram-l-mlo.webp" alt="L-MLO" draggable="false">
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
     </div>
 
@@ -1806,7 +1809,7 @@
     <div class="mamo-pane" id="pane-rmlo">
       <div class="pane-label">R-MLO</div>
       <div class="pane-age">Age: 72</div>
-      <img class="mamo-img" src="./assets/mammogram-r-mlo.png" alt="R-MLO">
+      <img class="mamo-img" src="./assets/mammogram-r-mlo.webp" alt="R-MLO" draggable="false">
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
     </div>
 
