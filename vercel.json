@@ -1,5 +1,7 @@
 {
-  "buildCommand": "",
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
   "outputDirectory": "07_Prototype",
   "rewrites": [
     { "source": "/", "destination": "/prototype.html" }
