@@ -1,0 +1,7 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "07_Prototype",
+  "rewrites": [
+    { "source": "/", "destination": "/prototype.html" }
+  ]
+}
