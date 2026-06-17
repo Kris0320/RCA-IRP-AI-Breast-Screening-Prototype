@@ -1543,6 +1543,55 @@
   #status-line-value { color: var(--text-bright); font-weight: 500; }
   #status-line-value.disagreement { color: var(--amber); font-weight: 600; }
 
+  /* ── SAVE / DELETE MARK buttons ── */
+  .mf-action-row { display: flex; gap: 7px; margin-top: 11px; }
+  .btn-save-mark {
+    flex: 1;
+    padding: 7px 10px;
+    border: 1px solid rgba(91,122,154,0.55);
+    background: rgba(91,122,154,0.1);
+    color: var(--text-bright);
+    font-size: 13px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+  }
+  .btn-save-mark:hover { background: rgba(91,122,154,0.2); border-color: rgba(91,122,154,0.8); }
+  .btn-save-mark:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-delete-mark {
+    padding: 7px 10px;
+    border: 1px solid #383838;
+    background: transparent;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.12s, color 0.12s;
+  }
+  .btn-delete-mark:hover { background: rgba(255,255,255,0.04); color: var(--text); }
+
+  /* Saved mark chip in the findings panel */
+  .saved-mark-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 9px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 7px;
+  }
+  .saved-mark-dot {
+    width: 9px; height: 9px;
+    border: 1.5px solid rgba(110,145,180,0.7);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
   /* ── COMPARISON MODAL body extras ── */
   .modal-body .modal-row-value.amber { color: var(--amber); font-weight: 500; }
   .evidence-block {
@@ -1783,15 +1832,38 @@
     <!-- Scrollable decision support -->
     <div id="panel-scroll">
 
-    <!-- STATE 1: Human judgement -->
+    <!-- STATE 1a: Findings (marking tool) -->
     <div class="panel-section" id="section-human-judgement">
       <div class="panel-section-header">
         <svg class="icon"><use href="#icon-crosshair"/></svg>
-        Human judgement
+        Findings
       </div>
       <div class="panel-section-body">
-        <div class="panel-note" id="mark-instruction">Click on the mammogram to place your finding mark.</div>
-        <div id="mark-placed-notice" class="hidden" style="font-size:13px;color:var(--text-dim);padding:4px 0 0;">Mark placed — complete the form on screen, then submit.</div>
+        <div class="panel-note">Click on the mammogram to mark any findings.</div>
+        <div id="saved-marks-list"></div>
+      </div>
+    </div>
+
+    <!-- STATE 1b: Initial case judgement -->
+    <div class="panel-section" id="section-case-judgement">
+      <div class="panel-section-header">
+        <svg class="icon"><use href="#icon-user"/></svg>
+        Initial case judgement
+      </div>
+      <div class="panel-section-body">
+        <div class="judgement-options">
+          <label class="radio-option" id="opt-recall">
+            <div class="radio-dot"></div>
+            <span class="radio-text">Recall</span>
+            <input type="radio" name="judgement" value="recall" style="display:none">
+          </label>
+          <label class="radio-option" id="opt-norecall">
+            <div class="radio-dot"></div>
+            <span class="radio-text">No recall</span>
+            <input type="radio" name="judgement" value="norecall" style="display:none">
+          </label>
+        </div>
+        <button class="btn-primary" id="btn-submit" disabled>Submit initial judgement</button>
       </div>
     </div>
 
@@ -2114,32 +2186,31 @@
     </select>
   </div>
   <div class="mark-form-field">
-    <label class="mark-form-label">Decision</label>
-    <div class="mf-radio-group">
-      <button class="mf-radio-btn" id="mf-recall" type="button" onclick="selectDecision('recall')">Recall</button>
-      <button class="mf-radio-btn" id="mf-norecall" type="button" onclick="selectDecision('norecall')">No recall</button>
-    </div>
-  </div>
-  <div class="mark-form-field">
-    <label class="mark-form-label">Confidence</label>
-    <select class="mark-form-select" id="mf-confidence" onchange="checkMarkFormReady()">
-      <option value="">Select</option>
+    <label class="mark-form-label" style="display:flex;align-items:baseline;gap:5px;">
+      Confidence
+      <span style="font-size:12px;color:var(--text-dim);font-weight:400;">(optional)</span>
+    </label>
+    <select class="mark-form-select" id="mf-confidence">
+      <option value="">—</option>
       <option>Low</option>
       <option>Medium</option>
       <option>High</option>
     </select>
   </div>
-  <button class="btn-primary" id="mf-submit" type="button" onclick="submitFromMarkForm()" style="margin-top:8px;" disabled>
-    Submit initial judgement
-  </button>
+  <div class="mf-action-row">
+    <button class="btn-save-mark" id="mf-save" type="button" onclick="saveMark()" disabled>Save mark</button>
+    <button class="btn-delete-mark" id="mf-delete" type="button" onclick="deleteMark()">Delete</button>
+  </div>
 </div>
 
 <script>
   let currentState = 1;
   let selectedJudgement = null;
-  let selectedDecision = null;
   let humanMarkPlaced = false;
   let humanMarkPaneId = null;
+  let markSaved = false;
+  let savedMarkType = null;
+  let savedMarkConf = null;
 
   const statusLabels = [
     'Independent reading',
@@ -2198,8 +2269,6 @@
     marker.style.top = y + 'px';
     marker.style.display = 'block';
 
-    document.getElementById('mark-placed-notice').classList.remove('hidden');
-
     // Position mark form near click, clamped to viewport
     const form = document.getElementById('mark-form');
     form.classList.remove('hidden');
@@ -2215,51 +2284,97 @@
     checkMarkFormReady();
   });
 
-  function selectDecision(dec) {
-    selectedDecision = dec;
-    document.getElementById('mf-recall').classList.toggle('selected', dec === 'recall');
-    document.getElementById('mf-norecall').classList.toggle('selected', dec === 'norecall');
+  function checkMarkFormReady() {
+    document.getElementById('mf-save').disabled = !document.getElementById('mf-type').value;
+  }
+
+  function saveMark() {
+    const type = document.getElementById('mf-type').value;
+    if (!type) return;
+    const conf = document.getElementById('mf-confidence').value;
+
+    document.getElementById('mark-form').classList.add('hidden');
+
+    markSaved = true;
+    savedMarkType = type;
+    savedMarkConf = conf;
+
+    // Label the ring with finding type
+    const labelText = type + (conf ? ' · ' + conf.toLowerCase() : '');
+    document.getElementById('human-ring-label').textContent = labelText;
+    document.getElementById('human-mark-dot').classList.add('labelled');
+
+    // Show saved mark chip in Findings panel
+    document.getElementById('saved-marks-list').innerHTML =
+      '<div class="saved-mark-item"><span class="saved-mark-dot"></span><span class="saved-mark-text">' + labelText + '</span></div>';
+
+    // Reset form
+    document.getElementById('mf-type').value = '';
+    document.getElementById('mf-confidence').value = '';
     checkMarkFormReady();
   }
 
-  function checkMarkFormReady() {
-    const type = document.getElementById('mf-type').value;
-    const conf = document.getElementById('mf-confidence').value;
-    document.getElementById('mf-submit').disabled = !(humanMarkPlaced && selectedDecision && type && conf);
+  function deleteMark() {
+    document.getElementById('mark-form').classList.add('hidden');
+    const marker = document.getElementById('human-mark-dot');
+    marker.style.display = 'none';
+    marker.classList.remove('labelled', 'no-recall');
+    humanMarkPlaced = false;
+    markSaved = false;
+    savedMarkType = null;
+    savedMarkConf = null;
+    document.getElementById('saved-marks-list').innerHTML = '';
+    document.getElementById('mf-type').value = '';
+    document.getElementById('mf-confidence').value = '';
+    checkMarkFormReady();
   }
 
-  function submitFromMarkForm() {
-    if (!humanMarkPlaced || !selectedDecision) return;
-    const type = document.getElementById('mf-type').value;
-    const conf = document.getElementById('mf-confidence').value;
-    if (!type || !conf) return;
+  // ── Case judgement radio selection ──
+  document.getElementById('opt-recall').addEventListener('click', function() {
+    this.classList.add('selected');
+    document.getElementById('opt-norecall').classList.remove('selected');
+    selectedJudgement = 'recall';
+    document.getElementById('btn-submit').disabled = false;
+  });
+  document.getElementById('opt-norecall').addEventListener('click', function() {
+    this.classList.add('selected');
+    document.getElementById('opt-recall').classList.remove('selected');
+    selectedJudgement = 'norecall';
+    document.getElementById('btn-submit').disabled = false;
+  });
 
-    selectedJudgement = selectedDecision;
+  // ── Submit initial judgement → lock → reveal AI → disagreement ──
+  document.getElementById('btn-submit').addEventListener('click', function() {
+    if (!selectedJudgement) return;
 
-    // Close form and remove mark-mode cursor
-    document.getElementById('mark-form').classList.add('hidden');
-    document.getElementById('viewer').classList.remove('mark-mode');
+    const decisionText = selectedJudgement === 'recall' ? 'Recall' : 'No recall';
 
-    // Update human marker to labelled state
-    const decisionText = selectedDecision === 'recall' ? 'Recall' : 'No recall';
-    const marker = document.getElementById('human-mark-dot');
-    document.getElementById('human-ring-label').textContent = decisionText + ' · ' + conf.toLowerCase();
-    marker.classList.add('labelled');
-    if (selectedDecision === 'norecall') marker.classList.add('no-recall');
-
-    // Update locked panel
+    // Populate locked judgement
     document.getElementById('locked-judgement-value').textContent = decisionText;
-    document.getElementById('locked-judgement-detail').textContent = conf + ' confidence · ' + type;
+    if (markSaved && savedMarkType) {
+      document.getElementById('locked-judgement-detail').textContent =
+        (savedMarkConf ? savedMarkConf + ' confidence · ' : '') + savedMarkType;
+    }
 
     // Pre-fill comparison modal
     document.getElementById('comp-human-decision').textContent = decisionText;
-    document.getElementById('comp-human-conf').textContent = conf;
-    const paneName = paneNames[humanMarkPaneId] || 'Image';
-    document.getElementById('comp-human-mark').textContent = paneName + ' · marked on image';
+    document.getElementById('comp-human-conf').textContent = savedMarkConf || '—';
+    if (markSaved && humanMarkPaneId) {
+      const paneName = paneNames[humanMarkPaneId] || 'Image';
+      document.getElementById('comp-human-mark').textContent = paneName + ' · ' + (savedMarkType || 'marked');
+    }
+
+    // Apply no-recall styling to human ring if applicable
+    if (selectedJudgement === 'norecall' && markSaved) {
+      document.getElementById('human-mark-dot').classList.add('no-recall');
+    }
+
+    document.getElementById('viewer').classList.remove('mark-mode');
 
     currentState = 2;
     updateSteps(currentState);
     hide('section-human-judgement');
+    hide('section-case-judgement');
     show('section-locked-judgement');
 
     setTimeout(() => {
@@ -2274,7 +2389,7 @@
         show('section-disagreement');
       }, 900);
     }, 650);
-  }
+  });
 
   // ── Second look ──
   function doSecondLook(btn) {
