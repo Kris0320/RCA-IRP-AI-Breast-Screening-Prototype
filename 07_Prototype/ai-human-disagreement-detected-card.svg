@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 54px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 23px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .state-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .panel-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 22px; fill: #172033; font-weight: 700; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 32px; fill: #172033; font-weight: 700; }
+      .card-subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #536174; }
+      .cue-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 22px; fill: #172033; font-weight: 700; }
+      .cue-subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .value { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #172033; font-weight: 700; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #2d3948; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #172033; font-weight: 700; }
+      .button-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #ffffff; font-weight: 700; }
+      .button-text-blue { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #273244; font-weight: 700; }
+      .button-text-small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #273244; font-weight: 700; }
+      .orange-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #b34c29; font-weight: 700; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .viewer { fill: #172033; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .viewer-inner { fill: #253044; stroke: #41516a; stroke-width: 1.2; rx: 12; }
+      .viewer-soft { fill: #edf3f8; stroke: #cbd8e4; stroke-width: 1.2; rx: 12; }
+      .card { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 22; filter: url(#shadow); }
+      .card-top { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.3; rx: 16; }
+      .cue { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.4; rx: 18; filter: url(#softShadow); }
+      .block { fill: #f8fafc; stroke: #d9e0e8; stroke-width: 1.2; rx: 14; }
+      .block-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.3; rx: 14; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 18; }
+      .chip-orange { fill: #fff3ed; stroke: #e7b69d; stroke-width: 1.2; rx: 18; }
+      .primary { fill: #315f86; stroke: #315f86; stroke-width: 1.2; rx: 12; }
+      .secondary { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 12; }
+      .optional { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.2; rx: 12; }
+      .divider { stroke: #d9e0e8; stroke-width: 1.2; }
+      .line { stroke: #9aaabd; stroke-width: 2; fill: none; }
+      .orange-line { stroke: #d9653b; stroke-width: 2.2; fill: none; }
+      .dot { fill: #d9653b; }
+      .scan-line { stroke: #6e7f95; stroke-width: 1.4; opacity: 0.45; }
+      .mammogram { fill: #dfe7ef; opacity: 0.88; }
+      .mammogram-shadow { fill: #9aabba; opacity: 0.22; }
+      .arrow-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; font-weight: 700; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#9aaabd"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="70">TOUCHPOINT 1 · DISAGREEMENT DETECTION CUE</text>
+  <text class="title" x="96" y="132">Touchpoint 1 — Disagreement Detection Cue</text>
+  <text class="subtitle" x="98" y="174">A soft two-step signal: first notice, then inspect</text>
+
+  <!-- State 1: collapsed soft cue -->
+  <g transform="translate(96 230)">
+    <rect class="panel" x="0" y="0" width="720" height="754"/>
+    <text class="state-label" x="28" y="42">STATE 1 · COLLAPSED SOFT CUE</text>
+    <text class="panel-title" x="28" y="76">Mammogram viewer remains primary</text>
+    <text class="small" x="28" y="104">The cue gently offers a comparison review without showing full details.</text>
+
+    <rect class="viewer" x="28" y="138" width="664" height="486"/>
+    <rect class="viewer-inner" x="54" y="166" width="612" height="430"/>
+    <line class="scan-line" x1="360" y1="166" x2="360" y2="596"/>
+    <line class="scan-line" x1="54" y1="381" x2="666" y2="381"/>
+
+    <path class="mammogram-shadow" d="M222 242 C168 279 144 352 166 427 C187 497 244 544 312 552 C338 515 350 457 342 390 C333 313 289 259 222 242z"/>
+    <path class="mammogram" d="M236 226 C179 264 154 344 177 427 C199 504 259 554 329 560 C357 521 370 457 361 382 C351 299 307 245 236 226z"/>
+    <path class="mammogram-shadow" d="M498 242 C552 279 576 352 554 427 C533 497 476 544 408 552 C382 515 370 457 378 390 C387 313 431 259 498 242z"/>
+    <path class="mammogram" d="M484 226 C541 264 566 344 543 427 C521 504 461 554 391 560 C363 521 350 457 359 382 C369 299 413 245 484 226z"/>
+
+    <!-- Subtle region cue, not a large alert -->
+    <circle cx="468" cy="360" r="22" fill="none" stroke="#d9653b" stroke-width="3" opacity="0.78"/>
+    <circle cx="468" cy="360" r="4" class="dot" opacity="0.84"/>
+
+    <!-- Collapsed floating cue -->
+    <g transform="translate(68 444)">
+      <rect class="cue" x="0" y="0" width="554" height="138"/>
+      <rect class="chip-orange" x="24" y="20" width="176" height="28"/>
+      <circle class="dot" cx="44" cy="34" r="4"/>
+      <text class="orange-text" x="62" y="39">Non-blame review cue</text>
+      <text class="cue-title" x="24" y="78">Second interpretation differs</text>
+      <text class="cue-subtitle" x="24" y="102">Comparison review available</text>
+      <rect class="secondary" x="340" y="76" width="184" height="40"/>
+      <text class="button-text-small" x="432" y="101" text-anchor="middle">Open comparison review</text>
+      <text class="small" x="334" y="38">Case ID: SC-2048</text>
+    </g>
+
+    <rect class="viewer-soft" x="28" y="654" width="664" height="66"/>
+    <text class="label" x="54" y="682">DETECT FIRST</text>
+    <text class="small" x="54" y="706">Only a gentle cue appears before the reader chooses to inspect details.</text>
+  </g>
+
+  <!-- Transition arrow -->
+  <g transform="translate(846 518)">
+    <path class="orange-line" marker-end="url(#arrowOrange)" d="M0 36 H122"/>
+    <text class="arrow-label" x="61" y="22" text-anchor="middle">open comparison review</text>
+  </g>
+
+  <!-- State 2: expanded disagreement review panel -->
+  <g transform="translate(998 230)">
+    <rect class="card" x="0" y="0" width="826" height="754"/>
+    <text class="state-label" x="34" y="42">STATE 2 · EXPANDED REVIEW PANEL</text>
+    <rect class="card-top" x="34" y="66" width="758" height="126"/>
+
+    <rect class="chip-orange" x="62" y="90" width="176" height="30"/>
+    <circle class="dot" cx="82" cy="105" r="4"/>
+    <text class="orange-text" x="100" y="110">Non-blame review cue</text>
+    <text class="card-title" x="62" y="150">AI-human disagreement detected</text>
+    <text class="card-subtitle" x="62" y="178">Human judgement and AI output do not align. Comparison review recommended.</text>
+    <rect class="chip" x="638" y="102" width="128" height="36"/>
+    <text class="label" x="660" y="125">SC-2048</text>
+
+    <text class="label" x="50" y="238">COMPARISON SUMMARY</text>
+
+    <g transform="translate(50 262)">
+      <rect class="block" x="0" y="0" width="330" height="146"/>
+      <text class="label" x="22" y="34">HUMAN JUDGEMENT</text>
+      <text class="value" x="22" y="76">No recall recommended</text>
+      <text class="small" x="22" y="112">Recorded before comparison</text>
+    </g>
+
+    <g transform="translate(404 262)">
+      <rect class="block-accent" x="0" y="0" width="330" height="146"/>
+      <text class="label" x="22" y="34">AI EVIDENCE LAYER</text>
+      <text class="value" x="22" y="76">Recall concern raised</text>
+      <text class="small" x="22" y="112">High confidence · suspicious region detected</text>
+    </g>
+
+    <line class="divider" x1="50" y1="442" x2="776" y2="442"/>
+
+    <g transform="translate(50 474)">
+      <rect class="block" x="0" y="0" width="330" height="110"/>
+      <text class="label" x="22" y="34">DISAGREEMENT TYPE</text>
+      <text class="value" x="22" y="74">Detection disagreement</text>
+    </g>
+
+    <g transform="translate(404 474)">
+      <rect class="block-accent" x="0" y="0" width="330" height="110"/>
+      <text class="label" x="22" y="34">PRIMARY CONCERN</text>
+      <text class="body" x="22" y="66">AI flagged a suspicious region not</text>
+      <text class="body" x="22" y="91">marked in the human judgement.</text>
+    </g>
+
+    <g transform="translate(50 626)">
+      <text class="label" x="0" y="0">SUGGESTED NEXT STEP</text>
+      <rect class="primary" x="0" y="24" width="246" height="56"/>
+      <text class="button-text" x="123" y="59" text-anchor="middle">Request arbitration review</text>
+      <rect class="secondary" x="268" y="24" width="206" height="56"/>
+      <text class="button-text-blue" x="371" y="59" text-anchor="middle">Open comparison view</text>
+      <rect class="optional" x="496" y="24" width="202" height="56"/>
+      <text class="button-text-blue" x="597" y="59" text-anchor="middle">Add handover note</text>
+    </g>
+
+    <text class="small" x="50" y="724">Classify the disagreement, keep AI as evidence, and support escalation without blame.</text>
+  </g>
+</svg>

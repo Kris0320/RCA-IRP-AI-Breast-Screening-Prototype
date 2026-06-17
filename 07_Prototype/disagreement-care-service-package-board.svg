@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 56px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 24px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; font-weight: 700; letter-spacing: 0.04em; }
+      .stage { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 24px; fill: #172033; font-weight: 700; }
+      .stage-small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 24px; fill: #172033; font-weight: 700; }
+      .card-sub { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5f6d7d; font-weight: 700; }
+      .value { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #273244; font-weight: 600; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #536174; }
+      .note { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #3f4d5f; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 14; }
+      .panel-soft { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.4; rx: 12; }
+      .panel-accent { fill: #fff4ee; stroke: #d9653b; stroke-width: 1.6; rx: 12; }
+      .field { fill: #f7f9fb; stroke: #d9e0e8; stroke-width: 1.1; rx: 8; }
+      .field-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 8; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 18; }
+      .chip-accent { fill: #d9653b; stroke: #d9653b; stroke-width: 1.1; rx: 18; }
+      .chip-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #273244; font-weight: 700; }
+      .chip-text-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #ffffff; font-weight: 700; }
+      .line { stroke: #9aaabd; stroke-width: 2.2; fill: none; }
+      .line-accent { stroke: #d9653b; stroke-width: 2.2; fill: none; }
+      .dash { stroke: #9aaabd; stroke-width: 1.6; stroke-dasharray: 6 8; fill: none; }
+      .orange { fill: #d9653b; font-weight: 700; }
+      .icon-bg { fill: #dbe8f4; stroke: #8ea5bb; stroke-width: 1.2; }
+      .icon-bg-accent { fill: #d9653b; stroke: #ffffff; stroke-width: 3; }
+      .icon-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #273244; font-weight: 700; }
+      .icon-text-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #ffffff; font-weight: 700; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+    <marker id="arrowAccent" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="62">SERVICE PROTOTYPE BOARD</text>
+  <text class="title" x="96" y="122">Disagreement Care Service Package</text>
+  <text class="subtitle" x="98" y="162">A service prototype for detecting, resolving and learning from AI-human disagreement in breast screening.</text>
+
+  <!-- Service logic strip -->
+  <g transform="translate(96 210)">
+    <rect class="panel" x="0" y="0" width="1728" height="128"/>
+    <text class="kicker" x="30" y="38">SERVICE LOGIC</text>
+
+    <g transform="translate(270 26)">
+      <rect class="panel-soft" x="0" y="0" width="300" height="76"/>
+      <circle class="icon-bg" cx="38" cy="38" r="20"/>
+      <text class="icon-text" x="38" y="45" text-anchor="middle">1</text>
+      <text class="stage" x="74" y="33">Detect</text>
+      <text class="stage-small" x="74" y="58">flag + classify</text>
+
+      <path class="line" marker-end="url(#arrow)" d="M320 38 H420"/>
+
+      <rect class="panel-soft" x="440" y="0" width="360" height="76"/>
+      <circle class="icon-bg-accent" cx="478" cy="38" r="20"/>
+      <text class="icon-text-white" x="478" y="45" text-anchor="middle">2</text>
+      <text class="stage" x="514" y="33">Resolve</text>
+      <text class="stage-small" x="514" y="58">escalate + arbitrate + record rationale</text>
+
+      <path class="line" marker-end="url(#arrow)" d="M820 38 H920"/>
+
+      <rect class="panel-soft" x="940" y="0" width="340" height="76"/>
+      <circle class="icon-bg" cx="978" cy="38" r="20"/>
+      <text class="icon-text" x="978" y="45" text-anchor="middle">3</text>
+      <text class="stage" x="1014" y="33">Learn</text>
+      <text class="stage-small" x="1014" y="58">audit + review + feed back into practice</text>
+    </g>
+  </g>
+
+  <!-- Touchpoint 1 -->
+  <g transform="translate(96 386)">
+    <rect class="panel" x="0" y="0" width="528" height="516"/>
+    <circle class="icon-bg" cx="38" cy="42" r="22"/>
+    <text class="icon-text" x="38" y="49" text-anchor="middle">1</text>
+    <text class="card-title" x="76" y="38">Disagreement Flag</text>
+    <text class="card-title" x="76" y="68">/ Detection Card</text>
+    <text class="card-sub" x="28" y="108">Purpose: identify and classify mismatch between human judgement and AI output.</text>
+
+    <rect class="panel-soft" x="28" y="138" width="472" height="342"/>
+    <text class="kicker" x="52" y="170">SAMPLE CARD</text>
+
+    <rect class="field" x="52" y="194" width="200" height="56"/>
+    <text class="label" x="70" y="217">CASE ID</text>
+    <text class="value" x="70" y="240">BS-2047-118</text>
+
+    <rect class="field" x="276" y="194" width="200" height="56"/>
+    <text class="label" x="294" y="217">HUMAN JUDGEMENT</text>
+    <text class="value" x="294" y="240">Low-risk / no recall</text>
+
+    <rect class="field-accent" x="52" y="270" width="200" height="62"/>
+    <text class="label" x="70" y="293">AI OUTPUT</text>
+    <text class="value orange" x="70" y="316">High-risk flag</text>
+
+    <rect class="field-accent" x="276" y="270" width="200" height="62"/>
+    <text class="label" x="294" y="293">AI CONFIDENCE</text>
+    <text class="value orange" x="294" y="316">0.91 risk signal</text>
+
+    <rect class="field-accent" x="52" y="352" width="424" height="58"/>
+    <text class="label" x="70" y="375">DISAGREEMENT TYPE</text>
+    <text class="value orange" x="70" y="398">Human low-risk / AI high-risk</text>
+
+    <rect class="chip-accent" x="52" y="430" width="294" height="34"/>
+    <text class="chip-text-white" x="199" y="452" text-anchor="middle">Send to arbitration review</text>
+
+    <text class="small" x="28" y="504">Design role: make mismatch visible without making AI the final authority.</text>
+  </g>
+
+  <!-- Touchpoint 2 -->
+  <g transform="translate(696 386)">
+    <rect class="panel" x="0" y="0" width="528" height="516"/>
+    <circle class="icon-bg-accent" cx="38" cy="42" r="22"/>
+    <text class="icon-text-white" x="38" y="49" text-anchor="middle">2</text>
+    <text class="card-title" x="76" y="38">Arbitration Review</text>
+    <text class="card-title" x="76" y="68">Workspace</text>
+    <text class="card-sub" x="28" y="108">Purpose: support senior reviewer / arbitration panel to compare evidence and record rationale.</text>
+
+    <rect class="panel-soft" x="28" y="138" width="472" height="342"/>
+    <text class="kicker" x="52" y="170">WORKSPACE SNAPSHOT</text>
+
+    <rect class="field" x="52" y="194" width="190" height="70"/>
+    <text class="label" x="70" y="217">CASE SUMMARY</text>
+    <text class="small" x="70" y="241">Screening case with</text>
+    <text class="small" x="70" y="260">human-AI mismatch</text>
+
+    <rect class="field" x="262" y="194" width="214" height="70"/>
+    <text class="label" x="280" y="217">PRIOR + CURRENT IMAGES</text>
+    <rect x="282" y="232" width="76" height="20" rx="4" fill="#dbe8f4"/>
+    <rect x="370" y="232" width="76" height="20" rx="4" fill="#dbe8f4"/>
+
+    <rect class="field" x="52" y="284" width="190" height="58"/>
+    <text class="label" x="70" y="307">HUMAN JUDGEMENT</text>
+    <text class="value" x="70" y="330">No recall</text>
+
+    <rect class="field-accent" x="262" y="284" width="214" height="58"/>
+    <text class="label" x="280" y="307">AI OUTPUT / SCORE</text>
+    <text class="value orange" x="280" y="330">High-risk / 0.91</text>
+
+    <rect class="field" x="52" y="362" width="190" height="58"/>
+    <text class="label" x="70" y="385">EVIDENCE COMPARISON</text>
+    <text class="small" x="70" y="408">Region + prior change</text>
+
+    <rect class="field-accent" x="262" y="362" width="214" height="58"/>
+    <text class="label" x="280" y="385">DISAGREEMENT TYPE</text>
+    <text class="small orange" x="280" y="408">Low-risk / high-risk</text>
+
+    <rect class="field" x="52" y="440" width="130" height="26"/>
+    <text class="small" x="66" y="458">Override reason</text>
+    <rect class="field" x="192" y="440" width="128" height="26"/>
+    <text class="small" x="206" y="458">Final decision</text>
+    <rect class="field" x="330" y="440" width="146" height="26"/>
+    <text class="small" x="344" y="458">Learning tag</text>
+
+    <text class="small" x="28" y="504">Design role: support human-led arbitration and rationale capture.</text>
+  </g>
+
+  <!-- Touchpoint 3 -->
+  <g transform="translate(1296 386)">
+    <rect class="panel" x="0" y="0" width="528" height="516"/>
+    <circle class="icon-bg" cx="38" cy="42" r="22"/>
+    <text class="icon-text" x="38" y="49" text-anchor="middle">3</text>
+    <text class="card-title" x="76" y="38">Learning Memory Card</text>
+    <text class="card-title" x="76" y="68">/ Pattern Review</text>
+    <text class="card-sub" x="28" y="108">Purpose: turn disagreement cases into audit and organisational learning.</text>
+
+    <rect class="panel-soft" x="28" y="138" width="472" height="342"/>
+    <text class="kicker" x="52" y="170">PATTERN REVIEW</text>
+
+    <rect class="field" x="52" y="194" width="424" height="52"/>
+    <text class="label" x="70" y="217">DISAGREEMENT RECORD</text>
+    <text class="value" x="70" y="239">Human no recall / AI high-risk</text>
+
+    <rect class="field" x="52" y="262" width="196" height="54"/>
+    <text class="label" x="70" y="285">FINAL DECISION</text>
+    <text class="value" x="70" y="308">Recall</text>
+
+    <rect class="field" x="270" y="262" width="206" height="54"/>
+    <text class="label" x="288" y="285">OUTCOME STATUS</text>
+    <text class="value" x="288" y="308">Pending follow-up</text>
+
+    <rect class="field" x="52" y="332" width="424" height="58"/>
+    <text class="label" x="70" y="355">REASONING CHAIN</text>
+    <text class="small" x="70" y="378">AI flag reviewed; prior image change escalated</text>
+
+    <rect class="chip-accent" x="52" y="412" width="180" height="34"/>
+    <text class="chip-text-white" x="142" y="434" text-anchor="middle">Pattern tag</text>
+
+    <rect class="chip" x="250" y="412" width="226" height="34"/>
+    <text class="chip-text" x="363" y="434" text-anchor="middle">Suggested review action</text>
+
+    <text class="small" x="28" y="504">Design role: make difficult cases reusable for audit, training and calibration.</text>
+  </g>
+
+  <!-- Connection lines between touchpoints -->
+  <path class="line" marker-end="url(#arrow)" d="M624 644 H696"/>
+  <path class="line" marker-end="url(#arrow)" d="M1224 644 H1296"/>
+
+  <!-- Boundary note -->
+  <g transform="translate(96 944)">
+    <rect x="0" y="0" width="1728" height="68" rx="8" fill="#fff4ee" stroke="#e7b69d" stroke-width="1.4"/>
+    <text class="note" x="28" y="42">
+      <tspan class="orange">Boundary:</tspan>
+      <tspan> This is a service package with multiple touchpoints. AI is an output / evidence layer, not the final decision-maker.</tspan>
+    </text>
+  </g>
+</svg>

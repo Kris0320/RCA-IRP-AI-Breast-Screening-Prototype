@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 58px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .loop-main { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #172033; font-weight: 700; }
+      .loop-small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 28px; fill: #172033; font-weight: 700; }
+      .moment { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; font-weight: 700; letter-spacing: 0.03em; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #2d3948; }
+      .body-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #172033; font-weight: 700; }
+      .orange { fill: #d9653b; }
+      .orange-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #b34c29; font-weight: 700; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .card { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 18; filter: url(#shadow); }
+      .card-blue { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.3; rx: 13; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 18; }
+      .chip-orange { fill: #fff3ed; stroke: #e7b69d; stroke-width: 1.2; rx: 18; }
+      .burden { fill: #fff7f2; stroke: #e7b69d; stroke-width: 1.3; rx: 13; }
+      .divider { stroke: #d9e0e8; stroke-width: 1.2; }
+      .line { stroke: #9aaabd; stroke-width: 2.1; fill: none; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.1; fill: none; }
+      .icon-bg { fill: #dbe8f4; stroke: #8ea5bb; stroke-width: 1.2; }
+      .icon-bg-orange { fill: #d9653b; stroke: #ffffff; stroke-width: 3; }
+      .icon-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 19px; fill: #273244; font-weight: 700; }
+      .icon-text-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 19px; fill: #ffffff; font-weight: 700; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#172033" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="70">SERVICE LAYER PROTOTYPE</text>
+  <text class="title" x="96" y="132">Soft Layer Toolkit</text>
+  <text class="subtitle" x="98" y="174">Service artefacts that support disagreement care beyond the screen</text>
+
+  <g transform="translate(96 220)">
+    <rect class="panel" x="0" y="0" width="1728" height="112"/>
+    <text class="kicker" x="30" y="38">CARE LOOP</text>
+
+    <g transform="translate(260 24)">
+      <rect class="chip" x="0" y="0" width="230" height="64"/>
+      <circle class="icon-bg" cx="34" cy="32" r="19"/>
+      <text class="icon-text" x="34" y="39" text-anchor="middle">1</text>
+      <text class="loop-main" x="68" y="29">Detect</text>
+      <text class="loop-small" x="68" y="52">flag + classify</text>
+
+      <path class="line" marker-end="url(#arrow)" d="M250 32 H338"/>
+
+      <rect class="chip" x="358" y="0" width="250" height="64"/>
+      <circle class="icon-bg" cx="392" cy="32" r="19"/>
+      <text class="icon-text" x="392" y="39" text-anchor="middle">2</text>
+      <text class="loop-main" x="426" y="29">Support</text>
+      <text class="loop-small" x="426" y="52">pause + invite second look</text>
+
+      <path class="line-orange" marker-end="url(#arrowOrange)" d="M628 32 H716"/>
+
+      <rect class="chip-orange" x="736" y="0" width="280" height="64"/>
+      <circle class="icon-bg-orange" cx="770" cy="32" r="19"/>
+      <text class="icon-text-white" x="770" y="39" text-anchor="middle">3</text>
+      <text class="loop-main" x="804" y="29">Resolve</text>
+      <text class="loop-small" x="804" y="52">handover + arbitrate</text>
+
+      <path class="line" marker-end="url(#arrow)" d="M1036 32 H1124"/>
+
+      <rect class="chip" x="1144" y="0" width="250" height="64"/>
+      <circle class="icon-bg" cx="1178" cy="32" r="19"/>
+      <text class="icon-text" x="1178" y="39" text-anchor="middle">4</text>
+      <text class="loop-main" x="1212" y="29">Learn</text>
+      <text class="loop-small" x="1212" y="52">audit + feed back</text>
+    </g>
+  </g>
+
+  <!-- Card 1 -->
+  <g transform="translate(96 382)">
+    <rect class="card" x="0" y="0" width="405" height="582"/>
+    <rect class="card-blue" x="24" y="24" width="357" height="88"/>
+    <circle class="icon-bg" cx="62" cy="68" r="22"/>
+    <text class="icon-text" x="62" y="75" text-anchor="middle">1</text>
+    <text class="card-title" x="98" y="60">Soft Signal</text>
+    <text class="moment" x="98" y="88">SERVICE MOMENT: DETECT</text>
+
+    <text class="small-strong" x="28" y="150">Purpose</text>
+    <text class="body" x="28" y="178">Make AI-human disagreement visible</text>
+    <text class="body" x="28" y="203">without creating blame or alarm.</text>
+
+    <line class="divider" x1="28" y1="232" x2="377" y2="232"/>
+    <text class="small-strong" x="28" y="266">Content</text>
+    <circle class="orange" cx="36" cy="296" r="4"/>
+    <text class="body" x="52" y="302">Disagreement type</text>
+    <circle class="orange" cx="36" cy="328" r="4"/>
+    <text class="body" x="52" y="334">Confidence gap</text>
+    <circle class="orange" cx="36" cy="360" r="4"/>
+    <text class="body" x="52" y="366">Review urgency</text>
+    <circle class="orange" cx="36" cy="392" r="4"/>
+    <text class="body" x="52" y="398">Suggested next step</text>
+
+    <rect class="burden" x="24" y="438" width="357" height="112"/>
+    <text class="orange-text" x="44" y="466">BURDEN REDUCED</text>
+    <text class="body" x="44" y="496">Alarm fatigue and "AI says I</text>
+    <text class="body" x="44" y="521">am wrong" pressure.</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(529 382)">
+    <rect class="card" x="0" y="0" width="405" height="582"/>
+    <rect class="card-blue" x="24" y="24" width="357" height="88"/>
+    <circle class="icon-bg" cx="62" cy="68" r="22"/>
+    <text class="icon-text" x="62" y="75" text-anchor="middle">2</text>
+    <text class="card-title" x="98" y="60">Peer Pause Card</text>
+    <text class="moment" x="98" y="88">SERVICE MOMENT: SUPPORT</text>
+
+    <text class="small-strong" x="28" y="150">Purpose</text>
+    <text class="body" x="28" y="178">Give radiologists permission to</text>
+    <text class="body" x="28" y="203">ask for a second look before</text>
+    <text class="body" x="28" y="228">formal escalation.</text>
+
+    <line class="divider" x1="28" y1="258" x2="377" y2="258"/>
+    <text class="small-strong" x="28" y="292">Content</text>
+    <circle class="orange" cx="36" cy="322" r="4"/>
+    <text class="body" x="52" y="328">Reason for pause</text>
+    <circle class="orange" cx="36" cy="354" r="4"/>
+    <text class="body" x="52" y="360">Uncertainty type</text>
+    <circle class="orange" cx="36" cy="386" r="4"/>
+    <text class="body" x="52" y="392">Request for peer review</text>
+
+    <rect class="burden" x="24" y="438" width="357" height="112"/>
+    <text class="orange-text" x="44" y="466">BURDEN REDUCED</text>
+    <text class="body" x="44" y="496">Hesitation, hierarchy pressure</text>
+    <text class="body" x="44" y="521">and fear of judgement.</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(962 382)">
+    <rect class="card" x="0" y="0" width="405" height="582"/>
+    <rect class="card-blue" x="24" y="24" width="357" height="88"/>
+    <circle class="icon-bg-orange" cx="62" cy="68" r="22"/>
+    <text class="icon-text-white" x="62" y="75" text-anchor="middle">3</text>
+    <text class="card-title" x="98" y="60">Warm Handover</text>
+    <text class="moment" x="98" y="88">SERVICE MOMENT: RESOLVE</text>
+
+    <text class="small-strong" x="28" y="150">Purpose</text>
+    <text class="body" x="28" y="178">Transfer a difficult case to</text>
+    <text class="body" x="28" y="203">arbitration with context.</text>
+
+    <line class="divider" x1="28" y1="232" x2="377" y2="232"/>
+    <text class="small-strong" x="28" y="266">Content</text>
+    <circle class="orange" cx="36" cy="296" r="4"/>
+    <text class="body" x="52" y="302">Case summary</text>
+    <circle class="orange" cx="36" cy="328" r="4"/>
+    <text class="body" x="52" y="334">Disagreement type</text>
+    <circle class="orange" cx="36" cy="360" r="4"/>
+    <text class="body" x="52" y="366">Evidence already checked</text>
+    <circle class="orange" cx="36" cy="392" r="4"/>
+    <text class="body" x="52" y="398">Support needed from arbitrator</text>
+
+    <rect class="burden" x="24" y="438" width="357" height="112"/>
+    <text class="orange-text" x="44" y="466">BURDEN REDUCED</text>
+    <text class="body" x="44" y="496">Information loss and messy</text>
+    <text class="body" x="44" y="521">escalation.</text>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(1395 382)">
+    <rect class="card" x="0" y="0" width="405" height="582"/>
+    <rect class="card-blue" x="24" y="24" width="357" height="112"/>
+    <circle class="icon-bg" cx="62" cy="68" r="22"/>
+    <text class="icon-text" x="62" y="75" text-anchor="middle">4</text>
+    <text class="card-title" x="98" y="56">Non-blame</text>
+    <text class="card-title" x="98" y="86">Decision Receipt</text>
+    <text class="moment" x="98" y="108">SERVICE MOMENT: LEARN</text>
+
+    <text class="small-strong" x="28" y="166">Purpose</text>
+    <text class="body" x="28" y="194">Record final decision and</text>
+    <text class="body" x="28" y="219">rationale for audit and learning.</text>
+
+    <line class="divider" x1="28" y1="248" x2="377" y2="248"/>
+    <text class="small-strong" x="28" y="282">Content</text>
+    <circle class="orange" cx="36" cy="312" r="4"/>
+    <text class="body" x="52" y="318">Final decision</text>
+    <circle class="orange" cx="36" cy="344" r="4"/>
+    <text class="body" x="52" y="350">AI output</text>
+    <circle class="orange" cx="36" cy="376" r="4"/>
+    <text class="body" x="52" y="382">Human judgement</text>
+    <circle class="orange" cx="36" cy="408" r="4"/>
+    <text class="body" x="52" y="414">Arbitration rationale</text>
+    <circle class="orange" cx="36" cy="440" r="4"/>
+    <text class="body" x="52" y="446">Learning tag</text>
+
+    <rect class="burden" x="24" y="458" width="357" height="92"/>
+    <text class="orange-text" x="44" y="486">BURDEN REDUCED</text>
+    <text class="body" x="44" y="516">Personal blame and memory-based</text>
+    <text class="body" x="44" y="541">accountability.</text>
+  </g>
+
+  <g transform="translate(96 1000)">
+    <rect class="chip" x="0" y="0" width="760" height="44"/>
+    <text class="small" x="22" y="28">Soft service layer: communication, handover, emotional burden and learning support around the clinical workflow.</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+.DS_Store
+.obsidian/workspace*
+.obsidian/cache/
+.obsidian/plugins/
+.trash/
+
+# Local system/editor files
+Thumbs.db
+*.tmp
+*.temp
+
+# Keep the repository focused unless explicitly added later.
+Untitled*.canvas
+Untitled.base
