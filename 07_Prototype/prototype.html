@@ -137,7 +137,7 @@
     padding: 8px 0;
   }
   .series-label {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--text-dim);
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -163,15 +163,15 @@
   .thumb-tag {
     position: absolute;
     top: 3px; left: 3px;
-    font-size: 9px;
+    font-size: 12px;
     color: var(--text-bright);
     background: rgba(0,0,0,0.7);
-    padding: 1px 4px;
+    padding: 1px 5px;
     border-radius: 3px;
     letter-spacing: 0.04em;
   }
   .thumb-label {
-    font-size: 10px;
+    font-size: 12px;
     color: var(--text-dim);
     padding: 2px 4px 3px;
     text-align: center;
@@ -225,16 +225,16 @@
   .pane-label {
     position: absolute;
     top: 8px; left: 10px;
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(255,255,255,0.3);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     pointer-events: none;
     z-index: 2;
   }
   .pane-age {
     position: absolute;
     top: 8px; right: 10px;
-    font-size: 9px;
+    font-size: 12px;
     color: rgba(255,255,255,0.2);
     pointer-events: none;
     z-index: 2;
@@ -242,8 +242,8 @@
   .pane-meta {
     position: absolute;
     bottom: 6px; left: 10px;
-    font-size: 9px;
-    color: rgba(255,255,255,0.18);
+    font-size: 12px;
+    color: rgba(255,255,255,0.15);
     pointer-events: none;
     z-index: 2;
     letter-spacing: 0.03em;
@@ -294,12 +294,12 @@
     position: absolute;
     top: -20px; left: 50%;
     transform: translateX(-50%);
-    font-size: 9px;
+    font-size: 12px;
     color: var(--amber);
     white-space: nowrap;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     background: rgba(0,0,0,0.6);
-    padding: 1px 5px;
+    padding: 1px 6px;
     border-radius: 3px;
   }
   @keyframes pulse-ring {
@@ -1440,6 +1440,130 @@
     font-size: 13px !important;
     font-weight: 500;
   }
+
+  /* ── MARK MODE ── */
+  .mark-mode .mamo-pane { cursor: crosshair; }
+
+  /* Human mark ring (blue-grey, no-recall styling) */
+  .human-mark-ring {
+    position: absolute;
+    z-index: 6;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .human-ring-circle {
+    width: 40px; height: 40px;
+    border: 1.5px solid rgba(110,145,180,0.6);
+    border-radius: 50%;
+  }
+  .human-mark-ring.no-recall .human-ring-circle {
+    border-style: dashed;
+    opacity: 0.45;
+  }
+  .human-ring-label {
+    position: absolute;
+    bottom: -20px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: rgba(110,145,180,0.85);
+    white-space: nowrap;
+    background: rgba(0,0,0,0.58);
+    padding: 1px 6px;
+    border-radius: 3px;
+    display: none;
+  }
+  .human-mark-ring.labelled .human-ring-label { display: block; }
+
+  /* ── MARK FORM (floating fixed overlay) ── */
+  .mark-form-overlay {
+    position: fixed;
+    z-index: 150;
+    background: #1e1e1e;
+    border: 1px solid #383838;
+    border-radius: 9px;
+    padding: 14px 15px;
+    width: 222px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,255,255,0.025);
+  }
+  .mark-form-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+  .mark-form-field { margin-bottom: 9px; }
+  .mark-form-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .mark-form-select {
+    width: 100%;
+    background: #252526;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    color: var(--text);
+    font-size: 13px;
+    padding: 6px 8px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    font-family: inherit;
+  }
+  .mark-form-select:focus { border-color: #5b7a9a; }
+  .mf-radio-group { display: flex; gap: 6px; }
+  .mf-radio-btn {
+    flex: 1;
+    padding: 7px 6px;
+    border: 1px solid #383838;
+    background: #252526;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.12s, background 0.12s, color 0.12s;
+  }
+  .mf-radio-btn:hover { border-color: #565656; color: var(--text); }
+  .mf-radio-btn.selected { border-color: #5b7a9a; background: rgba(91,122,154,0.12); color: var(--text-bright); }
+
+  /* ── STATUS LINE (replaces step dots) ── */
+  #status-line {
+    font-size: 12px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #status-line-label { color: var(--text-dim); }
+  #status-line-value { color: var(--text-bright); font-weight: 500; }
+  #status-line-value.disagreement { color: var(--amber); font-weight: 600; }
+
+  /* ── COMPARISON MODAL body extras ── */
+  .modal-body .modal-row-value.amber { color: var(--amber); font-weight: 500; }
+  .evidence-block {
+    background: #252526;
+    border: 1px solid #383838;
+    border-left: 2px solid rgba(214,176,106,0.4);
+    border-radius: 0 5px 5px 0;
+    padding: 11px 13px;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.7;
+    margin-top: 8px;
+  }
+  .evidence-head {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+    margin-top: 14px;
+  }
 </style>
 </head>
 <body>
@@ -1499,6 +1623,15 @@
   <symbol id="icon-sidebar-open" viewBox="0 0 24 24">
     <rect x="4" y="5" width="16" height="14" rx="3"/>
     <path d="M14 5v14"/>
+  </symbol>
+  <symbol id="icon-compare" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="8" height="14" rx="1.5"/>
+    <rect x="13" y="5" width="8" height="14" rx="1.5"/>
+    <path d="M11 12h2"/>
+  </symbol>
+  <symbol id="icon-crosshair" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
   </symbol>
 </svg>
 
@@ -1584,6 +1717,12 @@
   <!-- Viewer -->
   <div id="viewer">
 
+    <!-- Human mark ring (placed on click; absolute within viewer) -->
+    <div class="human-mark-ring" id="human-mark-dot" style="display:none;">
+      <div id="human-ring-label" class="human-ring-label"></div>
+      <div class="human-ring-circle"></div>
+    </div>
+
     <!-- L-CC -->
     <div class="mamo-pane" id="pane-lcc">
       <div class="pane-label">L-CC</div>
@@ -1635,22 +1774,10 @@
           <svg class="icon" aria-hidden="true"><use href="#icon-sidebar"/></svg>
         </button>
       </div>
-      <div class="step-dots-row">
-        <div class="step-dot active" id="sd1"></div>
-        <div class="step-line"></div>
-        <div class="step-dot" id="sd2"></div>
-        <div class="step-line"></div>
-        <div class="step-dot" id="sd3"></div>
-        <div class="step-line"></div>
-        <div class="step-dot" id="sd4"></div>
-        <div class="step-line"></div>
-        <div class="step-dot" id="sd5"></div>
-        <div class="step-line"></div>
-        <div class="step-dot" id="sd6"></div>
-        <div class="step-line"></div>
-        <div class="step-dot" id="sd7"></div>
+      <div id="status-line">
+        <span id="status-line-label">Status:</span>
+        <span id="status-line-value">Independent reading</span>
       </div>
-      <div id="step-label">Independent reading</div>
     </div><!-- /panel-header -->
 
     <!-- Scrollable decision support -->
@@ -1659,24 +1786,12 @@
     <!-- STATE 1: Human judgement -->
     <div class="panel-section" id="section-human-judgement">
       <div class="panel-section-header">
-        <svg class="icon"><use href="#icon-user"/></svg>
+        <svg class="icon"><use href="#icon-crosshair"/></svg>
         Human judgement
       </div>
       <div class="panel-section-body">
-        <div class="panel-note">AI result will be revealed after you submit.</div>
-        <div class="judgement-options">
-          <label class="radio-option" id="opt-recall">
-            <div class="radio-dot"></div>
-            <span class="radio-text">Recall</span>
-            <input type="radio" name="judgement" value="recall" style="display:none">
-          </label>
-          <label class="radio-option" id="opt-norecall">
-            <div class="radio-dot"></div>
-            <span class="radio-text">No recall</span>
-            <input type="radio" name="judgement" value="norecall" style="display:none">
-          </label>
-        </div>
-        <button class="btn-primary" id="btn-submit" disabled>Submit initial judgement</button>
+        <div class="panel-note" id="mark-instruction">Click on the mammogram to place your finding mark.</div>
+        <div id="mark-placed-notice" class="hidden" style="font-size:13px;color:var(--text-dim);padding:4px 0 0;">Mark placed — complete the form on screen, then submit.</div>
       </div>
     </div>
 
@@ -1685,10 +1800,11 @@
       <div class="panel-section-header">
         <svg class="icon"><use href="#icon-user"/></svg>
         Human
-        <span class="status-chip chip-green" style="margin-left:auto;font-size:12px;">Recorded</span>
+        <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Recorded</span>
       </div>
       <div class="panel-section-body" style="padding:8px 12px;">
-        <div style="font-size:14px;font-weight:700;color:var(--text-bright);">No recall</div>
+        <div id="locked-judgement-value" style="font-size:14px;font-weight:700;color:var(--text-bright);">No recall</div>
+        <div id="locked-judgement-detail" style="font-size:12px;color:var(--text-dim);margin-top:3px;"></div>
       </div>
     </div>
 
@@ -1721,6 +1837,12 @@
           <span style="color:var(--text-dim);">AI:</span><span style="color:var(--amber);font-weight:600;">Recall</span>
         </div>
         <span class="status-chip chip-amber" style="font-size:12px;padding:3px 8px;width:fit-content;">AI-positive / human-negative</span>
+
+        <!-- View comparison -->
+        <button class="btn-secondary" onclick="openModal('modal-comparison')" style="gap:8px;margin-top:2px;">
+          <svg class="icon"><use href="#icon-compare"/></svg>
+          <span class="action-main">View comparison</span>
+        </button>
 
         <!-- PRIMARY: Suggested next step -->
         <div class="suggested-step-wrap">
@@ -1934,30 +2056,112 @@
   </div>
 </div>
 
+<!-- ── MODAL: Human vs AI Comparison ── -->
+<div class="modal-overlay hidden" id="modal-comparison">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">Human vs AI Comparison</span>
+      <button class="modal-close" onclick="closeModal('modal-comparison')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-row">
+        <div class="modal-row-label">Human judgement</div>
+        <div class="modal-row-value strong" id="comp-human-decision">—</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Human mark</div>
+        <div class="modal-row-value" id="comp-human-mark">—</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Human confidence</div>
+        <div class="modal-row-value" id="comp-human-conf">—</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI judgement</div>
+        <div class="modal-row-value amber">Recall suggested</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI finding location</div>
+        <div class="modal-row-value">L-CC · upper outer quadrant</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI confidence</div>
+        <div class="modal-row-value">High</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Difference</div>
+        <div class="modal-row-value amber">AI-positive / human-negative</div>
+      </div>
+      <div class="evidence-head">AI evidence layer</div>
+      <div class="evidence-block">
+        Focal asymmetry detected in left upper outer quadrant. Density pattern and asymmetry relative to the contralateral view exceed the high-confidence threshold. No corresponding finding flagged at this location in the prior screen.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MARK FORM (floating, fixed position) ── -->
+<div class="mark-form-overlay hidden" id="mark-form">
+  <div class="mark-form-title">Finding mark</div>
+  <div class="mark-form-field">
+    <label class="mark-form-label">Finding type</label>
+    <select class="mark-form-select" id="mf-type" onchange="checkMarkFormReady()">
+      <option value="">Select type</option>
+      <option>Focal asymmetry</option>
+      <option>Mass</option>
+      <option>Calcification</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="mark-form-field">
+    <label class="mark-form-label">Decision</label>
+    <div class="mf-radio-group">
+      <button class="mf-radio-btn" id="mf-recall" type="button" onclick="selectDecision('recall')">Recall</button>
+      <button class="mf-radio-btn" id="mf-norecall" type="button" onclick="selectDecision('norecall')">No recall</button>
+    </div>
+  </div>
+  <div class="mark-form-field">
+    <label class="mark-form-label">Confidence</label>
+    <select class="mark-form-select" id="mf-confidence" onchange="checkMarkFormReady()">
+      <option value="">Select</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+  </div>
+  <button class="btn-primary" id="mf-submit" type="button" onclick="submitFromMarkForm()" style="margin-top:8px;" disabled>
+    Submit initial judgement
+  </button>
+</div>
+
 <script>
   let currentState = 1;
   let selectedJudgement = null;
+  let selectedDecision = null;
+  let humanMarkPlaced = false;
+  let humanMarkPaneId = null;
 
-  const steps = ['sd1','sd2','sd3','sd4','sd5','sd6','sd7'];
-  const stepLabels = [
+  const statusLabels = [
     'Independent reading',
     'Judgement submitted',
     'AI result revealed',
     'Disagreement detected',
     'Handover prepared',
-    'Decision pathway summary generated',
+    'Decision pathway generated',
     'Added to Care Loop'
   ];
 
+  const paneNames = {
+    'pane-lcc': 'L-CC', 'pane-rcc': 'R-CC',
+    'pane-lmlo': 'L-MLO', 'pane-rmlo': 'R-MLO'
+  };
+
   function updateSteps(state) {
-    steps.forEach((id, i) => {
-      const el = document.getElementById(id);
-      el.className = 'step-dot';
-      if (i < state - 1) el.classList.add('done');
-      else if (i === state - 1) el.classList.add('active');
-    });
-    document.getElementById('step-label').textContent = stepLabels[state - 1];
-    document.getElementById('status-state').textContent = 'State: ' + stepLabels[state - 1];
+    const label = statusLabels[state - 1] || '';
+    const valueEl = document.getElementById('status-line-value');
+    valueEl.textContent = label;
+    valueEl.className = (state === 4) ? 'disagreement' : '';
+    document.getElementById('status-state').textContent = 'State: ' + label;
   }
 
   function show(id) {
@@ -1974,23 +2178,84 @@
     document.getElementById(id).classList.add('hidden');
   }
 
-  // ── Radio selection ──
-  document.getElementById('opt-recall').addEventListener('click', function() {
-    this.classList.add('selected');
-    document.getElementById('opt-norecall').classList.remove('selected');
-    selectedJudgement = 'recall';
-    document.getElementById('btn-submit').disabled = false;
-  });
-  document.getElementById('opt-norecall').addEventListener('click', function() {
-    this.classList.add('selected');
-    document.getElementById('opt-recall').classList.remove('selected');
-    selectedJudgement = 'norecall';
-    document.getElementById('btn-submit').disabled = false;
+  // ── Mark mode: click viewer to place human mark ──
+  document.getElementById('viewer').classList.add('mark-mode');
+
+  document.getElementById('viewer').addEventListener('click', function(e) {
+    if (currentState !== 1) return;
+    const pane = e.target.closest('.mamo-pane');
+    if (!pane) return;
+
+    const viewerRect = this.getBoundingClientRect();
+    const x = e.clientX - viewerRect.left;
+    const y = e.clientY - viewerRect.top;
+
+    humanMarkPaneId = pane.id;
+    humanMarkPlaced = true;
+
+    const marker = document.getElementById('human-mark-dot');
+    marker.style.left = x + 'px';
+    marker.style.top = y + 'px';
+    marker.style.display = 'block';
+
+    document.getElementById('mark-placed-notice').classList.remove('hidden');
+
+    // Position mark form near click, clamped to viewport
+    const form = document.getElementById('mark-form');
+    form.classList.remove('hidden');
+    let fl = e.clientX + 18;
+    let ft = e.clientY - 30;
+    if (fl + 232 > window.innerWidth - 12) fl = e.clientX - 244;
+    if (ft + 240 > window.innerHeight - 12) ft = window.innerHeight - 252;
+    if (fl < 8) fl = 8;
+    if (ft < 8) ft = 8;
+    form.style.left = fl + 'px';
+    form.style.top = ft + 'px';
+
+    checkMarkFormReady();
   });
 
-  // ── Submit → lock → reveal AI → disagreement ──
-  document.getElementById('btn-submit').addEventListener('click', function() {
-    if (!selectedJudgement) return;
+  function selectDecision(dec) {
+    selectedDecision = dec;
+    document.getElementById('mf-recall').classList.toggle('selected', dec === 'recall');
+    document.getElementById('mf-norecall').classList.toggle('selected', dec === 'norecall');
+    checkMarkFormReady();
+  }
+
+  function checkMarkFormReady() {
+    const type = document.getElementById('mf-type').value;
+    const conf = document.getElementById('mf-confidence').value;
+    document.getElementById('mf-submit').disabled = !(humanMarkPlaced && selectedDecision && type && conf);
+  }
+
+  function submitFromMarkForm() {
+    if (!humanMarkPlaced || !selectedDecision) return;
+    const type = document.getElementById('mf-type').value;
+    const conf = document.getElementById('mf-confidence').value;
+    if (!type || !conf) return;
+
+    selectedJudgement = selectedDecision;
+
+    // Close form and remove mark-mode cursor
+    document.getElementById('mark-form').classList.add('hidden');
+    document.getElementById('viewer').classList.remove('mark-mode');
+
+    // Update human marker to labelled state
+    const decisionText = selectedDecision === 'recall' ? 'Recall' : 'No recall';
+    const marker = document.getElementById('human-mark-dot');
+    document.getElementById('human-ring-label').textContent = decisionText + ' · ' + conf.toLowerCase();
+    marker.classList.add('labelled');
+    if (selectedDecision === 'norecall') marker.classList.add('no-recall');
+
+    // Update locked panel
+    document.getElementById('locked-judgement-value').textContent = decisionText;
+    document.getElementById('locked-judgement-detail').textContent = conf + ' confidence · ' + type;
+
+    // Pre-fill comparison modal
+    document.getElementById('comp-human-decision').textContent = decisionText;
+    document.getElementById('comp-human-conf').textContent = conf;
+    const paneName = paneNames[humanMarkPaneId] || 'Image';
+    document.getElementById('comp-human-mark').textContent = paneName + ' · marked on image';
 
     currentState = 2;
     updateSteps(currentState);
@@ -2009,7 +2274,7 @@
         show('section-disagreement');
       }, 900);
     }, 650);
-  });
+  }
 
   // ── Second look ──
   function doSecondLook(btn) {
