@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 54px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 23px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #172033; font-weight: 700; }
+      .workspace-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 28px; fill: #172033; font-weight: 700; }
+      .section-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .value { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #172033; font-weight: 700; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #2d3948; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #172033; font-weight: 700; }
+      .orange-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #b34c29; font-weight: 700; }
+      .button { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #273244; font-weight: 700; }
+      .button-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #ffffff; font-weight: 700; }
+      .statement { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 21px; fill: #172033; font-weight: 700; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .card { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 22; filter: url(#shadow); }
+      .screen { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 22; filter: url(#shadow); }
+      .header { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.3; rx: 16; }
+      .soft { fill: #f8fafc; stroke: #d9e0e8; stroke-width: 1.2; rx: 13; }
+      .accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.3; rx: 13; }
+      .sidebar { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 16; }
+      .nav { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.1; rx: 10; }
+      .nav-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 10; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 18; }
+      .chip-orange { fill: #fff3ed; stroke: #e7b69d; stroke-width: 1.2; rx: 18; }
+      .primary { fill: #315f86; stroke: #315f86; stroke-width: 1.2; rx: 10; }
+      .option { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.2; rx: 10; }
+      .option-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 10; }
+      .divider { stroke: #d9e0e8; stroke-width: 1.2; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.3; fill: none; }
+      .dot { fill: #d9653b; }
+      .connector-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #172033; font-weight: 700; }
+      .connector-note { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #536174; }
+      .viewer { fill: #152033; stroke: #405066; stroke-width: 1.2; rx: 12; }
+      .viewer-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #dce6ef; font-weight: 700; }
+      .viewer-subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #aebdcb; }
+      .scan-line { stroke: #718198; stroke-width: 1.1; opacity: 0.5; }
+      .mammogram { fill: #dfe7ef; opacity: 0.85; }
+      .mammogram-shadow { fill: #91a1b2; opacity: 0.20; }
+      .mark-human { stroke: #6672c7; stroke-width: 3; fill: none; opacity: 0.9; }
+      .mark-ai { stroke: #d9653b; stroke-width: 3.4; fill: none; opacity: 0.95; }
+      .mark-dot { fill: #ffffff; stroke: #d9653b; stroke-width: 3; }
+      .learning { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 12; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="68">TOUCHPOINT 2 · HANDOVER AND HUMAN-LED REVIEW</text>
+  <text class="title" x="96" y="130">Touchpoint 2 — Arbitration Support Layer</text>
+  <text class="subtitle" x="98" y="172">A handover and pause mechanism embedded in the existing review workspace</text>
+
+  <!-- Small Warm Handover Card -->
+  <g transform="translate(96 246)">
+    <rect class="card" x="0" y="0" width="414" height="662"/>
+    <rect class="header" x="24" y="24" width="366" height="98"/>
+    <rect class="chip-orange" x="44" y="42" width="148" height="26"/>
+    <circle class="dot" cx="62" cy="55" r="4"/>
+    <text class="orange-text" x="80" y="60">Transition artefact</text>
+    <text class="card-title" x="44" y="92">Warm Handover Summary</text>
+    <text class="small" x="44" y="112">Reader sends this with the case before senior review.</text>
+
+    <g transform="translate(24 144)">
+      <rect class="soft" x="0" y="0" width="366" height="66"/>
+      <text class="label" x="18" y="26">CASE ID</text>
+      <text class="value" x="18" y="50">SC-2048</text>
+    </g>
+
+    <g transform="translate(24 224)">
+      <rect class="accent" x="0" y="0" width="366" height="86"/>
+      <text class="label" x="18" y="28">WHY THIS CASE IS ESCALATED</text>
+      <text class="body" x="18" y="56">Human judgement and AI evidence</text>
+      <text class="body" x="18" y="78">layer do not align.</text>
+    </g>
+
+    <g transform="translate(24 326)">
+      <rect class="soft" x="0" y="0" width="366" height="240"/>
+      <text class="label" x="18" y="28">HANDOVER CONTEXT</text>
+      <text class="small-strong" x="18" y="58">Disagreement type:</text>
+      <text class="small" x="152" y="58">Detection disagreement</text>
+      <text class="small-strong" x="18" y="88">Human judgement:</text>
+      <text class="small" x="152" y="88">No recall recommended</text>
+      <text class="small-strong" x="18" y="118">AI evidence layer:</text>
+      <text class="small" x="152" y="118">Recall concern raised</text>
+      <text class="small-strong" x="18" y="150">Evidence checked</text>
+      <text class="small" x="22" y="178">☑ Current mammogram</text>
+      <text class="small" x="190" y="178">☑ Prior image</text>
+      <text class="small" x="22" y="206">☑ AI suspicious region</text>
+      <text class="small" x="190" y="206">☑ Reader annotation</text>
+    </g>
+
+    <g transform="translate(24 574)">
+      <text class="label" x="0" y="0">SUPPORT NEEDED</text>
+      <circle class="dot" cx="8" cy="24" r="4"/><text class="small" x="22" y="30">Review suspicious region</text>
+      <circle class="dot" cx="8" cy="50" r="4"/><text class="small" x="22" y="56">Confirm final recall decision</text>
+      <circle class="dot" cx="8" cy="76" r="4"/><text class="small" x="22" y="82">Record arbitration rationale</text>
+    </g>
+  </g>
+
+  <!-- Connector -->
+  <g transform="translate(540 512)">
+    <path class="line-orange" marker-end="url(#arrowOrange)" d="M0 46 H192"/>
+    <text class="connector-label" x="96" y="26" text-anchor="middle">Context travels with the case</text>
+    <text class="connector-note" x="96" y="80" text-anchor="middle">Structured handover, not just escalation.</text>
+  </g>
+
+  <!-- Existing review workspace with disagreement support layer -->
+  <g transform="translate(760 226)">
+    <rect class="screen" x="0" y="0" width="1064" height="744"/>
+    <rect class="header" x="28" y="24" width="1008" height="70"/>
+    <rect class="chip-orange" x="52" y="38" width="160" height="24"/>
+    <circle class="dot" cx="70" cy="50" r="4"/>
+    <text class="orange-text" x="88" y="55">Human-led senior review</text>
+    <text class="workspace-title" x="52" y="82">Arbitration Support Layer</text>
+    <rect class="chip" x="862" y="42" width="140" height="30"/>
+    <text class="label" x="892" y="62">CASE SC-2048</text>
+
+    <!-- Sidebar -->
+    <g transform="translate(28 118)">
+      <rect class="sidebar" x="0" y="0" width="250" height="536"/>
+      <text class="label" x="22" y="34">DISAGREEMENT SUPPORT LAYER</text>
+
+      <rect class="nav" x="18" y="56" width="214" height="42"/>
+      <text class="small-strong" x="36" y="82">Warm Handover Summary</text>
+
+      <rect class="nav" x="18" y="110" width="214" height="42"/>
+      <text class="small-strong" x="36" y="136">Arbitration Pause Point</text>
+
+      <rect class="nav-accent" x="18" y="164" width="214" height="42"/>
+      <text class="small-strong" x="36" y="190">AI evidence layer</text>
+
+      <rect class="nav-accent" x="18" y="218" width="214" height="42"/>
+      <text class="small-strong" x="36" y="244">Disagreement type</text>
+
+      <rect class="nav" x="18" y="272" width="214" height="42"/>
+      <text class="small-strong" x="36" y="298">Final recall decision</text>
+
+      <rect class="nav" x="18" y="326" width="214" height="42"/>
+      <text class="small-strong" x="36" y="352">Arbitration rationale</text>
+
+      <rect class="nav-accent" x="18" y="380" width="214" height="42"/>
+      <text class="small-strong" x="36" y="406">Learning handoff</text>
+
+      <line class="divider" x1="18" y1="448" x2="232" y2="448"/>
+      <text class="label" x="22" y="478">LAYER STATUS</text>
+      <text class="small" x="22" y="506">Detection disagreement</text>
+      <text class="small" x="22" y="530">Embedded in existing workspace</text>
+    </g>
+
+    <!-- Main image area -->
+    <g transform="translate(306 118)">
+      <text class="label" x="0" y="0">EXISTING REVIEW WORKSPACE BACKGROUND</text>
+      <g transform="translate(0 22)">
+        <rect class="viewer" x="0" y="0" width="348" height="376"/>
+        <text class="viewer-title" x="18" y="28">Current mammogram</text>
+        <text class="viewer-subtitle" x="18" y="48">AI / human marks visible</text>
+        <line class="scan-line" x1="174" y1="64" x2="174" y2="350"/>
+        <line class="scan-line" x1="18" y1="202" x2="330" y2="202"/>
+        <path class="mammogram-shadow" d="M120 96 C78 124 58 181 75 241 C91 296 134 334 185 340 C205 311 214 267 208 216 C201 157 171 112 120 96z"/>
+        <path class="mammogram" d="M132 84 C88 114 67 178 85 243 C103 302 148 341 202 346 C224 314 233 266 226 209 C218 146 185 99 132 84z"/>
+        <path class="mammogram-shadow" d="M244 92 C288 121 310 178 296 238 C283 296 238 336 186 342 C167 311 157 266 163 213 C171 154 196 110 244 92z"/>
+        <path class="mammogram" d="M236 82 C282 110 306 174 292 239 C279 302 230 344 176 348 C156 312 147 263 155 204 C163 141 190 98 236 82z"/>
+        <path class="mark-human" d="M224 94 C255 94 278 116 280 146 C282 174 260 193 230 186 C206 180 195 158 202 132 C207 111 213 101 224 94z"/>
+        <path class="mark-ai" d="M229 142 C265 134 302 155 310 190 C318 228 285 251 244 239 C212 229 199 203 208 176 C213 160 219 150 229 142z"/>
+        <circle class="mark-dot" cx="238" cy="124" r="7"/>
+      </g>
+
+      <g transform="translate(374 22)">
+        <rect class="viewer" x="0" y="0" width="348" height="376"/>
+        <text class="viewer-title" x="18" y="28">Prior image comparison</text>
+        <text class="viewer-subtitle" x="18" y="48">Check whether the region is new or changed</text>
+        <line class="scan-line" x1="174" y1="64" x2="174" y2="350"/>
+        <line class="scan-line" x1="18" y1="202" x2="330" y2="202"/>
+        <path class="mammogram-shadow" d="M120 96 C78 124 58 181 75 241 C91 296 134 334 185 340 C205 311 214 267 208 216 C201 157 171 112 120 96z"/>
+        <path class="mammogram" d="M132 84 C88 114 67 178 85 243 C103 302 148 341 202 346 C224 314 233 266 226 209 C218 146 185 99 132 84z"/>
+        <path class="mammogram-shadow" d="M244 92 C288 121 310 178 296 238 C283 296 238 336 186 342 C167 311 157 266 163 213 C171 154 196 110 244 92z"/>
+        <path class="mammogram" d="M236 82 C282 110 306 174 292 239 C279 302 230 344 176 348 C156 312 147 263 155 204 C163 141 190 98 236 82z"/>
+        <path class="mark-human" d="M224 94 C255 94 278 116 280 146 C282 174 260 193 230 186 C206 180 195 158 202 132 C207 111 213 101 224 94z"/>
+        <path class="mark-ai" d="M229 142 C265 134 302 155 310 190 C318 228 285 251 244 239 C212 229 199 203 208 176 C213 160 219 150 229 142z"/>
+        <circle class="mark-dot" cx="238" cy="124" r="7"/>
+      </g>
+
+      <!-- Bottom action area -->
+      <g transform="translate(0 430)">
+        <rect class="soft" x="0" y="0" width="722" height="106"/>
+        <text class="label" x="20" y="30">FINAL RECALL DECISION</text>
+        <rect class="primary" x="20" y="46" width="116" height="42"/>
+        <text class="button-white" x="78" y="72" text-anchor="middle">Recall</text>
+        <rect class="option" x="154" y="46" width="116" height="42"/>
+        <text class="button" x="212" y="72" text-anchor="middle">No recall</text>
+        <rect class="option" x="288" y="46" width="136" height="42"/>
+        <text class="button" x="356" y="72" text-anchor="middle">Further review</text>
+        <line class="divider" x1="450" y1="18" x2="450" y2="88"/>
+        <text class="label" x="474" y="30">LEARNING HANDOFF</text>
+        <text class="small" x="474" y="57">☑ Add to learning memory</text>
+        <text class="small" x="474" y="82">Learning tag: subtle lesion / prior comparison</text>
+        <text class="small" x="474" y="100">/ detection gap</text>
+      </g>
+    </g>
+
+    <!-- Rationale and learning strip -->
+    <g transform="translate(28 674)">
+      <rect class="learning" x="0" y="0" width="1008" height="44"/>
+      <text class="small-strong" x="20" y="28">Arbitration rationale:</text>
+      <text class="small" x="156" y="28">Subtle region reviewed against prior image.</text>
+      <text class="small-strong" x="508" y="28">Learning tag:</text>
+      <text class="small" x="602" y="28">subtle lesion / prior comparison / detection gap</text>
+    </g>
+  </g>
+
+  <g transform="translate(336 990)">
+    <rect class="panel" x="0" y="0" width="1248" height="66"/>
+    <text class="statement" x="624" y="28" text-anchor="middle">The existing review workspace stays in place.</text>
+    <text class="statement" x="624" y="52" text-anchor="middle">The support layer preserves context, captures rationale and hands learning forward.</text>
+  </g>
+</svg>

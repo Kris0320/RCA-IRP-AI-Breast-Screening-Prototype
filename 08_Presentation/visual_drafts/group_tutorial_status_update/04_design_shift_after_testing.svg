@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><style>
+    .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#536174}.head{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:34px;font-weight:700;fill:#172033}.body{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#2d3948}.small{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:18px;fill:#536174}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:15px;font-weight:700;fill:#5d6d7e;letter-spacing:.06em}.card{fill:#fff;stroke:#d9e0e8;stroke-width:1.5;rx:24}.before{fill:#fff;stroke:#d9e0e8}.after{fill:#eef8f1;stroke:#b9d9c4}.accent{fill:#fff4ee;stroke:#e7b69d}.arrow{stroke:#d9653b;stroke-width:4;fill:none}.dot{fill:#d9653b}
+  </style><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#d9653b"/></marker></defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80">DESIGN SHIFT</text>
+  <text class="title" x="96" y="154">Design Shift After Expert Testing</text>
+  <text class="sub" x="100" y="202">The testing prototype can show logic; the clinical workflow must reduce burden.</text>
+  <g transform="translate(150 300)">
+    <rect class="card before" x="0" y="0" width="640" height="500"/>
+    <text class="label" x="44" y="56">BEFORE</text>
+    <text class="head" x="44" y="108">Visible multi-step service toolkit</text>
+    <text class="body" x="70" y="186">• Cards</text>
+    <text class="body" x="70" y="246">• Mapping tables</text>
+    <text class="body" x="70" y="306">• Explicit touchpoints</text>
+    <text class="body" x="70" y="366">• Useful for making service logic visible</text>
+    <rect class="accent" x="44" y="420" width="552" height="50"/>
+    <text class="small" x="70" y="452">Good for testing and explanation.</text>
+    <path class="arrow" marker-end="url(#arrow)" d="M700 250 H880"/>
+    <text class="small" x="790" y="220" text-anchor="middle">Expert testing helped</text>
+    <text class="small" x="790" y="245" text-anchor="middle">refine the prototype</text>
+    <rect class="card after" x="940" y="0" width="640" height="500"/>
+    <text class="label" x="984" y="56">AFTER</text>
+    <text class="head" x="984" y="108">Lightweight embedded support layer</text>
+    <text class="body" x="1010" y="186">• Automated background support</text>
+    <text class="body" x="1010" y="246">• Fewer visible steps</text>
+    <text class="body" x="1010" y="306">• Embedded in existing workstation</text>
+    <text class="body" x="1010" y="366">• Reader acts only at key moments</text>
+    <rect class="accent" x="984" y="420" width="552" height="50"/>
+    <text class="small" x="1010" y="452">Better fit for clinical reality.</text>
+  </g>
+  <rect class="card accent" x="260" y="880" width="1400" height="76"/>
+  <circle class="dot" cx="305" cy="918" r="7"/>
+  <text class="body" x="334" y="925">The future clinical workflow must reduce interaction friction and cognitive burden.</text>
+</svg>

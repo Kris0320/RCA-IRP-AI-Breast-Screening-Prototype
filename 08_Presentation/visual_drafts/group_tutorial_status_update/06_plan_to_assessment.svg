@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><style>
+    .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#536174}.body{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:23px;fill:#253246}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:15px;font-weight:700;fill:#5d6d7e;letter-spacing:.06em}.card{fill:#fff;stroke:#d9e0e8;stroke-width:1.5;rx:18}.blue{fill:#eef4fa;stroke:#b8cde1}.green{fill:#eef8f1;stroke:#b9d9c4}.orange{fill:#fff4ee;stroke:#e7b69d}.num{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:22px;font-weight:700;fill:#fff}.circle{fill:#315f86}.line{stroke:#9fb0c3;stroke-width:2.2;fill:none}
+  </style></defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80">NEXT STEPS</text>
+  <text class="title" x="96" y="154">Plan to Assessment</text>
+  <text class="sub" x="100" y="202">Make the prototype simpler, evidence-backed and assessment-facing.</text>
+  <g transform="translate(210 292)">
+    <rect class="card" x="0" y="0" width="700" height="70"/><circle class="circle" cx="40" cy="35" r="18"/><text class="num" x="40" y="43" text-anchor="middle">1</text><text class="body" x="82" y="44">Refine prototype screens with reader action, system support and output labels.</text>
+    <rect class="card" x="0" y="92" width="700" height="70"/><circle class="circle" cx="40" cy="127" r="18"/><text class="num" x="40" y="135" text-anchor="middle">2</text><text class="body" x="82" y="136">Simplify radiologist workflow into three key actions.</text>
+    <rect class="card" x="0" y="184" width="700" height="70"/><circle class="circle" cx="40" cy="219" r="18"/><text class="num" x="40" y="227" text-anchor="middle">3</text><text class="body" x="82" y="228">Update terminology: arbitration / consensus / difficult-case review.</text>
+    <rect class="card" x="0" y="276" width="700" height="70"/><circle class="circle" cx="40" cy="311" r="18"/><text class="num" x="40" y="319" text-anchor="middle">4</text><text class="body" x="82" y="320">Build evidence map linking research insights to design decisions.</text>
+    <rect class="card" x="0" y="368" width="700" height="70"/><circle class="circle" cx="40" cy="403" r="18"/><text class="num" x="40" y="411" text-anchor="middle">5</text><text class="body" x="82" y="412">Prepare final presentation around Learning Outcomes.</text>
+    <rect class="card" x="0" y="460" width="700" height="70"/><circle class="circle" cx="40" cy="495" r="18"/><text class="num" x="40" y="503" text-anchor="middle">6</text><text class="body" x="82" y="504">Document limitations, expert feedback and reflection.</text>
+  </g>
+  <g transform="translate(1030 340)">
+    <text class="label" x="0" y="0">THREE KEY READER ACTIONS</text>
+    <rect class="blue" x="0" y="38" width="250" height="110" rx="18"/><text class="body" x="125" y="103" text-anchor="middle">Open comparison</text>
+    <line class="line" x1="270" y1="93" x2="330" y2="93"/>
+    <rect class="green" x="350" y="38" width="290" height="110" rx="18"/><text class="body" x="495" y="91" text-anchor="middle">Send / confirm</text><text class="body" x="495" y="119" text-anchor="middle">review</text>
+    <line class="line" x1="660" y1="93" x2="720" y2="93"/>
+    <rect class="orange" x="740" y="38" width="290" height="110" rx="18"/><text class="body" x="885" y="91" text-anchor="middle">Confirm or</text><text class="body" x="885" y="119" text-anchor="middle">edit reason</text>
+    <rect class="card" x="0" y="240" width="1030" height="190"/>
+    <text class="body" x="40" y="296">Assessment story:</text>
+    <text class="sub" x="40" y="342">What is the service layer?</text>
+    <text class="sub" x="40" y="382">Why is it needed?</text>
+    <text class="sub" x="40" y="422">What evidence and reflection support it?</text>
+  </g>
+</svg>

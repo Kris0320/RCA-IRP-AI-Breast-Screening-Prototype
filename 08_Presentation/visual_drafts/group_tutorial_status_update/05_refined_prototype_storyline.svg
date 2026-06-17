@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><style>
+    .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:23px;fill:#536174}.step-title{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:21px;font-weight:700;fill:#172033}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em}.small{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:15px;fill:#2d3948}.legend{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:16px;fill:#536174}.card{fill:#fff;stroke:#d9e0e8;stroke-width:1.4;rx:18}.blue{fill:#eef4fa;stroke:#b8cde1}.green{fill:#eef8f1;stroke:#b9d9c4}.orange{fill:#fff4ee;stroke:#e7b69d}.blueText{fill:#315f86}.greenText{fill:#2d7a4f}.orangeText{fill:#b34c29}.line{stroke:#9fb0c3;stroke-width:3;fill:none}
+  </style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9fb0c3"/></marker></defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80" fill="#5d6d7e">PROTOTYPE STORYLINE</text>
+  <text class="title" x="96" y="154">Refined Prototype Storyline</text>
+  <text class="sub" x="100" y="202">Most support is automated; users act at key confirmation moments.</text>
+  <g transform="translate(114 260)">
+    <rect class="card" x="0" y="0" width="260" height="430"/><text class="step-title" x="22" y="44">1. Difficult case</text><rect class="green" x="20" y="78" width="220" height="96"/><text class="label greenText" x="38" y="108">SYSTEM SUPPORT</text><text class="small" x="38" y="136">AI score and mark</text><text class="small" x="38" y="158">are available</text><rect class="blue" x="20" y="196" width="220" height="116"/><text class="label blueText" x="38" y="226">READER ACTION</text><text class="small" x="38" y="254">Reads mammogram</text><text class="small" x="38" y="278">and forms judgement</text>
+    <line class="line" marker-end="url(#arrow)" x1="282" y1="210" x2="328" y2="210"/>
+    <rect class="card" x="350" y="0" width="260" height="430"/><text class="step-title" x="372" y="44">2. Soft cue</text><rect class="green" x="370" y="78" width="220" height="96"/><text class="label greenText" x="388" y="108">SYSTEM SUPPORT</text><text class="small" x="388" y="136">Detects mismatch</text><rect class="blue" x="370" y="196" width="220" height="116"/><text class="label blueText" x="388" y="226">READER ACTION</text><text class="small" x="388" y="254">Opens comparison</text><text class="small" x="388" y="278">if needed</text>
+    <line class="line" marker-end="url(#arrow)" x1="632" y1="210" x2="678" y2="210"/>
+    <rect class="card" x="700" y="0" width="260" height="430"/><text class="step-title" x="722" y="44">3. Comparison</text><rect class="green" x="720" y="78" width="220" height="118"/><text class="label greenText" x="738" y="108">SYSTEM SUPPORT</text><text class="small" x="738" y="136">Gathers AI score, mark,</text><text class="small" x="738" y="158">prior status and reason</text><rect class="blue" x="720" y="218" width="220" height="94"/><text class="label blueText" x="738" y="248">READER ACTION</text><text class="small" x="738" y="276">Reviews evidence</text>
+    <line class="line" marker-end="url(#arrow)" x1="982" y1="210" x2="1028" y2="210"/>
+    <rect class="card" x="1050" y="0" width="260" height="430"/><text class="step-title" x="1072" y="44">4. Consensus</text><rect class="green" x="1070" y="78" width="220" height="116"/><text class="label greenText" x="1088" y="108">SYSTEM SUPPORT</text><text class="small" x="1088" y="136">Generates review</text><text class="small" x="1088" y="158">summary</text><rect class="blue" x="1070" y="218" width="220" height="94"/><text class="label blueText" x="1088" y="248">REVIEWER ACTION</text><text class="small" x="1088" y="276">Human-led judgement</text>
+    <line class="line" marker-end="url(#arrow)" x1="1332" y1="210" x2="1378" y2="210"/>
+    <rect class="card" x="1400" y="0" width="260" height="430"/><text class="step-title" x="1422" y="44">5. Receipt</text><rect class="green" x="1420" y="78" width="220" height="116"/><text class="label greenText" x="1438" y="108">SYSTEM SUPPORT</text><text class="small" x="1438" y="136">Records decision</text><text class="small" x="1438" y="158">and rationale</text><rect class="blue" x="1420" y="218" width="220" height="94"/><text class="label blueText" x="1438" y="248">REVIEWER ACTION</text><text class="small" x="1438" y="276">Confirms reason</text>
+  </g>
+  <g transform="translate(548 760)">
+    <rect class="card" x="0" y="0" width="824" height="122"/>
+    <text class="step-title" x="34" y="46">6. Outcome-linked learning</text>
+    <rect class="green" x="310" y="26" width="260" height="70"/><text class="label greenText" x="332" y="54">SYSTEM SUPPORT</text><text class="small" x="332" y="78">Links follow-up outcome</text>
+    <rect class="orange" x="590" y="26" width="206" height="70"/><text class="label orangeText" x="610" y="54">OUTPUT</text><text class="small" x="610" y="78">Selected case enters library</text>
+  </g>
+  <g transform="translate(122 930)">
+    <rect class="blue" x="0" y="0" width="260" height="42"/><text class="legend" x="18" y="27">Blue = reader action</text>
+    <rect class="green" x="300" y="0" width="292" height="42"/><text class="legend" x="318" y="27">Green = system support</text>
+    <rect class="orange" x="632" y="0" width="292" height="42"/><text class="legend" x="650" y="27">Orange = output / decision</text>
+  </g>
+</svg>

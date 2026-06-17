@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 58px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .step-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 22px; fill: #172033; font-weight: 700; }
+      .step-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; }
+      .num { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #273244; font-weight: 700; }
+      .num-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #ffffff; font-weight: 700; }
+      .loop-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #b34c29; font-weight: 700; }
+      .statement { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 28px; fill: #172033; font-weight: 700; }
+      .statement-small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #536174; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .step { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 16; }
+      .step-blue { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.4; rx: 14; }
+      .step-orange { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.5; rx: 14; }
+      .circle { fill: #dbe8f4; stroke: #8ea5bb; stroke-width: 1.2; }
+      .circle-orange { fill: #d9653b; stroke: #ffffff; stroke-width: 3; }
+      .line { stroke: #9aaabd; stroke-width: 2.4; fill: none; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.5; fill: none; }
+      .dash-orange { stroke: #d9653b; stroke-width: 2.4; stroke-dasharray: 8 8; fill: none; }
+      .chip-orange { fill: #d9653b; stroke: #d9653b; stroke-width: 1.2; rx: 18; }
+      .chip-text-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #ffffff; font-weight: 700; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="68">LEARNING LOOP</text>
+  <text class="title" x="96" y="130">From Arbitration to Learning</text>
+  <text class="subtitle" x="98" y="172">How one difficult decision becomes shared organisational learning</text>
+
+  <g transform="translate(96 302)">
+    <rect class="panel" x="0" y="0" width="1728" height="514"/>
+
+    <!-- Loop arrow behind flow -->
+    <path class="dash-orange" marker-end="url(#arrowOrange)" d="M1570 394 C1540 470 1330 470 1040 470 H688 C392 470 220 420 192 328"/>
+    <rect class="step-orange" x="670" y="432" width="454" height="46"/>
+    <text class="loop-label" x="897" y="462" text-anchor="middle">Improves future judgement and escalation</text>
+
+    <!-- Step 1 -->
+    <g transform="translate(42 92)">
+      <rect class="step-orange" x="0" y="0" width="250" height="234"/>
+      <circle class="circle-orange" cx="34" cy="36" r="20"/>
+      <text class="num-white" x="34" y="42" text-anchor="middle">1</text>
+      <text class="step-title" x="64" y="34">AI-human</text>
+      <text class="step-title" x="64" y="62">disagreement</text>
+      <text class="step-title" x="64" y="90">detected</text>
+      <text class="kicker" x="24" y="134">DISAGREEMENT DETECTED</text>
+      <text class="step-text" x="24" y="166">Human judgement and</text>
+      <text class="step-text" x="24" y="191">AI output do not align.</text>
+    </g>
+
+    <path class="line" marker-end="url(#arrow)" d="M316 210 H386"/>
+
+    <!-- Step 2 -->
+    <g transform="translate(406 92)">
+      <rect class="step" x="0" y="0" width="250" height="234"/>
+      <circle class="circle" cx="34" cy="36" r="20"/>
+      <text class="num" x="34" y="42" text-anchor="middle">2</text>
+      <text class="step-title" x="64" y="34">Arbitration /</text>
+      <text class="step-title" x="64" y="62">senior review</text>
+      <text class="kicker" x="24" y="134">CASE RESOLUTION</text>
+      <text class="step-text" x="24" y="166">Evidence is compared</text>
+      <text class="step-text" x="24" y="191">and final decision is</text>
+      <text class="step-text" x="24" y="216">made.</text>
+    </g>
+
+    <path class="line" marker-end="url(#arrow)" d="M680 210 H750"/>
+
+    <!-- Step 3 -->
+    <g transform="translate(770 92)">
+      <rect class="step" x="0" y="0" width="250" height="234"/>
+      <circle class="circle" cx="34" cy="36" r="20"/>
+      <text class="num" x="34" y="42" text-anchor="middle">3</text>
+      <text class="step-title" x="64" y="34">Non-blame</text>
+      <text class="step-title" x="64" y="62">Decision Receipt</text>
+      <text class="kicker" x="24" y="134">RATIONALE CAPTURE</text>
+      <text class="step-text" x="24" y="166">Rationale is captured</text>
+      <text class="step-text" x="24" y="191">without blaming one</text>
+      <text class="step-text" x="24" y="216">person.</text>
+    </g>
+
+    <path class="line" marker-end="url(#arrow)" d="M1044 210 H1114"/>
+
+    <!-- Step 4 -->
+    <g transform="translate(1134 92)">
+      <rect class="step-blue" x="0" y="0" width="250" height="234"/>
+      <circle class="circle" cx="34" cy="36" r="20"/>
+      <text class="num" x="34" y="42" text-anchor="middle">4</text>
+      <text class="step-title" x="64" y="34">Learning</text>
+      <text class="step-title" x="64" y="62">Memory Card</text>
+      <text class="kicker" x="24" y="134">MAKE REVIEWABLE</text>
+      <text class="step-text" x="24" y="166">Case becomes</text>
+      <text class="step-text" x="24" y="191">reviewable and</text>
+      <text class="step-text" x="24" y="216">searchable.</text>
+    </g>
+
+    <path class="line" marker-end="url(#arrow)" d="M1408 210 H1478"/>
+
+    <!-- Step 5 -->
+    <g transform="translate(1498 92)">
+      <rect class="step-blue" x="0" y="0" width="250" height="234"/>
+      <circle class="circle-orange" cx="34" cy="36" r="20"/>
+      <text class="num-white" x="34" y="42" text-anchor="middle">5</text>
+      <text class="step-title" x="64" y="34">Disagreement</text>
+      <text class="step-title" x="64" y="62">Review Workshop</text>
+      <text class="kicker" x="24" y="134">TEAM LEARNING</text>
+      <text class="step-text" x="24" y="166">Team discusses</text>
+      <text class="step-text" x="24" y="191">patterns and</text>
+      <text class="step-text" x="24" y="216">learning tags.</text>
+    </g>
+
+    <!-- Step 6 below/right -->
+    <path class="line-orange" marker-end="url(#arrowOrange)" d="M1623 326 V368"/>
+    <g transform="translate(1316 368)">
+      <rect class="step-orange" x="0" y="0" width="432" height="96"/>
+      <circle class="circle-orange" cx="38" cy="48" r="20"/>
+      <text class="num-white" x="38" y="54" text-anchor="middle">6</text>
+      <text class="step-title" x="74" y="38">Updated practice / calibration</text>
+      <text class="step-text" x="74" y="66">Protocol, training or governance</text>
+      <text class="step-text" x="74" y="88">questions are refined.</text>
+    </g>
+  </g>
+
+  <g transform="translate(478 880)">
+    <rect class="panel" x="0" y="0" width="964" height="78"/>
+    <rect class="chip-orange" x="30" y="22" width="128" height="34"/>
+    <text class="chip-text-white" x="94" y="44" text-anchor="middle">KEY POINT</text>
+    <text class="statement" x="186" y="49">Arbitration is not the end of the service. It is the gateway into learning.</text>
+  </g>
+</svg>

@@ -1,0 +1,156 @@
+
+
+Map radiology workflows around decision point interventions to understand AI's role and integration in real scenarios.
+Combine real pilot data with forward-looking models to address current AI usage and identify workflow gaps effectively.
+Incorporate theoretical and practical decision-making models to explore human and AI interactions in diverse workflows.
+Develop multi-level decision trust models reflecting real-world practices to enhance safety and reliable decision-making.
+Create ambient AI-driven logging to capture decision discussions, ensuring a complete audit trail for accountability.
+Use evidence-backed models for prototype designs to ensure relevance and address user needs in disagreement management.
+
+Notes
+Radiology Workflow Understanding and Ecosystem Mapping
+The team agreed on focusing on mapping radiology workflows around decision-making points to ground AI integration in realistic contexts.
+
+Focus on core radiology workflows and decision points as the intervention moment to clarify AI’s role and impact (00:02)
+
+Use one hospital workflow as a model due to variability across hospitals and complex system layers like NHS
+Map key roles: radiologists, consultants, administrative staff, and technicians to understand organizational structure
+Prioritize decision moments during disagreement phases as critical intervention points, not entire workflows
+This approach helps clarify where, why, and who is involved in decision processes for AI integration
+Combine real pilot data and speculative future workflows to build a grounded yet forward-looking model (05:00)
+
+Use existing pilots (e.g., Imperial team) to understand current AI usage and workflow gaps
+Speculate on AI’s future integration based on radiologists’ current workflows and expert interviews
+Validate speculative models with AI experts and radiologists to ensure relevance and accuracy
+Incorporate examples from Germany where AI results are consulted post-decision to inform model design
+Incorporate theoretical and practical decision-making models to explore different workflows with AI and human interaction (08:23)
+
+Contrast UK’s theoretical models with tested models like Imperial’s and Germany’s real-world use cases
+Emphasize human-in-the-loop mechanisms where decisions are cross-checked by multiple readers for accuracy
+Rationalize model choice based on evidence and real-world applicability to build trust in AI-assisted decisions
+Address limitations of designing new workflows without full NHS access, focusing on research-backed models
+Acknowledge workflow variability and use cases in decision-making, especially disagreement scenarios (13:35)
+
+Identify stages: before disagreement, disagreement moment, and after disagreement with unclear behaviors
+Highlight that most cases rely on radiologist experience without AI input; edge cases trigger AI-assisted validation
+Model escalation paths where disagreements are resolved by peer discussion or higher authority intervention
+Map these scenarios to understand AI’s role in supporting human judgment rather than replacing it
+Decision-Making Dynamics and Trust Models in Radiology
+The discussion clarified layered decision-making involving human experience, authority, and AI support to build trust and safety.
+
+Map multi-level decision trust and escalation paths to reflect real-world radiology practices (17:02)
+
+Three trust levels: individual human decision, human with AI support, and arbitration by senior doctors
+Edge cases with AI evidence are always discussed with peers or doctors before final decisions
+Model C (human in the loop with safety checks) is preferred due to trust and verification benefits
+This layered model supports safer, more reliable decision-making aligned with current practice
+Incorporate factors like seniority, authority, and experience into decision workflows to handle disagreements (20:31)
+
+Junior radiologists’ decisions can be overridden by more senior staff based on expertise and authority
+Hierarchical roles influence final decision-making, necessitating clear protocols for overrides
+These human factors must be mapped to understand how decisions evolve and disagreements resolve
+Protocols ensure safety by requiring evidence-backed decisions and escalation when AI or humans are uncertain
+Develop logic trees and scenario mapping for disagreement and decision outcomes to clarify workflow complexity (28:50)
+
+Use if-then logic to address scenarios like inexperienced readers needing senior support
+Map outcomes like agreement, unresolved disagreement, arbitration, or AI trust issues
+Include scenarios where AI is correct but overridden, or AI is doubted despite evidence
+This approach simplifies complex decision flows and highlights where AI interventions add value
+Establish continuous learning and review mechanisms based on decision logs and disagreement patterns (32:05)
+
+Implement review panels analyzing monthly decisions to identify risky or correct outcomes
+Use logs to feed back insights into AI improvements and staff training programs
+This learning loop supports governance, risk management, and ongoing refinement of processes
+Tracking disagreement rates helps flag systemic issues or AI glitches for proactive resolution
+Technical and System Requirements for Decision Logging and Audit
+The team outlined system features needed to capture, log, and attribute all decision-making actions for accountability and trust.
+
+Create ambient AI-driven logging and transcription of decision discussions to ensure complete capture of events (24:00)
+
+Always-on ambient AI triggers on decision moments to record conversations and decisions
+Logs create an audit trail with timestamps, participants, and decision outcomes for risk management
+Captured data enables retrospective analysis and accountability for all decision steps
+This supports legal defensibility and continuous process improvement
+Design traceable, timestamped, and attributable records for all decisions and AI outputs (33:52)
+
+Each decision state includes trust status, receipts, timestamps, and actor identification
+Records playback decision rationale and highlight whether errors were human, AI, or unknown
+This mission control-style system provides live situational awareness and detailed audit trails
+Facilitates transparency in complex workflows with multiple participants and AI inputs
+Build dashboards and review cards presenting trust metrics and disagreement insights (35:27)
+
+Dashboards show real-time metrics like number of disagreements, trust levels, and AI glitches
+Review cards summarize evidence and decision context for individual cases or patterns
+These tools help radiologists monitor decision quality and highlight areas needing attention
+Designed to differ from vendor dashboards by focusing on disagreement management and trust
+Use status-driven and trust surface indicators to guide radiologists during decision processes (36:49)
+
+Show freshness of data and trustworthiness of AI outputs on the dashboard
+Alert users to systemic issues or patterns in disagreement frequency and severity
+Enable quick triage and escalation based on real-time trust signals
+Supports informed decisions and awareness of AI-human interaction quality
+Prototyping Disagreement Management Interventions
+The team plans to prototype tools and processes focused on managing disagreement moments to improve decision outcomes.
+
+Develop a “disagreement toolkit” combining dashboards, protocols, and training components to support radiologists (36:49)
+
+Focus on raising awareness of biases, risks, and decision fragility during disagreements
+Use case scenarios from normal to extreme disagreement levels to tailor interventions
+Toolkit acts both as a process guide and training aid, not just a software tool
+Helps radiologists navigate disagreement dynamics with better data and structured support
+Test different prototype approaches including training, intervention tools, and escalation mechanisms (41:52)
+
+Role-play workshops simulate disagreement scenarios with scripts to gather radiologist feedback
+Compare approaches like decision support dashboards versus training programs for effectiveness
+Evaluate which methods best address evidence gaps, trust, and escalation needs
+Prototype with actual radiologists to validate usability and relevance before scaling
+Position the intervention as both a daily workflow aid and a training program depending on context (40:19)
+
+Embedded tools help manage real-time disagreement and decision escalation moments
+Training uses scenario walkthroughs to build skills in managing AI-human interactions
+Both approaches aim to reduce errors, improve trust, and clarify decision authority
+Decide which approach aligns best with radiologists’ needs and operational constraints
+Use evidence-backed models and research to guide prototype design and validation (43:26)
+
+Ground prototypes in mapped workflows, use cases, and logic trees developed from research
+Align with John’s advice to map ecosystem and logic before ideation and prototyping
+Focus on interventions that link strongly to identified pain points and decision risks
+This ensures prototypes are relevant, justified, and ready for user testing
+Strategic Context and Validation Approach
+The session emphasized using evidence and iterative validation to create credible, testable models for AI in radiology.
+
+Base all workflow and decision models on research, pilot data, and expert input rather than invention (12:02)
+
+Use evidence from NHS pilots, German real-world cases, and expert interviews for grounding
+Avoid designing wholly new workflows without validation; instead, adapt existing ones thoughtfully
+Validate speculative future workflows with radiologists and AI experts to gain credibility
+This approach balances innovation with practical feasibility and user acceptance
+Prepare to explain and justify model choices through documented evidence during presentations (18:50)
+
+Be ready to show sources, pilot data, and interview findings backing the workflow and intervention design
+Explain limitations due to data availability and system complexity openly
+Emphasize that models represent best guesses validated by experts, not definitive solutions
+This transparency helps manage stakeholder expectations and supports iterative refinement
+Recognize the complexity and evolving nature of AI integration in radiology workflows (43:26)
+
+Accept that processes are in flux and require ongoing mapping, testing, and adjustment
+Use incremental steps: ecosystem mapping, use case definition, prototype ideation, and validation
+Adopt a flexible mindset to incorporate new pilot results and stakeholder feedback
+This phased approach reduces risk and builds user trust over time
+Leverage multi-source synthesis to create a plausible future radiologist workflow with AI (08:23)
+
+Combine NHS workflows, German pilot experience, and academic models into one synthesized flow
+Use this as a vehicle to identify intervention points and decision moments clearly
+Present the workflow as evidence-based but speculative to guide design and testing
+This synthesis balances current reality with future possibilities for better planning
+
+Action items
+David
+Map the radiology ecosystem including hospital organization, roles, input/output flows, and workflows to establish context for AI intervention (00:02)
+Select one hospital as a representative model for workflow mapping due to variability across institutions and document it with appropriate disclaimers (02:20)
+Gather and synthesize evidence from pilots, literature, and expert interviews to build a grounded speculative AI-assisted radiology workflow focusing on decision moments and disagreement phases (06:47)
+Identify and map decision-making scenarios including routine decisions, edge cases, disagreements, arbitration, and authority overrides, along with their trust hierarchies (15:33)
+Investigate ambient AI transcription and logging mechanisms to capture real-time decision and disagreement discussions for audit, learning, and risk management (24:00)
+Design prototype tools such as dashboards that visualize trust/review status, disagreement alerts, and review cards highlighting evidence supporting decisions (35:27)
+Develop prototyping scenarios and workshops with radiologists to role-play disagreement resolution models and test multiple intervention strategies including training, escalation, and decision aids (38:33)
+Prepare a final workflow and intervention proposal grounded on research evidence, rationalized models, and pilot learnings for presentation and validation with experts and radiologists (43:26)

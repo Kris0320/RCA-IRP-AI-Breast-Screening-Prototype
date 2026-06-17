@@ -1,0 +1,480 @@
+Unit 4 第二次 Tutorial 5.14 中文顺读版
+1. 开始：你们展示重新规划后的项目时间表
+你们说：
+这是我们重新规划后的项目 timeline。
+老师问：
+你们是怎么拆分这个计划的？
+你们回答：
+我们从这一周开始。接下来想继续安排 interviews。之后会尝试联系 radiology students。第三周会做 system mapping 和 design opportunity，第四周做 prototype design，第五周做 testing。
+老师问：
+你们准备做什么类型的 prototype？
+你们回答：
+现在还不完全确定。我们后面也有一些问题想问您，比如关于 design opportunity 和 prototype 方向。
+老师说：
+好的。整体结构是可以的。这个计划听起来现实吗？
+你们说：
+我觉得是现实的。第一周的任务我们基本都完成了，可以一个个展示。
+老师说：
+好的，那你们开始吧。
+
+2. 你们介绍第一轮专家访谈：两位 professor / researcher
+你们说：
+上周我们采访了两位 professor，他们都在做 AI 和 healthcare 相关研究，也和 breast screening / mammogram 有关。
+老师说：
+太好了，非常棒。你们做得很好。
+你们说：
+其中一位对 AI 的态度比较信任。他认为 AI 有时会给出正确判断，甚至有些时候 AI 的判断是对的，但不一定会被人类接受。
+老师说：
+这个 insight 很有意思，但你们要小心。不要直接把它当作绝对事实。
+因为 AI 是否正确，取决于：
+	•	哪个 model
+	•	什么数据
+	•	什么场景
+	•	什么临床条件
+	•	很多其他因素
+所以你们可以记录这个观点，但不要假设“AI 给出的答案一定是正确的”。
+不过他说的另一个点很重要： 有时候正确的 AI signal 可能不会被人类接受，这里会产生 conflict。
+这对你们项目是有价值的 insight。
+你们说：
+是的，而且这会影响 arbitration workload。因为 arbitration 需要 peer review，需要讨论。
+老师说：
+对，arbitration 本质上就是一种 peer review。
+
+3. 第二个访谈：PERFORMS / radiologist calibration
+老师问：
+第二个 interview 呢？
+你们说：
+第二位专家提到了一个测试。Radiologists 大概每六个月需要做一次类似 PERFORMS 的测试。
+老师问：
+为什么要做这个测试？
+你们说：
+是为了校准和学习。
+老师说：
+对，这其实是一个 learning system。它帮助 radiologists 学习和校准自己的表现。
+简单来说，它是一种 tuning。 它让医生知道自己是不是 over-read 或 under-read。
+这不仅是 model 需要 calibration，radiologist 也需要 calibration。
+
+4. 你们介绍临床经验访谈：30 年 radiologist 经验
+你们说：
+我们还采访了一位以前做过 radiologist 的专家，她有 30 年经验。她也是由另一位 professor 推荐给我们的。
+老师说：
+很好。你们做得非常好。这种 referral 很有价值。
+你们说：
+她提到每年会有一些关于特殊 mammogram cases 的讨论，比如一些特别困难、复杂或者关键的病例。
+老师说：
+对，这些 case discussion 是为了帮助他们评估、理解和学习。
+也就是说：
+他们通过讨论这些 difficult cases，理解为什么判断困难，以及从中学到什么，从而提升诊断能力。
+你们说：
+我们这次访谈更关注 clinical workflow，但我们发现目前 AI 在这个领域还没有一个稳定的应用模式。
+老师说：
+对，因为这个领域还在建设中。不同公司、不同模型都在竞争。未来可能最好的 model 会成为 standard，其他人都要向它靠拢。
+这其实是一个技术公司之间争夺 best practice 的市场。
+
+5. 关于 AI 更新：医生是否参与 model update cycle？
+你们说：
+专家还提到，设备制造商会更新他们的 algorithm，但医生对这些更新的影响可能很有限。
+老师说：
+这里有两个问题。
+第一是软件开发和发布的速度。 AI software 会更新，每次 release 可能改变：
+	•	workflow
+	•	precision
+	•	output
+	•	post-processing
+	•	model behaviour
+	•	其他因素
+第二是医生在这个更新过程中的角色。
+你们的 insight 似乎是： 这些 update 是被交付给 practitioner 的，而不是医生和厂家共同协作完成的。
+也就是说，它更像是：
+这个软件更新了，所以你现在需要适应它。
+而不是：
+医生参与了这个 AI 系统的学习和更新过程。
+老师说：
+你们需要再确认这个点。因为我听起来是这样，但不一定完全准确。
+你们应该回到访谈内容里，确认：
+Radiologists 是否真的参与 AI 的 learning / update cycle？
+或者他们只是被动接收更新？
+这是一个很重要的问题。
+
+6. AI 被当作 another reader，但它的行为不一样
+你们说：
+我们发现现在 AI 有时被当作 another reader，但它的行为其实和人类 reader 不一样。
+老师说：
+对，这是一个很重要的点。
+你们继续说：
+AI 能力是有限的。进入 arbitration phase 后，流程主要还是 human-based，AI 并没有真正被纳入讨论。
+有时候，AI 的正确 signal 可能会在 arbitration 中被人类 override。 AI 可能减少 routine reading workload，但可能增加 arbitration workload。 Clinicians 需要时间学习 AI 的 reading characteristics。 现在的 records 更关注 final decision，而不是 disagreement pathway。 如果设备、software 或 post-processing 改变，performance 也可能改变。
+老师说：
+这里面有一个非常大的 insight：
+现在的记录系统关注的是 outcome，而不是 process。
+也就是说，系统记录的是最终结果是什么，但没有充分记录：
+	•	disagreement 是怎么发生的
+	•	谁和谁不一致
+	•	为什么 override
+	•	AI confidence 是多少
+	•	disagreement pathway 是什么
+	•	每个 decision gate 是怎么走过来的
+这对你们项目非常重要。
+
+7. 你们展示 problem sheet：causes and effects
+你们说：
+基于这些 insights，我们做了一个 problem sheet，分析 causes 和 effects。
+第一个问题是：
+AI role mismatch
+AI 被当作 human reader，但它并不是人类 reader。
+比如：
+	•	AI 不能参与讨论
+	•	AI 可能有 confidence score，但实际流程里不一定被有效使用
+	•	AI 不会受到其他 reader 影响
+	•	但 human reader 可能会受到关系影响
+比如 team 里只有三四个 radiologists，他们彼此认识，所以一个 reader 可能会受到另一个 reader 的影响。
+老师说：
+这个很有意思。这是 human judgement bias 和 relationship bias。
+
+8. Arbitration workflow mismatch
+你们说：
+第二个问题是 arbitration workflow mismatch。
+目前 arbitration 主要是为 human-human disagreement 设计的，不是为 AI-human disagreement 设计的。
+所以 AI 并没有真正进入 workflow。
+例如：
+	•	目前依赖 third reader 或 meeting
+	•	但没有 AI-specific arbitration rule
+	•	没有明确规定 AI signal 如何触发 second look
+	•	没有针对 high-confidence AI disagreement 的特殊处理规则
+老师说：
+对，这个是你们可以设计的地方。
+
+9. Trust calibration gap
+你们说：
+第三个问题是 trust calibration gap。
+Clinicians 缺少一种方式去学习 AI 的 reading characteristics。
+比如：
+	•	AI 适用于什么场景
+	•	AI 的 limitations 是什么
+	•	哪些 case 它容易判断好
+	•	哪些 case 它容易出错
+老师说：
+这个很有意思。
+这里可能存在一个 safe operating zone。
+也就是说，有一些区域是：
+	•	可以被证明的
+	•	可以被信任的
+	•	可以被验证的
+	•	可以被追溯的
+但还有一些区域在这个安全范围之外，比如：
+	•	边界案例
+	•	不确定案例
+	•	AI 给出错误答案的案例
+	•	数据或流程无法验证的案例
+所以这里存在一个边界： 什么是可信、可验证、可追踪的？ 什么还不够安全、不够确定？
+这个边界很复杂。
+
+10. Traceability and accountability gap
+你们说：
+第四个问题是 traceability and accountability gap。
+现在的记录偏向 final decision，缺少过程记录。比如缺少：
+	•	AI confidence
+	•	override reason
+	•	disagreement pathway
+	•	每一步 decision 的依据
+老师说：
+这非常重要。
+如果这是一个 process，那么每一个 decision point / gateway 都需要有一套 logic 来追踪和评分。
+这样以后才能回头看整个 decision chain，理解 decision tree 是怎么形成的。
+因为早期一个错误 decision 会 cascade 到后面的所有 decision。
+例如：
+一个 false positive 或 false negative 如果在早期被接受或忽略，就会影响后续每一步。
+所以 source of truth 非常重要。
+你们需要知道：
+	•	最初 AI / human 的判断是什么
+	•	哪一步改变了判断
+	•	为什么从 positive 变成 negative
+	•	哪个 decision gate 影响最大
+	•	后续判断是否建立在一个错误前提上
+老师说：
+每一个 green / red decision 都很重要，因为早期错误会产生 compound effect。
+
+11. Risk score / trust score / traceability log
+老师继续说：
+这些东西其实都可以有 risk score。
+你们可以考虑：
+	•	risk score
+	•	trust score
+	•	traceability log
+	•	decision weighting
+	•	decision structure
+这些东西可以帮助你们分析整个 decision system。
+这个系统有两面：
+一面是 algorithmic system，按照 logic 和 rule 运行。 另一面是 human system，按照 judgement、experience、context 做决定。
+AI 不知道人类讨论了什么。 它只知道你输入了什么、点击了什么、系统里记录了什么。
+所以你们其实面对的是两个 context：
+	1	AI / software context
+	2	human / clinical context
+这两个 context 并不一样。
+你们要做的是让它们能够形成某种 shared context：
+	•	shared system
+	•	shared model
+	•	shared understanding
+	•	shared rules
+	•	shared decision logic
+但是最终仍然要让 human context override system context。
+也就是说，AI 可以提供结构化判断，但最终决策仍需要人类语境和责任介入。
+
+12. Data issue：AI processed data, not raw data
+你们说：
+另一个问题是 data usability。AI 处理的是 processed data，不是 raw data。
+老师说：
+对，这是 data model issue。
+比如：
+	•	vendor 改变
+	•	post-processing 更新
+	•	software update
+	•	deployment 改变
+都会影响 AI output。
+这说明你们还需要考虑 deployment monitoring。
+AI 需要一种 continual learning / review / calibration / reset 的机制。
+它不一定是完全自动 self-adjusting，但至少需要持续被 review、calibrated 和 tuned。
+但即使 AI 很准确，仍然有另一半问题：
+人类是否理解、接受、读取或 override 这个 signal。
+所以即使 AI 100% 准确，人类 interpretation 仍然会决定下一步。
+这其实是同一个问题的两面：
+	•	AI 是否准确
+	•	人是否正确理解和使用 AI
+
+13. 你们提到 MCP / protocol 的类比
+老师问：
+从这个 problem diagram 里，你们想到了什么策略？
+你们说：
+这让我想到 MCP。因为现在很多 app、model、version 都在不断更新，但 MCP 像一种 protocol，可以连接不同 model 和不同版本。
+所以我在想，这种思路能不能用到我们的项目里。
+老师说：
+我觉得你们可以从结构上考虑。
+这里可能存在一个 governance layer。
+也就是说，系统不是只有一个 AI model，而是一个 system of systems。
+这个 governance layer 负责规定：
+	•	什么可以发生
+	•	什么不可以发生
+	•	什么可以连接
+	•	什么不可以连接
+	•	什么进入系统
+	•	什么不进入系统
+	•	如果进入，它如何工作
+	•	如何组织
+	•	谁控制谁
+	•	哪些系统可以 override 其他系统
+	•	哪些系统只是提供 input
+所以，可能会有一个 governance component，也可能会有类似 MCP 的 interconnecting protocol，用来支持不同系统之间的数据接入和整合。
+但重点是： 你们要用 systems view 来理解各个部分放在哪里，以及为什么。
+这样你们才能判断：
+	•	你们应该在哪里 intervene
+	•	你们需要设计 process
+	•	还是 rule set
+	•	还是 experience
+	•	还是 decision criteria
+	•	还是 governance logic
+
+14. 老师提醒：也许你们不一定要解决 machine-to-machine，而可以聚焦 human layer
+老师说：
+如果你们面对 AI 持续更新、reinforcement、calibration、tuning 这些复杂问题，也许另一个策略是：
+聚焦 human layer。
+也就是说，你们不一定要解决所有技术层面的 system problem。
+你们可以问：
+在这个复杂 AI system 里，人类如何理解、判断、协作和负责？
+你们问：
+我们现在分析问题时，感觉最明显的方向是 digital platform 或 escalation platform。但如果像您说的，要考虑 human layer，那我们是否需要考虑 radiologist 的个人因素？
+老师说：
+如果你们想做得全面，是的。
+你们可以考虑 human biases，例如：
+	•	stress
+	•	time pressure
+	•	fatigue
+	•	workload
+	•	environmental factors
+	•	psychological factors
+	•	relationship bias
+	•	clinical confidence
+	•	peer pressure
+这些都会影响 decision。
+老师建议你们去找一些 decision-making model，尤其是 high-stress decision-making model。
+比如：
+	•	military decision models
+	•	pilot decision frameworks
+	•	NASA / aviation protocols
+	•	high-risk environment decision-making frameworks
+因为 radiology 里的 AI disagreement moment 也是一种 high-stress / high-risk decision environment。
+
+15. 为什么要看 high-stress decision-making？
+老师说：
+很多时候，失败不是因为人完全没有能力，而是因为 context gaps。
+也就是说：
+人没有足够信息，但仍然必须做决定。
+他们需要 make a call。 需要选择。 需要承担后果。
+有时候这就会失败。
+所以你们可以看看 military、aviation 或其他 high-risk decision environments。
+这些领域可能会给你们一些 framework，帮助你们理解：
+	•	人在高压环境下如何决策
+	•	什么情况下会失败
+	•	什么 protocol 可以降低风险
+	•	如何支持人在不确定性下做判断
+
+16. 如果走 human route，可能的设计方向是什么？
+你们问：
+如果我们看 training、legal rules、regulations，这些资料怎么用到我们的项目里？
+老师说：
+如果你们聚焦 radiologist，你们可以问：
+How do you support them?
+这个方向不一定只是做技术平台。
+也可能是：
+	•	stress relief
+	•	wellbeing
+	•	reducing fatigue
+	•	supporting performance
+	•	decision support
+	•	peer-to-peer decision facilitation
+高压力决策有 mental and emotional cost。 这种成本会导致 fatigue。 fatigue 会影响 choices 和 decisions。 最终 outcome 就会受到影响。
+所以，你们的 intervention 也可能是：
+	•	给他们 pause / break
+	•	缓解 stress 和 tension
+	•	帮助他们保持 performance
+	•	优化 decision-making condition
+这也是一个 solution，因为你们从 human angle 切入，针对 decision-making process 中的一个具体阶段做支持。
+
+17. 另一个 human angle：facilitate peer-to-peer decisions
+老师继续说：
+另一个方向是：
+How to facilitate peer-to-peer decisions?
+也就是说，技术仍然在那里，你们也理解 AI 如何运作，但你们真正关注的是：
+	•	human side of the equation
+	•	human system side of the equation
+	•	system 如何影响 human decision
+所以你们可以从几个关系模式来分析：
+	1	human-only
+	2	human-to-human
+	3	human-to-machine
+	4	machine-to-human
+	5	machine-to-machine
+老师说：
+这可以做成一个 quadrant / worksheet。
+你们可以把不同问题放进去：
+	•	human-human：peer decision, bias, relationship, training
+	•	human-machine：医生如何读取 AI signal
+	•	machine-human：AI 如何向医生输出信息
+	•	machine-machine：不同模型、vendor、system update、data pipeline
+然后你们可以问：
+每个区域里有哪些问题？ 哪些问题是你们能解决的？ 哪些太复杂但需要作为 context 说明？
+老师说：
+也许 human-human / human-system 这一块对你们来说是更丰富的设计区域。
+因为 machine-machine 的问题可能太复杂，你们没有能力真正解决，但你们可以理解它作为背景如何影响人的判断。
+
+这次 tutorial 的核心变化
+第一次 tutorial 主要是在确认：
+AI–human disagreement moment 是否是一个成立的 focus。
+第二次 tutorial 已经往前推进了：
+disagreement moment 里面到底有哪些机制问题，以及你们可以从哪个层面介入。
+这次老师给你们打开了几个更明确的方向：
+方向
+老师的意思
+Process not outcome
+不要只看最终结果，要看 decision pathway
+Decision gateway
+每一步 decision point 都需要被记录和追踪
+Traceability
+要能回溯 AI / human / override / escalation 的过程
+Risk & trust scoring
+每一步可能都有 risk score / trust score / decision weight
+Governance layer
+系统之间需要 rules、protocol、hierarchy of trust
+Human layer
+不一定只做平台，也可以聚焦 radiologist 的高压决策支持
+High-stress decision model
+可以借鉴 military / aviation / NASA 的高风险决策框架
+Relationship quadrant
+用 human-human / human-machine / machine-human / machine-machine 分析问题和机会
+
+你们现在可以提炼出的 5 个强 insight
+Insight 1
+AI is treated as another reader, but it does not behave like a human reader.
+AI 被放进了“另一个读片者”的位置，但它无法参与讨论、不会受到关系影响，也无法解释自己的判断过程。
+
+Insight 2
+Current arbitration workflows are designed for human-human disagreement, not AI-human disagreement.
+现有仲裁流程是为两个人类读片者之间的分歧设计的，而不是为 AI 与人类之间的分歧设计的。
+
+Insight 3
+Records focus on final decisions, not disagreement pathways.
+当前记录系统更关注最终判断，而不是记录冲突如何发生、如何处理、谁 override 了谁、为什么这样决定。
+
+Insight 4
+Clinicians need time and mechanisms to learn AI’s reading characteristics.
+医生需要学习 AI 的“读片特征”：它什么时候可靠、什么时候容易错、在哪些 case 上有局限。
+
+Insight 5
+Trust breaks at the boundary between what is verified and what is uncertain.
+信任不是在正常流程中最容易破裂，而是在边界情况中破裂：不确定、无法验证、无法追踪、AI 与人类冲突、系统更新或 workflow 改变的时候。
+
+对你们项目最有用的一句话
+你们现在的项目可以从：
+Designing responsibility handover when AI and human readers disagree
+进一步升级成：
+Designing a traceable decision pathway for AI–human disagreement in breast screening.
+中文是：
+为乳腺癌筛查中 AI 与人类阅片者判断不一致的情况，设计一个可追溯的决策路径。
+这个比单纯说 responsibility 更具体，因为它包含：
+	•	disagreement detection
+	•	decision gateway
+	•	escalation
+	•	override reason
+	•	trust calibration
+	•	audit trail
+	•	responsibility handover
+
+下一步建议
+你们可以把第二次 tutorial 后的工作聚焦成 3 件事：
+1. 做一个 relationship quadrant
+横纵可以这样：
+关系
+问题
+设计机会
+Human–Human
+relationship bias, peer influence, arbitration discussion
+peer decision protocol
+Human–Machine
+radiologist 不熟悉 AI characteristics
+trust calibration / AI learning layer
+Machine–Human
+AI signal 不够可解释或不够可行动
+confidence + evidence display
+Machine–Machine
+vendor update, model version, processed data
+governance / monitoring layer
+
+2. 做一个 decision pathway map
+不要只画 journey。 画每个 decision gateway：
+	1	AI output generated
+	2	Human reader judgement
+	3	Disagreement detected
+	4	Second look triggered
+	5	Override or escalation
+	6	Arbitration discussion
+	7	Final decision
+	8	Audit / learning feedback
+每一步标：
+	•	actor
+	•	input
+	•	decision
+	•	risk
+	•	trust condition
+	•	record needed
+
+3. 决定你们主要介入哪一层
+老师这次其实给了两个选择：
+A. Governance / protocol layer
+设计 rules、decision gates、audit trail、escalation protocol。
+B. Human layer
+设计 radiologist 如何学习 AI、如何在压力下判断、如何和 peers 协作。
+我建议你们不要二选一太极端，可以这样组合：
+Main intervention: governance-supported human decision pathway
+也就是：
+用 governance / protocol / audit trail 支撑 human decision-making，而不是试图替代医生决策。
+英文可以说：
+Our intervention focuses on the human decision layer, supported by governance mechanisms such as traceability, escalation rules and audit trails.

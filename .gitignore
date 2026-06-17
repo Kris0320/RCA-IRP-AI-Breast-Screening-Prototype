@@ -13,3 +13,9 @@ Thumbs.db
 Untitled*.canvas
 Untitled.base
 node_modules/
+
+# Claude Code project data (contains private conversation history)
+.claude/
+
+# Large files exceeding GitHub's 100MB limit
+assets/unit3-submission/Reflection-Unit3-QihangWu.mp4

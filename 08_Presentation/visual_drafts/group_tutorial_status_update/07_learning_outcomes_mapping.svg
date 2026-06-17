@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><style>
+    .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#536174}.head{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:21px;font-weight:700;fill:#172033}.body{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:20px;fill:#2d3948}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:15px;font-weight:700;fill:#5d6d7e;letter-spacing:.06em}.table{fill:#fff;stroke:#d9e0e8;stroke-width:1.5;rx:20}.row{fill:#f8fafc}.line{stroke:#d9e0e8;stroke-width:1.2}.accent{fill:#eef4fa}.orange{fill:#fff4ee}
+  </style></defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80">ASSESSMENT ALIGNMENT</text>
+  <text class="title" x="96" y="154">Learning Outcomes Mapping</text>
+  <text class="sub" x="100" y="202">Connecting project evidence to IRP assessment criteria.</text>
+  <g transform="translate(160 280)">
+    <rect class="table" x="0" y="0" width="1600" height="620"/>
+    <rect class="accent" x="0" y="0" width="1600" height="78" rx="20"/>
+    <text class="head" x="46" y="50">Learning Outcome</text>
+    <text class="head" x="430" y="50">Project evidence</text>
+    <line class="line" x1="370" y1="0" x2="370" y2="620"/>
+    <line class="line" x1="0" y1="78" x2="1600" y2="78"/>
+    <rect class="row" x="0" y="78" width="1600" height="108"/><text class="head" x="46" y="128">LO1 Synthesis</text><text class="body" x="430" y="128">Workflow research, expert interviews, AI breast screening studies, prototype testing.</text>
+    <line class="line" x1="0" y1="186" x2="1600" y2="186"/>
+    <text class="head" x="46" y="236">LO2 Service Design</text><text class="body" x="430" y="224">Critical reflection on the value and limitation of service design in</text><text class="body" x="430" y="254">high-throughput clinical AI contexts.</text>
+    <line class="line" x1="0" y1="294" x2="1600" y2="294"/>
+    <rect class="row" x="0" y="294" width="1600" height="108"/><text class="head" x="46" y="344">LO3 Tools</text><text class="body" x="430" y="332">Adapted mapping, cards and workshop tools into low-burden clinical</text><text class="body" x="430" y="362">support concepts.</text>
+    <line class="line" x1="0" y1="402" x2="1600" y2="402"/>
+    <text class="head" x="46" y="452">LO4 Innovation</text><text class="body" x="430" y="452">Lightweight disagreement support layer, non-blame receipt, outcome-linked case library.</text>
+    <line class="line" x1="0" y1="510" x2="1600" y2="510"/>
+    <rect class="row" x="0" y="510" width="1600" height="110"/><text class="head" x="46" y="562">LO5 Storytelling</text><text class="body" x="430" y="562">Refined storyline for expert and non-expert audiences.</text>
+  </g>
+  <rect class="orange" x="360" y="930" width="1200" height="58" rx="18" stroke="#e7b69d"/>
+  <text class="body" x="960" y="967" text-anchor="middle">The next deck needs to show evidence, prototype logic and reflection together.</text>
+</svg>

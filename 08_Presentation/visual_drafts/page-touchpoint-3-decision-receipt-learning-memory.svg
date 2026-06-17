@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 54px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 23px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 29px; fill: #172033; font-weight: 700; }
+      .section-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #172033; font-weight: 700; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .value { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #2d3948; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #172033; font-weight: 700; }
+      .orange-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #b34c29; font-weight: 700; }
+      .statement { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 21px; fill: #172033; font-weight: 700; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .card { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 22; filter: url(#shadow); }
+      .header { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.3; rx: 16; }
+      .soft { fill: #f8fafc; stroke: #d9e0e8; stroke-width: 1.2; rx: 13; }
+      .accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.3; rx: 13; }
+      .memory { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 13; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 18; }
+      .chip-orange { fill: #fff3ed; stroke: #e7b69d; stroke-width: 1.2; rx: 18; }
+      .pill { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.1; rx: 16; }
+      .pill-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.1; rx: 16; }
+      .divider { stroke: #d9e0e8; stroke-width: 1.2; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.4; fill: none; }
+      .dot { fill: #d9653b; }
+      .connector-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .connector-note { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #536174; }
+      .check { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #2d3948; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="68">TOUCHPOINT 3 · NON-BLAME RECORD AND CALIBRATION CASE</text>
+  <text class="title" x="96" y="130">Touchpoint 3 — Decision Receipt &amp; Calibration Case Card</text>
+  <text class="subtitle" x="98" y="172">Immediate arbitration record, with learning decided after follow-up outcome</text>
+
+  <!-- Non-blame Decision Receipt -->
+  <g transform="translate(96 232)">
+    <rect class="card" x="0" y="0" width="686" height="738"/>
+    <rect class="header" x="30" y="30" width="626" height="96"/>
+      <rect class="chip-orange" x="54" y="52" width="190" height="28"/>
+      <circle class="dot" cx="74" cy="66" r="4"/>
+      <text class="orange-text" x="92" y="71">Generated after arbitration</text>
+    <text class="card-title" x="54" y="108">Non-blame Decision Receipt</text>
+
+    <g transform="translate(30 154)">
+      <rect class="soft" x="0" y="0" width="302" height="82"/>
+      <text class="label" x="20" y="30">CASE ID</text>
+      <text class="value" x="20" y="58">SC-2048</text>
+
+      <rect class="accent" x="324" y="0" width="302" height="82"/>
+      <text class="label" x="344" y="30">FINAL RECALL DECISION</text>
+      <text class="value" x="344" y="58">Recall</text>
+    </g>
+
+    <g transform="translate(30 260)">
+      <rect class="soft" x="0" y="0" width="302" height="94"/>
+      <text class="label" x="20" y="32">HUMAN JUDGEMENT</text>
+      <text class="value" x="20" y="62">No recall recommended</text>
+
+      <rect class="accent" x="324" y="0" width="302" height="94"/>
+      <text class="label" x="344" y="32">AI EVIDENCE LAYER</text>
+      <text class="value" x="344" y="62">Recall concern raised</text>
+      <text class="small" x="344" y="84">high confidence</text>
+    </g>
+
+    <g transform="translate(30 370)">
+      <rect class="accent" x="0" y="0" width="626" height="96"/>
+      <text class="label" x="22" y="32">ARBITRATION RATIONALE</text>
+      <text class="body" x="22" y="64">Subtle suspicious region confirmed after comparison</text>
+      <text class="body" x="22" y="88">with prior image.</text>
+    </g>
+
+    <g transform="translate(30 474)">
+      <rect class="soft" x="0" y="0" width="626" height="76"/>
+      <text class="label" x="20" y="30">EVIDENCE USED</text>
+      <text class="check" x="22" y="58">☑ Current mammogram</text>
+      <text class="check" x="188" y="58">☑ Prior image</text>
+      <text class="check" x="328" y="58">☑ AI suspicious region</text>
+      <text class="check" x="494" y="58">☑ Human annotation</text>
+    </g>
+
+    <g transform="translate(30 560)">
+      <rect class="soft" x="0" y="0" width="626" height="48"/>
+      <text class="label" x="20" y="20">RECORD PURPOSE</text>
+      <text class="body" x="20" y="40">For review, audit and learning — a non-punitive record.</text>
+    </g>
+
+    <g transform="translate(30 616)">
+      <rect class="accent" x="0" y="0" width="626" height="78"/>
+      <text class="label" x="20" y="22">FOLLOW-UP &amp; LEARNING STATUS</text>
+      <text class="small-strong" x="22" y="48">Outcome status:</text>
+      <text class="small" x="132" y="48">Pending follow-up result</text>
+      <text class="small-strong" x="334" y="48">Learning review:</text>
+      <text class="small" x="454" y="48">After outcome update</text>
+      <text class="small-strong" x="22" y="68">Next step:</text>
+      <text class="small" x="98" y="68">Mark for outcome-linked review</text>
+    </g>
+
+    <g transform="translate(30 700)">
+      <rect class="chip-orange" x="0" y="0" width="244" height="34"/>
+      <text class="orange-text" x="122" y="22" text-anchor="middle">Mark for outcome-linked review</text>
+      <text class="small" x="266" y="22">Calibration cases wait for follow-up outcome review.</text>
+    </g>
+  </g>
+
+  <!-- Connector -->
+  <g transform="translate(818 500)">
+    <path class="line-orange" marker-end="url(#arrowOrange)" d="M0 50 H252"/>
+    <text class="connector-label" x="126" y="20" text-anchor="middle">Outcome-linked review</text>
+    <text class="connector-label" x="126" y="42" text-anchor="middle">selects learning cases</text>
+    <text class="connector-note" x="126" y="88" text-anchor="middle">Follow-up outcome comes before calibration.</text>
+  </g>
+
+  <!-- Calibration Case Card -->
+  <g transform="translate(1106 232)">
+    <rect class="card" x="0" y="0" width="718" height="738"/>
+    <rect class="header" x="30" y="30" width="658" height="96"/>
+    <rect class="chip-orange" x="54" y="52" width="286" height="28"/>
+    <circle class="dot" cx="74" cy="66" r="4"/>
+    <text class="orange-text" x="92" y="71">Created after outcome-linked Learning Value Check</text>
+    <text class="card-title" x="54" y="108">Calibration Case Card</text>
+
+    <g transform="translate(30 154)">
+      <rect class="memory" x="0" y="0" width="316" height="88"/>
+      <text class="label" x="20" y="30">CASE ID</text>
+      <text class="value" x="20" y="60">SC-2048</text>
+      <text class="small" x="156" y="60">Source receipt: SC-2048</text>
+
+      <rect class="accent" x="342" y="0" width="316" height="88"/>
+      <text class="label" x="362" y="30">FOLLOW-UP OUTCOME</text>
+      <text class="value" x="362" y="58">Confirmed after recall</text>
+      <text class="small" x="362" y="78">/ further assessment</text>
+    </g>
+
+    <g transform="translate(30 270)">
+      <rect class="soft" x="0" y="0" width="658" height="76"/>
+      <text class="section-title" x="22" y="30">Why selected</text>
+      <text class="body" x="22" y="58">Final decision changed after prior image comparison.</text>
+    </g>
+
+    <g transform="translate(30 370)">
+      <rect class="accent" x="0" y="0" width="658" height="64"/>
+      <text class="section-title" x="22" y="28">Disagreement pattern</text>
+      <text class="body" x="220" y="28">Human no recall / AI recall concern</text>
+    </g>
+
+    <g transform="translate(30 452)">
+      <rect class="memory" x="0" y="0" width="658" height="70"/>
+      <text class="section-title" x="22" y="30">Learning focus</text>
+      <text class="body" x="22" y="56">Subtle lesion became clearer after prior image comparison.</text>
+    </g>
+
+    <g transform="translate(30 534)">
+      <text class="label" x="0" y="0">LEARNING TAGS</text>
+      <rect class="pill-accent" x="0" y="18" width="126" height="34"/>
+      <text class="orange-text" x="63" y="40" text-anchor="middle">Subtle lesion</text>
+      <rect class="pill" x="142" y="18" width="190" height="34"/>
+      <text class="small-strong" x="237" y="40" text-anchor="middle">Prior image comparison</text>
+      <rect class="pill" x="348" y="18" width="126" height="34"/>
+      <text class="small-strong" x="411" y="40" text-anchor="middle">Detection gap</text>
+    </g>
+
+    <g transform="translate(30 594)">
+      <rect class="soft" x="0" y="0" width="658" height="78"/>
+      <text class="section-title" x="22" y="30">Discussion prompt</text>
+      <text class="body" x="22" y="58">What should be checked before finalising no recall in similar cases?</text>
+    </g>
+
+    <g transform="translate(30 680)">
+      <rect class="soft" x="0" y="0" width="396" height="58"/>
+      <text class="label" x="20" y="30">SUGGESTED USE</text>
+      <text class="small" x="20" y="50">Workshop · trainee calibration · audit review</text>
+
+      <rect class="accent" x="438" y="0" width="220" height="58"/>
+      <text class="label" x="458" y="30">OUTPUT</text>
+      <text class="value" x="458" y="46">Reusable</text>
+      <text class="value" x="458" y="64">calibration case</text>
+    </g>
+  </g>
+
+  <g transform="translate(300 1004)">
+    <rect class="panel" x="0" y="0" width="1320" height="52"/>
+    <text class="statement" x="660" y="33" text-anchor="middle">The receipt preserves arbitration reasoning. Outcome-linked review decides what becomes calibration material.</text>
+  </g>
+</svg>

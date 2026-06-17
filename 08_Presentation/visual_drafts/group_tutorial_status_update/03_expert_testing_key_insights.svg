@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><style>
+    .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#536174}.card-title{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:26px;font-weight:700;fill:#172033}.body{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:20px;fill:#2d3948}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:15px;font-weight:700;fill:#5d6d7e;letter-spacing:.06em}.card{fill:#fff;stroke:#d9e0e8;stroke-width:1.5;rx:22}.accent{fill:#fff4ee;stroke:#e7b69d}.blue{fill:#eef4fa;stroke:#c9d6e2}.green{fill:#eef8f1;stroke:#b9d9c4}.dot{fill:#d9653b}
+  </style></defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80">EXPERT TESTING</text>
+  <text class="title" x="96" y="154">Expert Testing: What We Learned</text>
+  <text class="sub" x="100" y="202">Professor Sophia Zackrisson validated the direction, but challenged the burden.</text>
+  <g transform="translate(140 300)">
+    <rect class="card blue" x="0" y="0" width="510" height="190"/><text class="card-title" x="32" y="52">1. AI workflows vary</text><text class="body" x="32" y="92">AI can work as second reader, triage,</text><text class="body" x="32" y="124">risk stratification or consensus support.</text>
+    <rect class="card green" x="565" y="0" width="510" height="190"/><text class="card-title" x="597" y="52">2. Consensus remains central</text><text class="body" x="597" y="92">Difficult AI-human cases still need</text><text class="body" x="597" y="124">human-led review.</text>
+    <rect class="card blue" x="1130" y="0" width="510" height="190"/><text class="card-title" x="1162" y="52">3. Prior images matter</text><text class="body" x="1162" y="92">Previous screening history is crucial</text><text class="body" x="1162" y="124">when interpreting disagreement.</text>
+    <rect class="card accent" x="285" y="260" width="510" height="190"/><text class="card-title" x="317" y="312">4. Every extra click matters</text><text class="body" x="317" y="352">Radiologists work in a high-throughput</text><text class="body" x="317" y="384">environment.</text>
+    <rect class="card green" x="850" y="260" width="510" height="190"/><text class="card-title" x="882" y="312">5. Learning must fit practice</text><text class="body" x="882" y="352">Case learning should connect to audit,</text><text class="body" x="882" y="384">teaching and review sessions.</text>
+  </g>
+  <rect class="card accent" x="500" y="860" width="920" height="70"/>
+  <circle class="dot" cx="540" cy="895" r="7"/>
+  <text class="body" x="566" y="902">Design pressure: reduce user burden while preserving learning value.</text>
+</svg>

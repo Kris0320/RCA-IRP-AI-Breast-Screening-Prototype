@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:25px;fill:#536174}.body{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#253246}.small{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:18px;fill:#536174}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:16px;font-weight:700;fill:#536174;letter-spacing:.06em}.card{fill:#fff;stroke:#d9e0e8;stroke-width:1.5;rx:24}.main{fill:#eef4fa;stroke:#c9d6e2;stroke-width:1.6;rx:28}.module{fill:#fff;stroke:#d4dde7;stroke-width:1.4;rx:18}.green{fill:#eef8f1;stroke:#b9d9c4}.blue{fill:#eef4fa;stroke:#b8cde1}.orange{fill:#fff4ee;stroke:#e7b69d}.line{stroke:#9fb0c3;stroke-width:2.4;fill:none}.dot{fill:#d9653b}
+    </style>
+  </defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80">GROUP TUTORIAL STATUS UPDATE</text>
+  <text class="title" x="96" y="154">Current Project Focus</text>
+  <text class="sub" x="100" y="202">RCA IRP / AI-human disagreement in breast screening</text>
+  <rect class="main" x="250" y="318" width="1420" height="210"/>
+  <text class="body" x="960" y="405" text-anchor="middle">We are not redesigning a full radiology platform.</text>
+  <text class="title" x="960" y="478" text-anchor="middle" style="font-size:48px">Lightweight support layer for difficult AI-human cases</text>
+  <g transform="translate(245 642)">
+    <rect class="module blue" x="0" y="0" width="310" height="126"/>
+    <text class="label" x="28" y="40">READER MOMENT</text>
+    <text class="body" x="28" y="78">Soft comparison</text>
+    <text class="small" x="28" y="106">Notice without alarm</text>
+    <line class="line" x1="332" y1="63" x2="392" y2="63"/>
+    <rect class="module green" x="410" y="0" width="310" height="126"/>
+    <text class="label" x="438" y="40">SYSTEM SUPPORT</text>
+    <text class="body" x="438" y="78">Consensus review</text>
+    <text class="small" x="438" y="106">Context travels forward</text>
+    <line class="line" x1="742" y1="63" x2="802" y2="63"/>
+    <rect class="module green" x="820" y="0" width="360" height="126"/>
+    <text class="label" x="848" y="40">LOW BURDEN</text>
+    <text class="body" x="848" y="78">Reasoning capture</text>
+    <text class="small" x="848" y="106">Confirm or edit</text>
+    <line class="line" x1="1202" y1="63" x2="1262" y2="63"/>
+    <rect class="module orange" x="1280" y="0" width="330" height="126"/>
+    <text class="label" x="1308" y="40">OUTPUT</text>
+    <text class="body" x="1308" y="78">Outcome-linked learning</text>
+    <text class="small" x="1308" y="106">Selected cases only</text>
+  </g>
+  <rect class="card" x="380" y="900" width="1160" height="74"/>
+  <circle class="dot" cx="424" cy="937" r="7"/>
+  <text class="small" x="450" y="944">The project now focuses on support embedded in existing breast screening workflows.</text>
+</svg>

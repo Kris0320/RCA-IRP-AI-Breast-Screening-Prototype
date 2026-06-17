@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 56px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 23px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .flow-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #172033; font-weight: 700; }
+      .flow-small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 27px; fill: #172033; font-weight: 700; }
+      .card-title-small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #172033; font-weight: 700; }
+      .question { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #2d3948; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #172033; font-weight: 700; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .orange-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #b34c29; font-weight: 700; }
+      .statement { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 21px; fill: #172033; font-weight: 700; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .card { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 22; filter: url(#shadow); }
+      .card-head { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.3; rx: 16; }
+      .card-head-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.3; rx: 16; }
+      .soft { fill: #f8fafc; stroke: #d9e0e8; stroke-width: 1.2; rx: 13; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 18; }
+      .chip-orange { fill: #fff3ed; stroke: #e7b69d; stroke-width: 1.2; rx: 18; }
+      .flow-chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 20; }
+      .flow-chip-orange { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 20; }
+      .line { stroke: #9aaabd; stroke-width: 2.2; fill: none; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.3; fill: none; }
+      .dot { fill: #d9653b; }
+      .num { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #273244; font-weight: 700; }
+      .num-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #ffffff; font-weight: 700; }
+      .icon-bg { fill: #dbe8f4; stroke: #8ea5bb; stroke-width: 1.2; }
+      .icon-bg-orange { fill: #d9653b; stroke: #ffffff; stroke-width: 3; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="68">SERVICE PACKAGE OVERVIEW</text>
+  <text class="title" x="96" y="130">Three Prototype Moments</text>
+  <text class="subtitle" x="98" y="172">Detect disagreement, support arbitration, and turn difficult cases into shared learning</text>
+
+  <!-- Flow strip -->
+  <g transform="translate(372 226)">
+    <rect class="flow-chip" x="0" y="0" width="250" height="74"/>
+    <circle class="icon-bg" cx="40" cy="37" r="21"/>
+    <text class="num" x="40" y="44" text-anchor="middle">1</text>
+    <text class="flow-title" x="76" y="34">Detect</text>
+    <text class="flow-small" x="76" y="58">cue inside existing workspace</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M274 37 H384"/>
+
+    <rect class="flow-chip-orange" x="408" y="0" width="250" height="74"/>
+    <circle class="icon-bg-orange" cx="448" cy="37" r="21"/>
+    <text class="num-white" x="448" y="44" text-anchor="middle">2</text>
+    <text class="flow-title" x="484" y="34">Review</text>
+    <text class="flow-small" x="484" y="58">support layer + pause point</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M682 37 H792"/>
+
+    <rect class="flow-chip" x="816" y="0" width="250" height="74"/>
+    <circle class="icon-bg" cx="856" cy="37" r="21"/>
+    <text class="num" x="856" y="44" text-anchor="middle">3</text>
+    <text class="flow-title" x="892" y="34">Learn</text>
+    <text class="flow-small" x="892" y="58">memory + calibration</text>
+  </g>
+
+  <!-- Prototype 1 -->
+  <g transform="translate(96 356)">
+    <rect class="card" x="0" y="0" width="540" height="508"/>
+    <rect class="card-head" x="28" y="28" width="484" height="92"/>
+    <rect class="chip" x="50" y="48" width="112" height="28"/>
+    <text class="small-strong" x="106" y="67" text-anchor="middle">Prototype 1</text>
+    <text class="card-title" x="50" y="104">Disagreement Detection Cue</text>
+
+    <g transform="translate(28 148)">
+      <rect class="soft" x="0" y="0" width="484" height="86"/>
+      <text class="label" x="22" y="30">QUESTION IT ANSWERS</text>
+      <text class="question" x="22" y="60">Where does the disagreement become visible?</text>
+    </g>
+
+    <text class="body" x="50" y="274">A soft, non-blame cue appears inside the</text>
+    <text class="body" x="50" y="299">existing reading workspace when human</text>
+    <text class="body" x="50" y="324">judgement and AI evidence layer do not align.</text>
+
+    <line class="line" x1="50" y1="330" x2="490" y2="330"/>
+    <text class="label" x="50" y="366">KEY ARTEFACTS</text>
+    <circle class="dot" cx="58" cy="396" r="4"/><text class="body" x="74" y="402">Collapsed soft cue</text>
+    <circle class="dot" cx="58" cy="430" r="4"/><text class="body" x="74" y="436">Expanded comparison review</text>
+    <circle class="dot" cx="58" cy="464" r="4"/><text class="body" x="74" y="470">Disagreement type label</text>
+  </g>
+
+  <!-- Prototype 2 -->
+  <g transform="translate(690 356)">
+    <rect class="card" x="0" y="0" width="540" height="508"/>
+    <rect class="card-head-accent" x="28" y="28" width="484" height="92"/>
+    <rect class="chip-orange" x="50" y="48" width="112" height="28"/>
+    <text class="orange-text" x="106" y="67" text-anchor="middle">Prototype 2</text>
+    <text class="card-title" x="50" y="104">Arbitration Support Layer</text>
+
+    <g transform="translate(28 148)">
+      <rect class="soft" x="0" y="0" width="484" height="86"/>
+      <text class="label" x="22" y="30">QUESTION IT ANSWERS</text>
+      <text class="question" x="22" y="60">How is the case handed over and reviewed?</text>
+    </g>
+
+    <text class="body" x="50" y="274">A warm handover and pause mechanism sits</text>
+    <text class="body" x="50" y="299">inside the existing review workspace to support</text>
+    <text class="body" x="50" y="324">human-led review and rationale capture.</text>
+
+    <line class="line" x1="50" y1="352" x2="490" y2="352"/>
+    <text class="label" x="50" y="388">KEY ARTEFACTS</text>
+    <circle class="dot" cx="58" cy="418" r="4"/><text class="body" x="74" y="424">Warm Handover Summary</text>
+    <circle class="dot" cx="58" cy="452" r="4"/><text class="body" x="74" y="458">Arbitration Pause Point</text>
+    <circle class="dot" cx="306" cy="418" r="4"/><text class="body" x="322" y="424">Rationale capture</text>
+    <circle class="dot" cx="306" cy="452" r="4"/><text class="body" x="322" y="458">Learning handoff</text>
+  </g>
+
+  <!-- Prototype 3 -->
+  <g transform="translate(1284 356)">
+    <rect class="card" x="0" y="0" width="540" height="508"/>
+    <rect class="card-head" x="28" y="28" width="484" height="92"/>
+    <rect class="chip" x="50" y="48" width="112" height="28"/>
+    <text class="small-strong" x="106" y="67" text-anchor="middle">Prototype 3</text>
+    <text class="card-title-small" x="50" y="104">Decision Receipt &amp; Learning Memory</text>
+
+    <g transform="translate(28 148)">
+      <rect class="soft" x="0" y="0" width="484" height="86"/>
+      <text class="label" x="22" y="30">QUESTION IT ANSWERS</text>
+      <text class="question" x="22" y="60">How does one difficult case become future learning?</text>
+    </g>
+
+    <text class="body" x="50" y="274">After arbitration, the receipt becomes service</text>
+    <text class="body" x="50" y="299">evidence for audit, review and learning, then</text>
+    <text class="body" x="50" y="324">a reusable learning memory for calibration.</text>
+
+    <line class="line" x1="50" y1="352" x2="490" y2="352"/>
+    <text class="label" x="50" y="388">KEY ARTEFACTS</text>
+    <circle class="dot" cx="58" cy="418" r="4"/><text class="body" x="74" y="424">Non-blame Decision Receipt</text>
+    <circle class="dot" cx="58" cy="452" r="4"/><text class="body" x="74" y="458">Learning Memory Card</text>
+    <circle class="dot" cx="306" cy="418" r="4"/><text class="body" x="322" y="424">Calibration case</text>
+    <circle class="dot" cx="306" cy="452" r="4"/><text class="body" x="322" y="458">Review workshop material</text>
+  </g>
+
+  <g transform="translate(248 930)">
+    <rect class="panel" x="0" y="0" width="1424" height="72"/>
+    <text class="statement" x="712" y="34" text-anchor="middle">The prototypes are not isolated screens.</text>
+    <text class="statement" x="712" y="58" text-anchor="middle">They form a service package for detecting, resolving and learning from AI-human disagreement.</text>
+  </g>
+</svg>

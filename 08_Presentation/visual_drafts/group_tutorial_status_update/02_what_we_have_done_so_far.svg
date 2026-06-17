@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><style>
+    .bg{fill:#f7f9fb}.title{font-family:"Newsreader","Times New Roman",serif;font-size:64px;font-weight:600;fill:#172033}.sub{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#536174}.body{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:24px;fill:#253246}.small{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:17px;fill:#536174}.label{font-family:"IBM Plex Sans",Arial,sans-serif;font-size:15px;font-weight:700;fill:#5d6d7e;letter-spacing:.06em}.card{fill:#fff;stroke:#d9e0e8;stroke-width:1.5;rx:18}.accent{fill:#fff4ee;stroke:#e7b69d}.step{fill:#eef4fa;stroke:#c9d6e2;stroke-width:1.4;rx:16}.line{stroke:#9fb0c3;stroke-width:3;fill:none}.dot{fill:#d9653b}
+  </style></defs>
+  <rect class="bg" width="1920" height="1080"/>
+  <text class="label" x="96" y="80">PROGRESS</text>
+  <text class="title" x="96" y="154">What We Have Done So Far</text>
+  <text class="sub" x="100" y="202">Research → Modelling → Prototyping → Expert testing → Refinement</text>
+  <line class="line" x1="220" y1="470" x2="1700" y2="470"/>
+  <g transform="translate(140 330)">
+    <rect class="step" x="0" y="0" width="240" height="210"/><circle class="dot" cx="120" cy="140" r="11"/><text class="label" x="28" y="44">RESEARCH</text><text class="body" x="28" y="86">Workflow</text><text class="body" x="28" y="118">research</text><text class="small" x="28" y="166">AI screening paths</text>
+    <rect class="step" x="280" y="0" width="240" height="210"/><circle class="dot" cx="400" cy="140" r="11"/><text class="label" x="308" y="44">MAP</text><text class="body" x="308" y="86">Universal</text><text class="body" x="308" y="118">pattern map</text><text class="small" x="308" y="166">Disagreement points</text>
+    <rect class="step" x="560" y="0" width="240" height="210"/><circle class="dot" cx="680" cy="140" r="11"/><text class="label" x="588" y="44">MODEL</text><text class="body" x="588" y="86">Specific</text><text class="body" x="588" y="118">anchor model</text><text class="small" x="588" y="166">Human-led review</text>
+    <rect class="step" x="840" y="0" width="240" height="210"/><circle class="dot" cx="960" cy="140" r="11"/><text class="label" x="868" y="44">PROTOTYPE</text><text class="body" x="868" y="86">Storyline and</text><text class="body" x="868" y="118">touchpoints</text><text class="small" x="868" y="166">Cue, review, receipt</text>
+    <rect class="step" x="1120" y="0" width="240" height="210"/><circle class="dot" cx="1240" cy="140" r="11"/><text class="label" x="1148" y="44">TOOLS</text><text class="body" x="1148" y="86">Consensus</text><text class="body" x="1148" y="118">testing tools</text><text class="small" x="1148" y="166">Cards and prompts</text>
+    <rect class="step accent" x="1400" y="0" width="300" height="210"/><circle class="dot" cx="1550" cy="140" r="11"/><text class="label" x="1428" y="44">EXPERT TESTING</text><text class="body" x="1428" y="86">Professor</text><text class="body" x="1428" y="118">Sophia Zackrisson</text><text class="small" x="1428" y="166">Clinical refinement</text>
+  </g>
+  <rect class="card" x="360" y="760" width="1200" height="92"/>
+  <text class="body" x="960" y="800" text-anchor="middle">Multiple sources have been synthesised into design decisions.</text>
+  <text class="small" x="960" y="832" text-anchor="middle">The project now has evidence, models, prototype artefacts and expert feedback.</text>
+</svg>

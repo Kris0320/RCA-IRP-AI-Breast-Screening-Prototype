@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 54px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 24px; fill: #536174; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 10; }
+      .panel-soft { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.5; rx: 10; }
+      .heading { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 28px; fill: #172033; font-weight: 700; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #5c6b7d; font-weight: 600; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #3f4d5f; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; }
+      .tiny { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #536174; }
+      .micro { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 11.5px; fill: #536174; }
+      .node { fill: #ffffff; stroke: #b8c3cf; stroke-width: 1.5; rx: 10; }
+      .node-soft { fill: #eef4fa; stroke: #b8c3cf; stroke-width: 1.5; rx: 10; }
+      .accent-node { fill: #fff4ee; stroke: #d9653b; stroke-width: 1.6; rx: 10; }
+      .line { stroke: #9aaabd; stroke-width: 2; fill: none; }
+      .dash { stroke: #9aaabd; stroke-width: 1.6; stroke-dasharray: 6 8; fill: none; }
+      .arrow-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #536174; font-weight: 600; }
+      .marker { fill: #d9653b; stroke: #ffffff; stroke-width: 4; }
+      .marker-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 22px; fill: #ffffff; font-weight: 700; }
+      .orange { fill: #d9653b; font-weight: 700; }
+      .conclusion { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #273244; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="title" x="96" y="94">From Universal Map to Specific Anchor</text>
+  <text class="subtitle" x="98" y="134">Using a broad pattern map for analysis, then anchoring the intervention in one concrete workflow model</text>
+
+  <g transform="translate(96 208)">
+    <rect class="panel" x="0" y="0" width="610" height="500"/>
+    <text class="heading" x="36" y="56">Universal Pattern Map</text>
+    <text class="kicker" x="36" y="92">For analysis</text>
+
+    <g transform="translate(36 136)">
+      <rect class="node-soft" x="0" y="0" width="122" height="54"/>
+      <text class="tiny" x="61" y="23" text-anchor="middle">AI before</text>
+      <text class="tiny" x="61" y="41" text-anchor="middle">reading</text>
+      <rect class="node-soft" x="142" y="0" width="122" height="54"/>
+      <text class="tiny" x="203" y="23" text-anchor="middle">AI as</text>
+      <text class="tiny" x="203" y="41" text-anchor="middle">2nd reader</text>
+      <rect class="node-soft" x="284" y="0" width="122" height="54"/>
+      <text class="tiny" x="345" y="23" text-anchor="middle">AI as</text>
+      <text class="tiny" x="345" y="41" text-anchor="middle">safety net</text>
+      <rect class="node-soft" x="426" y="0" width="122" height="54"/>
+      <text class="tiny" x="487" y="23" text-anchor="middle">AI as</text>
+      <text class="tiny" x="487" y="41" text-anchor="middle">triage</text>
+    </g>
+
+    <text class="body" x="36" y="258">Compares how disagreement shifts across</text>
+    <text class="body" x="36" y="286">different AI placement models.</text>
+
+    <text class="body" x="36" y="346">Prevents a false assumption:</text>
+    <text class="body" x="36" y="374">that every AI-assisted screening model creates</text>
+    <text class="body" x="36" y="402">disagreement at the same point.</text>
+
+    <line class="dash" x1="36" y1="438" x2="540" y2="438"/>
+    <text class="kicker" x="36" y="472">Question: where does disagreement shift?</text>
+  </g>
+
+  <g transform="translate(744 298)">
+    <path class="line" marker-end="url(#arrow)" d="M0 160 H250"/>
+    <rect class="panel-soft" x="18" y="90" width="214" height="118"/>
+    <text class="arrow-label" x="125" y="130" text-anchor="middle">from landscape</text>
+    <text class="arrow-label" x="125" y="158" text-anchor="middle">to intervention</text>
+    <circle class="marker" cx="125" cy="218" r="20"/>
+    <text class="marker-text" x="125" y="226" text-anchor="middle">!</text>
+  </g>
+
+  <g transform="translate(1004 208)">
+    <rect class="panel" x="0" y="0" width="820" height="500"/>
+    <text class="heading" x="36" y="56">Specific Anchor Model</text>
+    <text class="kicker" x="36" y="92">For intervention</text>
+
+    <rect class="accent-node" x="36" y="126" width="748" height="66"/>
+    <text class="body" x="410" y="154" text-anchor="middle">AI as independent second reader</text>
+    <text class="body" x="410" y="180" text-anchor="middle">+ human-led arbitration</text>
+
+    <g transform="translate(36 208)">
+      <rect class="node" x="0" y="0" width="185" height="58"/>
+      <text class="micro" x="92.5" y="15" text-anchor="middle">Independent human</text>
+      <text class="micro" x="92.5" y="30" text-anchor="middle">reading</text>
+      <text class="micro" x="92.5" y="48" text-anchor="middle">Human: Normal</text>
+
+      <rect class="node-soft" x="0" y="78" width="185" height="58"/>
+      <text class="micro" x="92.5" y="93" text-anchor="middle">AI second-reader</text>
+      <text class="micro" x="92.5" y="108" text-anchor="middle">output</text>
+      <text class="micro" x="92.5" y="126" text-anchor="middle">AI: Suspicious</text>
+
+      <path class="line" marker-end="url(#arrow)" d="M185 29 C210 29 218 54 250 54"/>
+      <path class="line" marker-end="url(#arrow)" d="M185 107 C210 107 218 82 250 82"/>
+
+      <rect class="accent-node" x="250" y="34" width="160" height="72"/>
+      <circle class="marker" cx="330" cy="33" r="14"/>
+      <text class="marker-text" x="330" y="40" text-anchor="middle">!</text>
+      <text class="micro" x="330" y="55" text-anchor="middle">Disagreement</text>
+      <text class="micro" x="330" y="70" text-anchor="middle">recognition</text>
+      <text class="micro" x="330" y="88" text-anchor="middle">Human normal / AI suspicious</text>
+      <text class="micro" x="330" y="124" text-anchor="middle">AI-human mismatch</text>
+      <path class="line" marker-end="url(#arrow)" d="M410 70 H455"/>
+
+      <rect class="node" x="455" y="34" width="145" height="72"/>
+      <text class="micro" x="527.5" y="58" text-anchor="middle">Human-led</text>
+      <text class="micro" x="527.5" y="73" text-anchor="middle">arbitration</text>
+      <text class="micro" x="527.5" y="94" text-anchor="middle">Decision + reason</text>
+      <path class="line" marker-end="url(#arrow)" d="M600 70 H630"/>
+
+      <rect class="node-soft" x="630" y="34" width="145" height="72"/>
+      <text class="micro" x="702.5" y="58" text-anchor="middle">Outcome-linked</text>
+      <text class="micro" x="702.5" y="73" text-anchor="middle">learning</text>
+      <text class="micro" x="702.5" y="94" text-anchor="middle">Pattern review</text>
+    </g>
+
+    <text class="body" x="36" y="352">Anchors the intervention in one AI pilot scenario where independent human judgement</text>
+    <text class="body" x="36" y="378">conflicts with AI second-reader output.</text>
+
+    <text class="body" x="36" y="432">Creates a clear place to design:</text>
+    <text class="body" x="36" y="458">disagreement classification, structured arbitration, reason capture,</text>
+    <text class="body" x="36" y="484">and outcome-linked learning.</text>
+  </g>
+
+  <g transform="translate(96 790)">
+    <rect x="0" y="0" width="1728" height="112" rx="8" fill="#fff4ee" stroke="#e7b69d" stroke-width="1.4"/>
+    <text class="conclusion" x="36" y="34">
+      <tspan class="orange">Conclusion:</tspan>
+      <tspan> We use the universal map to understand how disagreement shifts across different AI placement models,</tspan>
+    </text>
+    <text class="conclusion" x="36" y="64">then anchor the intervention in an AI-as-independent-second-reader workflow. This keeps the initial human judgement independent,</text>
+    <text class="conclusion" x="36" y="94">while making disagreement, arbitration responsibility, and later learning visible.</text>
+  </g>
+</svg>

@@ -1,0 +1,2242 @@
+
+
+Hello? Hello, professor.
+喂？你好，教授。
+
+Oh hi how are you today? Sorry for keep waiting for this. Thank you so much for making time for us today. We really appreciate it especially knowing how busy you are. So ah, let me introduce myself and my team and my name is.
+哦，嗨，你今天过得怎么样？抱歉让你久等了。非常感谢你今天抽出时间见我们。我们真的很感激，尤其是知道你有多忙。那么，让我来介绍一下我自己和我的团队，我叫……
+
+This is my teammate yunu and Chi hung Chris, and we are currently studying cell design at royal college of art in London, and so our project are basically about looking at how AI is being integrated into breast cancer screening but we are not.
+这是我的队友雨努和洪志（Chi hung Chris），我们目前正在伦敦皇家艺术学院学习细胞设计，所以我们的项目主要是研究人工智能如何被应用于乳腺癌筛查，但我们事实上并没有这样做。
+
+Signing another diagnosis AI system instead we are trying to solve like a human side of workflow, especially how radiologists made decisions when AI become part of screening process, so more especially where.
+我们不打算再签署另一个诊断人工智能系统，而是试图从人类工作流程的角度来解决问题，特别是在人工智能成为筛查流程的一部分时，放射科医生是如何做出决策的，尤其是在哪些方面。
+
+Blowing hell happened and what?
+见鬼了，怎么回事？
+
+When there is uncertainty or disagreement between AI output and the radiology judgment, so for example, how these moments are noticed and discussed, documented, escalated and potentially learn from later. So today we love to learn from your experience with AI supported breast screening.
+当人工智能输出结果与放射科诊断存在不确定性或分歧时，例如，如何发现并讨论这些情况、做好记录、上报情况以及后续可能从中吸取经验。所以今天我们很想了解大家在人工智能辅助乳腺筛查方面的经验。
+
+Is western and understand the real work flow from your perspective, so yeah.
+从你的角度来看，了解西方并明白实际的工作流程，是的。
+
+Um.
+嗯。
+
+Okay, well yeah that's a many questions in one I guess, but let's see where we should start. Um, can you hear me okay and everything? Yeah, good, so.
+好的，嗯，我想这一个问题里包含了很多小问题，但让我们看看该从哪里开始。嗯，你能清楚地听到我说话吗，一切都还好吧？是的，很好，那么。
+
+How, how I know about screening workflows in general, I mean are you aware of how it's working in the UK, probably in other countries or, or do you need that introduction? Oh no, we, we understand that in Swedish AI supported workflow, AI is used.
+那么，我一般是如何了解筛选工作流程的呢，我的意思是，你是否了解它在英国的运作方式，可能在其他国家也是如此，还是说你需要这方面的介绍？哦不，我们明白在瑞典的人工智能支持的工作流程中会用到人工智能。
+
+Uh, to triage mammograph into a single or the double reading based on the risk got and maybe also mark's specific specials finding for radiologists, is it close to how AI is current used in your clinical screening referral.
+嗯，根据所获得的风险将乳腺钼靶检查分诊为单读片或双读片，并且可能还为放射科医生标记特定的特殊发现，这是否接近人工智能目前在你们临床筛查转诊中的应用方式呢？
+
+Well yeah it's, yeah it's close to but there are variations around it, you can say how exactly and where it is implemented sort of in the, in the.
+嗯，是的，它很接近，但周围存在一些差异，你可以说它具体是怎样以及在哪些方面得以实施，在……在……
+
+In the chain, um, so in if I just explain briefly, so in Sweden we we so far have two radiologists.
+在这个环节中，嗯，如果我简单解释一下，截至目前，在瑞典我们有两名放射科医生。
+
+Normally that read the images in batch reading, so I mean they read like a, you know, 5060 cases.
+通常情况下，他们会进行批量阅片，我的意思是，他们一次会阅读五六十个病例。
+
+During maybe one hour and then take a pause, you know? Yeah, so it's, it's a high workflow and they read, I would say see.
+大概持续一个小时，然后休息一下，你懂的吧？对，所以这是一个高强度的工作流程，而且我得说，他们在阅读，或者说在查看资料。
+
+And it's not fully blinded in most centers, some centers have completely blinded, so reader one does not know.
+而且在大多数中心，研究并非完全设盲，有些中心则是完全设盲，所以评估者一并不知情。
+
+You know, cannot see reader to.
+你知道，看不到读者了。
+
+Yeah, but where I work for instance, I mean I don't see it explicitly on the screen, but I can click and see if I I need to somehow to speed up the, you know, the handling of this specific case or something, so it's not completely blinded, but anyhow, so.
+是的，但以我工作的地方为例，我是说我在屏幕上看不到明确的提示，但我可以点击一下，看看是否需要以某种方式加快处理这个特定案例之类的事情，所以也不是完全不知情，不过不管怎样就是这样。
+
+Um, so of course you can you can either just introduce AI as like the second reader without using the tri in function, you just replace one of the readers.
+嗯，当然，你可以在不使用三角测量功能的情况下，将人工智能作为第二个阅读器引入，你只需替换掉其中一个阅读器。
+
+Um.
+嗯。
+
+And then you decide to decide a cut off, like a threshold for the AI score, depending on what kind of software you use, they have you.
+然后你决定设定一个界限，比如人工智能得分的阈值，这取决于你使用的是哪种软件，它们会为你提供相应的设置。
+
+Usually different scores, it can be one to 10 or between zero and hundred that gives the sort of probability of of the.
+通常不同的分数，可能是1到10分，也可能是0到100分，这能体现出某种概率。
+
+Examination having a cancer in the images and then there might be some specific lesion course, you know a sort of showing which lesions and what scores they have and usually the the highest scorered lesion gives the total.
+在影像中检查是否患有癌症，然后可能会有一些特定的病灶情况，你知道的，会显示出是哪些病灶以及它们的评分，通常评分最高的病灶决定总分。
+
+Examination score.
+考试成绩
+
+So either you can just set them a specific threshold for the AI to, to, to decide which woman should be.
+所以，你要么可以为人工智能设定一个特定的阈值，让它来决定应该是哪位女性。
+
+Of called back for further investigations according to AI me as a radiologist I I have a scale I mean we have one to five in Sweden it's like a.
+根据人工智能的提示，我作为一名放射科医生要回电进行进一步调查。我有一个分级标准，我的意思是在瑞典我们有从一级到五级的分级，就像这样。
+
+Though if you've heard about by.
+不过，如果你已经听说过……
+
+Um.
+嗯。
+
+Scale virus score for malignancy is that familiar to you and.
+衡量病毒恶性程度的评分对你来说熟悉吗，并且……
+
+Yeah, I mean, so yeah, like from.
+是的，我的意思是，所以是的，就像从……
+
+One is normal, two is benign finding three is like indeterminate could be very low probability of malignancy but you might want to call this woman back, do some ultrasound, et cetera for is quite a high suspicion of malignancy and five is like yes, this is definitely a cancer so anything in Sweden that I.
+一种是正常的，二种是良性的三种是不确定的可能是恶性肿瘤的可能性很低但是你可能想给这个女人打电话，做一些超声波检查，等等因为恶性肿瘤的可能性很高五种是，是的，这绝对是癌症所以在瑞典我。
+
+Score as three or higher.
+得分达到3分或更高。
+
+That will be a that that woman eventually in the chain will get a letter to be called back.
+最终，连锁机构里的那个女人会收到一封要求她回电的信。
+
+So of course, then you need to add.
+那么当然，接下来你需要添加。
+
+A sort of compare.
+一种比较。
+
+Me as a first reader and a score.
+我作为首位读者并打了分。
+
+If we disagree, you know, should we, should that automatically lead to.
+如果我们意见不合，你知道的，这种情况是否就一定会导致……
+
+A callback.
+回电；回调；回拨
+
+Either me or the AI.
+要么是我，要么是人工智能。
+
+Seth k callback usually we actually have an extra step after that, but that's like a consensus discussion.
+赛斯回电话。通常在那之后我们实际上还有一个额外的步骤，但那就像是一场共识讨论。
+
+Before the decision is fully made whether this woman should come back or not.
+在完全决定这个女人是否应该回来之前。
+
+So it's like a safety net function mostly actually to, to a.
+所以实际上它主要就像是一个安全网的功能，用在……呃……方面。
+
+Keep the so called specificity at a good level so we don't want to call back too many women.
+保持所谓的特异性处于良好水平，这样我们就不用召回太多女性。
+
+So to speak, that does not eventually have a cancer, so we want to avoid false positive.
+可以说，最终并没有患癌症，所以我们要避免假阳性。
+
+Recall.
+召回；回忆；召回令；收回；回想
+
+So that's why usually when we there is a discrete discrepancy between.
+所以这就是为什么通常当我们之间存在细微差异时。
+
+Me as first reader and AI or in a classical workflow reader one, reader two, it goes to this consensus list and then there are another set of two radiologists, you know, looking back at all images and comparing and, you know, making the final decision.
+我作为首位阅片人，无论是在人工智能流程中，还是在传统流程里的一号阅片人、二号阅片人，所有结果会汇总到共识列表中，然后会有另外两名放射科医生对所有影像进行回顾、对比，最后做出最终诊断。
+
+Whether to recall or not, so they might actually dismiss something that the previous radiologist or AI has said.
+是否召回，所以他们实际上可能会否定之前放射科医生或人工智能所说的内容。
+
+And my not call back or make a decision yes let's go back. So this is a that's commonly used and I I.
+而且我没有回电或者做出决定，是的，让我们回去吧。所以这是一种常用的方式，而我……
+
+I wouldn't say.
+我不想说。
+
+Uh.
+呃。
+
+At least for now, this, this consensus step will most likely stay, especially if we introduce a because we know that AI marks a lot of things that are not the cancer.
+至少就目前而言，这个达成共识的步骤很可能会保留，特别是如果我们引入一个（因素），因为我们知道人工智能会标记很多并非癌症的东西。
+
+In images.
+在图像中。
+
+Um.
+嗯。
+
+So you.
+所以是你。
+
+We're also wondering what does the radiology actually see from the AI output in the view a working scenario, for example, risk gold heat map or something.
+我们也想知道，在实际工作场景中，放射科医生从人工智能的输出结果里到底能看到什么，比如风险热度图之类的。
+
+Like a highlight the confidence level or something like this.
+就像突出显示信心水平之类的。
+
+Could you exactly, so I mean you could either have have the radiologist is totally.
+确切地说，我的意思是你可以让放射科医生全权处理。
+
+So.
+那么；所以
+
+In the AI score.
+在人工智能评分中。
+
+One at least one side.
+至少有一方。
+
+In Stockholm has that set up.
+在斯德哥尔摩已经做好了安排。
+
+The radiologist is not informed by the AI findings.
+放射科医生未被告知人工智能的检查结果。
+
+So they are totally independent and then only in the next step when you have the consensus discussion, that's where the radiologist can see the AI scores and then it can be depending on what kind of software.
+所以他们完全独立，然后只有在下一步进行共识讨论时，放射科医生才能看到人工智能给出的分数，这可能取决于所使用的软件类型。
+
+You know, is used it might be.
+你知道的，它可能会被使用。
+
+You say it could be a heat map.
+你说这可能是一张热图。
+
+Or you know, symbols in the images, you know, this is there are different symbols for.
+或者你知道，图像中的符号，你知道，这里有不同的符号代表不同的东西。
+
+Different findings, I mean, the typical finding is a mess, like a, yeah, a tumor, but the finding can also be composed only of small calcifications.
+不同的检查结果，我的意思是，典型的检查结果是一团混乱，就像，是的，一个肿瘤，但检查结果也可能仅由小钙化灶组成。
+
+That are bright white on the small, small, tiny classifications and they, they usually have another.
+它们在很小很小的分类上是亮白色的，它们通常还有另一个。
+
+Marking so it highlights what kind of lesion it is, mass calcx or combined masses with calts or even.
+进行标记，以便突出显示这是何种病变，是肿块、钙化，还是肿块与钙化的组合，甚至是……
+
+Distortions where it's not really a.
+扭曲，其实并不是……
+
+A tumor forming a mass, it's, it's more like a.
+一个肿瘤形成了一个肿块，它，它更像是一个……
+
+Distortion as yeah, that's a distortion in the image somehow.
+是啊，不知怎的，图像存在失真情况。
+
+Distraction, a different pattern in the breast, parenchyma somehow.
+注意力分散，乳房中出现了某种不同的模式，某种程度上是实质组织的问题。
+
+Um.
+嗯。
+
+So, so it all looks different depending on what kind of a provider you actually have.
+所以，一切看起来会有所不同，这取决于你实际选择的是哪种服务提供商。
+
+So that interface might be very different from provider to provider.
+所以，不同服务提供商提供的界面可能会有很大差异。
+
+What I have used, um, in our studies where I work.
+我在我工作的研究中所使用的东西。
+
+Does not give a heat map, but instead it gives these markings like.
+它没有给出热力图，而是给出了类似这样的标记。
+
+Mass and it gives a score.
+质量（这里推测Mass可能想表达质量，更准确应是Quality ），它给出了一个分数。
+
+Um.
+嗯。
+
+Yeah, connected to the finding.
+是的，与该发现有关。
+
+And then in the lower corner, that's like the full.
+然后在右下角，那差不多是满的。
+
+The highest score that gives the score them for the whole.
+这是整个过程中给出的最高分。
+
+Examination.
+检查；考试；检验
+
+But the one in Stockholm, they use lun it, for instance, that's a south Korean.
+但是在斯德哥尔摩的那个人，比如他们用“lun it” ，那是个韩国人。
+
+Algorithm and.
+算法和
+
+That gives a heat map.
+这生成了一张热力图。
+
+And then there are many different.
+然后有很多不同之处。
+
+Um.
+嗯。
+
+You know, see a mark that could be used so they, they might look different and of course.
+你知道，看到一个可以使用的标记，所以他们，他们可能看起来不同，当然。
+
+Um.
+嗯。
+
+So maybe I should also I mean in so.
+所以也许我也应该这么说。
+
+That was the scenario where you have like more or less AI and radiologists are blinded to each other but.
+这是一种场景，在这种场景中，或多或少会有人工智能的参与，并且放射科医生彼此不知情，但是……
+
+We have also the study that my colleague performed here in southern Sweden, the Maasai trial.
+我们还有我同事在瑞典南部开展的研究，即马赛人试验。
+
+Which is more a tri?
+哪一个更像是一次旅行？
+
+A version.
+一个版本。
+
+Of workflow.
+工作流程方面。
+
+So in that case, you instead have.
+那么在这种情况下，你反而拥有。
+
+The AI look, you know, reading all the images and.
+人工智能看起来，你知道的，能读取所有图像，还有……
+
+Images with.
+附带的图片。（注：原表述表意不完整，此译文是基于常见语境猜测得出）
+
+A low AI score goes to single reading with a radiologist plus AI and then the reader, your list is actually informed.
+人工智能评分较低的情况出现在由放射科医生结合人工智能进行单次读取，然后由阅读者进行判断，实际上您的清单信息已被获取。
+
+Or like it sees the AI, you know, scores and everything.
+或者就像它看待人工智能那样，你知道的，有分数之类的一切。
+
+Makes a decision and yeah, but the high school.
+做个决定，是的，不过是关于高中的事。
+
+Probability of malignancy cases goes, still goes to two radiologists.
+恶性病例的可能性评估仍需交由两位放射科医生处理。
+
+But that's just a small fraction because the majority of examinations and screening are.
+但那只是一小部分，因为大部分检查和筛查是……
+
+Not.
+不是。
+
+Getting a high score, so.
+拿到了高分，所以。
+
+You still actually save a lot of radiologists time, because it's only the more tricky or higher scoring cases that goes to two radiologists that are then also informed by the AI scores and then, but then again, there's.
+实际上，你确实为很多放射科医生节省了大量时间，因为只有那些更棘手或评分更高的病例才会交给两位放射科医生处理，而他们也会参考人工智能给出的评分，不过呢，还有……
+
+A consensus step.
+一致同意的步骤。
+
+In between.
+在两者之间。
+
+Before a a full decision is made.
+在做出全面决定之前。
+
+So, you know, in case there is uncertainty somehow.
+所以，你知道的，以防万一出现某种不确定性。
+
+So it sounds like there will be more stress in the consensus meeting after the AI introduced into the workflow.
+所以听起来在人工智能被引入工作流程后，共识会议将会面临更大的压力。
+
+Yeah.
+是的。
+
+Depending on how you.
+取决于你怎么做。
+
+The setting actually and of course the.
+实际上，当然还有……的设置。
+
+What kind of baseline status you had before you introduced AI? It might actually look different because also in different centers work a little bit differently.
+在引入人工智能之前，你们有什么样的基线状态？实际上情况可能会有所不同，因为不同中心的工作方式也略有差异。
+
+The confidence of the radiologists, you know, in the group is built up and.
+你知道，这个小组里放射科医生的信心逐渐增强了，并且……
+
+Either you, you, a lot of radiologists don't put things on consensus list necessarily, but in other centers they do, so it's, it's.
+要么就是，很多放射科医生不一定会把某些情况列入共识清单，但在其他医疗中心，他们会这么做，所以情况就是这样。
+
+I mean, depends on where you start from the.
+我的意思是，这取决于你从哪里开始。
+
+But for instance, in the, in this tri arch in version that the Maasai trial showed, there was actually no increase in the number of.
+但是，例如，在马赛部落试验所呈现的这种三拱门版本中，实际上……的数量并没有增加。
+
+Consensus discussions.
+共识讨论。
+
+Yeah, so oh, it seemed to be, it seemed actually to be.
+是啊，所以，哦，看起来似乎，实际上看起来似乎是。
+
+Um.
+嗯。
+
+A good, you know.
+一个好的，你知道的。
+
+Uh, what do you say?
+呃，你说什么？
+
+Correlation or so to speak, between what the radiologist thought and the AI thought, so meaning that.
+可以说，放射科医生的判断和人工智能的判断之间存在着某种关联，就是这个意思。
+
+Either the woman was, you know, called back by both or declared free from cancer and there was like, no, not so many discrepancy.
+要么这位女士，你知道的，同时被两家医院召回，要么被宣布已无癌症，而且实际上并没有那么大的差异。
+
+Cases.
+案例；情况；病例
+
+Well in when you have a blinded.
+嗯，当你失明的时候。
+
+Version like the one in the Stockholm site.
+像斯德哥尔摩站点中的那个版本。
+
+They actually had an increase in the consensus part.
+实际上，他们在共识部分有了提升。
+
+Because.
+因为。
+
+Then the radiology, I mean, of course you have to do to totally blinded.
+那么放射检查，我是说，当然你得完全不知情地去做。
+
+There's higher.
+有更高的。
+
+Risk that you're not in line.
+你可能不符合要求，存在风险。
+
+But sometimes you also that's a step you need sometimes to when you introduce a you have to sometimes accept at least.
+但有时，你也得明白，在引入某些事物时，你至少有时得接受这是你需要迈出的一步。
+
+That during a period of time.
+在一段时间内。
+
+You should perhaps increase the number of consensus discussions to learn and to understand what's different from.
+或许你应该增加共识讨论的次数，以学习和了解不同之处。
+
+AI markets compared to what I think as a radiologist and then with time you can hopefully you know shrink that number and.
+与我作为一名放射科医生的想法相比，人工智能市场的情况如何。随着时间的推移，希望你能减少那个数字，并且……
+
+And don't have that many discussions.
+而且没有进行那么多讨论。
+
+So normally how many people, ah, will be in the consensus meeting.
+那么通常情况下，共识会议会有多少人参加呢？
+
+Will be supported by different kinds of radiologists like junior or seniors like consultant radiologists, they go together to discuss about this kind of risk cases or something else like this.
+将由不同类型的放射科医生提供支持，比如初级放射科医生或高级放射科医生（如会诊放射科医生），他们会一起讨论这类风险病例或其他类似情况。
+
+Oh, it's usually usually two and it doesn't have to be. It can be the same as the first readers, but it can also be too different. I guess it depends on how big your center is and how many.
+哦，通常情况下是两个，但不一定非得是两个。它可以和第一批读者一样，但也可能差异很大。我想这取决于你的中心规模有多大以及数量有多少。
+
+People, you are in the center, but usually there should be at least one more senior.
+各位，你们处于核心位置，但通常至少还应该有一位更资深的人士。
+
+You know, experienced breast radiologist to make that, you know.
+你知道的，需要有经验的乳腺放射科医生来做那件事，你懂的。
+
+Um, but that was.
+嗯，但那是……
+
+You're introduced and considered, you know, experienced enough, anyone can participate in that, but I guess we try to, you know.
+你已经获得引荐且被认为经验足够丰富，你知道的，任何人都可以参与其中，但我想我们会尽力，你懂的。
+
+No.
+不。
+
+Have quite senior people in that step otherwise.
+否则，在那一步中有相当资深的人员。
+
+It will be a challenging task and.
+这将是一项具有挑战性的任务，并且……
+
+You would.
+你会的。
+
+Most likely not a.
+很可能不是一个。
+
+Sort of arrive at so many.
+好像达成了很多。
+
+The decisions where you actually don't call back the woman.
+那些你实际上没有给那位女士回电话的决定。
+
+Yeah.
+是的。
+
+So yeah, I know you as a senior con consultant radiologist, you may not do like video one job, like who do the read one job, like read a lot of images one day.
+所以，是的，我知道你是一位资深的放射科顾问医生，你可能不喜欢只做一项工作，比如只负责阅片，比如一天要看很多影像。
+
+Hmm.
+嗯。
+
+Uh.
+呃。
+
+Uh, it's hard to say because if you, if you really.
+呃，这很难说，因为如果你，如果你真的……
+
+It depends, I I cannot really where I work, I mean people are quite experienced so once you're actually introduced and good enough to do screen reading, you can be either one reader one reader two.
+这要看情况，我……我真说不好自己会在哪里工作。我的意思是，大家都挺有经验的，所以一旦你被正式介绍进来，并且有足够的能力进行屏幕阅读，你可以是一号朗读员，也可以是二号朗读员。
+
+But I guess you.
+但我猜你。
+
+Rita two makes the final decision somehow.
+瑞塔二号不知怎的做出了最终决定。
+
+So if you need to choose, I guess.
+所以我想，如果你需要做出选择的话。
+
+Then you should.
+那你应该这么做。
+
+Have the experienced reader as reader too a.
+也让有经验的读者成为读者。（注：原句存在语法和表达问题，此为按要求翻译的结果）
+
+I guess that's how a lot of people do it.
+我想很多人就是这么做的。
+
+If you have, yeah.
+如果你有，是的。
+
+Need for that.
+为此有必要。
+
+As a senior consultant radiologist on what's your daily work? Is it basically a based on the researchers.
+作为一名资深放射科咨询医生，你的日常工作是什么？基本上是基于研究工作吗？
+
+Or like the.
+或者像那个。
+
+The practical aspect.
+实际方面。
+
+Screening reading.
+筛选阅读
+
+Um, so I'm an exception, I would say, because I'm very.
+嗯，我想说，我是个例外，因为我非常……
+
+I mean, as a professor, you, you have so many other.
+我的意思是，作为一名教授，你还有很多其他的（事情/选择等，需结合上下文确定）。
+
+Being only in the clinic, so I'm not representative for the majority of breast radiologists in Sweden, so most of them have a mix of, I mean, they work in the clinic.
+由于我仅在这家诊所工作，所以我不能代表瑞典大多数乳腺放射科医生的情况。实际上，他们中的大多数人都在临床一线工作。
+
+Radiology clinic where they do a.
+进行放射检查的放射科诊所。
+
+Assessments of women who are called back from screening do the ultrasound biopsies and also all the women who are referred with symptoms on a referral.
+对从筛查中被召回的女性进行评估，为她们做超声检查和活检，同时也对所有因出现症状而被转诊的女性进行评估。
+
+Same there, mammography, tonal synthesis, ultrasound, biopsies, mris, and also the, uh, this is a very multidisciplinary work, so more than two or three times a week there's this multidisciplinary team conference, if you've heard about that.
+同样的，乳房x光检查，音调合成，超声波，活组织检查，核磁共振，还有，这是一个非常多学科的工作，所以每周有超过两到三次的多学科团队会议，如果你听说过的话。
+
+What?
+什么？
+
+You have a diagnosed breast cancer.
+你被诊断出患有乳腺癌。
+
+Every case is discussed with.
+每一个案例都被讨论。
+
+Surgeons, radiologists, pathologists, oncologists, nurses to do the plan for if there's need for more diagnostics or make the treatment plan for.
+外科医生、放射科医生、病理科医生、肿瘤学家、护士来制定计划，以应对是否需要进行更多诊断或制定治疗方案。
+
+Uh, each single person.
+呃，每一个人。
+
+Uh, so right, the radiologist has a very central role in those.
+呃，没错，放射科医生在这些方面起着非常核心的作用。
+
+Yeah, therapy conferences.
+是的，治疗会议。
+
+So in preparation for that, you know, need to prepare and review all the cases, it might be like 2030 cases that you are supposed to show at.
+所以为了做好准备，你知道的，需要准备并回顾所有案例，可能有大约2030个案例需要你展示。
+
+Radiologist.
+放射科医生
+
+In those conferences.
+在那些会议中。
+
+Um.
+嗯。
+
+So it's, and then of course part of it is screen reading, so in Sweden at least, that's usually done, you know, within a.
+所以，当然其中一部分是屏幕阅读，至少在瑞典，通常是在某个范围内进行的，你懂的。
+
+Your daily work.
+你的日常工作。
+
+In some other countries it's, it's performed by people outside the breast clinic, you know, doing that as consultants or, you know, on a contract.
+在其他一些国家，它是由乳房诊所以外的人来做的，你知道，作为顾问或合同来做。
+
+But usually in Sweden we try to, you know, do this more integrated into the everyday work.
+但通常在瑞典，我们会尽量把这融入日常工作中。
+
+Because it's very.
+因为它非常……
+
+Uh.
+呃。
+
+We see it as important, you know, to.
+你知道，我们认为这也很重要。
+
+Understand the screening workflow and what, you know, the effects of doing too many callbacks or doing too little because that's the patients you actually meet them when, when they come back and you see okay I actually missed this or or or I call back too much that is benign or nothing and you have to learn the whole.
+了解筛查工作流程以及做太多回访或做得太少的影响因为这是你实际遇到的病人，当他们回来的时候你看到好吧，我实际上错过了这个或者或者我回访的太多是良性的或者什么都没有你必须了解全部。
+
+Sort of the effects of what you do as a screener.
+某种程度上这就是你作为安检员所产生的影响。
+
+Along the patient pathway.
+沿着患者就医路径。
+
+Um.
+嗯。
+
+So, uh.
+那么，呃。
+
+In total, I think it's been two.
+总共算起来，我觉得有两个。
+
+Calculated that.
+算好了那个。
+
+Maybe like.
+也许喜欢。
+
+Up to 2010-20% of our time.
+截至2010年，占我们20%的时间。
+
+Reading the rest, it's the the other clinical work as a breast radiologist.
+读完剩下的内容，这是作为乳腺放射科医生的其他临床工作。
+
+Zero hello professor and I have a question for so in your current or research workflow, where do human AI disagreements usually occur.
+你好，教授，我有一个问题。在你当前的研究工作流程中，人机分歧通常会在哪些地方出现？
+
+Um.
+嗯。
+
+I mean, it can be.
+我的意思是，有可能。
+
+Many different occasions, but one typical is that.
+有许多不同的场合，但有一种是典型的情况。
+
+Still quite a few of the AI.
+仍然有相当多的人工智能。
+
+Um.
+嗯。
+
+Product, they only use one that the current mammograms.
+产品方面，他们目前只使用一种乳房X光检查设备。
+
+For analysis and don't.
+进行分析，不要（做某事，此处语义不明）
+
+Compare with previous mammograms, I mean a woman.
+和之前的乳房X光检查相比，我指的是一位女性。
+
+Comes in Sweden, you come every second year for mammography, SOA woman might have like 2010 to 20 you know, during a lifetime depending on their age and me as a radiologist, I can of course look at all the previous mammograms and compare findings so some of these findings that a scores you know as suspicious.
+在瑞典，你每两年来做一次乳房x光检查，SOA女性可能有2010到20次，根据她们的年龄，在一生中，我作为一名放射科医生，我当然可以看所有以前的乳房x光检查并比较结果，所以这些发现中的一些你知道是可疑的。
+
+Might have been in the breast since 10 years and I can clearly see that.
+可能已经患了十年的乳腺疾病了，我能清楚地看到这一点。
+
+And it might even have been, you know.
+而且你知道，这甚至有可能发生过。
+
+Investigate.
+调查。
+
+There's been a this woman was recalled because of this finding and my you there was an ultrasound made.
+因为这一发现，有位女士被召回了，而且还为她做了一次超声波检查。
+
+You know, a biopsy even.
+你知道，甚至是一次活检。
+
+And she was declared free from cancer and this is.
+她被宣布摆脱了癌症，这就是……
+
+Condition is totally unchanged.
+情况完全没有改变。
+
+But still gets quite a high score from the AI.
+但仍然从人工智能那里得到了相当高的分数。
+
+So of course me as a radiologist to say this is nothing, I will call back now because they.
+所以，当然啦，作为一名放射科医生，我说这没什么，我现在就回电，因为他们。
+
+It's nothing, it's stable, it doesn't change, it's been assessed before.
+没什么，情况稳定，没有变化，之前已经评估过了。
+
+So that's a one typical case.
+所以那是一个典型的案例。
+
+Where sort of the radiologist is, right? But on the other hand, of course, there are.
+放射科医生大概在哪里，对吧？但另一方面，当然，是有的。
+
+Which we learn with time when they start using a things that AI.
+当他们开始使用人工智能相关的事物时，我们会随着时间的推移逐渐了解这一点。
+
+Points out, but me as a radiologist, I cannot even I.
+指出，但作为一名放射科医生，我甚至不能（此处原文表述不完整通顺）
+
+Really see on the images with my human eyes what what this is about, but there's a high score in the area.
+我真真切切地用肉眼在图像上看到了这到底是怎么回事，但该区域的得分很高。
+
+Which then, if I don't act on it, might be even a cancer early arising.
+那么，如果我不采取行动，这甚至可能是早期出现的癌症。
+
+So if I wait and don't do anything and dismiss the AI, I score I.
+所以如果我等待，什么都不做，并且放弃人工智能，我得1分。
+
+This woman might come back like in six months and she has built a lump in her breast and it's actually a.
+这个女人可能会在六个月后回来，那时她的乳房里长了一个肿块，实际上它是一个……
+
+Cancer that we should have called back so what's been shown in studies and also with experience, I know at least from Stockholm.
+我们本应该回电的癌症问题，研究结果以及经验都表明了这一点，至少我从斯德哥尔摩的情况了解到是这样。
+
+Is that you should.
+那是你应该做的。
+
+Trust.
+信任
+
+The high a score.
+高分数。
+
+Even if you don't see anything specific as a radiologist, then you might need something better than a mammogram. Of course you do an ultrasound, but you also might need to add an MRI.
+即使作为放射科医生，你没有发现任何具体问题，那么你可能需要比乳腺钼靶检查更好的检查手段。当然，你可以做超声检查，但你可能还需要加做磁共振成像检查。
+
+Some magnetic resonance imaging.
+一些磁共振成像。
+
+To catch what AI is reacting upon.
+捕捉人工智能的反应依据。
+
+Because we know that AI can find cancers even earlier than we can.
+因为我们知道，人工智能甚至能比我们更早发现癌症。
+
+That's an interesting of course and that's.
+那当然很有趣，而且……
+
+Uh, that's tricky if it's, especially if there's nothing, you know, specific to see, for me it's just maybe a different pattern of some kind.
+呃，如果没有，尤其是没有什么具体的东西可看，那就有点棘手了。对我来说，这可能只是某种不同的模式。
+
+So we need to build up that trust in.
+所以我们需要建立起那份信任。
+
+That the AI actually points out important things for us.
+实际上，人工智能为我们指出了重要的事情。
+
+Yeah, so, so AI is treated, so if AI disagrees with a radiologist, it will be treated as a formal disagreement or just one additional signal to.
+是的，所以，人工智能就是这样被对待的。所以，如果人工智能与放射科医生的意见不一致，这将被视为正式的分歧，还是仅仅作为一个额外的信号呢？
+
+To consider.
+待考虑。
+
+I mean if we use it, I mean it is considered as a reader in the system, I mean in our reading system, so we cannot just.
+我的意思是，如果我们使用它，我的意思是它在系统中被视为一个阅读器，我的意思是在我们的阅读系统中，所以我们不能仅仅……
+
+Um, we should treat it as a, as a not a colleague, but, you know, it's more than just a signal in my view, and it's us also deciding.
+我们应该把它当作，而不是同事，但是，你知道，在我看来，这不仅仅是一个信号，我们也在做决定。
+
+You know, if we're not satisfied with how you know.
+你知道，如果我们对你……你知道的情况不满意。
+
+The balance between.
+之间的平衡
+
+True findings and.
+真实的发现和。
+
+False positives it's good we have to change the threshold for the AI score somehow or.
+误报，这很好，我们得想办法改变人工智能评分的阈值，或者（此处表述不完整，推测或后面还有内容）
+
+You know, use it differently so it's, it's up to us to tell how the AI I should perform what, what performance level we want to have from AI.
+你知道的，以不同的方式使用它，所以，应该由我们来决定人工智能应该如何表现，我们希望人工智能达到什么样的性能水平。
+
+Um.
+嗯。
+
+I don't know if that answers your question, I mean.
+我是说，我不知道这是否回答了你的问题。
+
+But, but it's, we decide the threshold and the AI just, you know, gives us a.
+但是，但是我们来决定阈值，然后人工智能就，你懂的，给我们一个……
+
+Outputs depending on what we decide on and then we of course, we have to use that information.
+输出结果取决于我们的决策，当然，我们必须利用这些信息。
+
+Um.
+嗯。
+
+So yes, yeah, the AI output makes a really obvious pose or reconsider and to seek another opinion.
+所以，是的，人工智能的输出摆出了一个非常明显的姿态，或者说需要重新考虑并征求他人意见。
+
+Yeah, exactly.
+是的，没错。
+
+And that needs to be taken into account.
+这一点需要考虑进去。
+
+Um.
+嗯。
+
+And to be judged, you know, do we.
+而且要被评判，你知道的，我们确实会。
+
+Act on this or not.
+是否采取行动。
+
+Um.
+呃。
+
+Yeah, we also noticed that some research in UK also mentioned about the.
+是的，我们也注意到英国的一些研究也提到了这个。
+
+There are so many cases in the arbitration when but arbitration like the consensus beating in the western, um they will overweight AI's output even though AI is right, so in your view.
+在仲裁中有很多这样的情况，在西方，类似达成共识的仲裁中，嗯，人们会过分看重人工智能的输出结果，哪怕人工智能是正确的，那么在你看来。
+
+A work.
+一项工作。
+
+In the reality, how do you balance it.
+实际上，你是如何平衡它的？
+
+Yeah.
+是的。
+
+That's a very good question.
+这是一个非常好的问题。
+
+I think.
+我认为。
+
+You have to.
+你必须这么做。
+
+Somehow review.
+不知怎地进行回顾。
+
+Uh, your cases over time.
+呃，随着时间推移，你的情况（案件、案例等，需结合具体语境确定“cases”准确含义）。
+
+To see what, what was the result.
+看看是什么，结果是什么。
+
+Um.
+嗯。
+
+So, so we're doing one.
+那么，我们正在做一件事。
+
+Implementation pilot in another site in just north of Stockholm in Uppsala, where we actually have the 3D mammography, which is a yeah, a.
+在斯德哥尔摩正北方的于普萨拉的另一个地点进行实施试点，在那里我们实际上有3D乳腺钼靶检查设备，这是一种，嗯，一种……
+
+Or like.
+或者像。
+
+Yeah, that's reading mammography, thomasynthesis is called um, and with AI supported reading we just switched to.
+是的，那是乳腺X光检查读片，那个叫托马斯合成法，而且我们刚刚改用了人工智能辅助读片。
+
+Uh, replacing one of the readers with AI.
+呃，用人工智能替换其中一位读者。
+
+But the first reader, the human reader, is also aware of the AI scores.
+但第一位读者，也就是人类读者，也知晓人工智能给出的评分。
+
+And right now, there is actually a big bigger chunk going to these arbitration meetings because there is disagreement between.
+而现在，实际上有更大一部分时间要花在这些仲裁会议上，因为双方存在分歧。
+
+Um.
+嗯。
+
+Radiologist and I.
+我和放射科医生
+
+Um, and the AI.
+嗯，还有人工智能。
+
+But that's a learning curve thing, so we too early in the implementation phase, you cannot.
+但这是一个学习过程，所以我们还处于实施阶段的早期，你不能这样做。
+
+You know.
+你知道的。
+
+Expect to have.
+期待拥有。
+
+And.
+并且；和；而且
+
+Less things on your arbitration list, you just have to work around it and learn. So that's what they're doing now. Um, but they say also that actually they can dismiss quite quickly.
+你仲裁清单上的事项少一些，你只需灵活处理并学习应对。所以他们现在就是这么做的。嗯，但他们也说实际上他们可以很快地不予理会。
+
+Quite a few of the.
+相当多的……
+
+You know the AI positive only positive cases just because they have the previous history of the woman right? You can easily change that this is a.
+你知道人工智能只呈现阳性病例，仅仅是因为这些女性有既往病史，对吧？你可以轻易改变这种情况，这是一个……
+
+Stable, this is nothing new.
+稳定，这没什么新鲜的。
+
+While I think you have to learn which cases to pick up for further investigations where.
+我认为你得弄清楚该在哪些地方挑选哪些案例做进一步调查。
+
+You don't, for instance, have any.
+比如，你什么都没有。
+
+Previous.
+上一个；先前的；以前的
+
+Mammograms or it's a new finding or a new area that is indicated that has not been indicated before.
+乳腺钼靶检查显示有新发现，或者有一个之前未曾显示过的新区域。
+
+But so, so it's a learning process and of course that's a bit cumbersome, but I think that you have to invest in that to.
+所以，这是一个学习的过程，当然，这有点麻烦，但我认为你也得在这上面投入精力。
+
+Be able to build up the trust between, you know.
+你知道的，要能够建立起彼此之间的信任。
+
+Me as a radiologist with the AI.
+我作为一名使用人工智能的放射科医生。
+
+Then you have to be brave enough to actually tell or make sort of a.
+那么你必须足够勇敢，去真正地说出来或者做某种……
+
+I don't know if you can make rules, you know, typical.
+我不知道你是否能制定规则，你知道的，很常见。
+
+Finding solutions with the typical scores, we don't call this back or something when you have some history on them.
+用典型的分数来寻找解决方案，当你对它们有一定了解时，我们不会为此退缩或怎样。
+
+But it's not an easy, you know.
+但你知道，这并不容易。
+
+Defined that, that's the tricky part and of course you can lose quite a lot of time.
+明确这一点，这才是棘手的部分，当然你可能会浪费大量时间。
+
+I mean, you're getting time because you've replaced one of the readersers with AI.
+我的意思是，你有更多时间了，因为你用人工智能取代了其中一位读者。
+
+Screen reading is quite quick normally.
+通常情况下，屏幕阅读速度相当快。
+
+So if you suddenly spend instead of five minutes per case in an arbitration discussion, you can quickly lose.
+所以，如果你在仲裁讨论中处理每个案件的时间突然从五分钟变成了更长时间，你可能很快就会陷入不利局面。
+
+You know, working hours that you gained.
+你知道，你获得的工作时长。
+
+Earlier by replacing one of the radiologists, so you somehow need to make that equation a.
+早些时候更换了一名放射科医生，所以你得想办法让那个等式成立。
+
+To come up with a positive.
+想出一个积极的办法。
+
+Result.
+结果。
+
+Yeah.
+是的。
+
+So you mentioned the learning part, so like how often do radiologists receive feedback about missed cancer and fail positive or am women's, are they regular calibration meetings or training sessions.
+所以你提到了学习方面，那么放射科医生多久会收到关于漏诊癌症、假阳性的反馈呢？还有针对女性患者的情况。是否有定期的校准会议或培训课程呢？
+
+I think it differs a bit from center to center in Sweden where we don't really have a centralized screening program as such.
+我认为在瑞典，不同的中心之间情况会稍有不同，因为瑞典并没有真正意义上的集中筛查项目。
+
+That's.
+那是。
+
+Perhaps more common in the UK and also like in Norway it's totally centralized um, so each center has it has its own you know, way of doing it. Yeah, but usually at least a.
+或许在英国更为常见，而且就像在挪威一样，它是完全集中式的，嗯，所以每个中心都有，你知道的，自己的运作方式。是的，但通常至少……
+
+The before the, the in the so you heard about the interval cancers, do you know what those are? Those are, yeah, I mean those are like.
+在这之前，在这个过程中，所以你听说过间隔期癌症，你知道那是什么吗？那些是，是的，我的意思是那些就像。
+
+True or false negative cases, so to speak.
+可以说，是真阴性病例还是假阴性病例。
+
+Or the.
+或者那个。
+
+Where we didn't react, uh.
+我们没有做出回应的地方，呃。
+
+In the screen reading, but then the woman comes back before her next screening with a yeah, with a cancer.
+在屏幕阅读环节，但后来这位女士在下一次筛查前回来，结果查出了癌症。
+
+And.
+并且；和；然后
+
+Usually we have a.
+通常我们有一个……
+
+Like.
+喜欢；像；比如
+
+Learning review discussions with those cases.
+与那些案例进行学习回顾讨论。
+
+Um.
+嗯。
+
+But, uh, it's harder to do.
+但是，呃，做起来更难。
+
+On the false positive side, I know that all.
+在假阳性方面，我了解所有情况。
+
+All readers in our in our region, we get a.
+我们这个地区的所有读者，我们得到了一个……
+
+You know, our performance scores, so I mean, we know we can see the sensitivity and specificity.
+你知道的，我们的表现得分，所以我是说，我们知道我们能看到灵敏度和特异度。
+
+Um, for ourselves.
+嗯，为了我们自己。
+
+And of course, the one who's in charge.
+当然，还有负责人。
+
+Uh, should follow up if someone you know.
+呃，如果是你认识的人，应该跟进一下。
+
+Huss.
+胡斯。
+
+The wrong balance or it's going too much on.
+失衡了，或者说情况变得太严重了。
+
+You know, false positives and.
+你知道的，误报以及……
+
+Get the specific training for that person or something.
+为那个人进行特定的培训之类的。
+
+I mean, it's followed up somehow the performance it is.
+我的意思是，它在某种程度上跟进了其表现。
+
+And we also have this system.
+而且我们也有这个系统。
+
+That is UK based that performs.
+那是一家总部位于英国的、有业务表现的（公司/机构等，需结合语境确定）。
+
+In our center.
+在我们的中心。
+
+So that's also another way to.
+所以那也是另一种……的方式。
+
+Are not our own cases, but you can, you know.
+这不是我们自己的情况，但你可以的，你知道的。
+
+Um.
+嗯。
+
+Test and see where you are.
+测试一下，看看你处于什么水平。
+
+So yeah.
+所以，是的。
+
+But we don't have any like every fifth year you have to do an exam or.
+但我们没有类似每五年就得参加一次考试这样的规定。
+
+We don't have those formalized types of tests, but the centers keep track of, you know, the total performance and all. Then there's the individual radiologists and.
+我们没有那些标准化的测试，但各个中心会记录整体表现之类的情况。然后，还有各个放射科医生以及……
+
+Has to do you know something about.
+必须做 你了解关于……的事情。
+
+Outliers, I guess.
+我想是异类吧。
+
+So.
+那么；所以
+
+Yes IND indeed. Do you have any other question to ask?
+是的，印度确实如此。你还有其他问题要问吗？
+
+Um.
+嗯。
+
+And you mention about you will like review some cases, so.
+你提到你想回顾一些案例，所以。
+
+Um, how, how you often do that? Like how many people you gather together, like a workshop or a media? I mean, it could be, let's say, maybe.
+嗯，你多久做一次那样的事呢？比如你会召集多少人，像举办工作坊或者媒体活动那样。我的意思是，比如说，也许可以这样。
+
+I don't know, once or twice per semester.
+我不知道，每学期一两次。
+
+A you.
+哎，你。
+
+You have all the radiologists.
+你拥有所有的放射科医生。
+
+Uh.
+呃。
+
+Together and you you go you go through and.
+一起，你，你走，你经历，然后。
+
+You know.
+你知道的。
+
+Openly.
+公开地
+
+In some cases.
+在某些情况下。
+
+Um.
+嗯。
+
+I don't, I don't have time to go to all these meetings, I don't have the, um.
+我没有，我没时间去参加所有这些会议，我没有，嗯。
+
+They're there.
+他们在那里。
+
+And I think it's, it's a what?
+我想这是，这是什么来着？
+
+What's in the AI when you introduce AI makes.
+当你介绍人工智能的成果时，人工智能里面有什么？
+
+It makes transparency.
+这实现了透明度。
+
+Even more important.
+更重要的是。
+
+I.
+我。
+
+To build trust, you know, that that was important before too, you know, to, to trust the radiologist in your center and you actually trust your colleagues, you know, and you sort of.
+建立信任，这在以前也很重要，你知道，信任你中心的放射科医生你实际上信任你的同事，你知道，你有点。
+
+Tune in on!
+收听！
+
+Performing as close as possible.
+尽可能接近地表演。
+
+Uh, to.
+呃，到……
+
+You know, what's the recommendations.
+你知道，有什么建议呢。
+
+Um.
+嗯。
+
+But you really have to be open about, about how, how each and every one performs, including AI, because you have to benchmark AI with the radiologist.
+但你真的必须公开说明每个人的表现情况，包括人工智能的表现，因为你必须将人工智能与放射科医生进行对标评估。
+
+They just okay.
+他们还行。
+
+Frank and open about how we do and we all make mistakes, so.
+坦率地说，我们都会犯错，所以……
+
+Like in other.
+就像在其他方面一样。
+
+I mean, it's really important I think and.
+我是说，我认为这真的很重要，而且……
+
+So apparent you have the images there.
+显然你那里有这些图像。
+
+And.
+和；并且；然后
+
+The truth will be somehow in the images, so the whole, our whole training is about, you know.
+真相会在某种程度上体现在图像中，所以，你知道的，我们的整个训练都是围绕这个展开的。
+
+Learning from our.
+向我们学习。
+
+And it's a yeah.
+而且这是挺好的。（注：原表述表意不太明确，只能大致翻译）
+
+The the evidence is there, right so anyone can take an image and say hey you missed this in retrospect well it's if you work as a you know, a doctor in an emergency room and you invest, you know you palpate an abdomen and or you know we do a clinical investigation but you don't really have any proof of you, you only write what you found it so that.
+证据就在那里，对吧所以任何人都可以拍一张照片然后说嘿，你回想起来错过了这个如果你是急诊室的医生你投资，你触诊了一个腹部或者你知道我们做了一个临床调查但是你没有任何证据，你只写下你发现的东西。
+
+Moment and then the patient comes back three days later and has something totally different you know you're.
+稍等一下，然后病人三天后回来，情况完全不同了，你知道的。
+
+There's no proof, so to speak, on only what you wrote, but for us there's always an image, so I think.
+可以说，仅凭你所写的内容并没有证据，但我认为，对我们而言，脑海中总会浮现出一幅画面。
+
+It's not so.
+并非如此。
+
+It's not such a big step to, to, to be open about.
+公开这件事并不是什么大不了的事。
+
+That we interpret differently between persons and also that we all make mistakes now and then.
+人与人之间的理解存在差异，而且我们都会时不时地犯错。
+
+We just have to learn from it, so that helps for the step when you introduce AI.
+我们只需要从中学习，这对引入人工智能这一步会有帮助。
+
+And you need to just be.
+而且你只需要做自己。
+
+Um.
+嗯。
+
+Yeah.
+是的。
+
+Transparent about your.
+对你的事保持透明。
+
+For us.
+为了我们。
+
+So yeah, the next part we want to show our design prototype and.
+那么，接下来我们想展示一下我们的设计原型，并且……
+
+Is lightweight service support system for AI I human disagreement in breast cancer screening? So it's basically based on like human factors, intensity, duration.
+人工智能轻量级服务支持系统是否能解决人类在乳腺癌筛查中的分歧？所以它基本上是基于人类因素、强度和持续时间来设计的。
+
+So we will show you in the figma and.
+所以我们会在Figma里展示给你看，并且……
+
+Like introduction or do some introduction about this.
+比如进行一些关于这方面的介绍
+
+I will share my screen.
+我将共享我的屏幕。
+
+It has to be parts of the, uh, the first part is digital support layer to show where support could appear in this workral, and another part is arbitration test to examine more information and reasoning are needed during a difficult record or no record decision.
+它必须是一部分，呃，第一部分是数字支持层，以显示支持可能出现在这个工作中，另一部分是仲裁测试，以检查在困难的记录或无记录决策中需要的更多信息和推理。
+
+And there another support is about learning loop support a.
+另外，还有一项支持是关于学习循环支持的。
+
+Like a session to explore how selected disagreement cases could later be used for refashion celebration and team learning. So, um, just like you mentioned about the learning curve.
+就像一场探讨如何将选定的意见分歧案例用于后续重塑庆祝活动和团队学习的会议。所以，嗯，就像你提到的学习曲线那样。
+
+So yeah, the quiz will introduce the first part.
+所以，是的，测验将介绍第一部分。
+
+Yeah, so I.
+是的，所以我……
+
+Are you following me?
+你在跟着我吗？
+
+Yeah, to do this.
+是的，去做这件事。
+
+Yeah, I he is our storyline of our digital support storyline and the first one is in our service story, the rightologist just first to make their own judgments and then the evidence becomes visibleas if there's mismatch, the system gives a softer cue like year.
+是的，我想说他是我们数字支持业务线的相关人员，第一条业务线是我们的服务业务线。分析师首先会自行做出判断，然后相关证据才会显现。如果存在不匹配的情况，系统会给出类似“是的”这样较为温和的提示。
+
+And, um, if the radiologist.
+而且，嗯，如果是放射科医生。
+
+Cross open, he can see there will be a comparison review.
+交叉开放后，他可以看到将会有一个比较性的评估。
+
+Card and he.
+卡德和他。
+
+He can see some different some details details and then if the.
+他能看到一些不同的细节，然后如果……
+
+If cnl review is needed, the system creates a warm hand hand over card. It's not just for escalation, but it can carry the context with a case where it was escalated and for evidence has already been checked and what support is needed for the.
+如果需要进行案例审查，系统会生成一张交接卡。这不仅仅是为了升级处理，它还能记录案件升级的背景信息、已核查的证据以及所需的支持。
+
+See our reviewer.
+见我们的审稿人。
+
+And then there will be.
+然后就会有了。
+
+Goes goes to the arbitration also like the consensus meeting and the interface is for them to to decide to the.
+提交仲裁也和共识会议一样，由他们来决定相关事宜。
+
+Very popular where you always can trust recall and a no recall and make a decision.
+非常受欢迎，在那里你总能信赖召回政策，还能在没有召回情况时做出决策。
+
+And like here and then there will be.
+然后像这样，之后就会有了。
+
+It we also.
+它，我们也是。
+
+More prompt if the radiologist is going to cross no recall and the AI can give a prompt to show.
+如果放射科医生不打算复查，人工智能可以更及时地给出提示展示。
+
+Pause point.
+停顿点。
+
+So.
+那么；所以
+
+Give our second recheck.
+进行我们的第二次复查。
+
+Next.
+接下来。
+
+After arbitration, the system generates a non blame decision receipt.
+仲裁后，系统会生成一份无责裁决回执。
+
+To recall the chanale later, once follow up outcomes are available, selected cases can become calibration cases.
+稍后回顾渠道，一旦有后续跟进结果，选定的案例可以成为校准案例。
+
+Escard.
+埃斯卡德
+
+I mean this, uh.
+我的意思是这个，呃。
+
+This one is from the abstraction outcome and this can be.
+这一个来自抽象的结果，并且这是可行的。
+
+Filtered as the variable cases, which can be later.
+作为可变案例进行过滤，这些案例稍后处理。
+
+Put it into the case library for.
+把它放入案例库用于……
+
+Of later learning and review.
+晚些时候进行学习和复习。
+
+And here we also want to check what information.
+在这里我们还想核实一下有哪些信息。
+
+Right here, information most critical for to be recorded like a breast density trial images and the error risk score.
+就在这里，像乳腺密度试验图像和错误风险评分这类信息是最需要记录的。
+
+Here shows the death.
+这里显示着死亡。
+
+Would you mind share your opinion about your experience about this?
+你介意分享一下你对这次经历的看法吗？
+
+I can.
+我能。
+
+So like a.
+所以就像一个……
+
+Yeah, maybe increase the size a little bit.
+是的，也许把尺寸稍微增大一点。
+
+I can.
+我可以。
+
+Um, I you.
+嗯，我……你。
+
+So I you.
+所以我（此处原文表意不明）你。
+
+So what? When?
+那又怎样？什么时候？
+
+Just remind me which step should this be used? A.
+提醒我一下，这应该在哪个步骤使用？A.
+
+These different categories.
+这些不同的类别。
+
+Um.
+嗯。
+
+Yeah, for example, I can run, I can score these different factors.
+是的，例如，我可以奔跑，我可以对这些不同的因素进行打分。
+
+Ranking to, to decide which, which ones are more important for.
+排序，以决定哪些更重要。
+
+To show for the right artist for example, I can run this one he.
+例如，为了展示合适的艺术家，我可以操作这一个他。
+
+Around with 10 or.
+带着大约10个或……
+
+I don't really sorry but I don't get a where in the workflow is this, is this a general question for me or is do you see this as a part of.
+我不是真的感到抱歉，但我不明白在工作流程中这是在哪个环节，这是一个针对我的一般性问题，还是你们认为这是……的一部分。
+
+You know, my reading workflow with AI that I should also score and make.
+你知道，我使用人工智能的阅读流程还需要我进行评分和操作。
+
+Um, a sort of.
+嗯，算是吧。
+
+Decision.
+决定
+
+I don't know, I don't, I don't understand if this is just a question.
+我不知道，我不，我不知道这是否只是一个问题。
+
+Request for me now or if you see this as part of the screening workflow like this in the screening workflow, um maybe the reader will see the AI's output so this is maybe the evidence for supported radiologist to made a decision so.
+现在向我提出请求，或者如果你将此视为筛查工作流程的一部分，就像在这个筛查工作流程中这样，嗯，也许阅片人员会看到人工智能的输出结果，所以这也许是支持放射科医生做出决策的证据。
+
+Of which evidence you think will be the high rate or the lower rate? Maybe because I, in our opinions, like when the system introduced AI, maybe there will be a heavy cognitive.
+你认为哪种证据会是高比率还是低比率呢？也许在我们看来，因为当系统引入人工智能时，可能会有强烈的认知冲击。
+
+Load for the radiologists. So we're also considering what kind of evidence is needed or what kind of is unnecessary. So this is mainly about this. We want you to listen your opinions about it.
+放射科医生的装载。所以我们也在考虑什么样的证据是必要的，什么样的证据是不必要的。这主要是关于这个的。我们想让你听听你的意见。
+
+So would this this be reasons for my decisions you mean is that.
+所以你是说，这些就是我做决定的原因，是这样吗？
+
+Um.
+嗯。
+
+Yeah, may because when the AI maybe will show the uh, breast density in some like highlight way.
+是的，可能是因为人工智能或许会用某种突出的方式显示乳腺密度。
+
+Or this kind of evidence will.
+或者这种证据会（起到作用）。
+
+In fact, influenced the radiology output influence their decision so.
+事实上，放射学检查结果的影响左右了他们的决定。
+
+Which one you think is more?
+你认为哪一个更多？
+
+Necessary.
+必要的。
+
+Four.
+四
+
+So that would be like given from, from the AI.
+所以那就像是由人工智能提供的一样。
+
+As an explanation, you mean why we should act on it? Is that the thing or?
+你的意思是，作为一种解释，我们为什么要这么做？是这个意思吗？
+
+How to.
+如何去做。（注：“How to”表述不完整，通常后面还应接动词等内容，这里根据字面意思大致翻译）
+
+Is that is that is an explanatory part of.
+那是……那是……的解释部分。
+
+AI you're wanting for us as a radiologist to sort of.
+人工智能，你希望我们作为放射科医生来做某种事情。
+
+Understand what the AI has marked and why is that.
+了解人工智能标记的内容以及标记的原因。
+
+Yes, you're asking me whether this kind of information would help me.
+是的，你在问我这种信息是否会对我有帮助。
+
+To make the final decision is.
+做出最终决定是……
+
+Chair.
+椅子
+
+Yeah, exactly what you understand.
+是的，这正是你所理解的内容。
+
+To help you understand which factors can be more important for for.
+为了帮助你理解哪些因素可能更为重要。
+
+Right objects to make final decisions which are.
+合适的对象来做出最终决定。
+
+So we all think about this, but we need to the.
+所以我们都在思考这个问题，但我们需要……
+
+When the real artist just to give us some information as we are only read from researchers.
+当真正的艺术家只是给我们提供一些信息时，我们只能从研究人员那里了解到这些内容。
+
+Um.
+嗯。
+
+If you have any experience in this.
+如果你在这方面有任何经验。
+
+You know it, I'm just trying to can I read the text above here? IFA senior review is that if that text goes with this.
+你知道的，我只是想看看我能不能读一下这里上面的文本？IFA资深评审认为如果那段文本与这个相关。
+
+Or, or not scared it's a scenario based on this, yeah.
+或者，或者不害怕，这是基于此的一种情况，是的。
+
+Okay.
+好的。
+
+I think it.
+我认为是这样。
+
+Is it connected to that? So.
+它和那个有关联吗？所以。
+
+Yeah, it's also connected to the light.
+是的，它也和灯连接着。
+
+Some of what information is needed for a consensus meeting.
+共识会议需要哪些信息中的一部分。
+
+I mean yeah, that's could, it could be of course one way of.
+我的意思是，是的，这当然可能是一种……的方式。
+
+Simplifying the communication.
+简化沟通。
+
+To the arbitration meeting, that's.
+去仲裁会议，就是这样。
+
+That's the step.
+那就是步骤。
+
+You're considering to have those is it?
+你在考虑要那些，是吗？
+
+Um.
+嗯。
+
+Mean in historically and how we do it up until now, I mean, we write a short comment.
+从历史意义上来说，以及到目前为止我们是如何做的，我的意思是，我们写了一条简短的评论。
+
+You know, about the finding and which side we're considering and what finding we're actually talking about and whether you're sort of you.
+你知道，关于调查结果，我们正在考虑哪一方，我们实际在讨论什么样的调查结果，以及你是否属于某种类型的你。（注：原句存在一些表意不明的情况）
+
+Describe your.
+描述你的……
+
+A little bit on whether you think it's a true finding or not or like.
+有点想知道你是否认为这是一个真实的发现。
+
+But of course, if you give categories like this, you can, you can just take, you know, what's applicable for that specific case that like you say, it's just a busy breast, a dense breasts.
+但当然，如果你给出这样的类别，你可以，你可以只选取，你知道的，适用于那个特定情况的内容，就像你说的，只是乳腺组织致密而已。
+
+I don't have a specific finding, but I need someone else to decide on this or if you have a specific lesion.
+我没有具体的发现，但我需要其他人来对此做决定，或者如果你有特定的病灶情况的话。
+
+Um.
+嗯。
+
+Where AI has a high mark but you don't consider it, of course that could be you can give that reason.
+在人工智能得分很高但你却不予以考虑的情况下，当然，你可以给出理由。
+
+Um.
+嗯。
+
+Like you, you've indicated, I mean it's important to consider the whole, I mean the, the woman's.
+和你一样，你也提到过，我是说考虑整体情况很重要，我是说，女性的整体情况。
+
+You know, a a completely new lesion.
+你知道，一个全新的病灶。
+
+In a 55 year old woman.
+在一位55岁的女性身上。
+
+Even if it's rounded and looks benign, it might be a cancer, while in younger women that might be a cyst or something benign, which and she's less likely to have cancer, you have to weigh in those factors.
+即使它表面圆润且看似良性，也可能是癌症；而对于年轻女性来说，这可能是囊肿或其他良性病变，她们患癌症的可能性较小，你必须权衡这些因素。
+
+So that's relevant.
+所以这是相关的。
+
+And also, of course, her previous screening history.
+当然，还有她之前的筛查史。
+
+Um.
+嗯。
+
+And of course, the image quality yeah, I mean, you could.
+当然，图像质量确实不错，我的意思是，你也能感受到。
+
+You could probably make this list long, but then it as always, you know, in the screening workflow, you want things to be.
+你或许可以把这个清单列得很长，但就像往常一样，你知道的，在筛选流程中，你希望事情能达到某种状态。
+
+Fast.
+快；迅速；快速地；不久；立即；紧紧地；牢固地；快速的；敏捷的；迅速的；持续时间短的；快速移动的；感光快的；快门速度快的；偏快的；短时间内完成的；类似快餐的
+
+And not have to make too many extra decisions, you know? Um.
+而且不必做太多额外的决定，你懂的吧？嗯。
+
+And not too many things to read for the radiologist, so it should be really as simple as possible.
+对于放射科医生来说，需要阅读的内容并不多，所以应该尽可能简单。
+
+Don't even if you, you would not need to score this in so many cases because it's only the ones that you would consider for arbitration.
+即使是你也不要这样，在很多情况下你不需要计较这个，因为只有那些你会考虑提交仲裁的事情才需要在意。
+
+Um.
+嗯。
+
+Yeah.
+是的。
+
+Yeah, but yeah, yeah, in the real clinical workflow we won't, we, we won't join this list into it cause yeah, it's very high workload.
+是的，但是，没错，在实际的临床工作流程中，我们不会把这个列表加入其中，因为，没错，这工作量太大了。
+
+We have have workload about it, yeah, yeah.
+我们在这方面有工作量，是的，是的。
+
+Just thinking about what might be most important, so maybe one or two information can be shown to the right to make.
+只是在思考什么可能是最重要的，所以也许可以展示一两条信息给合适的人去做。
+
+To help them to add a support layer so I mean if we could integrate it somehow into.
+帮助他们添加一个支持层，我的意思是如果我们能以某种方式将其整合到……
+
+You know, if you could click in the image and just like you do a right click or something and there's like a scrolling list appearing where you can tick.
+你知道的，如果你能点击图片，就像你进行右键点击之类的操作，然后会出现一个滚动列表，你可以在里面打勾。
+
+A couple of reasons, you know.
+你知道的，有几个原因。
+
+Like this is unchanged since last time, but I still want to discuss it or whatever.
+像这样，自上次以来情况没有改变，但我还是想讨论一下，或者随便做点什么。
+
+I don't know, but.
+我不知道，但是。
+
+It should be very simplified.
+这应该会非常简化。
+
+Yeah, I understand your meaning, like integrated into the same devices so that they can make a decision the at the same time they can melt down some information they want to highlight. Yeah.
+是的，我明白你的意思，比如将它们集成到同一设备中，以便它们能同时做出决策，同时还能提炼出一些它们想突出的信息。是的。
+
+Yeah, so.
+是啊，所以。
+
+Yeah, so we also all the reasons you mentioned there are valid, could be potentially valid reasons for you know, one thing have and wanting to have a.
+是的，所以你提到的所有理由都是合理的，有可能是你知道的，一件事存在以及想要拥有它的合理理由。
+
+A senior person or arbitration meeting to discuss the case.
+一位高级人员或仲裁会议来讨论此案。
+
+Um.
+嗯。
+
+Yeah.
+是的。
+
+Yeah.
+是的。
+
+And we also wanted to show like, arbitration, um, to kids about.
+而且我们也想向孩子们展示仲裁相关的内容。
+
+Uh, help them to discuss about the disagreement cases.
+呃，帮助他们讨论分歧案例。
+
+Um, I don't know whether it would be useful for the clinical folk like the first maybe based on the case card they can understand the case immediately, uh, in some like a simple way to understand all the.
+嗯，我不知道这对临床工作者是否有用，比如也许他们首先能根据病例卡立刻了解病情，呃，以某种简单的方式了解所有情况。
+
+Background of these cases and.
+这些案件的背景以及……
+
+And we also like.
+而且我们也喜欢。
+
+Want you.
+想要你。
+
+Made the disagreement token.
+制作了分歧标记。
+
+Trying to let them understand what this agreement, um, between the a and human.
+试图让他们明白这项协议，嗯，在A和人类之间意味着什么。
+
+They can understand, they can learn what the capability of AI and what capability is a human is perform better.
+他们能够理解，能够了解人工智能的能力，以及人类在哪方面的能力表现更出色。
+
+So another one is like peer communication card, ah, cause um, in our understanding is that because of some arbitration meeting, they will contain like junior and senior radiologists, but somehow maybe some Jews.
+所以另一个是类似同行交流卡的东西，因为在我们的理解中，由于一些仲裁会议，参会人员可能包括初级和高级放射科医生，但不知为何也许还有一些犹太人。
+
+They will not have a chance to give their opinions about it, maybe sometimes even they are, right? So this peer communication card is to support they communicate better.
+他们将没有机会就此事发表自己的意见，也许有时候甚至他们有（机会），对吧？所以这张同伴交流卡是为了帮助他们更好地进行交流。
+
+And they.
+还有他们。
+
+There will be another like a rationing card they can write down, um, what kind of.
+会有另一种类似配给卡的东西，他们可以写下，嗯，什么样的。
+
+Reasoning they want to write down and support them to do their decision so that this.
+推断他们想记录下来并支持他们做出决策，就是这样。
+
+Kind of data can be.
+什么样的数据可以是。
+
+Mark down into the system so that they will integrate.
+记录到系统中，这样它们就能整合了。
+
+Like some special cases they can learn after.
+像有些特殊情况，他们之后可以学习。
+
+And.
+并且；和
+
+So I wonder who would then, who would then.
+所以我想知道接下来会是谁，接下来会是谁。
+
+Click.
+点击。
+
+Is it again the radiologist who should?
+又该轮到放射科医生了吗？
+
+Could it make choices here or.
+这里可以做选择吗，还是说……
+
+Yeah or do you mean?
+是的，还是你有别的意思？
+
+Yeah, we're trying to.
+是的，我们正在努力尝试。
+
+We're trying to make a toolit to help them to run the.
+我们正在努力制作一个工具包来帮助他们运行这个（东西）。
+
+Consensus meeting.
+共识会议。
+
+Arbitration meeting.
+仲裁会议。
+
+So, um, we wonder if there's any help for you.
+那么，嗯，我们想知道是否能为你提供什么帮助。
+
+Radiologist to made a decision with these two or do you have some suggestion about this?
+放射科医生要根据这两个情况做决定，还是你对此有什么建议？
+
+And.
+而且；并且；于是；然后
+
+Yeah.
+是的。
+
+I'm from radiologist perspective, what kind of support would be helpful during uncertainty or disagreement cases and what kind of ah.
+从放射科医生的角度来看，在情况不明或存在分歧的案例中，什么样的支持会有所帮助，以及什么样的……
+
+Would increase connect founder yeah, as you mentioned about their will SOA there is so many information.
+会增加联系创始人，是的，正如你提到的，他们那里有面向服务的架构（SOA），有很多信息。
+
+That will increase cognitive bonding.
+这将增强认知联结。
+
+I mean, during a.
+我的意思是，在一个……期间。
+
+Learning period. This could definitely be worth doing, but again, it would take time for the radiologist to choose a.
+学习阶段。这绝对值得一试，但同样，放射科医生选择一个（东西）也需要时间。
+
+Um.
+嗯。
+
+Sort of.
+有点；有几分；可以这么说
+
+Classify the.
+对……进行分类。
+
+Different situations, right? They will still you have to make another decision than just make.
+不同的情况，对吧？除了直接做决定，他们仍然得让你做出另一个决定。
+
+Um.
+嗯。
+
+Yeah, I don't know, I I like things being more automatic in general I would say I'm a big skeptic about.
+是啊，我不知道，总体而言，我喜欢更自动化的事物。我得说，我对此非常怀疑。
+
+Having to.
+必须要；不得不
+
+Click and address a lot of, you know, things in different steps, um.
+点击并分不同步骤处理很多事情，嗯。
+
+Because every second counts in screen reading, so it's really a.
+因为在屏幕阅读中每一秒都很重要，所以这真的是一个……
+
+Whether.
+是否；不管；无论
+
+You know, in a, in a.
+你知道，在一个，在一个。
+
+Upcoming new world the AI would listen to your reasoning and actually.
+即将到来的新世界里，人工智能实际上会倾听你的推理。
+
+Prompt what you, you know what you were saying so I don't I.
+提示你，你知道你在说什么，所以我不……我不知道要说什么了（原文表述不太符合语法，参考大致意思译出）
+
+Right, okay, let's let's overrule this I don't believe this solution is something but the AI has scored it and then you.
+对，好的，让我们否决这个方案。我不认为这个解决方案有什么价值，但人工智能已经对它进行了评估，然后轮到你了。
+
+The system will suggest, OK, there's a disagreement, but the human overrules a finding and that's the reason.
+系统会提示，好的，存在分歧，但人为否决了调查结果，这就是原因。
+
+While it can capture something, you know.
+你知道的，虽然它能捕捉到一些东西。
+
+That you're saying um.
+你正在说，嗯。
+
+That sort of.
+那样的；那种的
+
+On the build Stewart decision, I don't know if I make myself care, but.
+基于斯图尔特的裁决，我不知道自己是否在意，但……
+
+And.
+而且；并且；然后；又
+
+It would. Anything that makes that is more automatic that they at least just confirmed. As long as it's it's reasonable suggestions would be helpful.
+会的。任何能让事情更自动化的东西，至少他们刚刚已经确认了这一点。只要是合理的建议都会有帮助。
+
+That is, yeah, I I understand it's about efficiency.
+也就是说，是的，我明白这关乎效率。
+
+Yeah, it is and it's also how much, how much do we want in our systems? You know, sometimes it's just.
+是的，确实如此，而且我们的系统里需要多少（东西）呢？你知道的，有时候就是这样。
+
+Should how detailed should our decisions be described?
+我们的决策应该描述得有多详细？
+
+I don't know without saying too much, but I mean it's.
+不用多说，我不知道，但我的意思是它……
+
+Um.
+嗯。
+
+We just, sometimes you, you have to make a decision, right? And sometimes you don't even have a good reason, you have a good reason to most likely think this is not a cancer of many different reasons, but you cannot, you don't write down everything, you know, all your arguments to that to just say this is, I don't believe in this, this is, it's been there for five years.
+我们只是，有时候你，你必须做出决定，对吧？有时你甚至没有一个很好的理由，你有一个很好的理由很可能认为这不是一种癌症有很多不同的原因，但你不能，你不能写下所有的东西，你知道，你所有的论点只是说，我不相信这个，这是，它已经存在了五年。
+
+So you just say unchanged and then that's it and you don't sort of.
+所以你就说保持不变，然后就那样了，你也不会……
+
+Write a long story about why.
+写一篇关于原因的长篇故事。
+
+You're not recalling this woman.
+你不记得这个女人了。
+
+If you see what I mean.
+如果你明白我的意思。
+
+It's, it's very, very simplified process, so I would, I would advise you to think about anything that can be, you know, automatic or, um.
+这是一个非常非常简化的过程，所以我建议你考虑一下任何可以自动化的事情，你懂的。
+
+Not giving an extra task on the radiologist to classify whatever, um.
+不会给放射科医生额外增加对任何事物进行分类的任务。
+
+Interact more than necessary.
+进行超出必要程度的互动。
+
+Even though I can see your point.
+尽管我能理解你的观点。
+
+Yeah.
+是的。
+
+Categorizing different reasons for learning and to like collect the library of these are the cases, the discrepant cases, these are the tricky dense breast cases, these are whatever.
+将不同的学习原因进行分类，并收集这些案例库，包括有差异的案例、棘手的致密乳腺案例等等。
+
+Yeah.
+是的。
+
+We will develop another version based on your suggestion.
+我们将根据你的建议开发另一个版本。
+
+Reach out quick and easy as possible and the thing is that you again then for that system, part of the system, you have to build up trust as well and to make that valuable.
+尽可能快速便捷地建立联系，问题在于，对于那个系统，也就是系统的一部分，你也必须建立起信任并让它变得有价值。
+
+Or the radiologists, otherwise you just click anything just to get rid of the prompts on the screen, right.
+或者是放射科医生，否则你就随便点击一下，只为了消除屏幕上的提示，对吧。
+
+So it really has to be.
+事情确实只能如此了。
+
+Very, very.
+非常，非常。
+
+Valid and give me.
+有效的，给我。
+
+Good and important information.
+有用且重要的信息。
+
+Okay, so that's a tricky part, I think a.
+好吧，所以那是个棘手的部分，我想。
+
+Yeah.
+是的。
+
+We got us or like, um, there are some disagreement between a and the radiologists, so would you think.
+我们这边，呃，在A和放射科医生之间存在一些分歧，你怎么看？
+
+Also when your radiologist discuss about the.
+另外，当你的放射科医生讨论关于……
+
+Um, disagreement together.
+嗯，共同存在分歧。
+
+If we have those arguments, you mean or what? Yeah, yeah, I mean, yeah, that we already write something.
+如果我们有那些争论，你的意思是还是什么情况？是的，是的，我的意思是，是的，我们已经写了些东西。
+
+I mean, we marked the.
+我的意思是，我们标记了……
+
+The spot and we write the like one sentence.
+这里我们写类似的一句话。
+
+Um, about.
+嗯，关于。
+
+Why we are in doubt? So of course that can be.
+我们为什么会有疑虑呢？当然，这是有可能的。
+
+Translated to something like this.
+翻译成类似这样的内容。
+
+But usually we communicate a lot of clinical information as well, I mean it's.
+但通常我们也会交流很多临床信息，我的意思是……
+
+I don't know how to.
+我不知道该怎么做。
+
+Explain.
+解释。
+
+I mean we compared sides we compare with previous images and.
+我的意思是，我们对比了各个方面，我们与之前的图像进行了对比，并且……
+
+It's like very subtle.
+这看起来非常微妙。
+
+Details that we say.
+我们所说的细节。
+
+Um.
+嗯。
+
+Yeah, so we'll discuss it, um, in your daily.
+是的，所以我们会在你日常工作中讨论这个问题。
+
+Or work.
+或者工作。
+
+Like in this spare time in the uh.
+就像在这个闲暇时间里。
+
+Like when you get in the water to drink, you discuss the cases or you you mentioned about very difficult, it's so hard to read, discuss it with your colleague.
+就像当你喝水的时候，你会讨论案例，或者你提到的那些非常难的案例，很难读懂，那就和你的同事讨论一下。
+
+Does it happen you.
+这事发生在你身上了吗？
+
+During the break.
+休息期间。
+
+Yeah, if you're in doubt when you're reading, you might just, you know, ask the radiologist next, next year to give the second eye, you know, second set of eyes on it, you know, I need your opinion here.
+是的，如果你在阅读时心存疑虑，你可以，你懂的，让放射科医生明年再看一下，再给出另一种专业意见，我需要听听你的看法。
+
+Uh.
+呃。
+
+So I mean, we interact a lot though as well.
+所以我的意思是，我们之间也有很多互动。
+
+Or just now we use a lot of you know, you can chat in our system, we can just you know chat the the case in the chat say hey I'm thinking about this left breast upper quadrant, what do you think.
+或者就在刚才，我们大量使用了，你知道的，你可以在我们的系统里聊天，我们可以，你知道的，在聊天时讨论病例，比如说“嘿，我在考虑左乳上象限的情况，你怎么看”。
+
+Uh.
+呃。
+
+So, so I mean, we communicate a lot already.
+所以，我的意思是，我们已经有很多交流了。
+
+Yeah.
+是的。
+
+At least in our center, but some centers there are only a few people and someone might read from home, you know, and someone is in.
+至少在我们的中心是这样，但有些中心只有几个人，有些人可能会在家看书，你知道的，还有些人在中心里。
+
+Present in the center and.
+出现在中心并且。
+
+So I guess the interaction looks different from.
+所以我猜这种互动看起来与……不同。
+
+Place to place.
+一个地方到另一个地方；各地
+
+HM.
+阁下（一般用于称呼王室成员等，这里音译为“陛下”等不太准确，“阁下”是比较合适表达尊敬的译法）
+
+Yeah, I think.
+是的，我想是这样。
+
+We got a lot of information we need to so it's not easy to I don't know if I understood every question you got, but I hope I.
+我们获取了很多我们需要的信息，所以这并不容易。我不知道我是否理解了你提出的每一个问题，但我希望我理解了。
+
+It's very helpful.
+这非常有帮助。
+
+Yeah.
+是的。
+
+Yeah the the most important take home message for me is to keep it simple yeah, no extra steps for the radiologist so you will lose everything that you gain in by by having a.
+是的，对我来说最重要的关键信息就是保持简单，是的，不要给放射科医生增加额外的步骤，所以你会失去通过拥有一个……所获得的一切。
+
+Detecting the cancers, um.
+检测癌症，嗯。
+
+Yeah.
+是的。
+
+Fully understand it so I think today so you cannot really.
+完全理解，所以我觉得今天你真的不行。
+
+Ask someone for, oh, I mean if you do a hundred screens an hour and then you suddenly add.
+向某人询问，哦，我的意思是，如果你一小时能筛选一百个（信息、物品等，需结合具体语境），然后突然增加（筛选量）。
+
+You know.
+你知道的。
+
+10 different prompts oh so people would you know kick it out immediately so the only thing is if you could consider you know, I understand that this could be a way of.
+10种不同的提示哦，那么各位，你们知道的，要立刻把它排除掉。所以唯一的办法就是，如果你能考虑的话，你知道的，我明白这可能是一种……
+
+You know, doing a good like feedback loop and also for learning.
+你知道，建立一个良好的反馈循环，这对学习也有帮助。
+
+That you do it just in a period of time like every every Monday you have to score these things, but then tuesdays to fridays you don't do it or something I don't know I.
+你只是在一段时间内做这件事，就像每个周一你都得处理这些事情，但从周二到周五你就不做了，或者怎样，我也不清楚。
+
+I mean.
+我的意思是。
+
+I can see the value of a.
+我能看到一个……的价值。
+
+Of the feedback and information.
+关于反馈和信息。
+
+Like forwarding system.
+喜欢转发系统。
+
+Yeah, thank you and so what.
+是的，谢谢你，那又怎样。
+
+When the radiologist fatigue their are stressed.
+当放射科医生感到疲劳时，他们会有压力。
+
+Before in the screen so what do will they usually do in their daily work.
+在屏幕前，那么他们在日常工作中通常会做些什么呢。
+
+If you're stressed, yeah, and fatigue.
+如果你感到压力大，没错，还有疲劳。
+
+Pink yeah, you.
+品克，是的，就是你。
+
+Hopefully take a break. I'll take a break, drink some tea, coffee and stretch your legs. Do something else.
+希望能休息一下。我要休息一会儿，喝点茶、咖啡，活动活动腿脚。做点别的事情。
+
+Yeah, go for a holiday, yeah.
+是的，去度个假，是的。
+
+I mean I usually take a break you know five minutes I go out or I you know check emails or do something completely different and then you know, if you really have to do your readings this day you just have to continue and find strategies you.
+我的意思是，我通常会休息一下，你知道的，休息五分钟，我会出去走走，或者，你知道的，查看一下邮件，或者做些完全不同的事情。然后，你知道的，如果这天你真的得完成阅读任务，就只能继续下去并找到适合你的方法。
+
+But we have a very varied I mean, I don't do screening for.
+但是我们有很多样的，我的意思是，我不做筛选工作。
+
+It was like one hour.
+大约一个小时。
+
+And then I do something else, so.
+然后我会做些别的事情，所以。
+
+The change another thing, yeah, it's not like eight hours in a day, but of course there are some.
+换个话题，是的，一天工作时间并非八小时，但当然也有一些情况是这样。
+
+Some settings where you.
+你的一些设置在哪里。
+
+Use readers, so only do screening and then you have to have different strategies.
+使用阅读器，所以只进行筛选，然后你必须制定不同的策略。
+
+I know people have, you know, these small pop up programs with like exercises or whatever popping up every 40 minutes or so.
+我知道人们有那种每隔40分钟左右就会弹出的小弹窗程序，里面可能有锻炼内容之类的。
+
+You need to go up and do some da da stretch your legs yeah, so so is there any common rule like a shared space shared room for only for radiologists on the.
+你需要起身活动一下，伸展伸展腿脚，是的。那么，在这方面对于放射科医生来说，是否有像共享空间、共享房间这样的通用规定呢？
+
+Like conditions, not for the patients.
+喜欢这种状况，这对患者可不好。
+
+I mean, they maybe these are.
+我的意思是，他们也许就是这些。
+
+Doctors, nurses or right also can spend time together during break but yeah, I do not see these patients yeah, definitely.
+医生、护士或者其他人也可以在休息时聚在一起，但没错，我确实没见到这些病人，肯定没见到。
+
+I mean, we have a lunch and a break room and we have a.
+我的意思是，我们有一个午餐和休息室，而且我们还有一个……
+
+We have like a conference room where we have other meetings and it's a different floor where we have patients, so I mean, it's separated in our reading room, sorry, I mean you close the door and it's not open to patients.
+我们有一个类似会议室的地方，我们会在那里开其他会议，而接待病人的区域在另一层楼。我的意思是，在我们的阅览室里是分隔开的，抱歉，我的意思是你关上门后，这里对病人是不开放的。
+
+That's very important for, you know, keeping the privacy. Yeah, we were wondering is there any possible for us to design something just to put something on the wall to show some cases or some interactive.
+你知道，这对保护隐私非常重要。是的，我们在想，我们有没有可能设计一些东西，比如在墙上展示一些案例或者做一些互动展示。
+
+Devices on.
+设备开启。
+
+Yes, but we think about before.
+是的，但我们以前考虑过。
+
+And I mean to.
+而且我打算这么做。
+
+To show to radiologists? You mean like a test or what? Like a prototype, please? Oh yeah, it's about prototype.
+展示给放射科医生看吗？你是说像个测试之类的，还是什么呢？请问是要展示个原型吗？哦，对，是关于原型的事。
+
+We thought about there might be something put on the wall and a.
+我们考虑过可能会在墙上挂些东西，还有……
+
+Right now I just can't.
+现在我就是做不到。
+
+Interact with some buttons to.
+与一些按钮进行交互以……
+
+Have some fun with these disagreement cases.
+在这些有分歧的案例中找点乐子。
+
+And.
+而且；和；然后
+
+Like a learning soon for the writing.
+很快就会为写作而学习。
+
+I mean it.
+我是认真的。
+
+The most smart way would be actually to integrate it into the reading stations, I mean.
+我是说，最明智的做法实际上是把它整合到阅读站中。
+
+Um.
+嗯。
+
+That you actually opened it comes up on the screen and you can you know you're supposed to do like a review every second day of.
+实际上你打开它时，它会显示在屏幕上，你知道的，你应该每隔一天做一次回顾。
+
+Two, three cases a.
+两三个案例。
+
+You have to pass through that to be able to do your next thing, so.
+你必须经历那个才能去做你的下一件事，所以。
+
+I don't know, but so any extra device.
+我不知道，但有这么多额外的设备。
+
+I think breaks are breaks.
+我认为休息就是休息。
+
+So I don't know really how.
+所以我真的不知道该怎么做。
+
+I mean, we, we work on our workstations like separate devices and no, like laptop, no extra iPad, sorry, yeah.
+我的意思是，我们在工作站上工作，就像使用独立的设备一样，没有，比如没有笔记本电脑，也没有额外的iPad，抱歉，是的。
+
+Of maybe like an interactive screen on the wall with a touchscreen where you can sort of play around, but.
+或许就像墙上有一个带触摸屏的交互式屏幕，你可以在上面随意操作，不过。
+
+We love, we like our high, you know, resolution screens a lot, uh, we have very good screens, so I think you should integrate it into an.
+我们热爱，我们非常喜欢高清的屏幕，你知道的，我们有非常好的屏幕，所以我认为你应该把它集成到一个……
+
+What we use daily for the screen reading and we often sit together like a, like four or five people looking at the same screen and someone is standing and we're discussing cases, right so that.
+我们日常用于屏幕阅读的东西，而且我们经常像这样聚在一起，比如四五个人看着同一个屏幕，有人站着，然后我们一起讨论病例，对吧，就是这样。
+
+Would be a normal.
+会是正常的。
+
+Situation anyhow.
+无论如何，这种情况
+
+Is a readings reading station you just mentioned.
+你刚才提到的是一个阅读站。
+
+Yeah, I mean we usually have reading rooms, I mean with like maybe four.
+是的，我的意思是我们通常有阅览室，我是说大概有四个。
+
+Four desks with a reading stations where you have at least like.
+四张配有阅读区的书桌，至少在那儿你会有……（原句不完整）
+
+Two screens like one with a patient information and like.
+像有一个展示患者信息的那种两块屏幕
+
+Data information and then you have to read the image reading screen separately.
+数据信息再读取就得分别读取屏幕上的图像。
+
+In front of you.
+在你面前。
+
+Is a big, very high resolution screen.
+这是一块大尺寸、高分辨率的屏幕。
+
+Um.
+嗯。
+
+Yeah, so and I mean then we have some smaller rooms that only have like two of these reading stations and.
+是的，我的意思是，我们还有一些小房间，里面只有两个这样的阅读工位，然后……
+
+So it's like a worker, it's like a computer workstation but with very good screens, that's you should did you visit a radiology department.
+所以这就像一个工作站，有点像电脑工作站，但配备了非常好的屏幕，这就是你去放射科时会看到的情况。
+
+Yeah.
+是的。
+
+Yeah we wish we could, we should we wish we could go yeah I mean there are a lot of them in AI mean a hospital connected to your college right isn't there a.
+是啊，我们希望能去，我们应该去，我们希望能去。是啊，我的意思是，人工智能领域有很多相关的东西。我的意思是，你们学校不是有一家附属医院吗？
+
+Yeah.
+是的。
+
+Um, you should pay a visit to see how it works, yeah.
+嗯，你应该去看看它是如何运作的，没错。
+
+Well you know I need to go, I'm getting a train to.
+嗯，你知道的，我得走了，我要去赶火车。
+
+So I hope that's not how answers so simplify integrate into systems that we already use yeah, thank you for your time thank you professor algorithms that's really interesting I think you already came very far and but do a.
+所以我希望答案不是这么简单地整合到我们已经在使用的系统中。是的，感谢你抽出时间，谢谢你，教授。这些算法真的很有趣。我认为你已经取得了很大的进展，但是……
+
+Real world visit that would be great. Yeah, got you. Yeah okay thank you. Have a good day. Thank know please email me with any updates you have or if you want to talk again in a later later part of the process or so.
+实地考察的话那就太棒了。是的，明白你的意思了。好的，谢谢。祝你有美好的一天。如果有任何新情况，或者如果在后续流程中你还想再交流，请发邮件给我。
+
+Yeah, we would love to. Yeah, that would be helpful. Okay, bye bye bye.
+是的，我们很乐意。是的，那会有帮助的。好的，拜拜拜拜。
+
+Hello.
+你好。
+
+I.
+我。

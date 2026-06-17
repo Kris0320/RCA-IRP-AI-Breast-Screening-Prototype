@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 54px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 23px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .panel-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 31px; fill: #172033; font-weight: 700; }
+      .section-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .value { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 17px; fill: #172033; font-weight: 700; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #2d3948; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #172033; font-weight: 700; }
+      .orange-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #b34c29; font-weight: 700; }
+      .button-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #ffffff; font-weight: 700; }
+      .button-dark { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #273244; font-weight: 700; }
+      .principle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; font-weight: 700; }
+      .statement { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #172033; font-weight: 700; }
+      .workspace { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.5; rx: 22; filter: url(#shadow); }
+      .topbar { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 14; }
+      .viewer { fill: #152033; stroke: #405066; stroke-width: 1.2; rx: 14; }
+      .viewer-soft { fill: #1d2a3f; stroke: #405066; stroke-width: 1.1; rx: 12; }
+      .overlay { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.6; rx: 24; filter: url(#shadow); }
+      .header { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.3; rx: 16; }
+      .soft { fill: #f8fafc; stroke: #d9e0e8; stroke-width: 1.2; rx: 13; }
+      .accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 13; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 18; }
+      .chip-orange { fill: #fff3ed; stroke: #e7b69d; stroke-width: 1.2; rx: 18; }
+      .primary { fill: #315f86; stroke: #315f86; stroke-width: 1.2; rx: 11; }
+      .secondary { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.2; rx: 11; }
+      .input { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.1; rx: 12; }
+      .divider { stroke: #d9e0e8; stroke-width: 1.1; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.2; fill: none; }
+      .dot { fill: #d9653b; }
+      .muted-dot { fill: #8ea0b3; }
+      .scan-line { stroke: #718198; stroke-width: 1.1; opacity: 0.45; }
+      .scan-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #dce6ef; font-weight: 700; }
+      .scan-subtext { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #aebdcb; }
+      .mammogram { fill: #dfe7ef; opacity: 0.86; }
+      .mammogram-shadow { fill: #91a1b2; opacity: 0.18; }
+      .mark-human { stroke: #6672c7; stroke-width: 3; fill: none; opacity: 0.9; }
+      .mark-ai { stroke: #d9653b; stroke-width: 3.4; fill: none; opacity: 0.95; }
+      .mark-dot { fill: #ffffff; stroke: #d9653b; stroke-width: 3; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#172033" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="68">TOUCHPOINT 1 · EXPANDED COMPARISON REVIEW</text>
+  <text class="title" x="96" y="130">Touchpoint 1 — Expanded Comparison Review</text>
+  <text class="subtitle" x="98" y="172">After the radiologist opens the soft disagreement cue</text>
+
+  <!-- Existing mammogram review workspace context -->
+  <g transform="translate(96 224)">
+    <rect class="workspace" x="0" y="0" width="1220" height="754"/>
+    <rect class="topbar" x="28" y="24" width="1164" height="64"/>
+    <text class="label" x="54" y="50">EXISTING MAMMOGRAM REVIEW WORKSPACE</text>
+    <text class="small" x="54" y="72">Image viewing, prior comparison and reporting remain in the existing clinical system.</text>
+    <rect class="chip" x="1000" y="38" width="148" height="30"/>
+    <text class="small-strong" x="1074" y="58" text-anchor="middle">Case SC-2048</text>
+
+    <g transform="translate(28 114)">
+      <rect class="viewer" x="0" y="0" width="760" height="572"/>
+      <text class="scan-text" x="28" y="34">Current mammogram</text>
+      <text class="scan-subtext" x="28" y="56">Expanded comparison review opened from soft cue</text>
+      <line class="scan-line" x1="380" y1="80" x2="380" y2="538"/>
+      <line class="scan-line" x1="28" y1="306" x2="732" y2="306"/>
+      <path class="mammogram-shadow" d="M260 128 C171 174 134 279 169 380 C201 472 284 535 377 544 C415 494 433 422 421 336 C408 238 350 154 260 128z"/>
+      <path class="mammogram" d="M276 112 C184 158 143 270 180 382 C214 482 303 547 400 556 C440 503 459 426 446 331 C432 224 367 139 276 112z"/>
+      <path class="mammogram-shadow" d="M514 126 C606 173 648 280 615 383 C584 478 498 540 402 548 C366 495 348 421 359 333 C373 235 421 152 514 126z"/>
+      <path class="mammogram" d="M498 110 C595 157 641 270 605 384 C571 486 478 552 379 558 C342 503 325 424 339 328 C354 220 400 138 498 110z"/>
+      <path class="mark-human" d="M493 132 C552 128 604 172 606 229 C608 283 563 322 505 306 C459 293 437 251 451 200 C460 161 473 143 493 132z"/>
+      <path class="mark-ai" d="M505 226 C573 206 646 246 660 313 C676 386 610 432 529 407 C468 388 443 338 462 286 C472 255 486 236 505 226z"/>
+      <circle class="mark-dot" cx="526" cy="182" r="10"/>
+    </g>
+
+    <g transform="translate(820 114)">
+      <rect class="viewer-soft" x="0" y="0" width="372" height="258"/>
+      <text class="scan-text" x="22" y="34">Prior image comparison</text>
+      <text class="scan-subtext" x="22" y="56">Existing viewer panel</text>
+      <line class="scan-line" x1="186" y1="78" x2="186" y2="232"/>
+      <line class="scan-line" x1="22" y1="158" x2="350" y2="158"/>
+      <path class="mammogram-shadow" d="M132 84 C88 114 67 178 85 243 C103 302 148 341 202 346 C224 314 233 266 226 209 C218 146 185 99 132 84z"/>
+      <path class="mammogram" d="M144 74 C99 103 78 166 96 230 C113 287 158 326 210 332 C231 301 240 255 233 201 C225 139 195 91 144 74z"/>
+      <path class="mammogram-shadow" d="M245 83 C288 110 309 170 294 231 C281 287 237 326 186 332 C167 300 158 254 164 201 C172 142 196 99 245 83z"/>
+      <path class="mammogram" d="M238 72 C283 99 307 163 292 228 C278 289 230 330 177 334 C157 299 148 250 156 194 C164 132 190 88 238 72z"/>
+    </g>
+
+    <g transform="translate(820 398)">
+      <rect class="soft" x="0" y="0" width="372" height="128"/>
+      <text class="label" x="22" y="30">SOFT CUE OPENED</text>
+      <text class="small-strong" x="22" y="60">Second interpretation differs</text>
+      <text class="small" x="22" y="86">The detailed comparison appears only</text>
+      <text class="small" x="22" y="108">after the reader chooses to inspect.</text>
+    </g>
+  </g>
+
+  <!-- Expanded comparison review panel -->
+  <g transform="translate(1104 214)">
+    <rect class="overlay" x="0" y="0" width="720" height="776"/>
+    <rect class="header" x="30" y="30" width="660" height="118"/>
+    <rect class="chip-orange" x="54" y="52" width="168" height="28"/>
+    <circle class="dot" cx="74" cy="66" r="4"/>
+    <text class="orange-text" x="92" y="71">Non-blame review cue</text>
+    <text class="panel-title" x="54" y="108">Comparison review</text>
+    <text class="small" x="54" y="132">Human judgement and AI evidence layer do not align. Review before handover.</text>
+    <rect class="chip" x="522" y="56" width="138" height="34"/>
+    <text class="small-strong" x="591" y="78" text-anchor="middle">Case ID: SC-2048</text>
+
+    <g transform="translate(30 172)">
+      <text class="section-title" x="0" y="0">Comparison summary</text>
+
+      <rect class="soft" x="0" y="20" width="294" height="118"/>
+      <text class="label" x="22" y="52">HUMAN JUDGEMENT</text>
+      <text class="value" x="22" y="82">No recall recommended</text>
+      <text class="small" x="22" y="108">Recorded before comparison</text>
+
+      <g transform="translate(302 52)">
+        <circle class="muted-dot" cx="34" cy="20" r="18"/>
+        <line class="divider" x1="60" y1="20" x2="78" y2="20"/>
+        <text class="small-strong" x="46" y="54" text-anchor="middle">difference</text>
+        <text class="small-strong" x="46" y="72" text-anchor="middle">identified</text>
+      </g>
+
+      <rect class="accent" x="386" y="20" width="274" height="118"/>
+      <text class="label" x="408" y="52">AI EVIDENCE LAYER</text>
+      <text class="value" x="408" y="82">Recall concern raised</text>
+      <text class="small" x="408" y="108">High confidence · suspicious region detected</text>
+    </g>
+
+    <g transform="translate(30 340)">
+      <rect class="accent" x="0" y="0" width="660" height="120"/>
+      <text class="section-title" x="22" y="34">Disagreement classification</text>
+      <text class="label" x="22" y="66">DISAGREEMENT TYPE</text>
+      <text class="value" x="190" y="66">Detection disagreement</text>
+      <text class="label" x="22" y="96">PRIMARY CONCERN</text>
+      <text class="body" x="190" y="96">AI flagged a suspicious region not marked in the human judgement.</text>
+    </g>
+
+    <g transform="translate(30 484)">
+      <text class="section-title" x="0" y="0">Reader reflection note</text>
+      <rect class="input" x="0" y="20" width="660" height="92"/>
+      <text class="label" x="22" y="50">WHAT SHOULD THE SENIOR REVIEWER KNOW?</text>
+      <text class="small" x="22" y="78">Add reader note before handover...</text>
+    </g>
+
+    <g transform="translate(30 628)">
+      <text class="section-title" x="0" y="0">Suggested next step</text>
+      <rect class="primary" x="0" y="22" width="286" height="48"/>
+      <text class="button-white" x="143" y="53" text-anchor="middle">Prepare senior review handover</text>
+      <text class="small" x="0" y="94">Creates a Warm Handover Summary with case context and evidence checked.</text>
+
+      <rect class="secondary" x="316" y="22" width="158" height="48"/>
+      <text class="button-dark" x="395" y="53" text-anchor="middle">Open comparison view</text>
+      <rect class="secondary" x="492" y="22" width="168" height="48"/>
+      <text class="button-dark" x="576" y="53" text-anchor="middle">Add reader note</text>
+    </g>
+
+    <g transform="translate(30 724)">
+      <rect class="soft" x="0" y="0" width="660" height="34"/>
+      <text class="principle" x="330" y="23" text-anchor="middle">Classify the disagreement, keep AI as evidence, and support escalation without blame.</text>
+    </g>
+  </g>
+
+  <g transform="translate(396 1008)">
+    <rect class="soft" x="0" y="0" width="1128" height="48"/>
+    <text class="statement" x="564" y="31" text-anchor="middle">The primary action prepares the Warm Handover Summary used in Touchpoint 2.</text>
+  </g>
+</svg>

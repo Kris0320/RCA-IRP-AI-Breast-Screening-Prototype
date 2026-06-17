@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .app { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.4; rx: 18; }
+      .sidebar { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 18; }
+      .nav { fill: transparent; }
+      .nav-active { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.1; rx: 12; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.3; rx: 16; }
+      .panel-blue { fill: #f8fafc; stroke: #d9e0e8; stroke-width: 1.2; rx: 14; }
+      .panel-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.2; rx: 14; }
+      .card { fill: #ffffff; stroke: #d4dde7; stroke-width: 1.25; rx: 14; }
+      .card-selected { fill: #fffaf7; stroke: #e7b69d; stroke-width: 1.5; rx: 14; }
+      .input { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.15; rx: 12; }
+      .filter { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 12; }
+      .button { fill: #315f86; stroke: #315f86; stroke-width: 1.1; rx: 11; }
+      .button-light { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.1; rx: 11; }
+      .button-outline { fill: #ffffff; stroke: #c9d6e2; stroke-width: 1.1; rx: 11; }
+      .tag { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1; rx: 14; }
+      .tag-accent { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1; rx: 14; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 46px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 19px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .nav-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #2d3948; font-weight: 600; }
+      .nav-text-active { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #172033; font-weight: 700; }
+      .metric { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #172033; font-weight: 700; }
+      .metric-label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.04em; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #2d3948; }
+      .body-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #172033; font-weight: 700; }
+      .card-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #172033; font-weight: 700; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #536174; }
+      .small-strong { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 12px; fill: #172033; font-weight: 700; }
+      .tag-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 11px; fill: #273244; font-weight: 700; }
+      .tag-text-orange { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 11px; fill: #b34c29; font-weight: 700; }
+      .orange { fill: #d9653b; }
+      .button-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #ffffff; font-weight: 700; }
+      .button-text-dark { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #273244; font-weight: 700; }
+      .button-text-tight { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 11px; fill: #ffffff; font-weight: 700; }
+      .button-text-dark-tight { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 11px; fill: #273244; font-weight: 700; }
+      .footer { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #536174; }
+      .divider { stroke: #d9e0e8; stroke-width: 1.1; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <g transform="translate(64 54)">
+    <rect class="app" x="0" y="0" width="1792" height="972"/>
+
+    <!-- Left sidebar -->
+    <g transform="translate(24 24)">
+      <rect class="sidebar" x="0" y="0" width="240" height="924"/>
+      <text class="kicker" x="24" y="40">DISAGREEMENT CARE</text>
+      <text class="body-strong" x="24" y="72">Case library system</text>
+
+      <g transform="translate(18 122)">
+        <rect class="nav-active" x="0" y="0" width="204" height="46"/>
+        <circle class="orange" cx="22" cy="23" r="5"/>
+        <text class="nav-text-active" x="42" y="29">Case Library</text>
+
+        <rect class="nav" x="0" y="58" width="204" height="46"/>
+        <text class="nav-text" x="42" y="87">Review Queue</text>
+
+        <rect class="nav" x="0" y="116" width="204" height="46"/>
+        <text class="nav-text" x="42" y="145">Calibration Sessions</text>
+
+        <rect class="nav" x="0" y="174" width="204" height="46"/>
+        <text class="nav-text" x="42" y="203">Disagreement Tags</text>
+
+        <rect class="nav" x="0" y="232" width="204" height="46"/>
+        <text class="nav-text" x="42" y="261">Audit Records</text>
+
+        <rect class="nav" x="0" y="290" width="204" height="46"/>
+        <text class="nav-text" x="42" y="319">Settings</text>
+      </g>
+
+      <g transform="translate(24 804)">
+        <rect class="panel" x="0" y="0" width="192" height="88"/>
+        <text class="label" x="16" y="28">POSITIONING</text>
+        <text class="small" x="16" y="54">Selected calibration</text>
+        <text class="small" x="16" y="74">cases for review</text>
+      </g>
+    </g>
+
+    <!-- Main content -->
+    <g transform="translate(294 30)">
+      <!-- Header -->
+      <text class="title" x="0" y="48">Disagreement Case Library</text>
+      <text class="subtitle" x="2" y="82">Search, filter and prepare selected disagreement cases for review and calibration</text>
+      <text class="small" x="2" y="106">Only outcome-linked cases selected through Learning Value Check enter this library.</text>
+
+      <g transform="translate(1030 8)">
+        <rect class="panel-blue" x="0" y="0" width="122" height="64"/>
+        <text class="metric-label" x="18" y="24">TOTAL CASES</text>
+        <text class="metric" x="18" y="48">128</text>
+
+        <rect class="panel-accent" x="142" y="0" width="132" height="64"/>
+        <text class="metric-label" x="160" y="24">PENDING REVIEW</text>
+        <text class="metric" x="160" y="48">12</text>
+
+        <rect class="panel-blue" x="294" y="0" width="150" height="64"/>
+        <text class="metric-label" x="312" y="24">LAST UPDATED</text>
+        <text class="metric" x="312" y="48">Today</text>
+      </g>
+
+      <!-- Search and filter bar -->
+      <g transform="translate(0 126)">
+        <rect class="panel" x="0" y="0" width="1450" height="104"/>
+        <rect class="input" x="22" y="22" width="412" height="44"/>
+        <text class="small" x="42" y="50">Search by case ID, pattern or tag...</text>
+
+        <rect class="filter" x="456" y="22" width="138" height="44"/>
+        <text class="small-strong" x="478" y="50">Disagreement type</text>
+        <rect class="filter" x="606" y="22" width="118" height="44"/>
+        <text class="small-strong" x="628" y="50">AI confidence</text>
+        <rect class="filter" x="736" y="22" width="152" height="44"/>
+        <text class="small-strong" x="758" y="50">Final recall decision</text>
+        <rect class="filter" x="900" y="22" width="116" height="44"/>
+        <text class="small-strong" x="922" y="50">Learning tag</text>
+        <rect class="filter" x="1028" y="22" width="118" height="44"/>
+        <text class="small-strong" x="1050" y="50">Review status</text>
+        <rect class="filter" x="1158" y="22" width="104" height="44"/>
+        <text class="small-strong" x="1180" y="50">Date range</text>
+
+        <rect class="button" x="1284" y="22" width="144" height="44"/>
+        <text class="button-text" x="1356" y="50" text-anchor="middle">Create workshop set</text>
+      </g>
+
+      <!-- Case grid -->
+      <g transform="translate(0 260)">
+        <!-- Card 1 selected -->
+        <g transform="translate(0 0)">
+          <rect class="card-selected" x="0" y="0" width="312" height="238"/>
+          <text class="label" x="18" y="28">CASE ID</text>
+          <text class="card-title" x="18" y="54">SC-2048</text>
+          <text class="small-strong" x="18" y="82">Disagreement pattern:</text>
+          <text class="small" x="162" y="82">Human no recall / AI recall</text>
+          <text class="small-strong" x="18" y="110">Why selected:</text>
+          <text class="small" x="112" y="110">Decision changed after prior</text>
+          <text class="small" x="112" y="130">image comparison.</text>
+          <text class="small-strong" x="18" y="154">Final recall decision:</text>
+          <text class="small" x="158" y="154">Recall</text>
+          <rect class="tag-accent" x="18" y="178" width="86" height="26"/>
+          <text class="tag-text-orange" x="61" y="196" text-anchor="middle">subtle lesion</text>
+          <rect class="tag" x="112" y="178" width="108" height="26"/>
+          <text class="tag-text" x="166" y="196" text-anchor="middle">prior comparison</text>
+          <text class="small-strong" x="18" y="224">Use:</text>
+          <text class="small" x="50" y="224">Workshop set</text>
+          <text class="small-strong" x="176" y="224">Status:</text>
+          <text class="small" x="226" y="224">Ready</text>
+        </g>
+
+        <!-- Card 2 -->
+        <g transform="translate(332 0)">
+          <rect class="card" x="0" y="0" width="312" height="238"/>
+          <text class="label" x="18" y="28">CASE ID</text>
+          <text class="card-title" x="18" y="54">SC-2091</text>
+          <text class="small-strong" x="18" y="82">Disagreement pattern:</text>
+          <text class="small" x="162" y="82">Human recall / AI low risk</text>
+          <text class="small-strong" x="18" y="110">Why selected:</text>
+          <text class="small" x="112" y="110">Threshold tension useful for</text>
+          <text class="small" x="112" y="130">audit review.</text>
+          <text class="small-strong" x="18" y="154">Final recall decision:</text>
+          <text class="small" x="158" y="154">Further review</text>
+          <rect class="tag" x="18" y="178" width="132" height="26"/>
+          <text class="tag-text" x="84" y="196" text-anchor="middle">threshold disagreement</text>
+          <rect class="tag" x="158" y="178" width="86" height="26"/>
+          <text class="tag-text" x="201" y="196" text-anchor="middle">dense tissue</text>
+          <text class="small-strong" x="18" y="224">Use:</text>
+          <text class="small" x="50" y="224">Audit review</text>
+          <text class="small-strong" x="176" y="224">Status:</text>
+          <text class="small" x="226" y="224">Queued</text>
+        </g>
+
+        <!-- Card 3 -->
+        <g transform="translate(664 0)">
+          <rect class="card" x="0" y="0" width="312" height="238"/>
+          <text class="label" x="18" y="28">CASE ID</text>
+          <text class="card-title" x="18" y="54">SC-2130</text>
+          <text class="small-strong" x="18" y="82">Disagreement pattern:</text>
+          <text class="small" x="162" y="82">AI high confidence / uncertain</text>
+          <text class="small-strong" x="18" y="110">Why selected:</text>
+          <text class="small" x="112" y="110">Useful confidence gap for</text>
+          <text class="small" x="112" y="130">trainee calibration.</text>
+          <text class="small-strong" x="18" y="154">Final recall decision:</text>
+          <text class="small" x="158" y="154">Recall</text>
+          <rect class="tag-accent" x="18" y="178" width="100" height="26"/>
+          <text class="tag-text-orange" x="68" y="196" text-anchor="middle">confidence gap</text>
+          <rect class="tag" x="126" y="178" width="112" height="26"/>
+          <text class="tag-text" x="182" y="196" text-anchor="middle">ambiguous region</text>
+          <text class="small-strong" x="18" y="224">Use:</text>
+          <text class="small" x="50" y="224">Trainee calibration</text>
+          <text class="small-strong" x="194" y="224">Status:</text>
+          <text class="small" x="244" y="224">Reviewed</text>
+        </g>
+
+        <!-- Card 4 -->
+        <g transform="translate(0 258)">
+          <rect class="card" x="0" y="0" width="312" height="238"/>
+          <text class="label" x="18" y="28">CASE ID</text>
+          <text class="card-title" x="18" y="54">SC-2176</text>
+          <text class="small-strong" x="18" y="82">Disagreement pattern:</text>
+          <text class="small" x="162" y="82">Human no recall / AI subtle</text>
+          <text class="small-strong" x="18" y="110">Why selected:</text>
+          <text class="small" x="112" y="110">Good contrast case for</text>
+          <text class="small" x="112" y="130">false-positive concern.</text>
+          <text class="small-strong" x="18" y="154">Final recall decision:</text>
+          <text class="small" x="158" y="154">No recall</text>
+          <rect class="tag" x="18" y="178" width="122" height="26"/>
+          <text class="tag-text" x="79" y="196" text-anchor="middle">false positive concern</text>
+          <rect class="tag" x="148" y="178" width="90" height="26"/>
+          <text class="tag-text" x="193" y="196" text-anchor="middle">image quality</text>
+          <text class="small-strong" x="18" y="224">Use:</text>
+          <text class="small" x="50" y="224">Pattern monitoring</text>
+          <text class="small-strong" x="190" y="224">Status:</text>
+          <text class="small" x="240" y="224">Reviewed</text>
+        </g>
+
+        <!-- Card 5 -->
+        <g transform="translate(332 258)">
+          <rect class="card" x="0" y="0" width="312" height="238"/>
+          <text class="label" x="18" y="28">CASE ID</text>
+          <text class="card-title" x="18" y="54">SC-2214</text>
+          <text class="small-strong" x="18" y="82">Disagreement pattern:</text>
+          <text class="small" x="162" y="82">Human recall / AI no concern</text>
+          <text class="small-strong" x="18" y="110">Why selected:</text>
+          <text class="small" x="112" y="110">Useful governance question</text>
+          <text class="small" x="112" y="130">for model monitoring.</text>
+          <text class="small-strong" x="18" y="154">Final recall decision:</text>
+          <text class="small" x="158" y="154">Recall</text>
+          <rect class="tag-accent" x="18" y="178" width="62" height="26"/>
+          <text class="tag-text-orange" x="49" y="196" text-anchor="middle">AI miss</text>
+          <rect class="tag" x="88" y="178" width="92" height="26"/>
+          <text class="tag-text" x="134" y="196" text-anchor="middle">detection gap</text>
+          <text class="small-strong" x="18" y="224">Use:</text>
+          <text class="small" x="50" y="224">AI governance</text>
+          <text class="small-strong" x="176" y="224">Status:</text>
+          <text class="small" x="226" y="224">Flagged</text>
+        </g>
+
+        <!-- Card 6 -->
+        <g transform="translate(664 258)">
+          <rect class="card" x="0" y="0" width="312" height="238"/>
+          <text class="label" x="18" y="28">CASE ID</text>
+          <text class="card-title" x="18" y="54">SC-2259</text>
+          <text class="small-strong" x="18" y="82">Disagreement pattern:</text>
+          <text class="small" x="162" y="82">Prior comparison changed case</text>
+          <text class="small-strong" x="18" y="110">Why selected:</text>
+          <text class="small" x="112" y="110">Clear case prompt for</text>
+          <text class="small" x="112" y="130">prior-comparison practice.</text>
+          <text class="small-strong" x="18" y="154">Final recall decision:</text>
+          <text class="small" x="158" y="154">Recall</text>
+          <rect class="tag" x="18" y="178" width="140" height="26"/>
+          <text class="tag-text" x="88" y="196" text-anchor="middle">prior image comparison</text>
+          <rect class="tag-accent" x="166" y="178" width="96" height="26"/>
+          <text class="tag-text-orange" x="214" y="196" text-anchor="middle">subtle change</text>
+          <text class="small-strong" x="18" y="224">Use:</text>
+          <text class="small" x="50" y="224">Case prompt</text>
+          <text class="small-strong" x="176" y="224">Status:</text>
+          <text class="small" x="226" y="224">In set</text>
+        </g>
+      </g>
+
+      <!-- Detail preview panel -->
+      <g transform="translate(1002 260)">
+        <rect class="panel" x="0" y="0" width="448" height="496"/>
+        <text class="kicker" x="24" y="34">SELECTED CALIBRATION CASE</text>
+        <text class="card-title" x="24" y="66">Case ID: SC-2048</text>
+        <line class="divider" x1="24" y1="88" x2="424" y2="88"/>
+
+        <text class="label" x="24" y="118">SOURCE</text>
+        <text class="body-strong" x="24" y="144">Non-blame Decision Receipt</text>
+
+        <text class="label" x="24" y="178">OUTCOME STATUS</text>
+        <text class="body-strong" x="24" y="204">Follow-up confirmed</text>
+
+        <text class="label" x="24" y="238">LEARNING VALUE</text>
+        <text class="body-strong" x="24" y="264">Selected after outcome-linked review</text>
+
+        <text class="label" x="24" y="298">WHY SELECTED</text>
+        <text class="body" x="24" y="324">Final decision changed after prior image</text>
+        <text class="body" x="24" y="346">comparison.</text>
+
+        <text class="label" x="24" y="380">DISAGREEMENT PATTERN</text>
+        <text class="body-strong" x="24" y="406">Human no recall / AI recall concern</text>
+
+        <text class="label" x="24" y="438">LEARNING FOCUS</text>
+        <text class="body" x="150" y="438">Subtle lesion clarified after follow-up.</text>
+
+        <text class="label" x="24" y="462">LEARNING TAGS</text>
+        <rect class="tag-accent" x="24" y="474" width="94" height="26"/>
+        <text class="tag-text-orange" x="71" y="492" text-anchor="middle">Subtle lesion</text>
+        <rect class="tag" x="128" y="474" width="144" height="26"/>
+        <text class="tag-text" x="200" y="492" text-anchor="middle">Prior image comparison</text>
+        <rect class="tag" x="282" y="474" width="94" height="26"/>
+        <text class="tag-text" x="329" y="492" text-anchor="middle">Detection gap</text>
+      </g>
+
+      <g transform="translate(1002 776)">
+        <rect class="panel-accent" x="0" y="0" width="448" height="134"/>
+        <text class="label" x="24" y="30">SUGGESTED NEXT ACTION</text>
+        <text class="body-strong" x="24" y="58">Add to Disagreement Review Workshop</text>
+        <rect class="button-light" x="24" y="80" width="132" height="38"/>
+        <text class="button-text-dark-tight" x="90" y="104" text-anchor="middle">Open calibration case</text>
+        <rect class="button" x="164" y="80" width="132" height="38"/>
+        <text class="button-text-tight" x="230" y="104" text-anchor="middle">Add to workshop set</text>
+        <rect class="button-outline" x="304" y="80" width="128" height="38"/>
+        <text class="button-text-dark-tight" x="368" y="104" text-anchor="middle">View source receipt</text>
+      </g>
+
+      <!-- Footer note -->
+      <g transform="translate(0 918)">
+        <rect class="panel-blue" x="0" y="0" width="1450" height="44"/>
+        <text class="footer" x="725" y="28" text-anchor="middle">Cases enter this library only after outcome-linked Learning Value Check. The library helps teams prepare review workshops, calibration sessions, audit reviews and AI governance questions.</text>
+      </g>
+    </g>
+  </g>
+</svg>

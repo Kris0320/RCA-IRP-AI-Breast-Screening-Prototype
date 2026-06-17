@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f5f8f8; }
+      .panel { fill: #ffffff; stroke: #c8d5dd; stroke-width: 2; }
+      .panel-soft { fill: #edf2f4; stroke: #c8d5dd; stroke-width: 2; }
+      .viewer { fill: #111923; }
+      .viewer-soft { fill: #3f4b54; opacity: 0.35; }
+      .navy { fill: #111d2b; }
+      .muted { fill: #647789; }
+      .blue-fill { fill: #d9eafa; stroke: #6f92ad; stroke-width: 1.5; }
+      .green-fill { fill: #dff3ea; stroke: #3a8d75; stroke-width: 1.5; }
+      .orange-fill { fill: #ffe7d0; stroke: #ef7d32; stroke-width: 1.5; }
+      .orange-text { fill: #d95f18; }
+      .green-text { fill: #2f7a64; }
+      .blue-text { fill: #426f94; }
+      .line { stroke: #c8d5dd; stroke-width: 2; fill: none; }
+      .thin { stroke: #d7e0e6; stroke-width: 1.5; fill: none; }
+      .title { font: 700 42px Inter, Arial, sans-serif; }
+      .subtitle { font: 400 22px Inter, Arial, sans-serif; }
+      .h2 { font: 700 28px Inter, Arial, sans-serif; }
+      .h3 { font: 700 20px Inter, Arial, sans-serif; }
+      .body { font: 400 17px Inter, Arial, sans-serif; }
+      .body-med { font: 600 17px Inter, Arial, sans-serif; }
+      .small { font: 500 14px Inter, Arial, sans-serif; }
+      .tiny { font: 500 12px Inter, Arial, sans-serif; }
+      .button { font: 700 16px Inter, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1920" height="1080"/>
+
+  <text class="title navy" x="72" y="78">Frame 8 — Reason Confirmation Micro-interaction</text>
+  <text class="subtitle muted" x="72" y="118">Repositioning the earlier “Learning Tag” idea as low-burden reasoning capture after consensus / arbitration review</text>
+
+  <!-- Background workspace -->
+  <rect class="panel-soft" x="82" y="178" width="1756" height="742" rx="28"/>
+  <text class="small muted" x="122" y="216">Low-fidelity mammogram review workspace · existing system context</text>
+
+  <!-- Side toolbar -->
+  <rect x="116" y="250" width="72" height="600" rx="18" fill="#ffffff" stroke="#c8d5dd" stroke-width="2"/>
+  <circle cx="152" cy="296" r="14" fill="#d9eafa" stroke="#6f92ad" stroke-width="1.5"/>
+  <circle cx="152" cy="354" r="14" fill="#edf2f4" stroke="#c8d5dd" stroke-width="1.5"/>
+  <circle cx="152" cy="412" r="14" fill="#edf2f4" stroke="#c8d5dd" stroke-width="1.5"/>
+  <circle cx="152" cy="470" r="14" fill="#edf2f4" stroke="#c8d5dd" stroke-width="1.5"/>
+  <rect x="137" y="730" width="30" height="68" rx="9" fill="#edf2f4" stroke="#c8d5dd" stroke-width="1.5"/>
+
+  <!-- Dark image viewer -->
+  <rect class="viewer" x="220" y="250" width="820" height="600" rx="20"/>
+  <text class="small" x="250" y="286" fill="#aebbc5">Current mammogram</text>
+  <ellipse class="viewer-soft" cx="520" cy="470" rx="240" ry="92"/>
+  <ellipse class="viewer-soft" cx="635" cy="450" rx="230" ry="68"/>
+  <ellipse class="viewer-soft" cx="715" cy="510" rx="280" ry="76"/>
+  <ellipse class="viewer-soft" cx="440" cy="555" rx="155" ry="52"/>
+  <rect x="655" y="418" width="176" height="128" rx="50" fill="#ffe7d0" stroke="#ef7d32" stroke-width="4"/>
+  <rect x="462" y="376" width="132" height="112" rx="44" fill="#d9eafa" stroke="#6f92ad" stroke-width="3"/>
+  <line x1="220" y1="560" x2="1040" y2="560" stroke="#2f3a44" stroke-width="2"/>
+  <line x1="615" y1="250" x2="615" y2="850" stroke="#2f3a44" stroke-width="2"/>
+
+  <!-- AI evidence panel -->
+  <rect class="panel" x="1080" y="250" width="310" height="320" rx="20"/>
+  <text class="h3 navy" x="1110" y="292">AI evidence / findings</text>
+  <rect class="orange-fill" x="1110" y="324" width="236" height="38" rx="19"/>
+  <text class="small orange-text" x="1128" y="349">High risk signal</text>
+  <text class="body muted" x="1110" y="394">Suspicious region detected</text>
+  <text class="body muted" x="1110" y="428">Prior image available</text>
+  <text class="body muted" x="1110" y="462">Human mark present</text>
+  <line class="thin" x1="1110" y1="492" x2="1360" y2="492"/>
+  <text class="small muted" x="1110" y="526">System support layer only</text>
+
+  <!-- Final decision area -->
+  <rect class="panel" x="1080" y="604" width="310" height="246" rx="20"/>
+  <text class="h3 navy" x="1110" y="646">Final decision area</text>
+  <rect x="1110" y="674" width="96" height="42" rx="21" fill="#ffe7d0" stroke="#ef7d32" stroke-width="1.5"/>
+  <text class="button navy" x="1133" y="701">Recall</text>
+  <rect x="1220" y="674" width="112" height="42" rx="21" fill="#ffffff" stroke="#c8d5dd" stroke-width="1.5"/>
+  <text class="button navy" x="1241" y="701">No recall</text>
+  <rect class="green-fill" x="1110" y="748" width="242" height="48" rx="24"/>
+  <text class="small green-text" x="1130" y="778">Final decision ready to save</text>
+
+  <!-- Status label -->
+  <rect class="green-fill" x="1418" y="250" width="292" height="44" rx="22"/>
+  <text class="small green-text" x="1440" y="278">Final decision ready to save</text>
+
+  <!-- Modal dialog -->
+  <rect x="548" y="210" width="804" height="650" rx="30" fill="#ffffff" stroke="#6f92ad" stroke-width="3"/>
+  <rect x="548" y="210" width="804" height="82" rx="30" fill="#f7fbff"/>
+  <text class="h2 navy" x="596" y="264">Confirm Suggested Reason</text>
+  <text class="body muted" x="596" y="322">The system suggests a reason based on AI evidence, prior images and review context.</text>
+  <text class="body muted" x="596" y="349">Confirm or edit before the decision record is saved.</text>
+
+  <!-- Visual coding labels -->
+  <rect class="green-fill" x="596" y="384" width="334" height="38" rx="19"/>
+  <text class="small green-text" x="614" y="409">System support — suggests reason from case context</text>
+  <rect class="blue-fill" x="948" y="384" width="328" height="38" rx="19"/>
+  <text class="small blue-text" x="966" y="409">Reviewer action — confirm or edit reason</text>
+
+  <!-- Reason options -->
+  <g>
+    <circle cx="620" cy="472" r="12" fill="#ffffff" stroke="#647789" stroke-width="2"/>
+    <text class="body-med navy" x="650" y="478">Stable in prior images</text>
+
+    <circle cx="620" cy="522" r="12" fill="#ffffff" stroke="#647789" stroke-width="2"/>
+    <text class="body-med navy" x="650" y="528">AI high risk but no visible change</text>
+
+    <circle cx="620" cy="572" r="12" fill="#ffffff" stroke="#647789" stroke-width="2"/>
+    <text class="body-med navy" x="650" y="578">Subtle change needs further review</text>
+
+    <circle cx="620" cy="622" r="12" fill="#ffffff" stroke="#647789" stroke-width="2"/>
+    <text class="body-med navy" x="650" y="628">Dense tissue limits visibility</text>
+
+    <circle cx="620" cy="672" r="12" fill="#ffffff" stroke="#647789" stroke-width="2"/>
+    <text class="body-med navy" x="650" y="678">Low confidence — sent for peer review</text>
+
+    <circle cx="620" cy="722" r="12" fill="#ffffff" stroke="#647789" stroke-width="2"/>
+    <text class="body-med navy" x="650" y="728">Outcome pending — review later</text>
+  </g>
+
+  <!-- Output label -->
+  <rect class="orange-fill" x="938" y="656" width="318" height="50" rx="25"/>
+  <text class="small orange-text" x="958" y="686">Output — rationale saved to non-blame decision record</text>
+
+  <!-- Buttons -->
+  <rect x="902" y="768" width="120" height="48" rx="24" fill="#ffffff" stroke="#c8d5dd" stroke-width="2"/>
+  <text class="button muted" x="936" y="799">Cancel</text>
+  <rect x="1042" y="768" width="248" height="48" rx="24" fill="#111d2b"/>
+  <text class="button" x="1076" y="799" fill="#ffffff">Save to decision record</text>
+
+  <!-- Bottom note -->
+  <rect x="430" y="944" width="1060" height="58" rx="29" fill="#ffffff" stroke="#c8d5dd" stroke-width="2"/>
+  <text class="body-med navy" x="488" y="980">Learning value is checked later, after follow-up outcome is available.</text>
+  <text class="small muted" x="1034" y="980">This is reasoning capture, not an immediate learning task.</text>
+</svg>
+

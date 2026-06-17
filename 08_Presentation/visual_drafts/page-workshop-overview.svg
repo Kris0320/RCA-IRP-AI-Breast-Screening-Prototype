@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 58px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 25px; fill: #536174; }
+      .kicker { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #5d6d7e; font-weight: 700; letter-spacing: 0.06em; }
+      .group-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 24px; fill: #172033; font-weight: 700; }
+      .item { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #2d3948; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #536174; }
+      .centre-title { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 31px; fill: #172033; font-weight: 700; }
+      .centre-meta { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #536174; font-weight: 600; }
+      .sentence { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #2d3948; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 18; }
+      .panel-blue { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.4; rx: 16; }
+      .panel-orange { fill: #fff4ee; stroke: #e7b69d; stroke-width: 1.4; rx: 16; }
+      .table { fill: #ffffff; stroke: #b9c8d8; stroke-width: 2; }
+      .table-ring { fill: none; stroke: #d9e0e8; stroke-width: 18; opacity: 0.95; }
+      .chair { fill: #dbe8f4; stroke: #8ea5bb; stroke-width: 1.2; }
+      .chair-orange { fill: #d9653b; stroke: #ffffff; stroke-width: 3; }
+      .dot { fill: #d9653b; }
+      .line { stroke: #9aaabd; stroke-width: 2.1; fill: none; }
+      .line-orange { stroke: #d9653b; stroke-width: 2.2; fill: none; }
+      .chip { fill: #eef4fa; stroke: #c9d6e2; stroke-width: 1.2; rx: 18; }
+      .chip-orange { fill: #d9653b; stroke: #d9653b; stroke-width: 1.2; rx: 18; }
+      .chip-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #273244; font-weight: 700; }
+      .chip-text-white { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #ffffff; font-weight: 700; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9653b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="kicker" x="96" y="68">SERVICE RITUAL PROTOTYPE</text>
+  <text class="title" x="96" y="130">Disagreement Review Workshop</text>
+  <text class="subtitle" x="98" y="172">A non-blame calibration session fed by real arbitration cases</text>
+
+  <!-- Central workshop table -->
+  <g transform="translate(690 306)">
+    <circle class="table-ring" cx="270" cy="270" r="238"/>
+    <circle class="chair" cx="270" cy="28" r="24"/>
+    <circle class="chair" cx="441" cy="99" r="24"/>
+    <circle class="chair-orange" cx="512" cy="270" r="25"/>
+    <circle class="chair" cx="441" cy="441" r="24"/>
+    <circle class="chair" cx="270" cy="512" r="24"/>
+    <circle class="chair" cx="99" cy="441" r="24"/>
+    <circle class="chair" cx="28" cy="270" r="24"/>
+    <circle class="chair" cx="99" cy="99" r="24"/>
+
+    <ellipse class="table" cx="270" cy="270" rx="210" ry="148"/>
+    <text class="kicker" x="270" y="218" text-anchor="middle">CENTRE OF SESSION</text>
+    <text class="centre-title" x="270" y="264" text-anchor="middle">Non-blame case review</text>
+    <text class="centre-meta" x="270" y="303" text-anchor="middle">4-8 people · 30-45 minutes</text>
+    <text class="centre-meta" x="270" y="332" text-anchor="middle">monthly or bi-weekly</text>
+
+    <rect class="chip-orange" x="168" y="360" width="204" height="34"/>
+    <text class="chip-text-white" x="270" y="382" text-anchor="middle">learning trigger</text>
+  </g>
+
+  <!-- Participants -->
+  <g transform="translate(96 276)">
+    <rect class="panel" x="0" y="0" width="520" height="304"/>
+    <rect class="chip" x="28" y="28" width="132" height="34"/>
+    <text class="chip-text" x="94" y="50" text-anchor="middle">WHO JOINS</text>
+    <text class="group-title" x="28" y="96">Participants</text>
+    <circle class="dot" cx="36" cy="132" r="4"/><text class="item" x="54" y="138">Human reader / radiologist</text>
+    <circle class="dot" cx="36" cy="169" r="4"/><text class="item" x="54" y="175">Senior radiologist / arbitrator</text>
+    <circle class="dot" cx="36" cy="206" r="4"/><text class="item" x="54" y="212">Trainee / junior reader</text>
+    <circle class="dot" cx="36" cy="243" r="4"/><text class="item" x="54" y="249">Clinical governance / audit lead</text>
+    <circle class="dot" cx="36" cy="280" r="4"/><text class="item" x="54" y="286">AI implementation lead, optional</text>
+  </g>
+
+  <!-- Inputs -->
+  <g transform="translate(1304 276)">
+    <rect class="panel-orange" x="0" y="0" width="520" height="238"/>
+    <rect class="chip-orange" x="28" y="28" width="118" height="34"/>
+    <text class="chip-text-white" x="87" y="50" text-anchor="middle">FED BY</text>
+    <text class="group-title" x="28" y="96">Inputs</text>
+    <circle class="dot" cx="36" cy="132" r="4"/><text class="item" x="54" y="138">Non-blame Decision Receipt</text>
+    <circle class="dot" cx="36" cy="169" r="4"/><text class="item" x="54" y="175">Learning Memory Card</text>
+    <circle class="dot" cx="36" cy="206" r="4"/><text class="item" x="54" y="212">Selected disagreement cases</text>
+  </g>
+
+  <!-- Workshop artefacts -->
+  <g transform="translate(96 656)">
+    <rect class="panel-blue" x="0" y="0" width="520" height="304"/>
+    <rect class="chip" x="28" y="28" width="158" height="34"/>
+    <text class="chip-text" x="107" y="50" text-anchor="middle">MATERIALS USED</text>
+    <text class="group-title" x="28" y="96">Workshop artefacts</text>
+    <circle class="dot" cx="36" cy="132" r="4"/><text class="item" x="54" y="138">Case Snapshot</text>
+    <circle class="dot" cx="36" cy="169" r="4"/><text class="item" x="54" y="175">Silent Judgement Tokens</text>
+    <circle class="dot" cx="36" cy="206" r="4"/><text class="item" x="54" y="212">Evidence Strip</text>
+    <circle class="dot" cx="36" cy="243" r="4"/><text class="item" x="54" y="249">Pattern Tag Board</text>
+    <circle class="dot" cx="36" cy="280" r="4"/><text class="item" x="54" y="286">Action Capture Sheet</text>
+  </g>
+
+  <!-- Outputs -->
+  <g transform="translate(1304 656)">
+    <rect class="panel-blue" x="0" y="0" width="520" height="268"/>
+    <rect class="chip" x="28" y="28" width="132" height="34"/>
+    <text class="chip-text" x="94" y="50" text-anchor="middle">LEADS TO</text>
+    <text class="group-title" x="28" y="96">Outputs</text>
+    <circle class="dot" cx="36" cy="132" r="4"/><text class="item" x="54" y="138">Learning tags</text>
+    <circle class="dot" cx="36" cy="169" r="4"/><text class="item" x="54" y="175">Calibration material</text>
+    <circle class="dot" cx="36" cy="206" r="4"/><text class="item" x="54" y="212">Protocol updates</text>
+    <circle class="dot" cx="36" cy="243" r="4"/><text class="item" x="54" y="249">Governance questions</text>
+  </g>
+
+  <!-- Arrows to centre -->
+  <path class="line" marker-end="url(#arrow)" d="M616 428 C660 428 671 462 708 486"/>
+  <path class="line-orange" marker-end="url(#arrowOrange)" d="M1304 394 C1252 404 1228 438 1197 483"/>
+  <path class="line" marker-end="url(#arrow)" d="M616 778 C663 748 675 710 714 670"/>
+  <path class="line" marker-end="url(#arrow)" d="M1304 768 C1260 744 1232 704 1198 669"/>
+
+  <g transform="translate(410 960)">
+    <rect class="panel" x="0" y="0" width="1100" height="78"/>
+    <text class="sentence" x="550" y="32" text-anchor="middle">
+      <tspan x="550" dy="0">Not a training lecture. A recurring review ritual that helps teams learn</tspan>
+      <tspan x="550" dy="28">from difficult AI-human disagreement cases.</tspan>
+    </text>
+  </g>
+</svg>

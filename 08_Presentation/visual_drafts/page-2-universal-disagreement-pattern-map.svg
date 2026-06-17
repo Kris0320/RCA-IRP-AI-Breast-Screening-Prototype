@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font-family: "Newsreader", "Times New Roman", serif; font-size: 54px; font-weight: 600; fill: #172033; }
+      .subtitle { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 24px; fill: #536174; }
+      .label { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 19px; fill: #273244; font-weight: 600; }
+      .small { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 15px; fill: #536174; }
+      .tiny { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #5f6d7d; }
+      .pattern { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 20px; fill: #172033; font-weight: 600; }
+      .body { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 16px; fill: #445367; }
+      .note { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 18px; fill: #5b6572; }
+      .node { fill: #ffffff; stroke: #b8c3cf; stroke-width: 1.5; rx: 12; }
+      .node-soft { fill: #eef4fa; stroke: #b8c3cf; stroke-width: 1.5; rx: 12; }
+      .line { stroke: #9aaabd; stroke-width: 2; fill: none; }
+      .dash { stroke: #9aaabd; stroke-width: 1.6; stroke-dasharray: 6 8; fill: none; }
+      .span { stroke: #8ea5bb; stroke-width: 5; stroke-linecap: round; fill: none; opacity: 0.22; }
+      .span-tick { stroke: #8ea5bb; stroke-width: 2; stroke-linecap: round; fill: none; opacity: 0.22; }
+      .card-accent { stroke: #8ea5bb; stroke-width: 3; stroke-linecap: round; fill: none; opacity: 0.42; }
+      .marker { fill: #d9653b; stroke: #ffffff; stroke-width: 4; }
+      .marker-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 22px; fill: #ffffff; font-weight: 700; }
+      .triangle { fill: #d9653b; stroke: #ffffff; stroke-width: 4; }
+      .triangle-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 14px; fill: #ffffff; font-weight: 700; }
+      .stage-badge { fill: #dbe8f4; stroke: #8ea5bb; stroke-width: 1.2; }
+      .stage-text { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #273244; font-weight: 700; }
+      .panel { fill: #ffffff; stroke: #d9e0e8; stroke-width: 1.5; rx: 10; }
+      .flow { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #273244; }
+      .flow-arrow { font-family: "IBM Plex Sans", Arial, sans-serif; font-size: 13px; fill: #8ea0b3; }
+      .orange { fill: #d9653b; font-weight: 700; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aaabd"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1920" height="1080"/>
+
+  <text class="title" x="96" y="94">Universal Disagreement Pattern Map</text>
+  <text class="subtitle" x="98" y="134">How different AI placement models shift the point of disagreement and the handling mechanism required</text>
+
+  <text class="label" x="96" y="206">Shared screening backbone</text>
+
+  <g transform="translate(96 232)">
+    <rect class="node" x="0" y="0" width="210" height="68"/>
+    <text class="small" x="105" y="29" text-anchor="middle">Image</text>
+    <text class="small" x="105" y="49" text-anchor="middle">acquired</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M210 34 H260"/>
+    <rect class="node" x="260" y="0" width="210" height="68"/>
+    <text class="small" x="365" y="29" text-anchor="middle">Case routed</text>
+    <text class="small" x="365" y="49" text-anchor="middle">to reading</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M470 34 H520"/>
+    <rect class="node-soft" x="520" y="0" width="210" height="68"/>
+    <text class="small" x="625" y="29" text-anchor="middle">Human</text>
+    <text class="small" x="625" y="49" text-anchor="middle">interpretation</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M730 34 H780"/>
+    <rect class="node-soft" x="780" y="0" width="210" height="68"/>
+    <text class="small" x="885" y="29" text-anchor="middle">AI output /</text>
+    <text class="small" x="885" y="49" text-anchor="middle">risk signal</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M990 34 H1040"/>
+    <rect class="node" x="1040" y="0" width="210" height="68"/>
+    <text class="small" x="1145" y="29" text-anchor="middle">Mismatch</text>
+    <text class="small" x="1145" y="49" text-anchor="middle">detection</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M1250 34 H1300"/>
+    <rect class="node" x="1300" y="0" width="170" height="68"/>
+    <text class="small" x="1385" y="23" text-anchor="middle">Arbitration /</text>
+    <text class="small" x="1385" y="43" text-anchor="middle">final</text>
+    <text class="small" x="1385" y="63" text-anchor="middle">decision</text>
+
+    <path class="line" marker-end="url(#arrow)" d="M1470 34 H1520"/>
+    <rect class="node" x="1520" y="0" width="190" height="68"/>
+    <text class="small" x="1615" y="29" text-anchor="middle">Outcome review /</text>
+    <text class="small" x="1615" y="49" text-anchor="middle">learning</text>
+  </g>
+
+  <g>
+    <path class="span" d="M96 318 H566"/>
+    <path class="span-tick" d="M96 311 V325 M566 311 V325"/>
+    <polygon class="triangle" points="336,296 356,332 316,332"/>
+    <text class="triangle-text" x="336" y="324" text-anchor="middle">4</text>
+
+    <path class="span" d="M356 338 H700"/>
+    <path class="span-tick" d="M356 331 V345 M700 331 V345"/>
+    <polygon class="triangle" points="618,318 638,354 598,354"/>
+    <text class="triangle-text" x="618" y="346" text-anchor="middle">1</text>
+
+    <path class="span" d="M616 358 H1218"/>
+    <path class="span-tick" d="M616 351 V365 M1218 351 V365"/>
+    <polygon class="triangle" points="1241,340 1261,376 1221,376"/>
+    <text class="triangle-text" x="1241" y="368" text-anchor="middle">2</text>
+
+    <path class="span" d="M1080 378 H1708"/>
+    <path class="span-tick" d="M1080 371 V385 M1708 371 V385"/>
+    <polygon class="triangle" points="1468,362 1488,398 1448,398"/>
+    <text class="triangle-text" x="1468" y="390" text-anchor="middle">3</text>
+  </g>
+
+  <line class="dash" x1="1390" y1="410" x2="1726" y2="410"/>
+  <text class="small" x="96" y="414">The backbone shows the analytical workflow; triangles mark where disagreement is triggered; cards explain the handling need.</text>
+
+  <g transform="translate(96 440)">
+    <rect class="panel" x="0" y="0" width="405" height="390"/>
+    <text class="pattern" x="28" y="42">1. AI before reading</text>
+    <path class="card-accent" d="M28 63 H390"/>
+    <circle class="stage-badge" cx="372" cy="34" r="15"/>
+    <text class="stage-text" x="372" y="39" text-anchor="middle">1</text>
+    <text class="body" x="28" y="86">Backbone position</text>
+    <text class="small" x="28" y="114">Just before human interpretation</text>
+    <text class="flow" x="28" y="166">AI output shown</text>
+    <text class="flow-arrow" x="145" y="166">→</text>
+    <text class="flow" x="166" y="166">Human interpretation</text>
+    <text class="flow-arrow" x="314" y="166">→</text>
+    <text class="flow" x="335" y="166">Decision</text>
+    <circle class="marker" cx="40" cy="224" r="18"/>
+    <text class="marker-text" x="40" y="232" text-anchor="middle">!</text>
+    <text class="body" x="70" y="230">Disagreement point</text>
+    <text class="small" x="28" y="264">AI-influenced human judgement</text>
+    <text class="body" x="28" y="322">Handling need</text>
+    <text class="small" x="28" y="352">Delay AI reveal / calibrate trust</text>
+  </g>
+
+  <g transform="translate(525 440)">
+    <rect class="panel" x="0" y="0" width="405" height="390"/>
+    <text class="pattern" x="28" y="42">2. AI as second reader</text>
+    <path class="card-accent" d="M28 63 H390"/>
+    <circle class="stage-badge" cx="372" cy="34" r="15"/>
+    <text class="stage-text" x="372" y="39" text-anchor="middle">2</text>
+    <text class="body" x="28" y="86">Backbone position</text>
+    <text class="small" x="28" y="114">At mismatch detection</text>
+    <text class="flow" x="28" y="154">Human independent reading + AI independent output</text>
+    <text class="flow-arrow" x="28" y="180">→</text>
+    <text class="flow" x="49" y="180">Mismatch detection</text>
+    <text class="flow-arrow" x="185" y="180">→</text>
+    <text class="flow" x="206" y="180">Arbitration</text>
+    <circle class="marker" cx="40" cy="224" r="18"/>
+    <text class="marker-text" x="40" y="232" text-anchor="middle">!</text>
+    <text class="body" x="70" y="230">Disagreement point</text>
+    <text class="small" x="28" y="264">Human-AI mismatch</text>
+    <text class="body" x="28" y="322">Handling need</text>
+    <text class="small" x="28" y="344">Classify disagreement / arbitration protocol /</text>
+    <text class="small" x="28" y="366">override reason</text>
+  </g>
+
+  <g transform="translate(954 440)">
+    <rect class="panel" x="0" y="0" width="405" height="390"/>
+    <text class="pattern" x="28" y="42">3. AI as safety net</text>
+    <path class="card-accent" d="M28 63 H390"/>
+    <circle class="stage-badge" cx="372" cy="34" r="15"/>
+    <text class="stage-text" x="372" y="39" text-anchor="middle">3</text>
+    <text class="body" x="28" y="86">Backbone position</text>
+    <text class="small" x="28" y="114">Before final closure</text>
+    <text class="flow" x="28" y="154">Human judgement completed</text>
+    <text class="flow-arrow" x="184" y="154">→</text>
+    <text class="flow" x="205" y="154">AI safety check</text>
+    <text class="flow-arrow" x="205" y="180">→</text>
+    <text class="flow" x="226" y="180">Second look / escalation</text>
+    <circle class="marker" cx="40" cy="224" r="18"/>
+    <text class="marker-text" x="40" y="232" text-anchor="middle">!</text>
+    <text class="body" x="70" y="230">Disagreement point</text>
+    <text class="small" x="28" y="264">AI flags possible missed case</text>
+    <text class="body" x="28" y="322">Handling need</text>
+    <text class="small" x="28" y="352">Second-look trigger / threshold / senior review</text>
+  </g>
+
+  <g transform="translate(1383 440)">
+    <rect class="panel" x="0" y="0" width="405" height="390"/>
+    <text class="pattern" x="28" y="42">4. AI as triage</text>
+    <path class="card-accent" d="M28 63 H390"/>
+    <circle class="stage-badge" cx="372" cy="34" r="15"/>
+    <text class="stage-text" x="372" y="39" text-anchor="middle">4</text>
+    <text class="body" x="28" y="86">Backbone position</text>
+    <text class="small" x="28" y="114">Just before case routing</text>
+    <text class="flow" x="28" y="166">AI triage</text>
+    <text class="flow-arrow" x="96" y="166">→</text>
+    <text class="flow" x="117" y="166">Risk route allocation</text>
+    <text class="flow-arrow" x="265" y="166">→</text>
+    <text class="flow" x="286" y="158">Human reading</text>
+    <text class="flow" x="286" y="176">pathway</text>
+    <circle class="marker" cx="40" cy="224" r="18"/>
+    <text class="marker-text" x="40" y="232" text-anchor="middle">!</text>
+    <text class="body" x="70" y="230">Disagreement point</text>
+    <text class="small" x="28" y="264">Routing or allocation boundary</text>
+    <text class="body" x="28" y="322">Handling need</text>
+    <text class="small" x="28" y="352">Triage governance / exceptions / sample audit</text>
+  </g>
+
+  <g transform="translate(96 884)">
+    <rect x="0" y="0" width="1720" height="76" rx="8" fill="#fff4ee" stroke="#e7b69d" stroke-width="1.4"/>
+    <text class="note" x="28" y="47">
+      <tspan class="orange">Boundary:</tspan>
+      <tspan> This is not a universal NHS workflow. It is an analytical pattern map for comparing how disagreement shifts across AI placement models.</tspan>
+    </text>
+  </g>
+</svg>
