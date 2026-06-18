@@ -4,10 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Breast Screening — Service Prototype</title>
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark');</script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* ── LIGHT MODE (default) ── */
     :root {
+      --bg:           #f4f6fa;
+      --surface:      #ffffff;
+      --surface2:     #edf0f7;
+      --surface3:     #e2e7f0;
+      --border:       rgba(30,50,90,0.1);
+      --border-light: rgba(30,50,90,0.2);
+      --text:         #384762;
+      --text-dim:     rgba(50,68,100,0.55);
+      --text-bright:  #0e1828;
+      --amber:        #c28810;
+      --amber-dim:    rgba(194,136,16,0.1);
+      --teal:         #1a7e70;
+      --green:        #2a7a32;
+      --nav-bg:       rgba(244,246,250,0.92);
+    }
+
+    /* ── DARK MODE ── */
+    html.dark {
       --bg:           #080c14;
       --surface:      #0e1420;
       --surface2:     #141c2a;
@@ -21,6 +41,7 @@
       --amber-dim:    rgba(232,184,75,0.15);
       --teal:         #3a9e8f;
       --green:        #5aaa5a;
+      --nav-bg:       rgba(8,12,20,0.88);
     }
 
     html { scroll-behavior: smooth; }
@@ -41,12 +62,13 @@
       top: 0;
       z-index: 100;
       height: 52px;
-      background: rgba(8,12,20,0.88);
+      background: var(--nav-bg);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
       padding: 0 32px;
+      gap: 8px;
     }
     .nav-brand {
       font-size: 13px;
@@ -69,18 +91,25 @@
     }
     .nav-link:hover { color: var(--text); background: var(--surface2); }
     .nav-link.active { color: var(--text-bright); }
-    .nav-cta {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--bg);
-      background: var(--amber);
-      text-decoration: none;
-      padding: 7px 16px;
-      border-radius: 6px;
-      white-space: nowrap;
-      transition: opacity 0.15s;
+
+    .theme-toggle {
+      width: 34px; height: 34px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      color: var(--text-dim);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: color 0.15s, border-color 0.15s, background 0.15s;
+      padding: 0;
+      flex-shrink: 0;
     }
-    .nav-cta:hover { opacity: 0.88; }
+    .theme-toggle:hover { color: var(--text); border-color: var(--border-light); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .icon-sun { display: none; }
+    .icon-moon { display: block; }
+    html.dark .icon-sun { display: block; }
+    html.dark .icon-moon { display: none; }
 
     /* ── HERO ── */
     .hero {
@@ -89,21 +118,26 @@
       text-align: center;
       overflow: hidden;
     }
-    /* ambient glow layers */
     .hero::before {
       content: '';
       position: absolute;
       top: -60px; left: 50%;
       transform: translateX(-50%);
       width: 900px; height: 500px;
-      background: radial-gradient(ellipse at 50% 30%, rgba(232,184,75,0.13) 0%, rgba(58,158,143,0.06) 40%, transparent 70%);
+      background: radial-gradient(ellipse at 50% 30%, rgba(194,136,16,0.1) 0%, rgba(26,126,112,0.04) 40%, transparent 70%);
       pointer-events: none;
+    }
+    html.dark .hero::before {
+      background: radial-gradient(ellipse at 50% 30%, rgba(232,184,75,0.13) 0%, rgba(58,158,143,0.06) 40%, transparent 70%);
     }
     .hero::after {
       content: '';
       position: absolute;
       bottom: 0; left: 0; right: 0;
       height: 1px;
+      background: linear-gradient(to right, transparent, rgba(194,136,16,0.22) 40%, rgba(26,126,112,0.15) 60%, transparent);
+    }
+    html.dark .hero::after {
       background: linear-gradient(to right, transparent, rgba(232,184,75,0.25) 40%, rgba(58,158,143,0.2) 60%, transparent);
     }
     .hero-eyebrow {
@@ -116,10 +150,14 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       margin-bottom: 24px;
-      background: rgba(232,184,75,0.08);
-      border: 1px solid rgba(232,184,75,0.2);
+      background: rgba(194,136,16,0.08);
+      border: 1px solid rgba(194,136,16,0.22);
       padding: 5px 14px;
       border-radius: 20px;
+    }
+    html.dark .hero-eyebrow {
+      background: rgba(232,184,75,0.08);
+      border-color: rgba(232,184,75,0.22);
     }
     .hero-eyebrow-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
     .hero-title {
@@ -133,51 +171,23 @@
     }
     .hero-title em {
       font-style: normal;
-      background: linear-gradient(90deg, var(--amber), #f0c97a);
+      background: linear-gradient(90deg, var(--amber), #d4a040);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    html.dark .hero-title em {
+      background: linear-gradient(90deg, var(--amber), #f0c97a);
+      -webkit-background-clip: text;
       background-clip: text;
     }
     .hero-sub {
       font-size: 16px;
       color: var(--text-dim);
       max-width: 520px;
-      margin: 0 auto 40px;
+      margin: 0 auto;
       line-height: 1.65;
     }
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .btn-hero-primary {
-      display: inline-block;
-      padding: 13px 28px;
-      background: var(--amber);
-      color: #0a0c10;
-      font-size: 14px;
-      font-weight: 700;
-      border-radius: 8px;
-      text-decoration: none;
-      letter-spacing: 0.01em;
-      transition: opacity 0.15s, transform 0.15s;
-    }
-    .btn-hero-primary:hover { opacity: 0.9; transform: translateY(-1px); }
-    .btn-hero-secondary {
-      display: inline-block;
-      padding: 13px 24px;
-      background: transparent;
-      color: var(--text);
-      font-size: 14px;
-      font-weight: 500;
-      border: 1px solid var(--border-light);
-      border-radius: 8px;
-      text-decoration: none;
-      transition: border-color 0.15s, background 0.15s;
-    }
-    .btn-hero-secondary:hover { border-color: rgba(255,255,255,0.25); background: var(--surface2); }
 
     /* ── STATS STRIP ── */
     .stats-strip {
@@ -267,9 +277,6 @@
       height: 80px;
       background: linear-gradient(to bottom, transparent, var(--surface));
     }
-    .module-card.primary .card-preview::after {
-      background: linear-gradient(to bottom, transparent, #0e1420);
-    }
 
     .module-card {
       background: var(--surface);
@@ -292,18 +299,27 @@
       transition: opacity 0.2s;
       pointer-events: none;
     }
-    .module-card:hover { border-color: var(--border-light); transform: translateY(-2px); box-shadow: 0 16px 48px rgba(0,0,0,0.4); }
+    .module-card:hover { border-color: var(--border-light); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(30,50,90,0.1); }
+    html.dark .module-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.4); }
     .module-card:hover::before { opacity: 1; }
 
     /* Primary card — Reading Viewer */
     .module-card.primary {
+      border-color: rgba(194,136,16,0.25);
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(194,136,16,0.03) 100%);
+    }
+    html.dark .module-card.primary {
       border-color: rgba(232,184,75,0.2);
       background: linear-gradient(135deg, var(--surface) 0%, rgba(232,184,75,0.04) 100%);
     }
     .module-card.primary::before {
+      background: radial-gradient(ellipse at top left, rgba(194,136,16,0.05) 0%, transparent 60%);
+    }
+    html.dark .module-card.primary::before {
       background: radial-gradient(ellipse at top left, rgba(232,184,75,0.06) 0%, transparent 60%);
     }
-    .module-card.primary:hover { border-color: rgba(232,184,75,0.4); box-shadow: 0 16px 48px rgba(232,184,75,0.08), 0 4px 16px rgba(0,0,0,0.4); }
+    .module-card.primary:hover { border-color: rgba(194,136,16,0.4); box-shadow: 0 8px 28px rgba(194,136,16,0.1), 0 2px 8px rgba(30,50,90,0.08); }
+    html.dark .module-card.primary:hover { border-color: rgba(232,184,75,0.4); box-shadow: 0 16px 48px rgba(232,184,75,0.08), 0 4px 16px rgba(0,0,0,0.4); }
 
     .module-icon {
       width: 44px;
@@ -322,6 +338,10 @@
       stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
     }
     .module-card.primary .module-icon {
+      background: rgba(194,136,16,0.1);
+      border-color: rgba(194,136,16,0.28);
+    }
+    html.dark .module-card.primary .module-icon {
       background: rgba(232,184,75,0.1);
       border-color: rgba(232,184,75,0.25);
     }
@@ -333,7 +353,8 @@
       padding: 3px 9px; border-radius: 20px;
       width: fit-content;
     }
-    .tag-live { color: var(--amber); background: rgba(232,184,75,0.1); border: 1px solid rgba(232,184,75,0.22); }
+    .tag-live { color: var(--amber); background: rgba(194,136,16,0.1); border: 1px solid rgba(194,136,16,0.25); }
+    html.dark .tag-live { background: rgba(232,184,75,0.1); border-color: rgba(232,184,75,0.22); }
     .tag-placeholder { color: var(--text-dim); background: var(--surface2); border: 1px solid var(--border); }
 
     .module-title { font-size: 17px; font-weight: 700; color: var(--text-bright); letter-spacing: -0.01em; }
@@ -383,7 +404,17 @@
       <a href="arbitration.html" class="nav-link">Arbitration Queue</a>
       <a href="library.html" class="nav-link">Case Library</a>
     </div>
-    <a href="reading.html" class="nav-cta">Open Reading Viewer</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <!-- sun: shown in dark mode → click to go light -->
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </svg>
+      <!-- moon: shown in light mode → click to go dark -->
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
   </nav>
 
   <!-- ── HERO ── -->
@@ -391,10 +422,6 @@
     <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>RCA IRP · Service Prototype</div>
     <h1 class="hero-title">AI-assisted breast screening,<br><em>designed around disagreement</em></h1>
     <p class="hero-sub">An interactive service prototype exploring how AI findings and radiologist judgements can be surfaced, reconciled, and learned from across a screening workflow.</p>
-    <div class="hero-actions">
-      <a href="reading.html" class="btn-hero-primary">Open Reading Viewer →</a>
-      <a href="arbitration.html" class="btn-hero-secondary">View Arbitration Queue</a>
-    </div>
   </section>
 
   <!-- ── STATS STRIP ── -->
@@ -472,5 +499,11 @@
     <div class="footer-note">RCA IRP · Service Prototype · 2025</div>
   </footer>
 
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
 </body>
 </html>
