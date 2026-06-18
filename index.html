@@ -219,7 +219,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible;
     transition: box-shadow 0.4s ease;
   }
   .mamo-pane.second-look-focus {
@@ -296,7 +296,7 @@
     position: absolute;
     display: none;
     pointer-events: none;
-    z-index: 3;
+    z-index: 50;
     transform: translate(-50%, -50%);
   }
   .finding-marker.visible { display: block; }
@@ -316,16 +316,41 @@
   }
   .finding-ring-label {
     position: absolute;
-    top: -22px; left: 50%;
+    bottom: calc(100% + 6px);
+    left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: rgba(0,0,0,0.72);
+    padding: 4px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .frl-line1 {
     font-size: 12px;
     font-weight: 600;
     color: var(--amber);
-    white-space: nowrap;
     letter-spacing: 0.02em;
-    background: rgba(0,0,0,0.72);
-    padding: 2px 7px;
-    border-radius: 3px;
+  }
+  .frl-line1::before {
+    content: 'AI';
+    display: inline-block;
+    background: rgba(208,120,48,0.85);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 5px;
+    letter-spacing: 0.05em;
+    vertical-align: 1px;
+  }
+  .frl-line2 {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.02em;
   }
   @keyframes pulse-ring {
     0%, 100% { opacity: 0.55; transform: scale(1); }
@@ -689,10 +714,10 @@
 
   /* ── DISAGREEMENT PANEL ── */
   .disagreement-panel {
-    border: 1px solid rgba(214,176,106,0.35);
+    border: 1.5px solid rgba(214,176,106,0.65);
     border-radius: 8px;
     overflow: hidden;
-    background: rgba(214,176,106,0.03);
+    background: rgba(214,176,106,0.05);
   }
   .disagreement-header {
     background: rgba(214,176,106,0.1);
@@ -700,10 +725,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    color: var(--amber);
   }
   .disagreement-title {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--amber);
     letter-spacing: 0.02em;
   }
@@ -895,7 +921,7 @@
     gap: 8px;
     padding: 5px 0;
     border-bottom: 1px solid var(--border);
-    font-size: 13px;
+    font-size: 14px;
   }
   .handover-field:last-of-type { border-bottom: none; }
   .hf-key { color: var(--text-dim); flex-shrink: 0; min-width: 110px; line-height: 1.5; }
@@ -945,7 +971,7 @@
     gap: 8px;
     padding: 5px 0;
     border-bottom: 1px solid var(--border);
-    font-size: 13px;
+    font-size: 14px;
   }
   .receipt-field:last-of-type { border-bottom: none; }
   .rf-key { color: var(--text-dim); flex-shrink: 0; min-width: 115px; line-height: 1.5; }
@@ -971,13 +997,13 @@
     flex-direction: column;
     gap: 9px;
   }
-  .care-loop-msg { font-size: 13px; color: var(--text); line-height: 1.6; }
+  .care-loop-msg { font-size: 14px; color: var(--text); line-height: 1.6; }
   .care-loop-pattern {
     background: var(--surface2);
     border-left: 2px solid var(--green);
     padding: 8px 10px;
-    font-size: 13px;
-    color: var(--text-dim);
+    font-size: 14px;
+    color: var(--text);
     border-radius: 0 4px 4px 0;
     line-height: 1.6;
   }
@@ -987,8 +1013,8 @@
     display: flex;
     align-items: center;
     gap: 7px;
-    font-size: 13px;
-    color: var(--text-dim);
+    font-size: 14px;
+    color: var(--text);
   }
   .cl-check { color: var(--green); font-size: 12px; }
 
@@ -1015,6 +1041,84 @@
     flex-direction: column;
     gap: 8px;
   }
+
+  /* ── AI DENSITY ── */
+  .ai-sub-section {
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .ai-sub-label {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  .ai-density-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ai-density-cat {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--amber);
+    line-height: 1;
+    width: 22px;
+    flex-shrink: 0;
+  }
+  .ai-density-desc {
+    font-size: 14px;
+    color: var(--text);
+    flex: 1;
+  }
+  .ai-density-override-btn {
+    font-size: 12px;
+    color: var(--text-dim);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .ai-density-override-btn:hover { color: var(--text); border-color: var(--border-light); }
+  .ai-density-picker { display: none; gap: 6px; }
+  .ai-density-picker.open { display: flex; }
+  .ai-dp-opt {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text-dim);
+    cursor: pointer;
+  }
+  .ai-dp-opt:hover { border-color: rgba(214,176,106,0.4); color: var(--text); }
+  .ai-dp-opt.selected { border-color: var(--amber); color: var(--amber); background: rgba(214,176,106,0.08); }
+
+  /* ── AI SHORT-TERM RISK ── */
+  .ai-risk-row { display: flex; align-items: center; gap: 10px; }
+  .ai-risk-badge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+  .risk-low      { background: rgba(60,160,60,0.12);    color: var(--green);  border: 1px solid rgba(60,160,60,0.3); }
+  .risk-general  { background: rgba(100,180,100,0.1);   color: #7bc47b;       border: 1px solid rgba(100,180,100,0.25); }
+  .risk-moderate { background: rgba(214,176,106,0.12);  color: var(--amber);  border: 1px solid rgba(214,176,106,0.3); }
+  .risk-high     { background: rgba(200,60,60,0.12);    color: #e05555;       border: 1px solid rgba(200,60,60,0.3); }
+  .ai-risk-note  { font-size: 13px; color: var(--text-dim); }
 
   /* ── STATUS BAR ── */
   #statusbar {
@@ -1403,7 +1507,7 @@
   #right-panel .care-loop-header,
   #right-panel .disagreement-header {
     font-size: 13px !important;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.01em;
   }
   #right-panel .panel-section-header,
@@ -1426,13 +1530,14 @@
   #right-panel .disagreement-desc,
   #right-panel .micro-feedback,
   #right-panel .panel-note {
-    font-size: 13px !important;
+    font-size: 14px !important;
     font-weight: 400;
-    color: var(--text-dim);
+    color: var(--text);
   }
   #right-panel .disagreement-title {
     font-size: 13px !important;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--amber) !important;
     letter-spacing: 0.01em;
   }
   #right-panel .disagreement-body span[style*="font-weight:600"] {
@@ -1470,7 +1575,7 @@
   /* Human mark ring (blue-grey, no-recall styling) */
   .human-mark-ring {
     position: absolute;
-    z-index: 6;
+    z-index: 50;
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
@@ -1609,7 +1714,7 @@
   }
   #status-line-label { color: var(--text-dim); }
   #status-line-value { color: var(--text-bright); font-weight: 500; }
-  #status-line-value.disagreement { color: var(--amber); font-weight: 600; }
+  #status-line-value.disagreement { color: var(--text-bright); font-weight: 500; }
 
   /* ── SAVE / DELETE MARK buttons ── */
   .mf-action-row { display: flex; gap: 7px; margin-top: 11px; }
@@ -1783,6 +1888,214 @@
     border-bottom: 1px solid var(--border);
   }
 
+  /* ── AI vs HUMAN marker distinction ── */
+  .finding-ring-label::before { content: none; }
+  .human-mark-ring.labelled .human-ring-label::before {
+    content: 'You';
+    display: inline-block;
+    background: rgba(200,60,60,0.72);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 5px;
+    letter-spacing: 0.05em;
+    vertical-align: 1px;
+  }
+  .finding-conf-badge { display: none; }
+
+  /* ── Confidence dots ── */
+  .conf-dots-row { display: inline-flex; align-items: flex-end; gap: 2px; margin-right: 6px; vertical-align: middle; }
+  .cdot { width: 3px; border-radius: 1px; background: var(--border-light); flex-shrink: 0; }
+  .cdot:nth-child(1) { height: 5px; }
+  .cdot:nth-child(2) { height: 8px; }
+  .cdot:nth-child(3) { height: 11px; }
+  .cdot.cdot-on { background: var(--amber); }
+
+  /* ── Case score strip (viewer overlay) ── */
+  #case-score-strip {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    padding-top: 8px;
+  }
+  .cs-title { font-size: 12px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; }
+  .cs-breast { display: flex; align-items: center; gap: 13px; }
+  .cs-side { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.65); width: 13px; flex-shrink: 0; letter-spacing: 0.02em; }
+  .cs-track {
+    flex: 1; height: 10px;
+    background:
+      repeating-linear-gradient(to right, rgba(0,0,0,0.25) 0, rgba(0,0,0,0.25) 1px, transparent 1px, transparent 10%),
+      linear-gradient(to right, #3d7a3d, #c8a030 55%, #c03535);
+    border-radius: 5px; position: relative;
+  }
+  .cs-dot {
+    position: absolute; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--amber);
+    border: 2px solid rgba(0,0,0,0.72);
+    box-shadow: 0 0 8px rgba(208,120,48,0.8), 0 0 19px rgba(208,120,48,0.35);
+  }
+  .cs-val { font-size: 14px; color: rgba(255,255,255,0.65); font-weight: 700; width: 19px; text-align: right; flex-shrink: 0; }
+
+  /* ── Finding callout thumbnails (on-image) ── */
+  .finding-callout {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    pointer-events: none;
+  }
+  .callout-circle {
+    width: 184px; height: 184px;
+    border-radius: 50%;
+    border: 2px solid rgba(208,120,48,0.65);
+    background-color: #050505;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    box-shadow: 0 0 0 1px rgba(208,120,48,0.18), 0 8px 28px rgba(0,0,0,0.8);
+    position: relative;
+    overflow: hidden;
+  }
+  .callout-num {
+    position: absolute;
+    bottom: 8px; right: 8px;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--amber);
+    color: #000;
+    font-size: 14px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    border: 2px solid rgba(0,0,0,0.5);
+  }
+  .callout-tag {
+    font-size: 10px;
+    color: rgba(255,255,255,0.75);
+    background: rgba(0,0,0,0.7);
+    border: 1px solid rgba(208,120,48,0.32);
+    border-radius: 3px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+    backdrop-filter: blur(2px);
+  }
+  .callout-linked-label {
+    font-size: 10px;
+    color: var(--amber);
+    background: rgba(208,120,48,0.1);
+    border: 1px solid rgba(208,120,48,0.3);
+    border-radius: 3px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .callout-connector {
+    position: absolute;
+    width: 1px;
+    background: linear-gradient(to var(--dir, bottom), rgba(208,120,48,0.6), rgba(208,120,48,0.1));
+    transform-origin: top center;
+    pointer-events: none;
+  }
+
+  /* ── Viewer legend ── */
+  #viewer-legend {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 10;
+    background: rgba(0,0,0,0.78);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.02em;
+    backdrop-filter: blur(5px);
+    height: 80px;
+  }
+  .vl-item { display: flex; align-items: center; gap: 10px; }
+  .vl-ring { width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0; }
+  .vl-ring-ai  { border: 2.5px dashed rgba(208,120,48,0.85); background: rgba(208,120,48,0.07); }
+  .vl-ring-human { border: 2.5px solid rgba(200,60,60,0.85); background: rgba(200,60,60,0.10); }
+
+  /* ── V2 PANEL: expanded type scale ── */
+  /* card headers */
+  #right-panel.panel-v2 .panel-section-header,
+  #right-panel.panel-v2 .ai-result-header,
+  #right-panel.panel-v2 .care-loop-header,
+  #right-panel.panel-v2 .disagreement-header,
+  #right-panel.panel-v2 .disagreement-title,
+  #right-panel.panel-v2 .care-loop-title {
+    font-size: 15px !important;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  /* card body content */
+  #right-panel.panel-v2 .panel-note,
+  #right-panel.panel-v2 .care-loop-msg,
+  #right-panel.panel-v2 .care-loop-pattern,
+  #right-panel.panel-v2 .ai-result-body > div:not(:first-child),
+  #right-panel.panel-v2 .disagreement-desc,
+  #right-panel.panel-v2 .micro-feedback {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: var(--text) !important;
+  }
+  #right-panel.panel-v2 .disagreement-body > div:first-child {
+    font-size: 14px !important;
+  }
+  /* chips */
+  #right-panel.panel-v2 .status-chip {
+    font-size: 13px !important;
+    padding: 4px 9px;
+  }
+  /* buttons */
+  #right-panel.panel-v2 .btn-primary,
+  #right-panel.panel-v2 .btn-secondary,
+  #right-panel.panel-v2 .btn-teal {
+    font-size: 14px !important;
+  }
+  /* primary / key values */
+  #right-panel.panel-v2 .ai-result-body > div:first-child {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.3;
+  }
+  #right-panel.panel-v2 #locked-judgement-value {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.3;
+  }
+  #right-panel.panel-v2 #locked-judgement-detail {
+    font-size: 14px !important;
+    color: var(--text-dim) !important;
+  }
+  #right-panel.panel-v2 .cell-value {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+  }
+  /* small meta labels — stay at 12px */
+  #right-panel.panel-v2 #panel-title-label,
+  #right-panel.panel-v2 #step-label,
+  #right-panel.panel-v2 .suggested-step-label,
+  #right-panel.panel-v2 .action-divider-text,
+  #right-panel.panel-v2 .cell-label,
+  #right-panel.panel-v2 .data-label {
+    font-size: 12px !important;
+  }
+
   /* ── Reading outcome modal ── */
   .outcome-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
   .outcome-option {
@@ -1890,6 +2203,16 @@
     <circle cx="12" cy="12" r="4"/>
     <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
   </symbol>
+  <symbol id="icon-circle-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="10" r="3"/>
+    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
+  </symbol>
+  <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="16" height="16" x="4" y="4" rx="2"/>
+    <rect width="6" height="6" x="9" y="9" rx="1"/>
+    <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/>
+  </symbol>
 </svg>
 
 <!-- ── TOOLBAR ── -->
@@ -1972,8 +2295,21 @@
       <div class="image-focus-frame" aria-hidden="true"></div>
       <!-- AI finding marker: positioned relative to the non-mirrored L-CC image. -->
       <div class="finding-marker" id="marker-lcc" style="top:43%; left:37%;">
-        <div class="finding-ring-label">Focal asymmetry · L-CC</div>
+        <div class="finding-ring-label">
+          <div class="frl-line1">AI finding · Focal asymmetry</div>
+          <div class="frl-line2">L-CC · High confidence</div>
+        </div>
         <div class="finding-ring"></div>
+      </div>
+      <!-- Callout line spans full pane -->
+      <svg class="hidden" id="callout-line-lcc" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;" aria-hidden="true">
+        <line x1="70%" y1="16%" x2="37%" y2="43%" stroke="rgba(208,120,48,0.5)" stroke-width="1.5" stroke-dasharray="5 3"/>
+      </svg>
+      <!-- Callout bubble: top-right dark area -->
+      <div class="finding-callout hidden" id="callout-lcc" style="top:16px; right:16px;">
+        <div class="callout-circle" style="background-image:url('./assets/mammogram-l-cc.webp');background-position:33% 41%;">
+          <div class="callout-num">5</div>
+        </div>
       </div>
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2314 / -3</div>
     </div>
@@ -1993,8 +2329,21 @@
       <img class="mamo-img" src="./assets/mammogram-l-mlo.webp" alt="L-MLO" draggable="false">
       <!-- AI finding marker: corresponding MLO view of the same focal asymmetry -->
       <div class="finding-marker" id="marker-lmlo" style="top:36%; left:52%;">
-        <div class="finding-ring-label">Focal asymmetry · L-MLO</div>
+        <div class="finding-ring-label">
+          <div class="frl-line1">AI finding · Focal asymmetry</div>
+          <div class="frl-line2">L-MLO · High confidence</div>
+        </div>
         <div class="finding-ring"></div>
+      </div>
+      <!-- Callout line spans full pane -->
+      <svg class="hidden" id="callout-line-lmlo" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;" aria-hidden="true">
+        <line x1="27%" y1="16%" x2="52%" y2="36%" stroke="rgba(208,120,48,0.5)" stroke-width="1.5" stroke-dasharray="5 3"/>
+      </svg>
+      <!-- Callout bubble: top-left dark area -->
+      <div class="finding-callout hidden" id="callout-lmlo" style="top:16px; left:16px;">
+        <div class="callout-circle" style="background-image:url('./assets/mammogram-l-mlo.webp');background-position:53% 33%;">
+          <div class="callout-num">5</div>
+        </div>
       </div>
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
     </div>
@@ -2005,6 +2354,13 @@
       <div class="pane-age">Age: 72</div>
       <img class="mamo-img" src="./assets/mammogram-r-mlo.webp" alt="R-MLO" draggable="false">
       <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
+    </div>
+
+
+    <!-- AI vs human marker legend -->
+    <div id="viewer-legend" class="hidden">
+      <div class="vl-item"><span class="vl-ring vl-ring-ai"></span>AI finding</div>
+      <div class="vl-item"><span class="vl-ring vl-ring-human"></span>Your mark</div>
     </div>
 
   </div><!-- /viewer -->
@@ -2033,27 +2389,37 @@
     <!-- STATE 2+: Locked reading -->
     <div class="panel-section hidden" id="section-locked-judgement">
       <div class="panel-section-header">
-        <svg class="icon"><use href="#icon-user"/></svg>
+        <svg class="icon"><use href="#icon-circle-user"/></svg>
         Human reading
         <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Submitted</span>
       </div>
       <div class="panel-section-body" style="padding:8px 12px;">
-        <div id="locked-judgement-value" style="font-size:14px;font-weight:700;color:var(--human-ann);">—</div>
-        <div id="locked-judgement-detail" style="font-size:12px;color:var(--text-dim);margin-top:3px;"></div>
+        <div id="locked-judgement-value" style="font-size:14px;font-weight:600;color:var(--text-bright);">—</div>
+        <div id="locked-judgement-detail" style="font-size:14px;color:var(--text);margin-top:3px;"></div>
       </div>
     </div>
 
     <!-- STATE 3: AI result -->
     <div class="ai-result-section hidden" id="section-ai-result">
       <div class="ai-result-header">
-        <svg class="icon"><use href="#icon-lock"/></svg>
+        <svg class="icon"><use href="#icon-cpu"/></svg>
         AI
         <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Revealed</span>
       </div>
-      <div class="ai-result-body" style="gap:5px;padding:10px 12px;">
-        <div style="font-size:14px;font-weight:700;color:var(--amber);">Recall suggested</div>
-        <div style="font-size:13px;color:var(--text-dim);">High confidence · Focal asymmetry</div>
-        <div style="font-size:13px;color:var(--text-dim);">L upper outer</div>
+      <div class="ai-result-body" style="gap:6px;padding:10px 12px;">
+        <div style="font-size:14px;font-weight:600;color:var(--amber);">Recall suggested</div>
+        <div style="font-size:14px;color:var(--text);">
+          <span class="conf-dots-row"><span class="cdot cdot-on"></span><span class="cdot cdot-on"></span><span class="cdot cdot-on"></span></span>High confidence · Focal asymmetry
+        </div>
+        <div style="font-size:14px;color:var(--text);">L-CC · upper outer</div>
+        <div id="case-score-strip">
+          <div class="cs-title">AI Suspicion Score</div>
+          <div class="cs-breast">
+            <span class="cs-side">L</span>
+            <div class="cs-track"><div class="cs-dot" style="left:70%"></div></div>
+            <span class="cs-val">7</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -2065,13 +2431,12 @@
       </div>
       <div class="disagreement-body">
 
-        <!-- Compact comparison summary -->
-        <div style="font-size:12px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-          <span style="color:var(--text-dim);">Human:</span><span id="disag-human-val" style="color:var(--human-ann);font-weight:600;">—</span>
-          <span style="color:var(--border-light);">·</span>
-          <span style="color:var(--text-dim);">AI:</span><span style="color:var(--amber);font-weight:600;">Recall suggested</span>
+        <div style="display:flex;align-items:center;justify-content:center;gap:6px;padding:7px 12px;background:rgba(0,0,0,0.2);border:1px solid var(--border);border-radius:5px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;">
+          <span style="color:var(--amber);">AI-positive</span>
+          <span style="color:var(--text-dim);font-weight:400;">/</span>
+          <span style="color:rgba(210,80,80,0.9);">human-negative</span>
         </div>
-        <span class="status-chip chip-amber" style="font-size:12px;padding:3px 8px;width:fit-content;">AI-positive / human-negative</span>
+        <div style="font-size:14px;color:var(--text);">No matching recall-level human mark at the AI finding location.</div>
 
         <!-- PRIMARY: Suggested next step -->
         <div class="suggested-step-wrap">
@@ -2082,15 +2447,6 @@
           <button class="btn-teal" id="btn-handover">Handover prepared</button>
         </div>
 
-        <!-- Divider -->
-        <div class="action-divider">
-          <div class="action-divider-line"></div>
-          <div class="action-divider-text">
-            <svg class="icon"><use href="#icon-arrow-down"/></svg>
-            Optional actions
-          </div>
-          <div class="action-divider-line"></div>
-        </div>
 
         <!-- SECONDARY actions -->
         <div class="secondary-actions">
@@ -2115,7 +2471,7 @@
           <div class="secondary-action-wrap">
             <button class="btn-secondary" id="btn-override" onclick="doOverride(this)">
               <svg class="icon"><use href="#icon-file-text"/></svg>
-              <span class="action-main">Add reason</span>
+              <span class="action-main">Add review note</span>
             </button>
             <div class="micro-feedback micro-feedback-dim reason-inline-form" id="feedback-override">
               <select class="override-select" id="override-select">
@@ -2326,6 +2682,21 @@
         Focal asymmetry detected in left upper outer quadrant. Density pattern and asymmetry relative to the contralateral view exceed the high-confidence threshold. No corresponding finding flagged at this location in the prior screen.
       </div>
 
+      <!-- Additional AI context -->
+      <div class="sim-case-card">
+        <div class="sim-case-head">Additional AI context</div>
+        <div class="sim-case-body">
+          <div class="sim-case-row">
+            <span class="sim-case-key">Density</span>
+            <span class="sim-case-val">A · Almost entirely fatty</span>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Short-term risk</span>
+            <span class="sim-case-val">Moderate · 1–2 yr image-derived</span>
+          </div>
+        </div>
+      </div>
+
       <!-- Similar case reference card -->
       <div class="sim-case-card">
         <div class="sim-case-head">Similar case reference</div>
@@ -2366,7 +2737,7 @@
           <span class="outcome-radio-dot"></span>
           <div>
             <div class="outcome-label">No further assessment</div>
-            <div class="outcome-desc">No significant finding requiring recall</div>
+            <div class="outcome-desc">Finding recorded, but no recall needed</div>
           </div>
         </label>
         <label class="outcome-option" onclick="selectOutcome(this, 'Further assessment needed')">
@@ -2374,7 +2745,7 @@
           <span class="outcome-radio-dot"></span>
           <div>
             <div class="outcome-label">Further assessment needed</div>
-            <div class="outcome-desc">Finding warrants recall or additional imaging</div>
+            <div class="outcome-desc">Finding requires recall / additional imaging</div>
           </div>
         </label>
       </div>
@@ -2831,13 +3202,14 @@
     const n = humanMarks.length;
     const btn = document.getElementById('btn-submit-reading');
     btn.textContent = n > 0 ? 'Submit reading (' + n + ')' : 'Submit reading';
+    const btn2 = document.getElementById('btn-submit-reading-v2');
+    btn2.textContent = n > 0 ? 'Submit ↑ (' + n + ')' : 'Submit ↑';
   }
 
   // ── Submit reading → open outcome modal ──
   let chosenOutcome = null;
 
   document.getElementById('btn-submit-reading').addEventListener('click', function() {
-    // Reset outcome modal
     chosenOutcome = null;
     document.querySelectorAll('.outcome-option').forEach(o => o.classList.remove('selected'));
     document.querySelectorAll('input[name="reading-outcome"]').forEach(r => r.checked = false);
@@ -2872,7 +3244,6 @@
     if (markDetail) document.getElementById('locked-judgement-detail').textContent = markDetail;
 
     // Populate dynamic outcome placeholders
-    document.getElementById('disag-human-val').textContent = chosenOutcome;
     const handoverHuman = document.getElementById('handover-human-val');
     if (handoverHuman) handoverHuman.textContent = chosenOutcome;
     const pathwayHuman = document.getElementById('pathway-human-val');
@@ -2893,6 +3264,8 @@
 
     document.getElementById('viewer').classList.remove('mark-mode');
     document.getElementById('btn-submit-reading').disabled = true;
+    document.getElementById('right-panel').classList.add('panel-v2');
+    document.getElementById('viewer').classList.add('viewer-v2');
 
     currentState = 2;
     updateSteps(currentState);
@@ -2904,6 +3277,11 @@
       show('section-ai-result');
       document.getElementById('marker-lcc').classList.add('visible');
       document.getElementById('marker-lmlo').classList.add('visible');
+      document.getElementById('callout-line-lcc').classList.remove('hidden');
+      document.getElementById('callout-lcc').classList.remove('hidden');
+      document.getElementById('callout-line-lmlo').classList.remove('hidden');
+      document.getElementById('callout-lmlo').classList.remove('hidden');
+      document.getElementById('viewer-legend').classList.remove('hidden');
 
       setTimeout(() => {
         currentState = 4;
@@ -2956,6 +3334,22 @@
   }
 
   // ── Modal helpers ──
+  function toggleDensityPicker() {
+    const picker = document.getElementById('density-picker');
+    const btn = document.getElementById('density-override-btn');
+    picker.classList.toggle('open');
+    btn.textContent = picker.classList.contains('open') ? 'Cancel ▴' : 'Override ▾';
+  }
+
+  function selectDensity(opt, cat, desc) {
+    document.querySelectorAll('.ai-dp-opt').forEach(b => b.classList.remove('selected'));
+    opt.classList.add('selected');
+    document.getElementById('density-cat-display').textContent = cat;
+    document.getElementById('density-desc-display').textContent = desc;
+    document.getElementById('density-picker').classList.remove('open');
+    document.getElementById('density-override-btn').textContent = 'Override ▾';
+  }
+
   function openModal(id) {
     document.getElementById(id).classList.remove('hidden');
   }
