@@ -1,0 +1,3437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breast Screening — AI–Human Disagreement Prototype</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #181818;
+    --surface: #1e1e1e;
+    --surface2: #252526;
+    --surface3: #2d2d30;
+    --border: #2b2b2b;
+    --border-light: #3c3c3c;
+    --text: #cccccc;
+    --text-dim: #858585;
+    --text-bright: #f2f2f2;
+    --accent: #365f9f;
+    --accent-dim: #294d82;
+    --amber: #d07830;
+    --amber-dim: #5c3214;
+    --human-ann: #c83c3c;
+    --green: #8aaa7b;
+    --green-dim: #3f5238;
+    --red: #c77878;
+    --teal: #365f9f;
+    --teal-dim: #294d82;
+    --teal-bright: #4772b8;
+    --purple: #a798b8;
+    --thumbnail-w: 110px;
+    --panel-w: 390px;
+    --toolbar-h: 60px;
+    --status-h: 28px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── TOOLBAR ── */
+  #toolbar {
+    height: var(--toolbar-h);
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 8px;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  .tool-group {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    border-right: 1px solid var(--border);
+    padding-right: 8px;
+  }
+  .tool-group:last-of-type { border-right: none; }
+  .tool-btn {
+    width: 44px; height: 50px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: var(--text-dim);
+    cursor: pointer;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+    padding: 0;
+  }
+  .tool-btn svg { width: 20px; height: 20px; stroke-width: 2; flex-shrink: 0; }
+  .tool-label { font-size: 9px; line-height: 1; letter-spacing: 0.02em; color: inherit; user-select: none; }
+  .tool-btn:hover { background: var(--surface3); color: var(--text-bright); border-color: var(--border-light); }
+  .tool-btn.active { background: var(--surface3); color: var(--accent); border-color: var(--accent); }
+  .tool-sep { width: 1px; height: 26px; background: var(--border); margin: 0 2px; }
+  .icon {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    flex-shrink: 0;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .case-id-chip {
+    margin: 0 auto;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 14px;
+    font-size: 12px;
+    color: var(--text-bright);
+    letter-spacing: 0.04em;
+  }
+  .case-id-chip span { color: var(--text-dim); }
+  .toolbar-right { display: flex; gap: 8px; }
+  .btn-sm {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.15s;
+  }
+  .btn-sm:hover { background: var(--surface3); }
+  .btn-submit-toolbar {
+    padding: 6px 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(91,122,154,0.6);
+    background: rgba(54,95,159,0.18);
+    color: #a8c4e8;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 0.01em;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .btn-submit-toolbar:hover { background: rgba(54,95,159,0.3); border-color: rgba(91,122,154,0.9); color: #c8daf4; }
+  .btn-submit-toolbar:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  /* ── MAIN LAYOUT ── */
+  #main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  /* ── THUMBNAIL SERIES ── */
+  #series {
+    width: var(--thumbnail-w);
+    height: calc(100vh - var(--toolbar-h) - var(--status-h));
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex-shrink: 0;
+    padding: 8px 0;
+  }
+  .series-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 10px 4px;
+  }
+  .thumb {
+    margin: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    position: relative;
+  }
+  .thumb:hover { border-color: var(--border-light); }
+  .thumb.active { border-color: var(--accent); }
+  .thumb-img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    display: block;
+    overflow: hidden;
+  }
+  .thumb-tag {
+    position: absolute;
+    top: 3px; left: 3px;
+    font-size: 12px;
+    color: var(--text-bright);
+    background: rgba(0,0,0,0.7);
+    padding: 1px 5px;
+    border-radius: 3px;
+    letter-spacing: 0.04em;
+  }
+  .thumb-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    padding: 2px 4px 3px;
+    text-align: center;
+    background: var(--surface2);
+  }
+
+  /* ── VIEWER ── */
+  #viewer {
+    flex: 1;
+    background: #050505;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1px;
+    min-width: 0;
+    position: relative;
+  }
+  #pane-rmlo { grid-column: 1; grid-row: 1; }
+  #pane-lmlo { grid-column: 2; grid-row: 1; }
+  #pane-rcc  { grid-column: 3; grid-row: 1; }
+  #pane-lcc  { grid-column: 4; grid-row: 1; }
+  .mamo-pane {
+    background: #080808;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    transition: box-shadow 0.4s ease;
+  }
+  .mamo-pane.second-look-focus {
+    box-shadow: none;
+  }
+  .image-focus-frame {
+    position: absolute;
+    inset: 0;
+    display: none;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .second-look-focus .image-focus-frame {
+    display: block;
+  }
+  .image-focus-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1.5px solid rgba(214,176,106,0.72);
+    box-shadow: inset 0 0 0 1px rgba(214,176,106,0.16), 0 0 18px rgba(214,176,106,0.10);
+  }
+  .pane-label {
+    position: absolute;
+    top: 8px; left: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.06em;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .pane-age {
+    position: absolute;
+    top: 8px; right: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.2);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .pane-meta {
+    position: absolute;
+    bottom: 6px; left: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.15);
+    pointer-events: none;
+    z-index: 2;
+    letter-spacing: 0.03em;
+  }
+  .mamo-svg {
+    width: 78%;
+    max-height: 92%;
+    display: block;
+  }
+  .mamo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+  /* Keep paired views oriented so chest-wall edges meet at the centre of each pair. */
+  #pane-rcc .mamo-img,
+  #pane-rmlo .mamo-img { object-position: right center; transform: none; }
+  #pane-lcc .mamo-img,
+  #pane-lmlo .mamo-img { object-position: left center; transform: none; }
+
+  /* AI finding marker */
+  .finding-marker {
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+  }
+  .finding-marker.visible { display: block; }
+  .finding-ring {
+    width: 82px; height: 82px;
+    border: 2.5px dashed var(--amber);
+    border-radius: 50%;
+    background: rgba(208,120,48,0.07);
+    animation: pulse-ring 2.5s ease-in-out infinite;
+    opacity: 0.9;
+  }
+  .second-look-focus .finding-ring {
+    animation: pulse-ring 1s ease-in-out infinite;
+    border-width: 3px;
+    opacity: 1;
+    box-shadow: 0 0 0 12px rgba(208,120,48,0.08);
+  }
+  .finding-ring-label {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: rgba(0,0,0,0.72);
+    padding: 4px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .frl-line1 {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--amber);
+    letter-spacing: 0.02em;
+  }
+  .frl-line1::before {
+    content: 'AI';
+    display: inline-block;
+    background: rgba(208,120,48,0.85);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 5px;
+    letter-spacing: 0.05em;
+    vertical-align: 1px;
+  }
+  .frl-line2 {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.02em;
+  }
+  @keyframes pulse-ring {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.06); }
+  }
+
+  /* ── RIGHT PANEL ── */
+  #right-panel {
+    width: var(--panel-w);
+    height: calc(100vh - var(--toolbar-h) - var(--status-h));
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: width 0.22s ease;
+    position: relative;
+  }
+  #right-panel.collapsed {
+    width: 36px;
+  }
+  #right-panel.collapsed #panel-header,
+  #right-panel.collapsed #panel-scroll {
+    display: none;
+  }
+
+  /* Panel title bar */
+  #panel-title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+  }
+  #panel-title-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-bright);
+  }
+  #panel-collapse-btn {
+    width: 28px;
+    height: 28px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: rgba(244,244,245,0.78);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+    position: relative;
+    transition: background 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  }
+  #panel-collapse-btn:hover {
+    background: rgba(244,244,245,0.08);
+    color: var(--text-bright);
+    border-color: rgba(244,244,245,0.12);
+  }
+  #panel-collapse-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  #panel-collapse-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    z-index: 30;
+    background: #050505;
+    color: var(--text-bright);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 8px 11px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.38);
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition: opacity 0.12s ease, transform 0.12s ease;
+  }
+  #panel-collapse-btn:hover::after,
+  #panel-collapse-btn:focus-visible::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #panel-collapse-btn svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  /* Collapsed strip */
+  .panel-collapsed-strip {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0 16px;
+    gap: 14px;
+    cursor: pointer;
+  }
+  #right-panel.collapsed .panel-collapsed-strip {
+    display: flex;
+  }
+  .panel-expand-btn {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: rgba(244,244,245,0.62);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+    box-shadow: none;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: color 0.15s;
+  }
+  .panel-expand-btn:hover {
+    background: transparent;
+    color: var(--text-bright);
+  }
+  .panel-expand-btn svg {
+    width: 17px;
+    height: 17px;
+    display: block;
+  }
+  .panel-collapsed-label {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+  #panel-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 12px 14px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .panel-section {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .panel-section-header {
+    background: var(--surface2);
+    padding: 9px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-bright);
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .panel-section-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .panel-note {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    padding: 8px 10px;
+    background: var(--surface2);
+    border-radius: 5px;
+    border-left: 2px solid var(--border-light);
+  }
+
+  /* Radio options */
+  .judgement-options { display: flex; flex-direction: column; gap: 6px; }
+  .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    user-select: none;
+  }
+  .radio-option:hover { background: var(--surface2); border-color: var(--border-light); }
+  .radio-option.selected { border-color: var(--accent); background: rgba(54,95,159,0.07); }
+  .radio-dot {
+    width: 16px; height: 16px;
+    border: 2px solid var(--border-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: border-color 0.15s;
+  }
+  .radio-dot::after {
+    content: '';
+    width: 8px; height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: none;
+    transition: background 0.15s;
+  }
+  .radio-option.selected .radio-dot::after { display: block; }
+  .radio-option.selected .radio-dot { border-color: var(--accent); }
+  .radio-text { font-size: 13px; color: var(--text); }
+
+  /* Buttons */
+  .btn-primary {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  }
+  .btn-primary:hover { background: var(--teal-bright); border-color: var(--teal-bright); }
+  .btn-primary:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  .btn-secondary {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #3c3c3c;
+    background: #1f1f1f;
+    color: var(--text);
+    font-size: 13px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-secondary:hover { background: #252526; color: var(--text-bright); border-color: #565656; }
+  .btn-secondary .action-main {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  .btn-secondary .action-meta {
+    margin-left: auto;
+    color: var(--text-dim);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .btn-secondary:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn-secondary.used {
+    background: var(--surface2);
+    border-color: var(--border);
+    color: var(--text-dim);
+    opacity: 0.6;
+    cursor: default;
+  }
+  #btn-peer-pause.used,
+  #btn-override.used {
+    background: #252526;
+    border-color: #565656;
+    color: var(--text-bright);
+    opacity: 1;
+    cursor: pointer;
+  }
+  #btn-peer-pause.used .action-meta,
+  #btn-override.used .action-meta { color: var(--text-dim); }
+  #btn-peer-pause.used:hover,
+  #btn-override.used:hover {
+    background: #2d2d30;
+    border-color: #6a6a6a;
+  }
+  #btn-override.reason-saved {
+    cursor: default;
+  }
+  #btn-override.reason-saved:disabled {
+    opacity: 1;
+    cursor: default;
+  }
+
+  .btn-teal {
+    padding: 11px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+    letter-spacing: 0.01em;
+  }
+  .btn-teal:hover { background: var(--teal-bright); border-color: var(--teal-bright); }
+  .btn-teal:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* Status chips */
+  .status-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .chip-blue { background: var(--surface3); color: var(--text-dim); }
+  .chip-amber { background: rgba(208,120,48,0.15); color: var(--amber); }
+  .chip-red   { background: rgba(200,60,60,0.12);  color: var(--human-ann); }
+  .chip-green { background: rgba(138,170,123,0.13); color: #a7c39d; }
+  .chip-teal { background: rgba(54,95,159,0.12); color: var(--text); }
+  .chip-purple { background: var(--surface3); color: var(--text-dim); }
+
+  /* Data rows */
+  .data-row { display: flex; flex-direction: column; gap: 2px; }
+  .data-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+  .data-value { font-size: 13px; color: var(--text-bright); }
+
+  /* Locked judgement */
+  .locked-judgement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+
+  /* Divider */
+  .divider { height: 1px; background: var(--border); margin: 2px 0; }
+
+  /* ── DISAGREEMENT PANEL ── */
+  .disagreement-panel {
+    border: 1.5px solid rgba(214,176,106,0.65);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(214,176,106,0.05);
+  }
+  .disagreement-header {
+    background: rgba(214,176,106,0.1);
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--amber);
+  }
+  .disagreement-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--amber);
+    letter-spacing: 0.02em;
+  }
+  .disagreement-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .disagreement-desc {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .comparison-row { display: flex; gap: 8px; }
+  .comparison-cell {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+  }
+  .comparison-cell.human { border-color: var(--border-light); background: var(--surface2); }
+  .comparison-cell.ai   { border-color: rgba(214,176,106,0.3); background: rgba(214,176,106,0.05); }
+  .cell-label { font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 3px; }
+  .cell-value { font-size: 15px; font-weight: 600; }
+  .cell-value.blue { color: var(--text-bright); }
+  .cell-value.amber { color: var(--amber); }
+
+  /* Action hierarchy */
+  .suggested-step-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+  }
+  .suggested-step-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .action-divider {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 2px 0 0;
+  }
+  .action-divider-line { display: none; }
+  .action-divider-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .secondary-actions { display: flex; flex-direction: column; gap: 5px; }
+  .secondary-action-wrap { display: flex; flex-direction: column; gap: 0; }
+
+  /* ── MICRO-FEEDBACK PANELS ── */
+  .micro-feedback {
+    display: none;
+    border-radius: 0 0 6px 6px;
+    padding: 9px 11px;
+    font-size: 12px;
+    line-height: 1.6;
+    animation: fadeIn 0.25s ease forwards;
+    margin-top: 2px;
+    border-top: none;
+  }
+  .micro-feedback.visible { display: block; }
+
+  .micro-feedback-amber {
+    background: rgba(214,176,106,0.06);
+    border: 1px solid rgba(214,176,106,0.25);
+    border-top: none;
+    color: var(--text);
+  }
+  .micro-feedback-blue {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-top: none;
+    color: var(--text);
+  }
+  .micro-feedback-dim {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-top: none;
+    color: var(--text);
+  }
+  .micro-feedback-head {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .micro-feedback-head.amber { color: var(--amber); }
+  .micro-feedback-head.blue { color: var(--text-bright); }
+  .micro-feedback-head.dim { color: var(--text-bright); }
+
+  .reason-inline-form {
+    margin-top: 6px;
+    border-radius: 6px;
+    border-top: 1px solid var(--border);
+    padding: 9px;
+  }
+
+  /* Override form */
+  .override-select {
+    width: 100%;
+    background: var(--surface3);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    color: var(--text);
+    font-size: 12px;
+    padding: 7px 9px;
+    margin-top: 6px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+  }
+  .override-select:focus { border-color: var(--accent); }
+  .override-textarea {
+    width: 100%;
+    background: var(--surface3);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    color: var(--text);
+    font-size: 12px;
+    padding: 7px 9px;
+    margin-top: 5px;
+    resize: none;
+    height: 60px;
+    font-family: inherit;
+    outline: none;
+    line-height: 1.5;
+  }
+  .override-textarea:focus { border-color: var(--accent); }
+  .btn-record {
+    margin-top: 7px;
+    padding: 7px 12px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--border-light);
+    background: var(--surface3);
+    color: var(--text-bright);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+    text-align: center;
+  }
+  .btn-record:hover { background: var(--surface3); border-color: var(--border-light); color: var(--text-bright); }
+
+  /* ── HANDOVER CARD ── */
+  .handover-card {
+    border: 1px solid rgba(54,95,159,0.35);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(54,95,159,0.03);
+  }
+  .handover-header {
+    background: rgba(54,95,159,0.1);
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .handover-title { font-size: 13px; font-weight: 600; color: var(--text-bright); }
+  .handover-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .handover-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .handover-field:last-of-type { border-bottom: none; }
+  .hf-key { color: var(--text-dim); flex-shrink: 0; min-width: 110px; line-height: 1.5; }
+  .hf-val { color: var(--text-bright); text-align: right; word-break: break-word; line-height: 1.5; }
+  .arb-question {
+    background: var(--surface2);
+    border-left: 2px solid var(--teal);
+    padding: 8px 10px;
+    font-size: 13px;
+    color: var(--text);
+    border-radius: 0 4px 4px 0;
+    line-height: 1.65;
+    font-style: italic;
+  }
+
+  /* ── RECEIPT ── */
+  .receipt-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .receipt-header {
+    background: var(--surface2);
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .receipt-title { font-size: 13px; font-weight: 600; color: var(--text-bright); }
+  .receipt-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .receipt-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    padding: 7px 9px;
+    background: var(--surface2);
+    border-radius: 4px;
+  }
+  .receipt-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .receipt-field:last-of-type { border-bottom: none; }
+  .rf-key { color: var(--text-dim); flex-shrink: 0; min-width: 115px; line-height: 1.5; }
+  .rf-val { color: var(--text-bright); text-align: right; word-break: break-word; line-height: 1.5; }
+
+  /* ── CARE LOOP ── */
+  .care-loop-panel {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .care-loop-header {
+    background: var(--surface2);
+    padding: 9px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .care-loop-title { font-size: 13px; font-weight: 600; color: var(--text-bright); }
+  .care-loop-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .care-loop-msg { font-size: 14px; color: var(--text); line-height: 1.6; }
+  .care-loop-pattern {
+    background: var(--surface2);
+    border-left: 2px solid var(--green);
+    padding: 8px 10px;
+    font-size: 14px;
+    color: var(--text);
+    border-radius: 0 4px 4px 0;
+    line-height: 1.6;
+  }
+  .care-loop-pattern strong { color: var(--text); }
+  .care-loop-checklist { display: flex; flex-direction: column; gap: 4px; }
+  .cl-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .cl-check { color: var(--green); font-size: 12px; }
+
+  /* ── AI RESULT SECTION ── */
+  .ai-result-section {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .ai-result-header {
+    background: var(--surface2);
+    padding: 9px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-bright);
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ai-result-body {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* ── AI DENSITY ── */
+  .ai-sub-section {
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .ai-sub-label {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  .ai-density-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ai-density-cat {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--amber);
+    line-height: 1;
+    width: 22px;
+    flex-shrink: 0;
+  }
+  .ai-density-desc {
+    font-size: 14px;
+    color: var(--text);
+    flex: 1;
+  }
+  .ai-density-override-btn {
+    font-size: 12px;
+    color: var(--text-dim);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .ai-density-override-btn:hover { color: var(--text); border-color: var(--border-light); }
+  .ai-density-picker { display: none; gap: 6px; }
+  .ai-density-picker.open { display: flex; }
+  .ai-dp-opt {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text-dim);
+    cursor: pointer;
+  }
+  .ai-dp-opt:hover { border-color: rgba(214,176,106,0.4); color: var(--text); }
+  .ai-dp-opt.selected { border-color: var(--amber); color: var(--amber); background: rgba(214,176,106,0.08); }
+
+  /* ── AI SHORT-TERM RISK ── */
+  .ai-risk-row { display: flex; align-items: center; gap: 10px; }
+  .ai-risk-badge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+  }
+  .risk-low      { background: rgba(60,160,60,0.12);    color: var(--green);  border: 1px solid rgba(60,160,60,0.3); }
+  .risk-general  { background: rgba(100,180,100,0.1);   color: #7bc47b;       border: 1px solid rgba(100,180,100,0.25); }
+  .risk-moderate { background: rgba(214,176,106,0.12);  color: var(--amber);  border: 1px solid rgba(214,176,106,0.3); }
+  .risk-high     { background: rgba(200,60,60,0.12);    color: #e05555;       border: 1px solid rgba(200,60,60,0.3); }
+  .ai-risk-note  { font-size: 13px; color: var(--text-dim); }
+
+  /* ── STATUS BAR ── */
+  #statusbar {
+    height: var(--status-h);
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 16px;
+    flex-shrink: 0;
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+  .statusbar-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+  .statusbar-item { display: flex; align-items: center; gap: 5px; }
+
+  /* ── STEP INDICATOR ── */
+  #panel-header {
+    padding: 11px 14px 10px;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .step-dots-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #step-label {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+  .step-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--border-light); transition: background 0.3s; }
+  .step-dot.done { background: var(--green); }
+  .step-dot.active { background: var(--accent); }
+  .step-line { flex: 1; height: 1px; background: var(--border); }
+
+  /* Animations */
+  .fade-in { animation: fadeIn 0.3s ease forwards; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hidden { display: none !important; }
+
+  /* ── HANDOVER MODAL (redesigned) ── */
+  .handover-status-bar {
+    display: flex; align-items: center; gap: 7px;
+    padding: 8px 10px;
+    background: rgba(214,176,106,0.07); border: 1px solid rgba(214,176,106,0.22);
+    border-radius: 6px; font-size: 13px; color: var(--amber);
+    margin-bottom: 14px;
+  }
+  .handover-diff-label {
+    font-size: 12px; color: var(--text-dim); text-transform: uppercase;
+    letter-spacing: 0.07em; margin-bottom: 6px;
+  }
+  .handover-focus-row {
+    padding: 9px 11px; background: var(--surface2); border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .handover-focus-label {
+    font-size: 12px; color: var(--text-dim); text-transform: uppercase;
+    letter-spacing: 0.07em; margin-bottom: 4px;
+  }
+  .handover-focus-val { font-size: 15px; color: var(--text-bright); font-weight: 500; line-height: 1.5; }
+  .handover-reason-row {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 14px;
+  }
+  .handover-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .handover-alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--amber);
+    font-size: 14px;
+    line-height: 1.55;
+    padding: 9px 12px;
+    margin-bottom: 12px;
+    background: rgba(214,176,106,0.06);
+    border: 1px solid rgba(214,176,106,0.18);
+    border-radius: 6px;
+  }
+  .handover-alert svg {
+    color: var(--amber);
+    flex-shrink: 0;
+  }
+  .modal-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 18px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .modal-row:last-of-type {
+    border-bottom: 0;
+  }
+  .modal-row-label {
+    color: var(--text-dim);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .modal-row-value {
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: right;
+  }
+  .modal-row-value.strong {
+    color: var(--text-bright);
+    font-weight: 600;
+  }
+  .modal-row-value.amber {
+    color: var(--amber);
+    font-weight: 600;
+  }
+  .modal-row-note {
+    display: block;
+    margin-top: 3px;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .modal-actions {
+    margin-top: 20px;
+  }
+
+  /* ── PATHWAY SUMMARY MODAL (redesigned) ── */
+  .pathway-steps { display: flex; flex-direction: column; margin-bottom: 14px; }
+  .pathway-step { display: flex; align-items: flex-start; gap: 11px; }
+  .pathway-step-num {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: #252526; border: 1px solid #3c3c3c;
+    color: var(--text); font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .pathway-step-content { display: flex; flex-direction: column; gap: 2px; padding-top: 2px; }
+  .pathway-step-label { font-size: 12px; color: var(--text-dim); }
+  .pathway-step-val { font-size: 15px; font-weight: 500; line-height: 1.4; }
+  .pathway-connector { width: 1px; height: 12px; background: #3c3c3c; margin-left: 10px; }
+  .pathway-learning {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 7px; padding: 11px 13px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .pathway-learning-head {
+    font-size: 12px; font-weight: 700; color: var(--text-dim);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2px;
+  }
+  .pathway-learning-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 8px; font-size: 13px;
+  }
+
+  /* Scrollbar */
+  #panel-scroll::-webkit-scrollbar { width: 4px; }
+  #panel-scroll::-webkit-scrollbar-track { background: transparent; }
+  #panel-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  #series::-webkit-scrollbar { width: 3px; }
+  #series::-webkit-scrollbar-track { background: transparent; }
+  #series::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  /* ── MODALS ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.72);
+    backdrop-filter: blur(1px);
+    animation: fadeIn 0.08s ease-out;
+  }
+  .modal-overlay.hidden { display: none !important; }
+  .modal-card {
+    background: #1e1e1e;
+    border: 1px solid #3c3c3c;
+    border-radius: 12px;
+    width: 600px;
+    max-width: calc(100vw - 48px);
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 22px 70px rgba(0,0,0,0.72), 0 0 0 1px rgba(255,255,255,0.02);
+  }
+  .modal-header {
+    padding: 20px 24px 16px;
+    background: transparent;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .modal-header svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--text-dim); }
+  .modal-title { font-size: 22px; font-weight: 600; color: var(--text-bright); }
+  .modal-close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+    border-radius: 5px;
+    transition: color 0.15s, background 0.15s;
+  }
+  .modal-close:hover { color: var(--text-bright); background: var(--surface3); }
+  .modal-body {
+    padding: 18px 24px 24px;
+    color: var(--text);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .modal-body::-webkit-scrollbar { width: 4px; }
+  .modal-body::-webkit-scrollbar-track { background: transparent; }
+  .modal-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  /* Claude/VS Code-style restrained modal panels */
+  .modal-body .handover-status-bar {
+    background: rgba(214,176,106,0.06);
+    border-color: rgba(214,176,106,0.18);
+    color: var(--text);
+  }
+  .modal-body .handover-status-bar svg {
+    color: var(--amber);
+  }
+  .modal-body .comparison-row {
+    gap: 10px;
+  }
+  .modal-body .comparison-cell {
+    background: #252526;
+    border-color: #343434;
+  }
+  .modal-body .comparison-cell.ai {
+    background: #252526;
+    border-color: rgba(214,176,106,0.22);
+  }
+  .modal-body .comparison-cell.human {
+    background: #252526;
+    border-color: #343434;
+  }
+  .modal-body .handover-focus-row,
+  .modal-body .pathway-learning {
+    background: #252526;
+    border: 1px solid #343434;
+  }
+  .modal-body .arb-question {
+    background: #252526;
+    border: 1px solid #343434;
+    border-left: 2px solid rgba(54,95,159,0.75);
+    color: var(--text);
+    font-style: normal;
+  }
+  .modal-body .pathway-step-num {
+    background: #252526;
+    border-color: #3c3c3c;
+    color: var(--text);
+  }
+  .modal-body .pathway-connector {
+    background: #3c3c3c;
+  }
+  .modal-body .pathway-learning-head {
+    color: var(--text-dim);
+  }
+
+  /* ── MODAL TYPOGRAPHY SCALE ── */
+  .modal-body .handover-status-bar { font-size: 15px; padding: 9px 12px; gap: 8px; margin-bottom: 14px; }
+  .modal-body .handover-diff-label { font-size: 12px; margin-bottom: 8px; }
+  .modal-body .comparison-cell { padding: 11px 14px; }
+  .modal-body .cell-label { font-size: 12px; margin-bottom: 4px; }
+  .modal-body .cell-value { font-size: 17px; font-weight: 600; }
+  .modal-body .handover-focus-row { padding: 12px 14px; margin-bottom: 12px; }
+  .modal-body .handover-focus-label { font-size: 12px; margin-bottom: 4px; }
+  .modal-body .handover-focus-val { font-size: 15px; }
+  .modal-body .handover-reason-row { margin-bottom: 16px; }
+  .modal-body .data-label { font-size: 12px; margin-bottom: 8px; }
+  .modal-body .arb-question { font-size: 14px; line-height: 1.7; padding: 11px 14px; }
+  .modal-body .status-chip { font-size: 13px; padding: 4px 10px; border-radius: 5px; }
+  .modal-body .btn-teal { font-size: 14px; padding: 11px 16px; border-radius: 7px; letter-spacing: 0.01em; }
+  .modal-body .pathway-step { gap: 14px; }
+  .modal-body .pathway-step-num { width: 28px; height: 28px; font-size: 12px; }
+  .modal-body .pathway-step-label { font-size: 13px; }
+  .modal-body .pathway-step-val { font-size: 16px; font-weight: 500; }
+  .modal-body .pathway-connector { height: 14px; margin-left: 13px; }
+  .modal-body .pathway-learning { padding: 14px 16px; gap: 10px; }
+  .modal-body .pathway-learning-head { font-size: 12px; margin-bottom: 3px; }
+  .modal-body .pathway-learning-row { font-size: 14px; }
+
+  /* ── READABILITY REFINEMENTS: right service layer + modals ── */
+  #right-panel {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  #right-panel * {
+    line-height: 1.45;
+  }
+  #right-panel .panel-section-header,
+  #right-panel .ai-result-header,
+  #right-panel .care-loop-title,
+  #right-panel .disagreement-title {
+    font-size: 14px;
+  }
+  #right-panel .status-chip {
+    font-size: 13px !important;
+    line-height: 1.2;
+  }
+  #right-panel .panel-note,
+  #right-panel .data-value,
+  #right-panel .radio-text,
+  #right-panel .btn-primary,
+  #right-panel .btn-secondary,
+  #right-panel .btn-teal,
+  #right-panel .ai-result-body,
+  #right-panel .disagreement-body,
+  #right-panel .care-loop-body,
+  #right-panel .micro-feedback,
+  #right-panel .override-select,
+  #right-panel .override-textarea,
+  #right-panel .btn-record {
+    font-size: 14px !important;
+  }
+  #right-panel .locked-judgement strong,
+  #right-panel .cell-value {
+    font-size: 16px;
+  }
+  #right-panel .ai-result-body > div:first-child,
+  #section-locked-judgement .panel-section-body > div {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+  #right-panel .ai-result-body > div:not(:first-child) {
+    font-size: 13px !important;
+  }
+  #panel-title-label,
+  #step-label,
+  .suggested-step-label,
+  .action-divider-text,
+  .cell-label,
+  .data-label {
+    font-size: 12px !important;
+  }
+  .modal-title {
+    color: var(--text-bright) !important;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .modal-body {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .modal-body [style*="font-size:13px"] {
+    font-size: 15px !important;
+  }
+  .modal-body [style*="font-size:12px"],
+  .modal-body .cell-label,
+  .modal-body .data-label,
+  .modal-body .pathway-step-label {
+    font-size: 12px !important;
+  }
+
+  /* ── VS Code-style right panel hierarchy ── */
+  #panel-title-label {
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  #step-label {
+    font-size: 12px !important;
+    color: #9a9a9a;
+  }
+  #right-panel .panel-section-header,
+  #right-panel .ai-result-header,
+  #right-panel .care-loop-header,
+  #right-panel .disagreement-header {
+    font-size: 13px !important;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  #right-panel .panel-section-header,
+  #right-panel .ai-result-header,
+  #right-panel .care-loop-header {
+    color: var(--text);
+  }
+  #right-panel .status-chip {
+    font-size: 12px !important;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  #right-panel .ai-result-body > div:first-child,
+  #section-locked-judgement .panel-section-body > div {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.35;
+  }
+  #right-panel .ai-result-body > div:not(:first-child),
+  #right-panel .disagreement-desc,
+  #right-panel .micro-feedback,
+  #right-panel .panel-note {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: var(--text);
+  }
+  #right-panel .disagreement-title {
+    font-size: 13px !important;
+    font-weight: 500;
+    color: var(--amber) !important;
+    letter-spacing: 0.01em;
+  }
+  #right-panel .disagreement-body span[style*="font-weight:600"] {
+    font-weight: 500 !important;
+  }
+  #right-panel .suggested-step-label,
+  #right-panel .action-divider-text,
+  #right-panel .cell-label,
+  #right-panel .data-label {
+    font-size: 12px !important;
+    font-weight: 500;
+    letter-spacing: 0.045em;
+  }
+  #right-panel .suggested-step-label {
+    color: var(--text-dim);
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+  #right-panel .suggested-step-label svg {
+    opacity: 0.7;
+  }
+  #right-panel .btn-primary,
+  #right-panel .btn-teal {
+    font-size: 13px !important;
+    font-weight: 600;
+  }
+  #right-panel .btn-secondary {
+    font-size: 13px !important;
+    font-weight: 500;
+  }
+
+  /* ── MARK MODE ── */
+  .mark-mode .mamo-pane { cursor: crosshair; }
+
+  /* Human mark ring (blue-grey, no-recall styling) */
+  .human-mark-ring {
+    position: absolute;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .human-ring-circle {
+    width: 64px; height: 64px;
+    border: 2.5px solid rgba(200,60,60,0.9);
+    border-radius: 50%;
+    background: rgba(200,60,60,0.10);
+  }
+  .human-ring-label {
+    position: absolute;
+    top: -22px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(210,70,70,1);
+    white-space: nowrap;
+    background: rgba(0,0,0,0.72);
+    padding: 2px 7px;
+    border-radius: 3px;
+    display: none;
+    letter-spacing: 0.02em;
+  }
+  .human-mark-ring.labelled .human-ring-label { display: block; }
+  .human-mark-ring.labelled { pointer-events: auto; cursor: pointer; }
+  .human-mark-ring.labelled:hover .human-ring-circle { border-color: rgba(220,80,80,1); background: rgba(200,60,60,0.18); }
+
+  /* ── MARK FORM (floating fixed overlay) ── */
+  .mark-form-overlay {
+    position: fixed;
+    z-index: 150;
+    background: #141414;
+    border: 1px solid #383838;
+    border-radius: 9px;
+    padding: 14px 15px;
+    width: 250px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.82), 0 0 0 1px rgba(255,255,255,0.03);
+  }
+  .mark-form-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── BI-RADS radio grid ── */
+  .mf-birads-row {
+    display: flex;
+    gap: 0;
+    margin-bottom: 12px;
+  }
+  .mf-birads-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .mf-birads-col + .mf-birads-col {
+    border-left: 1px solid #2e2e2e;
+    padding-left: 12px;
+  }
+  .mf-cat-label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .mf-cat-label.benign { color: #52a852; }
+  .mf-cat-label.assess { color: #c84040; }
+  .mf-radios { display: flex; gap: 10px; align-items: center; }
+  .mf-radio {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .mf-radio input[type="radio"] { display: none; }
+  .mf-radio-dot {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.1s;
+  }
+  .mf-radio-dot::after {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+  .mf-radio input:checked + .mf-radio-dot::after { opacity: 1; }
+  .mf-radio-num {
+    font-size: 14px;
+    font-weight: 600;
+    color: inherit;
+    line-height: 1;
+  }
+  .mf-radio.benign { color: #52a852; }
+  .mf-radio.assess { color: #c84040; }
+
+  .mf-sep { border: none; border-top: 1px solid #2e2e2e; margin: 0 0 11px; }
+
+  .mark-form-field { margin-bottom: 9px; }
+  .mark-form-label {
+    font-size: 14px;
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .mark-form-select {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    color: var(--text);
+    font-size: 14px;
+    padding: 7px 8px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    font-family: inherit;
+  }
+  .mark-form-select:focus { border-color: #5b7a9a; }
+
+  /* ── STATUS LINE (replaces step dots) ── */
+  #status-line {
+    font-size: 12px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #status-line-label { color: var(--text-dim); }
+  #status-line-value { color: var(--text-bright); font-weight: 500; }
+  #status-line-value.disagreement { color: var(--text-bright); font-weight: 500; }
+
+  /* ── SAVE / DELETE MARK buttons ── */
+  .mf-action-row { display: flex; gap: 7px; margin-top: 11px; }
+  .btn-save-mark {
+    flex: 1;
+    padding: 7px 10px;
+    border: 1px solid rgba(91,122,154,0.55);
+    background: rgba(91,122,154,0.1);
+    color: var(--text-bright);
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+  }
+  .btn-save-mark:hover { background: rgba(91,122,154,0.2); border-color: rgba(91,122,154,0.8); }
+  .btn-save-mark:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-delete-mark {
+    padding: 7px 10px;
+    border: 1px solid #383838;
+    background: transparent;
+    color: var(--text-dim);
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.12s, color 0.12s;
+  }
+  .btn-delete-mark:hover { background: rgba(255,255,255,0.04); color: var(--text); }
+
+  /* Saved mark chip in the findings panel */
+  .saved-mark-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 9px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 7px;
+  }
+  .saved-mark-dot {
+    width: 9px; height: 9px;
+    border: 1.5px solid var(--human-ann);
+    border-radius: 50%;
+    background: rgba(200,60,60,0.1);
+    flex-shrink: 0;
+  }
+
+  /* ── COMPARISON MODAL body extras ── */
+  .modal-body .modal-row-value.amber { color: var(--amber); font-weight: 500; }
+  .evidence-block {
+    background: #252526;
+    border: 1px solid #383838;
+    border-left: 2px solid rgba(214,176,106,0.4);
+    border-radius: 0 5px 5px 0;
+    padding: 11px 13px;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.7;
+    margin-top: 8px;
+  }
+  .evidence-head {
+    font-size: 12px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+    margin-top: 14px;
+  }
+
+  /* ── Similar case reference card ── */
+  .sim-case-card {
+    margin-top: 18px;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .sim-case-head {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 10px;
+  }
+  .sim-case-body {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .sim-case-row {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-dim);
+    padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: baseline;
+  }
+  .sim-case-row:last-of-type { border-bottom: none; padding-bottom: 0; }
+  .sim-case-key {
+    flex-shrink: 0;
+    width: 90px;
+    color: var(--text-dim);
+    opacity: 0.75;
+  }
+  .sim-case-val { color: var(--text); line-height: 1.5; }
+  .sim-case-ref-id {
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .btn-ref-link {
+    font-size: 11px;
+    color: #6ea8e0;
+    background: none;
+    border: none;
+    padding: 2px 0;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    font-family: inherit;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: color 0.12s;
+  }
+  .btn-ref-link:hover { color: #92c0f0; text-decoration: underline; }
+
+  /* ── Cases library modal ── */
+  .lib-case-list { display: flex; flex-direction: column; gap: 10px; }
+  .lib-case-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 11px 14px;
+  }
+  .lib-case-id { font-size: 11px; color: var(--text-dim); letter-spacing: 0.05em; margin-bottom: 3px; }
+  .lib-case-pattern {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 4px;
+  }
+  .lib-case-detail { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+  .lib-case-outcome {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    border: 1px solid var(--border-light);
+    color: var(--text);
+  }
+  .lib-case-outcome.recalled { border-color: rgba(200,60,60,0.4); color: var(--human-ann); background: rgba(200,60,60,0.06); }
+  .lib-case-outcome.confirmed { border-color: rgba(91,122,154,0.4); color: var(--accent); background: rgba(91,122,154,0.06); }
+  .lib-case-outcome.pending { border-color: rgba(208,120,48,0.4); color: var(--amber); background: rgba(208,120,48,0.06); }
+  .lib-intro {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── AI vs HUMAN marker distinction ── */
+  .finding-ring-label::before { content: none; }
+  .human-mark-ring.labelled .human-ring-label::before {
+    content: 'You';
+    display: inline-block;
+    background: rgba(200,60,60,0.72);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 5px;
+    letter-spacing: 0.05em;
+    vertical-align: 1px;
+  }
+  .finding-conf-badge { display: none; }
+
+  /* ── Confidence dots ── */
+  .conf-dots-row { display: inline-flex; align-items: flex-end; gap: 2px; margin-right: 6px; vertical-align: middle; }
+  .cdot { width: 3px; border-radius: 1px; background: var(--border-light); flex-shrink: 0; }
+  .cdot:nth-child(1) { height: 5px; }
+  .cdot:nth-child(2) { height: 8px; }
+  .cdot:nth-child(3) { height: 11px; }
+  .cdot.cdot-on { background: var(--amber); }
+
+  /* ── Case score strip (viewer overlay) ── */
+  #case-score-strip {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    padding-top: 8px;
+  }
+  .cs-title { font-size: 12px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; }
+  .cs-breast { display: flex; align-items: center; gap: 13px; }
+  .cs-side { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.65); width: 13px; flex-shrink: 0; letter-spacing: 0.02em; }
+  .cs-track {
+    flex: 1; height: 10px;
+    background:
+      repeating-linear-gradient(to right, rgba(0,0,0,0.25) 0, rgba(0,0,0,0.25) 1px, transparent 1px, transparent 10%),
+      linear-gradient(to right, #3d7a3d, #c8a030 55%, #c03535);
+    border-radius: 5px; position: relative;
+  }
+  .cs-dot {
+    position: absolute; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--amber);
+    border: 2px solid rgba(0,0,0,0.72);
+    box-shadow: 0 0 8px rgba(208,120,48,0.8), 0 0 19px rgba(208,120,48,0.35);
+  }
+  .cs-val { font-size: 14px; color: rgba(255,255,255,0.65); font-weight: 700; width: 19px; text-align: right; flex-shrink: 0; }
+
+  /* ── Finding callout thumbnails (on-image) ── */
+  .finding-callout {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    pointer-events: none;
+  }
+  .callout-circle {
+    width: 184px; height: 184px;
+    border-radius: 50%;
+    border: 2px solid rgba(208,120,48,0.65);
+    background-color: #050505;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    box-shadow: 0 0 0 1px rgba(208,120,48,0.18), 0 8px 28px rgba(0,0,0,0.8);
+    position: relative;
+    overflow: hidden;
+  }
+  .callout-num {
+    position: absolute;
+    bottom: 8px; right: 8px;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--amber);
+    color: #000;
+    font-size: 14px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    border: 2px solid rgba(0,0,0,0.5);
+  }
+  .callout-tag {
+    font-size: 10px;
+    color: rgba(255,255,255,0.75);
+    background: rgba(0,0,0,0.7);
+    border: 1px solid rgba(208,120,48,0.32);
+    border-radius: 3px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+    backdrop-filter: blur(2px);
+  }
+  .callout-linked-label {
+    font-size: 10px;
+    color: var(--amber);
+    background: rgba(208,120,48,0.1);
+    border: 1px solid rgba(208,120,48,0.3);
+    border-radius: 3px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .callout-connector {
+    position: absolute;
+    width: 1px;
+    background: linear-gradient(to var(--dir, bottom), rgba(208,120,48,0.6), rgba(208,120,48,0.1));
+    transform-origin: top center;
+    pointer-events: none;
+  }
+
+  /* ── Viewer legend ── */
+  #viewer-legend {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    z-index: 10;
+    background: rgba(0,0,0,0.78);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.02em;
+    backdrop-filter: blur(5px);
+    height: 80px;
+  }
+  .vl-item { display: flex; align-items: center; gap: 10px; }
+  .vl-ring { width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0; }
+  .vl-ring-ai  { border: 2.5px dashed rgba(208,120,48,0.85); background: rgba(208,120,48,0.07); }
+  .vl-ring-human { border: 2.5px solid rgba(200,60,60,0.85); background: rgba(200,60,60,0.10); }
+
+  /* ── V2 PANEL: expanded type scale ── */
+  /* card headers */
+  #right-panel.panel-v2 .panel-section-header,
+  #right-panel.panel-v2 .ai-result-header,
+  #right-panel.panel-v2 .care-loop-header,
+  #right-panel.panel-v2 .disagreement-header,
+  #right-panel.panel-v2 .disagreement-title,
+  #right-panel.panel-v2 .care-loop-title {
+    font-size: 15px !important;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  /* card body content */
+  #right-panel.panel-v2 .panel-note,
+  #right-panel.panel-v2 .care-loop-msg,
+  #right-panel.panel-v2 .care-loop-pattern,
+  #right-panel.panel-v2 .ai-result-body > div:not(:first-child),
+  #right-panel.panel-v2 .disagreement-desc,
+  #right-panel.panel-v2 .micro-feedback {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: var(--text) !important;
+  }
+  #right-panel.panel-v2 .disagreement-body > div:first-child {
+    font-size: 14px !important;
+  }
+  /* chips */
+  #right-panel.panel-v2 .status-chip {
+    font-size: 13px !important;
+    padding: 4px 9px;
+  }
+  /* buttons */
+  #right-panel.panel-v2 .btn-primary,
+  #right-panel.panel-v2 .btn-secondary,
+  #right-panel.panel-v2 .btn-teal {
+    font-size: 14px !important;
+  }
+  /* primary / key values */
+  #right-panel.panel-v2 .ai-result-body > div:first-child {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.3;
+  }
+  #right-panel.panel-v2 #locked-judgement-value {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.3;
+  }
+  #right-panel.panel-v2 #locked-judgement-detail {
+    font-size: 14px !important;
+    color: var(--text-dim) !important;
+  }
+  #right-panel.panel-v2 .cell-value {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+  }
+  /* small meta labels — stay at 12px */
+  #right-panel.panel-v2 #panel-title-label,
+  #right-panel.panel-v2 #step-label,
+  #right-panel.panel-v2 .suggested-step-label,
+  #right-panel.panel-v2 .action-divider-text,
+  #right-panel.panel-v2 .cell-label,
+  #right-panel.panel-v2 .data-label {
+    font-size: 12px !important;
+  }
+
+  /* ── Reading outcome modal ── */
+  .outcome-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+  .outcome-option {
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--surface2);
+    cursor: pointer;
+    transition: border-color 0.12s, background 0.12s;
+    user-select: none;
+  }
+  .outcome-option:hover { border-color: var(--border-light); background: var(--surface3); }
+  .outcome-option.selected { border-color: rgba(91,122,154,0.7); background: rgba(54,95,159,0.09); }
+  .outcome-option input[type="radio"] { display: none; }
+  .outcome-radio-dot {
+    width: 18px; height: 18px; flex-shrink: 0;
+    border-radius: 50%; border: 2px solid var(--border-light);
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.12s;
+  }
+  .outcome-option.selected .outcome-radio-dot { border-color: #5b7a9a; }
+  .outcome-radio-dot::after {
+    content: ''; width: 8px; height: 8px;
+    border-radius: 50%; background: #5b7a9a;
+    opacity: 0; transition: opacity 0.1s;
+  }
+  .outcome-option.selected .outcome-radio-dot::after { opacity: 1; }
+  .outcome-label { font-size: 14px; color: var(--text-bright); font-weight: 500; }
+  .outcome-desc { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .outcome-note {
+    font-size: 12px; color: var(--text-dim); line-height: 1.6;
+    padding: 9px 12px; background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border); border-radius: 5px; margin-bottom: 16px;
+  }
+  #btn-confirm-outcome { width: 100%; }
+  #btn-confirm-outcome:disabled { opacity: 0.35; cursor: not-allowed; }
+</style>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <symbol id="icon-user" viewBox="0 0 24 24">
+    <path d="M20 21a8 8 0 0 0-16 0"/>
+    <circle cx="12" cy="7" r="4"/>
+  </symbol>
+  <symbol id="icon-lock" viewBox="0 0 24 24">
+    <rect x="4" y="10" width="16" height="10" rx="2"/>
+    <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+    <circle cx="12" cy="15" r="1"/>
+  </symbol>
+  <symbol id="icon-alert-triangle" viewBox="0 0 24 24">
+    <path d="M12 3 22 20H2L12 3Z"/>
+    <path d="M12 9v5"/>
+    <path d="M12 17h.01"/>
+  </symbol>
+  <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+    <path d="M12 5v14"/>
+    <path d="m6 13 6 6 6-6"/>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="7"/>
+    <path d="m20 20-3.5-3.5"/>
+  </symbol>
+  <symbol id="icon-eye" viewBox="0 0 24 24">
+    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/>
+    <circle cx="12" cy="12" r="3"/>
+  </symbol>
+  <symbol id="icon-pause" viewBox="0 0 24 24">
+    <rect x="6" y="5" width="4" height="14" rx="1"/>
+    <rect x="14" y="5" width="4" height="14" rx="1"/>
+  </symbol>
+  <symbol id="icon-file-text" viewBox="0 0 24 24">
+    <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7Z"/>
+    <path d="M14 2v5h5"/>
+    <path d="M9 12h6"/>
+    <path d="M9 16h6"/>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <path d="m5 12 5 5L20 7"/>
+  </symbol>
+  <symbol id="icon-refresh" viewBox="0 0 24 24">
+    <path d="M20 12a8 8 0 1 1-2.34-5.66"/>
+    <path d="M20 4v6h-6"/>
+  </symbol>
+  <symbol id="icon-home" viewBox="0 0 24 24">
+    <path d="m3 11 9-8 9 8"/>
+    <path d="M5 10v10h14V10"/>
+    <path d="M9 20v-6h6v6"/>
+  </symbol>
+  <symbol id="icon-sidebar" viewBox="0 0 24 24">
+    <rect x="4" y="5" width="16" height="14" rx="3"/>
+    <path d="M10 5v14"/>
+  </symbol>
+  <symbol id="icon-sidebar-open" viewBox="0 0 24 24">
+    <rect x="4" y="5" width="16" height="14" rx="3"/>
+    <path d="M14 5v14"/>
+  </symbol>
+  <symbol id="icon-compare" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="8" height="14" rx="1.5"/>
+    <rect x="13" y="5" width="8" height="14" rx="1.5"/>
+    <path d="M11 12h2"/>
+  </symbol>
+  <symbol id="icon-crosshair" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+  </symbol>
+  <symbol id="icon-circle-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="10" r="3"/>
+    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
+  </symbol>
+  <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="16" height="16" x="4" y="4" rx="2"/>
+    <rect width="6" height="6" x="9" y="9" rx="1"/>
+    <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/>
+  </symbol>
+</svg>
+
+<!-- ── TOOLBAR ── -->
+<div id="toolbar">
+  <div class="tool-group">
+    <button class="tool-btn active" title="Pan"><i data-lucide="move"></i><span class="tool-label">Pan</span></button>
+    <button class="tool-btn" title="Zoom"><i data-lucide="zoom-in"></i><span class="tool-label">Zoom</span></button>
+    <button class="tool-btn" title="Magnify"><i data-lucide="scan-search"></i><span class="tool-label">Magnify</span></button>
+    <div class="tool-sep"></div>
+    <button class="tool-btn" title="Window / Level"><i data-lucide="sliders-horizontal"></i><span class="tool-label">Window</span></button>
+    <button class="tool-btn" title="Measure length"><i data-lucide="ruler"></i><span class="tool-label">Length</span></button>
+    <button class="tool-btn" title="Erase mark"><i data-lucide="eraser"></i><span class="tool-label">Erase</span></button>
+    <button class="tool-btn" title="Mark finding"><i data-lucide="circle-dashed"></i><span class="tool-label">Mark</span></button>
+    <button class="tool-btn" title="Freehand draw"><i data-lucide="pen-line"></i><span class="tool-label">Freehand</span></button>
+    <div class="tool-sep"></div>
+    <button class="tool-btn" title="Reset view"><i data-lucide="rotate-ccw"></i><span class="tool-label">Reset</span></button>
+    <button class="tool-btn" title="2×2 Grid"><i data-lucide="grid-3x3"></i><span class="tool-label">Grid</span></button>
+    <button class="tool-btn" title="Sync panes"><i data-lucide="link-2"></i><span class="tool-label">Sync</span></button>
+  </div>
+
+  <div class="case-id-chip"><span>Case </span>BSV000254<span> · Session 1 of 10 · Age 72</span></div>
+
+  <div class="toolbar-right">
+    <button class="btn-sm">Instructions</button>
+    <a href="index.html" class="btn-sm" style="text-decoration:none;">Home</a>
+    <button class="btn-submit-toolbar" id="btn-submit-reading">Submit reading</button>
+  </div>
+</div>
+
+<!-- ── MAIN ── -->
+<div id="main">
+
+  <!-- Thumbnail series -->
+  <div id="series">
+    <div class="series-label">Views</div>
+
+    <div class="thumb active" onclick="selectThumb(this)">
+      <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
+        <img src="./assets/mammogram-l-cc.webp" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
+      </div>
+      <div class="thumb-tag">L-CC</div>
+      <div class="thumb-label">L-CC</div>
+    </div>
+
+    <div class="thumb" onclick="selectThumb(this)">
+      <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
+        <img src="./assets/mammogram-r-cc.webp" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
+      </div>
+      <div class="thumb-tag">R-CC</div>
+      <div class="thumb-label">R-CC</div>
+    </div>
+
+    <div class="thumb" onclick="selectThumb(this)">
+      <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
+        <img src="./assets/mammogram-l-mlo.webp" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
+      </div>
+      <div class="thumb-tag">L-MLO</div>
+      <div class="thumb-label">L-MLO</div>
+    </div>
+
+    <div class="thumb" onclick="selectThumb(this)">
+      <div class="thumb-img" style="background:#080808;aspect-ratio:4/5;overflow:hidden;">
+        <img src="./assets/mammogram-r-mlo.webp" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
+      </div>
+      <div class="thumb-tag">R-MLO</div>
+      <div class="thumb-label">R-MLO</div>
+    </div>
+  </div>
+
+  <!-- Viewer -->
+  <div id="viewer">
+
+    <!-- Human mark rings are created dynamically by JS -->
+
+    <!-- L-CC -->
+    <div class="mamo-pane" id="pane-lcc">
+      <div class="pane-label">L-CC</div>
+      <div class="pane-age">Age: 72</div>
+      <img class="mamo-img" src="./assets/mammogram-l-cc.webp" alt="L-CC" draggable="false">
+      <div class="image-focus-frame" aria-hidden="true"></div>
+      <!-- AI finding marker: positioned relative to the non-mirrored L-CC image. -->
+      <div class="finding-marker" id="marker-lcc" style="top:43%; left:37%;">
+        <div class="finding-ring-label">
+          <div class="frl-line1">AI finding · Focal asymmetry</div>
+          <div class="frl-line2">L-CC · High confidence</div>
+        </div>
+        <div class="finding-ring"></div>
+      </div>
+      <!-- Callout line spans full pane -->
+      <svg class="hidden" id="callout-line-lcc" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;" aria-hidden="true">
+        <line x1="70%" y1="16%" x2="37%" y2="43%" stroke="rgba(208,120,48,0.5)" stroke-width="1.5" stroke-dasharray="5 3"/>
+      </svg>
+      <!-- Callout bubble: top-right dark area -->
+      <div class="finding-callout hidden" id="callout-lcc" style="top:16px; right:16px;">
+        <div class="callout-circle" style="background-image:url('./assets/mammogram-l-cc.webp');background-position:33% 41%;">
+          <div class="callout-num">5</div>
+        </div>
+      </div>
+      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2314 / -3</div>
+    </div>
+
+    <!-- R-CC -->
+    <div class="mamo-pane" id="pane-rcc">
+      <div class="pane-label">R-CC</div>
+      <div class="pane-age">Age: 72</div>
+      <img class="mamo-img" src="./assets/mammogram-r-cc.webp" alt="R-CC" draggable="false">
+      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2314 / -3</div>
+    </div>
+
+    <!-- L-MLO -->
+    <div class="mamo-pane" id="pane-lmlo">
+      <div class="pane-label">L-MLO</div>
+      <div class="pane-age">Age: 72</div>
+      <img class="mamo-img" src="./assets/mammogram-l-mlo.webp" alt="L-MLO" draggable="false">
+      <!-- AI finding marker: corresponding MLO view of the same focal asymmetry -->
+      <div class="finding-marker" id="marker-lmlo" style="top:36%; left:52%;">
+        <div class="finding-ring-label">
+          <div class="frl-line1">AI finding · Focal asymmetry</div>
+          <div class="frl-line2">L-MLO · High confidence</div>
+        </div>
+        <div class="finding-ring"></div>
+      </div>
+      <!-- Callout line spans full pane -->
+      <svg class="hidden" id="callout-line-lmlo" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;" aria-hidden="true">
+        <line x1="27%" y1="16%" x2="52%" y2="36%" stroke="rgba(208,120,48,0.5)" stroke-width="1.5" stroke-dasharray="5 3"/>
+      </svg>
+      <!-- Callout bubble: top-left dark area -->
+      <div class="finding-callout hidden" id="callout-lmlo" style="top:16px; left:16px;">
+        <div class="callout-circle" style="background-image:url('./assets/mammogram-l-mlo.webp');background-position:53% 33%;">
+          <div class="callout-num">5</div>
+        </div>
+      </div>
+      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
+    </div>
+
+    <!-- R-MLO -->
+    <div class="mamo-pane" id="pane-rmlo">
+      <div class="pane-label">R-MLO</div>
+      <div class="pane-age">Age: 72</div>
+      <img class="mamo-img" src="./assets/mammogram-r-mlo.webp" alt="R-MLO" draggable="false">
+      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
+    </div>
+
+
+    <!-- AI vs human marker legend -->
+    <div id="viewer-legend" class="hidden">
+      <div class="vl-item"><span class="vl-ring vl-ring-ai"></span>AI finding</div>
+      <div class="vl-item"><span class="vl-ring vl-ring-human"></span>Your mark</div>
+    </div>
+
+  </div><!-- /viewer -->
+
+  <!-- Right panel -->
+  <div id="right-panel" class="collapsed">
+
+    <!-- Fixed header: service identity + step progress -->
+    <div id="panel-header">
+      <div id="panel-title-bar">
+        <span id="panel-title-label">Reading Support</span>
+        <button id="panel-collapse-btn" onclick="togglePanel()" title="Close sidebar" aria-label="Close sidebar" data-tooltip="Close sidebar">
+          <svg class="icon" aria-hidden="true"><use href="#icon-sidebar"/></svg>
+        </button>
+      </div>
+      <div id="status-line">
+        <span id="status-line-label">Status:</span>
+        <span id="status-line-value">Independent reading</span>
+      </div>
+    </div><!-- /panel-header -->
+
+    <!-- Scrollable decision support -->
+    <div id="panel-scroll">
+
+    <!-- STATE 1a: Findings (marking tool) -->
+    <!-- STATE 2+: Locked reading -->
+    <div class="panel-section hidden" id="section-locked-judgement">
+      <div class="panel-section-header">
+        <svg class="icon"><use href="#icon-circle-user"/></svg>
+        Human reading
+        <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Submitted</span>
+      </div>
+      <div class="panel-section-body" style="padding:8px 12px;">
+        <div id="locked-judgement-value" style="font-size:14px;font-weight:600;color:var(--text-bright);">—</div>
+        <div id="locked-judgement-detail" style="font-size:14px;color:var(--text);margin-top:3px;"></div>
+      </div>
+    </div>
+
+    <!-- STATE 3: AI result -->
+    <div class="ai-result-section hidden" id="section-ai-result">
+      <div class="ai-result-header">
+        <svg class="icon"><use href="#icon-cpu"/></svg>
+        AI
+        <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Revealed</span>
+      </div>
+      <div class="ai-result-body" style="gap:6px;padding:10px 12px;">
+        <div style="font-size:14px;font-weight:600;color:var(--amber);">Recall suggested</div>
+        <div style="font-size:14px;color:var(--text);">
+          <span class="conf-dots-row"><span class="cdot cdot-on"></span><span class="cdot cdot-on"></span><span class="cdot cdot-on"></span></span>High confidence · Focal asymmetry
+        </div>
+        <div style="font-size:14px;color:var(--text);">L-CC · upper outer</div>
+        <div id="case-score-strip">
+          <div class="cs-title">AI Suspicion Score</div>
+          <div class="cs-breast">
+            <span class="cs-side">L</span>
+            <div class="cs-track"><div class="cs-dot" style="left:70%"></div></div>
+            <span class="cs-val">7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATE 4: Disagreement detected -->
+    <div class="disagreement-panel hidden" id="section-disagreement">
+      <div class="disagreement-header">
+        <svg class="icon"><use href="#icon-alert-triangle"/></svg>
+        <span class="disagreement-title">Disagreement detected</span>
+      </div>
+      <div class="disagreement-body">
+
+        <div style="display:flex;align-items:center;justify-content:center;gap:6px;padding:7px 12px;background:rgba(0,0,0,0.2);border:1px solid var(--border);border-radius:5px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;">
+          <span style="color:var(--amber);">AI-positive</span>
+          <span style="color:var(--text-dim);font-weight:400;">/</span>
+          <span style="color:rgba(210,80,80,0.9);">human-negative</span>
+        </div>
+        <div style="font-size:14px;color:var(--text);">No matching recall-level human mark at the AI finding location.</div>
+
+        <!-- PRIMARY: Suggested next step -->
+        <div class="suggested-step-wrap">
+          <div class="suggested-step-label">
+            <svg class="icon"><use href="#icon-arrow-down"/></svg>
+            Suggested next step
+          </div>
+          <button class="btn-teal" id="btn-handover">Handover prepared</button>
+        </div>
+
+        <!-- End-state: handover sent -->
+        <div id="handover-sent" class="hidden" style="border-top:1px solid var(--border);padding-top:12px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-dim);">
+            <svg class="icon" style="color:var(--green);flex-shrink:0;"><use href="#icon-check"/></svg>
+            Case sent to arbitration queue
+          </div>
+          <a href="arbitration.html" class="btn-teal" style="text-decoration:none;text-align:center;font-size:13px;">Open Arbitration Queue →</a>
+        </div>
+
+        <!-- SECONDARY actions -->
+        <div class="secondary-actions">
+
+          <!-- View comparison -->
+          <div class="secondary-action-wrap">
+            <button class="btn-secondary" onclick="openModal('modal-comparison')">
+              <svg class="icon"><use href="#icon-compare"/></svg>
+              <span class="action-main">View comparison</span>
+            </button>
+          </div>
+
+          <!-- Peer pause -->
+          <div class="secondary-action-wrap">
+            <button class="btn-secondary" id="btn-peer-pause" onclick="doPeerPause(this)">
+              <svg class="icon"><use href="#icon-pause"/></svg>
+              <span class="action-main">Peer pause</span>
+            </button>
+          </div>
+
+          <!-- Add review note -->
+          <div class="secondary-action-wrap">
+            <button class="btn-secondary" id="btn-override" onclick="doOverride(this)">
+              <svg class="icon"><use href="#icon-file-text"/></svg>
+              <span class="action-main">Add review note</span>
+            </button>
+            <div class="micro-feedback micro-feedback-dim reason-inline-form" id="feedback-override">
+              <select class="override-select" id="override-select">
+                <option value="" disabled selected>Select reason</option>
+                <option>Normal variant — asymmetry due to anatomy</option>
+                <option>Technical — image quality or positioning</option>
+                <option>Prior comparison reviewed — no interval change</option>
+                <option>AI sensitivity known high in this tissue type</option>
+                <option>Other</option>
+              </select>
+              <textarea class="override-textarea" placeholder="Optional note…"></textarea>
+              <button class="btn-record" onclick="submitOverride()">Save</button>
+            </div>
+          </div>
+
+        </div><!-- /secondary-actions -->
+      </div>
+    </div>
+
+    <!-- STATE 7: Care Loop -->
+    <div class="care-loop-panel hidden" id="section-careloop">
+      <div class="care-loop-header">
+        <svg class="icon" style="color:var(--green)"><use href="#icon-refresh"/></svg>
+        <span class="care-loop-title">Added to Care Loop</span>
+        <span class="status-chip chip-green" style="margin-left:auto;font-size:12px;">Active</span>
+      </div>
+      <div class="care-loop-body">
+        <div class="care-loop-msg">Next team calibration review</div>
+        <div class="care-loop-pattern">AI-positive / human-negative cases</div>
+        <button class="btn-secondary" style="margin-top:4px;justify-content:center;" onclick="openModal('modal-receipt')">View pathway summary</button>
+      </div>
+    </div>
+
+    </div><!-- /panel-scroll -->
+
+    <!-- Collapsed strip (visible when panel is hidden) -->
+    <div class="panel-collapsed-strip" onclick="togglePanel()" title="Open sidebar">
+      <button class="panel-expand-btn" aria-label="Open sidebar" type="button">
+        <svg class="icon" aria-hidden="true"><use href="#icon-sidebar-open"/></svg>
+      </button>
+      <span class="panel-collapsed-label">Case Support</span>
+    </div>
+
+  </div><!-- /right-panel -->
+</div><!-- /main -->
+
+<!-- Status bar -->
+<div id="statusbar">
+  <div class="statusbar-item"><div class="statusbar-dot"></div> Session active</div>
+  <div class="statusbar-item">Reader: R. Thompson</div>
+  <div class="statusbar-item">BSV000254 · Age 72 · Screen round 3</div>
+  <div class="statusbar-item" style="margin-left:auto;" id="status-state">State: Independent reading</div>
+</div>
+
+<!-- ── MODAL: Warm Handover Card ── -->
+<div class="modal-overlay hidden" id="modal-handover">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">Warm Handover Card</span>
+      <button class="modal-close" onclick="closeModal('modal-handover')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="handover-simple">
+        <div class="handover-alert">
+          <svg class="icon"><use href="#icon-alert-triangle"/></svg>
+          AI-human disagreement needs peer review.
+        </div>
+
+        <div class="modal-row">
+          <div class="modal-row-label">Case</div>
+          <div class="modal-row-value strong">BSV000254</div>
+        </div>
+        <div class="modal-row">
+          <div class="modal-row-label">Handover reason</div>
+          <div class="modal-row-value amber">AI-positive / human-negative</div>
+        </div>
+        <div class="modal-row">
+          <div class="modal-row-label">Human judgement</div>
+          <div class="modal-row-value strong" id="handover-human-val" style="color:var(--human-ann);">—</div>
+        </div>
+        <div class="modal-row">
+          <div class="modal-row-label">AI output</div>
+          <div class="modal-row-value amber">Recall suggested<span class="modal-row-note">High confidence · focal asymmetry</span></div>
+        </div>
+        <div class="modal-row">
+          <div class="modal-row-label">Focus area</div>
+          <div class="modal-row-value">L-CC · left upper outer</div>
+        </div>
+        <div class="modal-row">
+          <div class="modal-row-label">Reviewer question</div>
+          <div class="modal-row-value">Should this case be recalled for further assessment?</div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-teal" onclick="generateReceipt()">Confirm handover</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL: Decision Pathway Summary ── -->
+<div class="modal-overlay hidden" id="modal-receipt">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">Decision Pathway Summary</span>
+      <button class="modal-close" onclick="closeModal('modal-receipt')">×</button>
+    </div>
+    <div class="modal-body">
+      <!-- Sequential pathway -->
+      <div class="pathway-steps">
+        <div class="pathway-step">
+          <div class="pathway-step-num">1</div>
+          <div class="pathway-step-content">
+            <div class="pathway-step-label">Human judgement recorded</div>
+            <div class="pathway-step-val" id="pathway-human-val" style="color:var(--human-ann);">—</div>
+          </div>
+        </div>
+        <div class="pathway-connector"></div>
+        <div class="pathway-step">
+          <div class="pathway-step-num">2</div>
+          <div class="pathway-step-content">
+            <div class="pathway-step-label">AI result revealed</div>
+            <div class="pathway-step-val" style="color:var(--amber);">Recall · high confidence</div>
+          </div>
+        </div>
+        <div class="pathway-connector"></div>
+        <div class="pathway-step">
+          <div class="pathway-step-num">3</div>
+          <div class="pathway-step-content">
+            <div class="pathway-step-label">Disagreement classified</div>
+            <div class="pathway-step-val"><span class="status-chip chip-amber" style="font-size:12px;padding:2px 7px;">AI-positive / human-negative</span></div>
+          </div>
+        </div>
+        <div class="pathway-connector"></div>
+        <div class="pathway-step">
+          <div class="pathway-step-num">4</div>
+          <div class="pathway-step-content">
+            <div class="pathway-step-label">Handover sent for review</div>
+            <div class="pathway-step-val" style="color:var(--text-bright);">Confirmed</div>
+          </div>
+        </div>
+        <div class="pathway-connector"></div>
+        <div class="pathway-step">
+          <div class="pathway-step-num">5</div>
+          <div class="pathway-step-content">
+            <div class="pathway-step-label">Review outcome</div>
+            <div class="pathway-step-val" style="color:var(--text-bright);">Recall to assessment</div>
+          </div>
+        </div>
+      </div>
+      <!-- Learning follow-up -->
+      <div class="pathway-learning">
+        <div class="pathway-learning-head">Learning follow-up</div>
+        <div class="pathway-learning-row">
+          <span style="color:var(--text-dim);flex-shrink:0;">Pattern</span>
+          <span style="color:var(--text-bright);text-align:right;font-weight:500;">AI-positive / human-negative cases</span>
+        </div>
+        <div class="pathway-learning-row">
+          <span style="color:var(--text-dim);flex-shrink:0;">Next step</span>
+          <span style="color:var(--text-bright);text-align:right;font-weight:500;">Add to team calibration review</span>
+        </div>
+      </div>
+      <div style="height:20px;"></div>
+      <button class="btn-teal" onclick="addToCareLoop()">Add to Care Loop</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL: Human vs AI Comparison ── -->
+<div class="modal-overlay hidden" id="modal-comparison">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">Human vs AI Comparison</span>
+      <button class="modal-close" onclick="closeModal('modal-comparison')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-row">
+        <div class="modal-row-label">Human judgement</div>
+        <div class="modal-row-value strong" id="comp-human-decision" style="color:var(--human-ann);">—</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Human mark</div>
+        <div class="modal-row-value" id="comp-human-mark" style="color:var(--human-ann);">—</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Human confidence</div>
+        <div class="modal-row-value" id="comp-human-conf" style="color:var(--human-ann);">—</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI judgement</div>
+        <div class="modal-row-value amber">Recall suggested</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI finding location</div>
+        <div class="modal-row-value">L-CC · upper outer quadrant</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI confidence</div>
+        <div class="modal-row-value">High</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Difference</div>
+        <div class="modal-row-value amber">AI-positive / human-negative</div>
+      </div>
+      <div class="evidence-head">AI evidence layer</div>
+      <div class="evidence-block">
+        Focal asymmetry detected in left upper outer quadrant. Density pattern and asymmetry relative to the contralateral view exceed the high-confidence threshold. No corresponding finding flagged at this location in the prior screen.
+      </div>
+
+      <!-- Additional AI context -->
+      <div class="sim-case-card">
+        <div class="sim-case-head">Additional AI context</div>
+        <div class="sim-case-body">
+          <div class="sim-case-row">
+            <span class="sim-case-key">Density</span>
+            <span class="sim-case-val">A · Almost entirely fatty</span>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Short-term risk</span>
+            <span class="sim-case-val">Moderate · 1–2 yr image-derived</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Similar case reference card -->
+      <div class="sim-case-card">
+        <div class="sim-case-head">Similar case reference</div>
+        <div class="sim-case-body">
+          <div class="sim-case-ref-id">
+            <span>REF-014 · Prior disagreement case</span>
+            <button class="btn-ref-link" onclick="closeModal('modal-comparison'); openModal('modal-ref-014');">View reference case →</button>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Pattern</span>
+            <span class="sim-case-val">AI-positive / human-negative</span>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Prior outcome</span>
+            <span class="sim-case-val">Recalled after review</span>
+          </div>
+          <div class="sim-case-row">
+            <span class="sim-case-key">Learning note</span>
+            <span class="sim-case-val">Similar disagreement patterns have previously required review.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── READING OUTCOME MODAL ── -->
+<div class="modal-overlay hidden" id="modal-reading-outcome">
+  <div class="modal-card" style="max-width:420px;">
+    <div class="modal-header">
+      <span class="modal-title">Initial reading outcome</span>
+      <button class="modal-close" onclick="closeModal('modal-reading-outcome')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="outcome-options">
+        <label class="outcome-option" onclick="selectOutcome(this, 'No further assessment')">
+          <input type="radio" name="reading-outcome" value="no-further">
+          <span class="outcome-radio-dot"></span>
+          <div>
+            <div class="outcome-label">No further assessment</div>
+            <div class="outcome-desc">Finding recorded, but no recall needed</div>
+          </div>
+        </label>
+        <label class="outcome-option" onclick="selectOutcome(this, 'Further assessment needed')">
+          <input type="radio" name="reading-outcome" value="further">
+          <span class="outcome-radio-dot"></span>
+          <div>
+            <div class="outcome-label">Further assessment needed</div>
+            <div class="outcome-desc">Finding requires recall / additional imaging</div>
+          </div>
+        </label>
+      </div>
+      <div class="outcome-note">
+        This is your case-level reading outcome. It is separate from individual finding annotations.
+      </div>
+      <button class="btn-teal" id="btn-confirm-outcome" disabled onclick="doSubmitReading()">Submit reading</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── REF-014 DETAIL MODAL ── -->
+<div class="modal-overlay hidden" id="modal-ref-014">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">REF-014</span>
+      <button class="modal-close" onclick="closeModal('modal-ref-014')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-row">
+        <div class="modal-row-label">Case ID</div>
+        <div class="modal-row-value">BSV000191</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Date reviewed</div>
+        <div class="modal-row-value">March 2024</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Pattern</div>
+        <div class="modal-row-value amber">AI-positive / human-negative</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Finding type</div>
+        <div class="modal-row-value">Focal asymmetry · Left MLO</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">AI confidence</div>
+        <div class="modal-row-value">High</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Human concern</div>
+        <div class="modal-row-value">Low</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-label">Final outcome</div>
+        <div class="modal-row-value" style="color:var(--human-ann);font-weight:600;">Recalled after review</div>
+      </div>
+      <div class="evidence-head">Arbitration note</div>
+      <div class="evidence-block" style="border-left-color: rgba(200,60,60,0.35);">
+        Second reader review confirmed the AI finding. The focal asymmetry was assessed as clinically significant on closer inspection. Case was recalled and further imaging arranged. Learning outcome: asymmetry in this density category warrants second look even when human concern is low.
+      </div>
+      <div class="evidence-head" style="margin-top:16px;">Learning note</div>
+      <div class="evidence-block" style="border-left-color:var(--border-light);">
+        Similar disagreement patterns in this finding category have a higher-than-average rate of recall following arbitration review. This reference is provided to support the review process — it does not determine the outcome of the current case.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DISAGREEMENT CASES LIBRARY MODAL ── -->
+<div class="modal-overlay hidden" id="modal-case-library">
+  <div class="modal-card">
+    <div class="modal-header">
+      <span class="modal-title">Disagreement Cases Library</span>
+      <button class="modal-close" onclick="closeModal('modal-case-library')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="lib-intro">
+        Cases where AI and human reading disagreed. Each case shows the disagreement pattern, finding type, and final outcome after review. This library supports arbitration and team calibration — it does not prescribe outcomes for new cases.
+      </div>
+      <div class="lib-case-list">
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000191 · March 2024</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Focal asymmetry · Left MLO · Age 68<br>AI confidence: High · Human concern: Low</div>
+          <div class="lib-case-outcome recalled">Recalled after review</div>
+        </div>
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000127 · November 2023</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Mass · Right CC · Age 74<br>AI confidence: High · Human concern: Low</div>
+          <div class="lib-case-outcome confirmed">No recall confirmed</div>
+        </div>
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000089 · July 2023</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Calcification cluster · Left CC · Age 61<br>AI confidence: Medium · Human concern: Low</div>
+          <div class="lib-case-outcome recalled">Recalled after review</div>
+        </div>
+
+        <div class="lib-case-item">
+          <div class="lib-case-id">BSV000312 · August 2024</div>
+          <div class="lib-case-pattern">AI-positive / human-negative</div>
+          <div class="lib-case-detail">Architectural distortion · Right MLO · Age 70<br>AI confidence: High · Human concern: Medium</div>
+          <div class="lib-case-outcome pending">Pending arbitration review</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MARK FORM (floating, fixed position) ── -->
+<div class="mark-form-overlay hidden" id="mark-form">
+  <div class="mark-form-title">BI-RADS</div>
+
+  <div class="mf-birads-row">
+    <!-- Benign column -->
+    <div class="mf-birads-col">
+      <div class="mf-cat-label benign">Benign</div>
+      <div class="mf-radios">
+        <label class="mf-radio benign">
+          <input type="radio" name="birads" value="2" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">2</span>
+        </label>
+      </div>
+    </div>
+    <!-- Assess column -->
+    <div class="mf-birads-col">
+      <div class="mf-cat-label assess">Assess</div>
+      <div class="mf-radios">
+        <label class="mf-radio assess">
+          <input type="radio" name="birads" value="3" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">3</span>
+        </label>
+        <label class="mf-radio assess">
+          <input type="radio" name="birads" value="4" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">4</span>
+        </label>
+        <label class="mf-radio assess">
+          <input type="radio" name="birads" value="5" onchange="onBiradsChange()">
+          <span class="mf-radio-dot"></span>
+          <span class="mf-radio-num">5</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="mf-lesion-section" class="hidden">
+    <hr class="mf-sep">
+    <div class="mark-form-field">
+      <label class="mark-form-label">Lesion</label>
+      <select class="mark-form-select" id="mf-type" onchange="onLesionChange()">
+        <option value="">Select lesion type</option>
+        <option>Mass</option>
+        <option>Asymmetry</option>
+        <option>Architectural Distortion</option>
+        <option>Calcification</option>
+        <option>Other findings</option>
+      </select>
+    </div>
+    <div class="mark-form-field hidden" id="mf-sub1-wrap">
+      <select class="mark-form-select" id="mf-sub1" onchange="onSub1Change()"></select>
+    </div>
+    <div class="mark-form-field hidden" id="mf-sub2-wrap">
+      <select class="mark-form-select" id="mf-sub2" onchange="checkMarkFormReady()"></select>
+    </div>
+  </div>
+
+  <div class="mf-action-row">
+    <button class="btn-save-mark" id="mf-save" type="button" onclick="saveMark()" disabled>Save mark</button>
+    <button class="btn-delete-mark" id="mf-delete" type="button" onclick="deleteMark()">Delete</button>
+  </div>
+</div>
+
+<script>
+  let currentState = 1;
+  let humanMarks = [];       // {id, el, paneId, type, sub1, sub2, birads, concern, labelText}
+  let pendingMarkEl = null;  // unsaved mark currently on screen
+  let pendingMarkPaneId = null;
+  let markIdCounter = 0;
+  let editingMarkId = null;  // id of saved mark being edited
+
+  const statusLabels = [
+    'Independent reading',
+    'Judgement submitted',
+    'AI result revealed',
+    'Disagreement detected',
+    'Handover prepared',
+    'Decision pathway generated',
+    'Added to Care Loop'
+  ];
+
+  const paneNames = {
+    'pane-lcc': 'L-CC', 'pane-rcc': 'R-CC',
+    'pane-lmlo': 'L-MLO', 'pane-rmlo': 'R-MLO'
+  };
+
+  function updateSteps(state) {
+    const label = statusLabels[state - 1] || '';
+    const valueEl = document.getElementById('status-line-value');
+    valueEl.textContent = label;
+    valueEl.className = (state === 4) ? 'disagreement' : '';
+    document.getElementById('status-state').textContent = 'State: ' + label;
+    if (state === 4) {
+      document.getElementById('panel-title-label').textContent = 'Disagreement Support';
+    }
+  }
+
+  function show(id) {
+    const el = document.getElementById(id);
+    el.classList.remove('hidden');
+    el.classList.add('fade-in');
+    setTimeout(() => {
+      const panel = document.getElementById('panel-scroll');
+      panel.scrollTo({ top: panel.scrollHeight, behavior: 'smooth' });
+    }, 60);
+  }
+
+  function hide(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+
+  // ── Mark mode: click viewer to place human marks (multiple) ──
+  document.getElementById('viewer').classList.add('mark-mode');
+
+  document.getElementById('viewer').addEventListener('click', function(e) {
+    if (currentState !== 1) return;
+
+    // Click on a saved mark ring → open edit mode
+    const savedRing = e.target.closest('.human-mark-ring.labelled');
+    if (savedRing) {
+      openEditMark(savedRing.id, e.clientX, e.clientY);
+      return;
+    }
+
+    const pane = e.target.closest('.mamo-pane');
+    if (!pane) return;
+
+    // Cancel any unsaved pending mark
+    if (pendingMarkEl) {
+      pendingMarkEl.remove();
+      pendingMarkEl = null;
+    }
+    // Close edit mode if open
+    editingMarkId = null;
+    document.getElementById('mf-save').textContent = 'Save mark';
+
+    const paneRect = pane.getBoundingClientRect();
+    const xPct = ((e.clientX - paneRect.left) / paneRect.width * 100).toFixed(2);
+    const yPct = ((e.clientY - paneRect.top)  / paneRect.height * 100).toFixed(2);
+    pendingMarkPaneId = pane.id;
+
+    // Create mark ring and append to the pane so it moves with the image
+    const markEl = document.createElement('div');
+    markEl.className = 'human-mark-ring';
+    markEl.id = 'human-mark-' + (++markIdCounter);
+    markEl.style.cssText = 'position:absolute;z-index:6;transform:translate(-50%,-50%);left:' + xPct + '%;top:' + yPct + '%;';
+    markEl.innerHTML = '<div class="human-ring-label"></div><div class="human-ring-circle"></div>';
+    pane.appendChild(markEl);
+    pendingMarkEl = markEl;
+
+    openMarkForm(e.clientX, e.clientY);
+    resetMarkForm();
+    checkMarkFormReady();
+  });
+
+  function openMarkForm(cx, cy) {
+    const form = document.getElementById('mark-form');
+    form.classList.remove('hidden');
+    let fl = cx + 18;
+    let ft = cy - 30;
+    if (fl + 262 > window.innerWidth - 12) fl = cx - 270;
+    if (ft + 340 > window.innerHeight - 12) ft = window.innerHeight - 352;
+    if (fl < 8) fl = 8;
+    if (ft < 8) ft = 8;
+    form.style.left = fl + 'px';
+    form.style.top = ft + 'px';
+  }
+
+  function openEditMark(markId, cx, cy) {
+    const mark = humanMarks.find(m => m.id === markId);
+    if (!mark) return;
+    editingMarkId = markId;
+    pendingMarkEl = null;
+
+    // Repopulate form with saved values
+    document.querySelectorAll('input[name="birads"]').forEach(r => {
+      r.checked = r.value === mark.birads;
+    });
+    const lesionSection = document.getElementById('mf-lesion-section');
+    if (mark.birads === '2') {
+      lesionSection.classList.add('hidden');
+    } else {
+      lesionSection.classList.remove('hidden');
+      document.getElementById('mf-type').value = mark.type;
+      onLesionChange();
+      if (mark.sub1) {
+        document.getElementById('mf-sub1').value = mark.sub1;
+        onSub1Change();
+        if (mark.sub2) document.getElementById('mf-sub2').value = mark.sub2;
+      }
+    }
+
+    document.getElementById('mf-save').textContent = 'Update mark';
+    openMarkForm(cx, cy);
+    checkMarkFormReady();
+  }
+
+  // ── Lesion cascade data ──
+  const MF_SUB1 = {
+    'Mass':                    { ph: 'Select Shape',        opts: ['Oval', 'Round', 'Irregular'] },
+    'Asymmetry':               { ph: 'Select Lesion',       opts: ['Global', 'Focal'] },
+    'Calcification':           { ph: 'Select Appearance',   opts: ['Amorphous', 'Coarse Heterogenous', 'Fine Pleomorphic', 'Fine Linear / Linear branching'] },
+    'Other findings':          { ph: 'Select Sub-type',     opts: ['Node', 'Skin', 'Nipple'] }
+  };
+  const MF_SUB2_CALC = { ph: 'Select Distribution', opts: ['Diffuse', 'Regional', 'Grouped', 'Linear', 'Segmental'] };
+
+  function mfPopulateSelect(el, ph, opts) {
+    el.innerHTML = '<option value="">' + ph + '</option>' +
+      opts.map(o => '<option>' + o + '</option>').join('');
+    el.value = '';
+  }
+
+  function onBiradsChange() {
+    const biradsEl = document.querySelector('input[name="birads"]:checked');
+    const lesionSection = document.getElementById('mf-lesion-section');
+    if (biradsEl && biradsEl.value === '2') {
+      lesionSection.classList.add('hidden');
+      document.getElementById('mf-type').value = '';
+      document.getElementById('mf-sub1-wrap').classList.add('hidden');
+      document.getElementById('mf-sub2-wrap').classList.add('hidden');
+    } else if (biradsEl) {
+      lesionSection.classList.remove('hidden');
+    }
+    checkMarkFormReady();
+  }
+
+  function onLesionChange() {
+    const type = document.getElementById('mf-type').value;
+    const sub1Wrap = document.getElementById('mf-sub1-wrap');
+    const sub2Wrap = document.getElementById('mf-sub2-wrap');
+    const sub1 = document.getElementById('mf-sub1');
+    const sub2 = document.getElementById('mf-sub2');
+    sub2Wrap.classList.add('hidden'); sub2.innerHTML = '';
+    const cfg = MF_SUB1[type];
+    if (cfg) {
+      mfPopulateSelect(sub1, cfg.ph, cfg.opts);
+      sub1Wrap.classList.remove('hidden');
+    } else {
+      sub1Wrap.classList.add('hidden'); sub1.innerHTML = '';
+    }
+    checkMarkFormReady();
+  }
+
+  function onSub1Change() {
+    const type = document.getElementById('mf-type').value;
+    const sub1Val = document.getElementById('mf-sub1').value;
+    const sub2Wrap = document.getElementById('mf-sub2-wrap');
+    const sub2 = document.getElementById('mf-sub2');
+    if (type === 'Calcification' && sub1Val) {
+      mfPopulateSelect(sub2, MF_SUB2_CALC.ph, MF_SUB2_CALC.opts);
+      sub2Wrap.classList.remove('hidden');
+    } else {
+      sub2Wrap.classList.add('hidden'); sub2.innerHTML = '';
+    }
+    checkMarkFormReady();
+  }
+
+  function checkMarkFormReady() {
+    const biradsEl = document.querySelector('input[name="birads"]:checked');
+    if (!biradsEl) { document.getElementById('mf-save').disabled = true; return; }
+    if (biradsEl.value === '2') { document.getElementById('mf-save').disabled = false; return; }
+    const type = document.getElementById('mf-type').value;
+    const sub1Ok = document.getElementById('mf-sub1-wrap').classList.contains('hidden') || document.getElementById('mf-sub1').value;
+    const sub2Ok = document.getElementById('mf-sub2-wrap').classList.contains('hidden') || document.getElementById('mf-sub2').value;
+    document.getElementById('mf-save').disabled = !(type && sub1Ok && sub2Ok);
+  }
+
+  function saveMark() {
+    const biradsEl = document.querySelector('input[name="birads"]:checked');
+    if (!biradsEl) return;
+    const birads = biradsEl.value;
+    let type = '', sub1Val = '', sub2Val = '', labelText;
+    if (birads === '2') {
+      labelText = 'Benign · BI-RADS 2';
+    } else {
+      type = document.getElementById('mf-type').value;
+      if (!type) return;
+      sub1Val = document.getElementById('mf-sub1').value;
+      sub2Val = document.getElementById('mf-sub2').value;
+      const parts = [type];
+      if (sub1Val) parts.push(sub1Val);
+      if (sub2Val) parts.push(sub2Val);
+      labelText = parts.join(' · ') + ' · BI-RADS ' + birads;
+    }
+
+    document.getElementById('mark-form').classList.add('hidden');
+
+    if (editingMarkId) {
+      // Update existing saved mark
+      const mark = humanMarks.find(m => m.id === editingMarkId);
+      if (mark) {
+        Object.assign(mark, { type, sub1: sub1Val, sub2: sub2Val, birads, concern: 'BI-RADS ' + birads, labelText });
+        mark.el.querySelector('.human-ring-label').textContent = labelText;
+      }
+      editingMarkId = null;
+    } else {
+      if (!pendingMarkEl) return;
+      pendingMarkEl.querySelector('.human-ring-label').textContent = labelText;
+      pendingMarkEl.classList.add('labelled');
+      humanMarks.push({
+        id: pendingMarkEl.id, el: pendingMarkEl, paneId: pendingMarkPaneId,
+        type, sub1: sub1Val, sub2: sub2Val, birads,
+        concern: 'BI-RADS ' + birads, labelText
+      });
+      pendingMarkEl = null;
+      pendingMarkPaneId = null;
+    }
+
+    updateMarksPanel();
+    resetMarkForm();
+    document.getElementById('mf-save').textContent = 'Save mark';
+  }
+
+  function deleteMark() {
+    document.getElementById('mark-form').classList.add('hidden');
+    if (editingMarkId) {
+      // Delete a saved mark
+      const idx = humanMarks.findIndex(m => m.id === editingMarkId);
+      if (idx !== -1) {
+        humanMarks[idx].el.remove();
+        humanMarks.splice(idx, 1);
+      }
+      editingMarkId = null;
+      updateMarksPanel();
+    } else if (pendingMarkEl) {
+      pendingMarkEl.remove();
+      pendingMarkEl = null;
+      pendingMarkPaneId = null;
+    }
+    resetMarkForm();
+    document.getElementById('mf-save').textContent = 'Save mark';
+  }
+
+  function resetMarkForm() {
+    document.getElementById('mf-type').value = '';
+    document.getElementById('mf-lesion-section').classList.add('hidden');
+    document.getElementById('mf-sub1-wrap').classList.add('hidden');
+    document.getElementById('mf-sub2-wrap').classList.add('hidden');
+    document.getElementById('mf-sub1').innerHTML = '';
+    document.getElementById('mf-sub2').innerHTML = '';
+    document.querySelectorAll('input[name="birads"]').forEach(r => r.checked = false);
+    checkMarkFormReady();
+  }
+
+  function updateMarksPanel() {
+    const n = humanMarks.length;
+    const btn = document.getElementById('btn-submit-reading');
+    btn.textContent = n > 0 ? 'Submit reading (' + n + ')' : 'Submit reading';
+    const btn2 = document.getElementById('btn-submit-reading-v2');
+    btn2.textContent = n > 0 ? 'Submit ↑ (' + n + ')' : 'Submit ↑';
+  }
+
+  // ── Submit reading → open outcome modal ──
+  let chosenOutcome = null;
+
+  document.getElementById('btn-submit-reading').addEventListener('click', function() {
+    chosenOutcome = null;
+    document.querySelectorAll('.outcome-option').forEach(o => o.classList.remove('selected'));
+    document.querySelectorAll('input[name="reading-outcome"]').forEach(r => r.checked = false);
+    document.getElementById('btn-confirm-outcome').disabled = true;
+    openModal('modal-reading-outcome');
+  });
+
+  function selectOutcome(labelEl, outcomeText) {
+    document.querySelectorAll('.outcome-option').forEach(o => o.classList.remove('selected'));
+    labelEl.classList.add('selected');
+    chosenOutcome = outcomeText;
+    document.getElementById('btn-confirm-outcome').disabled = false;
+  }
+
+  function doSubmitReading() {
+    if (!chosenOutcome) return;
+    closeModal('modal-reading-outcome');
+
+    // Cancel any unsaved pending mark
+    if (pendingMarkEl) { pendingMarkEl.remove(); pendingMarkEl = null; }
+
+    // Build mark detail string
+    let markDetail = '';
+    if (humanMarks.length > 0) {
+      const first = humanMarks[0];
+      markDetail = first.type + (first.concern ? ' · ' + first.concern : '') +
+        (humanMarks.length > 1 ? ' (+' + (humanMarks.length - 1) + ' more)' : '');
+    }
+
+    // Populate locked reading in panel
+    document.getElementById('locked-judgement-value').textContent = chosenOutcome;
+    if (markDetail) document.getElementById('locked-judgement-detail').textContent = markDetail;
+
+    // Populate dynamic outcome placeholders
+    const handoverHuman = document.getElementById('handover-human-val');
+    if (handoverHuman) handoverHuman.textContent = chosenOutcome;
+    const pathwayHuman = document.getElementById('pathway-human-val');
+    if (pathwayHuman) pathwayHuman.textContent = chosenOutcome;
+
+    // Pre-fill comparison modal
+    document.getElementById('comp-human-decision').textContent = chosenOutcome;
+    if (humanMarks.length > 0) {
+      const first = humanMarks[0];
+      document.getElementById('comp-human-conf').textContent = first.concern || '—';
+      const paneName = paneNames[first.paneId] || 'Image';
+      document.getElementById('comp-human-mark').textContent =
+        paneName + ' · ' + first.type + (humanMarks.length > 1 ? ' +' + (humanMarks.length - 1) : '');
+    } else {
+      document.getElementById('comp-human-conf').textContent = '—';
+      document.getElementById('comp-human-mark').textContent = 'No finding marked';
+    }
+
+    document.getElementById('viewer').classList.remove('mark-mode');
+    document.getElementById('btn-submit-reading').disabled = true;
+    document.getElementById('right-panel').classList.add('panel-v2');
+    document.getElementById('viewer').classList.add('viewer-v2');
+
+    currentState = 2;
+    updateSteps(currentState);
+    show('section-locked-judgement');
+
+    setTimeout(() => {
+      currentState = 3;
+      updateSteps(currentState);
+      show('section-ai-result');
+      document.getElementById('marker-lcc').classList.add('visible');
+      document.getElementById('marker-lmlo').classList.add('visible');
+      document.getElementById('callout-line-lcc').classList.remove('hidden');
+      document.getElementById('callout-lcc').classList.remove('hidden');
+      document.getElementById('callout-line-lmlo').classList.remove('hidden');
+      document.getElementById('callout-lmlo').classList.remove('hidden');
+      document.getElementById('viewer-legend').classList.remove('hidden');
+
+      setTimeout(() => {
+        currentState = 4;
+        updateSteps(currentState);
+        show('section-disagreement');
+        document.getElementById('right-panel').classList.remove('collapsed');
+      }, 900);
+    }, 650);
+  }
+
+  // ── Peer pause ──
+  function doPeerPause(btn) {
+    const isOpen = btn.classList.contains('used');
+    if (isOpen) {
+      btn.classList.remove('used');
+      btn.innerHTML = '<svg class="icon"><use href="#icon-pause"/></svg><span class="action-main">Peer pause</span>';
+    } else {
+      btn.classList.add('used');
+      btn.innerHTML = '<svg class="icon"><use href="#icon-pause"/></svg><span class="action-main">Peer pause requested</span><span class="action-meta">Notified · 15 min</span>';
+    }
+  }
+
+  // ── Override reason ──
+  function doOverride(btn) {
+    if (btn.classList.contains('reason-saved')) return;
+    const fb = document.getElementById('feedback-override');
+    const isOpen = fb.classList.contains('visible');
+    if (isOpen) {
+      fb.classList.remove('visible');
+      btn.classList.remove('used');
+      btn.innerHTML = '<svg class="icon"><use href="#icon-file-text"/></svg><span class="action-main">Add review note</span>';
+    } else {
+      fb.classList.add('visible');
+      btn.classList.add('used');
+      btn.innerHTML = '<svg class="icon"><use href="#icon-file-text"/></svg><span class="action-main">Add review note</span><span class="action-meta">Capture rationale</span>';
+    }
+  }
+
+  function submitOverride() {
+    const sel = document.getElementById('override-select').value;
+    if (!sel) {
+      document.getElementById('override-select').style.borderColor = 'var(--amber)';
+      setTimeout(() => { document.getElementById('override-select').style.borderColor = ''; }, 1500);
+      return;
+    }
+    document.getElementById('feedback-override').classList.remove('visible');
+    const overrideBtn = document.getElementById('btn-override');
+    overrideBtn.classList.add('used', 'reason-saved');
+    overrideBtn.innerHTML = '<svg class="icon"><use href="#icon-check"/></svg><span class="action-main">Reason captured</span><span class="action-meta">Saved to decision trace</span>';
+  }
+
+  // ── Modal helpers ──
+  function toggleDensityPicker() {
+    const picker = document.getElementById('density-picker');
+    const btn = document.getElementById('density-override-btn');
+    picker.classList.toggle('open');
+    btn.textContent = picker.classList.contains('open') ? 'Cancel ▴' : 'Override ▾';
+  }
+
+  function selectDensity(opt, cat, desc) {
+    document.querySelectorAll('.ai-dp-opt').forEach(b => b.classList.remove('selected'));
+    opt.classList.add('selected');
+    document.getElementById('density-cat-display').textContent = cat;
+    document.getElementById('density-desc-display').textContent = desc;
+    document.getElementById('density-picker').classList.remove('open');
+    document.getElementById('density-override-btn').textContent = 'Override ▾';
+  }
+
+  function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === this) closeModal(this.id);
+    });
+  });
+
+  // ── Warm handover → open modal ──
+  document.getElementById('btn-handover').addEventListener('click', function() {
+    currentState = 5;
+    updateSteps(currentState);
+    ['feedback-override'].forEach(id => {
+      document.getElementById(id).classList.remove('visible');
+    });
+    const peerPauseBtn = document.getElementById('btn-peer-pause');
+    peerPauseBtn.classList.remove('used');
+    peerPauseBtn.innerHTML = '<svg class="icon"><use href="#icon-pause"/></svg><span class="action-main">Peer pause</span>';
+    const overrideBtn = document.getElementById('btn-override');
+    if (!overrideBtn.classList.contains('reason-saved')) {
+      overrideBtn.classList.remove('used');
+      overrideBtn.innerHTML = '<svg class="icon"><use href="#icon-file-text"/></svg><span class="action-main">Add review note</span>';
+    }
+    document.querySelectorAll('.secondary-actions .btn-secondary').forEach(b => {
+      b.disabled = true;
+    });
+    this.disabled = true;
+    this.textContent = '✓ Handover prepared';
+    this.style.opacity = '0.6';
+    document.getElementById('handover-sent').classList.remove('hidden');
+    openModal('modal-handover');
+  });
+
+  // ── Generate receipt (called from modal button) ──
+  function generateReceipt() {
+    currentState = 6;
+    updateSteps(currentState);
+    closeModal('modal-handover');
+    openModal('modal-receipt');
+  }
+
+  // ── Add to Care Loop (called from modal button) ──
+  function addToCareLoop() {
+    currentState = 7;
+    updateSteps(currentState);
+    closeModal('modal-receipt');
+    show('section-careloop');
+  }
+
+  // ── Thumbnail switching ──
+  function selectThumb(el) {
+    document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  // ── Toolbar tool buttons ──
+  document.querySelectorAll('.tool-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // ── Collapse / expand support panel ──
+  function togglePanel() {
+    document.getElementById('right-panel').classList.toggle('collapsed');
+  }
+
+  // ── Lucide icons ──
+  lucide.createIcons();
+</script>
+</body>
+</html>

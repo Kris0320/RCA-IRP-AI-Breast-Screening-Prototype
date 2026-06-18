@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbitration Queue — AI Breast Screening</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d0d0d; --surface: #141414; --surface2: #1a1a1a; --surface3: #222222;
+      --border: rgba(255,255,255,0.08); --border-light: rgba(255,255,255,0.15);
+      --text: #cccccc; --text-dim: rgba(255,255,255,0.4); --text-bright: #ffffff;
+      --amber: #d0a830; --teal: #3a9e8f; --green: #5aaa5a;
+    }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+
+    .site-nav { height: 44px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 24px; gap: 0; flex-shrink: 0; }
+    .nav-brand { font-size: 13px; font-weight: 600; color: var(--text-bright); letter-spacing: 0.02em; margin-right: 28px; white-space: nowrap; }
+    .nav-links { display: flex; gap: 2px; }
+    .nav-link { font-size: 13px; color: var(--text-dim); text-decoration: none; padding: 5px 12px; border-radius: 5px; transition: color 0.15s, background 0.15s; white-space: nowrap; }
+    .nav-link:hover { color: var(--text); background: var(--surface2); }
+    .nav-link.active { color: var(--text-bright); background: var(--surface3); }
+
+    .page-content { max-width: 720px; width: 100%; margin: 0 auto; padding: 48px 24px 64px; flex: 1; }
+    .page-header { margin-bottom: 32px; }
+    .page-title { font-size: 22px; font-weight: 600; color: var(--text-bright); margin-bottom: 8px; }
+    .page-sub { font-size: 14px; color: var(--text-dim); line-height: 1.6; }
+
+    .queue-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--amber); background: rgba(208,120,48,0.08); border: 1px solid rgba(208,120,48,0.25); border-radius: 4px; padding: 3px 9px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px; }
+    .queue-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+
+    .case-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+    .case-card-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .case-id { font-size: 14px; font-weight: 700; color: var(--text-bright); }
+    .case-status-chip { font-size: 11px; font-weight: 600; color: var(--amber); background: rgba(208,120,48,0.1); border: 1px solid rgba(208,120,48,0.3); border-radius: 4px; padding: 3px 9px; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+
+    .case-rows { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+    .case-row { display: flex; gap: 12px; padding: 9px 14px; border-bottom: 1px solid var(--border); font-size: 13px; background: var(--surface2); }
+    .case-row:last-child { border-bottom: none; }
+    .case-row-key { color: var(--text-dim); flex-shrink: 0; width: 130px; }
+    .case-row-val { color: var(--text); line-height: 1.5; }
+    .val-amber { color: var(--amber); font-weight: 600; }
+
+    .btn-open { display: inline-block; padding: 10px 18px; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; transition: border-color 0.15s, background 0.15s; width: fit-content; }
+    .btn-open:hover { border-color: var(--border-light); background: var(--surface3); }
+
+    .site-footer { padding: 20px 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-dim); text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-brand">AI Breast Screening</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="reading.html" class="nav-link">Reading Viewer</a>
+      <a href="arbitration.html" class="nav-link active">Arbitration Queue</a>
+      <a href="library.html" class="nav-link">Case Library</a>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <div class="page-header">
+      <div class="page-title">Arbitration Queue</div>
+      <div class="page-sub">Cases requiring peer or arbitration review after AI-human disagreement.</div>
+    </div>
+
+    <div class="queue-tag"><span class="queue-dot"></span>1 case awaiting review</div>
+
+    <div class="case-card">
+      <div class="case-card-header">
+        <div class="case-id">Case BS-V000254</div>
+        <div class="case-status-chip">Awaiting review</div>
+      </div>
+
+      <div class="case-rows">
+        <div class="case-row">
+          <span class="case-row-key">Pattern</span>
+          <span class="case-row-val"><span style="color:var(--amber);font-weight:600;">AI-positive</span> / <span style="color:rgba(210,80,80,0.9);font-weight:600;">human-negative</span></span>
+        </div>
+        <div class="case-row">
+          <span class="case-row-key">Human reading</span>
+          <span class="case-row-val">No further assessment · BI-RADS 2</span>
+        </div>
+        <div class="case-row">
+          <span class="case-row-key">AI result</span>
+          <span class="case-row-val val-amber">Recall suggested · high confidence</span>
+        </div>
+        <div class="case-row">
+          <span class="case-row-key">Status</span>
+          <span class="case-row-val">Awaiting arbitration review</span>
+        </div>
+      </div>
+
+      <a href="arbitration-case.html" class="btn-open">Open case review →</a>
+    </div>
+  </div>
+
+  <div class="site-footer">RCA IRP · AI Breast Screening Service Prototype · 2025</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbitration Review — BS-V000254</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0d0d0d; --surface: #141414; --surface2: #1a1a1a; --surface3: #222222;
+      --border: rgba(255,255,255,0.08); --border-light: rgba(255,255,255,0.15);
+      --text: #cccccc; --text-dim: rgba(255,255,255,0.4); --text-bright: #ffffff;
+      --amber: #d0a830; --teal: #3a9e8f; --green: #5aaa5a;
+    }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+
+    .site-nav { height: 44px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 24px; gap: 0; flex-shrink: 0; }
+    .nav-brand { font-size: 13px; font-weight: 600; color: var(--text-bright); letter-spacing: 0.02em; margin-right: 28px; white-space: nowrap; }
+    .nav-links { display: flex; gap: 2px; }
+    .nav-link { font-size: 13px; color: var(--text-dim); text-decoration: none; padding: 5px 12px; border-radius: 5px; transition: color 0.15s, background 0.15s; white-space: nowrap; }
+    .nav-link:hover { color: var(--text); background: var(--surface2); }
+    .nav-link.active { color: var(--text-bright); background: var(--surface3); }
+
+    .page-content { max-width: 720px; width: 100%; margin: 0 auto; padding: 48px 24px 64px; flex: 1; display: flex; flex-direction: column; gap: 24px; }
+
+    .back-link { font-size: 13px; color: var(--text-dim); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; transition: color 0.15s; }
+    .back-link:hover { color: var(--text); }
+
+    .page-header { display: flex; flex-direction: column; gap: 4px; }
+    .page-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; }
+    .page-title { font-size: 22px; font-weight: 600; color: var(--text-bright); }
+
+    .section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .section-head { padding: 12px 16px; border-bottom: 1px solid var(--border); font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; background: var(--surface2); }
+    .section-body { display: flex; flex-direction: column; }
+
+    .detail-row { display: flex; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .detail-row:last-child { border-bottom: none; }
+    .detail-key { color: var(--text-dim); flex-shrink: 0; width: 160px; }
+    .detail-val { color: var(--text); line-height: 1.5; }
+
+    .question-block { padding: 18px 16px; display: flex; flex-direction: column; gap: 10px; }
+    .question-text { font-size: 14px; color: var(--text-bright); font-weight: 500; line-height: 1.5; }
+    .outcome-display { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: var(--surface2); border: 1px solid rgba(90,170,90,0.25); border-radius: 6px; }
+    .outcome-label { font-size: 12px; color: var(--text-dim); }
+    .outcome-val { font-size: 14px; font-weight: 600; color: var(--green); }
+
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-primary-action { display: inline-block; padding: 10px 18px; background: var(--teal); color: #fff; border: none; border-radius: 6px; font-size: 13px; font-weight: 600; text-decoration: none; cursor: pointer; transition: opacity 0.15s; }
+    .btn-primary-action:hover { opacity: 0.88; }
+    .btn-secondary-action { display: inline-block; padding: 10px 18px; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; transition: border-color 0.15s, background 0.15s; }
+    .btn-secondary-action:hover { border-color: var(--border-light); background: var(--surface3); }
+
+    .site-footer { padding: 20px 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-dim); text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-brand">AI Breast Screening</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="reading.html" class="nav-link">Reading Viewer</a>
+      <a href="arbitration.html" class="nav-link active">Arbitration Queue</a>
+      <a href="library.html" class="nav-link">Case Library</a>
+    </div>
+  </nav>
+
+  <div class="page-content">
+
+    <a href="arbitration.html" class="back-link">← Back to Arbitration Queue</a>
+
+    <div class="page-header">
+      <div class="page-label">Arbitration Review</div>
+      <div class="page-title">Case BS-V000254</div>
+    </div>
+
+    <!-- Case summary -->
+    <div class="section">
+      <div class="section-head">Case summary</div>
+      <div class="section-body">
+        <div class="detail-row">
+          <span class="detail-key">Human reading</span>
+          <span class="detail-val">No further assessment · BI-RADS 2</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-key">AI result</span>
+          <span class="detail-val" style="color:var(--amber);font-weight:600;">Recall suggested · high confidence · focal asymmetry</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-key">Disagreement type</span>
+          <span class="detail-val"><span style="color:var(--amber);font-weight:600;">AI-positive</span> / <span style="color:rgba(210,80,80,0.9);font-weight:600;">human-negative</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arbitration question -->
+    <div class="section">
+      <div class="section-head">Arbitration question</div>
+      <div class="question-block">
+        <div class="question-text">Should this case be recalled for further assessment?</div>
+        <div class="outcome-display">
+          <div style="display:flex;flex-direction:column;gap:3px;">
+            <div class="outcome-label">Review outcome</div>
+            <div class="outcome-val">Recall to assessment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <a href="library.html" class="btn-primary-action">Add to Case Library →</a>
+      <a href="arbitration.html" class="btn-secondary-action">Back to queue</a>
+    </div>
+
+  </div>
+
+  <div class="site-footer">RCA IRP · AI Breast Screening Service Prototype · 2025</div>
+
+</body>
+</html>
