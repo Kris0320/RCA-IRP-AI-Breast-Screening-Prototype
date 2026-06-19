@@ -17,17 +17,17 @@
     --text: #cccccc;
     --text-dim: #858585;
     --text-bright: #f2f2f2;
-    --accent: #365f9f;
-    --accent-dim: #294d82;
+    --accent: #1f4fc6;
+    --accent-dim: #1638a8;
     --amber: #d07830;
     --amber-dim: #5c3214;
     --human-ann: #c83c3c;
     --green: #8aaa7b;
     --green-dim: #3f5238;
     --red: #c77878;
-    --teal: #365f9f;
-    --teal-dim: #294d82;
-    --teal-bright: #4772b8;
+    --teal: #1f4fc6;
+    --teal-dim: #1638a8;
+    --teal-bright: #2a5cd4;
     --purple: #a798b8;
     --thumbnail-w: 110px;
     --panel-w: 420px;
@@ -566,7 +566,7 @@
     user-select: none;
   }
   .radio-option:hover { background: var(--surface2); border-color: var(--border-light); }
-  .radio-option.selected { border-color: var(--accent); background: rgba(54,95,159,0.07); }
+  .radio-option.selected { border-color: var(--accent); background: rgba(31,79,198,0.07); }
   .radio-dot {
     width: 16px; height: 16px;
     border: 2px solid var(--border-light);
@@ -693,7 +693,7 @@
   .chip-amber { background: rgba(208,120,48,0.15); color: var(--amber); }
   .chip-red   { background: rgba(200,60,60,0.12);  color: var(--human-ann); }
   .chip-green { background: rgba(138,170,123,0.13); color: #a7c39d; }
-  .chip-teal { background: rgba(54,95,159,0.12); color: var(--text); }
+  .chip-teal { background: rgba(31,79,198,0.12); color: var(--text); }
   .chip-purple { background: var(--surface3); color: var(--text-dim); }
 
   /* Data rows */
@@ -903,13 +903,13 @@
 
   /* ── HANDOVER CARD ── */
   .handover-card {
-    border: 1px solid rgba(54,95,159,0.35);
+    border: 1px solid rgba(31,79,198,0.35);
     border-radius: 8px;
     overflow: hidden;
-    background: rgba(54,95,159,0.03);
+    background: rgba(31,79,198,0.03);
   }
   .handover-header {
-    background: rgba(54,95,159,0.1);
+    background: rgba(31,79,198,0.1);
     padding: 9px 12px;
     display: flex;
     align-items: center;
@@ -1390,7 +1390,7 @@
   .modal-body .arb-question {
     background: #252526;
     border: 1px solid #343434;
-    border-left: 2px solid rgba(54,95,159,0.75);
+    border-left: 2px solid rgba(31,79,198,0.75);
     color: var(--text);
     font-style: normal;
   }
@@ -1730,8 +1730,8 @@
   .btn-save-mark {
     flex: 1;
     padding: 7px 10px;
-    border: 1px solid rgba(91,122,154,0.55);
-    background: rgba(91,122,154,0.1);
+    border: 1px solid rgba(31,79,198,0.55);
+    background: rgba(31,79,198,0.1);
     color: var(--text-bright);
     font-size: 14px;
     font-family: inherit;
@@ -1739,7 +1739,7 @@
     cursor: pointer;
     transition: background 0.12s, border-color 0.12s;
   }
-  .btn-save-mark:hover { background: rgba(91,122,154,0.2); border-color: rgba(91,122,154,0.8); }
+  .btn-save-mark:hover { background: rgba(31,79,198,0.2); border-color: rgba(31,79,198,0.8); }
   .btn-save-mark:disabled { opacity: 0.4; cursor: not-allowed; }
   .btn-delete-mark {
     padding: 7px 10px;
@@ -1886,7 +1886,7 @@
     color: var(--text);
   }
   .lib-case-outcome.recalled { border-color: rgba(200,60,60,0.4); color: var(--human-ann); background: rgba(200,60,60,0.06); }
-  .lib-case-outcome.confirmed { border-color: rgba(91,122,154,0.4); color: var(--accent); background: rgba(91,122,154,0.06); }
+  .lib-case-outcome.confirmed { border-color: rgba(31,79,198,0.4); color: var(--accent); background: rgba(31,79,198,0.06); }
   .lib-case-outcome.pending { border-color: rgba(208,120,48,0.4); color: var(--amber); background: rgba(208,120,48,0.06); }
   .lib-intro {
     font-size: 13px;
@@ -2118,7 +2118,7 @@
     user-select: none;
   }
   .outcome-option:hover { border-color: var(--border-light); background: var(--surface3); }
-  .outcome-option.selected { border-color: rgba(91,122,154,0.7); background: rgba(54,95,159,0.09); }
+  .outcome-option.selected { border-color: rgba(31,79,198,0.7); background: rgba(31,79,198,0.09); }
   .outcome-option input[type="radio"] { display: none; }
   .outcome-radio-dot {
     width: 18px; height: 18px; flex-shrink: 0;
