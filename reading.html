@@ -2125,14 +2125,14 @@
   .outcome-option input[type="radio"] { display: none; }
   .outcome-radio-dot {
     width: 18px; height: 18px; flex-shrink: 0;
-    border-radius: 50%; border: 2px solid var(--border-light);
+    border-radius: 50%; border: 2px solid var(--accent);
     display: flex; align-items: center; justify-content: center;
     transition: border-color 0.12s;
   }
-  .outcome-option.selected .outcome-radio-dot { border-color: #5b7a9a; }
+  .outcome-option.selected .outcome-radio-dot { border-color: var(--accent); }
   .outcome-radio-dot::after {
     content: ''; width: 8px; height: 8px;
-    border-radius: 50%; background: #5b7a9a;
+    border-radius: 50%; background: var(--accent);
     opacity: 0; transition: opacity 0.1s;
   }
   .outcome-option.selected .outcome-radio-dot::after { opacity: 1; }
