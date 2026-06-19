@@ -111,19 +111,21 @@
   .case-id-chip span { color: var(--text-dim); }
   .toolbar-right { display: flex; gap: 10px; align-items: center; }
   .btn-sm {
-    height: 32px;
-    padding: 0 13px;
-    border-radius: 5px;
-    border: 1px solid var(--border);
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: 1px solid var(--border-light);
     background: var(--surface2);
     color: var(--text);
     cursor: pointer;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
     display: inline-flex;
     align-items: center;
-    transition: background 0.15s;
+    transition: background 0.15s, border-color 0.15s;
   }
-  .btn-sm:hover { background: var(--surface3); }
+  .btn-sm:hover { background: var(--surface3); border-color: var(--border-light); }
   .btn-submit-toolbar {
     height: 40px;
     padding: 0 18px;
