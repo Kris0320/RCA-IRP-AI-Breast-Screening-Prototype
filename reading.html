@@ -109,21 +109,25 @@
     letter-spacing: 0.04em;
   }
   .case-id-chip span { color: var(--text-dim); }
-  .toolbar-right { display: flex; gap: 8px; }
+  .toolbar-right { display: flex; gap: 10px; align-items: center; }
   .btn-sm {
-    padding: 5px 12px;
+    height: 32px;
+    padding: 0 13px;
     border-radius: 5px;
     border: 1px solid var(--border);
     background: var(--surface2);
     color: var(--text);
     cursor: pointer;
     font-size: 12px;
+    display: inline-flex;
+    align-items: center;
     transition: background 0.15s;
   }
   .btn-sm:hover { background: var(--surface3); }
   .btn-submit-toolbar {
-    padding: 6px 16px;
-    border-radius: 5px;
+    height: 40px;
+    padding: 0 18px;
+    border-radius: 6px;
     border: 1px solid var(--accent);
     background: var(--accent);
     color: #fff;
@@ -132,6 +136,8 @@
     font-weight: 600;
     font-family: inherit;
     letter-spacing: 0.01em;
+    display: inline-flex;
+    align-items: center;
     transition: background 0.15s, border-color 0.15s;
   }
   .btn-submit-toolbar:hover { background: var(--teal-bright); border-color: var(--teal-bright); }
@@ -2221,14 +2227,14 @@
 <!-- ── TOOLBAR ── -->
 <div id="toolbar">
   <div class="tool-group">
-    <button class="tool-btn active" title="Pan"><i data-lucide="move"></i><span class="tool-label">Pan</span></button>
+    <button class="tool-btn" title="Pan"><i data-lucide="move"></i><span class="tool-label">Pan</span></button>
     <button class="tool-btn" title="Zoom"><i data-lucide="zoom-in"></i><span class="tool-label">Zoom</span></button>
     <button class="tool-btn" title="Magnify"><i data-lucide="scan-search"></i><span class="tool-label">Magnify</span></button>
     <div class="tool-sep"></div>
     <button class="tool-btn" title="Window / Level"><i data-lucide="sliders-horizontal"></i><span class="tool-label">Window</span></button>
     <button class="tool-btn" title="Measure length"><i data-lucide="ruler"></i><span class="tool-label">Length</span></button>
     <button class="tool-btn" title="Erase mark"><i data-lucide="eraser"></i><span class="tool-label">Erase</span></button>
-    <button class="tool-btn" title="Mark finding"><i data-lucide="circle-dashed"></i><span class="tool-label">Mark</span></button>
+    <button class="tool-btn active" title="Mark finding"><i data-lucide="circle-dashed"></i><span class="tool-label">Mark</span></button>
     <button class="tool-btn" title="Freehand draw"><i data-lucide="pen-line"></i><span class="tool-label">Freehand</span></button>
     <div class="tool-sep"></div>
     <button class="tool-btn" title="Reset view"><i data-lucide="rotate-ccw"></i><span class="tool-label">Reset</span></button>
