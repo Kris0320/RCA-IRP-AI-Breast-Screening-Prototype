@@ -665,6 +665,22 @@
     cursor: default;
   }
 
+  .btn-blue-outline {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 6px;
+    border: 1px solid #6b9af8;
+    background: transparent;
+    color: #6b9af8;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .btn-blue-outline:hover { background: rgba(107,154,248,0.1); color: #8db3fa; border-color: #8db3fa; }
+
   .btn-teal {
     padding: 11px 16px;
     border-radius: 6px;
@@ -2472,10 +2488,7 @@
 
           <!-- View comparison -->
           <div class="secondary-action-wrap">
-            <button class="btn-secondary" onclick="openModal('modal-comparison')">
-              <svg class="icon"><use href="#icon-compare"/></svg>
-              <span class="action-main">View comparison</span>
-            </button>
+            <button class="btn-blue-outline" onclick="openModal('modal-comparison')">View comparison</button>
           </div>
 
           <!-- Peer pause -->
