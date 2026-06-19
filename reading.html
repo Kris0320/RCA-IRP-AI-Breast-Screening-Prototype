@@ -30,7 +30,7 @@
     --teal-bright: #4772b8;
     --purple: #a798b8;
     --thumbnail-w: 110px;
-    --panel-w: 390px;
+    --panel-w: 420px;
     --toolbar-h: 60px;
     --status-h: 28px;
   }
@@ -734,10 +734,10 @@
     letter-spacing: 0.02em;
   }
   .disagreement-body {
-    padding: 12px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
   }
   .disagreement-desc {
     font-size: 13px;
@@ -2431,10 +2431,9 @@
       </div>
       <div class="disagreement-body">
 
-        <div style="display:flex;align-items:center;justify-content:center;gap:6px;padding:7px 12px;background:rgba(0,0,0,0.2);border:1px solid var(--border);border-radius:5px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;">
-          <span style="color:var(--amber);">AI-positive</span>
-          <span style="color:var(--text-dim);font-weight:400;">/</span>
-          <span style="color:rgba(210,80,80,0.9);">human-negative</span>
+        <div style="display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border);border-radius:6px;overflow:hidden;font-size:14px;font-weight:700;letter-spacing:0.03em;text-transform:uppercase;">
+          <div style="padding:10px 12px;background:rgba(214,176,106,0.12);color:var(--amber);text-align:center;border-right:1px solid var(--border);">AI-positive</div>
+          <div style="padding:10px 12px;background:rgba(210,70,70,0.08);color:rgba(210,80,80,0.9);text-align:center;">Human-negative</div>
         </div>
         <div style="font-size:14px;color:var(--text);">No matching recall-level human mark at the AI finding location.</div>
 
