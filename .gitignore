@@ -19,3 +19,16 @@ node_modules/
 
 # Large files exceeding GitHub's 100MB limit
 assets/unit3-submission/Reflection-Unit3-QihangWu.mp4
+.vercel
+
+# Video production — large binary files excluded from git
+# Scripts (.md) and README are still tracked
+10_Video_Production/raw_recordings/*.mov
+10_Video_Production/raw_recordings/*.mp4
+10_Video_Production/exports/*.mp4
+10_Video_Production/exports/*.mov
+10_Video_Production/assets/music/*
+10_Video_Production/assets/overlays/*.png
+10_Video_Production/assets/overlays/*.gif
+10_Video_Production/assets/overlays/*.mov
+!10_Video_Production/**/.gitkeep

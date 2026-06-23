@@ -19,8 +19,8 @@
       --text:         #384762;
       --text-dim:     rgba(50,68,100,0.55);
       --text-bright:  #0e1828;
-      --amber:        #c28810;
-      --amber-dim:    rgba(194,136,16,0.1);
+      --accent:       #1f4fc6;
+      --accent-dim:   rgba(31,79,198,0.1);
       --teal:         #1a7e70;
       --green:        #2a7a32;
       --nav-bg:       rgba(244,246,250,0.92);
@@ -37,8 +37,8 @@
       --text:         #b8c4d4;
       --text-dim:     rgba(184,196,212,0.45);
       --text-bright:  #eef2f8;
-      --amber:        #e8b84b;
-      --amber-dim:    rgba(232,184,75,0.15);
+      --accent:       #6b9af8;
+      --accent-dim:   rgba(107,154,248,0.15);
       --teal:         #3a9e8f;
       --green:        #5aaa5a;
       --nav-bg:       rgba(8,12,20,0.88);
@@ -116,144 +116,92 @@
     /* ── HERO ── */
     .hero {
       position: relative;
-      padding: 100px 32px 80px;
+      padding: 36px 32px 24px;
       text-align: center;
       overflow: hidden;
     }
     .hero::before {
       content: '';
       position: absolute;
-      top: -60px; left: 50%;
+      top: -40px; left: 50%;
       transform: translateX(-50%);
-      width: 900px; height: 500px;
-      background: radial-gradient(ellipse at 50% 30%, rgba(194,136,16,0.1) 0%, rgba(26,126,112,0.04) 40%, transparent 70%);
+      width: 800px; height: 360px;
+      background: radial-gradient(ellipse at 50% 30%, rgba(31,79,198,0.07) 0%, rgba(26,126,112,0.02) 45%, transparent 70%);
       pointer-events: none;
     }
     html.dark .hero::before {
-      background: radial-gradient(ellipse at 50% 30%, rgba(232,184,75,0.13) 0%, rgba(58,158,143,0.06) 40%, transparent 70%);
+      background: radial-gradient(ellipse at 50% 30%, rgba(107,154,248,0.1) 0%, rgba(58,158,143,0.04) 45%, transparent 70%);
     }
     .hero::after {
       content: '';
       position: absolute;
       bottom: 0; left: 0; right: 0;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(194,136,16,0.22) 40%, rgba(26,126,112,0.15) 60%, transparent);
+      background: linear-gradient(to right, transparent, rgba(31,79,198,0.18) 40%, rgba(26,126,112,0.1) 60%, transparent);
     }
     html.dark .hero::after {
-      background: linear-gradient(to right, transparent, rgba(232,184,75,0.25) 40%, rgba(58,158,143,0.2) 60%, transparent);
+      background: linear-gradient(to right, transparent, rgba(107,154,248,0.2) 40%, rgba(58,158,143,0.15) 60%, transparent);
     }
+
     .hero-eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
       font-size: 11px;
       font-weight: 600;
-      color: var(--amber);
-      letter-spacing: 0.12em;
+      color: #1f4fc6;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin-bottom: 24px;
-      background: rgba(194,136,16,0.08);
-      border: 1px solid rgba(194,136,16,0.22);
-      padding: 5px 14px;
+      margin-bottom: 18px;
+      background: rgba(31,79,198,0.07);
+      border: 1px solid rgba(31,79,198,0.18);
+      padding: 4px 12px;
       border-radius: 20px;
     }
     html.dark .hero-eyebrow {
-      background: rgba(232,184,75,0.08);
-      border-color: rgba(232,184,75,0.22);
+      color: var(--accent);
+      background: rgba(107,154,248,0.08);
+      border-color: rgba(107,154,248,0.2);
     }
-    .hero-eyebrow-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
+    .hero-eyebrow-dot { width: 5px; height: 5px; border-radius: 50%; background: #1f4fc6; flex-shrink: 0; }
+    html.dark .hero-eyebrow-dot { background: var(--accent); }
+
     .hero-title {
-      font-size: clamp(34px, 5vw, 52px);
+      font-size: clamp(26px, 3.5vw, 38px);
       font-weight: 700;
       color: var(--text-bright);
       letter-spacing: -0.025em;
-      line-height: 1.12;
-      max-width: 780px;
-      margin: 0 auto 20px;
+      line-height: 1.15;
+      max-width: 680px;
+      margin: 0 auto 14px;
     }
     .hero-title em {
       font-style: normal;
-      background: linear-gradient(90deg, var(--amber), #d4a040);
+      background: linear-gradient(90deg, #1638a8, #2a5cd4);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
     html.dark .hero-title em {
-      background: linear-gradient(90deg, var(--amber), #f0c97a);
+      background: linear-gradient(90deg, #6b9af8, #8db3fa);
       -webkit-background-clip: text;
       background-clip: text;
     }
     .hero-sub {
-      font-size: 16px;
+      font-size: 14px;
       color: var(--text-dim);
-      max-width: 520px;
+      max-width: 480px;
       margin: 0 auto;
       line-height: 1.65;
     }
 
-    /* ── STATS STRIP ── */
-    .stats-strip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0;
-      padding: 28px 32px;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      background: var(--surface);
-      flex-wrap: wrap;
-    }
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-      padding: 0 36px;
-      border-right: 1px solid var(--border);
-    }
-    .stat-item:last-child { border-right: none; }
-    .stat-value {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--text-bright);
-      letter-spacing: -0.01em;
-    }
-    .stat-value span { color: var(--amber); }
-    .stat-label {
-      font-size: 12px;
-      color: var(--text-dim);
-      text-align: center;
-      line-height: 1.4;
-    }
-
     /* ── MODULES ── */
     .modules-section {
-      padding: 72px 32px 80px;
+      padding: 20px 32px 24px;
       max-width: 1100px;
       width: 100%;
       margin: 0 auto;
-    }
-    .section-label {
-      font-size: 11px;
-      color: var(--text-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-    .section-title {
-      font-size: 26px;
-      font-weight: 700;
-      color: var(--text-bright);
-      letter-spacing: -0.01em;
-      margin-bottom: 8px;
-    }
-    .section-sub {
-      font-size: 14px;
-      color: var(--text-dim);
-      margin-bottom: 40px;
-      max-width: 480px;
-      line-height: 1.6;
+      flex: 1;
     }
 
     .modules-grid {
@@ -269,15 +217,7 @@
       background-size: cover;
       background-position: center;
       border-radius: 14px 14px 0 0;
-      position: relative;
       flex-shrink: 0;
-    }
-    .card-preview::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 80px;
-      background: linear-gradient(to bottom, transparent, var(--surface));
     }
 
     .module-card {
@@ -287,7 +227,7 @@
       padding: 28px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
       transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
       position: relative;
       overflow: hidden;
@@ -301,32 +241,14 @@
       transition: opacity 0.2s;
       pointer-events: none;
     }
-    .module-card:hover { border-color: var(--border-light); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(30,50,90,0.1); }
+    .module-card:hover { border-color: var(--border-light); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(30,50,90,0.08); }
     html.dark .module-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.4); }
     .module-card:hover::before { opacity: 1; }
 
-    /* Primary card — Reading Viewer */
-    .module-card.primary {
-      border-color: rgba(194,136,16,0.25);
-      background: linear-gradient(135deg, var(--surface) 0%, rgba(194,136,16,0.03) 100%);
-    }
-    html.dark .module-card.primary {
-      border-color: rgba(232,184,75,0.2);
-      background: linear-gradient(135deg, var(--surface) 0%, rgba(232,184,75,0.04) 100%);
-    }
-    .module-card.primary::before {
-      background: radial-gradient(ellipse at top left, rgba(194,136,16,0.05) 0%, transparent 60%);
-    }
-    html.dark .module-card.primary::before {
-      background: radial-gradient(ellipse at top left, rgba(232,184,75,0.06) 0%, transparent 60%);
-    }
-    .module-card.primary:hover { border-color: rgba(194,136,16,0.4); box-shadow: 0 8px 28px rgba(194,136,16,0.1), 0 2px 8px rgba(30,50,90,0.08); }
-    html.dark .module-card.primary:hover { border-color: rgba(232,184,75,0.4); box-shadow: 0 16px 48px rgba(232,184,75,0.08), 0 4px 16px rgba(0,0,0,0.4); }
-
     .module-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 9px;
       background: var(--surface2);
       border: 1px solid var(--border);
       display: flex;
@@ -335,31 +257,21 @@
       flex-shrink: 0;
     }
     .module-icon svg {
-      width: 20px; height: 20px;
+      width: 18px; height: 18px;
       stroke: var(--text-dim); fill: none;
       stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
     }
-    .module-card.primary .module-icon {
-      background: rgba(194,136,16,0.1);
-      border-color: rgba(194,136,16,0.28);
-    }
-    html.dark .module-card.primary .module-icon {
-      background: rgba(232,184,75,0.1);
-      border-color: rgba(232,184,75,0.25);
-    }
-    .module-card.primary .module-icon svg { stroke: var(--amber); }
-
     .module-tag {
       font-size: 10px; font-weight: 700;
       text-transform: uppercase; letter-spacing: 0.08em;
       padding: 3px 9px; border-radius: 20px;
       width: fit-content;
     }
-    .tag-live { color: var(--amber); background: rgba(194,136,16,0.1); border: 1px solid rgba(194,136,16,0.25); }
-    html.dark .tag-live { background: rgba(232,184,75,0.1); border-color: rgba(232,184,75,0.22); }
+    .tag-live { color: #1f4fc6; background: rgba(31,79,198,0.08); border: 1px solid rgba(31,79,198,0.22); }
+    html.dark .tag-live { color: var(--accent); background: rgba(107,154,248,0.1); border-color: rgba(107,154,248,0.22); }
     .tag-placeholder { color: var(--text-dim); background: var(--surface2); border: 1px solid var(--border); }
 
-    .module-title { font-size: 17px; font-weight: 700; color: var(--text-bright); letter-spacing: -0.01em; }
+    .module-title { font-size: 16px; font-weight: 700; color: var(--text-bright); letter-spacing: -0.01em; }
     .module-sub { font-size: 13px; color: var(--text-dim); line-height: 1.6; flex: 1; }
 
     .btn-module {
@@ -373,17 +285,17 @@
       font-weight: 600;
       text-decoration: none;
       transition: opacity 0.15s, background 0.15s, border-color 0.15s;
-      margin-top: 4px;
+      margin-top: 2px;
     }
-    .btn-module-primary { background: var(--amber); color: #0a0c10; }
-    .btn-module-primary:hover { opacity: 0.88; }
+    .btn-module-primary { background: #1f4fc6; color: #ffffff; }
+    .btn-module-primary:hover { background: #2a5cd4; }
     .btn-module-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
     .btn-module-secondary:hover { border-color: var(--border-light); background: var(--surface3); }
 
     /* ── FOOTER ── */
     .site-footer {
       margin-top: auto;
-      padding: 24px 32px;
+      padding: 20px 32px;
       border-top: 1px solid var(--border);
       display: flex;
       align-items: center;
@@ -423,35 +335,15 @@
   <section class="hero">
     <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>RCA IRP · Service Prototype</div>
     <h1 class="hero-title">AI-assisted breast screening,<br><em>designed around disagreement</em></h1>
-    <p class="hero-sub">An interactive service prototype exploring how AI findings and radiologist judgements can be surfaced, reconciled, and learned from across a screening workflow.</p>
+    <p class="hero-sub">An interactive prototype exploring how AI findings and radiologist judgements are surfaced, reconciled, and learned from across a screening workflow.</p>
   </section>
-
-  <!-- ── STATS STRIP ── -->
-  <div class="stats-strip">
-    <div class="stat-item">
-      <div class="stat-value"><span>3</span> modules</div>
-      <div class="stat-label">Read · Arbitrate · Learn</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">AI <span>↔</span> Human</div>
-      <div class="stat-label">Disagreement as the primary signal</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value"><span>1</span> case flow</div>
-      <div class="stat-label">End-to-end from read to library</div>
-    </div>
-  </div>
 
   <!-- ── MODULES ── -->
   <div class="modules-section">
-    <div class="section-label">Service modules</div>
-    <div class="section-title">Three stages, one workflow</div>
-    <div class="section-sub">Each module represents a distinct role in handling AI-human disagreement — from initial reading to arbitration to institutional learning.</div>
-
     <div class="modules-grid">
 
       <!-- A: Reading Viewer -->
-      <div class="module-card primary">
+      <div class="module-card">
         <div class="card-preview" style="background-image:url('assets/preview-reading.png');background-position:top center;"></div>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
           <div class="module-icon">
@@ -471,11 +363,11 @@
           <div class="module-icon">
             <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
           </div>
-          <div class="module-tag tag-placeholder">Placeholder</div>
+          <div class="module-tag tag-live">Live prototype</div>
         </div>
         <div class="module-title">Arbitration Queue</div>
-        <div class="module-sub">Review cases requiring arbitration after AI-human disagreement. Cases arrive here after radiologist handover from the Reading Viewer.</div>
-        <a href="arbitration.html" class="btn-module btn-module-secondary">Open Arbitration Queue →</a>
+        <div class="module-sub">Review cases requiring consensus after AI-human disagreement. Cases arrive here after radiologist handover from the Reading Viewer.</div>
+        <a href="arbitration.html" class="btn-module btn-module-primary">Open Arbitration Queue →</a>
       </div>
 
       <!-- C: Case Library -->

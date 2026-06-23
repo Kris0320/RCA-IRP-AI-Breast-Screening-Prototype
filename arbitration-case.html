@@ -3,120 +3,1810 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arbitration Review — BS-V000254</title>
+  <title>Consensus Review — BS-V000254</title>
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <script>(function(){if(location.search.indexOf('reset=1')!==-1){sessionStorage.removeItem('arb_BS-V000254');localStorage.removeItem('arb_BS-V000254');var u=location.href.replace(/[?&]reset=1/,'').replace(/[?]$/,'');history.replaceState(null,'',u||location.pathname);}})();</script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── TOKENS ── */
     :root {
-      --bg: #0d0d0d; --surface: #141414; --surface2: #1a1a1a; --surface3: #222222;
-      --border: rgba(255,255,255,0.08); --border-light: rgba(255,255,255,0.15);
-      --text: #cccccc; --text-dim: rgba(255,255,255,0.4); --text-bright: #ffffff;
-      --amber: #d0a830; --teal: #3a9e8f; --green: #5aaa5a;
+      /* Backgrounds — clear paper layering */
+      --bg:           #eef1f7;
+      --surface:      #ffffff;
+      --surface2:     #f6f8fc;
+      --surface3:     #eceff6;
+      /* Borders — crisp, opaque, visible at small sizes */
+      --border:       #d8dfe9;
+      --border-light: #b4c0d2;
+      /* Typography — ink hierarchy on paper */
+      --text:         #1c2b3e;
+      --text-dim:     #6a7d96;
+      --text-bright:  #090f1c;
+      /* Accent — deep royal blue, strong on white */
+      --accent:       #1540b2;
+      --accent-dim:   rgba(21,64,178,0.07);
+      /* Warning */
+      --amber:        #b85c00;
+      --amber-bg:     rgba(184,92,0,0.05);
+      --amber-border: rgba(184,92,0,0.22);
+      /* Success */
+      --green:        #145f2a;
+      --green-bg:     rgba(20,95,42,0.06);
+      --green-border: rgba(20,95,42,0.2);
+      /* Danger */
+      --red:          #961818;
+      /* Nav */
+      --nav-bg:       rgba(255,255,255,0.98);
+      --nav-h:        52px;
     }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    html.dark {
+      --bg:           #080c14;
+      --surface:      #0e1420;
+      --surface2:     #141c2a;
+      --surface3:     #1a2335;
+      --border:       rgba(255,255,255,0.07);
+      --border-light: rgba(255,255,255,0.14);
+      --text:         #b8c4d4;
+      --text-dim:     rgba(184,196,212,0.45);
+      --text-bright:  #eef2f8;
+      --accent:       #6b9af8;
+      --accent-dim:   rgba(107,154,248,0.15);
+      --amber:        #d0a830;
+      --amber-bg:     rgba(208,168,48,0.08);
+      --amber-border: rgba(208,168,48,0.22);
+      --green:        #5aaa5a;
+      --green-bg:     rgba(90,170,90,0.08);
+      --green-border: rgba(90,170,90,0.22);
+      --red:          #d07070;
+      --nav-bg:       rgba(8,12,20,0.95);
+    }
 
-    .site-nav { height: 44px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 24px; gap: 0; flex-shrink: 0; }
-    .nav-brand { font-size: 13px; font-weight: 600; color: var(--text-bright); letter-spacing: 0.02em; margin-right: 28px; white-space: nowrap; border-left: 2px solid #1f4fc6; padding-left: 10px; }
-    .nav-links { display: flex; gap: 2px; }
-    .nav-link { font-size: 13px; color: var(--text-dim); text-decoration: none; padding: 5px 12px; border-radius: 5px; transition: color 0.15s, background 0.15s; white-space: nowrap; }
-    .nav-link:hover { color: var(--text); background: var(--surface2); }
-    .nav-link.active { color: #1f4fc6; background: rgba(31,79,198,0.1); }
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      display: flex; flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    .page-content { max-width: 720px; width: 100%; margin: 0 auto; padding: 48px 24px 64px; flex: 1; display: flex; flex-direction: column; gap: 24px; }
+    /* ── NAV ── */
+    .site-nav {
+      height: var(--nav-h); flex-shrink: 0;
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: stretch;
+      padding: 0 20px; gap: 0; z-index: 100;
+    }
+    .nav-brand {
+      font-size: 12px; font-weight: 700;
+      color: var(--text-bright); letter-spacing: 0.04em;
+      text-transform: uppercase; white-space: nowrap;
+      display: flex; align-items: center;
+      margin-right: 4px;
+    }
+    .nav-back {
+      display: flex; align-items: center;
+      font-size: 12px; color: var(--text-dim);
+      text-decoration: none; padding: 0 12px;
+      transition: color 0.15s; white-space: nowrap;
+    }
+    .nav-back:hover { color: var(--text); }
+    .nav-sep { width: 1px; background: var(--border); margin: 10px 8px; flex-shrink: 0; }
 
-    .back-link { font-size: 13px; color: var(--text-dim); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; transition: color 0.15s; }
-    .back-link:hover { color: var(--text); }
+    /* Screen tabs sit flush in the nav */
+    .screen-tabs { display: flex; align-items: stretch; gap: 0; flex: 1; }
+    .screen-tab {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 0 16px; font-size: 13px; font-weight: 500;
+      color: var(--text-dim); background: none; border: none;
+      border-bottom: 2px solid transparent;
+      cursor: pointer; white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+      margin-bottom: -1px; /* overlap nav border */
+    }
+    .screen-tab:hover { color: var(--text); }
+    .screen-tab svg { width: 14px; height: 14px; flex-shrink: 0; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
-    .page-header { display: flex; flex-direction: column; gap: 4px; }
-    .page-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; }
-    .page-title { font-size: 22px; font-weight: 600; color: var(--text-bright); }
+    /* Diagnostic tabs use accent blue active state */
+    .screen-tab.diag.active { color: var(--accent); border-bottom-color: var(--accent); }
+    html.dark .screen-tab.diag.active { color: var(--accent); border-bottom-color: var(--accent); }
 
-    .section { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-    .section-head { padding: 12px 16px; border-bottom: 1px solid var(--border); font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500; background: var(--surface2); }
-    .section-body { display: flex; flex-direction: column; }
+    /* Arbitration tab gets accent-blue active state */
+    .screen-tab.arb.active { color: var(--accent); border-bottom-color: var(--accent); }
 
-    .detail-row { display: flex; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 13px; }
-    .detail-row:last-child { border-bottom: none; }
-    .detail-key { color: var(--text-dim); flex-shrink: 0; width: 160px; }
-    .detail-val { color: var(--text); line-height: 1.5; }
+    .theme-toggle {
+      width: 32px; height: 32px; border-radius: 7px;
+      background: none; border: 1px solid var(--border);
+      color: var(--text-dim); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      align-self: center; margin-left: 8px;
+      transition: background 0.15s, border-color 0.15s, color 0.15s; flex-shrink: 0;
+    }
+    .theme-toggle:hover { background: var(--surface2); border-color: var(--border-light); color: var(--text); }
+    .theme-toggle svg { width: 14px; height: 14px; }
+    html:not(.dark) .icon-sun { display: none; }
+    html.dark    .icon-moon { display: none; }
 
-    .question-block { padding: 18px 16px; display: flex; flex-direction: column; gap: 10px; }
-    .question-text { font-size: 14px; color: var(--text-bright); font-weight: 500; line-height: 1.5; }
-    .outcome-display { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: var(--surface2); border: 1px solid rgba(90,170,90,0.25); border-radius: 6px; }
-    .outcome-label { font-size: 12px; color: var(--text-dim); }
-    .outcome-val { font-size: 14px; font-weight: 600; color: var(--green); }
+    /* ── LIGHT MODE structural character ──────────────────────
+       These rules are NOT token swaps — they give the light
+       mode its own visual language: ink-on-paper hierarchy,
+       blue structural anchors, amber danger accent as form.
+    ─────────────────────────────────────────────────────────── */
 
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
-    .btn-primary-action { display: inline-block; padding: 10px 18px; background: var(--teal); color: #fff; border: none; border-radius: 6px; font-size: 13px; font-weight: 600; text-decoration: none; cursor: pointer; transition: opacity 0.15s; }
-    .btn-primary-action:hover { opacity: 0.88; }
-    .btn-secondary-action { display: inline-block; padding: 10px 18px; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; transition: border-color 0.15s, background 0.15s; }
-    .btn-secondary-action:hover { border-color: var(--border-light); background: var(--surface3); }
+    /* Nav: pure white with a defined bottom edge */
+    html:not(.dark) .site-nav {
+      border-bottom-color: #cdd5e2;
+      box-shadow: 0 1px 0 0 #cdd5e2, 0 2px 8px rgba(8,18,46,0.05);
+    }
 
-    .site-footer { padding: 20px 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-dim); text-align: center; }
+    /* Screen tabs in light mode: inactive tabs are darker, more readable */
+    html:not(.dark) .screen-tab:not(.active) { color: #8090a8; }
+    html:not(.dark) .screen-tab:hover:not(.active) { color: var(--text); }
+
+    /* Arb header: authority band — blue-tinted, not plain white */
+    html:not(.dark) .arb-header {
+      background: linear-gradient(to right, #e8f0ff, #f4f7fd);
+      border-bottom: 1px solid #c2d2ef;
+    }
+    /* Case label in header uses accent so it reads as a category marker */
+    html:not(.dark) .arb-case-label { color: var(--accent); font-weight: 700; }
+
+    /* Section labels: accent blue — gives each section a clear identity anchor */
+    html:not(.dark) .arb-section-label { color: var(--accent); }
+
+    /* Disagreement context card: warm top, blue question tint */
+    html:not(.dark) .disagree-context {
+      border-color: #dce3ed;
+    }
+    html:not(.dark) .disagree-context-top {
+      background: #fdf6ee; border-bottom-color: #ead9c0;
+    }
+    html:not(.dark) .dc-question {
+      background: #f0f5ff; border-top-color: #dce8f5; color: var(--accent);
+    }
+
+    /* Info rows: crisp alternating lines, stronger key labels */
+    html:not(.dark) .info-rows {
+    }
+    html:not(.dark) .info-row:nth-child(even) { background: #f6f8fc; }
+    html:not(.dark) .info-key { font-weight: 600; color: #8090a8; }
+
+
+    /* Voice transcript box: cream-white, not bluish grey */
+    html:not(.dark) .voice-transcript {
+      background: #fafbfd; border-color: #cdd5e4;
+    }
+
+    /* Receipt rows: crisp even-row tint */
+    html:not(.dark) .receipt-rows { }
+    html:not(.dark) .r-row:nth-child(even) { background: #f6f8fc; }
+
+    /* ── SCREEN CONTAINER ── */
+    .screen-container { flex: 1; position: relative; overflow: hidden; }
+    .screen {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.15s;
+    }
+    .screen.active { opacity: 1; pointer-events: auto; }
+
+    /* ══════════════════════════════════════════════════
+       DIAGNOSTIC DISPLAYS (always dark — imaging screens)
+    ══════════════════════════════════════════════════ */
+    .diag-screen {
+      background: #050608; flex: 1;
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+    .diag-topbar {
+      height: 38px; flex-shrink: 0;
+      background: #0c0e12;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex; align-items: center;
+      padding: 0 18px; gap: 14px;
+    }
+    .diag-topbar-label {
+      font-size: 11px; font-weight: 600;
+      color: rgba(255,255,255,0.38);
+      letter-spacing: 0.07em; text-transform: uppercase; flex: 1;
+    }
+    .diag-topbar-label strong { color: rgba(255,255,255,0.65); font-weight: 700; }
+
+    .ai-toggle-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 600; padding: 4px 11px; border-radius: 5px;
+      border: 1px solid rgba(200,150,32,0.35); color: #c89620;
+      background: rgba(200,150,32,0.08); cursor: pointer; transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+    .ai-toggle-btn:hover { opacity: 0.8; }
+    .ai-toggle-btn.off { color: rgba(255,255,255,0.28); background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
+    .ai-toggle-btn svg { width: 11px; height: 11px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Side-by-side current vs prior */
+    .diag-comparison {
+      flex: 1; display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+      background: #020304; overflow: hidden;
+    }
+    .diag-divider { background: rgba(255,255,255,0.04); }
+
+    .diag-cell {
+      position: relative; overflow: hidden;
+      background: #050608;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .diag-cell img {
+      max-width: 100%; max-height: 100%;
+      object-fit: contain; display: block;
+      width: 100%; height: 100%;
+    }
+    .diag-cell.prior img { filter: brightness(0.68) saturate(0.65); }
+
+    .diag-cell-label {
+      position: absolute; top: 10px; left: 12px;
+      font-size: 10px; font-weight: 700;
+      color: rgba(255,255,255,0.45); letter-spacing: 0.08em; text-transform: uppercase;
+      background: rgba(0,0,0,0.45); padding: 3px 8px; border-radius: 3px;
+      pointer-events: none;
+    }
+    .diag-cell-label.current { color: rgba(255,255,255,0.72); }
+
+    .prior-round-badge {
+      position: absolute; bottom: 10px; right: 12px;
+      font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.22); pointer-events: none;
+    }
+    .no-finding-note {
+      position: absolute; bottom: 10px; left: 12px;
+      font-size: 10px; color: rgba(255,255,255,0.2);
+      background: rgba(0,0,0,0.4); padding: 3px 8px; border-radius: 3px;
+      pointer-events: none;
+    }
+
+    /* AI annotation overlay */
+    .ai-box {
+      position: absolute;
+      border: 1.5px dashed #c89620; border-radius: 3px;
+      top: 22%; left: 50%; width: 22%; height: 24%;
+      pointer-events: none; transition: opacity 0.2s;
+    }
+    .ai-box.hidden { opacity: 0; }
+    .ai-box-label {
+      position: absolute; bottom: 100%; left: 0; margin-bottom: 4px;
+      font-size: 9px; font-weight: 700; color: #c89620; letter-spacing: 0.05em;
+      background: rgba(0,0,0,0.72); padding: 2px 7px; border-radius: 3px; white-space: nowrap;
+    }
+    .ai-conf-chip {
+      position: absolute; bottom: 10px; left: 12px;
+      font-size: 10px; font-weight: 700; color: #c89620;
+      background: rgba(0,0,0,0.7); border: 1px solid rgba(200,150,32,0.4);
+      padding: 3px 9px; border-radius: 4px; pointer-events: none; letter-spacing: 0.03em;
+    }
+
+    /* ══════════════════════════════════════════════════
+       ARBITRATION INFORMATION SCREEN
+    ══════════════════════════════════════════════════ */
+    .arb-screen { background: var(--bg); flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+
+    /* Case header — full width, prominent */
+    .arb-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 40px;
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .arb-header-left { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+    .arb-case-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; }
+    .arb-case-id { font-size: 22px; font-weight: 700; color: var(--text-bright); line-height: 1.2; }
+    .arb-patient-line { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
+
+    .arb-reviewer-chip {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; color: var(--text-dim);
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 100px; padding: 6px 14px; white-space: nowrap;
+    }
+    .reviewer-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+    .arb-status-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--accent); background: var(--accent-dim); border: 1px solid rgba(21,64,178,0.22);
+      border-radius: 4px; padding: 5px 12px; white-space: nowrap;
+    }
+    html.dark .arb-status-chip { border-color: rgba(107,154,248,0.28); }
+    .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+    /* Two-column body — fluid left / 380px AI service rail */
+    .arb-body {
+      display: grid; grid-template-columns: 1fr 380px;
+      max-width: 1440px; width: 100%; margin: 0 auto;
+      padding: 0 40px;
+      column-gap: 0; row-gap: 0;
+      flex: 1; overflow: hidden; min-height: 0;
+    }
+
+    .arb-col { padding-top: 28px; padding-right: 32px; display: flex; flex-direction: column; min-height: 0; }
+    .left-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 28px;
+      display: flex; flex-direction: column; gap: 28px;
+      flex: none; overflow-y: auto;
+      scrollbar-width: thin; scrollbar-color: transparent transparent;
+    }
+    .left-card:hover { scrollbar-color: rgba(100,120,160,0.25) transparent; }
+    .left-card::-webkit-scrollbar { width: 5px; }
+    .left-card::-webkit-scrollbar-track { background: transparent; }
+    .left-card::-webkit-scrollbar-thumb { background: transparent; border-radius: 4px; transition: background 0.2s; }
+    .left-card:hover::-webkit-scrollbar-thumb { background: rgba(100,120,160,0.25); }
+    html:not(.dark) .left-card { border-color: #dce3ed; }
+    .arb-col-right {
+      padding-left: 28px; padding-top: 28px; padding-right: 4px;
+      display: flex; flex-direction: column; min-height: 0;
+    }
+    .right-card {
+      background: transparent; border: none;
+      padding: 0;
+      display: flex; flex-direction: column; gap: 12px;
+      flex: 1; min-height: 0; overflow-y: auto;
+      scrollbar-width: thin; scrollbar-color: transparent transparent;
+    }
+    .right-card:hover { scrollbar-color: rgba(100,120,160,0.25) transparent; }
+    .right-card::-webkit-scrollbar { width: 5px; }
+    .right-card::-webkit-scrollbar-track { background: transparent; }
+    .right-card::-webkit-scrollbar-thumb { background: transparent; border-radius: 4px; }
+    .right-card:hover::-webkit-scrollbar-thumb { background: rgba(100,120,160,0.25); }
+    .right-card > .arb-section {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 16px 18px;
+    }
+    html:not(.dark) .right-card > .arb-section { border-color: #dce3ed; }
+
+    /* ── CLASSIFY WIDGET (right col, lightweight) ── */
+    .classify-widget { display: flex; flex-direction: column; gap: 0; }
+    .classify-row {
+      display: flex; align-items: center; gap: 10px;
+      padding: 7px 0; border-bottom: 1px solid var(--border);
+    }
+    .classify-row:last-of-type { border-bottom: none; }
+    .classify-role {
+      font-size: 11px; font-weight: 600; color: var(--text-dim);
+      text-transform: uppercase; letter-spacing: 0.07em; width: 72px; flex-shrink: 0;
+    }
+    .classify-type-val { font-size: 14px; color: var(--text); flex: 1; }
+    .classify-type-val.dim { color: var(--text-dim); }
+    .btn-classify-change {
+      font-size: 11px; font-weight: 600; color: var(--accent);
+      background: none; border: 1px solid rgba(21,64,178,0.3); border-radius: 4px;
+      padding: 3px 9px; cursor: pointer; transition: background 0.12s; white-space: nowrap;
+    }
+    html.dark .btn-classify-change { border-color: rgba(107,154,248,0.35); }
+    .btn-classify-change:hover { background: var(--accent-dim); }
+    .classify-picker { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 10px; }
+    .classify-chip {
+      font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 5px;
+      border: 1px solid var(--border); background: var(--surface2); color: var(--text);
+      cursor: pointer; transition: border-color 0.12s, background 0.12s, color 0.12s;
+    }
+    .classify-chip:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+    .classify-chip.selected { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
+
+    /* ── TRACE / RECORD ATTACHMENT ── */
+    .trace-block { display: flex; flex-direction: column; gap: 0; }
+    .trace-row {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 13px; color: var(--text); cursor: pointer;
+      padding: 7px 0; border-bottom: 1px solid var(--border);
+    }
+    .trace-row:last-child { border-bottom: none; }
+    .trace-row input { accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+
+    .arb-section { display: flex; flex-direction: column; gap: 10px; }
+    .arb-section-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.11em; color: var(--text-dim);
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    /* ── CONSENSUS READER POSITION CARDS ── */
+    .reader-views { display: flex; flex-direction: row; gap: 10px; }
+    .reader-view { flex: 1; min-width: 0; }
+    .reader-view {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
+    }
+    .reader-view-head {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 9px 14px; background: var(--surface2); border-bottom: 1px solid var(--border);
+    }
+    .reader-view-who { font-size: 14px; font-weight: 700; color: var(--text-bright); }
+    .reader-view-role { font-size: 13px; color: var(--text-dim); font-weight: 400; }
+    .reader-chip {
+      font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 4px;
+      border: 1px solid; white-space: nowrap; letter-spacing: 0.02em;
+    }
+    .reader-chip.recall   { color: var(--accent); background: var(--accent-dim); border-color: rgba(21,64,178,0.28); }
+    html.dark .reader-chip.recall { border-color: rgba(107,154,248,0.32); }
+    .reader-chip.no-recall { color: var(--text-dim); background: var(--surface3); border-color: var(--border); }
+    .reader-view-body { padding: 10px 14px; display: flex; flex-direction: column; gap: 7px; }
+    .reader-view-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .reader-confidence { font-size: 12px; color: var(--text-dim); font-weight: 600; }
+    .rv-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+    .rv-tag {
+      font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 3px;
+      background: var(--surface3); border: 1px solid var(--border); color: var(--text-dim);
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .reader-rationale { font-size: 14px; color: var(--text); line-height: 1.55; }
+    html:not(.dark) .reader-view { border-color: #dce3ed; }
+    html:not(.dark) .reader-view-head { background: #f6f8fc; border-bottom-color: #dce3ed; }
+
+    /* ── SERVICE LAYER LABEL ── */
+    /* ── DISAGREEMENT CONTEXT CARD (right column, top) ── */
+    .disagree-context {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
+    }
+    .disagree-context-top {
+      display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+      padding: 10px 13px; background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+    .dc-trigger-label {
+      font-size: 10px; color: var(--text-dim); margin-left: auto;
+      letter-spacing: 0.03em; font-weight: 500;
+    }
+    .disagree-context-body { display: flex; flex-direction: column; }
+    .dc-row {
+      display: flex; gap: 8px; padding: 8px 13px;
+      border-bottom: 1px solid var(--border); font-size: 14px; align-items: baseline;
+    }
+    .dc-row:last-child { border-bottom: none; }
+    .dc-label {
+      flex-shrink: 0; width: 64px; color: var(--text-dim);
+      font-weight: 600; font-size: 13px;
+    }
+    .dc-val { color: var(--text); line-height: 1.4; }
+    .dc-helper {
+      padding: 8px 13px; font-size: 12px; color: var(--text-dim);
+      font-style: italic; border-top: 1px solid var(--border);
+      line-height: 1.5; letter-spacing: 0.01em;
+    }
+    html:not(.dark) .dc-helper { color: #8090a8; }
+    .ai-rationale-block {
+      margin: 0; padding: 11px 13px 12px;
+      border-top: 1px solid var(--border);
+      background: rgba(214,176,106,0.04);
+    }
+    .ai-rationale-head {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; color: var(--amber); margin-bottom: 7px;
+    }
+    .ai-rationale-head svg { stroke: var(--amber); flex-shrink: 0; }
+    .ai-rationale-text {
+      font-size: 12.5px; color: var(--text); line-height: 1.6;
+      margin-bottom: 9px;
+    }
+    .ai-rationale-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+
+    .cap-presence-label {
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--text-dim); margin-bottom: 2px;
+    }
+
+    /* Shared badge styles */
+    .badge {
+      display: inline-flex; align-items: center;
+      font-size: 12px; font-weight: 700; border-radius: 4px;
+      padding: 4px 10px; letter-spacing: 0.02em;
+    }
+    .badge-amber { color: var(--amber); background: var(--amber-bg); border: 1px solid var(--amber-border); }
+    .badge-red { color: var(--red); background: rgba(184,48,48,0.07); border: 1px solid rgba(184,48,48,0.18); }
+    html.dark .badge-red { background: rgba(208,112,112,0.08); border-color: rgba(208,112,112,0.2); }
+    .disagree-slash { color: var(--text-dim); font-size: 14px; }
+
+    /* Prior comparison note (compact) */
+    .prior-note {
+      font-size: 15px; color: var(--text-dim); line-height: 1.65;
+      padding: 13px 16px; background: var(--surface2);
+      border: 1px solid var(--border); border-radius: 7px;
+    }
+    .prior-note strong { color: var(--text); }
+
+    /* Info rows */
+    .info-rows {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
+    }
+    .info-row {
+      display: flex; gap: 12px; padding: 10px 16px;
+      border-bottom: 1px solid var(--border); font-size: 15px;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-key { color: var(--text-dim); flex-shrink: 0; width: 130px; }
+    .amber-text { color: var(--amber); font-weight: 600; }
+
+    /* ── VOICE CAPTURE ── */
+    .voice-badge {
+      font-size: 9px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; color: var(--accent);
+      background: var(--accent-dim); border-radius: 4px; padding: 2px 7px;
+    }
+    .voice-desc { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+
+    .voice-controls { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+    .btn-record {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px;
+      border: 1px solid rgba(200,50,50,0.3); background: rgba(200,50,50,0.07);
+      color: #c03030; cursor: pointer; transition: opacity 0.15s;
+    }
+    html.dark .btn-record { color: #e08080; border-color: rgba(224,128,128,0.3); background: rgba(224,128,128,0.07); }
+    .btn-record:hover { opacity: 0.8; }
+    .btn-record.recording { animation: recpulse 1.2s ease-in-out infinite; }
+    @keyframes recpulse { 0%,100%{opacity:1} 50%{opacity:0.55} }
+    .rec-dot { width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+
+    .btn-stop {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 600; padding: 8px 16px; border-radius: 7px;
+      border: 1px solid var(--border); background: var(--surface2); color: var(--text);
+      cursor: pointer; transition: border-color 0.15s;
+    }
+    .btn-stop:hover { border-color: var(--border-light); }
+    .voice-transcript {
+      background: var(--surface2); border: 1px solid var(--border); border-radius: 7px;
+      padding: 11px 14px; font-size: 13px; line-height: 1.65;
+      color: var(--text); min-height: 90px; max-height: 160px;
+      overflow-y: auto; word-break: break-word; margin-top: 8px;
+    }
+    .voice-transcript .placeholder { color: var(--text-dim); font-style: italic; }
+    .voice-transcript .interim { color: var(--text-dim); }
+
+    .voice-attach {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 15px; color: var(--text-dim); margin-top: 10px; cursor: pointer;
+    }
+    .voice-attach input { accent-color: var(--accent); cursor: pointer; }
+    .voice-unsupported-msg {
+      font-size: 13px; color: var(--text-dim); line-height: 1.6;
+      padding: 10px 14px; background: var(--surface2);
+      border: 1px solid var(--border); border-radius: 7px;
+    }
+
+    /* ── CAPTURE PANEL ── */
+    #capture-idle { display: flex; flex-direction: column; gap: 0; }
+
+    .capture-panel {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+    }
+
+    .cap-header {
+      display: flex; align-items: center; gap: 8px;
+      padding: 11px 14px; background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+    .cap-rec-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #c83030;
+      flex-shrink: 0; animation: recblink 1.4s ease-in-out infinite;
+    }
+    @keyframes recblink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+    .cap-timer-display {
+      font-size: 15px; font-weight: 700; color: var(--text-bright);
+      font-variant-numeric: tabular-nums;
+    }
+    .cap-status { font-size: 13px; color: var(--text-dim); margin-left: 2px; }
+
+    /* Live speaker — single chip inline with waveform */
+    .cap-live-zone {
+      display: flex; align-items: center; gap: 16px;
+      padding: 10px 14px; border-bottom: 1px solid var(--border); min-height: 52px;
+    }
+    .live-spk-now {
+      display: flex; align-items: center; gap: 40px; flex-shrink: 0;
+    }
+    .live-spk-right {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .live-spk-now.hidden { display: none; }
+    .live-spk-avatar {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--surface3); border: 2px solid var(--border);
+      font-size: 12px; font-weight: 800; color: var(--text-dim);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+      transition: background 0.25s, border-color 0.25s, color 0.25s;
+    }
+    .live-spk-chip.speaking .live-spk-avatar {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+    .live-spk-avatar-label {
+      font-size: 12px; font-weight: 700; color: var(--accent); white-space: nowrap;
+    }
+    @keyframes spk-pulse {
+      0%   { transform: scale(1);    opacity: 0.65; }
+      100% { transform: scale(1.8);  opacity: 0; }
+    }
+    .live-spk-now .live-spk-avatar::after {
+      content: ''; position: absolute; inset: -2px; border-radius: 50%;
+      border: 2px solid var(--accent);
+      animation: spk-pulse 1.1s ease-out infinite;
+    }
+
+    /* Speaker participation bars (used in summary only) */
+    .cap-speaker-row { display: flex; align-items: center; gap: 7px; }
+    .cap-speaker-label {
+      width: 17px; height: 17px; border-radius: 50%; flex-shrink: 0;
+      font-size: 8px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--surface3); border: 1px solid var(--border); color: var(--text-dim);
+    }
+    .cap-speaker-bar-track {
+      flex: 1; height: 4px; background: var(--surface3); border-radius: 2px; overflow: hidden;
+    }
+    .cap-speaker-bar-fill {
+      height: 100%; background: var(--accent); border-radius: 2px;
+      width: 0; transition: width 0.7s ease; opacity: 0.65;
+    }
+    .cap-speaker-pct {
+      font-size: 12px; font-weight: 600; color: var(--text-dim);
+      width: 30px; text-align: right; flex-shrink: 0; font-variant-numeric: tabular-nums;
+    }
+
+    .cap-active-who { font-size: 12px; color: var(--text-dim); white-space: nowrap; flex-shrink: 0; }
+    .waveform-canvas { width: 140px; flex-shrink: 0; height: 40px; display: block; border-radius: 4px; }
+
+    /* Controls */
+    .cap-controls { display: flex; align-items: center; gap: 7px; padding: 9px 14px; }
+    .btn-mark-moment {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 13px; font-weight: 600; padding: 5px 9px; border-radius: 5px;
+      border: 1px solid var(--border-light); background: var(--accent-dim);
+      color: var(--accent); cursor: pointer; white-space: nowrap; transition: opacity 0.15s;
+    }
+    .btn-mark-moment:hover { opacity: 0.75; }
+    .cap-moments-count { font-size: 12px; color: var(--text-dim); white-space: nowrap; flex: 1; }
+    .btn-stop-capture {
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+      font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 5px;
+      border: 1px solid var(--border-light); background: var(--surface3);
+      color: var(--text); cursor: pointer; transition: background 0.15s;
+    }
+    .btn-stop-capture:hover { background: var(--surface2); }
+
+    /* Post-capture summary card */
+    .summary-header {
+      display: flex; align-items: flex-start; gap: 9px;
+      padding: 11px 14px; background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+    .summary-check {
+      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+      background: var(--green-bg); border: 1px solid var(--green-border);
+      color: var(--green); font-size: 10px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; margin-top: 1px;
+    }
+    .summary-title { font-size: 15px; font-weight: 700; color: var(--text-bright); }
+    .summary-meta  { font-size: 13px; color: var(--text-dim); margin-top: 2px; line-height: 1.5; }
+    .summary-speakers {
+      padding: 10px 14px 8px; display: flex; flex-direction: column; gap: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .summary-footer { padding: 10px 14px; display: flex; flex-direction: column; gap: 8px; }
+    .transcript-toggle-row {
+      display: flex; align-items: center; justify-content: space-between; font-size: 14px;
+    }
+    .transcript-toggle-label { color: var(--text-dim); }
+    .btn-toggle-transcript {
+      font-size: 13px; font-weight: 600; color: var(--accent);
+      background: none; border: none; cursor: pointer; padding: 0;
+    }
+
+    /* ── DECISION ── */
+    .decision-block { display: flex; flex-direction: column; gap: 10px; }
+
+    .radio-options-row { display: flex; gap: 10px; }
+
+    .radio-option {
+      display: flex; align-items: center; gap: 13px;
+      padding: 11px 16px; border-radius: 8px; border: 2px solid var(--border);
+      cursor: pointer; transition: border-color 0.15s, background 0.15s;
+    }
+    .radio-options-row .radio-option { flex: 1; }
+    .radio-option:hover { border-color: var(--border-light); background: var(--surface2); }
+    .radio-option.sel-recall { border-color: rgba(107,154,248,0.45); background: var(--accent-dim); }
+    html:not(.dark) .radio-option.sel-recall { border-color: rgba(21,64,178,0.28); }
+    .radio-option.sel-maintain { border-color: rgba(107,154,248,0.45); background: var(--accent-dim); }
+    html:not(.dark) .radio-option.sel-maintain { border-color: rgba(21,64,178,0.28); }
+    .radio-option.sel-review { border-color: var(--border-light); background: var(--surface2); }
+
+    .radio-dot {
+      width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0;
+      border: 2px solid var(--border-light); margin-top: 1px;
+      display: flex; align-items: center; justify-content: center;
+      transition: border-color 0.15s;
+    }
+    .sel-recall .radio-dot { border-color: var(--accent); }
+    .sel-maintain .radio-dot { border-color: var(--accent); }
+    .sel-review .radio-dot { border-color: var(--text-dim); }
+    .radio-fill { width: 8px; height: 8px; border-radius: 50%; background: transparent; transition: background 0.15s; }
+    .sel-recall .radio-fill { background: var(--accent); }
+    .sel-maintain .radio-fill { background: var(--accent); }
+    .sel-review .radio-fill { background: var(--text-dim); }
+    .radio-label { font-size: 16px; font-weight: 600; color: var(--text-bright); }
+    .radio-sub { font-size: 14px; color: var(--text-dim); line-height: 1.4; margin-top: 2px; }
+
+    /* Disagreement Token cards */
+    .token-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    }
+    .token-card {
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 12px 14px; cursor: pointer;
+      display: flex; flex-direction: column; gap: 5px;
+      transition: border-color 0.15s, background 0.15s;
+      background: var(--surface);
+    }
+    .token-card:hover { border-color: var(--border-light); background: var(--surface2); }
+    .token-card.selected {
+      border-color: var(--accent); background: var(--accent-dim);
+    }
+    html:not(.dark) .token-card { border-color: #dce3ed; }
+    html:not(.dark) .token-card.selected { border-color: rgba(21,64,178,0.45); }
+    .token-header { display: flex; align-items: center; gap: 8px; }
+    .token-num {
+      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+      border: 1.5px solid var(--border-light);
+      font-size: 10px; font-weight: 700; color: var(--text-dim);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .token-card.selected .token-num {
+      border-color: var(--accent); color: var(--accent);
+    }
+    .token-name { font-size: 13px; font-weight: 700; color: var(--text-bright); }
+    .token-card.selected .token-name { color: var(--accent); }
+    .token-when { font-size: 11px; color: var(--text-dim); line-height: 1.45; padding-left: 28px; }
+
+    .reason-section { display: flex; flex-direction: column; gap: 7px; }
+    .reason-label { font-size: 14px; color: var(--text-dim); font-weight: 500; }
+    .reason-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .reason-tag {
+      display: inline-flex; font-size: 14px; font-weight: 500;
+      padding: 6px 12px; border-radius: 6px;
+      border: 1px solid var(--border); background: var(--surface2); color: var(--text);
+      cursor: pointer; transition: border-color 0.15s, background 0.15s, color 0.15s; line-height: 1.3;
+    }
+    .reason-tag:hover { border-color: var(--border-light); }
+    .reason-tag.sel-amber { border-color: var(--amber); background: var(--amber-bg); color: var(--amber); }
+    .reason-tag.sel-blue { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
+    .reason-tag.sel-neutral { border-color: var(--border-light); background: var(--surface3); color: var(--text); }
+
+    .btn-confirm {
+      display: flex; align-items: center; justify-content: center;
+      padding: 14px 22px; border-radius: 8px; font-size: 16px; font-weight: 700;
+      border: none; cursor: pointer; background: var(--accent); color: #fff;
+      transition: opacity 0.15s, box-shadow 0.15s; width: 100%; margin-top: 8px;
+      letter-spacing: 0.01em;
+    }
+    .btn-confirm:hover { opacity: 0.9; box-shadow: 0 2px 10px rgba(21,64,178,0.3); }
+    html.dark .btn-confirm:hover { box-shadow: 0 2px 10px rgba(107,154,248,0.25); }
+    .btn-confirm:disabled { opacity: 0.25; cursor: default; box-shadow: none; }
+
+    /* ── RECEIPT ── */
+    .receipt-block { display: flex; flex-direction: column; gap: 14px; }
+    .receipt-header-row { display: flex; align-items: center; gap: 12px; }
+    .receipt-icon {
+      width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+      background: var(--green-bg); border: 1px solid var(--green-border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .receipt-icon svg { width: 18px; height: 18px; stroke: var(--green); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .receipt-title { font-size: 18px; font-weight: 700; color: var(--text-bright); }
+    .receipt-sub { font-size: 14px; color: var(--text-dim); margin-top: 2px; }
+
+    .receipt-rows {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
+    }
+    .r-row { display: flex; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 15px; }
+    .r-row:last-child { border-bottom: none; }
+    .r-key { color: var(--text-dim); flex-shrink: 0; width: 150px; font-size: 14px; }
+    .r-val { color: var(--text); line-height: 1.5; }
+    .r-val-bright { color: var(--text-bright); font-weight: 600; }
+
+    .voice-record-display {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 5px; padding: 8px 10px;
+      font-size: 12px; line-height: 1.6; color: var(--text-dim);
+      max-height: 100px; overflow-y: auto; word-break: break-word;
+    }
+
+    .pending-note {
+      padding: 12px 14px; border-radius: 8px;
+      background: var(--surface2); border: 1px solid var(--border);
+      font-size: 15px; color: var(--text-dim); line-height: 1.6;
+    }
+    .pending-note strong { color: var(--text); }
+
+    .btn-back-q {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 18px; border-radius: 8px; font-size: 15px; font-weight: 600;
+      background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+      text-decoration: none; transition: border-color 0.15s, background 0.15s; width: 100%;
+    }
+    .btn-back-q:hover { border-color: var(--border-light); background: var(--surface3); }
+
+    .hidden { display: none !important; }
   </style>
 </head>
 <body>
 
+  <!-- ══════════════════════════════════════════
+       NAV — tab bar to switch between screens
+  ══════════════════════════════════════════ -->
   <nav class="site-nav">
-    <div class="nav-brand">AI Breast Screening</div>
-    <div class="nav-links">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="reading.html" class="nav-link">Reading Viewer</a>
-      <a href="arbitration.html" class="nav-link active">Arbitration Queue</a>
-      <a href="library.html" class="nav-link">Case Library</a>
+    <a href="arbitration.html" class="nav-back">← Queue</a>
+    <div class="nav-sep"></div>
+
+    <div class="screen-tabs">
+
+      <!-- Diagnostic Display 1 — CC View -->
+      <button class="screen-tab diag active" id="tab-cc" onclick="switchScreen('cc')">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Display 1 — CC View
+      </button>
+
+      <!-- Diagnostic Display 2 — MLO View -->
+      <button class="screen-tab diag" id="tab-mlo" onclick="switchScreen('mlo')">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Display 2 — MLO View
+      </button>
+
+      <!-- Arbitration Information Screen -->
+      <button class="screen-tab arb" id="tab-arb" onclick="switchScreen('arb')">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+        Arbitration Screen
+      </button>
+
     </div>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
   </nav>
 
-  <div class="page-content">
+  <!-- ══════════════════════════════════════════
+       SCREEN CONTAINER
+  ══════════════════════════════════════════ -->
+  <div class="screen-container">
 
-    <a href="arbitration.html" class="back-link">← Back to Arbitration Queue</a>
+    <!-- ─────────────────────────────────────
+         SCREEN 1 · Diagnostic Display 1
+         Purpose: CC view — current vs prior comparison
+         Always dark. This represents the primary
+         5 MP grayscale diagnostic display used
+         during in-room arbitration.
+    ───────────────────────────────────────── -->
+    <div class="screen active" id="screen-cc">
+      <div class="diag-screen">
 
-    <div class="page-header">
-      <div class="page-label">Arbitration Review</div>
-      <div class="page-title">Case BS-V000254</div>
-    </div>
-
-    <!-- Case summary -->
-    <div class="section">
-      <div class="section-head">Case summary</div>
-      <div class="section-body">
-        <div class="detail-row">
-          <span class="detail-key">Human reading</span>
-          <span class="detail-val">No further assessment · BI-RADS 2</span>
+        <div class="diag-topbar">
+          <span class="diag-topbar-label">
+            <strong>Diagnostic Display 1</strong> &nbsp;·&nbsp; CC View &nbsp;·&nbsp; Left breast &nbsp;·&nbsp; Current 2024 vs Prior 2021
+          </span>
+          <button class="ai-toggle-btn" id="toggle-ai">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/></svg>
+            Hide AI mark
+          </button>
         </div>
-        <div class="detail-row">
-          <span class="detail-key">AI result</span>
-          <span class="detail-val" style="color:var(--amber);font-weight:600;">Recall suggested · high confidence · focal asymmetry</span>
-        </div>
-        <div class="detail-row">
-          <span class="detail-key">Disagreement type</span>
-          <span class="detail-val"><span style="color:var(--amber);font-weight:600;">AI-positive</span> / <span style="color:rgba(210,80,80,0.9);font-weight:600;">human-negative</span></span>
+
+        <div class="diag-comparison">
+
+          <!-- Left: CC current (with AI annotation) -->
+          <div class="diag-cell">
+            <img src="assets/mammogram-l-cc.webp" alt="Left CC — current screening 2024">
+            <div class="diag-cell-label current">L CC · Current 2024</div>
+            <div class="ai-box" id="ai-box">
+              <div class="ai-box-label">AI · Focal asymmetry · 91%</div>
+            </div>
+            <div class="ai-conf-chip">AI confidence: High · 91%</div>
+          </div>
+
+          <!-- Divider between current and prior -->
+          <div class="diag-divider"></div>
+
+          <!-- Right: CC prior -->
+          <div class="diag-cell prior">
+            <img src="assets/mammogram-l-cc.webp" alt="Left CC — prior 2021">
+            <div class="diag-cell-label">L CC · Prior 2021</div>
+            <div class="no-finding-note">No flagged finding in corresponding area</div>
+            <div class="prior-round-badge">PRIOR ROUND</div>
+          </div>
+
         </div>
       </div>
-    </div>
+    </div><!-- /screen-cc -->
 
-    <!-- Arbitration question -->
-    <div class="section">
-      <div class="section-head">Arbitration question</div>
-      <div class="question-block">
-        <div class="question-text">Should this case be recalled for further assessment?</div>
-        <div class="outcome-display">
-          <div style="display:flex;flex-direction:column;gap:3px;">
-            <div class="outcome-label">Review outcome</div>
-            <div class="outcome-val">Recall to assessment</div>
+
+    <!-- ─────────────────────────────────────
+         SCREEN 2 · Diagnostic Display 2
+         Purpose: MLO view — current vs prior comparison
+         Complements Display 1. Radiologists cross-
+         reference CC and MLO views to confirm findings.
+    ───────────────────────────────────────── -->
+    <div class="screen" id="screen-mlo">
+      <div class="diag-screen">
+
+        <div class="diag-topbar">
+          <span class="diag-topbar-label">
+            <strong>Diagnostic Display 2</strong> &nbsp;·&nbsp; MLO View &nbsp;·&nbsp; Left breast &nbsp;·&nbsp; Current 2024 vs Prior 2021
+          </span>
+        </div>
+
+        <div class="diag-comparison">
+
+          <!-- Left: MLO current -->
+          <div class="diag-cell">
+            <img src="assets/mammogram-l-mlo.webp" alt="Left MLO — current screening 2024">
+            <div class="diag-cell-label current">L MLO · Current 2024</div>
+          </div>
+
+          <div class="diag-divider"></div>
+
+          <!-- Right: MLO prior -->
+          <div class="diag-cell prior">
+            <img src="assets/mammogram-l-mlo.webp" alt="Left MLO — prior 2021">
+            <div class="diag-cell-label">L MLO · Prior 2021</div>
+            <div class="prior-round-badge">PRIOR ROUND</div>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /screen-mlo -->
+
+
+    <!-- ─────────────────────────────────────
+         SCREEN 3 · Arbitration Information Screen
+         Purpose: case context, disagreement record,
+         discussion capture, and outcome decision.
+         This represents the clinical workstation /
+         NBSS information screen present in the
+         arbitration room.
+    ───────────────────────────────────────── -->
+    <div class="screen" id="screen-arb">
+      <div class="arb-screen">
+
+        <!-- Case header -->
+        <div class="arb-header">
+          <div class="arb-header-left">
+            <div class="arb-case-label">Consensus Review</div>
+            <div class="arb-case-id">Case BS-V000254</div>
+          </div>
+          <div class="arb-reviewer-chip">
+            <span class="reviewer-dot"></span>
+            Dr. S. Chen · Consultant Radiologist
+          </div>
+          <div class="arb-status-chip" id="arb-status">
+            <span class="status-dot"></span> Awaiting decision
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Actions -->
-    <div class="actions">
-      <a href="library.html" class="btn-primary-action">Add to Case Library →</a>
-      <a href="arbitration.html" class="btn-secondary-action">Back to queue</a>
-    </div>
+        <!-- Two-column body -->
+        <div class="arb-body">
 
-  </div>
+          <!-- ── LEFT COLUMN: Clinical case content ── -->
+          <div class="arb-col">
+          <div class="left-card">
 
-  <div class="site-footer">RCA IRP · AI Breast Screening Service Prototype · 2025</div>
+            <!-- A. Case context -->
+            <div class="arb-section">
+              <div class="arb-section-label">A · Case context</div>
+              <div class="info-rows">
+                <div class="info-row"><span class="info-key">Patient</span><span>58-year-old · Routine NHS breast screening</span></div>
+                <div class="info-row"><span class="info-key">Round</span><span>3rd screening round · No previous recalls on record</span></div>
+                <div class="info-row"><span class="info-key">Referred by</span><span>Dr. K. Evans · Reader 1 · Today at 09:14</span></div>
+              </div>
+            </div>
+
+            <!-- B. Reader 1 assessment -->
+            <div class="arb-section">
+              <div class="arb-section-label">B · Reader 1 assessment</div>
+              <div class="info-rows">
+                <div class="info-row"><span class="info-key">Reader</span><span>Dr. K. Evans · Reader 1</span></div>
+                <div class="info-row"><span class="info-key">Result</span><span>No further assessment</span></div>
+                <div class="info-row"><span class="info-key">Grade</span><span>BI-RADS 2 · Assessed normal</span></div>
+                <div class="info-row"><span class="info-key">Assessed</span><span>Today at 09:14</span></div>
+              </div>
+            </div>
+
+            <!-- C. Consensus reader positions -->
+            <div class="arb-section">
+              <div class="arb-section-label">C · Consensus reader positions</div>
+              <div class="reader-views">
+
+                <div class="reader-view">
+                  <div class="reader-view-head">
+                    <div class="reader-view-who">Dr. M. Patel <span class="reader-view-role">· Reader 2</span></div>
+                    <div class="reader-chip no-recall">No further assessment</div>
+                  </div>
+                  <div class="reader-view-body">
+                    <div class="reader-view-meta">
+                      <span class="reader-confidence">Confidence: High</span>
+                      <div class="rv-tags">
+                        <span class="rv-tag">Lesion features</span>
+                        <span class="rv-tag">Image quality</span>
+                      </div>
+                    </div>
+                    <div class="reader-rationale">Probable overlapping tissue. Low suspicion — appearance consistent with a normal variant on this view.</div>
+                  </div>
+                </div>
+
+                <div class="reader-view">
+                  <div class="reader-view-head">
+                    <div class="reader-view-who">Dr. J. Williams <span class="reader-view-role">· Reader 3</span></div>
+                    <div class="reader-chip recall">Recall to assessment</div>
+                  </div>
+                  <div class="reader-view-body">
+                    <div class="reader-view-meta">
+                      <span class="reader-confidence">Confidence: Medium</span>
+                      <div class="rv-tags">
+                        <span class="rv-tag">Prior image</span>
+                        <span class="rv-tag">Breast density</span>
+                        <span class="rv-tag">AI mark</span>
+                      </div>
+                    </div>
+                    <div class="reader-rationale">Dense breast tissue. Subtle asymmetry appears more meaningful after prior round comparison. Cautious position.</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- D. Prior comparison note -->
+            <div class="arb-section">
+              <div class="arb-section-label">D · Prior comparison</div>
+              <div class="prior-note">
+                Prior image comparison is part of this review. Images from the 2021 screening round are loaded on <strong>Display 1</strong> (CC) and <strong>Display 2</strong> (MLO) alongside the current 2024 study. Switch tabs to compare.
+              </div>
+            </div>
+
+            <!-- E. Arbitration outcome -->
+            <div class="arb-section" id="decision-section">
+              <div class="arb-section-label">E · Arbitration outcome</div>
+              <div class="decision-block">
+                <div style="font-size:13px;color:var(--text-dim);margin-bottom:12px;">Review question: Should this case be recalled for further assessment?</div>
+                <div class="radio-options-row">
+                  <div class="radio-option" id="opt-recall" onclick="selectOption('recall')">
+                    <div class="radio-dot"><div class="radio-fill"></div></div>
+                    <div class="radio-content">
+                      <div class="radio-label">Recall to assessment</div>
+                    </div>
+                  </div>
+                  <div class="radio-option" id="opt-maintain" onclick="selectOption('maintain')">
+                    <div class="radio-dot"><div class="radio-fill"></div></div>
+                    <div class="radio-content">
+                      <div class="radio-label">No further assessment</div>
+                    </div>
+                  </div>
+                  <div class="radio-option" id="opt-review" onclick="selectOption('review')">
+                    <div class="radio-dot"><div class="radio-fill"></div></div>
+                    <div class="radio-content">
+                      <div class="radio-label">Request further review</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="reason-section hidden" id="reasons-recall">
+                  <div class="reason-label">Supporting reason</div>
+                  <div class="reason-tags">
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">New finding not in prior round</span>
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">Visible change confirmed on review</span>
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">Unable to exclude on arbitration review</span>
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">AI evidence supported by arbitrator</span>
+                  </div>
+                </div>
+                <div class="reason-section hidden" id="reasons-maintain">
+                  <div class="reason-label">Supporting reason</div>
+                  <div class="reason-tags">
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">Stable across prior rounds</span>
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">No visible correlate on review</span>
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">Technical artefact on review</span>
+                    <span class="reason-tag" onclick="selectTag(this,'blue')">Previously investigated · no change</span>
+                  </div>
+                </div>
+                <div class="reason-section hidden" id="reasons-review">
+                  <div class="reason-label">Supporting reason</div>
+                  <div class="reason-tags">
+                    <span class="reason-tag" onclick="selectTag(this,'neutral')">Discordant evidence · second arbitrator needed</span>
+                    <span class="reason-tag" onclick="selectTag(this,'neutral')">Incomplete prior imaging available</span>
+                    <span class="reason-tag" onclick="selectTag(this,'neutral')">Technical image quality concern</span>
+                  </div>
+                </div>
+                <button class="btn-confirm" id="btn-confirm" disabled onclick="confirmDecision()">Confirm arbitration outcome</button>
+              </div>
+            </div>
+
+            <!-- Arbitration record (shown after confirm) -->
+            <div class="arb-section hidden" id="receipt-section">
+              <div class="arb-section-label">Arbitration record</div>
+              <div class="receipt-block">
+                <div class="receipt-header-row">
+                  <div class="receipt-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <div>
+                    <div class="receipt-title" id="receipt-title">Outcome recorded</div>
+                    <div class="receipt-sub" id="receipt-sub">Arbitration complete · BS-V000254</div>
+                  </div>
+                </div>
+                <div class="receipt-rows">
+                  <div class="r-row"><span class="r-key">Outcome</span><span class="r-val r-val-bright" id="r-decision">—</span></div>
+                  <div class="r-row hidden" id="r-token-row"><span class="r-key">Disagreement type</span><span class="r-val" id="r-token">—</span></div>
+                  <div class="r-row"><span class="r-key">Reason</span><span class="r-val" id="r-reason">—</span></div>
+                  <div class="r-row"><span class="r-key">Recorded by</span><span class="r-val">Dr. S. Chen · Consultant Radiologist</span></div>
+                  <div class="r-row"><span class="r-key">Recorded</span><span class="r-val" id="r-time">—</span></div>
+                  <div class="r-row hidden" id="r-voice-row">
+                    <span class="r-key">Discussion</span>
+                    <span class="r-val"><div class="voice-record-display" id="r-voice-text">—</div></span>
+                  </div>
+                </div>
+                <div class="pending-note">Record saved. This case can enter the Case Library after the follow-up screening outcome is confirmed.</div>
+                <a href="arbitration.html" class="btn-back-q">← Back to Arbitration Queue</a>
+              </div>
+            </div>
+
+          </div><!-- /left-card -->
+          </div><!-- /arb-col left -->
+
+
+          <!-- ── RIGHT COLUMN: AI service layer ── -->
+          <div class="arb-col arb-col-right">
+          <div class="right-card">
+
+            <!-- AI Disagreement Layer -->
+            <div class="arb-section">
+              <div class="arb-section-label">AI Disagreement Layer</div>
+              <div class="disagree-context">
+                <div class="disagree-context-top">
+                  <span class="badge badge-amber">AI positive</span>
+                  <span class="disagree-slash">/</span>
+                  <span class="badge badge-red">Human negative</span>
+                </div>
+                <div class="disagree-context-body">
+                  <div class="dc-row"><span class="dc-label">Human</span><span class="dc-val">No further assessment · BI-RADS 2</span></div>
+                  <div class="dc-row"><span class="dc-label">AI result</span><span class="dc-val amber-text">Recall suggested · focal asymmetry · 91% confidence</span></div>
+                  <div class="dc-row"><span class="dc-label">Location</span><span class="dc-val">Left breast · upper outer quadrant</span></div>
+                  <div class="dc-row"><span class="dc-label">Views</span><span class="dc-val">L-CC and L-MLO</span></div>
+                </div>
+                <div class="ai-rationale-block">
+                  <div class="ai-rationale-head">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    AI reasoning
+                  </div>
+                  <div class="ai-rationale-text">Focal asymmetry detected in the left upper outer quadrant. Density change is new relative to the prior 2021 round — no corresponding finding in the same region on prior images. AI reasoning highlights features including irregular margin pattern and increased density that may require review.</div>
+                  <div class="ai-rationale-tags">
+                    <span class="rv-tag">New vs prior</span>
+                    <span class="rv-tag">Focal asymmetry</span>
+                    <span class="rv-tag">Irregular margin</span>
+                    <span class="rv-tag">Increased density</span>
+                  </div>
+                </div>
+                <div class="dc-helper">AI output is a service flag, not a clinical recommendation.</div>
+              </div>
+            </div>
+
+            <!-- Disagreement type (lightweight classification) -->
+            <div class="arb-section">
+              <div class="arb-section-label">Disagreement type</div>
+              <div class="classify-widget" id="classify-display">
+                <div class="classify-row">
+                  <span class="classify-role">Suggested</span>
+                  <span class="classify-type-val" id="classify-primary-val">Detection gap</span>
+                  <button class="btn-classify-change" onclick="toggleClassifyPicker()">Change</button>
+                </div>
+                <div class="classify-row">
+                  <span class="classify-role">Secondary</span>
+                  <span class="classify-type-val dim" id="classify-secondary-val">Risk gap</span>
+                </div>
+              </div>
+              <div class="classify-picker hidden" id="classify-picker">
+                <span class="classify-chip selected" onclick="setClassify('Detection gap', this)">Detection gap</span>
+                <span class="classify-chip" onclick="setClassify('Risk gap', this)">Risk gap</span>
+                <span class="classify-chip" onclick="setClassify('Location gap', this)">Location gap</span>
+                <span class="classify-chip" onclick="setClassify('Severity gap', this)">Severity gap</span>
+                <span class="classify-chip" onclick="setClassify('Temporal gap', this)">Temporal gap</span>
+                <span class="classify-chip" onclick="setClassify('Trust gap', this)">Trust gap</span>
+              </div>
+            </div>
+
+            <!-- Ambient discussion capture -->
+            <div class="arb-section" id="capture-section">
+              <div class="arb-section-label">Ambient discussion capture</div>
+
+              <div id="voice-supported">
+
+                <!-- Idle — default state -->
+                <div id="capture-idle">
+                  <button class="btn-record" onclick="startRecording()">
+                    <span class="rec-dot"></span> Start capture
+                  </button>
+                </div>
+
+                <!-- Active recording -->
+                <div id="capture-active" class="hidden">
+                  <div class="capture-panel">
+                    <div class="cap-header">
+                      <span class="cap-rec-dot"></span>
+                      <span class="cap-timer-display" id="cap-timer">0:00</span>
+                      <span class="cap-status">Capturing discussion</span>
+                    </div>
+                    <div class="cap-live-zone">
+                      <div class="live-spk-now hidden" id="live-spk-now">
+                        <div class="live-spk-avatar" id="live-spk-avatar">A</div>
+                        <div class="live-spk-right">
+                          <span class="live-spk-avatar-label" id="live-spk-label">Voice A</span>
+                          <canvas id="waveform" class="waveform-canvas"></canvas>
+                        </div>
+                      </div>
+                      <span class="cap-active-who" id="cap-active-who">Listening…</span>
+                    </div>
+                    <div class="cap-controls">
+                      <button class="btn-mark-moment" id="btn-mark" onclick="markMoment()">⚑ Mark</button>
+                      <span class="cap-moments-count" id="cap-moments-count"></span>
+                      <button class="btn-stop-capture" onclick="stopRecording()">■ Stop</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Completed capture state — shown after stop -->
+                <div id="capture-summary" class="hidden">
+                  <div class="capture-panel">
+                    <div class="summary-header">
+                      <div class="summary-check">✓</div>
+                      <div>
+                        <div class="summary-title">Discussion captured</div>
+                        <div class="summary-meta" id="summary-meta">0:32 · 3 participant voices captured</div>
+                      </div>
+                    </div>
+                    <div class="summary-speakers" id="summary-speakers">
+                      <div class="cap-presence-label">Approx. voice presence</div>
+                      <div class="cap-speaker-row">
+                        <div class="cap-speaker-label">A</div>
+                        <div class="cap-speaker-bar-track"><div class="cap-speaker-bar-fill" style="width:59%"></div></div>
+                        <div class="cap-speaker-pct">~59%</div>
+                      </div>
+                      <div class="cap-speaker-row">
+                        <div class="cap-speaker-label">B</div>
+                        <div class="cap-speaker-bar-track"><div class="cap-speaker-bar-fill" style="width:19%"></div></div>
+                        <div class="cap-speaker-pct">~19%</div>
+                      </div>
+                      <div class="cap-speaker-row">
+                        <div class="cap-speaker-label">C</div>
+                        <div class="cap-speaker-bar-track"><div class="cap-speaker-bar-fill" style="width:22%"></div></div>
+                        <div class="cap-speaker-pct">~22%</div>
+                      </div>
+                    </div>
+                    <div class="summary-footer">
+                      <div class="transcript-toggle-row">
+                        <span class="transcript-toggle-label">Transcript hidden</span>
+                        <button class="btn-toggle-transcript" onclick="toggleTranscript()">View transcript ↓</button>
+                      </div>
+                      <div class="voice-transcript hidden" id="voice-transcript">
+                        <span class="placeholder">No speech detected.</span>
+                      </div>
+                      <label class="voice-attach" id="voice-attach-row">
+                        <input type="checkbox" id="attach-voice" checked> Include in arbitration record
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div id="voice-unsupported" class="hidden">
+                <div class="voice-unsupported-msg">Ambient capture requires Chrome or Edge with microphone access.</div>
+              </div>
+            </div>
+
+            <!-- Trace / record attachment -->
+            <div class="arb-section">
+              <div class="arb-section-label">Record attachment</div>
+              <div class="trace-block">
+                <label class="trace-row">
+                  <input type="checkbox" id="trace-attach-voice" checked>
+                  Attach discussion capture to record
+                </label>
+                <label class="trace-row">
+                  <input type="checkbox" id="trace-flag-library">
+                  Flag for Disagreement Library after follow-up
+                </label>
+                <label class="trace-row">
+                  <input type="checkbox" id="trace-ai-signal" checked>
+                  Include disagreement in team learning record
+                </label>
+              </div>
+            </div>
+
+          </div><!-- /right-card -->
+          </div><!-- /arb-col right -->
+        </div><!-- /arb-body -->
+
+      </div><!-- /arb-screen -->
+    </div><!-- /screen-arb -->
+
+  </div><!-- /screen-container -->
+
+
+  <script>
+    // ── THEME ──
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var dark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    });
+
+    // ── OPEN ON ARB TAB IF ARRIVING FROM QUEUE ──
+    if (location.hash === '#arb') {
+      switchScreen('arb');
+      history.replaceState(null, '', location.pathname);
+    }
+
+    // ── SCREEN SWITCHING ──
+    function switchScreen(name) {
+      ['cc','mlo','arb'].forEach(function(s) {
+        document.getElementById('screen-' + s).classList.remove('active');
+        var tab = document.getElementById('tab-' + s);
+        tab.classList.remove('active');
+      });
+      document.getElementById('screen-' + name).classList.add('active');
+      document.getElementById('tab-' + name).classList.add('active');
+    }
+
+    // ── AI MARK TOGGLE (Display 1 only) ──
+    var markOn = true;
+    document.getElementById('toggle-ai').addEventListener('click', function () {
+      markOn = !markOn;
+      document.getElementById('ai-box').classList.toggle('hidden', !markOn);
+      this.classList.toggle('off', !markOn);
+      this.innerHTML = markOn
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"/></svg> Hide AI mark'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg> Show AI mark';
+    });
+
+    // ── VOICE CAPTURE ──
+    var SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    var recognition       = null;
+    var fullTranscript    = '';
+    var isRecording       = false;
+    var mediaStream       = null;
+    var audioCtx          = null;
+    var analyser          = null;
+    var animFrameId       = null;
+    var timerInterval     = null;
+    var speakerInterval   = null;
+    var recSeconds        = 0;
+    var waveCanvas = null;
+    var waveCtx    = null;
+
+    // Speaker tracking
+    var speakerOrder   = ['A', 'B', 'C'];
+    var speakerSeconds = { A: 0, B: 0, C: 0 };
+    var currentSpeaker = null;
+    var speakerIndex   = -1;
+    var lastSoundTime  = 0;
+    var AMP_THRESHOLD  = 16;
+    var SILENCE_GAP    = 2000;  // 2s silence → next speaker in cycle
+    var moments        = [];
+
+    // Adaptive noise floor
+    var noiseMeasuring  = false;
+    var noiseSamples    = [];
+    var noiseMeasureEnd = 0;
+
+    // Canvas waveform setup
+    (function() {
+      waveCanvas = document.getElementById('waveform');
+      if (waveCanvas && waveCanvas.getContext) waveCtx = waveCanvas.getContext('2d');
+    })();
+
+    // Check browser support
+    if (!SpeechRec || !navigator.mediaDevices) {
+      document.getElementById('voice-supported').classList.add('hidden');
+      document.getElementById('voice-unsupported').classList.remove('hidden');
+    } else {
+      recognition = new SpeechRec();
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.onresult = function(e) {
+        for (var i = e.resultIndex; i < e.results.length; i++) {
+          if (e.results[i].isFinal) fullTranscript += e.results[i][0].transcript + ' ';
+        }
+      };
+      recognition.onerror = function(e) {
+        if (e.error !== 'no-speech') console.warn('SR:', e.error);
+      };
+      // No onend restart — that was the root cause of repeated permission prompts
+    }
+
+    async function startRecording() {
+      try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      } catch(err) {
+        document.getElementById('voice-supported').classList.add('hidden');
+        document.getElementById('voice-unsupported').classList.remove('hidden');
+        return;
+      }
+
+      // Reset all state
+      fullTranscript = '';
+      isRecording    = true;
+      recSeconds     = 0;
+      moments        = [];
+      speakerSeconds = { A: 0, B: 0, C: 0 };
+      currentSpeaker = null;
+      speakerIndex   = -1;
+      lastSoundTime  = 0;
+      AMP_THRESHOLD  = 16;
+      noiseSamples   = [];
+      noiseMeasuring = true;
+      noiseMeasureEnd = Date.now() + 800;
+
+      // Reset live speaker chip
+      var chip = document.getElementById('live-spk-now');
+      if (chip) chip.classList.add('hidden');
+      var who = document.getElementById('cap-active-who');
+      if (who) { who.classList.remove('hidden'); who.textContent = 'Calibrating…'; }
+      document.getElementById('cap-moments-count').textContent = '';
+
+      if (recognition) { try { recognition.lang = navigator.language || 'en-GB'; recognition.start(); } catch(e) {} }
+
+      startVisualization(mediaStream);
+
+      // Timer
+      var timerEl = document.getElementById('cap-timer');
+      if (timerEl) timerEl.textContent = '0:00';
+      timerInterval = setInterval(function() {
+        recSeconds++;
+        var m = Math.floor(recSeconds / 60), s = recSeconds % 60;
+        var el = document.getElementById('cap-timer');
+        if (el) el.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+      }, 1000);
+
+      // Accumulate speaking time per second
+      speakerInterval = setInterval(function() {
+        if (currentSpeaker && isRecording) {
+          speakerSeconds[currentSpeaker]++;
+          updateSpeakerBars();
+        }
+      }, 1000);
+
+      document.getElementById('capture-idle').classList.add('hidden');
+      document.getElementById('capture-active').classList.remove('hidden');
+      document.getElementById('capture-summary').classList.add('hidden');
+    }
+
+    function stopRecording() {
+      if (!isRecording) return;
+      isRecording = false;
+
+      if (recognition) { try { recognition.stop(); } catch(e) {} }
+      if (animFrameId) { cancelAnimationFrame(animFrameId); animFrameId = null; }
+      if (audioCtx)    { try { audioCtx.close(); } catch(e) {} audioCtx = null; analyser = null; }
+      if (mediaStream) { mediaStream.getTracks().forEach(function(t){t.stop()}); mediaStream = null; }
+      clearInterval(timerInterval);
+      clearInterval(speakerInterval);
+
+      if (waveCtx && waveCanvas) waveCtx.clearRect(0, 0, waveCanvas.width, waveCanvas.height);
+
+      buildSummary();
+
+      document.getElementById('capture-active').classList.add('hidden');
+      document.getElementById('capture-idle').classList.remove('hidden');
+      document.getElementById('capture-summary').classList.remove('hidden');
+    }
+
+    function markMoment() {
+      moments.push(recSeconds);
+      var btn = document.getElementById('btn-mark');
+      var countEl = document.getElementById('cap-moments-count');
+      if (btn) {
+        btn.textContent = '⚑ Marked';
+        setTimeout(function() { btn.textContent = '⚑ Mark'; }, 900);
+      }
+      if (countEl) countEl.textContent = moments.length + ' moment' + (moments.length !== 1 ? 's' : '');
+    }
+
+    function startVisualization(stream) {
+      try {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        var src = audioCtx.createMediaStreamSource(stream);
+        analyser = audioCtx.createAnalyser();
+        analyser.fftSize = 2048;
+        analyser.smoothingTimeConstant = 0.75;
+        src.connect(analyser);
+        drawFrame();
+      } catch(e) {
+        // Fallback idle animation
+        var tick = 0;
+        animFrameId = setInterval(function() {
+          tick++;
+          if (!waveCtx || !waveCanvas) return;
+          var w = waveCanvas.offsetWidth, h = waveCanvas.offsetHeight;
+          if (waveCanvas.width !== w) waveCanvas.width = w;
+          if (waveCanvas.height !== h) waveCanvas.height = h;
+          waveCtx.clearRect(0, 0, w, h);
+          waveCtx.beginPath();
+          for (var i = 0; i <= w; i++) {
+            var y = h/2 + Math.sin(i * 0.05 + tick * 0.08) * 4;
+            i === 0 ? waveCtx.moveTo(i, y) : waveCtx.lineTo(i, y);
+          }
+          waveCtx.strokeStyle = 'rgba(107,154,248,0.35)';
+          waveCtx.lineWidth = 1.5;
+          waveCtx.stroke();
+        }, 60);
+      }
+    }
+
+    function drawFrame() {
+      if (!isRecording || !analyser) return;
+      animFrameId = requestAnimationFrame(drawFrame);
+
+      var freqBuf = new Uint8Array(analyser.frequencyBinCount);
+      analyser.getByteFrequencyData(freqBuf);
+      var timeBuf = new Uint8Array(analyser.fftSize);
+      analyser.getByteTimeDomainData(timeBuf);
+
+      var ampBins = Math.min(128, freqBuf.length);
+      var amp = 0;
+      for (var j = 0; j < ampBins; j++) amp += freqBuf[j];
+      amp = amp / ampBins;
+
+      var now = Date.now();
+
+      // Noise floor calibration — first 800ms of recording
+      if (noiseMeasuring) {
+        noiseSamples.push(amp);
+        if (now >= noiseMeasureEnd) {
+          noiseMeasuring = false;
+          var floor = noiseSamples.reduce(function(a, b) { return a + b; }, 0) / noiseSamples.length;
+          AMP_THRESHOLD = Math.max(16, floor * 2.5);
+          var whoEl = document.getElementById('cap-active-who');
+          if (whoEl) whoEl.textContent = 'Listening…';
+        }
+        drawCanvasWave(timeBuf, 0.3);
+        return;
+      }
+
+      var isSpeaking = amp > AMP_THRESHOLD;
+
+      if (isSpeaking) {
+        var silentFor = now - lastSoundTime;
+        if (lastSoundTime === 0 || silentFor > SILENCE_GAP) {
+          speakerIndex = (speakerIndex + 1) % speakerOrder.length;
+          setActiveSpeaker(speakerOrder[speakerIndex]);
+        }
+        lastSoundTime = now;
+      } else if (currentSpeaker && (now - lastSoundTime > SILENCE_GAP)) {
+        var chip = document.getElementById('live-spk-now');
+        var who  = document.getElementById('cap-active-who');
+        if (chip) chip.classList.add('hidden');
+        if (who)  { who.classList.remove('hidden'); who.textContent = 'Listening…'; }
+      }
+
+      drawCanvasWave(timeBuf, isSpeaking ? 1 : 0.4);
+    }
+
+    function drawCanvasWave(timeBuf, opacity) {
+      if (!waveCtx || !waveCanvas) return;
+      var w = waveCanvas.offsetWidth, h = waveCanvas.offsetHeight;
+      if (!w || !h) return;
+      if (waveCanvas.width !== w) waveCanvas.width = w;
+      if (waveCanvas.height !== h) waveCanvas.height = h;
+      waveCtx.clearRect(0, 0, w, h);
+
+      var isDark = document.documentElement.classList.contains('dark');
+      var rgb = isDark ? '107,154,248' : '21,64,178';
+      waveCtx.fillStyle = 'rgba(' + rgb + ',' + opacity + ')';
+
+      var barW = 2;
+      var gap = 1.5;
+      var step = barW + gap;
+      var numBars = Math.floor(w / step);
+      var bufStep = Math.floor(timeBuf.length / numBars);
+      var cy = h / 2;
+      var maxHalf = cy - 1;
+
+      for (var i = 0; i < numBars; i++) {
+        var v = Math.abs((timeBuf[i * bufStep] / 128.0) - 1.0);
+        var barH = Math.max(2, v * maxHalf * 2);
+        waveCtx.fillRect(i * step, cy - barH / 2, barW, barH);
+      }
+    }
+
+
+    function setActiveSpeaker(label) {
+      if (!label) return;
+      currentSpeaker = label;
+      var chip = document.getElementById('live-spk-now');
+      var avatar = document.getElementById('live-spk-avatar');
+      var lbl = document.getElementById('live-spk-label');
+      var who = document.getElementById('cap-active-who');
+      if (chip)   chip.classList.remove('hidden');
+      if (avatar) avatar.textContent = label;
+      if (lbl)    lbl.textContent = 'Voice ' + label;
+      if (who)    who.classList.add('hidden');
+    }
+
+    function updateSpeakerBars() {
+      var total = speakerSeconds.A + speakerSeconds.B + speakerSeconds.C;
+      if (total === 0) return;
+      speakerOrder.forEach(function(l) {
+        if (speakerSeconds[l] === 0) return;
+        var pct = Math.round((speakerSeconds[l] / total) * 100);
+        var fill = document.getElementById('spk-bar-' + l);
+        var pctEl = document.getElementById('spk-pct-' + l);
+        if (fill) fill.style.width = pct + '%';
+        if (pctEl) pctEl.textContent = pct + '%';
+      });
+    }
+
+    function buildSummary() {
+      var activeSpeakers = speakerOrder.filter(function(l) { return speakerSeconds[l] > 0; });
+      var total = speakerSeconds.A + speakerSeconds.B + speakerSeconds.C;
+
+      var meta = fmtTime(recSeconds);
+      meta += ' · ' + (activeSpeakers.length || 1) + ' participant' + (activeSpeakers.length !== 1 ? 's' : '');
+      if (moments.length > 0) meta += ' · ' + moments.length + ' moment' + (moments.length !== 1 ? 's' : '') + ' marked';
+      var metaEl = document.getElementById('summary-meta');
+      if (metaEl) metaEl.textContent = meta;
+
+      var wrap = document.getElementById('summary-speakers');
+      if (wrap) {
+        wrap.innerHTML = '';
+        var showSpeakers = activeSpeakers.length > 0 ? activeSpeakers : ['A'];
+        if (showSpeakers.length === 1 && speakerSeconds[showSpeakers[0]] === 0) total = 1;
+        showSpeakers.forEach(function(l) {
+          var pct = total > 0 ? Math.round(((speakerSeconds[l] || 1) / (total || 1)) * 100) : 100;
+          var row = document.createElement('div');
+          row.className = 'cap-speaker-row';
+          row.innerHTML =
+            '<div class="cap-speaker-label">' + l + '</div>' +
+            '<div class="cap-speaker-bar-track"><div class="cap-speaker-bar-fill" style="width:' + pct + '%"></div></div>' +
+            '<div class="cap-speaker-pct">' + pct + '%</div>';
+          wrap.appendChild(row);
+        });
+      }
+
+      var tBox = document.getElementById('voice-transcript');
+      if (tBox) {
+        tBox.innerHTML = fullTranscript.trim()
+          ? '<span>' + fullTranscript.trim() + '</span>'
+          : '<span class="placeholder">No speech detected.</span>';
+      }
+    }
+
+    function toggleTranscript() {
+      var box = document.getElementById('voice-transcript');
+      var btn = document.querySelector('.btn-toggle-transcript');
+      if (!box) return;
+      var hidden = box.classList.toggle('hidden');
+      if (btn) btn.textContent = hidden ? 'View ↓' : 'Hide ↑';
+    }
+
+    function fmtTime(s) {
+      var m = Math.floor(s / 60), sec = s % 60;
+      return m + ':' + (sec < 10 ? '0' : '') + sec;
+    }
+
+    // ── DECISION ──
+    var selectedOption = null;
+    var selectedReason = null;
+    var selectedToken  = null;
+
+    // ── CLASSIFY WIDGET ──
+    var classifyPrimary = 'Detection gap';
+    function toggleClassifyPicker() {
+      document.getElementById('classify-picker').classList.toggle('hidden');
+    }
+    function setClassify(name, el) {
+      classifyPrimary = name;
+      selectedToken = name;
+      document.getElementById('classify-primary-val').textContent = name;
+      document.querySelectorAll('.classify-chip').forEach(function(c){ c.classList.remove('selected'); });
+      el.classList.add('selected');
+      document.getElementById('classify-picker').classList.add('hidden');
+    }
+
+    function selectOption(opt) {
+      selectedOption = opt;
+      selectedReason = null;
+      document.getElementById('opt-recall').className   = 'radio-option' + (opt === 'recall'   ? ' sel-recall'   : '');
+      document.getElementById('opt-maintain').className = 'radio-option' + (opt === 'maintain' ? ' sel-maintain' : '');
+      document.getElementById('opt-review').className   = 'radio-option' + (opt === 'review'   ? ' sel-review'   : '');
+      document.getElementById('reasons-recall').classList.toggle('hidden',   opt !== 'recall');
+      document.getElementById('reasons-maintain').classList.toggle('hidden', opt !== 'maintain');
+      document.getElementById('reasons-review').classList.toggle('hidden',   opt !== 'review');
+      document.querySelectorAll('.reason-tag').forEach(function(t){ t.classList.remove('sel-amber','sel-blue','sel-neutral'); });
+      updateConfirm();
+    }
+
+    function selectTag(el, colour) {
+      el.closest('.reason-tags').querySelectorAll('.reason-tag').forEach(function(t){ t.classList.remove('sel-amber','sel-blue','sel-neutral'); });
+      el.classList.add('sel-' + colour);
+      selectedReason = el.textContent.trim();
+      updateConfirm();
+    }
+
+    function updateConfirm() {
+      document.getElementById('btn-confirm').disabled = !(selectedOption && selectedReason);
+    }
+
+    function confirmDecision() {
+      if (!selectedOption || !selectedReason) return;
+
+      document.getElementById('decision-section').classList.add('hidden');
+      const tokenSection = document.getElementById('token-section');
+      if (tokenSection) tokenSection.classList.add('hidden');
+
+      var decText = {
+        recall:   'Recall to assessment',
+        maintain: 'No further assessment',
+        review:   'Further review requested'
+      }[selectedOption] || '—';
+
+      document.getElementById('r-decision').textContent = decText;
+      document.getElementById('r-reason').textContent   = selectedReason;
+      if (classifyPrimary) {
+        document.getElementById('r-token-row').classList.remove('hidden');
+        document.getElementById('r-token').textContent = classifyPrimary;
+      }
+
+      var now = new Date();
+      document.getElementById('r-time').textContent =
+        now.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' }) +
+        ' · ' + now.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' });
+
+      var attachEl = document.getElementById('attach-voice');
+      var summaryVisible = !document.getElementById('capture-summary').classList.contains('hidden');
+      if (attachEl && summaryVisible && attachEl.checked && fullTranscript.trim()) {
+        document.getElementById('r-voice-row').classList.remove('hidden');
+        document.getElementById('r-voice-text').textContent = fullTranscript.trim();
+      }
+
+      var titles = {
+        recall:   ['Recall to assessment recorded', 'Patient referred for further assessment · BS-V000254'],
+        maintain: ['No further assessment recorded', 'Arbitration review complete · BS-V000254'],
+        review:   ['Further review requested',       'Case held pending additional clinical input · BS-V000254']
+      };
+      var t = titles[selectedOption] || ['Outcome recorded', 'Arbitration complete · BS-V000254'];
+      document.getElementById('receipt-title').textContent = t[0];
+      document.getElementById('receipt-sub').textContent   = t[1];
+
+      var chip = document.getElementById('arb-status');
+      chip.style.color       = 'var(--green)';
+      chip.style.background  = 'var(--green-bg)';
+      chip.style.borderColor = 'var(--green-border)';
+      chip.innerHTML = '<span style="width:6px;height:6px;border-radius:50%;background:var(--green);display:inline-block;"></span> Outcome recorded';
+
+      document.getElementById('receipt-section').classList.remove('hidden');
+
+      sessionStorage.setItem('arb_BS-V000254', JSON.stringify({
+        outcome: decText,
+        time: document.getElementById('r-time').textContent
+      }));
+
+      if (isRecording) stopRecording();
+      document.getElementById('capture-idle').classList.add('hidden');
+      document.getElementById('capture-active').classList.add('hidden');
+      var capSection = document.getElementById('capture-section');
+      var locked = document.createElement('p');
+      locked.style.cssText = 'font-size:13px;color:var(--text-dim);margin-top:4px;';
+      locked.textContent = 'Capture closed — outcome has been recorded.';
+      capSection.appendChild(locked);
+    }
+  </script>
 
 </body>
 </html>

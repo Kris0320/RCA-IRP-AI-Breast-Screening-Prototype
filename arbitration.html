@@ -4,47 +4,220 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arbitration Queue — AI Breast Screening</title>
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <script>(function(){if(location.search.indexOf('reset=1')!==-1){var u=location.href.replace(/[?&]reset=1/,'').replace(/[?]$/,'');history.replaceState(null,'',u||location.pathname);}})();</script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --bg: #0d0d0d; --surface: #141414; --surface2: #1a1a1a; --surface3: #222222;
-      --border: rgba(255,255,255,0.08); --border-light: rgba(255,255,255,0.15);
-      --text: #cccccc; --text-dim: rgba(255,255,255,0.4); --text-bright: #ffffff;
-      --amber: #d0a830; --teal: #3a9e8f; --green: #5aaa5a;
+      --bg:           #f4f6fa;
+      --surface:      #ffffff;
+      --surface2:     #edf0f7;
+      --surface3:     #e2e7f0;
+      --border:       rgba(30,50,90,0.1);
+      --border-light: rgba(30,50,90,0.2);
+      --text:         #384762;
+      --text-dim:     rgba(50,68,100,0.55);
+      --text-bright:  #0e1828;
+      --accent:       #1f4fc6;
+      --accent-dim:   rgba(31,79,198,0.1);
+      --amber:        #a86800;
+      --amber-bg:     rgba(168,104,0,0.07);
+      --amber-border: rgba(168,104,0,0.22);
+      --red:          #b83030;
+      --nav-bg:       rgba(244,246,250,0.92);
     }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
 
-    .site-nav { height: 44px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 24px; gap: 0; flex-shrink: 0; }
-    .nav-brand { font-size: 13px; font-weight: 600; color: var(--text-bright); letter-spacing: 0.02em; margin-right: 28px; white-space: nowrap; border-left: 2px solid #1f4fc6; padding-left: 10px; }
-    .nav-links { display: flex; gap: 2px; }
-    .nav-link { font-size: 13px; color: var(--text-dim); text-decoration: none; padding: 5px 12px; border-radius: 5px; transition: color 0.15s, background 0.15s; white-space: nowrap; }
+    html.dark {
+      --bg:           #080c14;
+      --surface:      #0e1420;
+      --surface2:     #141c2a;
+      --surface3:     #1a2335;
+      --border:       rgba(255,255,255,0.07);
+      --border-light: rgba(255,255,255,0.14);
+      --text:         #b8c4d4;
+      --text-dim:     rgba(184,196,212,0.45);
+      --text-bright:  #eef2f8;
+      --accent:       #6b9af8;
+      --accent-dim:   rgba(107,154,248,0.15);
+      --amber:        #d0a830;
+      --amber-bg:     rgba(208,168,48,0.08);
+      --amber-border: rgba(208,168,48,0.22);
+      --red:          #d07070;
+      --nav-bg:       rgba(8,12,20,0.88);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    .site-nav {
+      position: sticky; top: 0; z-index: 100;
+      height: 52px; background: var(--nav-bg);
+      backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; padding: 0 32px; gap: 8px;
+    }
+    .nav-brand {
+      font-size: 13px; font-weight: 700; color: var(--text-bright);
+      letter-spacing: 0.03em; text-transform: uppercase;
+      margin-right: 36px; white-space: nowrap;
+    }
+    .nav-links { display: flex; gap: 2px; flex: 1; }
+    .nav-link {
+      font-size: 13px; color: var(--text-dim); text-decoration: none;
+      padding: 5px 12px; border-radius: 5px;
+      transition: color 0.15s, background 0.15s; white-space: nowrap;
+    }
     .nav-link:hover { color: var(--text); background: var(--surface2); }
-    .nav-link.active { color: #1f4fc6; background: rgba(31,79,198,0.1); }
+    .nav-link.active { color: var(--accent); background: var(--accent-dim); }
+    .theme-toggle {
+      width: 34px; height: 34px; border-radius: 8px;
+      background: none; border: 1px solid var(--border);
+      color: var(--text-dim); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s, border-color 0.15s, color 0.15s; flex-shrink: 0;
+    }
+    .theme-toggle:hover { background: var(--surface2); border-color: var(--border-light); color: var(--text); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    html:not(.dark) .icon-sun { display: none; }
+    html.dark .icon-moon { display: none; }
 
-    .page-content { max-width: 720px; width: 100%; margin: 0 auto; padding: 48px 24px 64px; flex: 1; }
-    .page-header { margin-bottom: 32px; }
-    .page-title { font-size: 22px; font-weight: 600; color: var(--text-bright); margin-bottom: 8px; }
-    .page-sub { font-size: 14px; color: var(--text-dim); line-height: 1.6; }
+    /* PAGE */
+    .page-content {
+      max-width: 1100px; width: 100%; margin: 0 auto;
+      padding: 48px 40px 64px; flex: 1;
+    }
+    .page-header {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      margin-bottom: 24px; gap: 16px;
+    }
+    .page-header-left {}
+    .page-title { font-size: 22px; font-weight: 700; color: var(--text-bright); margin-bottom: 6px; }
+    .page-sub { font-size: 14px; color: var(--text-dim); line-height: 1.5; }
+    .queue-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; color: var(--accent);
+      background: var(--accent-dim); border: 1px solid rgba(21,64,178,0.22);
+      border-radius: 4px; padding: 4px 10px; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
+      flex-shrink: 0;
+    }
+    html.dark .queue-badge { border-color: rgba(107,154,248,0.28); }
+    .queue-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
 
-    .queue-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: var(--amber); background: rgba(208,120,48,0.08); border: 1px solid rgba(208,120,48,0.25); border-radius: 4px; padding: 3px 9px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px; }
-    .queue-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+    /* Queue table */
+    .queue-table {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+    }
+    html:not(.dark) .queue-table { border-color: #dce3ed; }
 
-    .case-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 14px; }
-    .case-card-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .case-id { font-size: 14px; font-weight: 700; color: var(--text-bright); }
-    .case-status-chip { font-size: 11px; font-weight: 600; color: var(--amber); background: rgba(208,120,48,0.1); border: 1px solid rgba(208,120,48,0.3); border-radius: 4px; padding: 3px 9px; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+    .queue-col-headers {
+      display: grid;
+      grid-template-columns: 130px 1fr 90px 140px 170px 90px;
+      padding: 0 16px; border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    html:not(.dark) .queue-col-headers { border-color: #dce3ed; }
+    .queue-col-header {
+      font-size: 11px; font-weight: 600; color: var(--text-dim);
+      text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 9px 8px;
+    }
 
-    .case-rows { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
-    .case-row { display: flex; gap: 12px; padding: 9px 14px; border-bottom: 1px solid var(--border); font-size: 13px; background: var(--surface2); }
-    .case-row:last-child { border-bottom: none; }
-    .case-row-key { color: var(--text-dim); flex-shrink: 0; width: 130px; }
-    .case-row-val { color: var(--text); line-height: 1.5; }
-    .val-amber { color: var(--amber); font-weight: 600; }
+    .queue-row {
+      display: grid;
+      grid-template-columns: 130px 1fr 90px 140px 170px 90px;
+      padding: 0 16px; align-items: center;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.12s;
+      text-decoration: none; color: inherit;
+    }
+    html:not(.dark) .queue-row { border-color: #eaeff7; }
+    .queue-row:last-child { border-bottom: none; }
+    .queue-row:hover { background: var(--surface2); }
 
-    .btn-open { display: inline-block; padding: 10px 18px; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; transition: border-color 0.15s, background 0.15s; width: fit-content; }
-    .btn-open:hover { border-color: var(--border-light); background: var(--surface3); }
+    .queue-cell { padding: 14px 8px; font-size: 14px; }
 
-    .site-footer { padding: 20px 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-dim); text-align: center; }
+    .case-id-cell { font-weight: 600; color: var(--text-bright); font-size: 14px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+    .conflict-cell { display: flex; flex-direction: column; gap: 3px; }
+    .conflict-line { font-size: 14px; color: var(--text); }
+    .conflict-finding { font-size: 13px; color: var(--text-dim); }
+    .ai-positive { color: var(--amber); font-weight: 600; }
+
+    .priority-chip {
+      display: inline-flex; align-items: center;
+      font-size: 11px; font-weight: 600; border-radius: 4px;
+      padding: 3px 8px; white-space: nowrap;
+    }
+    .priority-high { color: var(--red); background: rgba(184,48,48,0.07); border: 1px solid rgba(184,48,48,0.2); }
+    .priority-normal { color: var(--text-dim); background: var(--surface2); border: 1px solid var(--border); }
+    html.dark .priority-high { background: rgba(208,112,112,0.1); border-color: rgba(208,112,112,0.24); }
+
+    /* Status chips — same pattern as reader-chip / arb-status-chip in arbitration-case.html */
+    .status-chip {
+      display: inline-flex; align-items: center;
+      font-size: 10px; font-weight: 700; border-radius: 4px;
+      padding: 3px 9px; white-space: nowrap;
+      letter-spacing: 0.02em; border: 1px solid;
+    }
+    .status-awaiting { color: var(--text-dim); background: var(--surface3); border-color: var(--border); }
+    .status-in-review { color: var(--accent); background: var(--accent-dim); border-color: rgba(21,64,178,0.28); }
+    .status-reviewed { color: var(--accent); background: var(--accent-dim); border-color: rgba(21,64,178,0.22); }
+    .status-followup { color: var(--amber); background: var(--amber-bg); border-color: var(--amber-border); }
+    html.dark .status-in-review { border-color: rgba(107,154,248,0.32); }
+    html.dark .status-reviewed { border-color: rgba(107,154,248,0.28); }
+
+    .queue-row.reviewed { opacity: 0.6; pointer-events: none; }
+    .queue-row.reviewed .btn-open-row { display: none; }
+
+    /* Handover tag — same pattern as module-tag tag-live in index.html */
+    .handover-tag {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 2px 7px; border-radius: 4px;
+      color: var(--accent); background: var(--accent-dim);
+      border: 1px solid rgba(21,64,178,0.22); width: fit-content;
+    }
+    html.dark .handover-tag { border-color: rgba(107,154,248,0.22); }
+
+    .time-cell { font-size: 13px; color: var(--text-dim); }
+    .routed-from { font-size: 12px; color: var(--text-dim); margin-top: 2px; opacity: 0.75; }
+
+    /* Filter chips — same pattern as classify-chip in arbitration-case.html */
+    .filter-chips {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .filter-chip {
+      font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 5px;
+      border: 1px solid var(--border); background: var(--surface2); color: var(--text);
+      cursor: pointer; transition: border-color 0.12s, background 0.12s, color 0.12s;
+      white-space: nowrap;
+    }
+    html:not(.dark) .filter-chip { border-color: #dce3ed; background: var(--surface); }
+    .filter-chip:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+    .filter-chip.active { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
+
+    .open-cell { display: flex; justify-content: flex-end; }
+    .btn-open-row {
+      font-size: 12px; font-weight: 600; color: var(--accent);
+      background: none; border: 1px solid rgba(21,64,178,0.28);
+      border-radius: 5px; padding: 5px 12px; cursor: pointer;
+      text-decoration: none; transition: background 0.12s;
+      white-space: nowrap;
+    }
+    html.dark .btn-open-row { border-color: rgba(107,154,248,0.3); }
+    .btn-open-row:hover { background: var(--accent-dim); }
+
+    .site-footer {
+      padding: 20px 24px; border-top: 1px solid var(--border);
+      font-size: 12px; color: var(--text-dim); text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -57,46 +230,153 @@
       <a href="arbitration.html" class="nav-link active">Arbitration Queue</a>
       <a href="library.html" class="nav-link">Case Library</a>
     </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
   </nav>
 
   <div class="page-content">
     <div class="page-header">
-      <div class="page-title">Arbitration Queue</div>
-      <div class="page-sub">Cases requiring peer or arbitration review after AI-human disagreement.</div>
+      <div class="page-header-left">
+        <div class="page-title">Arbitration Queue</div>
+        <div class="page-sub">Cases pending consensus review after AI–human disagreement.</div>
+      </div>
+      <div class="queue-badge" id="queue-badge"><span class="queue-dot"></span>4 Awaiting Review · 2 High Priority</div>
     </div>
 
-    <div class="queue-tag"><span class="queue-dot"></span>1 case awaiting review</div>
+    <div class="filter-chips" id="filter-chips">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="high">High priority</button>
+      <button class="filter-chip" data-filter="ai-pos-hum-neg">AI-positive · human-negative</button>
+      <button class="filter-chip" data-filter="ai-neg-hum-pos">AI-negative · human-positive</button>
+      <button class="filter-chip" data-filter="reviewed">Reviewed</button>
+    </div>
 
-    <div class="case-card">
-      <div class="case-card-header">
-        <div class="case-id">Case BS-V000254</div>
-        <div class="case-status-chip">Awaiting review</div>
+    <div class="queue-table">
+      <div class="queue-col-headers">
+        <div class="queue-col-header">Case</div>
+        <div class="queue-col-header">Disagreement</div>
+        <div class="queue-col-header">Priority</div>
+        <div class="queue-col-header">Status</div>
+        <div class="queue-col-header">Routed</div>
+        <div class="queue-col-header"></div>
       </div>
 
-      <div class="case-rows">
-        <div class="case-row">
-          <span class="case-row-key">Pattern</span>
-          <span class="case-row-val"><span style="color:var(--amber);font-weight:600;">AI-positive</span> / <span style="color:rgba(210,80,80,0.9);font-weight:600;">human-negative</span></span>
+      <!-- Case 1 — linked to arbitration-case.html -->
+      <a href="arbitration-case.html#arb" class="queue-row" data-priority="high" data-disagreement="ai-pos-hum-neg" data-status="awaiting">
+        <div class="queue-cell case-id-cell">
+          BS-V000254
         </div>
-        <div class="case-row">
-          <span class="case-row-key">Human reading</span>
-          <span class="case-row-val">No further assessment · BI-RADS 2</span>
+        <div class="queue-cell conflict-cell">
+          <span class="conflict-line"><span class="ai-positive">AI-positive</span> · Human-negative</span>
+          <span class="conflict-finding">Focal asymmetry · L breast · 91%</span>
         </div>
-        <div class="case-row">
-          <span class="case-row-key">AI result</span>
-          <span class="case-row-val val-amber">Recall suggested · high confidence</span>
+        <div class="queue-cell"><span class="priority-chip priority-high">High</span></div>
+        <div class="queue-cell"><span class="status-chip status-awaiting">Awaiting review</span></div>
+        <div class="queue-cell time-cell">
+          Just now
+          <div class="routed-from">from Reading Viewer handover</div>
         </div>
-        <div class="case-row">
-          <span class="case-row-key">Status</span>
-          <span class="case-row-val">Awaiting arbitration review</span>
-        </div>
-      </div>
+        <div class="queue-cell open-cell"><span class="btn-open-row">Review →</span></div>
+      </a>
 
-      <a href="arbitration-case.html" class="btn-open">Open case review →</a>
+      <!-- Case 2 -->
+      <a href="arbitration-case.html#arb" class="queue-row" data-priority="high" data-disagreement="ai-pos-hum-neg" data-status="in-review">
+        <div class="queue-cell case-id-cell">BS-V000249</div>
+        <div class="queue-cell conflict-cell">
+          <span class="conflict-line"><span class="ai-positive">AI-positive</span> · Human-negative</span>
+          <span class="conflict-finding">Microcalcification cluster · R breast · 78%</span>
+        </div>
+        <div class="queue-cell"><span class="priority-chip priority-high">High</span></div>
+        <div class="queue-cell"><span class="status-chip status-in-review">In review</span></div>
+        <div class="queue-cell time-cell">Today, 08:52</div>
+        <div class="queue-cell open-cell"><span class="btn-open-row">Review →</span></div>
+      </a>
+
+      <!-- Case 3 -->
+      <a href="arbitration-case.html#arb" class="queue-row" data-priority="normal" data-disagreement="ai-neg-hum-pos" data-status="awaiting">
+        <div class="queue-cell case-id-cell">BS-V000241</div>
+        <div class="queue-cell conflict-cell">
+          <span class="conflict-line">AI-negative · <span style="color:var(--red);font-weight:600;">Human-positive</span></span>
+          <span class="conflict-finding">Architectural distortion · L breast · 34%</span>
+        </div>
+        <div class="queue-cell"><span class="priority-chip priority-normal">Normal</span></div>
+        <div class="queue-cell"><span class="status-chip status-awaiting">Awaiting review</span></div>
+        <div class="queue-cell time-cell">Today, 08:30</div>
+        <div class="queue-cell open-cell"><span class="btn-open-row">Review →</span></div>
+      </a>
+
+      <!-- Case 4 -->
+      <a href="arbitration-case.html#arb" class="queue-row" data-priority="normal" data-disagreement="ai-pos-hum-neg" data-status="awaiting">
+        <div class="queue-cell case-id-cell">BS-V000237</div>
+        <div class="queue-cell conflict-cell">
+          <span class="conflict-line"><span class="ai-positive">AI-positive</span> · Human-negative</span>
+          <span class="conflict-finding">Asymmetric density · R breast · 65%</span>
+        </div>
+        <div class="queue-cell"><span class="priority-chip priority-normal">Normal</span></div>
+        <div class="queue-cell"><span class="status-chip status-awaiting">Awaiting review</span></div>
+        <div class="queue-cell time-cell">Yesterday, 16:41</div>
+        <div class="queue-cell open-cell"><span class="btn-open-row">Review →</span></div>
+      </a>
+
+      <!-- Case 5 -->
+      <a href="arbitration-case.html#arb" class="queue-row" data-priority="normal" data-disagreement="ai-neg-hum-pos" data-status="awaiting">
+        <div class="queue-cell case-id-cell">BS-V000231</div>
+        <div class="queue-cell conflict-cell">
+          <span class="conflict-line">AI-negative · <span style="color:var(--red);font-weight:600;">Human-positive</span></span>
+          <span class="conflict-finding">Mass margin · L breast · 22%</span>
+        </div>
+        <div class="queue-cell"><span class="priority-chip priority-normal">Normal</span></div>
+        <div class="queue-cell"><span class="status-chip status-awaiting">Awaiting review</span></div>
+        <div class="queue-cell time-cell">Yesterday, 14:07</div>
+        <div class="queue-cell open-cell"><span class="btn-open-row">Review →</span></div>
+      </a>
     </div>
   </div>
 
   <div class="site-footer">RCA IRP · AI Breast Screening Service Prototype · 2025</div>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+
+    // Filter chips
+    (function () {
+      var chips = document.querySelectorAll('.filter-chip');
+      var rows = document.querySelectorAll('.queue-row');
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          chips.forEach(function (c) { c.classList.remove('active'); });
+          chip.classList.add('active');
+          var filter = chip.dataset.filter;
+          rows.forEach(function (row) {
+            var show = false;
+            if (filter === 'all') {
+              show = true;
+            } else if (filter === 'high') {
+              show = row.dataset.priority === 'high';
+            } else if (filter === 'ai-pos-hum-neg') {
+              show = row.dataset.disagreement === 'ai-pos-hum-neg';
+            } else if (filter === 'ai-neg-hum-pos') {
+              show = row.dataset.disagreement === 'ai-neg-hum-pos';
+            } else if (filter === 'reviewed') {
+              show = row.dataset.status === 'reviewed';
+            }
+            row.style.display = show ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

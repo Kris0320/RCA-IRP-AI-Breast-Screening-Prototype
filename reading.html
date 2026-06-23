@@ -200,12 +200,20 @@
     letter-spacing: 0.04em;
   }
   .thumb-label {
-    font-size: 12px;
-    color: var(--text-dim);
-    padding: 2px 4px 3px;
-    text-align: center;
+    padding: 5px 7px 6px;
     background: var(--surface2);
   }
+  .thumb-view-name {
+    font-size: 12px; font-weight: 600;
+    color: var(--text-bright); margin-bottom: 3px;
+  }
+  .thumb-meta-row { display: flex; align-items: center; gap: 4px; }
+  .thumb-chip {
+    font-size: 10px; font-weight: 600;
+    padding: 1px 5px; border-radius: 3px;
+  }
+  .thumb-chip-lat { color: #fff; background: var(--accent); }
+  .thumb-chip-type { color: var(--text-dim); background: var(--surface3); }
 
   /* ── VIEWER ── */
   #viewer {
@@ -253,29 +261,35 @@
   }
   .pane-label {
     position: absolute;
-    top: 8px; left: 10px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 0.06em;
+    top: 10px; left: 12px;
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 6px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,0.8);
+    letter-spacing: 0.08em;
     pointer-events: none;
     z-index: 2;
   }
+  .pane-lat-icon { flex-shrink: 0; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.9)); }
   .pane-age {
     position: absolute;
-    top: 8px; right: 10px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.2);
+    top: 10px; right: 12px;
+    font-size: 13px; font-weight: 500;
+    color: rgba(255,255,255,0.82);
+    text-shadow: 0 1px 6px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,0.8);
     pointer-events: none;
     z-index: 2;
   }
   .pane-meta {
     position: absolute;
-    bottom: 6px; left: 10px;
-    font-size: 12px;
-    color: rgba(255,255,255,0.15);
+    bottom: 10px; left: 12px;
+    font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.78);
+    text-shadow: 0 1px 6px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,0.8);
     pointer-events: none;
     z-index: 2;
     letter-spacing: 0.03em;
+    line-height: 1.6;
   }
   .mamo-svg {
     width: 78%;
@@ -524,7 +538,6 @@
   .panel-section {
     border: 1px solid var(--border-light);
     border-radius: 8px;
-    overflow: hidden;
     background: var(--surface);
   }
   .panel-section-header {
@@ -537,6 +550,7 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    border-radius: 8px 8px 0 0;
   }
   .panel-section-body {
     padding: 12px;
@@ -742,7 +756,6 @@
   .disagreement-panel {
     border: 1.5px solid rgba(214,176,106,0.65);
     border-radius: 8px;
-    overflow: hidden;
     background: rgba(214,176,106,0.05);
   }
   .disagreement-header {
@@ -752,6 +765,7 @@
     align-items: center;
     gap: 8px;
     color: var(--amber);
+    border-radius: 8px 8px 0 0;
   }
   .disagreement-title {
     font-size: 13px;
@@ -923,7 +937,6 @@
   .handover-card {
     border: 1px solid rgba(31,79,198,0.35);
     border-radius: 8px;
-    overflow: hidden;
     background: rgba(31,79,198,0.03);
   }
   .handover-header {
@@ -932,6 +945,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    border-radius: 8px 8px 0 0;
   }
   .handover-title { font-size: 13px; font-weight: 600; color: var(--text-bright); }
   .handover-body {
@@ -967,7 +981,6 @@
   .receipt-card {
     border: 1px solid var(--border);
     border-radius: 8px;
-    overflow: hidden;
   }
   .receipt-header {
     background: var(--surface2);
@@ -975,6 +988,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    border-radius: 8px 8px 0 0;
   }
   .receipt-title { font-size: 13px; font-weight: 600; color: var(--text-bright); }
   .receipt-body {
@@ -1007,7 +1021,6 @@
   .care-loop-panel {
     border: 1px solid var(--border);
     border-radius: 8px;
-    overflow: hidden;
   }
   .care-loop-header {
     background: var(--surface2);
@@ -1015,6 +1028,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    border-radius: 8px 8px 0 0;
   }
   .care-loop-title { font-size: 13px; font-weight: 600; color: var(--text-bright); }
   .care-loop-body {
@@ -1048,7 +1062,6 @@
   .ai-result-section {
     border: 1px solid var(--border-light);
     border-radius: 8px;
-    overflow: hidden;
     background: var(--surface);
   }
   .ai-result-header {
@@ -1061,9 +1074,10 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    border-radius: 8px 8px 0 0;
   }
   .ai-result-body {
-    padding: 12px;
+    padding: 12px 12px 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -1879,6 +1893,251 @@
   }
   .btn-ref-link:hover { color: #92c0f0; text-decoration: underline; }
 
+  /* ── Comparison modal redesign ── */
+  #modal-comparison .modal-card {
+    max-width: 980px;
+    width: calc(100vw - 48px);
+    height: 688px;
+    max-height: 90vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background: #f0f4f9;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.06);
+  }
+  #modal-comparison .modal-card .modal-header,
+  #modal-comparison .modal-card .modal-body { display: none; }
+  #modal-comparison .cmp-left { overflow: hidden; }
+  #modal-handover-card .modal-card {
+    max-width: 880px;
+    width: calc(100vw - 48px);
+    height: 732px;
+    max-height: 92vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background: #f0f4f9;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,0,0,0.06);
+  }
+  #modal-handover-card .modal-card .modal-header,
+  #modal-handover-card .modal-card .modal-body { display: none; }
+  #modal-handover-card .cmp-left { overflow: hidden; }
+  #modal-handover-card .cmp-right { width: 300px; }
+  .hc-section-head {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #6B7280; margin-bottom: 6px;
+  }
+  .hc-action-title {
+    font-size: 18px; font-weight: 700; color: #111827; margin-bottom: 10px;
+  }
+  .hc-action-body {
+    font-size: 14px; color: #4B5563; line-height: 1.6; margin-bottom: 16px;
+  }
+  .btn-hc-close {
+    display: block; width: 100%; padding: 9px 16px; margin-top: 8px;
+    background: transparent; border: 1px solid rgba(30,80,200,0.18);
+    border-radius: 8px; color: #4B5563; font-size: 13px; font-weight: 500;
+    text-align: center; cursor: pointer; font-family: inherit;
+    transition: background 0.15s;
+  }
+  .btn-hc-close:hover { background: rgba(30,80,200,0.06); }
+  .hc-note {
+    font-size: 12px; color: #9CA3AF; margin-top: 12px; font-style: italic;
+  }
+  .cmp-close {
+    position: absolute; top: 14px; right: 14px; z-index: 10;
+    background: rgba(255,255,255,0.12); border: none;
+    color: rgba(255,255,255,0.7); font-size: 18px; line-height: 1;
+    width: 28px; height: 28px; border-radius: 50%;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s;
+  }
+  .cmp-close:hover { background: rgba(255,255,255,0.22); color: white; }
+
+  /* LEFT: card-based info — larger, 2-col grid */
+  .cmp-left {
+    flex: 1; min-width: 0;
+    padding: 24px 22px;
+    overflow: hidden;
+    background: url('./07_Prototype/assets/case-comparison-background.png') center/cover no-repeat;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .cmp-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .cmp-left-title {
+    font-size: 20px; font-weight: 700; color: #1F2933;
+    margin-bottom: 1px; letter-spacing: -0.01em;
+  }
+  .cmp-left-sub { font-size: 14px; color: #4B5563; margin-bottom: 4px; }
+  /* Section cards */
+  .cmp-card {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 10px; padding: 13px 15px;
+  }
+  .cmp-card-head {
+    font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.09em; color: #4B5563; margin-bottom: 8px;
+  }
+  .cmp-info-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 5px 0; border-bottom: 1px solid rgba(30,80,200,0.07); gap: 12px;
+    font-size: 15px;
+  }
+  .cmp-info-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .cmp-info-key { color: #4B5563; flex-shrink: 0; }
+  .cmp-info-val { font-weight: 400; color: #1F2933; text-align: right; }
+  .cmp-info-val.cmp-amber { color: #1F2933; font-weight: 400; }
+  .cmp-info-val.cmp-red { color: #1F2933; font-weight: 400; }
+  /* Snapshot card — same frosted glass background, stronger border as the only distinction */
+  .cmp-card.cmp-card-snapshot {
+    background: rgba(255,255,255,0.5);
+    border: 1.5px solid rgba(30,80,200,0.22);
+  }
+  /* Difference card */
+  .cmp-card.cmp-diff-card {
+    background: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.7);
+  }
+  .cmp-card.cmp-diff-card .cmp-card-head { color: #4B5563; }
+  .cmp-card.cmp-diff-card .cmp-info-val { color: #1F2933; font-weight: 400; }
+  /* Score bar inside card */
+  .cmp-score-bar-wrap {
+    display: flex; align-items: center; gap: 10px; padding: 4px 0 2px;
+  }
+  .cmp-score-side { font-size: 13px; color: #4B5563; width: 10px; }
+  .cmp-score-track {
+    flex: 1; height: 8px; border-radius: 4px; position: relative;
+    background: linear-gradient(to right, #52B030 0%, #8EC030 18%, #C8CC30 36%, #F0B828 54%, #E87830 72%, #D44040 100%);
+  }
+  .cmp-score-fill {
+    display: none;
+  }
+  .cmp-score-dot {
+    position: absolute; top: 50%; left: 70%;
+    transform: translate(-50%,-50%);
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #E87830; border: 2.5px solid #fff;
+    box-shadow: 0 0 0 2px rgba(232,120,48,0.45), 0 2px 6px rgba(0,0,0,0.18);
+  }
+  .cmp-score-num { font-size: 18px; font-weight: 400; color: #1F2933; width: 20px; text-align: right; }
+  /* Ref card */
+  .cmp-ref-id {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 14px; font-weight: 400; color: #1F2933; margin-bottom: 6px;
+  }
+  .btn-cmp-ref {
+    font-size: 13px; color: #4B5563; background: none; border: none;
+    cursor: pointer; font-family: inherit; font-weight: 400; transition: opacity 0.12s;
+    text-decoration: underline;
+  }
+  .btn-cmp-ref:hover { opacity: 0.6; }
+  .btn-cmp-left-primary {
+    display: inline-block; padding: 10px 20px;
+    background: #1a4fc4; border: none; border-radius: 8px;
+    color: #ffffff; font-size: 14px; font-weight: 600;
+    text-align: center; cursor: pointer; font-family: inherit;
+    transition: background 0.15s; flex-shrink: 0; align-self: flex-start;
+  }
+  .btn-cmp-left-primary:hover { background: #1640b2; }
+
+  /* RIGHT: dark blue arbitration panel */
+  .cmp-right {
+    width: 300px; flex-shrink: 0;
+    overflow: hidden; position: relative;
+    background: linear-gradient(160deg, #1640b2 0%, #0c2266 100%);
+    display: flex; flex-direction: column;
+  }
+  .cmp-ip-character { display: none; }
+  .cmp-right-svg-bg {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  .cmp-right-inner {
+    flex: 1; display: flex; flex-direction: column;
+    padding: 28px 24px 24px; gap: 0;
+  }
+  .cmp-right-eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+  }
+  .cmp-right-title {
+    font-size: 20px; font-weight: 700; color: #ffffff;
+    line-height: 1.25; margin-bottom: 16px; letter-spacing: -0.01em;
+  }
+  .cmp-right-body {
+    font-size: 14px; line-height: 1.65; color: rgba(255,255,255,0.75);
+    flex: 1;
+  }
+  .cmp-right-divider {
+    height: 1px; background: rgba(255,255,255,0.12); margin: 20px 0;
+  }
+  .cmp-right-meta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+  .cmp-right-meta-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 13px; gap: 10px;
+  }
+  .cmp-right-meta-key { color: rgba(255,255,255,0.5); flex-shrink: 0; }
+  .cmp-right-meta-val { color: rgba(255,255,255,0.9); text-align: right; font-weight: 500; }
+  .cmp-right-meta-val.amber { color: #f0b828; }
+  .cmp-right-note {
+    font-size: 12px; color: rgba(255,255,255,0.4); line-height: 1.55;
+    font-style: italic; margin-bottom: 20px;
+  }
+  .btn-cmp-arb {
+    display: block; width: 100%; padding: 11px 16px;
+    background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.28);
+    border-radius: 8px; color: #ffffff; font-size: 14px; font-weight: 600;
+    text-align: center; text-decoration: none; cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    font-family: inherit;
+  }
+  .btn-cmp-arb:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.5); }
+  .btn-cmp-secondary {
+    display: block; width: 100%; padding: 9px 16px; margin-top: 8px;
+    background: transparent; border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px; color: rgba(255,255,255,0.65); font-size: 13px; font-weight: 500;
+    text-align: center; cursor: pointer; transition: background 0.15s, border-color 0.15s;
+    font-family: inherit;
+  }
+  .btn-cmp-secondary:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.3); }
+  /* Evidence text area — bottom, white bg like headspace */
+  .cmp-evidence-area {
+    background: #ffffff;
+    padding: 20px 22px 24px;
+    flex-shrink: 0;
+  }
+  .cmp-evidence-area-label {
+    font-size: 16px; font-weight: 700; color: #1F2933;
+    margin-bottom: 8px; line-height: 1.3;
+  }
+  .cmp-evidence-area-text {
+    font-size: 13px; line-height: 1.65; color: #4B5563;
+    margin-bottom: 12px;
+  }
+  .cmp-evidence-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .cmp-tag {
+    font-size: 11px; font-weight: 600;
+    background: #F8FAFC; border: 1px solid #E5E7EB;
+    padding: 3px 9px; border-radius: 5px; color: #4B5563;
+  }
+
   /* ── Cases library modal ── */
   .lib-case-list { display: flex; flex-direction: column; gap: 10px; }
   .lib-case-item {
@@ -1950,7 +2209,7 @@
     margin-top: 4px;
     padding-top: 8px;
   }
-  .cs-title { font-size: 12px; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; }
+  .cs-title { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 700; }
   .cs-breast { display: flex; align-items: center; gap: 13px; }
   .cs-side { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.65); width: 13px; flex-shrink: 0; letter-spacing: 0.02em; }
   .cs-track {
@@ -2282,7 +2541,13 @@
         <img src="./assets/mammogram-l-cc.webp" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
       </div>
       <div class="thumb-tag">L-CC</div>
-      <div class="thumb-label">L-CC</div>
+      <div class="thumb-label">
+        <div class="thumb-view-name">CC</div>
+        <div class="thumb-meta-row">
+          <span class="thumb-chip thumb-chip-lat">L</span>
+          <span class="thumb-chip thumb-chip-type">Current</span>
+        </div>
+      </div>
     </div>
 
     <div class="thumb" onclick="selectThumb(this)">
@@ -2290,7 +2555,13 @@
         <img src="./assets/mammogram-r-cc.webp" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
       </div>
       <div class="thumb-tag">R-CC</div>
-      <div class="thumb-label">R-CC</div>
+      <div class="thumb-label">
+        <div class="thumb-view-name">CC</div>
+        <div class="thumb-meta-row">
+          <span class="thumb-chip thumb-chip-lat">R</span>
+          <span class="thumb-chip thumb-chip-type">Current</span>
+        </div>
+      </div>
     </div>
 
     <div class="thumb" onclick="selectThumb(this)">
@@ -2298,7 +2569,13 @@
         <img src="./assets/mammogram-l-mlo.webp" style="width:100%;height:100%;object-fit:contain;object-position:left center;" alt="">
       </div>
       <div class="thumb-tag">L-MLO</div>
-      <div class="thumb-label">L-MLO</div>
+      <div class="thumb-label">
+        <div class="thumb-view-name">MLO</div>
+        <div class="thumb-meta-row">
+          <span class="thumb-chip thumb-chip-lat">L</span>
+          <span class="thumb-chip thumb-chip-type">Current</span>
+        </div>
+      </div>
     </div>
 
     <div class="thumb" onclick="selectThumb(this)">
@@ -2306,7 +2583,13 @@
         <img src="./assets/mammogram-r-mlo.webp" style="width:100%;height:100%;object-fit:contain;object-position:right center;" alt="">
       </div>
       <div class="thumb-tag">R-MLO</div>
-      <div class="thumb-label">R-MLO</div>
+      <div class="thumb-label">
+        <div class="thumb-view-name">MLO</div>
+        <div class="thumb-meta-row">
+          <span class="thumb-chip thumb-chip-lat">R</span>
+          <span class="thumb-chip thumb-chip-type">Current</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -2317,7 +2600,7 @@
 
     <!-- L-CC -->
     <div class="mamo-pane" id="pane-lcc">
-      <div class="pane-label">L-CC</div>
+      <div class="pane-label"><svg class="pane-lat-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="3" fill="rgba(214,176,106,1)"/><line x1="7" y1="0.5" x2="7" y2="3" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="7" y1="11" x2="7" y2="13.5" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="0.5" y1="7" x2="3" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="11" y1="7" x2="13.5" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="2.5" y1="2.5" x2="4.2" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="9.8" y1="9.8" x2="11.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="11.5" y1="2.5" x2="9.8" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="4.2" y1="9.8" x2="2.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/></svg>L-CC</div>
       <div class="pane-age">Age: 72</div>
       <img class="mamo-img" src="./assets/mammogram-l-cc.webp" alt="L-CC" draggable="false">
       <div class="image-focus-frame" aria-hidden="true"></div>
@@ -2339,20 +2622,20 @@
           <div class="callout-num">5</div>
         </div>
       </div>
-      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2314 / -3</div>
+      <div class="pane-meta"><div>Zoom 1:1</div><div>WW/WL: 4096 / 2047</div></div>
     </div>
 
     <!-- R-CC -->
     <div class="mamo-pane" id="pane-rcc">
-      <div class="pane-label">R-CC</div>
+      <div class="pane-label"><svg class="pane-lat-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="3" fill="rgba(214,176,106,1)"/><line x1="7" y1="0.5" x2="7" y2="3" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="7" y1="11" x2="7" y2="13.5" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="0.5" y1="7" x2="3" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="11" y1="7" x2="13.5" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="2.5" y1="2.5" x2="4.2" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="9.8" y1="9.8" x2="11.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="11.5" y1="2.5" x2="9.8" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="4.2" y1="9.8" x2="2.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/></svg>R-CC</div>
       <div class="pane-age">Age: 72</div>
       <img class="mamo-img" src="./assets/mammogram-r-cc.webp" alt="R-CC" draggable="false">
-      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2314 / -3</div>
+      <div class="pane-meta"><div>Zoom 1:1</div><div>WW/WL: 4096 / 2047</div></div>
     </div>
 
     <!-- L-MLO -->
     <div class="mamo-pane" id="pane-lmlo">
-      <div class="pane-label">L-MLO</div>
+      <div class="pane-label"><svg class="pane-lat-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="3" fill="rgba(214,176,106,1)"/><line x1="7" y1="0.5" x2="7" y2="3" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="7" y1="11" x2="7" y2="13.5" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="0.5" y1="7" x2="3" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="11" y1="7" x2="13.5" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="2.5" y1="2.5" x2="4.2" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="9.8" y1="9.8" x2="11.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="11.5" y1="2.5" x2="9.8" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="4.2" y1="9.8" x2="2.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/></svg>L-MLO</div>
       <div class="pane-age">Age: 72</div>
       <img class="mamo-img" src="./assets/mammogram-l-mlo.webp" alt="L-MLO" draggable="false">
       <!-- AI finding marker: corresponding MLO view of the same focal asymmetry -->
@@ -2373,15 +2656,15 @@
           <div class="callout-num">5</div>
         </div>
       </div>
-      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
+      <div class="pane-meta"><div>Zoom 1:1</div><div>WW/WL: 4096 / 2047</div></div>
     </div>
 
     <!-- R-MLO -->
     <div class="mamo-pane" id="pane-rmlo">
-      <div class="pane-label">R-MLO</div>
+      <div class="pane-label"><svg class="pane-lat-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="3" fill="rgba(214,176,106,1)"/><line x1="7" y1="0.5" x2="7" y2="3" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="7" y1="11" x2="7" y2="13.5" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="0.5" y1="7" x2="3" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="11" y1="7" x2="13.5" y2="7" stroke="rgba(214,176,106,1)" stroke-width="1.4"/><line x1="2.5" y1="2.5" x2="4.2" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="9.8" y1="9.8" x2="11.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="11.5" y1="2.5" x2="9.8" y2="4.2" stroke="rgba(214,176,106,1)" stroke-width="1.2"/><line x1="4.2" y1="9.8" x2="2.5" y2="11.5" stroke="rgba(214,176,106,1)" stroke-width="1.2"/></svg>R-MLO</div>
       <div class="pane-age">Age: 72</div>
       <img class="mamo-img" src="./assets/mammogram-r-mlo.webp" alt="R-MLO" draggable="false">
-      <div class="pane-meta">Zoom 1:1 · WW 4096 / WC 2047 · L 2186 / -5</div>
+      <div class="pane-meta"><div>Zoom 1:1</div><div>WW/WL: 4096 / 2047</div></div>
     </div>
 
 
@@ -2435,11 +2718,15 @@
         <span class="status-chip" style="margin-left:auto;font-size:12px;background:var(--surface3);color:var(--text-dim);">Revealed</span>
       </div>
       <div class="ai-result-body" style="gap:6px;padding:10px 12px;">
-        <div style="font-size:14px;font-weight:600;color:var(--amber);">Recall suggested</div>
+        <div style="font-size:14px;font-weight:600;color:var(--text-bright);">Recall suggested</div>
         <div style="font-size:14px;color:var(--text);">
           <span class="conf-dots-row"><span class="cdot cdot-on"></span><span class="cdot cdot-on"></span><span class="cdot cdot-on"></span></span>High confidence · Focal asymmetry
         </div>
         <div style="font-size:14px;color:var(--text);">L-CC · upper outer</div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);">
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-dim);margin-bottom:6px;">AI Reasoning</div>
+          <div style="font-size:14px;color:var(--text);line-height:1.6;">Focal asymmetry detected in the upper outer quadrant on CC view. Asymmetric density is new relative to the prior 2021 round — no corresponding finding in the same region on prior images. Irregular margin pattern and mild increased density are features associated with early malignancy.</div>
+        </div>
         <div id="case-score-strip">
           <div class="cs-title">AI Suspicion Score</div>
           <div class="cs-breast">
@@ -2467,16 +2754,16 @@
 
         <!-- PRIMARY: Suggested next step -->
         <div class="suggested-step-wrap">
-          <button class="btn-teal" id="btn-handover">Handover prepared</button>
+          <button class="btn-teal" id="btn-handover">Prepare handover</button>
         </div>
 
         <!-- End-state: handover sent -->
         <div id="handover-sent" class="hidden" style="border-top:1px solid var(--border);padding-top:12px;display:flex;flex-direction:column;gap:8px;">
-          <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text-dim);">
+          <div style="display:flex;align-items:center;gap:7px;font-size:14px;color:var(--text-dim);">
             <svg class="icon" style="color:var(--green);flex-shrink:0;"><use href="#icon-check"/></svg>
             Case sent to arbitration queue
           </div>
-          <a href="arbitration.html" class="btn-teal" style="text-decoration:none;text-align:center;font-size:13px;">Open Arbitration Queue →</a>
+          <a href="arbitration.html" class="btn-teal" style="text-decoration:none;text-align:center;font-size:14px;">Open Arbitration Queue →</a>
         </div>
 
         <!-- SECONDARY actions -->
@@ -2485,6 +2772,11 @@
           <!-- View comparison -->
           <div class="secondary-action-wrap">
             <button class="btn-blue-outline" onclick="openModal('modal-comparison')">View comparison</button>
+          </div>
+
+          <!-- View handover card (shown after handover prepared) -->
+          <div class="secondary-action-wrap hidden" id="wrap-view-handover">
+            <button class="btn-blue-outline" onclick="openModal('modal-handover-card')">View handover card</button>
           </div>
 
           <!-- Peer pause -->
@@ -2519,17 +2811,21 @@
       </div>
     </div>
 
-    <!-- STATE 7: Care Loop -->
+    <!-- STATE 7: Handover prepared — case sent to arbitration queue
+         (previously: "Care Loop" / "Added to Disagreement Library" — corrected to reflect that
+          the Reading Viewer ends at the handover stage, not the library stage.
+          The Disagreement Case Library is only available after arbitration outcome is recorded.) -->
     <div class="care-loop-panel hidden" id="section-careloop">
       <div class="care-loop-header">
-        <svg class="icon" style="color:var(--green)"><use href="#icon-refresh"/></svg>
-        <span class="care-loop-title">Added to Care Loop</span>
-        <span class="status-chip chip-green" style="margin-left:auto;font-size:12px;">Active</span>
+        <svg class="icon" style="color:var(--green)"><use href="#icon-check"/></svg>
+        <span class="care-loop-title">Handover prepared</span>
+        <span class="status-chip chip-green" style="margin-left:auto;font-size:12px;">Sent to queue</span>
       </div>
       <div class="care-loop-body">
-        <div class="care-loop-msg">Next team calibration review</div>
-        <div class="care-loop-pattern">AI-positive / human-negative cases</div>
-        <button class="btn-secondary" style="margin-top:4px;justify-content:center;" onclick="openModal('modal-receipt')">View pathway summary</button>
+        <div class="care-loop-msg">Case ready for arbitration / consensus review</div>
+        <div class="care-loop-pattern">Decision trace started · AI-positive / human-negative</div>
+        <div class="care-loop-pattern" style="color:var(--text-dim);font-style:italic;font-size:12px;margin-top:2px;">Library eligibility: after arbitration outcome and follow-up are recorded</div>
+        <a href="arbitration-case.html#arb" class="btn-secondary" style="margin-top:8px;justify-content:center;text-decoration:none;text-align:center;display:flex;">Open Arbitration Case</a>
       </div>
     </div>
 
@@ -2554,7 +2850,11 @@
   <div class="statusbar-item" style="margin-left:auto;" id="status-state">State: Independent reading</div>
 </div>
 
-<!-- ── MODAL: Warm Handover Card ── -->
+<!-- ── MODAL: Warm Handover Card (ARCHIVED — no longer used) ──
+     Replaced by the unified "Disagreement Handover Card" (modal-comparison).
+     Both "View comparison" and "Handover prepared" now open modal-comparison.
+     Kept here as reference; do not restore without updating btn-handover JS.
+
 <div class="modal-overlay hidden" id="modal-handover">
   <div class="modal-card">
     <div class="modal-header">
@@ -2567,7 +2867,6 @@
           <svg class="icon"><use href="#icon-alert-triangle"/></svg>
           AI-human disagreement needs peer review.
         </div>
-
         <div class="modal-row">
           <div class="modal-row-label">Case</div>
           <div class="modal-row-value strong">BSV000254</div>
@@ -2593,23 +2892,26 @@
           <div class="modal-row-value">Should this case be recalled for further assessment?</div>
         </div>
       </div>
-
       <div class="modal-actions">
         <button class="btn-teal" onclick="generateReceipt()">Confirm handover</button>
       </div>
     </div>
   </div>
 </div>
+──>
 
-<!-- ── MODAL: Decision Pathway Summary ── -->
+<!-- ── MODAL: Disagreement Handover Summary ── -->
+<!-- Previously titled "Decision Pathway Summary" and incorrectly showed "Review outcome: Recall to assessment"
+     and an "Add to Disagreement Library" button. That logic assumed arbitration had already happened.
+     Corrected: this modal ends at the handover stage and routes to Arbitration / Consensus Review. -->
 <div class="modal-overlay hidden" id="modal-receipt">
   <div class="modal-card">
     <div class="modal-header">
-      <span class="modal-title">Decision Pathway Summary</span>
+      <span class="modal-title">Disagreement Handover Summary</span>
       <button class="modal-close" onclick="closeModal('modal-receipt')">×</button>
     </div>
     <div class="modal-body">
-      <!-- Sequential pathway -->
+      <!-- Sequential pathway — Reading Viewer ends at step 4 (handover prepared) -->
       <div class="pathway-steps">
         <div class="pathway-step">
           <div class="pathway-step-num">1</div>
@@ -2623,7 +2925,7 @@
           <div class="pathway-step-num">2</div>
           <div class="pathway-step-content">
             <div class="pathway-step-label">AI result revealed</div>
-            <div class="pathway-step-val" style="color:var(--amber);">Recall · high confidence</div>
+            <div class="pathway-step-val" style="color:var(--amber);">Recall suggested · high confidence</div>
           </div>
         </div>
         <div class="pathway-connector"></div>
@@ -2638,116 +2940,247 @@
         <div class="pathway-step">
           <div class="pathway-step-num">4</div>
           <div class="pathway-step-content">
-            <div class="pathway-step-label">Handover sent for review</div>
-            <div class="pathway-step-val" style="color:var(--text-bright);">Confirmed</div>
-          </div>
-        </div>
-        <div class="pathway-connector"></div>
-        <div class="pathway-step">
-          <div class="pathway-step-num">5</div>
-          <div class="pathway-step-content">
-            <div class="pathway-step-label">Review outcome</div>
-            <div class="pathway-step-val" style="color:var(--text-bright);">Recall to assessment</div>
+            <div class="pathway-step-label">Handover prepared</div>
+            <div class="pathway-step-val" style="color:var(--text-bright);">Ready for arbitration / consensus review</div>
           </div>
         </div>
       </div>
-      <!-- Learning follow-up -->
+
+      <!-- For arbitration section — replaces the old "Learning note" / library button -->
       <div class="pathway-learning">
-        <div class="pathway-learning-head">Learning follow-up</div>
+        <div class="pathway-learning-head">For arbitration</div>
         <div class="pathway-learning-row">
           <span style="color:var(--text-dim);flex-shrink:0;">Pattern</span>
-          <span style="color:var(--text-bright);text-align:right;font-weight:500;">AI-positive / human-negative cases</span>
+          <span style="color:var(--text-bright);text-align:right;font-weight:500;">AI-positive / human-negative</span>
         </div>
         <div class="pathway-learning-row">
-          <span style="color:var(--text-dim);flex-shrink:0;">Next step</span>
-          <span style="color:var(--text-bright);text-align:right;font-weight:500;">Add to team calibration review</span>
+          <span style="color:var(--text-dim);flex-shrink:0;">Review focus</span>
+          <span style="color:var(--text-bright);text-align:right;font-weight:500;">L-CC and L-MLO · upper outer quadrant</span>
+        </div>
+        <div class="pathway-learning-row">
+          <span style="color:var(--text-dim);flex-shrink:0;">Library</span>
+          <span style="color:var(--text-dim);text-align:right;font-style:italic;">Not eligible until arbitration outcome recorded</span>
         </div>
       </div>
+
       <div style="height:20px;"></div>
-      <button class="btn-teal" onclick="addToCareLoop()">Add to Care Loop</button>
+      <div class="modal-actions" style="flex-direction:column;gap:8px;">
+        <a href="arbitration-case.html#arb" class="btn-teal" style="text-decoration:none;text-align:center;">Open Arbitration Case</a>
+        <button class="btn-secondary" onclick="closeModal('modal-receipt')" style="justify-content:center;">Close</button>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- ── MODAL: Human vs AI Comparison ── -->
+<!-- ── MODAL: Case Comparison ── -->
+<!-- Opened by "View comparison". Shows AI vs human evidence. Primary action: Prepare handover. -->
 <div class="modal-overlay hidden" id="modal-comparison">
   <div class="modal-card">
-    <div class="modal-header">
-      <span class="modal-title">Human vs AI Comparison</span>
-      <button class="modal-close" onclick="closeModal('modal-comparison')">×</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-row">
-        <div class="modal-row-label">Human judgement</div>
-        <div class="modal-row-value strong" id="comp-human-decision" style="color:var(--human-ann);">—</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Human mark</div>
-        <div class="modal-row-value" id="comp-human-mark" style="color:var(--human-ann);">—</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Human confidence</div>
-        <div class="modal-row-value" id="comp-human-conf" style="color:var(--human-ann);">—</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">AI judgement</div>
-        <div class="modal-row-value amber">Recall suggested</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">AI finding location</div>
-        <div class="modal-row-value">L-CC · upper outer quadrant</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">AI confidence</div>
-        <div class="modal-row-value">High</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Difference</div>
-        <div class="modal-row-value amber">AI-positive / human-negative</div>
-      </div>
-      <div class="evidence-head">AI evidence layer</div>
-      <div class="evidence-block">
-        Focal asymmetry detected in left upper outer quadrant. Density pattern and asymmetry relative to the contralateral view exceed the high-confidence threshold. No corresponding finding flagged at this location in the prior screen.
+
+    <button class="cmp-close" onclick="closeModal('modal-comparison')">×</button>
+
+    <!-- LEFT: comparison evidence -->
+    <div class="cmp-left">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div class="cmp-left-title" style="margin-bottom:0;">Case Comparison</div>
+        <span style="font-size:12px;font-weight:500;color:#4B5563;background:rgba(255,255,255,0.65);border:1px solid rgba(30,80,200,0.14);border-radius:6px;padding:3px 10px;white-space:nowrap;flex-shrink:0;">BS-V000254</span>
       </div>
 
-      <!-- Additional AI context -->
-      <div class="sim-case-card">
-        <div class="sim-case-head">Additional AI context</div>
-        <div class="sim-case-body">
-          <div class="sim-case-row">
-            <span class="sim-case-key">Density</span>
-            <span class="sim-case-val">A · Almost entirely fatty</span>
+      <div class="cmp-cards-grid">
+        <!-- Human reading card (half-width) -->
+        <div class="cmp-card">
+          <div class="cmp-card-head">Human Reading</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Judgement</span>
+            <span class="cmp-info-val" id="comp-human-decision">No further assessment</span>
           </div>
-          <div class="sim-case-row">
-            <span class="sim-case-key">Short-term risk</span>
-            <span class="sim-case-val">Moderate · 1–2 yr image-derived</span>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Mark</span>
+            <span class="cmp-info-val" id="comp-human-mark">No finding marked</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Confidence</span>
+            <span class="cmp-info-val">—</span>
+          </div>
+        </div>
+
+        <!-- AI assessment card (half-width) -->
+        <div class="cmp-card">
+          <div class="cmp-card-head">AI Assessment</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Judgement</span>
+            <span class="cmp-info-val">Recall suggested</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Location</span>
+            <span class="cmp-info-val">L-CC · upper outer</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Confidence</span>
+            <span class="cmp-info-val">High · 91%</span>
+          </div>
+        </div>
+
+        <!-- Disagreement card (half-width) -->
+        <div class="cmp-card cmp-diff-card">
+          <div class="cmp-card-head">Disagreement</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Type</span>
+            <span class="cmp-info-val">AI-positive / Human-negative</span>
+          </div>
+        </div>
+
+        <!-- AI Suspicion Score card (half-width) -->
+        <div class="cmp-card">
+          <div class="cmp-card-head">AI Suspicion Score</div>
+          <div class="cmp-score-bar-wrap">
+            <span class="cmp-score-side">L</span>
+            <div class="cmp-score-track"><div class="cmp-score-fill"></div><div class="cmp-score-dot"></div></div>
+            <span class="cmp-score-num">7</span>
+          </div>
+        </div>
+
+        <!-- Additional context card (full-width) -->
+        <div class="cmp-card" style="grid-column: 1 / -1;">
+          <div class="cmp-card-head">Additional Context</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Density</span>
+            <span class="cmp-info-val">A · Almost entirely fatty</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Short-term risk</span>
+            <span class="cmp-info-val">Moderate · 1–2 yr</span>
+          </div>
+        </div>
+
+        <!-- Similar case reference card (full-width) -->
+        <div class="cmp-card" style="grid-column: 1 / -1;">
+          <div class="cmp-card-head">Similar Case Reference</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">REF-014</span>
+            <span class="cmp-info-val">
+              <button class="btn-cmp-ref" onclick="closeModal('modal-comparison'); openModal('modal-ref-014');">View →</button>
+            </span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Prior outcome</span>
+            <span class="cmp-info-val">Recalled after review</span>
           </div>
         </div>
       </div>
 
-      <!-- Similar case reference card -->
-      <div class="sim-case-card">
-        <div class="sim-case-head">Similar case reference</div>
-        <div class="sim-case-body">
-          <div class="sim-case-ref-id">
-            <span>REF-014 · Prior disagreement case</span>
-            <button class="btn-ref-link" onclick="closeModal('modal-comparison'); openModal('modal-ref-014');">View reference case →</button>
-          </div>
-          <div class="sim-case-row">
-            <span class="sim-case-key">Pattern</span>
-            <span class="sim-case-val">AI-positive / human-negative</span>
-          </div>
-          <div class="sim-case-row">
-            <span class="sim-case-key">Prior outcome</span>
-            <span class="sim-case-val">Recalled after review</span>
-          </div>
-          <div class="sim-case-row">
-            <span class="sim-case-key">Learning note</span>
-            <span class="sim-case-val">Similar disagreement patterns have previously required review.</span>
-          </div>
+      <button class="btn-cmp-left-primary" onclick="prepareHandover()">Prepare handover</button>
+    </div>
+
+    <!-- RIGHT: AI analysis with SVG background -->
+    <div class="cmp-right">
+      <img src="07_Prototype/assets/AI%20Analysis.svg" class="cmp-right-svg-bg" alt="">
+      <div class="cmp-right-inner" style="position:relative;z-index:1;">
+        <div class="cmp-right-title">AI Reasoning</div>
+        <div class="cmp-right-body">
+          Focal asymmetry detected in the left upper outer quadrant. Density pattern and asymmetry exceed the high-confidence threshold. No corresponding finding in the prior screen.
         </div>
       </div>
     </div>
+
+  </div>
+</div>
+
+<!-- ── MODAL: Disagreement Handover Card ── -->
+<!-- Opened by "Prepare handover" (in comparison modal) or btn-handover / "View handover card". -->
+<div class="modal-overlay hidden" id="modal-handover-card">
+  <div class="modal-card">
+
+    <button class="cmp-close" onclick="closeModal('modal-handover-card')">×</button>
+
+    <!-- Single-panel light layout -->
+    <div class="cmp-left">
+      <div class="cmp-left-title">Disagreement Handover Card</div>
+
+      <div class="cmp-cards-grid">
+
+        <!-- 1. Case & Reader -->
+        <div class="cmp-card" style="grid-column: 1 / -1;">
+          <div class="cmp-card-head">Case &amp; Reader</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Case</span>
+            <span class="cmp-info-val">BS-V000254</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Initial reader</span>
+            <span class="cmp-info-val">Dr. K. Evans · Reader 1</span>
+          </div>
+        </div>
+
+        <!-- 2. Disagreement Snapshot -->
+        <div class="cmp-card" style="grid-column: 1 / -1;">
+          <div class="cmp-card-head">Disagreement Snapshot</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Handover reason</span>
+            <span class="cmp-info-val">AI-positive / human-negative</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Human judgement</span>
+            <span class="cmp-info-val" id="handover-human-val">No further assessment</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Human mark</span>
+            <span class="cmp-info-val">No recall-level finding</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">AI output</span>
+            <span class="cmp-info-val">Recall suggested · high confidence · 91%</span>
+          </div>
+          <div class="cmp-info-row" style="align-items:center;">
+            <span class="cmp-info-key">AI suspicion score</span>
+            <span class="cmp-info-val" style="display:flex;align-items:center;gap:10px;">
+              <div class="cmp-score-track" style="width:80px;flex:none;"><div class="cmp-score-fill"></div><div class="cmp-score-dot"></div></div>
+              7 / 10
+            </span>
+          </div>
+        </div>
+
+        <!-- 3. Arbitration Focus -->
+        <div class="cmp-card" style="grid-column: 1 / -1;">
+          <div class="cmp-card-head">Arbitration Focus</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Location</span>
+            <span class="cmp-info-val">Left breast · upper outer quadrant</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Views</span>
+            <span class="cmp-info-val">L-CC and L-MLO</span>
+          </div>
+          <div class="cmp-info-row" style="align-items:flex-start;">
+            <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Review focus</span>
+            <span class="cmp-info-val">Check the AI finding location against prior images.</span>
+          </div>
+          <div class="cmp-info-row" style="align-items:flex-start;">
+            <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Reviewer question</span>
+            <span class="cmp-info-val">Should this case be recalled for further assessment?</span>
+          </div>
+          <div class="cmp-info-row" style="align-items:flex-start;">
+            <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Similar reference</span>
+            <span class="cmp-info-val"><a href="#" style="color:#1a4fc4;text-decoration:underline;font-weight:500;">REF-014</a><span style="color:#6B7280;"> · recalled after review</span></span>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="arbitration-case.html#arb" class="btn-cmp-left-primary" style="display:inline-block;text-decoration:none;">Open Arbitration Case</a>
+    </div>
+
+    <!-- RIGHT: SVG visual panel with arbitration context -->
+    <div class="cmp-right">
+      <img src="07_Prototype/assets/AI%20Analysis.svg" class="cmp-right-svg-bg" alt="">
+      <div class="cmp-right-inner" style="position:relative;z-index:1;">
+        <div class="cmp-right-title">For Arbitration</div>
+        <div class="cmp-right-body">
+          This case is ready for consensus review. Review the AI finding location, prior image context and reader positions before recording the arbitration outcome.
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -2946,6 +3379,8 @@
 </div>
 
 <script>
+  (function(){if(location.search.indexOf('reset=1')!==-1){sessionStorage.removeItem('arb_BS-V000254');localStorage.removeItem('arb_BS-V000254');var u=location.href.replace(/[?&]reset=1/,'').replace(/[?]$/,'');history.replaceState(null,'',u||location.pathname);}})();
+
   let currentState = 1;
   let humanMarks = [];       // {id, el, paneId, type, sub1, sub2, birads, concern, labelText}
   let pendingMarkEl = null;  // unsaved mark currently on screen
@@ -2960,7 +3395,7 @@
     'Disagreement detected',
     'Handover prepared',
     'Decision pathway generated',
-    'Added to Care Loop'
+    'Handover prepared · sent to arbitration queue'  // previously: 'Added to Care Loop'
   ];
 
   const paneNames = {
@@ -3281,14 +3716,10 @@
     document.getElementById('comp-human-decision').textContent = chosenOutcome;
     if (humanMarks.length > 0) {
       const first = humanMarks[0];
-      document.getElementById('comp-human-conf').textContent = first.concern || '—';
-      const paneName = paneNames[first.paneId] || 'Image';
-      document.getElementById('comp-human-mark').textContent =
-        paneName + ' · ' + first.type + (humanMarks.length > 1 ? ' +' + (humanMarks.length - 1) : '');
-    } else {
-      document.getElementById('comp-human-conf').textContent = '—';
-      document.getElementById('comp-human-mark').textContent = 'No finding marked';
+      // Benign marks are not recall-level — field always shows None; secondary
+      // line in the modal card already conveys the benign mark detail statically.
     }
+    document.getElementById('comp-human-mark').textContent = 'None';
 
     document.getElementById('viewer').classList.remove('mark-mode');
     document.getElementById('btn-submit-reading').disabled = true;
@@ -3384,6 +3815,33 @@
   function closeModal(id) {
     document.getElementById(id).classList.add('hidden');
   }
+
+  function prepareHandover() {
+    if (currentState < 5) {
+      currentState = 5;
+      updateSteps(currentState);
+      ['feedback-override'].forEach(id => {
+        document.getElementById(id).classList.remove('visible');
+      });
+      const peerPauseBtn = document.getElementById('btn-peer-pause');
+      peerPauseBtn.classList.remove('used');
+      peerPauseBtn.innerHTML = '<svg class="icon"><use href="#icon-pause"/></svg><span class="action-main">Peer pause</span>';
+      const overrideBtn = document.getElementById('btn-override');
+      if (!overrideBtn.classList.contains('reason-saved')) {
+        overrideBtn.classList.remove('used');
+        overrideBtn.innerHTML = '<svg class="icon"><use href="#icon-file-text"/></svg><span class="action-main">Add review note</span>';
+      }
+      document.querySelectorAll('.secondary-actions .btn-secondary').forEach(b => { b.disabled = true; });
+      const btn = document.getElementById('btn-handover');
+      btn.disabled = true;
+      btn.textContent = '✓ Handover prepared';
+      btn.style.opacity = '0.6';
+      document.getElementById('handover-sent').classList.remove('hidden');
+      document.getElementById('wrap-view-handover').classList.remove('hidden');
+    }
+    closeModal('modal-comparison');
+    openModal('modal-handover-card');
+  }
   document.querySelectorAll('.modal-overlay').forEach(overlay => {
     overlay.addEventListener('click', function(e) {
       if (e.target === this) closeModal(this.id);
@@ -3412,18 +3870,22 @@
     this.textContent = '✓ Handover prepared';
     this.style.opacity = '0.6';
     document.getElementById('handover-sent').classList.remove('hidden');
-    openModal('modal-handover');
+    document.getElementById('wrap-view-handover').classList.remove('hidden');
+    openModal('modal-handover-card');
   });
 
-  // ── Generate receipt (called from modal button) ──
+  // ── Confirm handover (called from Warm Handover Card button) ──
+  // Previously opened modal-receipt as a second step. Now goes directly to the
+  // right-panel handover state — modal-receipt is no longer auto-opened here.
   function generateReceipt() {
-    currentState = 6;
+    currentState = 7;
     updateSteps(currentState);
     closeModal('modal-handover');
-    openModal('modal-receipt');
+    show('section-careloop');
   }
 
-  // ── Add to Care Loop (called from modal button) ──
+  // ── Add to Disagreement Library (called from modal button) ──
+  // previously named addToCareLoop; function name preserved for compatibility
   function addToCareLoop() {
     currentState = 7;
     updateSteps(currentState);
