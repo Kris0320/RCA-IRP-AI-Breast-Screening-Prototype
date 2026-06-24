@@ -14,7 +14,9 @@ assets/unit3-submission
 04_Models
 05_Interviews
 06_Design_Direction
-07_Prototype
+07_Prototype/*.md
+07_Prototype/*.svg
+07_Prototype/README.md
 08_Presentation
 09_Reflection
 *.canvas
