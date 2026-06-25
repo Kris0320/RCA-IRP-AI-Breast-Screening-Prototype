@@ -1607,6 +1607,7 @@
   #right-panel .btn-secondary {
     font-size: 13px !important;
     font-weight: 500;
+    padding: 11px 16px;
   }
 
   /* ── MARK MODE ── */
@@ -1967,21 +1968,21 @@
     padding: 24px 22px;
     overflow: hidden;
     background: url('./07_Prototype/assets/case-comparison-background.png') center/cover no-repeat;
-    display: flex; flex-direction: column; gap: 10px;
+    display: flex; flex-direction: column; gap: 16px;
   }
   .cmp-cards-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 16px;
   }
   .cmp-left-title {
     font-size: 20px; font-weight: 700; color: #1F2933;
-    margin-bottom: 1px; letter-spacing: -0.01em;
+    margin-bottom: 0; letter-spacing: -0.01em;
   }
   .cmp-left-sub { font-size: 14px; color: #4B5563; margin-bottom: 4px; }
   /* Section cards */
   .cmp-card {
-    background: rgba(255,255,255,0.82);
+    background: rgba(255,255,255,0.65);
     border: 1px solid rgba(255,255,255,0.7);
     border-radius: 10px; padding: 13px 15px;
   }
@@ -2005,10 +2006,6 @@
     border: 1.5px solid rgba(30,80,200,0.22);
   }
   /* Difference card */
-  .cmp-card.cmp-diff-card {
-    background: rgba(255,255,255,0.5);
-    border-color: rgba(255,255,255,0.7);
-  }
   .cmp-card.cmp-diff-card .cmp-card-head { color: #4B5563; }
   .cmp-card.cmp-diff-card .cmp-info-val { color: #1F2933; font-weight: 400; }
   /* Score bar inside card */
@@ -2037,8 +2034,8 @@
     font-size: 14px; font-weight: 400; color: #1F2933; margin-bottom: 6px;
   }
   .btn-cmp-ref {
-    font-size: 13px; color: #4B5563; background: none; border: none;
-    cursor: pointer; font-family: inherit; font-weight: 400; transition: opacity 0.12s;
+    font-size: 13px; color: #1a4fc4; background: none; border: none;
+    cursor: pointer; font-family: inherit; font-weight: 500; transition: opacity 0.12s;
     text-decoration: underline;
   }
   .btn-cmp-ref:hover { opacity: 0.6; }
@@ -2722,7 +2719,7 @@
         <div style="font-size:14px;color:var(--text);">L-CC · upper outer</div>
         <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);">
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-dim);margin-bottom:6px;">AI Reasoning</div>
-          <div style="font-size:14px;color:var(--text);line-height:1.6;">Focal asymmetry detected in the upper outer quadrant on CC view. Asymmetric density is new relative to the prior 2021 round — no corresponding finding in the same region on prior images. Irregular margin pattern and mild increased density are features associated with early malignancy.</div>
+          <div style="font-size:14px;color:var(--text);line-height:1.6;">Focal asymmetry detected in the left upper outer quadrant. Density pattern and asymmetry exceed the high-confidence threshold. No corresponding finding in the prior screen.</div>
         </div>
         <div id="case-score-strip">
           <div class="cs-title">AI Suspicion Score</div>
@@ -3010,7 +3007,7 @@
           </div>
           <div class="cmp-info-row">
             <span class="cmp-info-key">Location</span>
-            <span class="cmp-info-val">L-CC · upper outer</span>
+            <span class="cmp-info-val">Left breast · upper outer quadrant</span>
           </div>
           <div class="cmp-info-row">
             <span class="cmp-info-key">Confidence</span>
@@ -3083,7 +3080,7 @@
   </div>
 </div>
 
-<!-- ── MODAL: Disagreement Handover Card ── -->
+<!-- ── MODAL: Warm Handover Card ── -->
 <!-- Opened by "Prepare handover" (in comparison modal) or btn-handover / "View handover card". -->
 <div class="modal-overlay hidden" id="modal-handover-card">
   <div class="modal-card">
@@ -3092,7 +3089,7 @@
 
     <!-- Single-panel light layout -->
     <div class="cmp-left">
-      <div class="cmp-left-title">Disagreement Handover Card</div>
+      <div class="cmp-left-title">Warm Handover Card</div>
 
       <div class="cmp-cards-grid">
 
@@ -3126,14 +3123,11 @@
           </div>
           <div class="cmp-info-row">
             <span class="cmp-info-key">AI output</span>
-            <span class="cmp-info-val">Recall suggested · high confidence · 91%</span>
+            <span class="cmp-info-val">Recall suggested</span>
           </div>
-          <div class="cmp-info-row" style="align-items:center;">
-            <span class="cmp-info-key">AI suspicion score</span>
-            <span class="cmp-info-val" style="display:flex;align-items:center;gap:10px;">
-              <div class="cmp-score-track" style="width:80px;flex:none;"><div class="cmp-score-fill"></div><div class="cmp-score-dot"></div></div>
-              7 / 10
-            </span>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">AI confidence</span>
+            <span class="cmp-info-val">High · 91%</span>
           </div>
         </div>
 
@@ -3149,16 +3143,12 @@
             <span class="cmp-info-val">L-CC and L-MLO</span>
           </div>
           <div class="cmp-info-row" style="align-items:flex-start;">
-            <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Review focus</span>
-            <span class="cmp-info-val">Check the AI finding location against prior images.</span>
-          </div>
-          <div class="cmp-info-row" style="align-items:flex-start;">
             <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Reviewer question</span>
             <span class="cmp-info-val">Should this case be recalled for further assessment?</span>
           </div>
           <div class="cmp-info-row" style="align-items:flex-start;">
-            <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Similar reference</span>
-            <span class="cmp-info-val"><a href="#" style="color:#1a4fc4;text-decoration:underline;font-weight:500;">REF-014</a><span style="color:#6B7280;"> · recalled after review</span></span>
+            <span class="cmp-info-key" style="padding-top:1px;flex-shrink:0;">Similar case</span>
+            <span class="cmp-info-val"><a href="#" style="color:#1a4fc4;text-decoration:underline;font-weight:500;">REF-014</a><span style="color:#6B7280;"> · recalled after review · AI-positive / human-negative pattern</span></span>
           </div>
         </div>
 
@@ -3169,7 +3159,7 @@
 
     <!-- RIGHT: SVG visual panel with arbitration context -->
     <div class="cmp-right">
-      <img src="07_Prototype/assets/AI-analysis-background.svg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;" alt=""><img src="07_Prototype/assets/IP.png" style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);width:75%;max-width:220px;pointer-events:none;" alt="">
+      <img src="07_Prototype/assets/AI-analysis-background.svg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;" alt=""><img src="07_Prototype/assets/illustration-arbitration.png" style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);width:75%;max-width:220px;pointer-events:none;" alt="">
       <div class="cmp-right-inner" style="position:relative;z-index:1;">
         <div class="cmp-right-title">For Arbitration</div>
         <div class="cmp-right-body">
@@ -3217,48 +3207,65 @@
 
 <!-- ── REF-014 DETAIL MODAL ── -->
 <div class="modal-overlay hidden" id="modal-ref-014">
-  <div class="modal-card">
-    <div class="modal-header">
-      <span class="modal-title">REF-014</span>
-      <button class="modal-close" onclick="closeModal('modal-ref-014')">×</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-row">
-        <div class="modal-row-label">Case ID</div>
-        <div class="modal-row-value">BSV000191</div>
+  <div class="modal-card" style="max-width:560px;width:calc(100vw - 48px);max-height:90vh;padding:0;background:#f0f4f9;border:none;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(0,0,0,0.06);">
+    <button class="cmp-close" onclick="closeModal('modal-ref-014')">×</button>
+    <div class="cmp-left" style="overflow-y:auto;border-radius:16px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div class="cmp-left-title" style="margin-bottom:0;">REF-014</div>
+        <span style="font-size:12px;font-weight:500;color:#4B5563;background:rgba(255,255,255,0.65);border:1px solid rgba(30,80,200,0.14);border-radius:6px;padding:3px 10px;white-space:nowrap;flex-shrink:0;">Similar case reference</span>
       </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Date reviewed</div>
-        <div class="modal-row-value">March 2024</div>
+
+      <div class="cmp-cards-grid" style="grid-template-columns:1fr;">
+
+        <div class="cmp-card">
+          <div class="cmp-card-head">Case Details</div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Case ID</span>
+            <span class="cmp-info-val">BSV000191</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Date reviewed</span>
+            <span class="cmp-info-val">March 2024</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Pattern</span>
+            <span class="cmp-info-val">AI-positive / human-negative</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Finding type</span>
+            <span class="cmp-info-val">Focal asymmetry · Left MLO</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">AI confidence</span>
+            <span class="cmp-info-val">High</span>
+          </div>
+          <div class="cmp-info-row">
+            <span class="cmp-info-key">Human concern</span>
+            <span class="cmp-info-val">Low</span>
+          </div>
+          <div class="cmp-info-row" style="border-bottom:none;">
+            <span class="cmp-info-key">Final outcome</span>
+            <span class="cmp-info-val" style="color:#1a8c4e;font-weight:600;">Recalled after review</span>
+          </div>
+        </div>
+
+        <div class="cmp-card">
+          <div class="cmp-card-head">Arbitration Note</div>
+          <div style="font-size:14px;color:#374151;line-height:1.65;">
+            Second reader review confirmed the AI finding. The focal asymmetry was assessed as clinically significant on closer inspection. Case was recalled and further imaging arranged. Learning outcome: asymmetry in this density category warrants second look even when human concern is low.
+          </div>
+        </div>
+
+        <div class="cmp-card">
+          <div class="cmp-card-head">Learning Note</div>
+          <div style="font-size:14px;color:#374151;line-height:1.65;">
+            Similar disagreement patterns in this finding category have a higher-than-average rate of recall following arbitration review. This reference is provided to support the review process — it does not determine the outcome of the current case.
+          </div>
+        </div>
+
       </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Pattern</div>
-        <div class="modal-row-value amber">AI-positive / human-negative</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Finding type</div>
-        <div class="modal-row-value">Focal asymmetry · Left MLO</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">AI confidence</div>
-        <div class="modal-row-value">High</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Human concern</div>
-        <div class="modal-row-value">Low</div>
-      </div>
-      <div class="modal-row">
-        <div class="modal-row-label">Final outcome</div>
-        <div class="modal-row-value" style="color:var(--human-ann);font-weight:600;">Recalled after review</div>
-      </div>
-      <div class="evidence-head">Arbitration note</div>
-      <div class="evidence-block" style="border-left-color: rgba(200,60,60,0.35);">
-        Second reader review confirmed the AI finding. The focal asymmetry was assessed as clinically significant on closer inspection. Case was recalled and further imaging arranged. Learning outcome: asymmetry in this density category warrants second look even when human concern is low.
-      </div>
-      <div class="evidence-head" style="margin-top:16px;">Learning note</div>
-      <div class="evidence-block" style="border-left-color:var(--border-light);">
-        Similar disagreement patterns in this finding category have a higher-than-average rate of recall following arbitration review. This reference is provided to support the review process — it does not determine the outcome of the current case.
-      </div>
+
+      <button class="btn-cmp-left-primary" onclick="closeModal('modal-ref-014'); openModal('modal-case-library');">Go to case library</button>
     </div>
   </div>
 </div>
