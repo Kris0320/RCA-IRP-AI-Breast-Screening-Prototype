@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">How Readyology connects reading, arbitration and learning</text>
+<text x="432.5" y="220" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" text-anchor="middle">Case queue</text>
+<text x="677.5" y="220" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" text-anchor="middle">Reading</text>
+<text x="922.5" y="220" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" text-anchor="middle">AI output</text>
+<text x="1167.5" y="220" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" text-anchor="middle">Disagreement</text>
+<text x="1412.5" y="220" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" text-anchor="middle">Arbitration</text>
+<text x="1657.5" y="220" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827" text-anchor="middle">Feedback</text>
+<text x="90" y="308" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="start">Radiologist actions</text>
+<rect x="310" y="250" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="555" y="250" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="800" y="250" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1045" y="250" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1290" y="250" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1535" y="250" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="90" y="413" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="start">Arbitration actions</text>
+<rect x="310" y="355" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="555" y="355" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="800" y="355" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1045" y="355" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1290" y="355" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1535" y="355" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="90" y="518" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="start">Backstage actions</text>
+<rect x="310" y="460" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="555" y="460" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="800" y="460" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1045" y="460" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<rect x="1290" y="460" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<rect x="1535" y="460" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="90" y="623" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="start">Touchpoints</text>
+<rect x="310" y="565" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="555" y="565" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="800" y="565" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1045" y="565" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<rect x="1290" y="565" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<rect x="1535" y="565" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="90" y="728" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="start">Supporting systems</text>
+<rect x="310" y="670" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="555" y="670" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="800" y="670" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1045" y="670" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1290" y="670" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1535" y="670" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="90" y="833" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="start">Record created</text>
+<rect x="310" y="775" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="555" y="775" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="800" y="775" width="237" height="97" rx="10" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1045" y="775" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<rect x="1290" y="775" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<rect x="1535" y="775" width="237" height="97" rx="10" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<circle cx="1155" cy="610" r="18" fill="#D99A22" stroke="none" stroke-width="0"/>
+<text x="960" y="960" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#2368A2" text-anchor="middle">Detect -&gt; Review -&gt; Escalate -&gt; Resolve -&gt; Record -&gt; Learn</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

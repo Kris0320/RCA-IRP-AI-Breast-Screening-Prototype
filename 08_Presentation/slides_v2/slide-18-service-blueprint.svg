@@ -1,0 +1,87 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 18 Service Blueprint -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="72" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Service Blueprint</text>
+<text x="120" y="116" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">Readyology across four key service moments  ·  Detect · Resolve · Record · Learn</text>
+<rect x="332" y="148" width="361" height="72" fill="#FFF7ED" rx="8"/>
+<rect x="332" y="148" width="361" height="8" fill="#EA580C" rx="4"/>
+<rect x="332" y="152" width="361" height="4" fill="#EA580C" rx="10"/>
+<text x="512" y="186" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#EA580C" text-anchor="middle">Disagreement</text>
+<text x="512" y="210" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#EA580C" text-anchor="middle">Detected</text>
+<rect x="705" y="148" width="361" height="72" fill="#EAF3FF" rx="8"/>
+<rect x="705" y="148" width="361" height="8" fill="#124BCE" rx="4"/>
+<rect x="705" y="152" width="361" height="4" fill="#124BCE" rx="10"/>
+<text x="885" y="186" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="middle">Comparison</text>
+<text x="885" y="210" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="middle">& Review</text>
+<rect x="1078" y="148" width="361" height="72" fill="#FFFBEB" rx="8"/>
+<rect x="1078" y="148" width="361" height="8" fill="#F59E0B" rx="4"/>
+<rect x="1078" y="152" width="361" height="4" fill="#F59E0B" rx="10"/>
+<text x="1258" y="186" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#F59E0B" text-anchor="middle">Consensus /</text>
+<text x="1258" y="210" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#F59E0B" text-anchor="middle">Arbitration</text>
+<rect x="1451" y="148" width="361" height="72" fill="#F0FDF4" rx="8"/>
+<rect x="1451" y="148" width="361" height="8" fill="#16A34A" rx="4"/>
+<rect x="1451" y="152" width="361" height="4" fill="#16A34A" rx="10"/>
+<text x="1631" y="186" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#16A34A" text-anchor="middle">Record</text>
+<text x="1631" y="210" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#16A34A" text-anchor="middle">& Learn</text>
+<rect x="120" y="228" width="200" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="220" y="325" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1F2937" text-anchor="middle">Radiologist</text>
+<text x="220" y="345" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#1F2937" text-anchor="middle">Actions</text>
+<rect x="332" y="228" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="348" y="256" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Sees soft amber cue in reading station</text>
+<text x="348" y="282" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">No interruption to reading flow</text>
+<rect x="705" y="228" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="721" y="256" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Reviews comparison: AI score + prior images</text>
+<text x="721" y="282" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Confirms or edits reason tag</text>
+<rect x="1078" y="228" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1094" y="256" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Participates in consensus review</text>
+<text x="1094" y="282" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Reviews evidence bundle</text>
+<rect x="1451" y="228" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1467" y="256" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Reviews and signs off decision receipt</text>
+<text x="1467" y="282" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Records final recall decision</text>
+<rect x="120" y="443" width="200" height="211" fill="#DBEAFE" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="220" y="540" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="middle">Readyology</text>
+<text x="220" y="560" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="middle">Touchpoint</text>
+<rect x="332" y="443" width="361" height="211" fill="#EAF3FF" rx="6" stroke="#124BCE" stroke-width="1.5"/>
+<text x="348" y="471" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">⚑  Soft comparison cue activated</text>
+<text x="348" y="497" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">Disagreement classifier triggered</text>
+<rect x="705" y="443" width="361" height="211" fill="#EAF3FF" rx="6" stroke="#124BCE" stroke-width="1.5"/>
+<text x="721" y="471" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">Touchpoint 1 — Comparison view:</text>
+<text x="721" y="497" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">AI score · marks · prior images · tags</text>
+<rect x="1078" y="443" width="361" height="211" fill="#EAF3FF" rx="6" stroke="#124BCE" stroke-width="1.5"/>
+<text x="1094" y="471" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">Touchpoint 2 — Consensus support:</text>
+<text x="1094" y="497" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">Handover summary · arbitration rationale</text>
+<rect x="1451" y="443" width="361" height="211" fill="#EAF3FF" rx="6" stroke="#124BCE" stroke-width="1.5"/>
+<text x="1467" y="471" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">Touchpoint 3 — Decision receipt:</text>
+<text x="1467" y="497" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#124BCE" text-anchor="start">Audit log · case library · learning flag</text>
+<rect x="120" y="658" width="200" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="220" y="755" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#6B7280" text-anchor="middle">System</text>
+<text x="220" y="775" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#6B7280" text-anchor="middle">Back-stage</text>
+<rect x="332" y="658" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="348" y="686" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">AI model generates risk score + marks</text>
+<text x="348" y="712" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Disagreement type auto-classified</text>
+<rect x="705" y="658" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="721" y="686" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Evidence bundle prepared automatically</text>
+<text x="721" y="712" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Reason tags suggested from library</text>
+<rect x="1078" y="658" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1094" y="686" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Handover summary auto-generated</text>
+<text x="1094" y="712" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Context sent to senior reviewer</text>
+<rect x="1451" y="658" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1467" y="686" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Decision receipt stored to audit log</text>
+<text x="1467" y="712" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Case flagged for Learning Value Check</text>
+<rect x="120" y="873" width="200" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="220" y="970" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#9CA3AF" text-anchor="middle">Supporting</text>
+<text x="220" y="990" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#9CA3AF" text-anchor="middle">Systems</text>
+<rect x="332" y="873" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="348" y="901" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">PACS + AI integration · Readyology cue layer</text>
+<rect x="705" y="873" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="721" y="901" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Readyology comparison view · PACS</text>
+<rect x="1078" y="873" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1094" y="901" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Readyology consensus layer · RIS</text>
+<rect x="1451" y="873" width="361" height="211" fill="#F8FAFC" rx="6" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1467" y="901" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Readyology audit record · case library</text>
+<rect x="120" y="1040" width="16" height="16" fill="#EAF3FF" rx="3" stroke="#124BCE" stroke-width="1.5"/>
+<text x="144" y="1052" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Readyology service layer</text>
+<rect x="360" y="1040" width="16" height="16" fill="#FFF7ED" rx="3" stroke="#EA580C" stroke-width="1.5"/>
+<text x="384" y="1052" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Disagreement moment</text>
+</svg>

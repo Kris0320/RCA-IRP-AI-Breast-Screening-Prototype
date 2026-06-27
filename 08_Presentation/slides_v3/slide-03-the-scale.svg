@@ -1,0 +1,25 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">3 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">Breast Cancer Screening at Scale.</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">England  ·  NHS  ·  2024</text>
+<text x="120" y="490" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="120" font-weight="700" fill="#124BCE" text-anchor="start" style="">2M</text>
+<line x1="120" y1="512" x2="492" y2="512" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="562" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">mammograms</text>
+<text x="120" y="604" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">per year in England</text>
+<text x="556" y="490" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="120" font-weight="700" fill="#EA580C" text-anchor="start" style="">29%</text>
+<line x1="556" y1="512" x2="928" y2="512" stroke="#E5E7EB" stroke-width="1"/>
+<text x="556" y="562" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">radiographer</text>
+<text x="556" y="604" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">shortage across NHS</text>
+<text x="992" y="490" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="120" font-weight="700" fill="#124BCE" text-anchor="start" style="">100%</text>
+<line x1="992" y1="512" x2="1364" y2="512" stroke="#E5E7EB" stroke-width="1"/>
+<text x="992" y="562" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">NHS departments</text>
+<text x="992" y="604" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">now use AI-assisted screening</text>
+<text x="1428" y="490" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="120" font-weight="700" fill="#16A34A" text-anchor="start" style="">40%</text>
+<line x1="1428" y1="512" x2="1800" y2="512" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1428" y="562" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">potential reduction</text>
+<text x="1428" y="604" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">in interval cancers with AI</text>
+</svg>

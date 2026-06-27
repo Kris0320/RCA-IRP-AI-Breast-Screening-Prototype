@@ -1,0 +1,64 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');</style>
+  <clipPath id="clip0"><rect x="160"  y="238" width="480" height="170"/></clipPath>
+  <clipPath id="clip1"><rect x="720"  y="238" width="480" height="170"/></clipPath>
+  <clipPath id="clip2"><rect x="1280" y="238" width="480" height="170"/></clipPath>
+</defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- HEADER — SECTION 13/600/BLUE + rule + slide number -->
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3">CONTEXT</text>
+
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" >5 / 29</text>
+
+
+<!-- H1 68/700/DARK -->
+<text x="160" y="154" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" >AI in breast screening: where is it now?</text>
+
+<!-- PARAGRAPH 18/400/MID subtitle -->
+<text x="160" y="186" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start" >Active NHS pilots in the UK. Live service in Germany. No approved clinical AI service in the UK yet.</text>
+
+<rect x="160" y="210" width="480" height="28" fill="#124BCE" rx="2"/>
+<text x="400" y="229" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ACTIVE PILOT · UK</text>
+<image x="160" y="238" width="480" height="170" href="https://ukstories.microsoft.com/wp-content/uploads/2024/04/GeraldLip-768x512-1.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#clip0)"/>
+<text x="160" y="458" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="900" fill="#124BCE" text-anchor="start" >+12%</text>
+<text x="160" y="480" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start" >more cancers detected</text>
+<line x1="160" y1="498" x2="640" y2="498" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="526" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start" >Kheiron Mia · NHS Grampian</text>
+<text x="160" y="552" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >CE-marked AI second reader, 10,889-patient NHS trial.</text>
+<text x="160" y="572" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >Modelled 30% workload reduction. No increase in</text>
+<text x="160" y="592" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >false positives. Now live at 16 NHS sites.</text>
+<text x="160" y="634" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">¹ NHS Grampian / Kheiron / Microsoft, 2024</text>
+<rect x="720" y="210" width="480" height="28" fill="#4A6A8A" rx="2"/>
+<text x="960" y="229" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">RESEARCH TRIAL · UK</text>
+<image x="720" y="238" width="480" height="170" href="https://www.imperial.ac.uk/news/media/news-images/3000x2000-main-article-images/2026-03-10-breast-cancer-scan.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#clip1)"/>
+<text x="720" y="458" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="900" fill="#124BCE" text-anchor="start" >+25%</text>
+<text x="720" y="480" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start" >interval cancers detected</text>
+<line x1="720" y1="498" x2="1200" y2="498" stroke="#C4C8D2" stroke-width="1"/>
+<text x="720" y="526" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start" >AIMS Study · Imperial College + Google Health</text>
+<text x="720" y="552" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >175,000-woman NHS study — largest to date.</text>
+<text x="720" y="572" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >AI matched or exceeded radiologist performance.</text>
+<text x="720" y="592" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >Reading workload reduced by ~40%.</text>
+<text x="720" y="634" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">² Imperial College London / Google Health, Nature Cancer, Mar 2026</text>
+<rect x="1280" y="210" width="480" height="28" fill="#E8693C" rx="2"/>
+<text x="1520" y="229" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">LIVE SERVICE · GERMANY</text>
+<rect x="1280" y="238" width="480" height="170" fill="#C8CDD8"/>
+<text x="1520" y="324" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >[ Download: vara.ai/news-media → Product Photos.zip ]</text>
+<text x="1280" y="458" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="900" fill="#E8693C" text-anchor="start" >+17.6%</text>
+<text x="1280" y="480" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start" >cancer detection rate</text>
+<line x1="1280" y1="498" x2="1760" y2="498" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1280" y="526" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start" >Vara · Germany National Screening Programme</text>
+<text x="1280" y="552" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >Only CE-marked AI for independent second read.</text>
+<text x="1280" y="572" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >40% of Germany's national programme. 1.5M</text>
+<text x="1280" y="592" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" >mammograms annually. 80,000+ women/month.</text>
+<text x="1280" y="634" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" font-style="italic">³ Vara / PRAIM Study (500,000 participants), 2025</text>
+
+<text x="160" y="758" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" >AI is already reading mammograms — in NHS pilots, in trials, and as a live national service in Germany.</text>
+
+<text x="160" y="800" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start" >But when AI and the radiologist see different things, every hospital handles it differently.</text>
+
+<text x="1760" y="1052" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="end" font-style="italic">¹ NHS Grampian/Kheiron/Microsoft 2024  ·  ² Imperial College London &amp; Google Health, Nature Cancer 2026  ·  ³ Vara/PRAIM Study 2025</text>
+
+</svg>

@@ -37,12 +37,15 @@
 ## State 6: Decision receipt generated
 
 - Decision receipt records the disagreement, escalation route and rationale.
-- Receipt frames the case as traceability and learning, not blame.
-- User can add the case to Care Loop.
+- Receipt frames the case as a decision trace, not blame.
+- User can add the case to the Disagreement Case Library.
 
-## State 7: Added to Care Loop
+## State 7: Added to Disagreement Library
 
-- Care Loop message appears.
-- Case is marked for outcome-linked review.
-- Prototype ends with learning loop visible.
+<!-- previously: "Added to Care Loop" — archived in ARCHIVE_care-loop-original-copy.md -->
+
+- Disagreement Library confirmation appears.
+- Case is saved for team calibration and future arbitration reference.
+- Follow-up outcome pending confirmation before full library entry.
+- Prototype ends with Disagreement Library state visible.
 

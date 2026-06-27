@@ -1,0 +1,53 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 09 Key Insight -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="96" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Across All 4 Placement Models:</text>
+<text x="120" y="152" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#124BCE" text-anchor="start">One shared failure point.</text>
+<rect x="120" y="184" width="1680" height="128" fill="#FFF7ED" rx="12"/>
+<rect x="120" y="184" width="8" height="128" fill="#EA580C" rx="4"/>
+<text x="960" y="242" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="600" fill="#EA580C" text-anchor="middle">When AI and human judgement disagree —</text>
+<text x="960" y="286" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="400" fill="#EA580C" text-anchor="middle">accountability, traceability and learning break down.</text>
+<rect x="120" y="332" width="541" height="480" fill="#FFF7ED" rx="12"/>
+<rect x="120" y="332" width="541" height="10" fill="#EA580C" rx="5"/>
+<rect x="120" y="337" width="541" height="5" fill="#EA580C" rx="10"/>
+<text x="144" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#EA580C" text-anchor="start">Misdiagnosis risk</text>
+<text x="144" y="430" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Cases where AI was correct but</text>
+<text x="144" y="458" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">not absorbed by the workflow may</text>
+<text x="144" y="486" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">result in interval cancers.</text>
+<circle cx="142" cy="526" r="6" fill="#EA580C"/>
+<text x="164" y="534" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ AI signal lost if overridden without record</text>
+<circle cx="142" cy="570" r="6" fill="#EA580C"/>
+<text x="164" y="578" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Interval cancers may increase</text>
+<circle cx="142" cy="614" r="6" fill="#EA580C"/>
+<text x="164" y="622" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Women receive delayed diagnosis</text>
+<rect x="689" y="332" width="541" height="480" fill="#FFFBEB" rx="12"/>
+<rect x="689" y="332" width="541" height="10" fill="#F59E0B" rx="5"/>
+<rect x="689" y="337" width="541" height="5" fill="#F59E0B" rx="10"/>
+<text x="713" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#F59E0B" text-anchor="start">Liability gap</text>
+<text x="713" y="430" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">When AI and human disagree, who</text>
+<text x="713" y="458" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">is responsible? Override</text>
+<text x="713" y="486" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">reasoning is not consistently</text>
+<text x="713" y="514" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">recorded.</text>
+<circle cx="711" cy="554" r="6" fill="#F59E0B"/>
+<text x="733" y="562" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Accountability is ambiguous</text>
+<circle cx="711" cy="598" r="6" fill="#F59E0B"/>
+<text x="733" y="606" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Decisions cannot be audited</text>
+<circle cx="711" cy="642" r="6" fill="#F59E0B"/>
+<text x="733" y="650" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Legal responsibility unclear</text>
+<rect x="1258" y="332" width="541" height="480" fill="#EAF3FF" rx="12"/>
+<rect x="1258" y="332" width="541" height="10" fill="#124BCE" rx="5"/>
+<rect x="1258" y="337" width="541" height="5" fill="#124BCE" rx="10"/>
+<text x="1282" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#124BCE" text-anchor="start">Lost learning</text>
+<text x="1282" y="430" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Disagreement cases are not</text>
+<text x="1282" y="458" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">captured for AI improvement. The</text>
+<text x="1282" y="486" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">system cannot learn from</text>
+<text x="1282" y="514" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">failure.</text>
+<circle cx="1280" cy="554" r="6" fill="#124BCE"/>
+<text x="1302" y="562" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ AI calibration degrades silently</text>
+<circle cx="1280" cy="598" r="6" fill="#124BCE"/>
+<text x="1302" y="606" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Difficult cases are not reviewed</text>
+<circle cx="1280" cy="642" r="6" fill="#124BCE"/>
+<text x="1302" y="650" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">→ Institutional knowledge is lost</text>
+<text x="120" y="1044" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="start">Source: Marinovich et al. 2024 · EDITH trial · AI-STREAM · Expert interview synthesis</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#F3F4F6"/>
+<rect x="80" y="80" width="1120" height="560" fill="#FFFFFF" rx="12" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="640" y="310" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="middle">Prototype Demo</text>
+<text x="640" y="360" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#6B7280" text-anchor="middle">Interactive prototype walkthrough + RAG colour system explanation</text>
+<text x="640" y="404" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#2563EB" text-anchor="middle">[ Screenshots — Version 2 ]</text>
+<text x="400" y="450" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#16A34A" text-anchor="middle">●</text>
+<text x="400" y="472" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#6B7280" text-anchor="middle">Green — Agreement, no action</text>
+<text x="570" y="450" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#F59E0B" text-anchor="middle">●</text>
+<text x="570" y="472" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#6B7280" text-anchor="middle">Amber — Disagreement detected, soft cue</text>
+<text x="740" y="450" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#DC2626" text-anchor="middle">●</text>
+<text x="740" y="472" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#6B7280" text-anchor="middle">Red — Urgent review required</text>
+</svg>

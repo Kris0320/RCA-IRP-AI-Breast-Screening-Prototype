@@ -1,0 +1,35 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="110" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="52" font-weight="700" fill="#111827" text-anchor="start">AI Is Entering the Reading Room.</text>
+<text x="80" y="152" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#2563EB" text-anchor="start">The technology is here. The system isn't ready.</text>
+<rect x="80" y="186" width="540" height="44" fill="#EFF6FF" rx="6"/>
+<text x="98" y="215" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#2563EB" text-anchor="start">The Promise</text>
+<circle cx="94" cy="251" r="5" fill="#2563EB"/>
+<text x="110" y="258" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Faster triage and risk stratification</text>
+<circle cx="94" cy="287" r="5" fill="#2563EB"/>
+<text x="110" y="294" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Earlier detection of interval cancers</text>
+<circle cx="94" cy="323" r="5" fill="#2563EB"/>
+<text x="110" y="330" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Workload reduction for radiologists</text>
+<circle cx="94" cy="359" r="5" fill="#2563EB"/>
+<text x="110" y="366" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Reduced reading fatigue</text>
+<circle cx="94" cy="395" r="5" fill="#2563EB"/>
+<text x="110" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Potential for 24/7 AI-supported screening</text>
+<rect x="660" y="186" width="540" height="44" fill="#F3F4F6" rx="6"/>
+<text x="678" y="215" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="700" fill="#6B7280" text-anchor="start">The Reality</text>
+<rect x="666" y="245" width="8" height="8" fill="#6B7280" rx="2"/>
+<text x="690" y="258" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Multiple AI placement models — no standard</text>
+<rect x="666" y="281" width="8" height="8" fill="#6B7280" rx="2"/>
+<text x="690" y="294" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">No universal integration protocol</text>
+<rect x="666" y="317" width="8" height="8" fill="#6B7280" rx="2"/>
+<text x="690" y="330" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Pilots vary in scope, governance and outcome</text>
+<rect x="666" y="353" width="8" height="8" fill="#6B7280" rx="2"/>
+<text x="690" y="366" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">Clinical responsibility remains unclear</text>
+<rect x="666" y="389" width="8" height="8" fill="#6B7280" rx="2"/>
+<text x="690" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#111827" text-anchor="start">AI failure cases are poorly recorded</text>
+<rect x="80" y="456" width="1120" height="2" fill="#E5E7EB"/>
+<text font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#6B7280" text-anchor="start">
+  <tspan x="80" y="482.0">Pilots running across 6+ international programmes: MASAI · PRAIM · ScreenTrustCAD · AI-STREAM · BreastScreen NSW · Therapixel PACA</tspan>
+  <tspan x="80" y="506.0">In the UK, the EDITH trial is testing multiple AI positions in one national pathway — final decisions remain human-led.</tspan>
+</text>
+</svg>

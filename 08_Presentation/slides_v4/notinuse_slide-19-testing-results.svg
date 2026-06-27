@@ -1,0 +1,51 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">VALIDATION</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" style="">19 / 21</text>
+<text x="160" y="172" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" style="">What We Tested. What We Learned.</text>
+<text x="160" y="244" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Two expert-led sessions validated the design direction: soft cues, integration, and a traceable record.</text>
+<rect x="160" y="316" width="340" height="200" fill="#D0D4DE" rx="3"/>
+<rect x="160" y="316" width="340" height="200" fill="none" stroke="#9AAABF" stroke-width="1.5" rx="3" stroke-dasharray="8 4"/>
+<circle cx="330" cy="400" r="20" fill="none" stroke="#9AAABF" stroke-width="1.5"/>
+<circle cx="330" cy="400" r="7" fill="#9AAABF"/>
+<text x="330" y="440" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#5A6A80" text-anchor="middle" style="">Sophia Zackrisson portrait</text>
+<text x="330" y="464" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#5A6A80" text-anchor="middle" style="">Expert Consultant · Lund University</text>
+<text x="520" y="336" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start" style="">Session 1 — Expert Prototype Test</text>
+<line x1="520" y1="360" x2="920" y2="360" stroke="#C4C8D2" stroke-width="1"/>
+<text x="520" y="396" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Sophia Zackrisson  ·  Sr. Consultant Radiologist</text>
+<text x="520" y="426" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827" text-anchor="start" style="">Method: wireframe prototype walkthrough</text>
+<line x1="160" y1="548" x2="920" y2="548" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="167" cy="576" r="4" fill="#124BCE"/>
+<text x="186" y="584" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="font-style:italic;">"Keep it simple. No extra steps."</text>
+<circle cx="167" cy="632" r="4" fill="#124BCE"/>
+<text x="186" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="font-style:italic;">"Integrate into existing reading stations."</text>
+<circle cx="167" cy="688" r="4" fill="#124BCE"/>
+<text x="186" y="696" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Soft cue preferred over alert or alarm</text>
+<circle cx="167" cy="744" r="4" fill="#124BCE"/>
+<text x="186" y="752" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Reason tags: suggest and confirm, not fill manually</text>
+<text x="1000" y="336" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#6B7280" text-anchor="start" style="">Session 2 — Usability Test</text>
+<line x1="1000" y1="360" x2="1760" y2="360" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1000" y="396" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Medical student  ·  Real clinical work experience</text>
+<text x="1000" y="426" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827" text-anchor="start" style="">Method: interactive prototype, screen session</text>
+<line x1="1000" y1="446" x2="1760" y2="446" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="1007" cy="476" r="4" fill="#6B7280"/>
+<text x="1026" y="484" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="font-style:italic;">"Real scenarios are fast and very busy."</text>
+<circle cx="1007" cy="532" r="4" fill="#6B7280"/>
+<text x="1026" y="540" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="font-style:italic;">"Design must be direct and non-disruptive."</text>
+<circle cx="1007" cy="588" r="4" fill="#6B7280"/>
+<text x="1026" y="596" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Low cognitive burden is non-negotiable</text>
+<circle cx="1007" cy="644" r="4" fill="#6B7280"/>
+<text x="1026" y="652" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">RAG visual clarity essential at a glance</text>
+<line x1="160" y1="900" x2="1760" y2="900" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="946" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Design response:</text>
+<circle cx="167" cy="991" r="4" fill="#124BCE"/>
+<text x="186" y="998" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#124BCE" text-anchor="start" style="">Soft cues over interrupting alerts</text>
+<circle cx="557" cy="991" r="4" fill="#124BCE"/>
+<text x="576" y="998" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#124BCE" text-anchor="start" style="">Suggested tags over manual classification</text>
+<circle cx="947" cy="991" r="4" fill="#124BCE"/>
+<text x="966" y="998" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#124BCE" text-anchor="start" style="">Integrated workstation over separate device</text>
+<circle cx="1337" cy="991" r="4" fill="#124BCE"/>
+<text x="1356" y="998" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#124BCE" text-anchor="start" style="">Receipt after review over real-time burden</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Different AI placements create different disagreement points</text>
+<rect x="120" y="305" width="385" height="460" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="148" y="365" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#111827" text-anchor="start">1. AI before reading</text>
+<rect x="158" y="455" width="58" height="58" rx="10" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<line x1="218" y1="484" x2="232" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="234" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="294" y1="484" x2="308" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="310" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="370" y1="484" x2="384" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="386" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<circle cx="187" cy="555" r="16" fill="#D99A22" stroke="none" stroke-width="0"/>
+<text x="148" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#D99A22" text-anchor="start">Risk:</text>
+<text x="208" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="400" fill="#5E6B7A" text-anchor="start">influenced independent judgement</text>
+<rect x="565" y="305" width="385" height="460" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="593" y="365" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#111827" text-anchor="start">2. AI as second reader</text>
+<rect x="603" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="663" y1="484" x2="677" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="679" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="739" y1="484" x2="753" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="755" y="455" width="58" height="58" rx="10" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<line x1="815" y1="484" x2="829" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="831" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<circle cx="784" cy="555" r="16" fill="#D99A22" stroke="none" stroke-width="0"/>
+<text x="593" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#D99A22" text-anchor="start">Risk:</text>
+<text x="653" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="400" fill="#5E6B7A" text-anchor="start">AI-human mismatch requires arbitration</text>
+<rect x="1010" y="305" width="385" height="460" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1038" y="365" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#111827" text-anchor="start">3. AI as safety net</text>
+<rect x="1048" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1108" y1="484" x2="1122" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1124" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1184" y1="484" x2="1198" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1200" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1260" y1="484" x2="1274" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1276" y="455" width="58" height="58" rx="10" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<circle cx="1305" cy="555" r="16" fill="#D99A22" stroke="none" stroke-width="0"/>
+<text x="1038" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#D99A22" text-anchor="start">Risk:</text>
+<text x="1098" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="400" fill="#5E6B7A" text-anchor="start">late second-look decisions</text>
+<rect x="1455" y="305" width="385" height="460" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1483" y="365" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#111827" text-anchor="start">4. AI as triage</text>
+<rect x="1493" y="455" width="58" height="58" rx="10" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<line x1="1553" y1="484" x2="1567" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1569" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1629" y1="484" x2="1643" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1645" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1705" y1="484" x2="1719" y2="484" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1721" y="455" width="58" height="58" rx="10" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<circle cx="1522" cy="555" r="16" fill="#D99A22" stroke="none" stroke-width="0"/>
+<text x="1483" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#D99A22" text-anchor="start">Risk:</text>
+<text x="1543" y="635" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="400" fill="#5E6B7A" text-anchor="start">routing boundaries and exceptions</text>
+<text x="960" y="860" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#111827" text-anchor="middle">Across these models, disagreement concentrates around two service moments: reading and arbitration.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">AI is entering screening because the system is under pressure</text>
+<rect x="130" y="290" width="700" height="500" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="1090" y="290" width="700" height="500" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="480" y="345" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#2368A2" text-anchor="middle">Why AI is attractive</text>
+<text x="1440" y="345" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#D99A22" text-anchor="middle">What AI disrupts</text>
+<rect x="190" y="395" width="580" height="84" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="214" y1="417" x2="746" y2="417" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="218" y="467" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Efficiency</text>
+<text x="218" y="507" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">faster routine reading</text>
+<rect x="190" y="510" width="580" height="84" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="214" y1="532" x2="746" y2="532" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="218" y="582" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Detection support</text>
+<text x="218" y="622" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">additional evidence signal</text>
+<rect x="190" y="625" width="580" height="84" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="214" y1="647" x2="746" y2="647" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="218" y="697" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Workload reduction</text>
+<text x="218" y="737" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">potential pressure relief</text>
+<rect x="1150" y="390" width="580" height="70" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1174" y1="412" x2="1706" y2="412" stroke="#D99A22" stroke-width="6" stroke-linecap="round"/>
+<text x="1178" y="462" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Judgement</text>
+<text x="1178" y="502" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">how to interpret AI output</text>
+<rect x="1150" y="480" width="580" height="70" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1174" y1="502" x2="1706" y2="502" stroke="#D99A22" stroke-width="6" stroke-linecap="round"/>
+<text x="1178" y="552" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Responsibility</text>
+<text x="1178" y="592" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">who remains accountable</text>
+<rect x="1150" y="570" width="580" height="70" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1174" y1="592" x2="1706" y2="592" stroke="#D99A22" stroke-width="6" stroke-linecap="round"/>
+<text x="1178" y="642" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Disagreement</text>
+<text x="1178" y="682" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">what happens when outputs conflict</text>
+<rect x="1150" y="660" width="580" height="70" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1174" y1="682" x2="1706" y2="682" stroke="#D99A22" stroke-width="6" stroke-linecap="round"/>
+<text x="1178" y="732" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Arbitration</text>
+<text x="1178" y="772" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">how review is triggered</text>
+<line x1="845" y1="540" x2="1075" y2="540" stroke="#2368A2" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="865" y="480" width="190" height="120" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="960.0" y="535.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">AI</text>
+<text x="960.0" y="565.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">integration</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

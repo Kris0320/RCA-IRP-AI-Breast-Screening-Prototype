@@ -1,0 +1,49 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#0A1628"/>
+
+<!-- Header -->
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#7B8DA0" text-anchor="start" letter-spacing="3">SOLUTION</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#1A2E48" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#7B8DA0" text-anchor="end">14 / 25</text>
+
+<!-- Left: Wordmark + tagline -->
+<text x="160" y="406" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="108" font-weight="900"><tspan fill="#E8693C" font-style="italic">R</tspan><tspan fill="#FFFFFF">eadyology</tspan></text>
+<text x="160" y="462" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#7B8DA0">A structured layer for AI-human disagreement in breast screening.</text>
+<line x1="160" y1="500" x2="900" y2="500" stroke="#1A2E48" stroke-width="1"/>
+<text x="160" y="1036" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#2A3E58">For: Breast Advanced Practitioners  ·  Senior Radiologists  ·  NHS Service Leads</text>
+
+<!-- Right panel divider -->
+<line x1="1020" y1="110" x2="1020" y2="970" stroke="#1A2E48" stroke-width="1"/>
+
+<!-- Right: Header -->
+<text x="1060" y="168" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#7B8DA0" letter-spacing="2">READYOLOGY MAKES DISAGREEMENT</text>
+<line x1="1060" y1="186" x2="1760" y2="186" stroke="#1A2E48" stroke-width="1"/>
+
+<!-- Item 1: Visible -->
+<text x="1060" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#E8693C" letter-spacing="1">01</text>
+<text x="1100" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Visible</text>
+<text x="1100" y="274" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#7B8DA0">Soft cues show when AI and human judgement diverge.</text>
+<line x1="1060" y1="306" x2="1760" y2="306" stroke="#1A2E48" stroke-width="1"/>
+
+<!-- Item 2: Discussable -->
+<text x="1060" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#E8693C" letter-spacing="1">02</text>
+<text x="1100" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Discussable</text>
+<text x="1100" y="382" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#7B8DA0">Shared evidence supports human-led review.</text>
+<line x1="1060" y1="414" x2="1760" y2="414" stroke="#1A2E48" stroke-width="1"/>
+
+<!-- Item 3: Traceable -->
+<text x="1060" y="456" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#E8693C" letter-spacing="1">03</text>
+<text x="1100" y="456" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Traceable</text>
+<text x="1100" y="490" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#7B8DA0">Rationale is captured without heavy documentation.</text>
+<line x1="1060" y1="522" x2="1760" y2="522" stroke="#1A2E48" stroke-width="1"/>
+
+<!-- Item 4: Learnable -->
+<text x="1060" y="564" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#E8693C" letter-spacing="1">04</text>
+<text x="1100" y="564" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Learnable</text>
+<text x="1100" y="598" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#7B8DA0">Difficult cases become calibration material after outcome is known.</text>
+<line x1="1060" y1="630" x2="1760" y2="630" stroke="#1A2E48" stroke-width="1"/>
+
+<!-- Vision closing line -->
+<text x="1060" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="300" fill="#7B8DA0" font-style="italic">visible, discussable, learnable and governable.</text>
+</svg>

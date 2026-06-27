@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">A disagreement moment inside breast cancer screening</text>
+<text x="98" y="178" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" font-weight="400" fill="#5E6B7A" text-anchor="start">The question is no longer simply who is right. It becomes how the service supports a safe, explainable and shared decision.</text>
+<rect x="150" y="300" width="440" height="430" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="178" y1="325" x2="562" y2="325" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<circle cx="300" cy="480" r="62" fill="#EAF3FA" stroke="#2368A2" stroke-width="3"/>
+<rect x="382" y="415" width="120" height="150" rx="14" fill="#EEF2F6" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="405" y1="448" x2="480" y2="448" stroke="#2368A2" stroke-width="5" stroke-linecap="round"/>
+<text x="190" y="655" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Radiologist reviews image</text>
+<text x="190" y="692" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Human judgement: normal</text>
+<rect x="710" y="300" width="440" height="430" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="738" y1="325" x2="1122" y2="325" stroke="#D99A22" stroke-width="6" stroke-linecap="round"/>
+<rect x="822" y="398" width="210" height="210" rx="12" fill="#111827" stroke="none" stroke-width="0"/>
+<circle cx="932" cy="503" r="54" fill="#DDE5EC" stroke="none" stroke-width="0"/>
+<circle cx="978" cy="468" r="20" fill="#FFF4D9" stroke="#D99A22" stroke-width="5"/>
+<text x="750" y="655" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">AI highlights area</text>
+<text x="750" y="692" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">High-confidence AI flag</text>
+<rect x="1270" y="300" width="440" height="430" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1298" y1="325" x2="1682" y2="325" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<circle cx="1490" cy="492" r="86" fill="#FFFFFF" stroke="#2368A2" stroke-width="4"/>
+<text x="1490" y="514" font-family="Newsreader, Arial, sans-serif" font-size="92" font-weight="700" fill="#D99A22" text-anchor="middle">?</text>
+<text x="1310" y="655" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Service question</text>
+<text x="1310" y="692" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">How should review be supported?</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

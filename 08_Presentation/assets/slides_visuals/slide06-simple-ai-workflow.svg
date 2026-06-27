@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">AI changes where judgement enters the pathway</text>
+<rect x="270" y="350" width="440" height="120" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="490.0" y="419.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">Human judgement lane</text>
+<rect x="270" y="560" width="440" height="120" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="490.0" y="629.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">AI output lane</text>
+<line x1="720" y1="410" x2="910" y2="500" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="720" y1="620" x2="910" y2="560" stroke="#D99A22" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="930" y="460" width="310" height="145" rx="16" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<text x="1085.0" y="541.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Comparison gate</text>
+<line x1="1255" y1="532" x2="1460" y2="532" stroke="#D9E2EC" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1480" y="460" width="300" height="145" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1630.0" y="527.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Human-led</text>
+<text x="1630.0" y="557.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">decision</text>
+<text x="960" y="760" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#111827" text-anchor="middle">AI becomes a new actor inside the reading pathway, but not the final decision-maker.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

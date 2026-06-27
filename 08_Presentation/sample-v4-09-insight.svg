@@ -1,0 +1,24 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#F5F0E8"/>
+<text x="160" y="62" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">INSIGHT</text>
+<line x1="160" y1="76" x2="1760" y2="76" stroke="#C8BFB4" stroke-width="1"/>
+<text x="1760" y="62" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B6B6B" text-anchor="end" style="">09 / 21</text>
+<text x="160" y="228" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">Across all four AI placement models:</text>
+<text x="160" y="348" font-family="Georgia, 'Times New Roman', serif" font-size="100" font-weight="700" fill="#1C1C1A" text-anchor="start" style="">One shared failure point.</text>
+<line x1="160" y1="386" x2="232" y2="386" stroke="#124BCE" stroke-width="3"/>
+<text x="160" y="464" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" fill="#124BCE" text-anchor="start" style="font-style:italic;">When AI and human judgement diverge --</text>
+<text x="160" y="528" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" fill="#1C1C1A" text-anchor="start" style="">accountability, traceability and learning break down.</text>
+<line x1="160" y1="670" x2="640" y2="670" stroke="#C8BFB4" stroke-width="1"/>
+<text x="160" y="712" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1C1C1A" text-anchor="start" style="">Disagreement risk</text>
+<text x="160" y="748" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">No structured classification of</text>
+<text x="160" y="780" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">disagreement type or severity</text>
+<line x1="720" y1="670" x2="1200" y2="670" stroke="#C8BFB4" stroke-width="1"/>
+<text x="720" y="712" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1C1C1A" text-anchor="start" style="">Liability gap</text>
+<text x="720" y="748" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">Override reasons inconsistently recorded</text>
+<text x="720" y="780" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">across practitioners</text>
+<line x1="1280" y1="670" x2="1760" y2="670" stroke="#C8BFB4" stroke-width="1"/>
+<text x="1280" y="712" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1C1C1A" text-anchor="start" style="">Lost learning</text>
+<text x="1280" y="748" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">Difficult cases not systematically fed</text>
+<text x="1280" y="780" font-family="Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" fill="#6B6B6B" text-anchor="start" style="">into calibration</text>
+</svg>

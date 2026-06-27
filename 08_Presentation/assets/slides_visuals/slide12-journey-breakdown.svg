@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">The fragile moments are reading disagreement and arbitration</text>
+<rect x="95" y="310" width="230" height="86" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="210.0" y="362.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Case queue</text>
+<line x1="327" y1="353" x2="345" y2="353" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="350" y="310" width="230" height="86" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="465.0" y="348.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Independent</text>
+<text x="465.0" y="378.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">reading</text>
+<line x1="582" y1="353" x2="600" y2="353" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="605" y="310" width="230" height="86" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="720.0" y="362.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">AI output</text>
+<line x1="837" y1="353" x2="855" y2="353" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="860" y="310" width="230" height="86" rx="16" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<text x="975.0" y="348.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle"></text>
+<text x="975.0" y="378.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Disagreement</text>
+<line x1="1092" y1="353" x2="1110" y2="353" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1115" y="310" width="230" height="86" rx="16" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<text x="1230.0" y="362.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Arbitration</text>
+<line x1="1347" y1="353" x2="1365" y2="353" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1370" y="310" width="230" height="86" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1485.0" y="362.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Outcome</text>
+<line x1="1602" y1="353" x2="1620" y2="353" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1625" y="310" width="230" height="86" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1740.0" y="362.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Calibration</text>
+<text x="96" y="499" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#5E6B7A" text-anchor="start">Clinical / system action</text>
+<line x1="330" y1="489" x2="1780" y2="489" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+<text x="96" y="604" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#5E6B7A" text-anchor="start">Human concern</text>
+<line x1="330" y1="594" x2="1780" y2="594" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+<text x="96" y="709" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#5E6B7A" text-anchor="start">Pain point</text>
+<line x1="330" y1="699" x2="1780" y2="699" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+<text x="96" y="814" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="700" fill="#5E6B7A" text-anchor="start">Opportunity</text>
+<line x1="330" y1="804" x2="1780" y2="804" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+<rect x="850" y="285" width="520" height="560" rx="20" fill="none" stroke="#D99A22" stroke-width="4"/>
+<text x="1110" y="885" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="800" fill="#D99A22" text-anchor="middle">Two fragile moments: reading disagreement and arbitration</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

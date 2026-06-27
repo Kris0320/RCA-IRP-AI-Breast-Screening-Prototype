@@ -1,0 +1,49 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- Header -->
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3">INSIGHT</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">12 / 29</text>
+
+<!-- Top: headline block (unchanged) -->
+<text x="160" y="200" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#6B7280">Across all four AI placement models:</text>
+<text x="160" y="306" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="700" fill="#111827">One shared failure point.</text>
+<line x1="160" y1="344" x2="232" y2="344" stroke="#124BCE" stroke-width="3"/>
+<text x="160" y="412" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#124BCE" font-style="italic">AI says 'recall'. The radiologist says 'normal'. No protocol exists for this moment —</text>
+<text x="160" y="462" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#111827">accountability, traceability and learning all break down.</text>
+
+<!-- Gap section rule -->
+<line x1="160" y1="510" x2="1760" y2="510" stroke="#C4C8D2" stroke-width="1"/>
+
+<!-- Column 1: System Gap -->
+<text x="160" y="554" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#124BCE">System Gap</text>
+<text x="160" y="578" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">No infrastructure for disagreement</text>
+<line x1="160" y1="598" x2="600" y2="598" stroke="#C4C8D2" stroke-width="1"/>
+<text x="172" y="624" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· No classification of disagreement type</text>
+<text x="172" y="650" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· No escalation trigger or protocol</text>
+<text x="172" y="676" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· No handover structure for review</text>
+<text x="172" y="702" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· Protocol relies on individual improvisation</text>
+<text x="160" y="1048" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE">Human-led liability</text>
+
+<!-- Column 2: Human Gap -->
+<text x="720" y="554" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#6B7280">Human Gap</text>
+<text x="720" y="578" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">No consistent recording practice</text>
+<line x1="720" y1="598" x2="1160" y2="598" stroke="#C4C8D2" stroke-width="1"/>
+<text x="732" y="624" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· Override reasoning not standardised</text>
+<text x="732" y="650" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· No mandatory record of AI output at decision</text>
+<text x="732" y="676" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· Institutional knowledge stays individual</text>
+<text x="732" y="702" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· Learning from difficult cases not captured</text>
+<text x="720" y="1048" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">Consistent conduct decision</text>
+
+<!-- Column 3: Data Gap -->
+<text x="1280" y="554" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#124BCE">Data Gap</text>
+<text x="1280" y="578" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">No feedback loop</text>
+<line x1="1280" y1="598" x2="1760" y2="598" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1292" y="624" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· AI calibration not connected to outcomes</text>
+<text x="1292" y="650" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· Follow-up results not fed back to AI</text>
+<text x="1292" y="676" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· Difficult cases unavailable for audit</text>
+<text x="1292" y="702" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">· AI performance depends on external retraining</text>
+<text x="1280" y="1048" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE">Improved future AI performance</text>
+</svg>

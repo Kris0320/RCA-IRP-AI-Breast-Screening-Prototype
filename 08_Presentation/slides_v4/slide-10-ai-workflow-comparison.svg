@@ -1,0 +1,203 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- HEADER -->
+<text x="160" y="60" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#124BCE" letter-spacing="3">RESEARCH</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">10 / 29</text>
+
+<!-- H1 + BODY -->
+<text x="160" y="148" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="68" font-weight="700" fill="#111827">Universal Disagreement Pattern Map</text>
+<text x="160" y="190" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280">We synthesised 9 workflow models into 4 AI placement patterns, then mapped where disagreement appears across the screening pathway.</text>
+
+<!-- ── HIGHLIGHT BAND: Steps 4+5 = highest consequence zone ── -->
+<rect x="990" y="208" width="498" height="258" fill="rgba(232,105,60,0.07)" rx="4"/>
+<line x1="990" y1="208" x2="1488" y2="208" stroke="#E8693C" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="1239" y="204" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#E8693C" text-anchor="middle" letter-spacing="2">CLOSEST TO RECALL DECISION</text>
+
+<!-- ── BACKBONE: 6 step boxes ── -->
+<!-- Step centres: S1=265  S2=543  S3=821  S4=1099  S5=1377  S6=1655 -->
+
+<!-- Box 1 -->
+<rect x="160" y="228" width="210" height="56" fill="#FFFFFF" rx="4" stroke="#C4C8D2" stroke-width="1"/>
+<text x="265" y="252" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">Mammogram</text>
+<text x="265" y="270" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="middle">acquired</text>
+<line x1="370" y1="256" x2="434" y2="256" stroke="#C4C8D2" stroke-width="1.5"/>
+<polygon points="429,251 439,256 429,261" fill="#C4C8D2"/>
+
+<!-- Box 2 -->
+<rect x="438" y="228" width="210" height="56" fill="#FFFFFF" rx="4" stroke="#C4C8D2" stroke-width="1"/>
+<text x="543" y="252" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">Case enters</text>
+<text x="543" y="270" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="middle">reading workflow</text>
+<line x1="648" y1="256" x2="712" y2="256" stroke="#C4C8D2" stroke-width="1.5"/>
+<polygon points="707,251 717,256 707,261" fill="#C4C8D2"/>
+
+<!-- Box 3 -->
+<rect x="716" y="228" width="210" height="56" fill="#FFFFFF" rx="4" stroke="#C4C8D2" stroke-width="1"/>
+<text x="821" y="252" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">Human + AI</text>
+<text x="821" y="270" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="middle">independent reads</text>
+<line x1="926" y1="256" x2="990" y2="256" stroke="#C4C8D2" stroke-width="1.5"/>
+<polygon points="985,251 995,256 985,261" fill="#C4C8D2"/>
+
+<!-- Box 4: IN ZONE -->
+<rect x="994" y="228" width="210" height="56" fill="#FFF7F4" rx="4" stroke="#E8693C" stroke-width="1.5"/>
+<text x="1099" y="252" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#B45309" text-anchor="middle">Comparison /</text>
+<text x="1099" y="270" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#B45309" text-anchor="middle">results review</text>
+<line x1="1204" y1="256" x2="1268" y2="256" stroke="#E8693C" stroke-width="1.5"/>
+<polygon points="1263,251 1273,256 1263,261" fill="#E8693C"/>
+
+<!-- Box 5: IN ZONE -->
+<rect x="1272" y="228" width="210" height="56" fill="#FFF7F4" rx="4" stroke="#E8693C" stroke-width="1.5"/>
+<text x="1377" y="252" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#B45309" text-anchor="middle">Arbitration /</text>
+<text x="1377" y="270" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#B45309" text-anchor="middle">final decision</text>
+<line x1="1482" y1="256" x2="1546" y2="256" stroke="#C4C8D2" stroke-width="1.5" stroke-dasharray="5,3"/>
+<polygon points="1541,251 1551,256 1541,261" fill="#C4C8D2"/>
+
+<!-- Box 6: dashed -->
+<rect x="1550" y="228" width="210" height="56" fill="#FFFFFF" rx="4" stroke="#C4C8D2" stroke-width="1" stroke-dasharray="5,3"/>
+<text x="1655" y="252" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="middle">Outcome &amp;</text>
+<text x="1655" y="270" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="middle">learning</text>
+
+<!-- ── TRIANGLES: colour-coded by pattern, staggered at shared steps ──
+     P1 Orange (Triage): S2=543, S3=809
+     P2 Blue (Before reading): S3=833, S4=1087
+     P3 Purple (Second reader): S4=1111, S5=1365  ← in zone
+     P4 Teal (Safety net): S5=1389, S6=1655        ← S5 in zone
+     Tip y=290, base y=306                                              -->
+
+<!-- P1 Orange (Triage) -->
+<polygon points="543,290 531,306 555,306" fill="#E8693C"/>
+<polygon points="809,290 797,306 821,306" fill="#E8693C"/>
+
+<!-- P2 Blue (Before reading) -->
+<polygon points="833,290 821,306 845,306" fill="#124BCE"/>
+<polygon points="1087,290 1075,306 1099,306" fill="#124BCE"/>
+
+<!-- P3 Purple (Second reader — anchor) -->
+<polygon points="1111,290 1099,306 1123,306" fill="#6D28D9"/>
+<polygon points="1365,290 1353,306 1377,306" fill="#6D28D9"/>
+
+<!-- P4 Teal (Safety net) -->
+<polygon points="1389,290 1377,306 1401,306" fill="#0F766E"/>
+<polygon points="1655,290 1643,306 1667,306" fill="#0F766E"/>
+
+<!-- Count labels -->
+<text x="543" y="320" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#9CA3AF" text-anchor="middle">×1</text>
+<text x="821" y="320" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#9CA3AF" text-anchor="middle">×2</text>
+<text x="1099" y="320" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#E8693C" text-anchor="middle">×2</text>
+<text x="1377" y="320" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#E8693C" text-anchor="middle">×2</text>
+<text x="1655" y="320" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="600" fill="#9CA3AF" text-anchor="middle">×1</text>
+
+<!-- ── SPAN BARS: ordered by AI entry point (early → late) ──
+     P1 Triage    (Orange): steps 1–2 → x=160–648,  y_centre=338
+     P2 Pre-read  (Blue)  : steps 2–3 → x=438–926,  y_centre=358
+     P3 2nd read  (Purple): steps 3–4 → x=716–1204, y_centre=378
+     P4 Safety    (Teal)  : steps 4–5 → x=994–1482, y_centre=398 -->
+
+<!-- P1 Triage (Orange) -->
+<text x="155" y="343" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#92400E" text-anchor="end">1 TRIAGE</text>
+<rect x="160" y="334" width="488" height="8" fill="#E8693C" rx="4" opacity="0.7"/>
+
+<!-- P2 Before reading (Blue) -->
+<text x="155" y="363" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#1E3A8A" text-anchor="end">2 PRE-READ</text>
+<rect x="438" y="354" width="488" height="8" fill="#124BCE" rx="4" opacity="0.7"/>
+
+<!-- P3 Second reader (Purple) — ANCHOR -->
+<text x="155" y="383" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#4C1D95" text-anchor="end">3 2ND READ ★</text>
+<rect x="716" y="374" width="488" height="8" fill="#6D28D9" rx="4" opacity="0.7"/>
+
+<!-- P4 Safety net (Teal) -->
+<text x="155" y="403" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="700" fill="#134E4A" text-anchor="end">4 SAFETY NET</text>
+<rect x="994" y="394" width="488" height="8" fill="#0F766E" rx="4" opacity="0.7"/>
+
+<!-- Highlight zone bottom border -->
+<line x1="990" y1="466" x2="1488" y2="466" stroke="#E8693C" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+
+<!-- ── LEGEND ── -->
+<polygon points="1350,454 1344,464 1356,464" fill="#6B7280"/>
+<text x="1360" y="463" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B7280">Disagreement point</text>
+<rect x="1490" y="456" width="32" height="7" fill="#6B7280" rx="3" opacity="0.6"/>
+<text x="1528" y="463" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B7280">AI intervention range</text>
+
+<!-- ── 4 DETAIL CARDS ──
+     Order: 1=Triage, 2=Before reading, 3=Second reader (ANCHOR), 4=Safety net
+     w=390, gap=10, x: 160, 560, 960, 1360; y=478–826                       -->
+
+<!-- Card 1: P1 Triage (Orange) -->
+<rect x="160" y="478" width="390" height="348" fill="#FDF1EC" rx="6"/>
+<rect x="160" y="478" width="390" height="46" fill="#E8693C" rx="6"/>
+<rect x="160" y="506" width="390" height="18" fill="#E8693C"/>
+<text x="180" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">1 — AI as triage</text>
+<text x="370" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="rgba(255,255,255,0.7)" text-anchor="end">PRE-QUEUE</text>
+<text x="180" y="544" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI sorts cases before any radiologist reads</text>
+<line x1="180" y1="558" x2="530" y2="558" stroke="#C4C8D2" stroke-width="1"/>
+<polygon points="180,572 172,584 188,584" fill="#E8693C"/>
+<text x="196" y="582" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#92400E">Step 2:</text>
+<text x="180" y="600" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI marks a case low-risk — radiologist disagrees</text>
+<polygon points="180,622 172,634 188,634" fill="#E8693C"/>
+<text x="196" y="632" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#92400E">Step 3:</text>
+<text x="180" y="650" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI's ranking conflicts with the radiologist's judgement</text>
+<line x1="180" y1="668" x2="530" y2="668" stroke="#C4C8D2" stroke-width="1"/>
+<text x="180" y="688" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280">Conflict is hidden — never surfaced</text>
+<text x="180" y="706" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280">as a direct disagreement.</text>
+
+<!-- Card 2: P2 Before reading (Blue) -->
+<rect x="560" y="478" width="390" height="348" fill="#EBF0FB" rx="6"/>
+<rect x="560" y="478" width="390" height="46" fill="#124BCE" rx="6"/>
+<rect x="560" y="506" width="390" height="18" fill="#124BCE"/>
+<text x="580" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">2 — AI before reading</text>
+<text x="930" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="rgba(255,255,255,0.7)" text-anchor="end">PRE-READ</text>
+<text x="580" y="544" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI reads first; radiologist reads without seeing it</text>
+<line x1="580" y1="558" x2="930" y2="558" stroke="#C4C8D2" stroke-width="1"/>
+<polygon points="580,572 572,584 588,584" fill="#124BCE"/>
+<text x="596" y="582" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Step 3:</text>
+<text x="580" y="600" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">Radiologist overrides AI's read — no record of why</text>
+<polygon points="580,622 572,634 588,634" fill="#124BCE"/>
+<text x="596" y="632" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#1E3A8A">Step 4:</text>
+<text x="580" y="650" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI's earlier read influences the final outcome</text>
+<line x1="580" y1="668" x2="930" y2="668" stroke="#C4C8D2" stroke-width="1"/>
+<text x="580" y="688" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280">No moment to discuss or record</text>
+<text x="580" y="706" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280">the conflict between AI and radiologist.</text>
+
+<!-- Card 3: P3 Second reader (Purple) — ANCHOR -->
+<rect x="960" y="478" width="390" height="348" fill="#EEE8FC" rx="6" stroke="#6D28D9" stroke-width="2"/>
+<rect x="960" y="478" width="390" height="46" fill="#6D28D9" rx="6"/>
+<rect x="960" y="506" width="390" height="18" fill="#6D28D9"/>
+<text x="980" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">3 — AI as second reader</text>
+<text x="1330" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="600" fill="#E9D5FF" text-anchor="end">SELECTED ANCHOR ★</text>
+<text x="980" y="544" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">Radiologist reads first; AI reads second; results compared</text>
+<line x1="980" y1="558" x2="1330" y2="558" stroke="#C4C8D2" stroke-width="1"/>
+<polygon points="980,572 972,584 988,584" fill="#6D28D9"/>
+<text x="996" y="582" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#4C1D95">Step 4:</text>
+<text x="980" y="600" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI and radiologist reach opposite conclusions</text>
+<polygon points="980,622 972,634 988,634" fill="#6D28D9"/>
+<text x="996" y="632" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#4C1D95">Step 5 — Arbitration:</text>
+<text x="980" y="650" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">No protocol for who decides or how</text>
+<line x1="980" y1="668" x2="1330" y2="668" stroke="#C4C8D2" stroke-width="1"/>
+<text x="980" y="688" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6D28D9">Conflict is explicit — the clearest point</text>
+<text x="980" y="706" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6D28D9">for a structured response in the workflow.</text>
+
+<!-- Card 4: P4 Safety net (Teal) -->
+<rect x="1360" y="478" width="390" height="348" fill="#E6F4F3" rx="6"/>
+<rect x="1360" y="478" width="390" height="46" fill="#0F766E" rx="6"/>
+<rect x="1360" y="506" width="390" height="18" fill="#0F766E"/>
+<text x="1380" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">4 — AI as safety net</text>
+<text x="1730" y="507" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="400" fill="rgba(255,255,255,0.7)" text-anchor="end">POST-READ</text>
+<text x="1380" y="544" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI checks the case after radiologists have decided</text>
+<line x1="1380" y1="558" x2="1730" y2="558" stroke="#C4C8D2" stroke-width="1"/>
+<polygon points="1380,572 1372,584 1388,584" fill="#0F766E"/>
+<text x="1396" y="582" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#134E4A">Step 5:</text>
+<text x="1380" y="600" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">AI flags a case already closed as safe</text>
+<polygon points="1380,622 1372,634 1388,634" fill="#0F766E"/>
+<text x="1396" y="632" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#134E4A">Step 6:</text>
+<text x="1380" y="650" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#374151">Audit shows persistent gaps between AI and radiologist</text>
+<line x1="1380" y1="668" x2="1730" y2="668" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1380" y="688" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280">Conflict surfaces after the decision is final —</text>
+<text x="1380" y="706" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280">too late to change the patient's outcome.</text>
+
+<!-- BODY + TAKEAWAY -->
+<text x="160" y="870" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="400" fill="#6B7280">Analytical frame only — not a proposed NHS workflow. Disagreement at Steps 4–5 directly determines recall or no recall. This is where a structured response matters most.</text>
+<text x="160" y="920" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="700" fill="#124BCE">Pattern 3 makes disagreement visible before the final decision — where a structured service response can still support review, arbitration and learning.</text>
+
+</svg>

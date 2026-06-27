@@ -1,0 +1,64 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">REFLECTION</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" style="">26 / 29</text>
+<text x="160" y="172" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" style="">The gap was governance, not detection.</text>
+<text x="160" y="256" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Readyology showed us that service design can make AI accountability manageable.</text>
+<text x="160" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">What we learned</text>
+<text x="160" y="378" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">about the problem</text>
+<line x1="160" y1="428" x2="640" y2="428" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="167" cy="464" r="4" fill="#124BCE"/>
+<text x="188" y="472" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Disagreement is a governance</text>
+<text x="188" y="500" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">failure, not a technical one</text>
+<circle cx="167" cy="532" r="4" fill="#124BCE"/>
+<text x="188" y="540" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Human-AI trust is calibrated through</text>
+<text x="188" y="568" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">evidence</text>
+<circle cx="167" cy="600" r="4" fill="#124BCE"/>
+<text x="188" y="608" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">The service layer must be invisible</text>
+<text x="188" y="636" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">to be adopted</text>
+<circle cx="167" cy="668" r="4" fill="#124BCE"/>
+<text x="188" y="676" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Learning only happens when recording</text>
+<text x="188" y="704" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">is low-burden</text>
+<circle cx="167" cy="736" r="4" fill="#124BCE"/>
+<text x="188" y="744" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Arbitration means consensus, not</text>
+<text x="188" y="772" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">formal judgment</text>
+<text x="720" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#6B7280" text-anchor="start" style="">What we learned</text>
+<text x="720" y="378" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#6B7280" text-anchor="start" style="">about service design</text>
+<line x1="720" y1="428" x2="1200" y2="428" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="727" cy="464" r="4" fill="#6B7280"/>
+<text x="748" y="472" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Systems thinking revealed hidden</text>
+<text x="748" y="500" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">actor relationships</text>
+<circle cx="727" cy="532" r="4" fill="#6B7280"/>
+<text x="748" y="540" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Blueprint exposed front-stage vs</text>
+<text x="748" y="568" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">back-stage gaps</text>
+<circle cx="727" cy="600" r="4" fill="#6B7280"/>
+<text x="748" y="608" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Theory of change kept decisions</text>
+<text x="748" y="636" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">evidence-anchored</text>
+<circle cx="727" cy="668" r="4" fill="#6B7280"/>
+<text x="748" y="676" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">User testing surfaced assumptions we</text>
+<text x="748" y="704" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">had not questioned</text>
+<circle cx="727" cy="736" r="4" fill="#6B7280"/>
+<text x="748" y="744" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Research rigour makes design</text>
+<text x="748" y="772" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">decisions defensible</text>
+<text x="1280" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">Next steps</text>
+<line x1="1280" y1="428" x2="1760" y2="428" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="1287" cy="464" r="4" fill="#124BCE"/>
+<text x="1308" y="472" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Full radiologist validation study</text>
+<text x="1308" y="500" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">with NHS trust</text>
+<circle cx="1287" cy="532" r="4" fill="#124BCE"/>
+<text x="1308" y="540" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Integration pathway for existing</text>
+<text x="1308" y="568" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">workstations</text>
+<circle cx="1287" cy="600" r="4" fill="#124BCE"/>
+<text x="1308" y="608" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Governance and audit pilot with</text>
+<text x="1308" y="636" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">service leads</text>
+<circle cx="1287" cy="668" r="4" fill="#124BCE"/>
+<text x="1308" y="676" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">AI calibration loop design and</text>
+<text x="1308" y="704" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">outcome tracking</text>
+<circle cx="1287" cy="736" r="4" fill="#124BCE"/>
+<text x="1308" y="744" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Expand to other AI-human</text>
+<text x="1308" y="772" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">disagreement contexts</text>
+<line x1="160" y1="960" x2="1760" y2="960" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="1042" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start">Readyology is designed to fill that governance gap.</text>
+</svg>

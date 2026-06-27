@@ -1,0 +1,17 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#0A1628"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#9CA3AF" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#9CA3AF" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="end" style="">1 / 21</text>
+<text x="120" y="520" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="128" font-weight="700" text-anchor="start"><tspan fill="#124BCE" font-style="italic">R</tspan><tspan fill="#FFFFFF">ead</tspan><tspan fill="#124BCE">y</tspan><tspan fill="#FFFFFF">ology</tspan></text>
+<text x="120" y="584" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">A lightweight service layer for AI-human</text>
+<text x="120" y="622" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">disagreement in breast cancer screening.</text>
+<text x="120" y="1024" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="16" font-weight="400" fill="#4B5563" text-anchor="start" style="">Royal College of Art  ·  IRP 2025–26</text>
+<text x="1040" y="380" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">Making AI-human disagreement</text>
+<text x="1040" y="450" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">visible, manageable</text>
+<text x="1040" y="520" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="52" font-weight="700" fill="#124BCE" text-anchor="start" style="">and learnable.</text>
+<line x1="1040" y1="556" x2="1800" y2="556" stroke="#1E3A5F" stroke-width="1"/>
+<text x="1040" y="616" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">For: Breast Advanced Practitioners</text>
+<text x="1040" y="648" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Senior Radiologists  ·  NHS Service Leads</text>
+</svg>

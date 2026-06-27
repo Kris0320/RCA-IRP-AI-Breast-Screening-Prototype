@@ -21,7 +21,7 @@ Build a single-page interactive prototype that shows:
 5. A soft intervention panel appearing.
 6. A warm handover card being prepared.
 7. A non-blame decision receipt being generated.
-8. The case being added to a Care Loop / team calibration review.
+8. The case being added to the Disagreement Case Library for team calibration and future arbitration reference.
 
 ## What Claude Code should not build
 

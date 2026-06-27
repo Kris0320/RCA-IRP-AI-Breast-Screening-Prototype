@@ -1,0 +1,86 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3">APPENDIX</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">A1 / A2</text>
+<text x="160" y="172" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start">Two stakeholders. One shared gap.</text>
+<text x="160" y="220" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">The reading practitioner and the arbitration lead both encounter AI disagreement without structured support.</text>
+<line x1="160" y1="248" x2="1760" y2="248" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="160" y="268" width="760" height="774" fill="#FFFFFF" rx="12" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="298" cy="406" r="110" fill="#D0D4DE" stroke="#B8BDCC" stroke-width="2"/>
+<circle cx="298" cy="384" r="30" fill="#B0B5C4"/>
+<circle cx="298" cy="384" r="11" fill="#C8CCDA"/>
+<ellipse cx="298" cy="468" rx="60" ry="40" fill="#B0B5C4"/>
+<circle cx="298" cy="406" r="110" fill="none" stroke="#EFF0F2" stroke-width="4"/>
+<circle cx="298" cy="406" r="113" fill="none" stroke="#C4C8D2" stroke-width="1.5"/>
+<text x="298" y="536" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="middle">[ photo ]</text>
+<text x="432" y="308" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Breast Advanced</text>
+<text x="432" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Practitioner</text>
+<text x="432" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" fill="#E8693C" text-anchor="start">Primary Image Reader</text>
+<line x1="432" y1="392" x2="896" y2="392" stroke="#C4C8D2" stroke-width="1"/>
+<text x="432" y="412" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#6B7280" text-anchor="start">Primary reader in NHS breast screening. Reads</text>
+<text x="432" y="434" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#6B7280" text-anchor="start">mammograms independently before AI output is revealed.</text>
+<text x="184" y="560" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="1">CORE TASKS</text>
+<line x1="184" y1="574" x2="896" y2="574" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="191" cy="592" r="4" fill="#124BCE"/>
+<text x="204" y="598" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">First or second independent reader</text>
+<circle cx="191" cy="620" r="4" fill="#124BCE"/>
+<text x="204" y="626" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Audits image quality under PGMI standards</text>
+<circle cx="191" cy="648" r="4" fill="#124BCE"/>
+<text x="204" y="654" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Reports screening discrepancies to MDT</text>
+<text x="184" y="690" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#E8693C" text-anchor="start" letter-spacing="1">KEY CHALLENGES</text>
+<line x1="184" y1="704" x2="896" y2="704" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="191" cy="722" r="4" fill="#E8693C"/>
+<text x="204" y="728" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Rigid reading volume targets</text>
+<circle cx="191" cy="750" r="4" fill="#E8693C"/>
+<text x="204" y="756" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Context-switching from mobile van to station</text>
+<circle cx="191" cy="778" r="4" fill="#E8693C"/>
+<text x="204" y="784" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Visual fatigue across high-volume batch sessions</text>
+<rect x="184" y="822" width="200" height="46" fill="#EAECF2" rx="6"/>
+<text x="194" y="835" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1">NHS GRADE</text>
+<text x="194" y="855" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Band 7</text>
+<rect x="394" y="822" width="240" height="46" fill="#EAECF2" rx="6"/>
+<text x="404" y="835" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1">ANNUAL TARGET</text>
+<text x="404" y="855" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">≥5,000 Cases</text>
+<line x1="184" y1="880" x2="896" y2="880" stroke="#C4C8D2" stroke-width="1"/>
+<text x="184" y="900" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic">"After the mobile van, I switch immediately into focused reading mode. No gap. No support."</text>
+<rect x="1000" y="268" width="760" height="774" fill="#FFFFFF" rx="12" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="1138" cy="406" r="110" fill="#D0D4DE" stroke="#B8BDCC" stroke-width="2"/>
+<circle cx="1138" cy="384" r="30" fill="#B0B5C4"/>
+<circle cx="1138" cy="384" r="11" fill="#C8CCDA"/>
+<ellipse cx="1138" cy="468" rx="60" ry="40" fill="#B0B5C4"/>
+<circle cx="1138" cy="406" r="110" fill="none" stroke="#EFF0F2" stroke-width="4"/>
+<circle cx="1138" cy="406" r="113" fill="none" stroke="#C4C8D2" stroke-width="1.5"/>
+<text x="1138" y="536" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="middle">[ photo ]</text>
+<text x="1272" y="308" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Consultant Breast</text>
+<text x="1272" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#111827" text-anchor="start">Radiographer</text>
+<text x="1272" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" fill="#E8693C" text-anchor="start">Assessment Clinic &amp; Arbitration Lead</text>
+<line x1="1272" y1="392" x2="1736" y2="392" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1272" y="412" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#6B7280" text-anchor="start">Leads arbitration panels and consensus meetings.</text>
+<text x="1272" y="434" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#6B7280" text-anchor="start">Reviews recalled patients and AI evidence under high cognitive load.</text>
+<text x="1024" y="560" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="1">CORE TASKS</text>
+<line x1="1024" y1="574" x2="1736" y2="574" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="1031" cy="592" r="4" fill="#124BCE"/>
+<text x="1044" y="598" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Reads screening mammograms in batches</text>
+<circle cx="1031" cy="620" r="4" fill="#124BCE"/>
+<text x="1044" y="626" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Reviews recalled patients at assessment clinic</text>
+<circle cx="1031" cy="648" r="4" fill="#124BCE"/>
+<text x="1044" y="654" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Joins consensus and MDT meetings</text>
+<text x="1024" y="690" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#E8693C" text-anchor="start" letter-spacing="1">KEY CHALLENGES</text>
+<line x1="1024" y1="704" x2="1736" y2="704" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="1031" cy="722" r="4" fill="#E8693C"/>
+<text x="1044" y="728" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">High psychological load in arbitration</text>
+<circle cx="1031" cy="750" r="4" fill="#E8693C"/>
+<text x="1044" y="756" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Breaking distressing biopsy results to patients</text>
+<circle cx="1031" cy="778" r="4" fill="#E8693C"/>
+<text x="1044" y="784" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Heavy training load amid workforce shortages</text>
+<rect x="1024" y="822" width="200" height="46" fill="#EAECF2" rx="6"/>
+<text x="1034" y="835" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1">NHS GRADE</text>
+<text x="1034" y="855" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Band 8b</text>
+<rect x="1234" y="822" width="240" height="46" fill="#EAECF2" rx="6"/>
+<text x="1244" y="835" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1">ROLE TYPE</text>
+<text x="1244" y="855" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Arbitration Lead</text>
+<line x1="1024" y1="880" x2="1736" y2="880" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1024" y="900" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic">"Keep it simple. No extra steps for the radiologist."</text>
+</svg>

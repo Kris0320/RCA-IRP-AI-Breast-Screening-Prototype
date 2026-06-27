@@ -1,0 +1,31 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="110" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="52" font-weight="700" fill="#111827" text-anchor="start">Breast Cancer Screening at Scale</text>
+<text x="80" y="150" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="normal" fill="#6B7280" text-anchor="start">A high-stakes, high-volume system under increasing pressure.</text>
+<rect x="80" y="196" width="262" height="230" fill="#F3F4F6" rx="10"/>
+<text x="104" y="268" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="700" fill="#2563EB" text-anchor="start">2M</text>
+<text x="104" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#111827" text-anchor="start">Mammograms</text>
+<text x="104" y="334" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">performed in the</text>
+<text x="104" y="354" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">UK each year</text>
+<rect x="366" y="196" width="262" height="230" fill="#F3F4F6" rx="10"/>
+<text x="390" y="268" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="700" fill="#2563EB" text-anchor="start">29%</text>
+<text x="390" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#111827" text-anchor="start">Radiologist shortage</text>
+<text x="390" y="334" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">and growing</text>
+<rect x="652" y="196" width="262" height="230" fill="#F3F4F6" rx="10"/>
+<text x="676" y="268" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="700" fill="#2563EB" text-anchor="start">100%</text>
+<text x="676" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#111827" text-anchor="start">NHS departments</text>
+<text x="676" y="334" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">unable to meet</text>
+<text x="676" y="354" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">demand within working hours</text>
+<rect x="938" y="196" width="262" height="230" fill="#F3F4F6" rx="10"/>
+<text x="962" y="268" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="700" fill="#2563EB" text-anchor="start">40%</text>
+<text x="962" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="600" fill="#111827" text-anchor="start">Potential workload</text>
+<text x="962" y="334" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">reduction with</text>
+<text x="962" y="354" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">AI support</text>
+<rect x="80" y="450" width="1120" height="2" fill="#E5E7EB"/>
+<text font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="normal" fill="#111827" text-anchor="start">
+  <tspan x="80" y="478.0">AI can support detection and workload reduction.</tspan>
+  <tspan x="80" y="504.35">But AI also changes clinical judgement, responsibility and workflow.</tspan>
+  <tspan x="80" y="530.7">Disagreement becomes a new service moment that needs design.</tspan>
+</text>
+</svg>

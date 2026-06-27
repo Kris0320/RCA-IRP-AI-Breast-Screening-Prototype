@@ -1,0 +1,39 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 03 The Scale -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="96" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Breast Cancer Screening at Scale</text>
+<text x="120" y="144" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start">A high-stakes, high-volume system under increasing pressure.</text>
+<rect x="120" y="176" width="402" height="540" fill="#EAF3FF" rx="12"/>
+<rect x="120" y="176" width="402" height="8" fill="#124BCE" rx="4"/>
+<rect x="120" y="180" width="402" height="4" fill="#124BCE" rx="0"/>
+<text x="152" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="80" font-weight="700" fill="#124BCE" text-anchor="start">2M</text>
+<text x="152" y="362" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#1F2937" text-anchor="start">Mammograms</text>
+<text x="152" y="400" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">performed in the UK</text>
+<text x="152" y="425" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">each year</text>
+<rect x="546" y="176" width="402" height="540" fill="#FFF7ED" rx="12"/>
+<rect x="546" y="176" width="402" height="8" fill="#EA580C" rx="4"/>
+<rect x="546" y="180" width="402" height="4" fill="#EA580C" rx="0"/>
+<text x="578" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="80" font-weight="700" fill="#EA580C" text-anchor="start">29%</text>
+<text x="578" y="362" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#1F2937" text-anchor="start">Radiologist shortage</text>
+<text x="578" y="400" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">and growing — unable</text>
+<text x="578" y="425" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">to meet demand</text>
+<rect x="972" y="176" width="402" height="540" fill="#FFFBEB" rx="12"/>
+<rect x="972" y="176" width="402" height="8" fill="#F59E0B" rx="4"/>
+<rect x="972" y="180" width="402" height="4" fill="#F59E0B" rx="0"/>
+<text x="1004" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="80" font-weight="700" fill="#F59E0B" text-anchor="start">100%</text>
+<text x="1004" y="362" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#1F2937" text-anchor="start">NHS departments</text>
+<text x="1004" y="400" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">unable to meet demand</text>
+<text x="1004" y="425" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">within working hours</text>
+<rect x="1398" y="176" width="402" height="540" fill="#F0FDF4" rx="12"/>
+<rect x="1398" y="176" width="402" height="8" fill="#16A34A" rx="4"/>
+<rect x="1398" y="180" width="402" height="4" fill="#16A34A" rx="0"/>
+<text x="1430" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="80" font-weight="700" fill="#16A34A" text-anchor="start">40%</text>
+<text x="1430" y="362" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#1F2937" text-anchor="start">Potential reduction</text>
+<text x="1430" y="400" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">in workload with</text>
+<text x="1430" y="425" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">AI-assisted screening</text>
+<rect x="120" y="740" width="1680" height="3" fill="#E5E7EB" rx="1"/>
+<text x="120" y="786" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#111827" text-anchor="start">AI can support detection and workload reduction.</text>
+<text x="120" y="816" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">But AI also changes clinical judgement, responsibility and workflow.</text>
+<text x="120" y="846" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#124BCE" text-anchor="start">Disagreement becomes a new service moment that needs design.</text>
+</svg>

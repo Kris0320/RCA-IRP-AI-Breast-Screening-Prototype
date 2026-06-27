@@ -1,0 +1,52 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 13 Theory of Change -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="88" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Theory of Change</text>
+<text x="120" y="136" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start">Our design hypothesis — and how we validated it.</text>
+<line x1="120" y1="160" x2="1800" y2="160" stroke="#E5E7EB" stroke-width="1.5"/>
+<rect x="120" y="176" width="544" height="480" fill="#EAF3FF" rx="14"/>
+<rect x="120" y="176" width="544" height="12" fill="#124BCE" rx="7"/>
+<rect x="120" y="182" width="544" height="6" fill="#124BCE" rx="10"/>
+<text x="148" y="248" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" fill="#124BCE" text-anchor="start">IF</text>
+<text x="148" y="306" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">breast cancer screening teams</text>
+<text x="148" y="336" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">have a lightweight service</text>
+<text x="148" y="366" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">layer that surfaces AI-human</text>
+<text x="148" y="396" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">disagreement — with soft cues,</text>
+<text x="148" y="426" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">structured review, and a</text>
+<text x="148" y="456" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">traceable decision record —</text>
+<text x="678" y="426" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="400" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="688" y="176" width="544" height="480" fill="#FFFBEB" rx="14"/>
+<rect x="688" y="176" width="544" height="12" fill="#F59E0B" rx="7"/>
+<rect x="688" y="182" width="544" height="6" fill="#F59E0B" rx="10"/>
+<text x="716" y="248" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" fill="#F59E0B" text-anchor="start">THEN</text>
+<text x="716" y="306" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">radiologists can detect,</text>
+<text x="716" y="336" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">resolve and learn from</text>
+<text x="716" y="366" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">AI-human disagreement in a way</text>
+<text x="716" y="396" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">that is accountable,</text>
+<text x="716" y="426" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">transparent and consistent,</text>
+<text x="716" y="456" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">without adding cognitive</text>
+<text x="716" y="486" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">burden to an already</text>
+<text x="716" y="516" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">time-pressured workflow.</text>
+<text x="1246" y="426" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="400" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="1256" y="176" width="544" height="480" fill="#F0FDF4" rx="14"/>
+<rect x="1256" y="176" width="544" height="12" fill="#16A34A" rx="7"/>
+<rect x="1256" y="182" width="544" height="6" fill="#16A34A" rx="10"/>
+<text x="1284" y="248" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" fill="#16A34A" text-anchor="start">SO THAT</text>
+<text x="1284" y="306" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">disagreement becomes an</text>
+<text x="1284" y="336" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">institutional learning</text>
+<text x="1284" y="366" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">resource, AI calibration</text>
+<text x="1284" y="396" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">improves over time, and women</text>
+<text x="1284" y="426" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">receive safer, more consistent</text>
+<text x="1284" y="456" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">recall decisions.</text>
+<line x1="120" y1="688" x2="1800" y2="688" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="120" y="726" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#1F2937" text-anchor="start">How we validated this:</text>
+<rect x="120" y="744" width="828" height="108" fill="#F8FAFC" rx="10"/>
+<rect x="120" y="744" width="6" height="108" fill="#124BCE" rx="3"/>
+<text x="146" y="786" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#111827" text-anchor="start">Expert test — Sophia Zackrisson</text>
+<text x="146" y="816" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Wireframe prototype · Soft cue model confirmed · Consensus review framing validated · 'Keep it simple. No extra steps.'</text>
+<rect x="972" y="744" width="828" height="108" fill="#F8FAFC" rx="10"/>
+<rect x="972" y="744" width="6" height="108" fill="#F59E0B" rx="3"/>
+<text x="998" y="786" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#111827" text-anchor="start">Usability test — medical student</text>
+<text x="998" y="816" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Interactive prototype · Low-burden design confirmed · RAG clarity tested · 'Real scenarios are fast. Design must be direct.'</text>
+</svg>

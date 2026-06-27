@@ -1,0 +1,7 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#F3F4F6"/>
+<rect x="80" y="80" width="1120" height="560" fill="#FFFFFF" rx="12" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="640" y="310" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="middle">Persona + Journey Breakdown</text>
+<text x="640" y="360" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#6B7280" text-anchor="middle">Breast Advanced Practitioner · Where the journey is most fragile</text>
+<text x="640" y="404" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#2563EB" text-anchor="middle">[ Diagram — Version 2 ]</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 20 Reflection + Learning Outcomes -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="88" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Reflection & Learning Outcomes</text>
+<text x="120" y="136" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start">What this project taught us — as designers and as researchers.</text>
+<line x1="120" y1="160" x2="1800" y2="160" stroke="#E5E7EB" stroke-width="1.5"/>
+<rect x="120" y="178" width="541" height="712" fill="#EAF3FF" rx="14"/>
+<rect x="120" y="178" width="541" height="12" fill="#124BCE" rx="7"/>
+<rect x="120" y="184" width="541" height="6" fill="#124BCE" rx="10"/>
+<text x="148" y="240" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#124BCE" text-anchor="start">What we learned</text>
+<text x="148" y="280" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#124BCE" text-anchor="start">about the problem</text>
+<line x1="148" y1="286" x2="633" y2="286" stroke="#124BCE" stroke-width="1.5"/>
+<circle cx="146" cy="302" r="7" fill="#124BCE"/>
+<text x="170" y="310" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Disagreement is a governance</text>
+<text x="170" y="336" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">failure, not a technical one</text>
+<circle cx="146" cy="402" r="7" fill="#124BCE"/>
+<text x="170" y="410" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Human-AI trust is calibrated</text>
+<text x="170" y="436" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">through evidence, not given</text>
+<circle cx="146" cy="502" r="7" fill="#124BCE"/>
+<text x="170" y="510" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">The service layer must be</text>
+<text x="170" y="536" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">invisible to be adopted</text>
+<circle cx="146" cy="602" r="7" fill="#124BCE"/>
+<text x="170" y="610" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Learning only happens when</text>
+<text x="170" y="636" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">recording is low-burden</text>
+<circle cx="146" cy="702" r="7" fill="#124BCE"/>
+<text x="170" y="710" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Arbitration means consensus</text>
+<text x="170" y="736" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">review, not formal judgment</text>
+<rect x="689" y="178" width="541" height="712" fill="#FFFBEB" rx="14"/>
+<rect x="689" y="178" width="541" height="12" fill="#F59E0B" rx="7"/>
+<rect x="689" y="184" width="541" height="6" fill="#F59E0B" rx="10"/>
+<text x="717" y="240" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#F59E0B" text-anchor="start">What we learned</text>
+<text x="717" y="280" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#F59E0B" text-anchor="start">about service design</text>
+<line x1="717" y1="286" x2="1202" y2="286" stroke="#F59E0B" stroke-width="1.5"/>
+<circle cx="715" cy="302" r="7" fill="#F59E0B"/>
+<text x="739" y="310" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Systems thinking revealed</text>
+<text x="739" y="336" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">hidden actor relationships</text>
+<circle cx="715" cy="402" r="7" fill="#F59E0B"/>
+<text x="739" y="410" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Blueprint exposed</text>
+<text x="739" y="436" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">front-stage vs back-stage</text>
+<text x="739" y="462" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">gaps</text>
+<circle cx="715" cy="502" r="7" fill="#F59E0B"/>
+<text x="739" y="510" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Theory of change kept design</text>
+<text x="739" y="536" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">decisions evidence-anchored</text>
+<circle cx="715" cy="602" r="7" fill="#F59E0B"/>
+<text x="739" y="610" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">User testing surfaced</text>
+<text x="739" y="636" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">assumptions we hadn't</text>
+<text x="739" y="662" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">questioned</text>
+<circle cx="715" cy="702" r="7" fill="#F59E0B"/>
+<text x="739" y="710" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Research rigour makes design</text>
+<text x="739" y="736" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">decisions defensible</text>
+<rect x="1258" y="178" width="541" height="712" fill="#F0FDF4" rx="14"/>
+<rect x="1258" y="178" width="541" height="12" fill="#16A34A" rx="7"/>
+<rect x="1258" y="184" width="541" height="6" fill="#16A34A" rx="10"/>
+<text x="1286" y="240" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#16A34A" text-anchor="start">Next steps</text>
+<line x1="1286" y1="286" x2="1771" y2="286" stroke="#16A34A" stroke-width="1.5"/>
+<circle cx="1284" cy="302" r="7" fill="#16A34A"/>
+<text x="1308" y="310" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Full radiologist validation</text>
+<text x="1308" y="336" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">study with NHS trust</text>
+<circle cx="1284" cy="402" r="7" fill="#16A34A"/>
+<text x="1308" y="410" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Integration pathway for</text>
+<text x="1308" y="436" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">existing reading</text>
+<text x="1308" y="462" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">workstations</text>
+<circle cx="1284" cy="502" r="7" fill="#16A34A"/>
+<text x="1308" y="510" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Governance and audit pilot</text>
+<text x="1308" y="536" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">with NHS service leads</text>
+<circle cx="1284" cy="602" r="7" fill="#16A34A"/>
+<text x="1308" y="610" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">AI calibration loop design</text>
+<text x="1308" y="636" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">and outcome tracking</text>
+<circle cx="1284" cy="702" r="7" fill="#16A34A"/>
+<text x="1308" y="710" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Expand support to other</text>
+<text x="1308" y="736" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">AI-human disagreement</text>
+<text x="1308" y="762" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">contexts</text>
+</svg>

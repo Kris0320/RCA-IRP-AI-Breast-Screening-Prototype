@@ -1,0 +1,106 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- HEADER -->
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3">RESEARCH</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">9 / 29</text>
+
+<!-- H1 -->
+<text x="160" y="154" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start">Standard practice: the double-reading workflow.</text>
+<text x="160" y="196" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">Before AI entered breast screening, disagreement between two radiologists was already a daily reality — handled by arbitration.</text>
+
+<!-- ─── 5 STEP CARDS ─────────────────────────────────────────────────────── -->
+<!-- Card dimensions: width=304, gap=20, start x=160 -->
+<!-- Positions: 160, 484, 808, 1132, 1456 -->
+<!-- Card height: y=238 to y=810 = 572px -->
+
+<!-- ── STEP 01: Invitation & Image Capture ── (grey) -->
+<rect x="160" y="238" width="304" height="572" fill="#EAECF2" rx="6" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="194" cy="282" r="22" fill="#6B7280"/>
+<text x="194" y="289" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">01</text>
+<text x="180" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Invitation &amp;</text>
+<text x="180" y="364" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Image Capture</text>
+<line x1="180" y1="388" x2="444" y2="388" stroke="#C4C8D2" stroke-width="1"/>
+<text x="180" y="416" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Woman attends</text>
+<text x="180" y="440" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">screening clinic.</text>
+<text x="180" y="472" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Mammogram taken</text>
+<text x="180" y="496" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">by radiographer.</text>
+<text x="180" y="536" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Images sent to</text>
+<text x="180" y="560" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">reading centre.</text>
+
+<!-- ── STEP 02: Reader 1 ── (grey) -->
+<rect x="484" y="238" width="304" height="572" fill="#EAECF2" rx="6" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="518" cy="282" r="22" fill="#6B7280"/>
+<text x="518" y="289" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">02</text>
+<text x="504" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Reader 1:</text>
+<text x="504" y="364" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Independent Read</text>
+<line x1="504" y1="388" x2="768" y2="388" stroke="#C4C8D2" stroke-width="1"/>
+<text x="504" y="416" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">First radiologist</text>
+<text x="504" y="440" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">reads independently.</text>
+<text x="504" y="472" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Records assessment:</text>
+<text x="504" y="496" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">normal or recall.</text>
+<text x="504" y="536" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Does not know</text>
+<text x="504" y="560" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Reader 2's view.</text>
+
+<!-- ── STEP 03: Reader 2 ── (grey) -->
+<rect x="808" y="238" width="304" height="572" fill="#EAECF2" rx="6" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="842" cy="282" r="22" fill="#6B7280"/>
+<text x="842" y="289" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">03</text>
+<text x="828" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Reader 2:</text>
+<text x="828" y="364" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Independent Read</text>
+<line x1="828" y1="388" x2="1092" y2="388" stroke="#C4C8D2" stroke-width="1"/>
+<text x="828" y="416" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Second radiologist</text>
+<text x="828" y="440" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">reads blind to</text>
+<text x="828" y="464" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Reader 1's result.</text>
+<text x="828" y="504" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">NHS standard</text>
+<text x="828" y="528" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">since 1988.</text>
+<text x="828" y="560" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start">Records assessment independently.</text>
+
+<!-- ── STEP 04: Disagreement ── (ORANGE) -->
+<rect x="1132" y="238" width="304" height="572" fill="#E8693C" rx="6"/>
+<circle cx="1166" cy="282" r="22" fill="rgba(0,0,0,0.25)"/>
+<text x="1166" y="289" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">04</text>
+<text x="1152" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">Disagreement</text>
+<text x="1152" y="364" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">Detected</text>
+<line x1="1152" y1="388" x2="1416" y2="388" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+<text x="1152" y="416" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">Results are compared.</text>
+<text x="1152" y="448" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">When Reader 1 and</text>
+<text x="1152" y="472" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">Reader 2 disagree,</text>
+<text x="1152" y="496" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">a third review</text>
+<text x="1152" y="520" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">is triggered.</text>
+<text x="1152" y="560" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">No structured record</text>
+<text x="1152" y="584" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">of why they disagreed.</text>
+
+<!-- ── STEP 05: Arbitration ── (ORANGE darker) -->
+<rect x="1456" y="238" width="304" height="572" fill="#C4502A" rx="6"/>
+<circle cx="1490" cy="282" r="22" fill="rgba(0,0,0,0.25)"/>
+<text x="1490" y="289" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">05</text>
+<text x="1476" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="start">Arbitration</text>
+<line x1="1476" y1="362" x2="1740" y2="362" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+<text x="1476" y="390" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">Senior radiologist</text>
+<text x="1476" y="414" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">reviews both reads</text>
+<text x="1476" y="438" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">and makes a</text>
+<text x="1476" y="462" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">final decision.</text>
+<text x="1476" y="502" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">Manual, slow, and</text>
+<text x="1476" y="526" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">unevenly recorded</text>
+<text x="1476" y="550" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">across hospitals.</text>
+<text x="1476" y="590" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">No feedback loop</text>
+<text x="1476" y="614" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.9)" text-anchor="start">for learning.</text>
+
+<!-- ── Orange zone label ──────────────────────────────────────────────────── -->
+<rect x="1132" y="830" width="628" height="28" fill="none"/>
+<line x1="1132" y1="830" x2="1760" y2="830" stroke="#E8693C" stroke-width="2"/>
+<text x="1446" y="858" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#E8693C" text-anchor="middle" letter-spacing="2">DISAGREEMENT ZONE — existing challenge before AI</text>
+
+<!-- Arrow connectors between cards -->
+<line x1="464" y1="524" x2="484" y2="524" stroke="#C4C8D2" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="788" y1="524" x2="808" y2="524" stroke="#C4C8D2" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="1112" y1="524" x2="1132" y2="524" stroke="#C4C8D2" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="1436" y1="524" x2="1456" y2="524" stroke="#C4C8D2" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+<!-- BODY + TAKEAWAY -->
+<text x="160" y="910" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">In NHS breast screening, every scan is reviewed independently by two radiologists. When both agree — the result stands. When they disagree — arbitration.</text>
+<text x="160" y="958" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start">Disagreement between readers is not new. How it is resolved has never been standardised.</text>
+</svg>

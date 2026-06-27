@@ -1,0 +1,33 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">TODAY</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" style="">2 / 29</text>
+<text x="160" y="172" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" style="">What we cover.</text>
+<line x1="160" y1="206" x2="224" y2="206" stroke="#124BCE" stroke-width="2"/>
+<text x="160" y="280" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">01</text>
+<text x="248" y="280" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start" style="">Context</text>
+<line x1="160" y1="296" x2="920" y2="296" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="344" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Scale of breast cancer screening in England and the AI inflection point</text>
+<text x="1000" y="280" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">02</text>
+<text x="1088" y="280" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start" style="">Research</text>
+<line x1="1000" y1="296" x2="1760" y2="296" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1000" y="344" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">How AI-human disagreement is handled today — and why it fails</text>
+<text x="160" y="476" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">03</text>
+<text x="248" y="476" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start" style="">Problem</text>
+<line x1="160" y1="492" x2="920" y2="492" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="540" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Three structural failure modes: System, Human, Data</text>
+<text x="1000" y="476" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">04</text>
+<text x="1088" y="476" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start" style="">Solution</text>
+<line x1="1000" y1="492" x2="1760" y2="492" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1000" y="540" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Readyology: three service touchpoints for disagreement support</text>
+<text x="160" y="672" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">05</text>
+<text x="248" y="672" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start" style="">Evidence</text>
+<line x1="160" y1="688" x2="920" y2="688" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="736" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Expert test + usability test — what we validated</text>
+<text x="1000" y="672" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">06</text>
+<text x="1088" y="672" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start" style="">Outcomes</text>
+<line x1="1000" y1="688" x2="1760" y2="688" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1000" y="736" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Business model, service blueprint, reflection</text>
+</svg>

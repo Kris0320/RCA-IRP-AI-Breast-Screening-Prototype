@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Introducing Readyology</text>
+<rect x="160" y="510" width="250" height="95" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="285.0" y="566.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Reading</text>
+<line x1="418" y1="558" x2="492" y2="558" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="500" y="510" width="250" height="95" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="625.0" y="566.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Comparison</text>
+<line x1="758" y1="558" x2="832" y2="558" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="840" y="510" width="250" height="95" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="965.0" y="566.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Arbitration</text>
+<line x1="1098" y1="558" x2="1172" y2="558" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1180" y="510" width="250" height="95" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1305.0" y="566.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Outcome</text>
+<line x1="1438" y1="558" x2="1512" y2="558" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1520" y="510" width="250" height="95" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1645.0" y="566.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Learning</text>
+<rect x="145" y="430" width="1500" height="245" rx="28" fill="none" stroke="#2368A2" stroke-width="5"/>
+<text x="895" y="420" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#2368A2" text-anchor="middle">Readyology service layer</text>
+<rect x="260" y="685" width="240" height="44" rx="22" fill="#EAF3FA" stroke="none" stroke-width="0"/><text x="380.0" y="714" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#2368A2" text-anchor="middle">Reading Support</text>
+<rect x="800" y="685" width="290" height="44" rx="22" fill="#EAF3FA" stroke="none" stroke-width="0"/><text x="945.0" y="714" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#2368A2" text-anchor="middle">Arbitration Support</text>
+<rect x="1320" y="685" width="250" height="44" rx="22" fill="#EAF3FA" stroke="none" stroke-width="0"/><text x="1445.0" y="714" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#2368A2" text-anchor="middle">Learning Support</text>
+<circle cx="680" cy="557" r="18" fill="#D99A22" stroke="none" stroke-width="0"/>
+<line x1="1430" y1="610" x2="1430" y2="760" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1430" y1="760" x2="670" y2="760" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

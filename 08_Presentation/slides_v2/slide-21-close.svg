@@ -1,0 +1,15 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 21 Close -->
+<rect width="1920" height="1080" fill="#124BCE"/>
+<rect x="0" y="0" width="940" height="1080" fill="#1F2933" rx="0"/>
+<rect x="0" y="0" width="9" height="1080" fill="#124BCE" rx="4"/>
+<text x="470" y="430" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="88" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan font-style="italic" fill="#124BCE">R</tspan><tspan>ead</tspan><tspan fill="#124BCE">y</tspan><tspan>ology</tspan></text>
+<text x="470" y="498" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">Pause. Breathe. Re-focus.</text>
+<text x="470" y="546" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#E5E7EB" text-anchor="middle">Protect your focus.</text>
+<text x="470" y="594" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#E5E7EB" text-anchor="middle">Protect the patient.</text>
+<text x="470" y="1020" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="middle">Royal College of Art  ·  IRP 2025–26</text>
+<text x="1450" y="400" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="80" font-weight="700" fill="#FFFFFF" text-anchor="middle">Thank you.</text>
+<text x="1450" y="468" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#E5E7EB" text-anchor="middle">Questions welcome.</text>
+<text x="1450" y="580" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#FFFFFF" text-anchor="middle">[Your name]</text>
+<text x="1450" y="624" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="middle">[RCA student email]</text>
+</svg>

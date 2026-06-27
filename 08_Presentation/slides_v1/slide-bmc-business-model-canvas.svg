@@ -1,0 +1,125 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="36" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="start">Business Model Canvas</text>
+<text x="80" y="54" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#6B7280" text-anchor="start">Readyology — AI-human disagreement support service for breast cancer screening</text>
+<rect x="80" y="66" width="185" height="552" fill="#F3F4F6" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="88" y="82" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280" text-anchor="start">KEY PARTNERS</text>
+<line x1="88" y1="87" x2="257" y2="87" stroke="#E5E7EB" stroke-width="0.8"/>
+<circle cx="92" cy="93" r="3" fill="#6B7280"/>
+<text x="102" y="98" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">NHS Breast Screening</text>
+<text x="102" y="112" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Programme</text>
+<circle cx="92" cy="129" r="3" fill="#6B7280"/>
+<text x="102" y="134" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">AI system vendors (DetectedX</text>
+<text x="102" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">etc.)</text>
+<circle cx="92" cy="165" r="3" fill="#6B7280"/>
+<text x="102" y="170" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">PACS / RIS system integrators</text>
+<circle cx="92" cy="201" r="3" fill="#6B7280"/>
+<text x="102" y="206" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Royal College of Radiologists</text>
+<circle cx="92" cy="237" r="3" fill="#6B7280"/>
+<text x="102" y="242" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">EDITH trial & research</text>
+<text x="102" y="256" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">partners</text>
+<rect x="320" y="66" width="160" height="274" fill="#F3F4F6" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="328" y="82" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280" text-anchor="start">KEY ACTIVITIES</text>
+<line x1="328" y1="87" x2="472" y2="87" stroke="#E5E7EB" stroke-width="0.8"/>
+<circle cx="332" cy="93" r="3" fill="#6B7280"/>
+<text x="342" y="98" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Disagreement detection &</text>
+<text x="342" y="112" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">soft-cue</text>
+<circle cx="332" cy="129" r="3" fill="#6B7280"/>
+<text x="342" y="134" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Consensus review support</text>
+<circle cx="332" cy="165" r="3" fill="#6B7280"/>
+<text x="342" y="170" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Decision record & audit</text>
+<text x="342" y="184" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">trail</text>
+<circle cx="332" cy="201" r="3" fill="#6B7280"/>
+<text x="342" y="206" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Learning case library</text>
+<text x="342" y="220" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">mgmt</text>
+<rect x="320" y="343" width="160" height="275" fill="#F3F4F6" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="328" y="359" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280" text-anchor="start">KEY RESOURCES</text>
+<line x1="328" y1="364" x2="472" y2="364" stroke="#E5E7EB" stroke-width="0.8"/>
+<circle cx="332" cy="370" r="3" fill="#6B7280"/>
+<text x="342" y="375" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Disagreement</text>
+<text x="342" y="389" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">classification logic</text>
+<circle cx="332" cy="406" r="3" fill="#6B7280"/>
+<text x="342" y="411" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Non-blame decision</text>
+<text x="342" y="425" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">receipt</text>
+<circle cx="332" cy="442" r="3" fill="#6B7280"/>
+<text x="342" y="447" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Case library</text>
+<text x="342" y="461" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">infrastructure</text>
+<circle cx="332" cy="478" r="3" fill="#6B7280"/>
+<text x="342" y="483" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Workstation integration</text>
+<text x="342" y="497" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">layer</text>
+<rect x="535" y="66" width="210" height="552" fill="#EFF6FF" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="543" y="82" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#2563EB" text-anchor="start">VALUE PROPOSITIONS</text>
+<line x1="543" y1="87" x2="737" y2="87" stroke="#2563EB" stroke-width="0.8"/>
+<circle cx="547" cy="93" r="3" fill="#2563EB"/>
+<text x="557" y="98" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">AI-human disagreement made</text>
+<text x="557" y="112" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">visible, manageable & learnable</text>
+<circle cx="547" cy="129" r="3" fill="#2563EB"/>
+<text x="557" y="134" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Lightweight — integrates into</text>
+<text x="557" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">existing workstation, no new</text>
+<text x="557" y="162" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">device</text>
+<circle cx="547" cy="165" r="3" fill="#2563EB"/>
+<text x="557" y="170" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Non-blame decision record for</text>
+<text x="557" y="184" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">accountability & governance</text>
+<circle cx="547" cy="201" r="3" fill="#2563EB"/>
+<text x="557" y="206" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Structured consensus review</text>
+<text x="557" y="220" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">support for difficult cases</text>
+<circle cx="547" cy="237" r="3" fill="#2563EB"/>
+<text x="557" y="242" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Audit trail & learning loop for</text>
+<text x="557" y="256" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">continuous calibration</text>
+<rect x="800" y="66" width="160" height="274" fill="#F3F4F6" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="808" y="82" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280" text-anchor="start">CUSTOMER RELATIONSHIPS</text>
+<line x1="808" y1="87" x2="952" y2="87" stroke="#E5E7EB" stroke-width="0.8"/>
+<circle cx="812" cy="93" r="3" fill="#6B7280"/>
+<text x="822" y="98" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">NHS Trust institutional</text>
+<text x="822" y="112" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">agreements</text>
+<circle cx="812" cy="129" r="3" fill="#6B7280"/>
+<text x="822" y="134" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Training & onboarding</text>
+<text x="822" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">support</text>
+<circle cx="812" cy="165" r="3" fill="#6B7280"/>
+<text x="822" y="170" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Governance audit reports</text>
+<circle cx="812" cy="201" r="3" fill="#6B7280"/>
+<text x="822" y="206" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Case library for teaching</text>
+<rect x="800" y="343" width="160" height="275" fill="#F3F4F6" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="808" y="359" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280" text-anchor="start">CHANNELS</text>
+<line x1="808" y1="364" x2="952" y2="364" stroke="#E5E7EB" stroke-width="0.8"/>
+<circle cx="812" cy="370" r="3" fill="#6B7280"/>
+<text x="822" y="375" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Existing reading</text>
+<text x="822" y="389" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">workstation</text>
+<circle cx="812" cy="406" r="3" fill="#6B7280"/>
+<text x="822" y="411" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">NHS IT procurement</text>
+<text x="822" y="425" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">pathway</text>
+<circle cx="812" cy="442" r="3" fill="#6B7280"/>
+<text x="822" y="447" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Clinical training &</text>
+<text x="822" y="461" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">onboarding</text>
+<circle cx="812" cy="478" r="3" fill="#6B7280"/>
+<text x="822" y="483" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Research partnership</text>
+<text x="822" y="497" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">route</text>
+<rect x="1015" y="66" width="185" height="552" fill="#EFF6FF" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="1023" y="82" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#2563EB" text-anchor="start">CUSTOMER SEGMENTS</text>
+<line x1="1023" y1="87" x2="1192" y2="87" stroke="#2563EB" stroke-width="0.8"/>
+<circle cx="1027" cy="93" r="3" fill="#2563EB"/>
+<text x="1037" y="98" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">NHS Breast Screening Units</text>
+<text x="1037" y="112" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">(primary institution)</text>
+<circle cx="1027" cy="129" r="3" fill="#2563EB"/>
+<text x="1037" y="134" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Breast Advanced Practitioners</text>
+<text x="1037" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">(primary daily user)</text>
+<circle cx="1027" cy="165" r="3" fill="#2563EB"/>
+<text x="1037" y="170" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Senior Radiologists</text>
+<text x="1037" y="184" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">(consensus review user)</text>
+<circle cx="1027" cy="201" r="3" fill="#2563EB"/>
+<text x="1037" y="206" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">NHS Service Leads (governance</text>
+<text x="1037" y="220" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">& audit user)</text>
+<rect x="80" y="622" width="532" height="90" fill="#F1F5F9" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="88" y="638" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#6B7280" text-anchor="start">COST STRUCTURE</text>
+<line x1="88" y1="643" x2="604" y2="643" stroke="#E5E7EB" stroke-width="0.8"/>
+<circle cx="92" cy="649" r="3" fill="#6B7280"/>
+<text x="102" y="654" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">Software dev & maintenance · Clinical validation & regulatory compliance · NHS</text>
+<text x="102" y="668" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">integration engineering · Data governance & security</text>
+<rect x="667" y="622" width="533" height="90" fill="#EFF6FF" rx="4" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="675" y="638" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" fill="#2563EB" text-anchor="start">REVENUE STREAMS</text>
+<line x1="675" y1="643" x2="1192" y2="643" stroke="#2563EB" stroke-width="0.8"/>
+<circle cx="679" cy="649" r="3" fill="#2563EB"/>
+<text x="689" y="654" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">NHS Trust per-site licensing · Governance reporting subscription · Training &</text>
+<text x="689" y="668" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" fill="#111827" text-anchor="start">calibration service · Research partnership fees</text>
+</svg>

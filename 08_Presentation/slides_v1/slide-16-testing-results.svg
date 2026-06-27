@@ -1,0 +1,53 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="100" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#111827" text-anchor="start">What We Tested. What We Learned.</text>
+<text x="80" y="144" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#6B7280" text-anchor="start">Two expert-led testing sessions. Clear signal on direction.</text>
+<line x1="80" y1="170" x2="1200" y2="170" stroke="#E5E7EB" stroke-width="1.5"/>
+<rect x="80" y="186" width="546" height="290" fill="#EFF6FF" rx="10"/>
+<text x="102" y="220" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#2563EB" text-anchor="start">Session 1 — Expert Prototype Test</text>
+<text x="102" y="248" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Sophia Zackrisson · Senior Consultant Radiologist</text>
+<text x="102" y="272" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Method: wireframe prototype walkthrough</text>
+<line x1="102" y1="288" x2="604" y2="288" stroke="#BFDBFE" stroke-width="1.5"/>
+<circle cx="102" cy="298" r="4" fill="#2563EB"/>
+<text x="116" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">"Keep it simple. No extra steps."</text>
+<circle cx="102" cy="330" r="4" fill="#2563EB"/>
+<text x="116" y="338" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">"Integrate into existing reading stations."</text>
+<circle cx="102" cy="362" r="4" fill="#2563EB"/>
+<text x="116" y="370" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Soft cue preferred over alert or alarm</text>
+<circle cx="102" cy="394" r="4" fill="#2563EB"/>
+<text x="116" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Consensus review, not formal 'arbitration'</text>
+<circle cx="102" cy="426" r="4" fill="#2563EB"/>
+<text x="116" y="434" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Reasoning tags: suggest + confirm, not manual</text>
+<rect x="654" y="186" width="546" height="290" fill="#FFFBEB" rx="10"/>
+<text x="676" y="220" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#F59E0B" text-anchor="start">Session 2 — Clinical Background Usability Test</text>
+<text x="676" y="248" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Medical student · Real clinical work experience</text>
+<text x="676" y="272" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Method: interactive prototype, screen session</text>
+<line x1="676" y1="288" x2="1178" y2="288" stroke="#FDE68A" stroke-width="1.5"/>
+<circle cx="676" cy="298" r="4" fill="#F59E0B"/>
+<text x="690" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">"Real scenarios are fast and very busy."</text>
+<circle cx="676" cy="330" r="4" fill="#F59E0B"/>
+<text x="690" y="338" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">"Design must be direct and non-disruptive."</text>
+<circle cx="676" cy="362" r="4" fill="#F59E0B"/>
+<text x="690" y="370" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Low cognitive burden is non-negotiable</text>
+<circle cx="676" cy="394" r="4" fill="#F59E0B"/>
+<text x="690" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Meetings are short — no lengthy input forms</text>
+<circle cx="676" cy="426" r="4" fill="#F59E0B"/>
+<text x="690" y="434" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Visual clarity of RAG states essential</text>
+<line x1="80" y1="494" x2="1200" y2="494" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="80" y="524" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start">Design response:</text>
+<circle cx="80" cy="550" r="5" fill="#2563EB"/>
+<text x="96" y="558" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Soft cues  >  interrupting alerts</text>
+<circle cx="360" cy="550" r="5" fill="#2563EB"/>
+<text x="376" y="558" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Suggested tags  >  manual classification</text>
+<circle cx="640" cy="550" r="5" fill="#2563EB"/>
+<text x="656" y="558" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Integrated into workstation  >  separate device</text>
+<circle cx="920" cy="550" r="5" fill="#2563EB"/>
+<text x="936" y="558" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">Decision receipt after review  >  real-time burden</text>
+<line x1="80" y1="586" x2="1200" y2="586" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="80" y="614" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#6B7280" text-anchor="start">Next steps:</text>
+<text x="80" y="640" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#2563EB" text-anchor="start">→ Full radiologist validation study</text>
+<text x="360" y="640" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#2563EB" text-anchor="start">→ NHS trust integration pathway</text>
+<text x="640" y="640" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#2563EB" text-anchor="start">→ Governance and audit pilot</text>
+<text x="920" y="640" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#2563EB" text-anchor="start">→ AI calibration loop design</text>
+</svg>

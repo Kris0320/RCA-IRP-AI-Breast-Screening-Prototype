@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Disagreement is not only a technical mismatch</text>
+<rect x="120" y="285" width="500" height="520" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="155" y="350" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#111827" text-anchor="start">System insight</text>
+<text x="155" y="420" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#111827" text-anchor="start">Observation</text>
+<text x="155" y="455" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">AI is inserted into workflows</text>
+<text x="155" y="483" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">designed for human-human review.</text>
+<text x="155" y="555" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#D99A22" text-anchor="start">Consequence</text>
+<text x="155" y="590" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Existing arbitration logic may not</text>
+<text x="155" y="618" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">fully support AI-human disagreement.</text>
+<text x="155" y="690" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#2368A2" text-anchor="start">Design implication</text>
+<text x="155" y="725" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Design support around arbitration</text>
+<text x="155" y="753" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">rules and handover.</text>
+<rect x="700" y="285" width="500" height="520" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="735" y="350" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#111827" text-anchor="start">Human insight</text>
+<text x="735" y="420" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#111827" text-anchor="start">Observation</text>
+<text x="735" y="455" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Radiologists remain accountable</text>
+<text x="735" y="483" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">while AI changes confidence and</text>
+<text x="735" y="511" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">override pressure.</text>
+<text x="735" y="555" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#D99A22" text-anchor="start">Consequence</text>
+<text x="735" y="590" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Support must protect independent</text>
+<text x="735" y="618" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">judgement while allowing review.</text>
+<text x="735" y="690" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#2368A2" text-anchor="start">Design implication</text>
+<text x="735" y="725" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Make AI evidence inspectable, not</text>
+<text x="735" y="753" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">instructional.</text>
+<rect x="1280" y="285" width="500" height="520" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1315" y="350" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#111827" text-anchor="start">Service insight</text>
+<text x="1315" y="420" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#111827" text-anchor="start">Observation</text>
+<text x="1315" y="455" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Systems may surface disagreement but</text>
+<text x="1315" y="483" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">not support review, record and</text>
+<text x="1315" y="511" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">learning.</text>
+<text x="1315" y="555" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#D99A22" text-anchor="start">Consequence</text>
+<text x="1315" y="590" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">The gap is not detection. It is what</text>
+<text x="1315" y="618" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">happens next.</text>
+<text x="1315" y="690" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#2368A2" text-anchor="start">Design implication</text>
+<text x="1315" y="725" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">Connect disagreement to review,</text>
+<text x="1315" y="753" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="400" fill="#5E6B7A" text-anchor="start">receipt and learning loop.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 08 AI Workflow Comparison -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="68" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">AI Workflow Comparison</text>
+<text x="120" y="110" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">Different AI placements change where disagreement appears — and what handling mechanism is needed.</text>
+<rect x="120" y="132" width="405" height="884" fill="#FFFBEB" rx="10"/>
+<rect x="120" y="132" width="405" height="10" fill="#F59E0B" rx="5"/>
+<rect x="120" y="137" width="405" height="5" fill="#F59E0B" rx="10"/>
+<rect x="132" y="150" width="32" height="28" fill="#F59E0B" rx="6"/>
+<text x="148" y="169" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="174" y="166" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#F59E0B" text-anchor="start">AI before reading</text>
+<text x="132" y="190" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Triage / risk stratification</text>
+<rect x="132" y="212" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="322" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Mammogram acquired</text>
+<text x="322" y="269" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#F59E0B" text-anchor="middle">↓</text>
+<rect x="132" y="270" width="381" height="50" fill="#F59E0B" rx="6" stroke="#F59E0B" stroke-width="1.5"/>
+<text x="322" y="302" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">AI triage & risk score</text>
+<text x="322" y="327" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#F59E0B" text-anchor="middle">↓</text>
+<rect x="132" y="328" width="381" height="50" fill="#F59E0B" rx="6" stroke="#F59E0B" stroke-width="1.5"/>
+<text x="322" y="360" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">Case routed by AI tier</text>
+<text x="322" y="385" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="132" y="386" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="322" y="418" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Human reads flagged cases</text>
+<text x="322" y="443" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#F59E0B" text-anchor="middle">↓</text>
+<rect x="132" y="444" width="381" height="50" fill="#F59E0B" rx="6" stroke="#F59E0B" stroke-width="1.5"/>
+<text x="322" y="476" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">Human ↔ AI routing mismatch</text>
+<text x="322" y="501" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="132" y="502" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="322" y="534" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Disagreement at boundary</text>
+<rect x="132" y="930" width="381" height="78" fill="#FFFFFF" rx="6" stroke="#F59E0B" stroke-width="1"/>
+<text x="142" y="952" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Risk: routing disagreement. Reader may override</text>
+<text x="142" y="970" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">AI triage.</text>
+<rect x="545" y="132" width="405" height="884" fill="#EAF3FF" rx="10"/>
+<rect x="545" y="132" width="405" height="10" fill="#124BCE" rx="5"/>
+<rect x="545" y="137" width="405" height="5" fill="#124BCE" rx="10"/>
+<rect x="557" y="150" width="32" height="28" fill="#124BCE" rx="6"/>
+<text x="573" y="169" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="599" y="166" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="start">AI as second reader</text>
+<text x="557" y="190" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Parallel reading — anchor model</text>
+<rect x="557" y="212" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="747" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Mammogram acquired</text>
+<text x="747" y="269" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="557" y="270" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="747" y="302" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Human reads independently</text>
+<text x="747" y="327" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="557" y="328" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="747" y="360" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Human judgement recorded</text>
+<text x="747" y="385" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="557" y="386" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="747" y="418" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">AI output generated</text>
+<text x="747" y="443" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#124BCE" text-anchor="middle">↓</text>
+<rect x="557" y="444" width="381" height="50" fill="#124BCE" rx="6" stroke="#124BCE" stroke-width="1.5"/>
+<text x="747" y="476" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">Human–AI comparison</text>
+<text x="747" y="501" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#124BCE" text-anchor="middle">↓</text>
+<rect x="557" y="502" width="381" height="50" fill="#124BCE" rx="6" stroke="#124BCE" stroke-width="1.5"/>
+<text x="747" y="534" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">Disagreement → arbitration</text>
+<rect x="557" y="930" width="381" height="78" fill="#FFFFFF" rx="6" stroke="#124BCE" stroke-width="1"/>
+<text x="567" y="952" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Design anchor for Readyology. Clearest</text>
+<text x="567" y="970" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">arbitration trigger.</text>
+<rect x="970" y="132" width="405" height="884" fill="#F0FDF4" rx="10"/>
+<rect x="970" y="132" width="405" height="10" fill="#16A34A" rx="5"/>
+<rect x="970" y="137" width="405" height="5" fill="#16A34A" rx="10"/>
+<rect x="982" y="150" width="32" height="28" fill="#16A34A" rx="6"/>
+<text x="998" y="169" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="1024" y="166" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#16A34A" text-anchor="start">AI as safety net</text>
+<text x="982" y="190" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">AI checks after human decision</text>
+<rect x="982" y="212" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1172" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Mammogram acquired</text>
+<text x="1172" y="269" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="982" y="270" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1172" y="302" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Human reads & decides</text>
+<text x="1172" y="327" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="982" y="328" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1172" y="360" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Recall or no recall</text>
+<text x="1172" y="385" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="982" y="386" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1172" y="418" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">AI checks all decisions</text>
+<text x="1172" y="443" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#16A34A" text-anchor="middle">↓</text>
+<rect x="982" y="444" width="381" height="50" fill="#16A34A" rx="6" stroke="#16A34A" stroke-width="1.5"/>
+<text x="1172" y="476" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">AI flags missed cases</text>
+<text x="1172" y="501" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#16A34A" text-anchor="middle">↓</text>
+<rect x="982" y="502" width="381" height="50" fill="#16A34A" rx="6" stroke="#16A34A" stroke-width="1.5"/>
+<text x="1172" y="534" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">Disagreement → escalation</text>
+<rect x="982" y="930" width="381" height="78" fill="#FFFFFF" rx="6" stroke="#16A34A" stroke-width="1"/>
+<text x="992" y="952" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Risk: late disagreement. Accountability unclear.</text>
+<rect x="1395" y="132" width="405" height="884" fill="#F5F3FF" rx="10"/>
+<rect x="1395" y="132" width="405" height="10" fill="#7C3AED" rx="5"/>
+<rect x="1395" y="137" width="405" height="5" fill="#7C3AED" rx="10"/>
+<rect x="1407" y="150" width="32" height="28" fill="#7C3AED" rx="6"/>
+<text x="1423" y="169" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="1449" y="166" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#7C3AED" text-anchor="start">AI as triage</text>
+<text x="1407" y="190" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">AI routes workload by risk tier</text>
+<rect x="1407" y="212" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1597" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Mammogram acquired</text>
+<text x="1597" y="269" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#7C3AED" text-anchor="middle">↓</text>
+<rect x="1407" y="270" width="381" height="50" fill="#7C3AED" rx="6" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="1597" y="302" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">AI risk stratification</text>
+<text x="1597" y="327" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="1407" y="328" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1597" y="360" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">High-risk → priority lane</text>
+<text x="1597" y="385" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="1407" y="386" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1597" y="418" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Human reads priority cases</text>
+<text x="1597" y="443" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#7C3AED" text-anchor="middle">↓</text>
+<rect x="1407" y="444" width="381" height="50" fill="#7C3AED" rx="6" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="1597" y="476" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">AI + human at boundary</text>
+<text x="1597" y="501" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="middle">↓</text>
+<rect x="1407" y="502" width="381" height="50" fill="#FFFFFF" rx="6" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1597" y="534" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">Disagreement on risk tier</text>
+<rect x="1407" y="930" width="381" height="78" fill="#FFFFFF" rx="6" stroke="#7C3AED" stroke-width="1"/>
+<text x="1417" y="952" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">Risk: triage boundary disagreement. Inconsistent</text>
+<text x="1417" y="970" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#374151" text-anchor="start">handling.</text>
+<rect x="0" y="1024" width="1920" height="56" fill="#1F2933" rx="0"/>
+<text x="960" y="1058" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#FFFFFF" text-anchor="middle">In all 4 models, disagreement between AI and human is where accountability and learning break down. Design anchor: Pattern 2 — AI as second reader.</text>
+</svg>

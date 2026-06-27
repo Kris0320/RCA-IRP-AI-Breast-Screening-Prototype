@@ -1,0 +1,29 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="100" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="42" font-weight="700" fill="#111827" text-anchor="start">Across All 4 Placement Models:</text>
+<text x="80" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="42" font-weight="700" fill="#2563EB" text-anchor="start">One shared failure point.</text>
+<rect x="80" y="188" width="1120" height="110" fill="#FEF2F2" rx="10"/>
+<text x="640" y="252" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#DC2626" text-anchor="middle">When AI and human judgement disagree —</text>
+<text x="640" y="284" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#DC2626" text-anchor="middle">accountability, traceability and learning break down.</text>
+<rect x="80" y="324" width="357" height="248" fill="#FEF2F2" rx="10"/>
+<rect x="80" y="324" width="4" height="248" fill="#DC2626" rx="2"/>
+<text x="102" y="370" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#DC2626" text-anchor="start">Misdiagnosis risk</text>
+<text x="102" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">Cases where AI was correct but</text>
+<text x="102" y="428" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">not absorbed by the workflow.</text>
+<text x="102" y="454" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">Interval cancers may result.</text>
+<rect x="461" y="324" width="357" height="248" fill="#FFFBEB" rx="10"/>
+<rect x="461" y="324" width="4" height="248" fill="#D97706" rx="2"/>
+<text x="483" y="370" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#D97706" text-anchor="start">Liability gap</text>
+<text x="483" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">Who is responsible when AI and</text>
+<text x="483" y="428" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">human disagree? Override reasoning</text>
+<text x="483" y="454" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">is not recorded.</text>
+<rect x="842" y="324" width="357" height="248" fill="#F3F4F6" rx="10"/>
+<rect x="842" y="324" width="4" height="248" fill="#6B7280" rx="2"/>
+<text x="864" y="370" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" fill="#6B7280" text-anchor="start">Lost learning</text>
+<text x="864" y="402" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">Disagreement cases are not</text>
+<text x="864" y="428" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">captured. The AI system cannot</text>
+<text x="864" y="454" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">improve from real clinical failure</text>
+<text x="864" y="480" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">cases.</text>
+<text x="80" y="690" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#6B7280" text-anchor="start">Source: Marinovich et al. 2024 · EDITH trial · AI-STREAM · Expert interview synthesis</text>
+</svg>

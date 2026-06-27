@@ -1,0 +1,37 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="100" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="46" font-weight="700" fill="#111827" text-anchor="start">What we will present today.</text>
+<text x="80" y="144" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="normal" fill="#6B7280" text-anchor="start">10 minutes. Six sections.</text>
+<line x1="80" y1="168" x2="1200" y2="168" stroke="#E5E7EB" stroke-width="1.5"/>
+<rect x="80" y="184" width="1120" height="72" fill="#EFF6FF" rx="8"/>
+<rect x="80" y="184" width="5" height="72" fill="#2563EB" rx="2"/>
+<text x="102" y="214" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#2563EB" text-anchor="start">01  Context</text>
+<text x="102" y="236" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">The scale of breast cancer screening · AI enters the reading room · the consequence</text>
+<text x="1190" y="226" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="end">~2 min</text>
+<rect x="80" y="264" width="1120" height="72" fill="#F3F4F6" rx="8"/>
+<rect x="80" y="264" width="5" height="72" fill="#6B7280" rx="2"/>
+<text x="102" y="294" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#6B7280" text-anchor="start">02  Research</text>
+<text x="102" y="316" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">What we did · Traditional workflow vs AI · 4 AI placement models compared</text>
+<text x="1190" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="end">~1.5 min</text>
+<rect x="80" y="344" width="1120" height="72" fill="#FEF3C7" rx="8"/>
+<rect x="80" y="344" width="5" height="72" fill="#F59E0B" rx="2"/>
+<text x="102" y="374" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#F59E0B" text-anchor="start">03  Insights</text>
+<text x="102" y="396" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">The shared failure point · Three types of gap · Three types of consequence</text>
+<text x="1190" y="386" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="end">~1.5 min</text>
+<rect x="80" y="424" width="1120" height="72" fill="#F3F4F6" rx="8"/>
+<rect x="80" y="424" width="5" height="72" fill="#6B7280" rx="2"/>
+<text x="102" y="454" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#6B7280" text-anchor="start">04  Problem</text>
+<text x="102" y="476" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Persona & journey · Where the journey is most fragile · HMW statement</text>
+<text x="1190" y="466" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="end">~1 min</text>
+<rect x="80" y="504" width="1120" height="72" fill="#EFF6FF" rx="8"/>
+<rect x="80" y="504" width="5" height="72" fill="#2563EB" rx="2"/>
+<text x="102" y="534" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#2563EB" text-anchor="start">05  Solution</text>
+<text x="102" y="556" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Introducing Readyology · Three service touchpoints · Prototype & user testing</text>
+<text x="1190" y="546" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="end">~2.5 min</text>
+<rect x="80" y="584" width="1120" height="72" fill="#F0FDF4" rx="8"/>
+<rect x="80" y="584" width="5" height="72" fill="#16A34A" rx="2"/>
+<text x="102" y="614" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#16A34A" text-anchor="start">06  Outcomes</text>
+<text x="102" y="636" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Theory of change · Service blueprint · Reflection & learning outcomes</text>
+<text x="1190" y="626" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="end">~1.5 min</text>
+</svg>

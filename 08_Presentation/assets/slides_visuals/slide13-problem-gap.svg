@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">The gap is not AI detection. It is disagreement handling.</text>
+<rect x="250" y="430" width="340" height="120" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="420.0" y="499.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">AI output</text>
+<rect x="250" y="610" width="340" height="120" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="420.0" y="679.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Human judgement</text>
+<line x1="610" y1="490" x2="780" y2="560" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="610" y1="670" x2="780" y2="600" stroke="#D9E2EC" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="800" y="510" width="280" height="130" rx="16" fill="#FFF4D9" stroke="#D99A22" stroke-width="2"/>
+<text x="940.0" y="584.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Disagreement</text>
+<line x1="1095" y1="575" x2="1270" y2="575" stroke="#D99A22" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1270" y="490" width="350" height="170" rx="16" fill="#FFFFFF" stroke="#C94040" stroke-width="2"/>
+<text x="1445.0" y="556.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Missing bridge:</text>
+<text x="1445.0" y="586.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">review / record /</text>
+<text x="1445.0" y="616.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">learn</text>
+<rect x="1228" y="448" width="435" height="252" rx="24" fill="none" stroke="#2368A2" stroke-width="5"/>
+<text x="1445" y="735" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#2368A2" text-anchor="middle">Readyology fills this service gap</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

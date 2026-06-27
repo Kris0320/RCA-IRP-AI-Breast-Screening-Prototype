@@ -1,0 +1,84 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 11 Persona + Journey -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="68" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Where the Current Disagreement Journey Is Most Fragile</text>
+<text x="120" y="116" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">Breast Advanced Practitioner  ·  Primary image reader in NHS breast cancer screening</text>
+<rect x="120" y="140" width="380" height="916" fill="#F8FAFC" rx="14"/>
+<rect x="120" y="140" width="380" height="10" fill="#124BCE" rx="5"/>
+<rect x="120" y="145" width="380" height="5" fill="#124BCE" rx="10"/>
+<circle cx="310" cy="222" r="52" fill="#E5E7EB"/>
+<text x="310" y="234" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="44" font-weight="400" fill="#374151" text-anchor="middle">👩‍⚕️</text>
+<text x="310" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Breast Advanced Practitioner</text>
+<text x="310" y="324" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="middle">Primary Image Reader & Stereographer</text>
+<rect x="142" y="340" width="108" height="56" fill="#EAF3FF" rx="8"/>
+<text x="196" y="366" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="middle">~5,000</text>
+<text x="196" y="386" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="middle">Cases/yr</text>
+<rect x="260" y="340" width="108" height="56" fill="#EAF3FF" rx="8"/>
+<text x="314" y="366" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="middle">Band 7</text>
+<text x="314" y="386" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="middle">NHS grade</text>
+<rect x="378" y="340" width="108" height="56" fill="#EAF3FF" rx="8"/>
+<text x="432" y="366" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="middle">15+ yr</text>
+<text x="432" y="386" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="middle">Experience</text>
+<line x1="142" y1="410" x2="478" y2="410" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="142" y="430" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1">Context</text>
+<circle cx="146" cy="448" r="5" fill="#6B7280"/>
+<text x="164" y="454" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Reads mammograms across multiple screening units</text>
+<circle cx="146" cy="480" r="5" fill="#6B7280"/>
+<text x="164" y="486" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">High throughput: 100+ cases per reading session</text>
+<circle cx="146" cy="512" r="5" fill="#6B7280"/>
+<text x="164" y="518" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Mobile van → office: constant context switching</text>
+<text x="142" y="562" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#EA580C" text-anchor="start" letter-spacing="1">Pain points</text>
+<circle cx="146" cy="580" r="5" fill="#EA580C"/>
+<text x="164" y="586" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">No structured way to handle AI-human mismatch</text>
+<circle cx="146" cy="612" r="5" fill="#EA580C"/>
+<text x="164" y="618" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Override reasoning not recorded consistently</text>
+<circle cx="146" cy="644" r="5" fill="#EA580C"/>
+<text x="164" y="650" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">No feedback loop on AI performance over time</text>
+<text x="142" y="694" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="1">Goal</text>
+<circle cx="146" cy="712" r="5" fill="#124BCE"/>
+<text x="164" y="718" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Confident, defensible recall decisions</text>
+<circle cx="146" cy="744" r="5" fill="#124BCE"/>
+<text x="164" y="750" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Clear accountability when AI and she disagree</text>
+<circle cx="146" cy="776" r="5" fill="#124BCE"/>
+<text x="164" y="782" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Learning that improves her future reading</text>
+<rect x="134" y="826" width="352" height="96" fill="#EAF3FF" rx="8"/>
+<text x="150" y="856" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#124BCE" text-anchor="start" font-style="italic">"After the mobile van session,</text>
+<text x="150" y="882" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#124BCE" text-anchor="start" font-style="italic">I immediately switch into focused</text>
+<text x="150" y="908" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#124BCE" text-anchor="start" font-style="italic">reading mode. Every extra click costs."</text>
+<rect x="532" y="148" width="1268" height="144" fill="#FFFFFF" rx="8" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="554" y="176" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="500" fill="#1F2937" text-anchor="start">Case enters queue</text>
+<text x="554" y="200" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Receives case in RIS worklist. No AI output yet.</text>
+<rect x="532" y="298" width="1268" height="144" fill="#FFFFFF" rx="8" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="554" y="326" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="500" fill="#1F2937" text-anchor="start">Independent reading</text>
+<text x="554" y="350" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Reads mammogram. Records her judgement before AI is revealed.</text>
+<rect x="532" y="448" width="1268" height="144" fill="#FFFBEB" rx="8" stroke="#F59E0B" stroke-width="1.5"/>
+<rect x="532" y="448" width="7" height="144" fill="#F59E0B" rx="3"/>
+<text x="554" y="478" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#F59E0B" text-anchor="start">⚠</text>
+<text x="588" y="476" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#F59E0B" text-anchor="start">AI visibility moment</text>
+<text x="554" y="500" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">AI risk score revealed. No structured comparison support exists.</text>
+<rect x="532" y="598" width="1268" height="144" fill="#FFF7ED" rx="8" stroke="#EA580C" stroke-width="1.5"/>
+<rect x="532" y="598" width="7" height="144" fill="#EA580C" rx="3"/>
+<text x="554" y="628" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#EA580C" text-anchor="start">⚠</text>
+<text x="588" y="626" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#EA580C" text-anchor="start">Disagreement detected</text>
+<text x="554" y="650" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">AI and human scores differ. No escalation protocol. Decision is ad hoc.</text>
+<rect x="532" y="748" width="1268" height="144" fill="#FFFBEB" rx="8" stroke="#F59E0B" stroke-width="1.5"/>
+<rect x="532" y="748" width="7" height="144" fill="#F59E0B" rx="3"/>
+<text x="554" y="778" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#F59E0B" text-anchor="start">⚠</text>
+<text x="588" y="776" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#F59E0B" text-anchor="start">Arbitration (informal)</text>
+<text x="554" y="800" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Senior review requested verbally. No structured handover or evidence bundle.</text>
+<rect x="532" y="898" width="1268" height="144" fill="#FFFFFF" rx="8" stroke="#E5E7EB" stroke-width="0.8"/>
+<text x="554" y="926" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="500" fill="#1F2937" text-anchor="start">Outcome & record</text>
+<text x="554" y="950" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Recall or no-recall decision. Reasoning rarely recorded. No learning loop.</text>
+<rect x="1628" y="448" width="160" height="438" fill="#EAF3FF" rx="10" stroke="#124BCE" stroke-width="2"/>
+<text x="1708" y="480" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#124BCE" text-anchor="middle">Readyology</text>
+<text x="1708" y="504" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#124BCE" text-anchor="middle">intervenes here</text>
+<circle cx="1636" cy="534" r="5" fill="#124BCE"/>
+<text x="1650" y="540" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Soft cue</text>
+<circle cx="1636" cy="570" r="5" fill="#124BCE"/>
+<text x="1650" y="576" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Comparison view</text>
+<circle cx="1636" cy="606" r="5" fill="#124BCE"/>
+<text x="1650" y="612" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Consensus support</text>
+<circle cx="1636" cy="642" r="5" fill="#124BCE"/>
+<text x="1650" y="648" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Decision receipt</text>
+</svg>

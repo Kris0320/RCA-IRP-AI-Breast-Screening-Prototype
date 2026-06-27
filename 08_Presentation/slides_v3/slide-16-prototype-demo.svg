@@ -1,0 +1,59 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">16 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">Prototype: How Readyology Works</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">Three interaction states tested with expert and clinical users.</text>
+<text x="120" y="344" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">State 1</text>
+<text x="120" y="394" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#0D1117" text-anchor="start" style="">Reading moment</text>
+<text x="120" y="434" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic;">Soft cue activated</text>
+<line x1="120" y1="456" x2="626" y2="456" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="126" cy="488" r="4" fill="#124BCE"/>
+<text x="148" y="496" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Dark clinical workstation</text>
+<circle cx="126" cy="548" r="4" fill="#124BCE"/>
+<text x="148" y="556" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Human judgement already recorded</text>
+<circle cx="126" cy="608" r="4" fill="#124BCE"/>
+<text x="148" y="616" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI risk score: HIGH (0.82)</text>
+<circle cx="126" cy="668" r="4" fill="#124BCE"/>
+<text x="148" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Soft amber cue: 'Review suggested'</text>
+<circle cx="126" cy="728" r="4" fill="#124BCE"/>
+<text x="148" y="736" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">No alarm. No interruption to flow.</text>
+<line x1="120" y1="900" x2="626" y2="900" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="940" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#124BCE" text-anchor="start" style="">Amber -- Disagreement detected</text>
+<text x="706" y="344" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#16A34A" text-anchor="start" letter-spacing="2" style="">State 2</text>
+<text x="706" y="394" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#0D1117" text-anchor="start" style="">Comparison layer</text>
+<text x="706" y="434" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic;">Evidence brought together</text>
+<line x1="706" y1="456" x2="1212" y2="456" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="712" cy="488" r="4" fill="#16A34A"/>
+<text x="734" y="496" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI mark + suspicious region overlay</text>
+<circle cx="712" cy="548" r="4" fill="#16A34A"/>
+<text x="734" y="556" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Prior image comparison (3yr stable)</text>
+<circle cx="712" cy="608" r="4" fill="#16A34A"/>
+<text x="734" y="616" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Suggested reason tags to confirm or edit</text>
+<circle cx="712" cy="668" r="4" fill="#16A34A"/>
+<text x="734" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">'Stable in prior'  'AI high, no visible change'</text>
+<circle cx="712" cy="728" r="4" fill="#16A34A"/>
+<text x="734" y="736" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">One-click confirmation. Minimal input.</text>
+<line x1="706" y1="900" x2="1212" y2="900" stroke="#E5E7EB" stroke-width="1"/>
+<text x="706" y="940" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#16A34A" text-anchor="start" style="">Blue -- Comparison in progress</text>
+<text x="1292" y="344" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="2" style="">State 3</text>
+<text x="1292" y="394" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#0D1117" text-anchor="start" style="">Decision receipt</text>
+<text x="1292" y="434" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic;">After consensus review</text>
+<line x1="1292" y1="456" x2="1798" y2="456" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1298" cy="488" r="4" fill="#6B7280"/>
+<text x="1320" y="496" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Consensus decision: No recall</text>
+<circle cx="1298" cy="548" r="4" fill="#6B7280"/>
+<text x="1320" y="556" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reason: 'AI high, area stable in priors'</text>
+<circle cx="1298" cy="608" r="4" fill="#6B7280"/>
+<text x="1320" y="616" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Non-blame receipt auto-generated</text>
+<circle cx="1298" cy="668" r="4" fill="#6B7280"/>
+<text x="1320" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Evidence bundle archived to audit log</text>
+<circle cx="1298" cy="728" r="4" fill="#6B7280"/>
+<text x="1320" y="736" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="23" font-weight="400" fill="#0D1117" text-anchor="start" style="">Case flagged for learning review</text>
+<line x1="1292" y1="900" x2="1798" y2="900" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1292" y="940" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#6B7280" text-anchor="start" style="">Green -- Resolved and recorded</text>
+<line x1="120" y1="980" x2="1800" y2="980" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="1034" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic;">"Keep it simple. No extra steps." -- Sophia Zackrisson, Senior Consultant Radiologist</text>
+</svg>

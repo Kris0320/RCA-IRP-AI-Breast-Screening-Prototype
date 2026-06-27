@@ -1,0 +1,59 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="100" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="700" fill="#111827" text-anchor="start">Three Types of Gap.</text>
+<text x="80" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="400" fill="#6B7280" text-anchor="start">Three types of consequence.</text>
+<rect x="80" y="186" width="354" height="420" fill="#EFF6FF" rx="12"/>
+<rect x="80" y="186" width="354" height="8" fill="#2563EB" rx="6"/>
+<rect x="80" y="190" width="354" height="4" fill="#2563EB"/>
+<text x="104" y="242" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#2563EB" text-anchor="start">System Gap</text>
+<text x="104" y="274" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">No structured resolution</text>
+<text x="104" y="298" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">mechanism when AI and human</text>
+<text x="104" y="322" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">disagree.</text>
+<circle cx="98" cy="350" r="5" fill="#2563EB"/>
+<text x="114" y="358" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Accountability is unclear</text>
+<circle cx="98" cy="384" r="5" fill="#2563EB"/>
+<text x="114" y="392" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Cases are managed informally</text>
+<circle cx="98" cy="418" r="5" fill="#2563EB"/>
+<text x="114" y="426" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Resolution is inconsistent</text>
+<rect x="80" y="546" width="354" height="60" fill="#2563EB" rx="0"/>
+<rect x="80" y="546" width="354" height="60" fill="#2563EB" rx="0"/>
+<rect x="80" y="594" width="354" height="12" fill="#2563EB" rx="6"/>
+<rect x="80" y="546" width="354" height="48" fill="#2563EB"/>
+<text x="257" y="582" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Misattributed liability</text>
+<rect x="462" y="186" width="354" height="420" fill="#FFFBEB" rx="12"/>
+<rect x="462" y="186" width="354" height="8" fill="#F59E0B" rx="6"/>
+<rect x="462" y="190" width="354" height="4" fill="#F59E0B"/>
+<text x="486" y="242" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#F59E0B" text-anchor="start">Human Gap</text>
+<text x="486" y="274" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">No consistent arbitration</text>
+<text x="486" y="298" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">protocol. Override reasoning</text>
+<text x="486" y="322" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">is not recorded.</text>
+<circle cx="480" cy="350" r="5" fill="#F59E0B"/>
+<text x="496" y="358" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Senior review is ad hoc</text>
+<circle cx="480" cy="384" r="5" fill="#F59E0B"/>
+<text x="496" y="392" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Decisions cannot be audited</text>
+<circle cx="480" cy="418" r="5" fill="#F59E0B"/>
+<text x="496" y="426" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Learning from cases is lost</text>
+<rect x="462" y="546" width="354" height="60" fill="#F59E0B" rx="0"/>
+<rect x="462" y="546" width="354" height="60" fill="#F59E0B" rx="0"/>
+<rect x="462" y="594" width="354" height="12" fill="#F59E0B" rx="6"/>
+<rect x="462" y="546" width="354" height="48" fill="#F59E0B"/>
+<text x="639" y="582" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Inconsistent clinical decisions</text>
+<rect x="844" y="186" width="354" height="420" fill="#F0FDF4" rx="12"/>
+<rect x="844" y="186" width="354" height="8" fill="#16A34A" rx="6"/>
+<rect x="844" y="190" width="354" height="4" fill="#16A34A"/>
+<text x="868" y="242" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#16A34A" text-anchor="start">Data Gap</text>
+<text x="868" y="274" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">Disagreement cases are not</text>
+<text x="868" y="298" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="normal" fill="#111827" text-anchor="start">captured for AI improvement.</text>
+<circle cx="862" cy="350" r="5" fill="#16A34A"/>
+<text x="878" y="358" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ AI cannot learn from failure</text>
+<circle cx="862" cy="384" r="5" fill="#16A34A"/>
+<text x="878" y="392" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Calibration drift goes undetected</text>
+<circle cx="862" cy="418" r="5" fill="#16A34A"/>
+<text x="878" y="426" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#111827" text-anchor="start">→ Model performance degrades silently</text>
+<rect x="844" y="546" width="354" height="60" fill="#16A34A" rx="0"/>
+<rect x="844" y="546" width="354" height="60" fill="#16A34A" rx="0"/>
+<rect x="844" y="594" width="354" height="12" fill="#16A34A" rx="6"/>
+<rect x="844" y="546" width="354" height="48" fill="#16A34A"/>
+<text x="1021" y="582" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Degraded future AI performance</text>
+</svg>

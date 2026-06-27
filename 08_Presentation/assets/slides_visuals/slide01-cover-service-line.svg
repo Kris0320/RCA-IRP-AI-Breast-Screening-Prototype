@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="960" y="220" font-family="Newsreader, Arial, sans-serif" font-size="86" font-weight="700" fill="#111827" text-anchor="middle">Readyology</text>
+<text x="960" y="275" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="400" fill="#5E6B7A" text-anchor="middle">A lightweight service layer for AI-human disagreement in breast cancer screening.</text>
+<line x1="345" y1="540" x2="465" y2="540" stroke="#D9E2EC" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="655" y1="540" x2="775" y2="540" stroke="#D9E2EC" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="965" y1="540" x2="1085" y2="540" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1275" y1="540" x2="1395" y2="540" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<circle cx="250" cy="540" r="82" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="4"/>
+<text x="250" y="548" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Mammogram</text>
+<circle cx="560" cy="540" r="82" fill="#EAF3FA" stroke="#2368A2" stroke-width="4"/>
+<text x="560" y="548" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Human + AI</text>
+<circle cx="870" cy="540" r="82" fill="#FFF4D9" stroke="#D99A22" stroke-width="4"/>
+<text x="870" y="548" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Disagreement</text>
+<circle cx="1180" cy="540" r="82" fill="#EAF3FA" stroke="#2368A2" stroke-width="4"/>
+<text x="1180" y="548" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Review</text>
+<circle cx="1490" cy="540" r="82" fill="#EAF3FA" stroke="#2368A2" stroke-width="4"/>
+<text x="1490" y="548" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Learning</text>
+<text x="960" y="704" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="500" fill="#111827" text-anchor="middle">Helping radiologists detect, resolve and learn from AI-human disagreement.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

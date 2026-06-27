@@ -1,0 +1,62 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 19 Testing Results -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="88" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">What We Tested. What We Learned.</text>
+<text x="120" y="136" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start">Two expert-led sessions. Clear signal on design direction.</text>
+<line x1="120" y1="160" x2="1800" y2="160" stroke="#E5E7EB" stroke-width="1.5"/>
+<rect x="120" y="176" width="826" height="376" fill="#EAF3FF" rx="12"/>
+<rect x="120" y="176" width="826" height="10" fill="#124BCE" rx="5"/>
+<rect x="120" y="181" width="826" height="5" fill="#124BCE" rx="10"/>
+<text x="148" y="230" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#124BCE" text-anchor="start">Session 1 — Expert Prototype Test</text>
+<text x="148" y="268" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">Sophia Zackrisson · Senior Consultant Radiologist & Professor</text>
+<text x="148" y="300" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Method: Wireframe prototype walkthrough</text>
+<line x1="148" y1="320" x2="918" y2="320" stroke="#E5E7EB" stroke-width="1.5"/>
+<circle cx="148" cy="342" r="6" fill="#124BCE"/>
+<text x="172" y="350" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start" font-style="italic">"Keep it simple. No extra steps."</text>
+<circle cx="148" cy="378" r="6" fill="#124BCE"/>
+<text x="172" y="386" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start" font-style="italic">"Integrate into existing reading stations."</text>
+<circle cx="148" cy="414" r="6" fill="#124BCE"/>
+<text x="172" y="422" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Soft cue preferred over alert or alarm</text>
+<circle cx="148" cy="450" r="6" fill="#124BCE"/>
+<text x="172" y="458" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Consensus review framing, not 'arbitration'</text>
+<circle cx="148" cy="486" r="6" fill="#124BCE"/>
+<text x="172" y="494" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Reason tags: suggest + confirm, not manual fill</text>
+<rect x="974" y="176" width="826" height="376" fill="#FFFBEB" rx="12"/>
+<rect x="974" y="176" width="826" height="10" fill="#F59E0B" rx="5"/>
+<rect x="974" y="181" width="826" height="5" fill="#F59E0B" rx="10"/>
+<text x="1002" y="230" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#F59E0B" text-anchor="start">Session 2 — Usability Test</text>
+<text x="1002" y="268" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">Medical student · Real clinical work experience</text>
+<text x="1002" y="300" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="start">Method: Interactive prototype, screen session</text>
+<line x1="1002" y1="320" x2="1772" y2="320" stroke="#E5E7EB" stroke-width="1.5"/>
+<circle cx="1002" cy="342" r="6" fill="#F59E0B"/>
+<text x="1026" y="350" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start" font-style="italic">"Real scenarios are fast and very busy."</text>
+<circle cx="1002" cy="378" r="6" fill="#F59E0B"/>
+<text x="1026" y="386" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start" font-style="italic">"Design must be direct and non-disruptive."</text>
+<circle cx="1002" cy="414" r="6" fill="#F59E0B"/>
+<text x="1026" y="422" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Low cognitive burden is non-negotiable</text>
+<circle cx="1002" cy="450" r="6" fill="#F59E0B"/>
+<text x="1026" y="458" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Meetings are short — no lengthy forms</text>
+<circle cx="1002" cy="486" r="6" fill="#F59E0B"/>
+<text x="1026" y="494" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">RAG visual clarity essential at a glance</text>
+<line x1="120" y1="572" x2="1800" y2="572" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="120" y="612" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#1F2937" text-anchor="start">Design response:</text>
+<rect x="120" y="636" width="399" height="80" fill="#F8FAFC" rx="8" stroke="#124BCE" stroke-width="1.5"/>
+<rect x="120" y="636" width="6" height="80" fill="#124BCE" rx="3"/>
+<text x="144" y="660" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#374151" text-anchor="start">Soft cues > interrupting alerts</text>
+<rect x="547" y="636" width="399" height="80" fill="#F8FAFC" rx="8" stroke="#F59E0B" stroke-width="1.5"/>
+<rect x="547" y="636" width="6" height="80" fill="#F59E0B" rx="3"/>
+<text x="571" y="660" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#374151" text-anchor="start">Suggested tags > manual classification</text>
+<rect x="974" y="636" width="399" height="80" fill="#F8FAFC" rx="8" stroke="#16A34A" stroke-width="1.5"/>
+<rect x="974" y="636" width="6" height="80" fill="#16A34A" rx="3"/>
+<text x="998" y="660" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#374151" text-anchor="start">Integrated workstation > separate device</text>
+<rect x="1401" y="636" width="399" height="80" fill="#F8FAFC" rx="8" stroke="#124BCE" stroke-width="1.5"/>
+<rect x="1401" y="636" width="6" height="80" fill="#124BCE" rx="3"/>
+<text x="1425" y="660" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#374151" text-anchor="start">Receipt after review > real-time burden</text>
+<line x1="120" y1="736" x2="1800" y2="736" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="120" y="774" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#6B7280" text-anchor="start">Next steps:</text>
+<text x="120" y="814" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#124BCE" text-anchor="start">→  Full radiologist validation study</text>
+<text x="500" y="814" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#124BCE" text-anchor="start">→  NHS trust integration pathway</text>
+<text x="880" y="814" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#124BCE" text-anchor="start">→  Governance and audit pilot</text>
+<text x="1260" y="814" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#124BCE" text-anchor="start">→  AI calibration loop design</text>
+</svg>

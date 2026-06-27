@@ -1,0 +1,80 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3">SOLUTION</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">18 / 26</text>
+<text x="160" y="152" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827">Value Proposition</text>
+<text x="160" y="192" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280">How Readyology fits the job to be done.</text>
+<rect x="160" y="215" width="700" height="700" fill="#0A1628" rx="6"/>
+<rect x="161" y="216" width="234" height="698" fill="#FFF" opacity="0.05" rx="5"/>
+<rect x="395" y="216" width="464" height="349" fill="#124BCE" opacity="0.10"/>
+<rect x="395" y="566" width="464" height="348" fill="#E8693C" opacity="0.10"/>
+<line x1="395" y1="223" x2="395" y2="907" stroke="#FFFFFF" stroke-width="0.8" opacity="0.2"/>
+<line x1="399" y1="565" x2="852" y2="565" stroke="#FFFFFF" stroke-width="0.8" opacity="0.2"/>
+<rect x="160" y="215" width="700" height="700" fill="none" stroke="#4A6FA5" stroke-width="1.5" rx="6"/>
+<text x="174" y="233" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#9CA3AF" text-anchor="start" letter-spacing="2">PRODUCTS &amp; SERVICES</text>
+<circle cx="179" cy="252" r="2.5" fill="#9CA3AF"/>
+<text x="191" y="257" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#C0CAD8">Reading Viewer support layer</text>
+<circle cx="179" cy="370" r="2.5" fill="#9CA3AF"/>
+<text x="191" y="375" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#C0CAD8"><tspan>AI result revealed after</tspan><tspan x="191" dy="14">human submission</tspan></text>
+<circle cx="179" cy="488" r="2.5" fill="#9CA3AF"/>
+<text x="191" y="493" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#C0CAD8"><tspan>Disagreement detection</tspan><tspan x="191" dy="14">and classification</tspan></text>
+<circle cx="179" cy="606" r="2.5" fill="#9CA3AF"/>
+<text x="191" y="611" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#C0CAD8">Arbitration meeting support</text>
+<circle cx="179" cy="724" r="2.5" fill="#9CA3AF"/>
+<text x="191" y="729" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="400" fill="#C0CAD8"><tspan>Decision trace +</tspan><tspan x="191" dy="14">disagreement case library</tspan></text>
+<text x="409" y="233" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#7DB8F7" text-anchor="start" letter-spacing="2">GAIN CREATORS</text>
+<circle cx="414" cy="256" r="2.5" fill="#7DB8F7"/>
+<text x="426" y="261" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF">Protects human-led decision-making</text>
+<circle cx="414" cy="331" r="2.5" fill="#7DB8F7"/>
+<text x="426" y="336" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF">Fast arbitration, traceable decisions</text>
+<circle cx="414" cy="406" r="2.5" fill="#7DB8F7"/>
+<text x="426" y="411" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF"><tspan>Supports team calibration</tspan><tspan x="426" dy="18">without blame</tspan></text>
+<circle cx="414" cy="481" r="2.5" fill="#7DB8F7"/>
+<text x="426" y="486" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF">Sustainable learning</text>
+<text x="409" y="583" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#F4A47A" text-anchor="start" letter-spacing="2">PAIN RELIEVERS</text>
+<circle cx="414" cy="606" r="2.5" fill="#F4A47A"/>
+<text x="426" y="611" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF"><tspan>Keeps AI hidden until</tspan><tspan x="426" dy="18">independent read submitted</tspan></text>
+<circle cx="414" cy="681" r="2.5" fill="#F4A47A"/>
+<text x="426" y="686" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF"><tspan>Shows only key AI evidence</tspan><tspan x="426" dy="18">to reduce cognitive load</tspan></text>
+<circle cx="414" cy="756" r="2.5" fill="#F4A47A"/>
+<text x="426" y="761" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF">Turns disagreement into a structured handover</text>
+<circle cx="414" cy="831" r="2.5" fill="#F4A47A"/>
+<text x="426" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#FFFFFF">Captures final outcomes for continuous learning</text>
+<path d="M 1300,565 L 1155.0,816.1 A 290,290 0 0,1 1155.0,313.9 Z" fill="#F0F4F8"/>
+<path d="M 1300,565 L 1155.0,313.9 A 290,290 0 0,1 1590.0,565.0 Z" fill="#EBF2FF"/>
+<path d="M 1300,565 L 1590.0,565.0 A 290,290 0 0,1 1155.0,816.1 Z" fill="#FFF3EE"/>
+<line x1="1300" y1="565" x2="1590.0" y2="565.0" stroke="#C8D0DB" stroke-width="1"/>
+<line x1="1300" y1="565" x2="1155.0" y2="816.1" stroke="#C8D0DB" stroke-width="1"/>
+<line x1="1300" y1="565" x2="1155.0" y2="313.9" stroke="#C8D0DB" stroke-width="1"/>
+<circle cx="1300" cy="565" r="290" fill="none" stroke="#4A6FA5" stroke-width="1.5"/>
+<text x="1300" y="261" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6B7280" text-anchor="middle" letter-spacing="2">CUSTOMER PROFILE</text>
+<text x="1040" y="497" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="2">CUSTOMER JOBS</text>
+<circle cx="1045" cy="514" r="2.5" fill="#6B7280"/>
+<text x="1057" y="519" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Make safe screening decisions</text>
+<circle cx="1045" cy="548" r="2.5" fill="#6B7280"/>
+<text x="1057" y="553" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Review AI-human disagreement</text>
+<circle cx="1045" cy="582" r="2.5" fill="#6B7280"/>
+<text x="1057" y="587" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Record arbitration outcomes</text>
+<circle cx="1045" cy="616" r="2.5" fill="#6B7280"/>
+<text x="1057" y="621" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Learn from difficult cases</text>
+<text x="1345" y="297" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="2">GAINS</text>
+<circle cx="1350" cy="314" r="2.5" fill="#124BCE"/>
+<text x="1362" y="319" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Fast and simple workflow</text>
+<circle cx="1350" cy="344" r="2.5" fill="#124BCE"/>
+<text x="1362" y="349" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Independent clinical judgement protected</text>
+<circle cx="1350" cy="374" r="2.5" fill="#124BCE"/>
+<text x="1362" y="379" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Clear evidence for difficult cases</text>
+<circle cx="1350" cy="404" r="2.5" fill="#124BCE"/>
+<text x="1362" y="409" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Shared learning from disagreement</text>
+<text x="1345" y="671" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#E8693C" text-anchor="start" letter-spacing="2">PAINS</text>
+<circle cx="1350" cy="688" r="2.5" fill="#E8693C"/>
+<text x="1362" y="693" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Limited time and high workload</text>
+<circle cx="1350" cy="722" r="2.5" fill="#E8693C"/>
+<text x="1362" y="727" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">AI may add cognitive pressure</text>
+<circle cx="1350" cy="756" r="2.5" fill="#E8693C"/>
+<text x="1362" y="761" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Later outcomes are hard to link back</text>
+<text x="160" y="958" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280">Readyology does not add a step — it structures the one that was already missing.</text>
+<text x="160" y="1002" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE">The fit between service and need is by design.</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" letter-spacing="3">RESEARCH</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">11 / 25</text>
+<text x="160" y="148" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827">From Diagnostic Accuracy</text>
+<text x="160" y="220" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827">to Disagreement Support</text>
+<text x="160" y="290" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE">Problem Statement</text>
+<text x="1000" y="290" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE">HMW</text>
+<line x1="160" y1="304" x2="920" y2="304" stroke="#124BCE" stroke-width="2"/>
+<line x1="1000" y1="304" x2="1760" y2="304" stroke="#124BCE" stroke-width="2"/>
+<text x="160" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">As AI enters breast cancer screening, human-AI disagreement is</text>
+<text x="160" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">becoming a critical moment where radiologists must balance machine</text>
+<text x="160" y="400" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">outputs, peer judgement, clinical responsibility and organisational</text>
+<text x="160" y="430" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">accountability. Yet current AI implementation focuses more on accuracy</text>
+<text x="160" y="460" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">and efficiency than on supporting radiologists' cognitive, emotional,</text>
+<text x="160" y="490" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">collaborative and learning needs during disagreement.</text>
+<text x="1000" y="340" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">How might we support radiologists in safely managing human-AI</text>
+<text x="1000" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">disagreement in breast cancer screening, while reducing cognitive</text>
+<text x="1000" y="400" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">burden, strengthening peer arbitration, documenting clinical reasoning</text>
+<text x="1000" y="430" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">and turning disagreement into continuous learning and governance</text>
+<text x="1000" y="460" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#111827">improvement?</text>
+<text x="1160" y="290" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280">How Might We</text>
+<text x="160" y="938" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280">The design challenge is not building better AI — it is supporting the moment when AI and human diverge.</text>
+<text x="160" y="982" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE">The gap is not detection. It is disagreement management.</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 07 Workflow Shift -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="96" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">AI Doesn't Just Assist.</text>
+<text x="120" y="148" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start">It creates a new decision point the system wasn't designed to handle.</text>
+<text x="120" y="210" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1">Traditional</text>
+<rect x="180" y="228" width="240" height="64" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="300" y="265" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Mammogram acquired</text>
+<line x1="420" y1="260" x2="515" y2="260" stroke="#E5E7EB" stroke-width="2"/>
+<polygon points="525,260 513,254 513,266" fill="#E5E7EB"/>
+<rect x="525" y="228" width="240" height="64" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="645" y="265" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Case reading</text>
+<line x1="765" y1="260" x2="860" y2="260" stroke="#E5E7EB" stroke-width="2"/>
+<polygon points="870,260 858,254 858,266" fill="#E5E7EB"/>
+<rect x="870" y="228" width="240" height="64" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="990" y="265" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Comparison / review</text>
+<line x1="1110" y1="260" x2="1205" y2="260" stroke="#E5E7EB" stroke-width="2"/>
+<polygon points="1215,260 1203,254 1203,266" fill="#E5E7EB"/>
+<rect x="1215" y="228" width="240" height="64" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1335" y="265" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Recall or no recall</text>
+<line x1="1455" y1="260" x2="1550" y2="260" stroke="#E5E7EB" stroke-width="2"/>
+<polygon points="1560,260 1548,254 1548,266" fill="#E5E7EB"/>
+<rect x="1560" y="228" width="240" height="64" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="1680" y="265" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Audit / learning</text>
+<text x="120" y="348" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="1">With AI</text>
+<rect x="180" y="366" width="188" height="72" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="274" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Mammogram</text>
+<text x="274" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">acquired</text>
+<line x1="368" y1="402" x2="408" y2="402" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="418,402 406,396 406,408" fill="#9CA3AF"/>
+<rect x="418" y="366" width="188" height="72" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="512" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Human</text>
+<text x="512" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">judgement</text>
+<line x1="606" y1="402" x2="646" y2="402" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="656,402 644,396 644,408" fill="#9CA3AF"/>
+<rect x="656" y="366" width="188" height="72" fill="#EAF3FF" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="750" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#124BCE" text-anchor="middle">AI output</text>
+<text x="750" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#124BCE" text-anchor="middle">generated</text>
+<line x1="844" y1="402" x2="884" y2="402" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="894,402 882,396 882,408" fill="#9CA3AF"/>
+<rect x="894" y="366" width="188" height="72" fill="#FFFBEB" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="988" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#F59E0B" text-anchor="middle">Human–AI</text>
+<text x="988" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#F59E0B" text-anchor="middle">comparison</text>
+<line x1="1082" y1="402" x2="1122" y2="402" stroke="#EA580C" stroke-width="2"/>
+<polygon points="1132,402 1120,396 1120,408" fill="#EA580C"/>
+<rect x="1132" y="366" width="188" height="72" fill="#FFF7ED" rx="8" stroke="#EA580C" stroke-width="2"/>
+<text x="1226" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#EA580C" text-anchor="middle">Disagreement</text>
+<text x="1226" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#EA580C" text-anchor="middle">detected ⚑</text>
+<line x1="1320" y1="402" x2="1360" y2="402" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="1370,402 1358,396 1358,408" fill="#9CA3AF"/>
+<rect x="1370" y="366" width="188" height="72" fill="#EAF3FF" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1464" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#124BCE" text-anchor="middle">Arbitration /</text>
+<text x="1464" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#124BCE" text-anchor="middle">senior review</text>
+<line x1="1558" y1="402" x2="1598" y2="402" stroke="#9CA3AF" stroke-width="2"/>
+<polygon points="1608,402 1596,396 1596,408" fill="#9CA3AF"/>
+<rect x="1608" y="366" width="188" height="72" fill="#F8FAFC" rx="8" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1702" y="390" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">Recall</text>
+<text x="1702" y="416" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#1F2937" text-anchor="middle">decision</text>
+<path d="M 274 462 Q 960 542 1702 462" stroke="#124BCE" stroke-width="2" fill="none" stroke-dasharray="8,6"/>
+<text x="960" y="570" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="500" fill="#124BCE" text-anchor="middle">Audit & learning loop</text>
+<line x1="120" y1="620" x2="1800" y2="620" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="960" y="672" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#111827" text-anchor="middle">The gap is not in detection. It is in what happens when AI and human judgement diverge.</text>
+<text x="960" y="710" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#374151" text-anchor="middle">No structured review. No consistent record. No learning loop.</text>
+</svg>

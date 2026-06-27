@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">The challenge sits between radiologists, AI systems and governance</text>
+<rect x="110" y="210" width="1700" height="110" rx="14" fill="#FBFCFD" stroke="#D9E2EC" stroke-width="2"/>
+<text x="135" y="275" font-family="IBM Plex Sans, Arial, sans-serif" font-size="23" font-weight="700" fill="#5E6B7A" text-anchor="start">External policy / regulatory</text>
+<rect x="110" y="360" width="1700" height="110" rx="14" fill="#FBFCFD" stroke="#D9E2EC" stroke-width="2"/>
+<text x="135" y="425" font-family="IBM Plex Sans, Arial, sans-serif" font-size="23" font-weight="700" fill="#5E6B7A" text-anchor="start">NHS organisation / governance</text>
+<rect x="110" y="525" width="1700" height="110" rx="14" fill="#FBFCFD" stroke="#D9E2EC" stroke-width="2"/>
+<text x="135" y="590" font-family="IBM Plex Sans, Arial, sans-serif" font-size="23" font-weight="700" fill="#5E6B7A" text-anchor="start">Clinical / operational</text>
+<rect x="110" y="720" width="1700" height="110" rx="14" fill="#FBFCFD" stroke="#D9E2EC" stroke-width="2"/>
+<text x="135" y="785" font-family="IBM Plex Sans, Arial, sans-serif" font-size="23" font-weight="700" fill="#5E6B7A" text-anchor="start">Public / affected</text>
+<rect x="390" y="357" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="480.0" y="404.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">NHS Trust</text>
+<rect x="610" y="357" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="700.0" y="404.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">InfoGov</text>
+<rect x="340" y="522" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="430.0" y="569.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">AI product</text>
+<rect x="560" y="522" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="650.0" y="569.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">PACS / RIS</text>
+<rect x="810" y="522" width="180" height="76" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="900.0" y="569.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">Radiologist</text>
+<rect x="1090" y="522" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1180.0" y="555.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Arbitration</text>
+<text x="1180.0" y="585.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">team</text>
+<rect x="1300" y="522" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1390.0" y="555.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Decision</text>
+<text x="1390.0" y="585.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">record</text>
+<rect x="1170" y="357" width="180" height="76" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="1260.0" y="390.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">Learning</text>
+<text x="1260.0" y="420.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">library</text>
+<rect x="1400" y="357" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1490.0" y="390.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Governance /</text>
+<text x="1490.0" y="420.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">calibration</text>
+<rect x="410" y="717" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="500.0" y="750.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle"></text>
+<text x="500.0" y="780.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Radiographer</text>
+<rect x="810" y="717" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="900.0" y="764.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">MDT / GP</text>
+<rect x="1210" y="717" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1300.0" y="764.0" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Patient</text>
+<line x1="520" y1="560" x2="810" y2="560" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="990" y1="560" x2="1090" y2="560" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1275" y1="560" x2="1300" y2="560" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1390" y1="522" x2="1260" y2="433" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1350" y1="395" x2="1420" y2="395" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="780" y="460" width="770" height="220" rx="18" fill="none" stroke="#2368A2" stroke-width="4"/>
+<text x="1165" y="705" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="800" fill="#2368A2" text-anchor="middle">Readyology service layer</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

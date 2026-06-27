@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Breast cancer screening is high-volume, high-responsibility work</text>
+<rect x="120" y="320" width="380" height="360" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="154" y="405" font-family="IBM Plex Sans, Arial, sans-serif" font-size="42" font-weight="800" fill="#2368A2" text-anchor="start">[PLACEHOLDER]</text>
+<text x="154" y="462" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="start">annual mammograms</text>
+<text x="154" y="530" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">High-volume public health</text>
+<text x="154" y="560" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">pathway</text>
+<rect x="550" y="320" width="380" height="360" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="584" y="405" font-family="IBM Plex Sans, Arial, sans-serif" font-size="42" font-weight="800" fill="#2368A2" text-anchor="start">[PLACEHOLDER]</text>
+<text x="584" y="462" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="start">radiologist workforce pressure</text>
+<text x="584" y="530" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">More cases, limited expert</text>
+<text x="584" y="560" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">capacity</text>
+<rect x="980" y="320" width="380" height="360" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1014" y="405" font-family="IBM Plex Sans, Arial, sans-serif" font-size="42" font-weight="800" fill="#2368A2" text-anchor="start">[PLACEHOLDER]</text>
+<text x="1014" y="462" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="start">screening demand / backlog</text>
+<text x="1014" y="530" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Efficiency pressure is</text>
+<text x="1014" y="560" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">already present</text>
+<rect x="1410" y="320" width="380" height="360" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1444" y="405" font-family="IBM Plex Sans, Arial, sans-serif" font-size="42" font-weight="800" fill="#2368A2" text-anchor="start">[PLACEHOLDER]</text>
+<text x="1444" y="462" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="start">AI pilot evidence</text>
+<text x="1444" y="530" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">AI promises support but</text>
+<text x="1444" y="560" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">changes review</text>
+<text x="120" y="780" font-family="IBM Plex Sans, Arial, sans-serif" font-size="29" font-weight="600" fill="#111827" text-anchor="start">When AI enters this pathway, it does not only support detection. It changes how responsibility, disagreement and review are handled.</text>
+<text x="1510" y="935" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#5E6B7A" text-anchor="start">[PLACEHOLDER: source]</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

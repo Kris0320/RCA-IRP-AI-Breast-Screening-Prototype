@@ -1,0 +1,24 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">9 / 21</text>
+<text x="120" y="220" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="36" font-weight="400" fill="#6B7280" text-anchor="start" style="">Across all 4 placement models:</text>
+<text x="120" y="310" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="96" font-weight="700" fill="#0D1117" text-anchor="start" style="">One shared failure point.</text>
+<line x1="120" y1="360" x2="760" y2="360" stroke="#124BCE" stroke-width="3"/>
+<text x="120" y="442" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="48" font-weight="700" fill="#124BCE" text-anchor="start" style="">When AI and human judgement diverge --</text>
+<text x="120" y="510" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="48" font-weight="700" fill="#0D1117" text-anchor="start" style="">accountability, traceability and learning break down.</text>
+<line x1="120" y1="660" x2="626" y2="660" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="702" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#0D1117" text-anchor="start" style="">Disagreement risk</text>
+<text x="120" y="740" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">No structured classification of</text>
+<text x="120" y="774" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">disagreement type or severity</text>
+<line x1="706" y1="660" x2="1212" y2="660" stroke="#E5E7EB" stroke-width="1"/>
+<text x="706" y="702" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#0D1117" text-anchor="start" style="">Liability gap</text>
+<text x="706" y="740" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Override reasons inconsistently</text>
+<text x="706" y="774" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">recorded across practitioners</text>
+<line x1="1292" y1="660" x2="1798" y2="660" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1292" y="702" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#0D1117" text-anchor="start" style="">Lost learning</text>
+<text x="1292" y="740" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Difficult cases not systematically</text>
+<text x="1292" y="774" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">fed into calibration</text>
+</svg>

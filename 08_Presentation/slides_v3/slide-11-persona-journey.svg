@@ -1,0 +1,45 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">11 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">Where the Disagreement Journey Breaks</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">Breast Advanced Practitioner -- primary image reader in NHS breast screening.</text>
+<text x="120" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="30" font-weight="700" fill="#0D1117" text-anchor="start" style="">Breast Advanced Practitioner</text>
+<line x1="120" y1="372" x2="920" y2="372" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="428" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#124BCE" text-anchor="start" style="">~5,000</text>
+<text x="120" y="464" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">cases per year</text>
+<text x="120" y="500" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#124BCE" text-anchor="start" style="">Band 7</text>
+<text x="120" y="536" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">NHS grade</text>
+<text x="120" y="572" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#124BCE" text-anchor="start" style="">15+ years</text>
+<text x="120" y="608" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">experience in breast screening</text>
+<line x1="120" y1="654" x2="920" y2="654" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="696" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic;">"After the mobile van session, I switch immediately</text>
+<text x="120" y="730" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="font-style:italic;">into focused reading mode."</text>
+<text x="1000" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="30" font-weight="700" fill="#0D1117" text-anchor="start" style="">Current journey</text>
+<line x1="1000" y1="372" x2="1800" y2="372" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="412" r="5" fill="#6B7280"/>
+<text x="1026" y="420" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#6B7280" text-anchor="start" style="">Case enters queue</text>
+<text x="1026" y="456" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Receives case in RIS worklist. No AI output yet.</text>
+<line x1="1011" y1="436" x2="1011" y2="522" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="524" r="5" fill="#6B7280"/>
+<text x="1026" y="532" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#6B7280" text-anchor="start" style="">Independent reading</text>
+<text x="1026" y="568" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Reads mammogram. Records her judgement.</text>
+<line x1="1011" y1="548" x2="1011" y2="634" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="636" r="5" fill="#F59E0B"/>
+<text x="1026" y="644" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#F59E0B" text-anchor="start" style="">AI visibility moment</text>
+<text x="1026" y="680" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">AI risk score revealed. No structured comparison support.</text>
+<line x1="1011" y1="660" x2="1011" y2="746" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="748" r="5" fill="#EA580C"/>
+<text x="1026" y="756" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#EA580C" text-anchor="start" style="">Disagreement detected</text>
+<text x="1026" y="792" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Scores differ. No escalation protocol. Ad hoc decision.</text>
+<line x1="1011" y1="772" x2="1011" y2="858" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="860" r="5" fill="#F59E0B"/>
+<text x="1026" y="868" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#F59E0B" text-anchor="start" style="">Informal arbitration</text>
+<text x="1026" y="904" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Senior review requested verbally. No structured handover.</text>
+<line x1="1011" y1="884" x2="1011" y2="970" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="972" r="5" fill="#6B7280"/>
+<text x="1026" y="980" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#6B7280" text-anchor="start" style="">Outcome and record</text>
+<text x="1026" y="1016" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Recall or no-recall. Reasoning rarely recorded.</text>
+</svg>

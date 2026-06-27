@@ -1,0 +1,33 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">6 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">Evidence-Based. Expert-Validated.</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">Built on primary research and published literature.</text>
+<text x="120" y="340" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">01</text>
+<text x="192" y="340" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">AI Workflow Models</text>
+<line x1="120" y1="356" x2="920" y2="356" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="402" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">7 AI-human workflow models analysed  ·  source: Pilot Implementation Evidence Note</text>
+<text x="1000" y="340" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">02</text>
+<text x="1072" y="340" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">Expert Consultation</text>
+<line x1="1000" y1="356" x2="1800" y2="356" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="402" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Sophia Zackrisson, Senior Consultant Radiologist, Lund University  ·  wireframe prototype test</text>
+<text x="120" y="524" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">03</text>
+<text x="192" y="524" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">Usability Testing</text>
+<line x1="120" y1="540" x2="920" y2="540" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Medical student, real clinical experience  ·  interactive prototype session</text>
+<text x="1000" y="524" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">04</text>
+<text x="1072" y="524" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">Literature Review</text>
+<line x1="1000" y1="540" x2="1800" y2="540" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">EDITH trial  ·  NHS Breast Screening Programme data  ·  disagreement classification frameworks</text>
+<text x="120" y="708" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">05</text>
+<text x="192" y="708" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">Primary Interviews</text>
+<line x1="120" y1="724" x2="920" y2="724" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="770" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Breast care practitioners  ·  radiographers  ·  NHS service leads</text>
+<text x="1000" y="708" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">06</text>
+<text x="1072" y="708" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#0D1117" text-anchor="start" style="">Design Frameworks</text>
+<line x1="1000" y1="724" x2="1800" y2="724" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="770" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start" style="">Service blueprint  ·  theory of change  ·  non-blame accountability design</text>
+</svg>

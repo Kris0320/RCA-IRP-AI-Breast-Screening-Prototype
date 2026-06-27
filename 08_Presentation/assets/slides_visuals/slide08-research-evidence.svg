@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">We built the project from evidence, not assumption</text>
+<rect x="100" y="270" width="250" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="225" y="335" font-family="IBM Plex Sans, Arial, sans-serif" font-size="46" font-weight="800" fill="#2368A2" text-anchor="middle">[X]</text>
+<text x="225" y="380" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">workflow models</text>
+<rect x="390" y="270" width="250" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="515" y="335" font-family="IBM Plex Sans, Arial, sans-serif" font-size="46" font-weight="800" fill="#2368A2" text-anchor="middle">[X]</text>
+<text x="515" y="380" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">countries / pilots</text>
+<rect x="680" y="270" width="250" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="805" y="335" font-family="IBM Plex Sans, Arial, sans-serif" font-size="46" font-weight="800" fill="#2368A2" text-anchor="middle">[X]</text>
+<text x="805" y="380" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">expert conversations</text>
+<rect x="970" y="270" width="250" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1095" y="335" font-family="IBM Plex Sans, Arial, sans-serif" font-size="46" font-weight="800" fill="#2368A2" text-anchor="middle">[X]</text>
+<text x="1095" y="380" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">tutorial rounds</text>
+<rect x="1260" y="270" width="250" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1385" y="335" font-family="IBM Plex Sans, Arial, sans-serif" font-size="46" font-weight="800" fill="#2368A2" text-anchor="middle">[X]</text>
+<text x="1385" y="380" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">prototype tests</text>
+<rect x="1550" y="270" width="250" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1675" y="335" font-family="IBM Plex Sans, Arial, sans-serif" font-size="46" font-weight="800" fill="#2368A2" text-anchor="middle">[X]</text>
+<text x="1675" y="380" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">synthesis maps</text>
+<rect x="130" y="515" width="300" height="160" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="154" y1="537" x2="406" y2="537" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="158" y="587" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Literature and pilot review</text>
+<text x="158" y="627" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">[PLACEHOLDER: image / source]</text>
+<rect x="480" y="515" width="300" height="160" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="504" y1="537" x2="756" y2="537" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="508" y="587" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Expert interviews</text>
+<text x="508" y="627" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">[PLACEHOLDER: image / source]</text>
+<rect x="830" y="515" width="300" height="160" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="854" y1="537" x2="1106" y2="537" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="858" y="587" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Workflow comparison</text>
+<text x="858" y="627" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">[PLACEHOLDER: image / source]</text>
+<rect x="1180" y="515" width="300" height="160" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1204" y1="537" x2="1456" y2="537" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="1208" y="587" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">System mapping</text>
+<text x="1208" y="627" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">[PLACEHOLDER: image / source]</text>
+<rect x="1530" y="515" width="300" height="160" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1554" y1="537" x2="1806" y2="537" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="1558" y="587" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Prototype testing</text>
+<text x="1558" y="627" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">[PLACEHOLDER: image / source]</text>
+<line x1="560" y1="790" x2="820" y2="790" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="500" y="800" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="middle">Evidence</text>
+<text x="960" y="800" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="middle">Insights</text>
+<line x1="1100" y1="790" x2="1360" y2="790" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="1450" y="800" font-family="IBM Plex Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="middle">Design anchor</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

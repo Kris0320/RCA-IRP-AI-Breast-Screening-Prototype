@@ -104,3 +104,6 @@ Use this inbox for links that are not yet fully read or converted into formal li
 
 
 两名高级放射技师可以进行双重判读，但如果出现单次判读结果不一致的情况，则必须由第三位阅片员进行仲裁，该阅片员应为顾问级别，并具备相应的经验以及筛查敏感性和特异性水平
+
+https://www.facebook.com/skynews/videos/a-new-study-shows-googles-ai-can-identify-breast-cancer-better-than-a-human-doct/4329494997320089/
+https://news.sky.com/story/why-nhs-needs-time-to-bring-in-lightning-speed-cancer-checks-13517830

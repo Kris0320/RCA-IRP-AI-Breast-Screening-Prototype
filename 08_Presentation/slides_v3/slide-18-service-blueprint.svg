@@ -1,0 +1,105 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">18 / 21</text>
+<text x="120" y="88" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="52" font-weight="700" fill="#0D1117" text-anchor="start" style="">Service Blueprint</text>
+<text x="120" y="138" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Readyology across four key service moments  ·  Detect  ·  Resolve  ·  Record  ·  Learn</text>
+<line x1="332" y1="168" x2="693" y2="168" stroke="#EA580C" stroke-width="2"/>
+<text x="512" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#EA580C" text-anchor="middle" style="">Disagreement</text>
+<text x="512" y="226" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#EA580C" text-anchor="middle" style="">Detected</text>
+<line x1="332" y1="240" x2="693" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="705" y1="168" x2="1066" y2="168" stroke="#124BCE" stroke-width="2"/>
+<text x="885" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="middle" style="">Comparison</text>
+<text x="885" y="226" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#124BCE" text-anchor="middle" style="">and Review</text>
+<line x1="705" y1="240" x2="1066" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1078" y1="168" x2="1439" y2="168" stroke="#F59E0B" stroke-width="2"/>
+<text x="1258" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#F59E0B" text-anchor="middle" style="">Consensus /</text>
+<text x="1258" y="226" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#F59E0B" text-anchor="middle" style="">Arbitration</text>
+<line x1="1078" y1="240" x2="1439" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1451" y1="168" x2="1812" y2="168" stroke="#16A34A" stroke-width="2"/>
+<text x="1631" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#16A34A" text-anchor="middle" style="">Record</text>
+<text x="1631" y="226" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="700" fill="#16A34A" text-anchor="middle" style="">and Learn</text>
+<line x1="1451" y1="240" x2="1812" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<text x="220" y="334" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#0D1117" text-anchor="middle" style="">Radiologist</text>
+<text x="220" y="356" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#0D1117" text-anchor="middle" style="">Actions</text>
+<line x1="120" y1="240" x2="320" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="320" y1="240" x2="320" y2="444" stroke="#E5E7EB" stroke-width="1"/>
+<text x="344" y="268" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Sees soft cue</text>
+<text x="344" y="296" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">No interruption</text>
+<line x1="332" y1="240" x2="693" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="705" y1="240" x2="705" y2="444" stroke="#E5E7EB" stroke-width="1"/>
+<text x="717" y="268" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reviews AI vs score</text>
+<text x="717" y="296" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Confirms reason tag</text>
+<line x1="705" y1="240" x2="1066" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1078" y1="240" x2="1078" y2="444" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1090" y="268" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Joins consensus</text>
+<text x="1090" y="296" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reviews evidence</text>
+<line x1="1078" y1="240" x2="1439" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1451" y1="240" x2="1451" y2="444" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1463" y="268" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Signs off receipt</text>
+<text x="1463" y="296" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Records decision</text>
+<line x1="1451" y1="240" x2="1812" y2="240" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1824" y1="240" x2="1824" y2="444" stroke="#E5E7EB" stroke-width="1"/>
+<text x="220" y="538" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#124BCE" text-anchor="middle" style="">Readyology</text>
+<text x="220" y="560" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#124BCE" text-anchor="middle" style="">Layer</text>
+<line x1="120" y1="444" x2="320" y2="444" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="320" y1="444" x2="320" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<text x="344" y="472" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="700" fill="#124BCE" text-anchor="start" style="">Soft comparison cue</text>
+<text x="344" y="500" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#124BCE" text-anchor="start" style="">Classifier triggered</text>
+<line x1="332" y1="444" x2="693" y2="444" stroke="#124BCE" stroke-width="1.5"/>
+<line x1="705" y1="444" x2="705" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<text x="717" y="472" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="700" fill="#124BCE" text-anchor="start" style="">TP1: Comparison view</text>
+<text x="717" y="500" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#124BCE" text-anchor="start" style="">AI, marks, tags</text>
+<line x1="705" y1="444" x2="1066" y2="444" stroke="#124BCE" stroke-width="1.5"/>
+<line x1="1078" y1="444" x2="1078" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1090" y="472" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="700" fill="#124BCE" text-anchor="start" style="">TP2: Consensus</text>
+<text x="1090" y="500" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#124BCE" text-anchor="start" style="">Handover summary</text>
+<line x1="1078" y1="444" x2="1439" y2="444" stroke="#124BCE" stroke-width="1.5"/>
+<line x1="1451" y1="444" x2="1451" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1463" y="472" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="700" fill="#124BCE" text-anchor="start" style="">TP3: Decision receipt</text>
+<text x="1463" y="500" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#124BCE" text-anchor="start" style="">Audit, learning flag</text>
+<line x1="1451" y1="444" x2="1812" y2="444" stroke="#124BCE" stroke-width="1.5"/>
+<line x1="1824" y1="444" x2="1824" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<text x="220" y="742" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#6B7280" text-anchor="middle" style="">System</text>
+<text x="220" y="764" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#6B7280" text-anchor="middle" style="">Back-stage</text>
+<line x1="120" y1="648" x2="320" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="320" y1="648" x2="320" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<text x="344" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">AI score generated</text>
+<text x="344" y="704" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Type classified</text>
+<line x1="332" y1="648" x2="693" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="705" y1="648" x2="705" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<text x="717" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Evidence prepared</text>
+<text x="717" y="704" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Tags suggested</text>
+<line x1="705" y1="648" x2="1066" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1078" y1="648" x2="1078" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1090" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Handover auto-gen</text>
+<text x="1090" y="704" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Context sent</text>
+<line x1="1078" y1="648" x2="1439" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1451" y1="648" x2="1451" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1463" y="676" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Receipt stored</text>
+<text x="1463" y="704" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Case flagged</text>
+<line x1="1451" y1="648" x2="1812" y2="648" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1824" y1="648" x2="1824" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<text x="220" y="946" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#9CA3AF" text-anchor="middle" style="">Supporting</text>
+<text x="220" y="968" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#9CA3AF" text-anchor="middle" style="">Systems</text>
+<line x1="120" y1="852" x2="320" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="320" y1="852" x2="320" y2="1056" stroke="#E5E7EB" stroke-width="1"/>
+<text x="344" y="880" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">PACS + AI + Readyology</text>
+<line x1="332" y1="852" x2="693" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="705" y1="852" x2="705" y2="1056" stroke="#E5E7EB" stroke-width="1"/>
+<text x="717" y="880" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Readyology view</text>
+<text x="717" y="908" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">PACS</text>
+<line x1="705" y1="852" x2="1066" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1078" y1="852" x2="1078" y2="1056" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1090" y="880" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Readyology consensus</text>
+<text x="1090" y="908" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">RIS</text>
+<line x1="1078" y1="852" x2="1439" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1451" y1="852" x2="1451" y2="1056" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1463" y="880" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Audit record</text>
+<text x="1463" y="908" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Case library</text>
+<line x1="1451" y1="852" x2="1812" y2="852" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1824" y1="852" x2="1824" y2="1056" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="120" y1="1056" x2="1800" y2="1056" stroke="#E5E7EB" stroke-width="1"/>
+</svg>

@@ -74,14 +74,20 @@ Fields:
 - `Arbitration outcome: Recall to assessment`
 - `Learning tag: AI-positive / human-negative disagreement`
 
-## Care Loop message
+## Disagreement Case Library message
 
-Title: `Added to Care Loop`
+<!-- previously: "Care Loop message" — archived in ARCHIVE_care-loop-original-copy.md -->
+
+Title: `Added to Disagreement Library`
 
 Body:
 
-`This case has been added to the next team calibration review.`
+`Available for team calibration and future arbitration reference.`
 
 Pattern:
 
-`High-confidence AI-positive cases initially dismissed by human readers.`
+`Pattern observed: AI-positive / human-negative · detection gap`
+
+Learning note:
+
+`The learning loop is not primarily about training the AI model. It helps radiologists and teams recognise recurring disagreement patterns, calibrate judgement, and improve how they interpret, discuss and resolve AI-human disagreement.`

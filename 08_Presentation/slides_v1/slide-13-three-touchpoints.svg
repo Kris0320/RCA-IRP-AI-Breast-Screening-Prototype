@@ -1,0 +1,81 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="96" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="700" fill="#111827" text-anchor="start">Three Service Touchpoints</text>
+<text x="80" y="138" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="normal" fill="#6B7280" text-anchor="start">Readyology sits across three moments in the reading and governance workflow.</text>
+<rect x="80" y="174" width="354" height="442" fill="#EFF6FF" rx="12"/>
+<rect x="80" y="174" width="354" height="10" fill="#2563EB" rx="6"/>
+<rect x="80" y="178" width="354" height="6" fill="#2563EB"/>
+<text x="104" y="230" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#2563EB" text-anchor="start">01</text>
+<text x="104" y="274" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Reading</text>
+<text x="104" y="304" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Calibration</text>
+<text x="104" y="344" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">The moment AI output is</text>
+<text x="104" y="366" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">revealed alongside human</text>
+<text x="104" y="388" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">judgement.</text>
+<circle cx="98" cy="410" r="4" fill="#2563EB"/>
+<text x="112" y="418" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Soft visual cue — no alarm,</text>
+<text x="112" y="436" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">no interruption</text>
+<circle cx="98" cy="442" r="4" fill="#2563EB"/>
+<text x="112" y="450" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">AI score, mark and prior</text>
+<text x="112" y="468" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">images shown together</text>
+<circle cx="98" cy="474" r="4" fill="#2563EB"/>
+<text x="112" y="482" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Reader confirms, edits or</text>
+<text x="112" y="500" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">flags for review</text>
+<circle cx="98" cy="506" r="4" fill="#2563EB"/>
+<text x="112" y="514" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Lightweight reasoning tag</text>
+<text x="112" y="532" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">captured automatically</text>
+<rect x="80" y="566" width="354" height="50" fill="#2563EB" rx="0"/>
+<rect x="80" y="604" width="354" height="12" fill="#2563EB" rx="6"/>
+<rect x="80" y="566" width="354" height="38" fill="#2563EB"/>
+<text x="257" y="598" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">For: Breast Advanced Practitioners / Radiologists</text>
+<rect x="462" y="174" width="354" height="442" fill="#FFFBEB" rx="12"/>
+<rect x="462" y="174" width="354" height="10" fill="#F59E0B" rx="6"/>
+<rect x="462" y="178" width="354" height="6" fill="#F59E0B"/>
+<text x="486" y="230" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#F59E0B" text-anchor="start">02</text>
+<text x="486" y="274" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Consensus</text>
+<text x="486" y="304" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Review Support</text>
+<text x="486" y="344" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Structured context when a</text>
+<text x="486" y="366" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">case needs a second look or</text>
+<text x="486" y="388" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">senior review.</text>
+<circle cx="480" cy="410" r="4" fill="#F59E0B"/>
+<text x="494" y="418" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Evidence travels with the</text>
+<text x="494" y="436" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">case into review</text>
+<circle cx="480" cy="442" r="4" fill="#F59E0B"/>
+<text x="494" y="450" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Comparison view: human</text>
+<text x="494" y="468" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">judgement vs AI output</text>
+<circle cx="480" cy="474" r="4" fill="#F59E0B"/>
+<text x="494" y="482" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Prior screening history</text>
+<text x="494" y="500" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">visible at arbitration</text>
+<circle cx="480" cy="506" r="4" fill="#F59E0B"/>
+<text x="494" y="514" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Non-blame decision receipt</text>
+<text x="494" y="532" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">after resolution</text>
+<rect x="462" y="566" width="354" height="50" fill="#F59E0B" rx="0"/>
+<rect x="462" y="604" width="354" height="12" fill="#F59E0B" rx="6"/>
+<rect x="462" y="566" width="354" height="38" fill="#F59E0B"/>
+<text x="639" y="598" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">For: Senior Radiologists / Arbitration Group</text>
+<rect x="844" y="174" width="354" height="442" fill="#F0FDF4" rx="12"/>
+<rect x="844" y="174" width="354" height="10" fill="#16A34A" rx="6"/>
+<rect x="844" y="178" width="354" height="6" fill="#16A34A"/>
+<text x="868" y="230" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#16A34A" text-anchor="start">03</text>
+<text x="868" y="274" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Learning &</text>
+<text x="868" y="304" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Governance Loop</text>
+<text x="868" y="344" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">Selected cases become</text>
+<text x="868" y="366" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">calibration material after</text>
+<text x="868" y="388" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" fill="#6B7280" text-anchor="start">outcome is known.</text>
+<circle cx="862" cy="410" r="4" fill="#16A34A"/>
+<text x="876" y="418" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Cases enter library after</text>
+<text x="876" y="436" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">follow-up outcome</text>
+<circle cx="862" cy="442" r="4" fill="#16A34A"/>
+<text x="876" y="450" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Learning Value Check before</text>
+<text x="876" y="468" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">case is selected</text>
+<circle cx="862" cy="474" r="4" fill="#16A34A"/>
+<text x="876" y="482" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Calibration case library for</text>
+<text x="876" y="500" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">audit and teaching</text>
+<circle cx="862" cy="506" r="4" fill="#16A34A"/>
+<text x="876" y="514" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">Governance dashboard for</text>
+<text x="876" y="532" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">service leads</text>
+<rect x="844" y="566" width="354" height="50" fill="#16A34A" rx="0"/>
+<rect x="844" y="604" width="354" height="12" fill="#16A34A" rx="6"/>
+<rect x="844" y="566" width="354" height="38" fill="#16A34A"/>
+<text x="1021" y="598" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">For: NHS Service Leads / Quality Teams</text>
+</svg>

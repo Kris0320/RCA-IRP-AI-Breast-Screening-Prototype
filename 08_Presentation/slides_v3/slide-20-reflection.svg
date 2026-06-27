@@ -1,0 +1,62 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">20 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">Reflection and Learning Outcomes</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">What this project taught us -- as designers and as researchers.</text>
+<text x="120" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#124BCE" text-anchor="start" style="">What we learned</text>
+<text x="120" y="388" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#124BCE" text-anchor="start" style="">about the problem</text>
+<line x1="120" y1="440" x2="626" y2="440" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="126" cy="476" r="4" fill="#124BCE"/>
+<text x="148" y="484" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Disagreement is a governance</text>
+<text x="148" y="514" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">failure, not a technical one</text>
+<circle cx="126" cy="548" r="4" fill="#124BCE"/>
+<text x="148" y="556" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Human-AI trust is calibrated</text>
+<text x="148" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">through evidence</text>
+<circle cx="126" cy="620" r="4" fill="#124BCE"/>
+<text x="148" y="628" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">The service layer must be</text>
+<text x="148" y="658" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">invisible to be adopted</text>
+<circle cx="126" cy="692" r="4" fill="#124BCE"/>
+<text x="148" y="700" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Learning only happens when</text>
+<text x="148" y="730" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">recording is low-burden</text>
+<circle cx="126" cy="764" r="4" fill="#124BCE"/>
+<text x="148" y="772" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Arbitration means consensus, not</text>
+<text x="148" y="802" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">formal judgment</text>
+<text x="706" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#6B7280" text-anchor="start" style="">What we learned</text>
+<text x="706" y="388" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#6B7280" text-anchor="start" style="">about service design</text>
+<line x1="706" y1="440" x2="1212" y2="440" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="712" cy="476" r="4" fill="#6B7280"/>
+<text x="734" y="484" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Systems thinking revealed hidden</text>
+<text x="734" y="514" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">actor relationships</text>
+<circle cx="712" cy="548" r="4" fill="#6B7280"/>
+<text x="734" y="556" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Blueprint exposed front-stage vs</text>
+<text x="734" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">back-stage gaps</text>
+<circle cx="712" cy="620" r="4" fill="#6B7280"/>
+<text x="734" y="628" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Theory of change kept decisions</text>
+<text x="734" y="658" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">evidence-anchored</text>
+<circle cx="712" cy="692" r="4" fill="#6B7280"/>
+<text x="734" y="700" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">User testing surfaced assumptions</text>
+<text x="734" y="730" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">we hadn't questioned</text>
+<circle cx="712" cy="764" r="4" fill="#6B7280"/>
+<text x="734" y="772" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Research rigour makes design</text>
+<text x="734" y="802" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">decisions defensible</text>
+<text x="1292" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="700" fill="#16A34A" text-anchor="start" style="">Next steps</text>
+<line x1="1292" y1="440" x2="1798" y2="440" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1298" cy="476" r="4" fill="#16A34A"/>
+<text x="1320" y="484" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Full radiologist validation study</text>
+<text x="1320" y="514" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">with NHS trust</text>
+<circle cx="1298" cy="548" r="4" fill="#16A34A"/>
+<text x="1320" y="556" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Integration pathway for existing</text>
+<text x="1320" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">workstations</text>
+<circle cx="1298" cy="620" r="4" fill="#16A34A"/>
+<text x="1320" y="628" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Governance and audit pilot with</text>
+<text x="1320" y="658" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">service leads</text>
+<circle cx="1298" cy="692" r="4" fill="#16A34A"/>
+<text x="1320" y="700" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI calibration loop design and</text>
+<text x="1320" y="730" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">outcome tracking</text>
+<circle cx="1298" cy="764" r="4" fill="#16A34A"/>
+<text x="1320" y="772" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">Expand to other AI-human</text>
+<text x="1320" y="802" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#0D1117" text-anchor="start" style="">disagreement contexts</text>
+</svg>

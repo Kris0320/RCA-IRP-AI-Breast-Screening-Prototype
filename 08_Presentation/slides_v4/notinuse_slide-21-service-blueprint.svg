@@ -1,0 +1,123 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" letter-spacing="3">SOLUTION</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">21 / 26</text>
+<text x="160" y="142" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827">Service Blueprint</text>
+<text x="160" y="180" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280">Readyology across the full screening pathway  ·  from case intake to calibration</text>
+<rect x="278" y="198" width="1482" height="72" fill="#0A1628"/>
+<rect x="490" y="198" width="212" height="72" fill="#2D1508"/>
+<rect x="490" y="198" width="212" height="3" fill="#E8693C"/>
+<rect x="490" y="270" width="212" height="790" fill="#FFF3EE" opacity="0.45"/>
+<rect x="1126" y="198" width="212" height="72" fill="#1A2E50"/>
+<rect x="1126" y="198" width="212" height="3" fill="#124BCE"/>
+<rect x="1126" y="270" width="212" height="790" fill="#EBF2FF" opacity="0.45"/>
+<rect x="1550" y="198" width="210" height="72" fill="#2D1508"/>
+<rect x="1550" y="198" width="210" height="3" fill="#E8693C"/>
+<rect x="1550" y="270" width="210" height="790" fill="#FFF3EE" opacity="0.45"/>
+<text x="384" y="226" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Case enters</text>
+<text x="384" y="244" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">queue</text>
+<text x="596" y="215" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Independent</text>
+<text x="596" y="230" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">reading</text>
+<text x="596" y="254" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#E8693C" text-anchor="middle">Human decision lock</text>
+<text x="808" y="226" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">AI visibility</text>
+<text x="808" y="244" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">moment</text>
+<text x="1020" y="226" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Disagreement</text>
+<text x="1020" y="244" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">recognition</text>
+<text x="1232" y="215" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Comparison</text>
+<text x="1232" y="230" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">review</text>
+<text x="1232" y="248" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#124BCE" text-anchor="middle">Structured</text>
+<text x="1232" y="261" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#124BCE" text-anchor="middle">disagreement handover</text>
+<text x="1444" y="239" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Arbitration</text>
+<text x="1655" y="215" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Feedback &amp;</text>
+<text x="1655" y="230" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">calibration</text>
+<text x="1655" y="248" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#E8693C" text-anchor="middle">Outcome-to-learning</text>
+<text x="1655" y="261" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" fill="#E8693C" text-anchor="middle">loop</text>
+<line x1="160" y1="198" x2="1760" y2="198" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="270" x2="1760" y2="270" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="428" x2="1760" y2="428" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="586" x2="1760" y2="586" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="744" x2="1760" y2="744" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="902" x2="1760" y2="902" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="1060" x2="1760" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="160" y1="198" x2="160" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="278" y1="198" x2="278" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="490" y1="198" x2="490" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="702" y1="198" x2="702" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="914" y1="198" x2="914" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="1126" y1="198" x2="1126" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="1338" y1="198" x2="1338" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="1550" y1="198" x2="1550" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<line x1="1760" y1="198" x2="1760" y2="1060" stroke="#C4C8D2" stroke-width="1"/>
+<text x="219" y="342" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#111827" text-anchor="middle">Radiologist</text>
+<text x="219" y="356" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#111827" text-anchor="middle">Actions</text>
+<text x="219" y="500" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle">Arbitration</text>
+<text x="219" y="514" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle">Actions</text>
+<text x="219" y="658" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#124BCE" text-anchor="middle">Front Stage</text>
+<text x="219" y="672" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#124BCE" text-anchor="middle">(Readyology)</text>
+<text x="219" y="816" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle">System</text>
+<text x="219" y="830" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle">Back-stage</text>
+<text x="219" y="974" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="middle">Supporting</text>
+<text x="219" y="988" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="middle">Systems</text>
+<text x="286" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Receives worklist</text>
+<text x="286" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Opens case in PACS</text>
+<text x="384" y="513" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="300" fill="#9CA3AF" text-anchor="middle">—</text>
+<text x="286" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Worklist UI</text>
+<text x="286" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Case routing</text>
+<text x="286" y="827" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Case routed to readers</text>
+<text x="286" y="985" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">PACS · RIS · Worklist</text>
+<text x="498" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reads mammogram</text>
+<text x="498" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Submits score</text>
+<text x="596" y="513" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="300" fill="#9CA3AF" text-anchor="middle">—</text>
+<text x="498" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Reading viewer</text>
+<text x="498" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Submit lock (AI hidden)</text>
+<text x="498" y="819" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">AI scores image</text>
+<text x="498" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">(hidden from reader)</text>
+<text x="498" y="977" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">PACS · Readyology viewer</text>
+<text x="498" y="994" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">· AI model</text>
+<text x="710" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">AI result revealed</text>
+<text x="710" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reviews AI suggestion</text>
+<text x="808" y="513" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="300" fill="#9CA3AF" text-anchor="middle">—</text>
+<text x="710" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">AI reveal panel</text>
+<text x="710" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">after submit</text>
+<text x="710" y="819" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Score retrieved</text>
+<text x="710" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Comparison triggered</text>
+<text x="710" y="985" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">Readyology · AI API</text>
+<text x="922" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Notified of gap</text>
+<text x="922" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Tags disagreement type</text>
+<text x="1020" y="513" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="300" fill="#9CA3AF" text-anchor="middle">—</text>
+<text x="922" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Disagreement alert</text>
+<text x="922" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Tag selector</text>
+<text x="922" y="819" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Gap detected</text>
+<text x="922" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">&amp; classified</text>
+<text x="922" y="985" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">Readyology classifier</text>
+<text x="1134" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reviews side-by-side</text>
+<text x="1134" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Confirms reason</text>
+<text x="1134" y="503" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Receives structured</text>
+<text x="1134" y="520" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">handover</text>
+<text x="1134" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Comparison view</text>
+<text x="1134" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">+ handover form</text>
+<text x="1134" y="819" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Evidence pack generated</text>
+<text x="1134" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Handover drafted</text>
+<text x="1134" y="985" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">Readyology · PACS</text>
+<text x="1346" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Joins if required</text>
+<text x="1346" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reviews final view</text>
+<text x="1346" y="503" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reviews both reads</text>
+<text x="1346" y="520" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Makes final decision</text>
+<text x="1346" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Arbitration meeting</text>
+<text x="1346" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">screen</text>
+<text x="1346" y="819" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Consensus record</text>
+<text x="1346" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">created</text>
+<text x="1346" y="985" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">Readyology · RIS</text>
+<text x="1558" y="345" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Sees outcome feedback</text>
+<text x="1558" y="362" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reflects on case</text>
+<text x="1558" y="503" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">Reviews aggregate</text>
+<text x="1558" y="520" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#111827">outcomes</text>
+<text x="1558" y="661" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Outcome dashboard</text>
+<text x="1558" y="678" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#124BCE">Calibration log</text>
+<text x="1558" y="819" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Outcomes stored</text>
+<text x="1558" y="836" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Learning flag raised</text>
+<text x="1558" y="977" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">Readyology case library</text>
+<text x="1558" y="994" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF">· Audit log</text>
+</svg>

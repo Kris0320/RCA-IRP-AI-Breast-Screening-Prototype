@@ -1,0 +1,31 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">7 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">AI Doesn't Just Assist.</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">It reads the case in parallel -- and it disagrees.</text>
+<text x="120" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="600" fill="#6B7280" text-anchor="start" style="">Before AI</text>
+<line x1="120" y1="368" x2="920" y2="368" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="126" cy="398" r="4" fill="#6B7280"/>
+<text x="148" y="406" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#0D1117" text-anchor="start" style="">Radiologist reads mammogram</text>
+<circle cx="126" cy="458" r="4" fill="#6B7280"/>
+<text x="148" y="466" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#0D1117" text-anchor="start" style="">Radiologist decides: recall / no-recall</text>
+<circle cx="126" cy="518" r="4" fill="#6B7280"/>
+<text x="148" y="526" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#0D1117" text-anchor="start" style="">Case complete</text>
+<circle cx="126" cy="578" r="4" fill="#6B7280"/>
+<text x="148" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#0D1117" text-anchor="start" style="">No parallel reader</text>
+<text x="1000" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="32" font-weight="600" fill="#124BCE" text-anchor="start" style="">After AI (concurrent second reader)</text>
+<line x1="1000" y1="368" x2="1800" y2="368" stroke="#124BCE" stroke-width="1.5"/>
+<circle cx="1006" cy="398" r="4" fill="#0D1117"/>
+<text x="1028" y="406" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#0D1117" text-anchor="start" style="">Radiologist reads mammogram</text>
+<circle cx="1006" cy="458" r="4" fill="#124BCE"/>
+<text x="1028" y="466" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#124BCE" text-anchor="start" style="">AI reads same case in parallel</text>
+<circle cx="1006" cy="518" r="4" fill="#EA580C"/>
+<text x="1028" y="526" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="700" fill="#EA580C" text-anchor="start" style="">Scores compared -- disagreement detected</text>
+<circle cx="1006" cy="578" r="4" fill="#EA580C"/>
+<text x="1028" y="586" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="700" fill="#EA580C" text-anchor="start" style="">??? No protocol. No structure. No record.</text>
+<line x1="120" y1="920" x2="1800" y2="920" stroke="#E5E7EB" stroke-width="1"/>
+<text x="960" y="974" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="600" fill="#124BCE" text-anchor="middle" style="">The gap is not detection. It is what happens next.</text>
+</svg>

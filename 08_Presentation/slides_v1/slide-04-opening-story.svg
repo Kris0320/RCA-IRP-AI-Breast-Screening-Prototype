@@ -1,0 +1,31 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="72" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6B7280" text-anchor="start">A MOMENT IN THE READING ROOM</text>
+<text x="80" y="72" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="600" fill="#6B7280" letter-spacing="2">A MOMENT IN THE READING ROOM</text>
+<rect x="80" y="100" width="352" height="390" fill="#F3F4F6" rx="12"/>
+<circle cx="116" cy="142" r="22" fill="#E5E7EB"/>
+<text x="116" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#6B7280" text-anchor="middle">①</text>
+<text x="104" y="202" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#111827" text-anchor="start">A radiologist reads a mammogram.</text>
+<text x="104" y="230" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#6B7280" text-anchor="start">Independent judgement: case is normal.</text>
+<text x="104" y="258" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#6B7280" text-anchor="start">No recall needed.</text>
+<rect x="464" y="100" width="352" height="390" fill="#EFF6FF" rx="12"/>
+<circle cx="500" cy="142" r="22" fill="#2563EB"/>
+<text x="500" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">②</text>
+<text x="488" y="202" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#2563EB" text-anchor="start">AI flags a suspicious area.</text>
+<text x="488" y="230" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#2563EB" text-anchor="start">High confidence score. Possible lesion.</text>
+<text x="488" y="258" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#2563EB" text-anchor="start">Recall recommended.</text>
+<rect x="848" y="100" width="352" height="390" fill="#F3F4F6" rx="12"/>
+<circle cx="884" cy="142" r="22" fill="#E5E7EB"/>
+<text x="884" y="148" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#6B7280" text-anchor="middle">③</text>
+<text x="872" y="202" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#111827" text-anchor="start">The question is no longer</text>
+<text x="872" y="230" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#6B7280" text-anchor="start">'who is right?'</text>
+<text x="872" y="258" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#6B7280" text-anchor="start">It is: how should the system support</text>
+<text x="872" y="286" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#6B7280" text-anchor="start">a safe, explainable,</text>
+<text x="872" y="312" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="normal" fill="#6B7280" text-anchor="start">shared decision?</text>
+<text x="448" y="301" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="normal" fill="#6B7280" text-anchor="middle">→</text>
+<text x="832" y="301" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="normal" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="80" y="516" width="1120" height="2" fill="#2563EB"/>
+<text x="640" y="570" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#111827" text-anchor="middle">Disagreement is not a technical glitch.</text>
+<text x="640" y="604" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#111827" text-anchor="middle">It is a service moment that needs design.</text>
+</svg>

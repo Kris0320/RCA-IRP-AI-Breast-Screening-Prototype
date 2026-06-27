@@ -1,0 +1,40 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1280" height="6" fill="#2563EB"/>
+<text x="80" y="96" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="48" font-weight="700" fill="#111827" text-anchor="start">Theory of Change</text>
+<text x="80" y="140" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="normal" fill="#6B7280" text-anchor="start">Our design hypothesis — and how we validated it.</text>
+<line x1="80" y1="162" x2="1200" y2="162" stroke="#E5E7EB" stroke-width="1.5"/>
+<rect x="80" y="190" width="360" height="180" fill="#EFF6FF" rx="10"/>
+<rect x="80" y="190" width="360" height="8" fill="#2563EB" rx="4"/>
+<rect x="80" y="194" width="360" height="4" fill="#2563EB"/>
+<text x="100" y="232" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#2563EB" text-anchor="start">IF</text>
+<text x="100" y="266" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">breast cancer screening teams have a lightweight service layer</text>
+<text x="100" y="286" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">that surfaces AI-human disagreement — with soft cues, structured review,</text>
+<text x="100" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">and a traceable decision record —</text>
+<text x="448" y="292" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="normal" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="460" y="190" width="360" height="180" fill="#FFFBEB" rx="10"/>
+<rect x="460" y="190" width="360" height="8" fill="#F59E0B" rx="4"/>
+<rect x="460" y="194" width="360" height="4" fill="#F59E0B"/>
+<text x="480" y="232" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#F59E0B" text-anchor="start">THEN</text>
+<text x="480" y="266" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">radiologists can detect, resolve and learn from AI-human disagreement</text>
+<text x="480" y="286" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">in a way that is accountable, transparent and consistent,</text>
+<text x="480" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">without adding cognitive burden to an already time-pressured workflow.</text>
+<text x="828" y="292" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="normal" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="840" y="190" width="360" height="180" fill="#F0FDF4" rx="10"/>
+<rect x="840" y="190" width="360" height="8" fill="#16A34A" rx="4"/>
+<rect x="840" y="194" width="360" height="4" fill="#16A34A"/>
+<text x="860" y="232" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="#16A34A" text-anchor="start">SO THAT</text>
+<text x="860" y="266" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">disagreement becomes an institutional learning resource,</text>
+<text x="860" y="286" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">AI calibration improves over time,</text>
+<text x="860" y="306" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#111827" text-anchor="start">and women receive safer, more consistent recall decisions.</text>
+<line x1="80" y1="390" x2="1200" y2="390" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="80" y="420" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start">How we validated this:</text>
+<rect x="80" y="438" width="550" height="96" fill="#F3F4F6" rx="8"/>
+<rect x="80" y="438" width="4" height="96" fill="#2563EB" rx="2"/>
+<text x="100" y="472" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">Expert test (Sophia Zackrisson)</text>
+<text x="100" y="498" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#6B7280" text-anchor="start">Soft cue model confirmed · Consensus review framing validated · 'Keep it simple' directive applied</text>
+<rect x="650" y="438" width="550" height="96" fill="#F3F4F6" rx="8"/>
+<rect x="650" y="438" width="4" height="96" fill="#F59E0B" rx="2"/>
+<text x="670" y="472" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">Usability test (medical student)</text>
+<text x="670" y="498" font-family="Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" fill="#6B7280" text-anchor="start">Low-burden design confirmed · RAG system clarity tested · Directness principle validated</text>
+</svg>

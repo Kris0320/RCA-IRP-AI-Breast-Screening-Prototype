@@ -1,0 +1,32 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#0A1628"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#9CA3AF" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#9CA3AF" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#9CA3AF" text-anchor="end" style="">14 / 21</text>
+<text x="120" y="400" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="108" font-weight="700"><tspan fill="#124BCE" font-style="italic">R</tspan><tspan fill="#FFFFFF">ead</tspan><tspan fill="#124BCE">y</tspan><tspan fill="#FFFFFF">ology</tspan></text>
+<text x="120" y="468" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">A lightweight service layer inside your existing reading workflow.</text>
+<line x1="120" y1="510" x2="880" y2="510" stroke="#1E3A5F" stroke-width="1"/>
+<circle cx="128" cy="550" r="5" fill="#124BCE"/>
+<text x="148" y="558" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">Accountable</text>
+<circle cx="128" cy="602" r="5" fill="#124BCE"/>
+<text x="148" y="610" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">Transparent</text>
+<circle cx="128" cy="654" r="5" fill="#124BCE"/>
+<text x="148" y="662" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">Consistent</text>
+<text x="120" y="1008" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="16" font-weight="400" fill="#4B5563" text-anchor="start" style="">For: Breast Advanced Practitioners  ·  Senior Radiologists  ·  NHS Service Leads</text>
+<text x="1040" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="44" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">Making AI-human disagreement</text>
+<text x="1040" y="298" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="44" font-weight="700" fill="#FFFFFF" text-anchor="start" style="">visible, manageable and learnable.</text>
+<line x1="1040" y1="332" x2="1800" y2="332" stroke="#1E3A5F" stroke-width="1"/>
+<text x="1040" y="380" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="30" font-weight="700" fill="#124BCE" text-anchor="start" style="">Visibility</text>
+<line x1="1040" y1="400" x2="1800" y2="400" stroke="#1E3A5F" stroke-width="1"/>
+<text x="1040" y="446" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Soft cue when AI and human judgement diverge. No alarm.</text>
+<text x="1040" y="480" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">No interruption to flow.</text>
+<text x="1040" y="548" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="30" font-weight="700" fill="#124BCE" text-anchor="start" style="">Traceability</text>
+<line x1="1040" y1="568" x2="1800" y2="568" stroke="#1E3A5F" stroke-width="1"/>
+<text x="1040" y="614" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Every override, comparison and decision is recorded</text>
+<text x="1040" y="648" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">automatically. Non-blame.</text>
+<text x="1040" y="716" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="30" font-weight="700" fill="#124BCE" text-anchor="start" style="">Learnability</text>
+<line x1="1040" y1="736" x2="1800" y2="736" stroke="#1E3A5F" stroke-width="1"/>
+<text x="1040" y="782" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">Difficult cases become calibration material after</text>
+<text x="1040" y="816" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#9CA3AF" text-anchor="start" style="">follow-up outcome is confirmed.</text>
+</svg>

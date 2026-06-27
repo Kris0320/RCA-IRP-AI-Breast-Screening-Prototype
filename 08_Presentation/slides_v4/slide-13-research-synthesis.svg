@@ -1,0 +1,65 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- HEADER -->
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3">RESEARCH</text>
+
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" >13 / 29</text>
+
+
+<!-- H1 -->
+<text x="160" y="154" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" >Five gaps. One pattern.</text>
+
+<!-- PARAGRAPH subtitle -->
+<text x="160" y="186" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" fill="#6B7280" text-anchor="start" >Across expert consultations, public interviews, and nine workflow models analysed.</text>
+
+<rect x="160" y="216" width="300" height="514" fill="#124BCE" rx="4"/>
+<text x="176" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)" text-anchor="start" letter-spacing="2">01</text>
+<text x="444" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="end" letter-spacing="1.5">DESIGN FOCUS</text>
+<text x="176" y="282" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" >AI Role</text>
+<text x="176" y="302" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" >Mismatch</text>
+<line x1="176" y1="324" x2="444" y2="324" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+<text x="176" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="start" >AI cannot join the discussion.</text>
+<text x="176" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="start" >Confidence scores exist but unused.</text>
+<text x="176" y="392" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="start" >AI ignores peer influence — unlike humans.</text>
+<rect x="485" y="216" width="300" height="514" fill="#124BCE" rx="4"/>
+<text x="501" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.7)" text-anchor="start" letter-spacing="2">02</text>
+<text x="769" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="end" letter-spacing="1.5">DESIGN FOCUS</text>
+<text x="501" y="282" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" >Arbitration Workflow</text>
+<text x="501" y="302" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" >Mismatch</text>
+<line x1="501" y1="324" x2="769" y2="324" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+<text x="501" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="start" >Relies on third reader / consensus.</text>
+<text x="501" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="start" >No AI-specific escalation rule.</text>
+<text x="501" y="392" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="start" >No high-confidence second-look trigger.</text>
+<rect x="810" y="216" width="300" height="514" fill="#E4E7EF" rx="4"/>
+<text x="826" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" letter-spacing="2">03</text>
+<text x="826" y="282" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start" >Trust &</text>
+<text x="826" y="302" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start" >Calibration Gap</text>
+<line x1="826" y1="324" x2="1094" y2="324" stroke="#C4C8D2" stroke-width="1"/>
+<text x="826" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >AI capabilities poorly understood.</text>
+<text x="826" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >No PERFORMS-style learning loop.</text>
+<text x="826" y="392" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >Limited feedback on AI performance.</text>
+<rect x="1135" y="216" width="300" height="514" fill="#E4E7EF" rx="4"/>
+<text x="1151" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" letter-spacing="2">04</text>
+<text x="1151" y="282" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start" >Traceability &</text>
+<text x="1151" y="302" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start" >Accountability Gap</text>
+<line x1="1151" y1="324" x2="1419" y2="324" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1151" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >Records show outcome, not process.</text>
+<text x="1151" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >AI confidence scores not recorded.</text>
+<text x="1151" y="392" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >Override reasons not documented.</text>
+<rect x="1460" y="216" width="300" height="514" fill="#E4E7EF" rx="4"/>
+<text x="1476" y="240" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" letter-spacing="2">05</text>
+<text x="1476" y="282" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start" >Data / Technology</text>
+<text x="1476" y="302" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="start" >Instability</text>
+<line x1="1476" y1="324" x2="1744" y2="324" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1476" y="348" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >AI reads processed, not raw data.</text>
+<text x="1476" y="370" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >Vendor updates shift AI behaviour.</text>
+<text x="1476" y="392" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" >Results vary across machines/vendors.</text>
+<line x1="160" y1="746" x2="785" y2="746" stroke="#124BCE" stroke-width="2"/>
+<text x="472" y="766" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="middle" letter-spacing="1">Reading & Arbitration — design focus</text>
+<text x="160" y="860" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" >Research revealed five systemic gaps. Two appear at the most critical moments in the clinical workflow.</text>
+<text x="160" y="900" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start" >Reading and Arbitration — the two moments where the system has no agreed answer.</text>
+
+</svg>

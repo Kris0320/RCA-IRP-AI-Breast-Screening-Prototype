@@ -23,9 +23,12 @@
 10. Warm Handover Card appears.
 11. User clicks `Generate decision receipt`.
 12. Non-blame Decision Receipt appears.
-13. Case is added to the Care Loop:
-   - `This case has been added to the next team calibration review.`
-   - `Pattern to review: High-confidence AI-positive cases initially dismissed by human readers.`
+13. Case is added to the Disagreement Case Library:
+   - `This case has been added to the Disagreement Case Library.`
+   - `Available for team calibration and future arbitration reference.`
+   - `Pattern observed: AI-positive / human-negative · detection gap`
+
+<!-- previously: "Care Loop" — archived in ARCHIVE_care-loop-original-copy.md -->
 
 ## Flow intent
 

@@ -1,0 +1,12 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 01 Cover -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="960" y="420" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="96" font-weight="700" fill="#111827" text-anchor="middle"><tspan font-style="italic" fill="#124BCE">R</tspan><tspan>ead</tspan><tspan fill="#124BCE">y</tspan><tspan>ology</tspan></text>
+<text x="960" y="498" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="500" fill="#1F2937" text-anchor="middle">A lightweight service layer for AI-human disagreement</text>
+<text x="960" y="538" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="500" fill="#1F2937" text-anchor="middle">in breast cancer screening.</text>
+<text x="960" y="596" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="middle">Helping breast screening teams detect, resolve and learn from AI-human disagreement.</text>
+<rect x="900" y="628" width="120" height="4" fill="#124BCE" rx="2"/>
+<text x="960" y="690" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#9CA3AF" text-anchor="middle">Royal College of Art  ·  Innovation Design Engineering  ·  IRP 2025–26</text>
+<rect x="0" y="1071" width="1920" height="9" fill="#124BCE"/>
+</svg>

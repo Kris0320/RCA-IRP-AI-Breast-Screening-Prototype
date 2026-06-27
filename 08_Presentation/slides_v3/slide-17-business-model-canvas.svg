@@ -1,0 +1,79 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">17 / 21</text>
+<text x="120" y="88" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="52" font-weight="700" fill="#0D1117" text-anchor="start" style="">Business Model Canvas</text>
+<text x="120" y="142" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Readyology -- AI-human disagreement support service for breast cancer screening</text>
+<line x1="120" y1="172" x2="440" y2="172" stroke="#124BCE" stroke-width="1"/>
+<text x="130" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">KEY PARTNERS</text>
+<text x="130" y="222" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">NHS Breast Screening</text>
+<text x="130" y="248" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI vendors (DetectedX)</text>
+<text x="130" y="274" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">PACS/RIS integrators</text>
+<text x="130" y="300" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Royal College of Radiologists</text>
+<text x="130" y="326" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">EDITH trial partners</text>
+<line x1="120" y1="842" x2="440" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="440" y1="172" x2="440" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="450" y1="172" x2="710" y2="172" stroke="#124BCE" stroke-width="1"/>
+<text x="460" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">KEY ACTIVITIES</text>
+<text x="460" y="222" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Disagreement detection</text>
+<text x="460" y="248" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Consensus review</text>
+<text x="460" y="274" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Decision record + audit</text>
+<text x="460" y="300" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Learning case library</text>
+<line x1="450" y1="505" x2="710" y2="505" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="710" y1="172" x2="710" y2="505" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="450" y1="509" x2="710" y2="509" stroke="#124BCE" stroke-width="1"/>
+<text x="460" y="537" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">KEY RESOURCES</text>
+<text x="460" y="559" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Classification logic</text>
+<text x="460" y="585" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Non-blame receipt</text>
+<text x="460" y="611" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Case library</text>
+<text x="460" y="637" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Workstation layer</text>
+<line x1="450" y1="842" x2="710" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="710" y1="509" x2="710" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="720" y1="172" x2="1120" y2="172" stroke="#124BCE" stroke-width="2"/>
+<text x="730" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="1.5" style="">VALUE PROPOSITIONS</text>
+<text x="730" y="222" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI-human disagreement visible,</text>
+<text x="730" y="248" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">manageable and learnable</text>
+<text x="730" y="274" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">No new device required</text>
+<text x="730" y="300" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Non-blame governance record</text>
+<text x="730" y="326" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Structured consensus review</text>
+<text x="730" y="352" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Audit trail and learning loop</text>
+<line x1="720" y1="842" x2="1120" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1120" y1="172" x2="1120" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1130" y1="172" x2="1390" y2="172" stroke="#124BCE" stroke-width="1"/>
+<text x="1140" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">RELATIONSHIPS</text>
+<text x="1140" y="222" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">NHS Trust agreements</text>
+<text x="1140" y="248" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Training + onboarding</text>
+<text x="1140" y="274" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Governance reports</text>
+<text x="1140" y="300" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Teaching resource</text>
+<line x1="1130" y1="505" x2="1390" y2="505" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1390" y1="172" x2="1390" y2="505" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1130" y1="509" x2="1390" y2="509" stroke="#124BCE" stroke-width="1"/>
+<text x="1140" y="537" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">CHANNELS</text>
+<text x="1140" y="559" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reading workstation</text>
+<text x="1140" y="585" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">NHS IT procurement</text>
+<text x="1140" y="611" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Clinical training</text>
+<text x="1140" y="637" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Research partnership</text>
+<line x1="1130" y1="842" x2="1390" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1390" y1="509" x2="1390" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1400" y1="172" x2="1720" y2="172" stroke="#124BCE" stroke-width="1"/>
+<text x="1410" y="200" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">CUSTOMER SEGMENTS</text>
+<text x="1410" y="222" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">NHS Breast Screening Units</text>
+<text x="1410" y="248" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Breast Advanced Practitioners</text>
+<text x="1410" y="274" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Senior Radiologists</text>
+<text x="1410" y="300" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">NHS Service Leads</text>
+<line x1="1400" y1="842" x2="1720" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1720" y1="172" x2="1720" y2="842" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="120" y1="850" x2="915" y2="850" stroke="#124BCE" stroke-width="1"/>
+<text x="130" y="878" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#6B7280" text-anchor="start" letter-spacing="1.5" style="">COST STRUCTURE</text>
+<text x="130" y="900" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">Software development + maintenance  ·  Clinical validation  ·  NHS integration engineering  ·  Data security</text>
+<line x1="120" y1="1064" x2="915" y2="1064" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="915" y1="850" x2="915" y2="1064" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="925" y1="850" x2="1720" y2="850" stroke="#124BCE" stroke-width="2"/>
+<text x="935" y="878" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="12" font-weight="700" fill="#124BCE" text-anchor="start" letter-spacing="1.5" style="">REVENUE STREAMS</text>
+<text x="935" y="900" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#0D1117" text-anchor="start" style="">NHS Trust per-site licensing  ·  Governance reporting subscription  ·  Research partnership fees</text>
+<line x1="925" y1="1064" x2="1720" y2="1064" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1720" y1="850" x2="1720" y2="1064" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="120" y1="172" x2="120" y2="1064" stroke="#E5E7EB" stroke-width="1"/>
+</svg>

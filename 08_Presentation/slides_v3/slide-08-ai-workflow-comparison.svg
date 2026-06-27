@@ -1,0 +1,49 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">8 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">AI Workflow Comparison</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">How AI is positioned across clinical pathway models -- and what each requires.</text>
+<line x1="120" y1="458" x2="520" y2="458" stroke="#0D1117" stroke-width="1.5"/>
+<text x="120" y="436" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1" style="">Model</text>
+<line x1="540" y1="458" x2="980" y2="458" stroke="#0D1117" stroke-width="1.5"/>
+<text x="540" y="436" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1" style="">AI Role</text>
+<line x1="1000" y1="458" x2="1400" y2="458" stroke="#0D1117" stroke-width="1.5"/>
+<text x="1000" y="436" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1" style="">Disagreement Risk</text>
+<line x1="1420" y1="458" x2="1800" y2="458" stroke="#0D1117" stroke-width="1.5"/>
+<text x="1420" y="436" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#6B7280" text-anchor="start" letter-spacing="1" style="">Protocol Needed</text>
+<line x1="120" y1="566" x2="520" y2="566" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="540" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI Pre-Screen</text>
+<line x1="540" y1="566" x2="980" y2="566" stroke="#E5E7EB" stroke-width="1"/>
+<text x="540" y="540" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Triage before human read</text>
+<line x1="1000" y1="566" x2="1400" y2="566" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="540" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Low -- human decides</text>
+<line x1="1420" y1="566" x2="1800" y2="566" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1420" y="540" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Prioritisation logic</text>
+<line x1="120" y1="674" x2="520" y2="674" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="648" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="700" fill="#124BCE" text-anchor="start" style="">AI Concurrent  (our context)</text>
+<line x1="540" y1="674" x2="980" y2="674" stroke="#E5E7EB" stroke-width="1"/>
+<text x="540" y="648" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reads in parallel with human</text>
+<line x1="1000" y1="674" x2="1400" y2="674" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="648" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">High -- scores diverge</text>
+<line x1="1420" y1="674" x2="1800" y2="674" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1420" y="648" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Disagreement handling</text>
+<line x1="120" y1="782" x2="520" y2="782" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="756" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI Arbitration</text>
+<line x1="540" y1="782" x2="980" y2="782" stroke="#E5E7EB" stroke-width="1"/>
+<text x="540" y="756" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Called in when humans disagree</text>
+<line x1="1000" y1="782" x2="1400" y2="782" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="756" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Medium -- AI tiebreak</text>
+<line x1="1420" y1="782" x2="1800" y2="782" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1420" y="756" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Override framework</text>
+<line x1="120" y1="890" x2="520" y2="890" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="864" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">AI Post-Read QC</text>
+<line x1="540" y1="890" x2="980" y2="890" stroke="#E5E7EB" stroke-width="1"/>
+<text x="540" y="864" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reviews completed decisions</text>
+<line x1="1000" y1="890" x2="1400" y2="890" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="864" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Medium -- retrospective</text>
+<line x1="1420" y1="890" x2="1800" y2="890" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1420" y="864" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Audit and escalation</text>
+</svg>

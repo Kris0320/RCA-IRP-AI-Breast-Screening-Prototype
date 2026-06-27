@@ -1,0 +1,138 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" letter-spacing="3">RESEARCH</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">14 / 29</text>
+<text x="160" y="172" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827">The practitioner faces disagreement alone.</text>
+<text x="160" y="220" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280">From independent reading to arbitration — six moments across two actors with no shared protocol.</text>
+<line x1="160" y1="248" x2="1760" y2="248" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="160" y="258" width="1064" height="30" fill="#EBF2FF" rx="0"/>
+<text x="692" y="278" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#124BCE" text-anchor="middle" letter-spacing="1">BREAST ADVANCED PRACTITIONER  ·  Primary Reader</text>
+<rect x="1224" y="258" width="536" height="30" fill="#E8E8F0" rx="0"/>
+<text x="1492" y="278" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#0A1628" text-anchor="middle" letter-spacing="1">ARBITRATION AUTHORITY  ·  Senior Consultant</text>
+<rect x="1222" y="258" width="4" height="420" fill="#E8693C"/>
+<rect x="160" y="288" width="1064" height="36" fill="#124BCE"/>
+<text x="692" y="312" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">READING</text>
+<rect x="1224" y="288" width="536" height="36" fill="#0A1628"/>
+<text x="1492" y="312" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ARBITRATION</text>
+<rect x="160" y="324" width="266" height="58" fill="#0A1628"/>
+<text x="170" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.4">1</text>
+<text x="293" y="349" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Case enters</text>
+<text x="293" y="366" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">queue</text>
+<line x1="426" y1="324" x2="426" y2="678" stroke="#C4C8D2" stroke-width="1" opacity="0.4"/>
+<rect x="426" y="324" width="266" height="58" fill="#0A1628"/>
+<text x="436" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.4">2</text>
+<text x="559" y="349" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Independent</text>
+<text x="559" y="366" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">reading</text>
+<line x1="692" y1="324" x2="692" y2="678" stroke="#C4C8D2" stroke-width="1" opacity="0.4"/>
+<rect x="692" y="324" width="266" height="58" fill="#0A1628"/>
+<text x="702" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.4">3</text>
+<text x="825" y="349" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">AI visibility</text>
+<text x="825" y="366" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">moment</text>
+<line x1="958" y1="324" x2="958" y2="678" stroke="#C4C8D2" stroke-width="1" opacity="0.4"/>
+<rect x="958" y="324" width="266" height="58" fill="#E8693C"/>
+<text x="968" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.4">4</text>
+<text x="1091" y="349" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Disagreement</text>
+<text x="1091" y="366" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">recognition</text>
+<line x1="1224" y1="324" x2="1224" y2="678" stroke="#C4C8D2" stroke-width="1" opacity="0.4"/>
+<rect x="1224" y="324" width="266" height="58" fill="#0A1628"/>
+<text x="1234" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.4">5</text>
+<text x="1357" y="359" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Arbitration</text>
+<line x1="1490" y1="324" x2="1490" y2="678" stroke="#C4C8D2" stroke-width="1" opacity="0.4"/>
+<rect x="1490" y="324" width="266" height="58" fill="#0A1628"/>
+<text x="1500" y="338" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" opacity="0.4">6</text>
+<text x="1623" y="349" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Outcome &amp;</text>
+<text x="1623" y="366" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">record</text>
+<rect x="160" y="382" width="266" height="296" fill="#FFFFFF" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="168" y="390" width="250" height="158" rx="4" fill="#E2E4EA"/>
+<circle cx="293" cy="459" r="16" fill="#C4C8D2"/>
+<circle cx="293" cy="459" r="6" fill="#EFF0F2"/>
+<text x="172" y="570" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Patient attends screening van</text>
+<text x="172" y="595" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">BAP receives</text>
+<text x="172" y="612" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">caselist</text>
+<rect x="426" y="382" width="266" height="296" fill="#FFFFFF" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="434" y="390" width="250" height="158" rx="4" fill="#E2E4EA"/>
+<circle cx="559" cy="459" r="16" fill="#C4C8D2"/>
+<circle cx="559" cy="459" r="6" fill="#EFF0F2"/>
+<text x="438" y="570" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">BAP reads mammogram</text>
+<text x="438" y="589" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">(AI hidden)</text>
+<text x="438" y="614" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Score submitted</text>
+<text x="438" y="631" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">before AI reveal</text>
+<rect x="692" y="382" width="266" height="296" fill="#FFFFFF" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="700" y="390" width="250" height="158" rx="4" fill="#E2E4EA"/>
+<circle cx="825" cy="459" r="16" fill="#C4C8D2"/>
+<circle cx="825" cy="459" r="6" fill="#EFF0F2"/>
+<text x="704" y="570" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">AI result revealed</text>
+<text x="704" y="589" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">after submit</text>
+<text x="704" y="614" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Comparison</text>
+<text x="704" y="631" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">displayed</text>
+<rect x="958" y="382" width="266" height="296" fill="#FFF3EE" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="966" y="390" width="250" height="158" rx="4" fill="#F5D5C8"/>
+<circle cx="1091" cy="459" r="16" fill="#C4C8D2"/>
+<circle cx="1091" cy="459" r="6" fill="#EFF0F2"/>
+<text x="970" y="570" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Gap flagged between</text>
+<text x="970" y="589" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">BAP &amp; AI</text>
+<text x="970" y="614" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#E8693C">Reason tagged</text>
+<text x="970" y="631" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#E8693C">&amp; handed over</text>
+<rect x="1224" y="382" width="266" height="296" fill="#FFFFFF" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="1232" y="390" width="250" height="158" rx="4" fill="#E2E4EA"/>
+<circle cx="1357" cy="459" r="16" fill="#C4C8D2"/>
+<circle cx="1357" cy="459" r="6" fill="#EFF0F2"/>
+<text x="1236" y="570" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Senior review of</text>
+<text x="1236" y="589" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">both reads</text>
+<text x="1236" y="614" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Evidence pack</text>
+<text x="1236" y="631" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">presented</text>
+<rect x="1490" y="382" width="266" height="296" fill="#FFFFFF" stroke="#C4C8D2" stroke-width="1"/>
+<rect x="1498" y="390" width="250" height="158" rx="4" fill="#E2E4EA"/>
+<circle cx="1623" cy="459" r="16" fill="#C4C8D2"/>
+<circle cx="1623" cy="459" r="6" fill="#EFF0F2"/>
+<text x="1502" y="570" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Final decision</text>
+<text x="1502" y="589" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">made</text>
+<text x="1502" y="614" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">Case closed</text>
+<text x="1502" y="631" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280">or recalled</text>
+<polygon points="425,346 437,353 425,360" fill="#C4C8D2"/>
+<polygon points="691,346 703,353 691,360" fill="#C4C8D2"/>
+<polygon points="957,346 969,353 957,360" fill="#C4C8D2"/>
+<polygon points="1223,346 1235,353 1223,360" fill="#C4C8D2"/>
+<polygon points="1489,346 1501,353 1489,360" fill="#C4C8D2"/>
+<polygon points="1212,686 1236,686 1224,672" fill="#E8693C"/>
+<rect x="1134" y="686" width="180" height="24" rx="12" fill="#FFFFFF" stroke="#E8693C" stroke-width="2"/>
+<text x="1224" y="702" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#E8693C" text-anchor="middle" letter-spacing="1">HANDOVER POINT</text>
+
+
+
+<rect x="160" y="686" width="1600" height="120" fill="#EAECF2" rx="4"/>
+<text x="174" y="704" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#6B7280" letter-spacing="1">PAIN POINT</text>
+<line x1="174" y1="712" x2="1746" y2="712" stroke="#C4C8D2" stroke-width="1"/>
+<text x="174" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Time pressure,</text>
+<text x="174" y="750" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">competing roles</text>
+<text x="440" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Visual fatigue,</text>
+<text x="440" y="750" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">confidence pressure</text>
+<text x="706" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Over-reliance risk,</text>
+<text x="706" y="750" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">AI unclear</text>
+<text x="972" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">No taxonomy,</text>
+<text x="972" y="750" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">workflow ambiguity</text>
+<text x="1238" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Cognitive load,</text>
+<text x="1238" y="750" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">hierarchy pressure</text>
+<text x="1504" y="730" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#111827">Long verification,</text>
+<text x="1504" y="750" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280">no formal record</text>
+  <!-- EMOTION ROW -->
+  <rect x="160" y="808" width="1600" height="88" fill="#F8F0EE" opacity="0.6"/>
+  <text x="174" y="824" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#6B7280" letter-spacing="1" text-anchor="start">EMOTION</text>
+  <text x="293" y="842" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Rushed,</text>
+  <text x="293" y="862" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">no time</text>
+  <text x="559" y="842" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Uncertain,</text>
+  <text x="559" y="862" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">alone</text>
+  <text x="825" y="842" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Anxious,</text>
+  <text x="825" y="862" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">overly cautious</text>
+  <text x="1091" y="842" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#E8693C" text-anchor="middle">Frustrated,</text>
+  <text x="1091" y="862" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#E8693C" text-anchor="middle">no framework</text>
+  <text x="1357" y="842" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Pressured,</text>
+  <text x="1357" y="862" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">hierarchy</text>
+  <text x="1623" y="842" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Unsatisfied,</text>
+  <text x="1623" y="862" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#111827" text-anchor="middle">no closure</text>
+<line x1="160" y1="900" x2="1760" y2="900" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="942" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280">No protocol guides what happens between disagreement and outcome. That is the design space.</text>
+<text x="160" y="986" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE">The breakdown at disagreement is where Readyology begins.</text>
+</svg>

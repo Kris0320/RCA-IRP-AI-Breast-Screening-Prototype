@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Arbitration Support creates shared context for human-led review</text>
+<rect x="115" y="330" width="680" height="450" rx="20" fill="#F0F4F8" stroke="#D9E2EC" stroke-width="2"/>
+<rect x="155" y="385" width="170" height="230" rx="12" fill="#111827" stroke="none" stroke-width="0"/>
+<text x="240" y="650" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">Image screen</text>
+<rect x="360" y="385" width="170" height="230" rx="12" fill="#111827" stroke="none" stroke-width="0"/>
+<text x="445" y="650" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">Image screen</text>
+<rect x="565" y="385" width="170" height="230" rx="12" fill="#111827" stroke="none" stroke-width="0"/>
+<text x="650" y="650" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#5E6B7A" text-anchor="middle">Image screen</text>
+<rect x="885" y="330" width="430" height="450" rx="20" fill="#FFFFFF" stroke="#2368A2" stroke-width="3"/>
+<text x="1100" y="395" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#2368A2" text-anchor="middle">Shared evidence screen</text>
+<text x="930" y="455" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Participant views</text>
+<text x="930" y="505" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Disagreement pattern</text>
+<text x="930" y="555" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Meeting keywords</text>
+<text x="930" y="605" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Evidence controls</text>
+<rect x="1400" y="330" width="400" height="450" rx="20" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1600" y="395" font-family="IBM Plex Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#111827" text-anchor="middle">Decision summary</text>
+<text x="1445" y="455" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Final rationale</text>
+<text x="1445" y="505" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Unresolved uncertainty</text>
+<text x="1445" y="555" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">Non-blame receipt</text>
+<text x="960" y="860" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="middle">Image reading remains clean. Discussion evidence is shared. Rationale is captured.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

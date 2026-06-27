@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Value: supporting judgement, review and learning</text>
+<circle cx="960" cy="530" r="135" fill="#EAF3FA" stroke="#2368A2" stroke-width="5"/>
+<text x="960" y="520" font-family="Newsreader, Arial, sans-serif" font-size="36" font-weight="800" fill="#2368A2" text-anchor="middle">Readyology</text>
+<text x="960" y="565" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">service layer</text>
+<rect x="260" y="270" width="460" height="190" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="284" y1="292" x2="696" y2="292" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="288" y="342" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Radiologists</text>
+<text x="288" y="382" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">Supports judgement without heavy</text>
+<text x="288" y="413" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">steps.</text>
+<rect x="1220" y="270" width="460" height="190" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1244" y1="292" x2="1656" y2="292" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="1248" y="342" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Arbitration teams</text>
+<text x="1248" y="382" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">Creates shared context for</text>
+<text x="1248" y="413" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">difficult cases.</text>
+<rect x="260" y="690" width="460" height="190" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="284" y1="712" x2="696" y2="712" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="288" y="762" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">Organisations</text>
+<text x="288" y="802" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">Builds traceable, non-blame</text>
+<text x="288" y="833" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">evidence.</text>
+<rect x="1220" y="690" width="460" height="190" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<line x1="1244" y1="712" x2="1656" y2="712" stroke="#2368A2" stroke-width="6" stroke-linecap="round"/>
+<text x="1248" y="762" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start">AI adoption</text>
+<text x="1248" y="802" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">Places AI inside a responsible</text>
+<text x="1248" y="833" font-family="IBM Plex Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#5E6B7A" text-anchor="start">service pathway.</text>
+<line x1="735" y1="440" x2="840" y2="500" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1185" y1="440" x2="1080" y2="500" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="735" y1="780" x2="845" y2="610" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1185" y1="780" x2="1085" y2="610" stroke="#2368A2" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="960" y="955" font-family="IBM Plex Sans, Arial, sans-serif" font-size="29" font-weight="700" fill="#111827" text-anchor="middle">Readyology does not decide who is right. It designs what happens when AI and human judgement do not agree.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 15 Three Service Touchpoints -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="88" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">Three Service Touchpoints</text>
+<text x="120" y="136" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start">Readyology sits across three moments in the reading and governance workflow.</text>
+<rect x="120" y="164" width="541" height="740" fill="#EAF3FF" rx="14"/>
+<rect x="120" y="164" width="541" height="12" fill="#124BCE" rx="7"/>
+<rect x="120" y="170" width="541" height="6" fill="#124BCE" rx="10"/>
+<text x="148" y="236" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" fill="#124BCE" text-anchor="start">01</text>
+<text x="148" y="304" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start">Reading</text>
+<text x="148" y="346" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start">Calibration</text>
+<text x="148" y="412" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">The moment AI output is revealed</text>
+<text x="148" y="440" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">alongside human judgement.</text>
+<circle cx="146" cy="488" r="7" fill="#124BCE"/>
+<text x="170" y="496" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Soft visual cue — no alarm, no interruption</text>
+<circle cx="146" cy="544" r="7" fill="#124BCE"/>
+<text x="170" y="552" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">AI score, mark and prior images shown together</text>
+<circle cx="146" cy="600" r="7" fill="#124BCE"/>
+<text x="170" y="608" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Reader confirms, edits or flags for review</text>
+<circle cx="146" cy="656" r="7" fill="#124BCE"/>
+<text x="170" y="664" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Lightweight reasoning tag captured automatically</text>
+<rect x="120" y="840" width="541" height="64" fill="#124BCE" rx="0"/>
+<rect x="120" y="888" width="541" height="16" fill="#124BCE" rx="7"/>
+<rect x="120" y="840" width="541" height="48" fill="#124BCE" rx="10"/>
+<text x="390" y="878" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">For: Breast Advanced Practitioners / Radiologists</text>
+<rect x="689" y="164" width="541" height="740" fill="#FFFBEB" rx="14"/>
+<rect x="689" y="164" width="541" height="12" fill="#F59E0B" rx="7"/>
+<rect x="689" y="170" width="541" height="6" fill="#F59E0B" rx="10"/>
+<text x="717" y="236" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" fill="#F59E0B" text-anchor="start">02</text>
+<text x="717" y="304" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start">Consensus</text>
+<text x="717" y="346" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start">Review Support</text>
+<text x="717" y="412" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">Structured context when a case</text>
+<text x="717" y="440" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">needs a second look or senior</text>
+<text x="717" y="468" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">review.</text>
+<circle cx="715" cy="516" r="7" fill="#F59E0B"/>
+<text x="739" y="524" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Evidence travels with the case into review</text>
+<circle cx="715" cy="572" r="7" fill="#F59E0B"/>
+<text x="739" y="580" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Comparison view: human judgement vs AI output</text>
+<circle cx="715" cy="628" r="7" fill="#F59E0B"/>
+<text x="739" y="636" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Prior screening history visible at review</text>
+<circle cx="715" cy="684" r="7" fill="#F59E0B"/>
+<text x="739" y="692" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Non-blame decision receipt after resolution</text>
+<rect x="689" y="840" width="541" height="64" fill="#F59E0B" rx="0"/>
+<rect x="689" y="888" width="541" height="16" fill="#F59E0B" rx="7"/>
+<rect x="689" y="840" width="541" height="48" fill="#F59E0B" rx="10"/>
+<text x="959" y="878" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">For: Senior Radiologists / Arbitration Group</text>
+<rect x="1258" y="164" width="541" height="740" fill="#F0FDF4" rx="14"/>
+<rect x="1258" y="164" width="541" height="12" fill="#16A34A" rx="7"/>
+<rect x="1258" y="170" width="541" height="6" fill="#16A34A" rx="10"/>
+<text x="1286" y="236" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" fill="#16A34A" text-anchor="start">03</text>
+<text x="1286" y="304" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start">Learning &</text>
+<text x="1286" y="346" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="start">Governance Loop</text>
+<text x="1286" y="412" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">Selected cases become</text>
+<text x="1286" y="440" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">calibration material after</text>
+<text x="1286" y="468" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280" text-anchor="start">outcome is known.</text>
+<circle cx="1284" cy="516" r="7" fill="#16A34A"/>
+<text x="1308" y="524" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Cases enter library after follow-up outcome</text>
+<circle cx="1284" cy="572" r="7" fill="#16A34A"/>
+<text x="1308" y="580" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Learning Value Check before case is selected</text>
+<circle cx="1284" cy="628" r="7" fill="#16A34A"/>
+<text x="1308" y="636" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Calibration case library for audit and teaching</text>
+<circle cx="1284" cy="684" r="7" fill="#16A34A"/>
+<text x="1308" y="692" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Governance dashboard for NHS service leads</text>
+<rect x="1258" y="840" width="541" height="64" fill="#16A34A" rx="0"/>
+<rect x="1258" y="888" width="541" height="16" fill="#16A34A" rx="7"/>
+<rect x="1258" y="840" width="541" height="48" fill="#16A34A" rx="10"/>
+<text x="1528" y="878" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="600" fill="#FFFFFF" text-anchor="middle">For: NHS Service Leads / Quality & Governance</text>
+</svg>

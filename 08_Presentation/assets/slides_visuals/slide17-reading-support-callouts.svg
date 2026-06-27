@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Reading Support makes disagreement visible without creating alarm</text>
+<rect x="210" y="295" width="1050" height="585" rx="18" fill="#111827" stroke="none" stroke-width="0"/>
+<rect x="260" y="350" width="400" height="420" rx="16" fill="#222B35" stroke="none" stroke-width="0"/>
+<rect x="730" y="350" width="400" height="420" rx="16" fill="#222B35" stroke="none" stroke-width="0"/>
+<circle cx="500" cy="545" r="105" fill="#DDE5EC" stroke="none" stroke-width="0"/>
+<circle cx="940" cy="545" r="105" fill="#DDE5EC" stroke="none" stroke-width="0"/>
+<circle cx="1015" cy="485" r="34" fill="#FFF4D9" stroke="#D99A22" stroke-width="6"/>
+<rect x="1285" y="330" width="430" height="510" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1320" y="390" font-family="IBM Plex Sans, Arial, sans-serif" font-size="28" font-weight="800" fill="#111827" text-anchor="start">Soft disagreement signal</text>
+<text x="1320" y="445" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="400" fill="#5E6B7A" text-anchor="start">AI output and human judgement differ.</text>
+<rect x="1320" y="495" width="330" height="44" rx="22" fill="#FFF4D9" stroke="none" stroke-width="0"/><text x="1485.0" y="524" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#D99A22" text-anchor="middle">Amber = disagreement / caution</text>
+<rect x="1320" y="555" width="310" height="44" rx="22" fill="#EAF3FA" stroke="none" stroke-width="0"/><text x="1475.0" y="584" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#2368A2" text-anchor="middle">Blue = neutral support action</text>
+<rect x="1320" y="615" width="220" height="44" rx="22" fill="#FCE8E8" stroke="none" stroke-width="0"/><text x="1430.0" y="644" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#C94040" text-anchor="middle">Red = critical only</text>
+<line x1="1265" y1="520" x2="1050" y2="493" stroke="#D99A22" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

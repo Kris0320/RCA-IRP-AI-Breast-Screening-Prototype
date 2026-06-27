@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+<path d="M0,0 L10,5 L0,10 z" fill="#D9E2EC"/>
+</marker>
+<style>
+.small { font-family: IBM Plex Sans, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1920" height="1080" fill="#F7F9FB"/>
+<rect x="0" y="0" width="1920" height="1080" fill="url(#none)" opacity="0"/>
+<text x="96" y="122" font-family="Newsreader, Arial, sans-serif" font-size="56" font-weight="700" fill="#111827" text-anchor="start">Before AI, screening already depends on comparison and review</text>
+<rect x="100" y="460" width="250" height="115" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="225.0" y="512.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Mammogram</text>
+<text x="225.0" y="542.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">acquired</text>
+<line x1="358" y1="518" x2="457" y2="518" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="465" y="460" width="250" height="115" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="590.0" y="526.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">First reading</text>
+<line x1="723" y1="518" x2="822" y2="518" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="830" y="460" width="250" height="115" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="955.0" y="498.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">Second</text>
+<text x="955.0" y="528.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">reading /</text>
+<text x="955.0" y="558.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">comparison</text>
+<line x1="1088" y1="518" x2="1187" y2="518" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1195" y="460" width="250" height="115" rx="16" fill="#EAF3FA" stroke="#2368A2" stroke-width="2"/>
+<text x="1320.0" y="512.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">Consensus or</text>
+<text x="1320.0" y="542.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2368A2" text-anchor="middle">arbitration</text>
+<line x1="1453" y1="518" x2="1552" y2="518" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1560" y="460" width="250" height="115" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="1685.0" y="512.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Recall or no</text>
+<text x="1685.0" y="542.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">recall</text>
+<line x1="1818" y1="518" x2="1917" y2="518" stroke="#D9E2EC" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1925" y="460" width="250" height="115" rx="16" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+<text x="2050.0" y="512.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">Audit and</text>
+<text x="2050.0" y="542.5" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">learning</text>
+<text x="960" y="700" font-family="IBM Plex Sans, Arial, sans-serif" font-size="30" font-weight="600" fill="#111827" text-anchor="middle">The existing pathway is human-led, but already contains moments of uncertainty and disagreement.</text>
+<text x="96" y="1012" font-family="IBM Plex Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#8A97A6" text-anchor="start">Readyology | RCA Service Design IRP</text>
+</svg>

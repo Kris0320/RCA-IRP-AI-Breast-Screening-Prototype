@@ -1,0 +1,59 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">INSIGHT</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" style="">10 / 26</text>
+<text x="160" y="172" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" style="">Disagreement exposes three structural gaps.</text>
+<text x="160" y="256" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Each gap prevents review, rationale, or learning from the disagreement moment.</text>
+<text x="160" y="320" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">System Gap</text>
+<text x="160" y="368" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">No infrastructure</text>
+<text x="160" y="400" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">for disagreement</text>
+<line x1="160" y1="448" x2="640" y2="448" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="167" cy="480" r="4" fill="#124BCE"/>
+<text x="188" y="488" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">No classification of disagreement</text>
+<text x="188" y="516" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">type</text>
+<circle cx="167" cy="544" r="4" fill="#124BCE"/>
+<text x="188" y="552" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">No escalation trigger or protocol</text>
+<circle cx="167" cy="608" r="4" fill="#124BCE"/>
+<text x="188" y="616" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">No handover structure for review</text>
+<circle cx="167" cy="672" r="4" fill="#124BCE"/>
+<text x="188" y="680" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Protocol relies on individual</text>
+<text x="188" y="708" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">improvisation</text>
+<line x1="160" y1="968" x2="640" y2="968" stroke="#C4C8D2" stroke-width="1"/>
+<text x="160" y="1008" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" style="">Human-led liability</text>
+<text x="720" y="320" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#6B7280" text-anchor="start" style="">Human Gap</text>
+<text x="720" y="368" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">No consistent</text>
+<text x="720" y="400" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">recording practice</text>
+<line x1="720" y1="448" x2="1200" y2="448" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="727" cy="480" r="4" fill="#6B7280"/>
+<text x="748" y="488" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Override reasoning not standardised</text>
+<circle cx="727" cy="544" r="4" fill="#6B7280"/>
+<text x="748" y="552" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">No mandatory record of AI output at</text>
+<text x="748" y="580" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">decision</text>
+<circle cx="727" cy="608" r="4" fill="#6B7280"/>
+<text x="748" y="616" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Institutional knowledge stays</text>
+<text x="748" y="644" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">individual</text>
+<circle cx="727" cy="672" r="4" fill="#6B7280"/>
+<text x="748" y="680" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Learning from difficult cases not</text>
+<text x="748" y="708" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">captured</text>
+<line x1="720" y1="968" x2="1200" y2="968" stroke="#C4C8D2" stroke-width="1"/>
+<text x="720" y="1008" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#6B7280" text-anchor="start" style="">Consistent conduct decision</text>
+<text x="1280" y="320" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#124BCE" text-anchor="start" style="">Data Gap</text>
+<text x="1280" y="368" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">No feedback</text>
+<text x="1280" y="400" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">loop</text>
+<line x1="1280" y1="448" x2="1760" y2="448" stroke="#C4C8D2" stroke-width="1"/>
+<circle cx="1287" cy="480" r="4" fill="#124BCE"/>
+<text x="1308" y="488" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">AI calibration not connected to</text>
+<text x="1308" y="516" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">outcomes</text>
+<circle cx="1287" cy="544" r="4" fill="#124BCE"/>
+<text x="1308" y="552" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Follow-up results not fed back to AI</text>
+<circle cx="1287" cy="608" r="4" fill="#124BCE"/>
+<text x="1308" y="616" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">Difficult cases unavailable for</text>
+<text x="1308" y="644" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">audit</text>
+<circle cx="1287" cy="672" r="4" fill="#124BCE"/>
+<text x="1308" y="680" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">AI performance depends on external</text>
+<text x="1308" y="708" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#111827" text-anchor="start" style="">retraining</text>
+<line x1="1280" y1="968" x2="1760" y2="968" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1280" y="1008" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" style="">Improved future AI performance</text>
+</svg>

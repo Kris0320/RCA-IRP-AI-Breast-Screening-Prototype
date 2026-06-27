@@ -1,0 +1,60 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+<text x="160" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">RESEARCH</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end" style="">6 / 25</text>
+<text x="160" y="158" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="68" font-weight="700" fill="#111827" text-anchor="start" style="">We did not design from assumptions.</text>
+<text x="160" y="218" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Two research phases. Three expert consultations. Seven workflow models analysed.</text>
+<text x="160" y="354" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="900" fill="#124BCE" text-anchor="start" style="">20+</text>
+<text x="160" y="394" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Public interviews</text>
+<text x="160" y="420" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Women in screening age range · in-person street research</text>
+<text x="575" y="354" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="900" fill="#124BCE" text-anchor="start" style="">3</text>
+<text x="575" y="394" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Expert consultations</text>
+<text x="575" y="420" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Clinician scientist · NHS radiologist · Senior radiologist</text>
+<text x="990" y="354" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="900" fill="#124BCE" text-anchor="start" style="">7</text>
+<text x="990" y="394" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">AI workflow models</text>
+<text x="990" y="420" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">Analysed across 10 countries · pilot implementations</text>
+<text x="1405" y="354" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="900" fill="#124BCE" text-anchor="start" style="">4</text>
+<text x="1405" y="394" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Published sources</text>
+<text x="1405" y="420" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start" style="">EDITH trial · AI-STREAM · BMC Ethics · NHS pilot evidence</text>
+<text x="160" y="494" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="2" style="">Expert Consultations</text>
+<rect x="160" y="520" width="200" height="200" fill="#D0D4DE" rx="3"/>
+<rect x="160" y="520" width="200" height="200" fill="none" stroke="#9AAABF" stroke-width="1.5" rx="3" stroke-dasharray="8 4"/>
+<circle cx="260" cy="608" r="16" fill="none" stroke="#9AAABF" stroke-width="1.5"/>
+<circle cx="260" cy="608" r="6" fill="#9AAABF"/>
+<text x="260" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#5A6A80" text-anchor="middle" style="">Hutan Ashrafian</text>
+<text x="260" y="660" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#5A6A80" text-anchor="middle" style="">Clinician Scientist</text>
+<text x="384" y="548" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Hutan Ashrafian</text>
+<text x="384" y="574" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" style="">Clinician Scientist · AI Researcher</text>
+<text x="384" y="596" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" style="">Imperial College London · CMO, Harbinger Health</text>
+<text x="384" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start" style="">AI accountability, real-world deployment</text>
+<text x="384" y="662" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start" style="">and trust in breast screening AI</text>
+<text x="160" y="752" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" style="">Honorary Senior Research Fellow · Dept. Surgery &amp; Cancer, Imperial College</text>
+<rect x="720" y="520" width="200" height="200" fill="#D0D4DE" rx="3"/>
+<rect x="720" y="520" width="200" height="200" fill="none" stroke="#9AAABF" stroke-width="1.5" rx="3" stroke-dasharray="8 4"/>
+<circle cx="820" cy="608" r="16" fill="none" stroke="#9AAABF" stroke-width="1.5"/>
+<circle cx="820" cy="608" r="6" fill="#9AAABF"/>
+<text x="820" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#5A6A80" text-anchor="middle" style="">Deborah Cunningham</text>
+<text x="820" y="660" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#5A6A80" text-anchor="middle" style="">Consultant Radiologist</text>
+<text x="944" y="548" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Prof. Deborah Cunningham</text>
+<text x="944" y="574" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" style="">Consultant Radiologist · Medical Director</text>
+<text x="944" y="596" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" style="">Imperial College Healthcare NHS Trust · St Mary's Hospital</text>
+<text x="944" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start" style="">Arbitration, workflow change, clinical trust</text>
+<text x="944" y="662" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start" style="">Lead on Imperial-Google DeepMind AI mammography pilot</text>
+<text x="720" y="752" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" style="">30 years Consultant Radiologist · Lead, Imperial-Google AI pilot</text>
+<rect x="1280" y="520" width="200" height="200" fill="#D0D4DE" rx="3"/>
+<rect x="1280" y="520" width="200" height="200" fill="none" stroke="#9AAABF" stroke-width="1.5" rx="3" stroke-dasharray="8 4"/>
+<circle cx="1380" cy="608" r="16" fill="none" stroke="#9AAABF" stroke-width="1.5"/>
+<circle cx="1380" cy="608" r="6" fill="#9AAABF"/>
+<text x="1380" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#5A6A80" text-anchor="middle" style="">Sophia Zackrisson</text>
+<text x="1380" y="660" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#5A6A80" text-anchor="middle" style="">Sr. Consultant Radiologist</text>
+<text x="1504" y="548" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#111827" text-anchor="start" style="">Sophia Zackrisson</text>
+<text x="1504" y="574" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" style="">Sr. Consultant Radiologist</text>
+<text x="1504" y="596" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start" style="">Lund University · Sweden</text>
+<text x="1504" y="640" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start" style="">Expert interview + prototype usability test</text>
+<text x="1504" y="662" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#111827" text-anchor="start" style="">IRP validation session · Keep it simple, no extra steps</text>
+<text x="1280" y="752" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start" style="">Expert interview + Prototype usability test · IRP</text>
+<text x="160" y="904" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="300" fill="#6B7280" text-anchor="start" style="font-style:italic;">From: 'Do people trust AI?'</text>
+<text x="160" y="952" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start" style="">To: 'Under what conditions can AI-assisted decisions be trusted, challenged, and acted upon?'</text>
+</svg>

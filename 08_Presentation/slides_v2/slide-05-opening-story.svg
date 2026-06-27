@@ -1,0 +1,30 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 05 Opening Story -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="80" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#9CA3AF" text-anchor="start" letter-spacing="3">A MOMENT IN THE READING ROOM</text>
+<rect x="120" y="104" width="538" height="700" fill="#F8FAFC" rx="14"/>
+<circle cx="168" cy="160" r="28" fill="#E5E7EB"/>
+<text x="168" y="167" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#6B7280" text-anchor="middle">①</text>
+<text x="150" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#124BCE" text-anchor="start">A radiologist reads a mammogram.</text>
+<text x="150" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#124BCE" text-anchor="start">Independent judgement: case appears normal.</text>
+<text x="150" y="348" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#374151" text-anchor="start">No recall needed.</text>
+<text x="674" y="462" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="400" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="690" y="104" width="538" height="700" fill="#EAF3FF" rx="14"/>
+<circle cx="738" cy="160" r="28" fill="#124BCE"/>
+<text x="738" y="167" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">②</text>
+<text x="720" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#124BCE" text-anchor="start">AI flags a suspicious area.</text>
+<text x="720" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#124BCE" text-anchor="start">High confidence score. Possible lesion.</text>
+<text x="720" y="348" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#374151" text-anchor="start">AI recommends recall.</text>
+<text x="1244" y="462" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="400" fill="#6B7280" text-anchor="middle">→</text>
+<rect x="1260" y="104" width="538" height="700" fill="#F8FAFC" rx="14"/>
+<circle cx="1308" cy="160" r="28" fill="#E5E7EB"/>
+<text x="1308" y="167" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#6B7280" text-anchor="middle">③</text>
+<text x="1290" y="244" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="600" fill="#6B7280" text-anchor="start">The question is no longer</text>
+<text x="1290" y="296" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start">'who is right?'</text>
+<text x="1290" y="348" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#374151" text-anchor="start">It becomes: how should the system</text>
+<text x="1290" y="400" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="400" fill="#374151" text-anchor="start">support a safe, explainable, shared decision?</text>
+<line x1="120" y1="824" x2="1800" y2="824" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="960" y="886" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#111827" text-anchor="middle">Disagreement is not a technical glitch.</text>
+<text x="960" y="934" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="400" fill="#374151" text-anchor="middle">It is a service moment that needs design.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<!-- 04 AI Inflection Point -->
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="9" fill="#124BCE"/>
+<text x="120" y="96" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="700" fill="#111827" text-anchor="start">AI Is Entering the Reading Room.</text>
+<text x="120" y="148" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="600" fill="#124BCE" text-anchor="start">The technology is here. The system isn't ready.</text>
+<rect x="120" y="180" width="820" height="48" fill="#EAF3FF" rx="8"/>
+<text x="140" y="213" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#124BCE" text-anchor="start">The Promise</text>
+<circle cx="142" cy="250" r="7" fill="#124BCE"/>
+<text x="164" y="258" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Faster triage and risk stratification</text>
+<circle cx="142" cy="302" r="7" fill="#124BCE"/>
+<text x="164" y="310" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Earlier detection of interval cancers</text>
+<circle cx="142" cy="354" r="7" fill="#124BCE"/>
+<text x="164" y="362" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Significant radiologist workload reduction</text>
+<circle cx="142" cy="406" r="7" fill="#124BCE"/>
+<text x="164" y="414" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Reduced reading fatigue across sessions</text>
+<circle cx="142" cy="458" r="7" fill="#124BCE"/>
+<text x="164" y="466" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Potential for continuous AI-supported screening</text>
+<rect x="980" y="180" width="820" height="48" fill="#F8FAFC" rx="8"/>
+<text x="1000" y="213" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#6B7280" text-anchor="start">The Reality</text>
+<rect x="994" y="246" width="10" height="10" fill="#E5E7EB" rx="2"/>
+<text x="1024" y="258" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Multiple AI placement models — no standard</text>
+<rect x="994" y="298" width="10" height="10" fill="#E5E7EB" rx="2"/>
+<text x="1024" y="310" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">No universal integration or governance protocol</text>
+<rect x="994" y="350" width="10" height="10" fill="#E5E7EB" rx="2"/>
+<text x="1024" y="362" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Pilots vary in scope, accountability and outcome</text>
+<rect x="994" y="402" width="10" height="10" fill="#E5E7EB" rx="2"/>
+<text x="1024" y="414" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">Clinical responsibility for AI errors remains unclear</text>
+<rect x="994" y="454" width="10" height="10" fill="#E5E7EB" rx="2"/>
+<text x="1024" y="466" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#374151" text-anchor="start">AI failure and disagreement cases poorly recorded</text>
+<line x1="120" y1="548" x2="1800" y2="548" stroke="#E5E7EB" stroke-width="1.5"/>
+<text x="120" y="590" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">Pilots running across 6+ international programmes: MASAI · PRAIM · ScreenTrustCAD · AI-STREAM · BreastScreen NSW · Therapixel PACA</text>
+<text x="120" y="624" font-family="Montserrat,Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="400" fill="#6B7280" text-anchor="start">In the UK, the EDITH trial tests multiple AI positions in one national pathway — final decisions remain human-led.</text>
+</svg>

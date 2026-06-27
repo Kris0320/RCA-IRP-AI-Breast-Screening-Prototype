@@ -1,0 +1,49 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#FFFFFF"/>
+<line x1="120" y1="58" x2="1800" y2="58" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#124BCE" text-anchor="start" letter-spacing="3" style="">READYOLOGY  ·  IRP 2025–26</text>
+<text x="1800" y="46" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="end" style="">19 / 21</text>
+<text x="120" y="168" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="76" font-weight="700" fill="#0D1117" text-anchor="start" style="">What We Tested. What We Learned.</text>
+<text x="120" y="240" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="26" font-weight="400" fill="#6B7280" text-anchor="start" style="">Two expert-led sessions. Clear signal on design direction.</text>
+<text x="120" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#124BCE" text-anchor="start" style="">Session 1 -- Expert Prototype Test</text>
+<line x1="120" y1="372" x2="920" y2="372" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="416" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Sophia Zackrisson  ·  Sr. Consultant Radiologist and Professor</text>
+<text x="120" y="450" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#0D1117" text-anchor="start" style="">Method: wireframe prototype walkthrough</text>
+<line x1="120" y1="478" x2="920" y2="478" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="126" cy="508" r="4" fill="#124BCE"/>
+<text x="148" y="516" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#0D1117" text-anchor="start" style="font-style:italic;">"Keep it simple. No extra steps."</text>
+<circle cx="126" cy="572" r="4" fill="#124BCE"/>
+<text x="148" y="580" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#0D1117" text-anchor="start" style="font-style:italic;">"Integrate into existing reading stations."</text>
+<circle cx="126" cy="636" r="4" fill="#124BCE"/>
+<text x="148" y="644" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Soft cue preferred over alert or alarm</text>
+<circle cx="126" cy="700" r="4" fill="#124BCE"/>
+<text x="148" y="708" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Consensus review framing, not 'arbitration'</text>
+<circle cx="126" cy="764" r="4" fill="#124BCE"/>
+<text x="148" y="772" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Reason tags: suggest + confirm, not manual fill</text>
+<text x="1000" y="348" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="28" font-weight="700" fill="#6B7280" text-anchor="start" style="">Session 2 -- Usability Test</text>
+<line x1="1000" y1="372" x2="1800" y2="372" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1000" y="416" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="400" fill="#6B7280" text-anchor="start" style="">Medical student  ·  Real clinical work experience</text>
+<text x="1000" y="450" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="400" fill="#0D1117" text-anchor="start" style="">Method: interactive prototype, screen session</text>
+<line x1="1000" y1="478" x2="1800" y2="478" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1006" cy="508" r="4" fill="#6B7280"/>
+<text x="1028" y="516" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#0D1117" text-anchor="start" style="font-style:italic;">"Real scenarios are fast and very busy."</text>
+<circle cx="1006" cy="572" r="4" fill="#6B7280"/>
+<text x="1028" y="580" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="600" fill="#0D1117" text-anchor="start" style="font-style:italic;">"Design must be direct and non-disruptive."</text>
+<circle cx="1006" cy="636" r="4" fill="#6B7280"/>
+<text x="1028" y="644" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Low cognitive burden is non-negotiable</text>
+<circle cx="1006" cy="700" r="4" fill="#6B7280"/>
+<text x="1028" y="708" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">Meetings are short -- no lengthy forms</text>
+<circle cx="1006" cy="764" r="4" fill="#6B7280"/>
+<text x="1028" y="772" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="24" font-weight="400" fill="#0D1117" text-anchor="start" style="">RAG visual clarity essential at a glance</text>
+<line x1="120" y1="900" x2="1800" y2="900" stroke="#E5E7EB" stroke-width="1"/>
+<text x="120" y="942" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="700" fill="#0D1117" text-anchor="start" style="">Design response:</text>
+<circle cx="126" cy="987" r="4" fill="#124BCE"/>
+<text x="146" y="995" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#124BCE" text-anchor="start" style="">Soft cues &gt; interrupting alerts</text>
+<circle cx="566" cy="987" r="4" fill="#6B7280"/>
+<text x="586" y="995" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#6B7280" text-anchor="start" style="">Suggested tags &gt; manual classification</text>
+<circle cx="1006" cy="987" r="4" fill="#16A34A"/>
+<text x="1026" y="995" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#16A34A" text-anchor="start" style="">Integrated workstation &gt; separate device</text>
+<circle cx="1446" cy="987" r="4" fill="#124BCE"/>
+<text x="1466" y="995" font-family="Montserrat, Inter, Helvetica Neue, sans-serif" font-size="20" font-weight="600" fill="#124BCE" text-anchor="start" style="">Receipt after review &gt; real-time burden</text>
+</svg>
