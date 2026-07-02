@@ -1,0 +1,157 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,700&amp;display=swap');
+  text { font-family: Montserrat,'Helvetica Neue',Arial,sans-serif; }</style>
+</defs>
+
+<!-- Background -->
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- ══ HEADER ══ -->
+<text x="160" y="56" font-size="14" font-weight="600" fill="#124BCE" letter-spacing="3">SOLUTION</text>
+<line x1="160" y1="68" x2="1760" y2="68" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="56" text-anchor="end" font-size="14" font-weight="400" fill="#6B7280">xx / yy</text>
+
+<!-- ══ TITLE · H1 medium 52px · 2 lines · y=148/212 ══ -->
+<text x="160" y="148" font-size="52" font-weight="700" fill="#111827">How Readyology Turns Disagreement</text>
+<text x="160" y="212" font-size="52" font-weight="700" fill="#111827">into System Alignment</text>
+
+<!-- ════════════════════════════════════════════════════
+     NHS TRUSTS ROOF BAR · y=256–344 · h=88 · rx=8
+     Row 1: centred label · Row 2: governance pills
+     aligned above column centres x=408 / 960 / 1512
+     ════════════════════════════════════════════════════ -->
+<rect x="160" y="256" width="1600" height="88" rx="8" fill="#124BCE"/>
+
+<!-- Landmark icon 18px + centred label · label-zone centre y=278 -->
+<g transform="translate(883,269) scale(0.75)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="3" y1="22" x2="21" y2="22"/>
+  <line x1="6" y1="18" x2="6" y2="11"/>
+  <line x1="10" y1="18" x2="10" y2="11"/>
+  <line x1="14" y1="18" x2="14" y2="11"/>
+  <line x1="18" y1="18" x2="18" y2="11"/>
+  <path d="M12 2L2 7h20L12 2z"/>
+</g>
+<text x="974" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="2">NHS TRUSTS</text>
+
+<!-- Governance output pills · w=240 h=32 · y=300 · baseline 320 -->
+<rect x="288" y="300" width="240" height="32" rx="16" fill="rgba(255,255,255,0.18)"/>
+<text x="408" y="320" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF" letter-spacing="0.5">Audit Trail</text>
+
+<rect x="840" y="300" width="240" height="32" rx="16" fill="rgba(255,255,255,0.18)"/>
+<text x="960" y="320" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF" letter-spacing="0.5">AI Readiness Records</text>
+
+<rect x="1392" y="300" width="240" height="32" rx="16" fill="rgba(255,255,255,0.18)"/>
+<text x="1512" y="320" text-anchor="middle" font-size="12" font-weight="600" fill="#FFFFFF" letter-spacing="0.5">Protocol Improvement</text>
+
+<!-- ══ UPWARD CONNECTORS · cards feed the roof · y=348–364 ══ -->
+<line x1="408" y1="364" x2="408" y2="352" stroke="#124BCE" stroke-width="1.5"/>
+<polygon points="402,354 414,354 408,346" fill="#124BCE"/>
+<line x1="960" y1="364" x2="960" y2="352" stroke="#124BCE" stroke-width="1.5"/>
+<polygon points="954,354 966,354 960,346" fill="#124BCE"/>
+<line x1="1512" y1="364" x2="1512" y2="352" stroke="#124BCE" stroke-width="1.5"/>
+<polygon points="1506,354 1518,354 1512,346" fill="#124BCE"/>
+
+<!-- ════════════════════════════════════════════════════
+     THREE PARALLEL SERVICE LENSES · white cards
+     y=368–680 · h=312 · w=496 · gap=56
+     Card x: 160 / 712 / 1264 · centres: 408 / 960 / 1512
+     Shared row baselines across all columns:
+       pill y=392 h=44 (baseline 420)
+       function y=464 · divider y=492
+       stakeholder cy=524 (baseline 528)
+       value y=568 / 592 · divider y=624
+       governance tag y=652
+     ════════════════════════════════════════════════════ -->
+<rect x="160" y="368" width="496" height="312" rx="8" fill="#FFFFFF"/>
+<rect x="712" y="368" width="496" height="312" rx="8" fill="#FFFFFF"/>
+<rect x="1264" y="368" width="496" height="312" rx="8" fill="#FFFFFF"/>
+
+<!-- ── SERVICE NAME PILLS · w=280 h=44 rx=22 · y=392 ── -->
+<rect x="268" y="392" width="280" height="44" rx="22" fill="#124BCE"/>
+<text x="408" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">CLINICAL SUPPORT</text>
+
+<rect x="820" y="392" width="280" height="44" rx="22" fill="#124BCE"/>
+<text x="960" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">ARBITRATION SUPPORT</text>
+
+<rect x="1372" y="392" width="280" height="44" rx="22" fill="#124BCE"/>
+<text x="1512" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">LEARNING HUB</text>
+
+<!-- ── FUNCTION · 15px mid · baseline y=464 ── -->
+<text x="408" y="464" text-anchor="middle" font-size="15" font-weight="400" fill="#6B7280">Detect disagreement · capture reasoning</text>
+<text x="960" y="464" text-anchor="middle" font-size="15" font-weight="400" fill="#6B7280">Structure evidence for final decisions</text>
+<text x="1512" y="464" text-anchor="middle" font-size="15" font-weight="400" fill="#6B7280">Connect to RCR, CPD and REALM learning</text>
+
+<!-- ── internal dividers · y=492 · inset 40px ── -->
+<line x1="200" y1="492" x2="616" y2="492" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="752" y1="492" x2="1168" y2="492" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1304" y1="492" x2="1720" y2="492" stroke="#E5E7EB" stroke-width="1"/>
+
+<!-- ── STAKEHOLDERS · badge r=16 cy=524 · icon scale(0.75) · baseline 528 ── -->
+<!-- Col1 · Radiologist · Lucide user · group centred on 408 -->
+<circle cx="361" cy="524" r="16" fill="#124BCE"/>
+<g transform="translate(352,515) scale(0.75)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="8" r="4"/>
+  <path d="M6 20v-2a6 6 0 0 1 12 0v2"/>
+</g>
+<text x="389" y="528" font-size="14" font-weight="600" fill="#124BCE">Radiologist</text>
+
+<!-- Col2 · Arbitration Team · Lucide users · group centred on 960 -->
+<circle cx="895" cy="524" r="16" fill="#124BCE"/>
+<g transform="translate(886,515) scale(0.75)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+  <circle cx="9" cy="7" r="4"/>
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+</g>
+<text x="923" y="528" font-size="14" font-weight="600" fill="#124BCE">Arbitration Team</text>
+
+<!-- Col3 · RCR · CPD · REALM · Lucide graduation-cap · group centred on 1512 -->
+<circle cx="1444" cy="524" r="16" fill="#124BCE"/>
+<g transform="translate(1435,515) scale(0.75)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 10v6"/>
+  <path d="M2 10l10-5 10 5-10 5z"/>
+  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+</g>
+<text x="1472" y="528" font-size="14" font-weight="600" fill="#124BCE">RCR · CPD · REALM</text>
+
+<!-- ── VALUE · 14px mid · 2 lines · baselines y=568 / 592 ── -->
+<text x="408" y="568" text-anchor="middle" font-size="14" font-weight="400" fill="#6B7280">Less cognitive burden · clearer AI evidence</text>
+<text x="408" y="592" text-anchor="middle" font-size="14" font-weight="400" fill="#6B7280">safer confidence to make a decision</text>
+
+<text x="960" y="568" text-anchor="middle" font-size="14" font-weight="400" fill="#6B7280">Balanced evidence · reduced hierarchy bias</text>
+<text x="960" y="592" text-anchor="middle" font-size="14" font-weight="400" fill="#6B7280">traceable final decision rationale</text>
+
+<text x="1512" y="568" text-anchor="middle" font-size="14" font-weight="400" fill="#6B7280">Converts difficult cases into CPD materials</text>
+<text x="1512" y="592" text-anchor="middle" font-size="14" font-weight="400" fill="#6B7280">and REALM-style team calibration sessions</text>
+
+<!-- ── internal dividers · y=624 ── -->
+<line x1="200" y1="624" x2="616" y2="624" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="752" y1="624" x2="1168" y2="624" stroke="#E5E7EB" stroke-width="1"/>
+<line x1="1304" y1="624" x2="1720" y2="624" stroke="#E5E7EB" stroke-width="1"/>
+
+<!-- ── GOVERNANCE CONTRIBUTIONS · 12px 600 lite · baseline y=652 ── -->
+<text x="408" y="652" text-anchor="middle" font-size="12" font-weight="600" fill="#9CA3AF" letter-spacing="0.5">↑  Feeds NHS Audit Trail</text>
+<text x="960" y="652" text-anchor="middle" font-size="12" font-weight="600" fill="#9CA3AF" letter-spacing="0.5">↑  Feeds AI Readiness Records</text>
+<text x="1512" y="652" text-anchor="middle" font-size="12" font-weight="600" fill="#9CA3AF" letter-spacing="0.5">↑  Feeds Protocol Improvement</text>
+
+<!-- ════════════════════════════════════════════════════
+     SHARED TRIGGER BAND · y=704–768 · h=64 · rx=8
+     Orange border — one entry point, all three lenses
+     ════════════════════════════════════════════════════ -->
+<rect x="160" y="704" width="1600" height="64" rx="8" fill="#FFFFFF" stroke="#E8693C" stroke-width="1.5"/>
+<rect x="192" y="720" width="160" height="32" rx="16" fill="#E8693C"/>
+<text x="272" y="740" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="1">TRIGGER MOMENT</text>
+<text x="384" y="740" font-size="15" font-weight="400" fill="#6B7280">When radiologist and AI disagree on a mammogram result, <tspan font-weight="700" fill="#111827">Readyology captures the case across all three service lenses simultaneously.</tspan></text>
+
+<!-- ════════════════════════════════════════════════════
+     VISION BOX · centred · y=800–912 · h=112 · rx=12
+     ════════════════════════════════════════════════════ -->
+<rect x="480" y="800" width="960" height="112" rx="12" fill="#FFFFFF" stroke="#124BCE" stroke-width="1.5"/>
+<text x="960" y="848" text-anchor="middle" font-size="18" font-weight="400" fill="#6B7280">To make human-AI disagreement in radiology</text>
+<text x="960" y="884" text-anchor="middle" font-size="22" font-weight="700" fill="#124BCE">visible, discussable, learnable and governable.</text>
+
+<!-- ── type metadata ── -->
+<text x="160" y="1064" font-size="11" font-weight="600" fill="#C4C8D2" letter-spacing="2">SOLUTION OVERVIEW · NHS roof bar · Three parallel lens cards x=408/960/1512 · Shared trigger band · Vision · 4px grid</text>
+
+</svg>

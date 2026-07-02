@@ -1,0 +1,52 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs><style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700&amp;display=swap');</style></defs>
+<rect width="1920" height="1080" fill="#EFF0F2"/>
+
+<!-- HEADER -->
+<text x="160" y="60" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#124BCE" letter-spacing="3">RESEARCH</text>
+<line x1="160" y1="74" x2="1760" y2="74" stroke="#C4C8D2" stroke-width="1"/>
+<text x="1760" y="60" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#6B7280" text-anchor="end">11 / 29</text>
+
+<!-- H1 + SUBTITLE -->
+<text x="160" y="148" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="68" font-weight="700" fill="#111827">Disagreement surfaces at two moments.</text>
+<text x="160" y="186" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="400" fill="#6B7280">Each moment has different types of friction — and different design needs.</text>
+
+<!-- ── LEFT PANEL: Comparison ── -->
+<!-- 01 label -->
+<text x="160" y="250" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#124BCE" letter-spacing="2">01</text>
+<!-- Panel title -->
+<text x="196" y="250" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#111827">Radiologist compares with AI</text>
+<!-- Description -->
+<text x="160" y="280" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="400" fill="#6B7280">At the comparison step, before the recall decision is made.</text>
+
+<!-- Type tags: HM, MH -->
+<rect x="160" y="302" width="158" height="28" rx="14" fill="#124BCE"/>
+<text x="239" y="321" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Human–Machine</text>
+<rect x="328" y="302" width="162" height="28" rx="14" fill="#4B6EBF"/>
+<text x="409" y="321" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Machine–Human</text>
+
+<!-- Gray placeholder box -->
+<rect x="160" y="350" width="740" height="570" fill="#C4C8D2" rx="8"/>
+<text x="530" y="642" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#9CA3AF" text-anchor="middle">[ Photo: radiologist at workstation reviewing AI output ]</text>
+
+<!-- ── RIGHT PANEL: Arbitration ── -->
+<!-- 02 label -->
+<text x="1020" y="250" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#124BCE" letter-spacing="2">02</text>
+<!-- Panel title -->
+<text x="1056" y="250" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#111827">Arbitration Meeting</text>
+<!-- Description -->
+<text x="1020" y="280" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="400" fill="#6B7280">Senior radiologist reviews the flagged case with the team before a final decision.</text>
+
+<!-- Type tags: HM, MH, HH -->
+<rect x="1020" y="302" width="158" height="28" rx="14" fill="#124BCE"/>
+<text x="1099" y="321" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Human–Machine</text>
+<rect x="1188" y="302" width="162" height="28" rx="14" fill="#4B6EBF"/>
+<text x="1269" y="321" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Machine–Human</text>
+<rect x="1360" y="302" width="148" height="28" rx="14" fill="#E8693C"/>
+<text x="1434" y="321" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Human–Human</text>
+
+<!-- Gray placeholder box -->
+<rect x="1020" y="350" width="740" height="570" fill="#C4C8D2" rx="8"/>
+<text x="1390" y="642" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="400" fill="#9CA3AF" text-anchor="middle">[ Photo: senior radiologist in team discussion ]</text>
+
+</svg>
