@@ -455,7 +455,11 @@
       transition: transform 240ms ease, box-shadow 240ms ease, background 240ms ease;
     }
 
-    .glass-card:hover {
+    /* Hover-lift is reserved for cards that are themselves a click target
+       (see [data-page-target] handling in the script below). Static
+       display cards keep their resting state; any button/link inside
+       them still gets its own hover treatment. */
+    .entry-card:hover {
       transform: translateY(-3px);
       background: rgba(255,255,255,0.72);
       box-shadow: 0 24px 60px rgba(45, 76, 117, 0.16);
@@ -717,6 +721,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      cursor: pointer;
     }
 
     .entry-card h4,
