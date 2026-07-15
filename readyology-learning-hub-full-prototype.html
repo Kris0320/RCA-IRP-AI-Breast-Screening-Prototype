@@ -119,6 +119,14 @@
       align-items: center;
       gap: 12px;
       padding: 12px 10px 22px;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: opacity 150ms ease;
+    }
+
+    .brand:hover {
+      opacity: 0.82;
     }
 
     .brand-mark {
@@ -249,7 +257,7 @@
     .topbar {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
       gap: 18px;
       margin-bottom: 24px;
     }
@@ -1384,6 +1392,18 @@
         width: auto;
       }
 
+      .mobile-home-link {
+        padding: 0 9px;
+        text-decoration: none;
+      }
+
+      .mobile-home-link img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+      }
+
       .hero,
       .continue-card,
       .home-composition,
@@ -1412,11 +1432,6 @@
 
       .content {
         padding-bottom: 24px;
-      }
-
-      .topbar {
-        align-items: flex-start;
-        flex-direction: column;
       }
 
       .hero,
@@ -1485,7 +1500,7 @@
 <body>
   <div class="app-shell">
     <aside class="sidebar" aria-label="Primary navigation">
-      <div class="brand">
+      <a class="brand" href="index.html" title="Back to Readyology home" aria-label="Back to Readyology home">
         <div class="brand-mark" aria-hidden="true">
           <img src="readyology-logo.png" alt="" />
         </div>
@@ -1493,7 +1508,7 @@
           <img class="brand-wordmark" src="readyology-wordmark.png" alt="Readyology" />
           <span class="brand-subtitle">Learning Hub</span>
         </div>
-      </div>
+      </a>
       <nav class="nav">
         <button class="nav-button active" data-page="home"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>Home</button>
         <button class="nav-button" data-page="cases"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5z"/><path d="M8 7h8"/><path d="M8 11h7"/></svg>Cases</button>
@@ -1512,6 +1527,9 @@
 
     <main class="content">
       <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a class="nav-button mobile-home-link" href="index.html" title="Back to Readyology home" aria-label="Back to Readyology home">
+          <img src="readyology-logo.png" alt="" />
+        </a>
         <button class="nav-button active" data-page="home"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Home</button>
         <button class="nav-button" data-page="cases"><svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5z"/></svg>Cases</button>
         <button class="nav-button" data-page="learning"><svg viewBox="0 0 24 24"><path d="M7 3h10a2 2 0 0 1 2 2v16l-7-3-7 3z"/></svg>CPD</button>
@@ -1519,10 +1537,6 @@
       </nav>
 
       <div class="topbar">
-        <a href="index.html" class="eyebrow" style="text-decoration:none;cursor:pointer;">
-          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 3l2.1 5.9L20 11l-5.9 2.1L12 19l-2.1-5.9L4 11l5.9-2.1z"/></svg>
-          AI-assisted breast screening learning
-        </a>
         <div class="profile-chip"><span class="avatar">DR</span> Dr. Rai, Consultant Radiologist</div>
       </div>
 
