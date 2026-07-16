@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -96,7 +96,7 @@
       grid-template-columns: 270px minmax(0, 1fr);
       gap: 28px;
       min-height: 100vh;
-      padding: 28px;
+      padding: calc(28px + env(safe-area-inset-top, 0px)) 28px 28px;
     }
 
     .sidebar {
@@ -1378,7 +1378,7 @@
 
       .mobile-nav {
         position: sticky;
-        top: 14px;
+        top: calc(14px + env(safe-area-inset-top, 0px));
         z-index: 10;
         display: flex;
         gap: 7px;

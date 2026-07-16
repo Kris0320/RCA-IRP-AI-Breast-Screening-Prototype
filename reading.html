@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -37,6 +37,8 @@
     --panel-w: 420px;
     --toolbar-h: 60px;
     --status-h: 28px;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
   }
 
   body {
@@ -53,12 +55,12 @@
 
   /* ── TOOLBAR ── */
   #toolbar {
-    height: var(--toolbar-h);
+    height: calc(var(--toolbar-h) + var(--safe-top));
     background: var(--surface);
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: var(--safe-top) 10px 0;
     gap: 8px;
     flex-shrink: 0;
     z-index: 10;
@@ -160,7 +162,7 @@
   /* ── THUMBNAIL SERIES ── */
   #series {
     width: var(--thumbnail-w);
-    height: calc(100vh - var(--toolbar-h) - var(--status-h));
+    height: calc(100vh - var(--toolbar-h) - var(--status-h) - var(--safe-top) - var(--safe-bottom));
     background: var(--surface);
     border-right: 1px solid var(--border);
     display: flex;
@@ -387,7 +389,7 @@
   /* ── RIGHT PANEL ── */
   #right-panel {
     width: var(--panel-w);
-    height: calc(100vh - var(--toolbar-h) - var(--status-h));
+    height: calc(100vh - var(--toolbar-h) - var(--status-h) - var(--safe-top) - var(--safe-bottom));
     background: var(--surface);
     border-left: 1px solid var(--border);
     display: flex;
@@ -1167,12 +1169,12 @@
 
   /* ── STATUS BAR ── */
   #statusbar {
-    height: var(--status-h);
+    height: calc(var(--status-h) + var(--safe-bottom));
     background: var(--surface);
     border-top: 1px solid var(--border);
     display: flex;
     align-items: center;
-    padding: 0 14px;
+    padding: 0 14px var(--safe-bottom);
     gap: 16px;
     flex-shrink: 0;
     font-size: 10px;
